@@ -39,103 +39,103 @@ const config = {
     ],
 
     themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-        navbar: {
-            title: 'ReNative',
-            hideOnScroll: true,
-            logo: {
-                alt: 'My Site Logo',
-                src: 'img/logo.png',
+        /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+        ({
+            navbar: {
+                title: 'ReNative',
+                hideOnScroll: true,
+                logo: {
+                    alt: 'My Site Logo',
+                    src: 'img/renative-logo-transparent.png',
+                },
+                items: [
+                    {
+                        type: 'doc',
+                        docId: 'overview/introduction',
+                        position: 'left',
+                        label: 'Docs',
+                    },
+                    {
+                        type: 'doc',
+                        docId: 'api/renative',
+                        position: 'left',
+                        label: 'API',
+                    },
+                    {
+                        href: 'https://github.com/renative-org/renative',
+                        label: 'GitHub',
+                        position: 'right',
+                    },
+                ],
             },
-            items: [
-                {
-                    type: 'doc',
-                    docId: 'overview/introduction',
-                    position: 'left',
-                    label: 'Docs',
-                },
-                {
-                    type: 'doc',
-                    docId: 'api/renative',
-                    position: 'left',
-                    label: 'API',
-                },
-                {
-                    href: 'https://github.com/renative-org/renative',
-                    label: 'GitHub',
-                    position: 'right',
-                },
-            ],
-        },
-        colorMode: {
-            defaultMode: 'light',
-            disableSwitch: false,
-            respectPrefersColorScheme: true,
-            switchConfig: {
-                darkIcon: '⚫',
-                lightIcon: '🔆',
-                // React inline style object
-                // see https://reactjs.org/docs/dom-elements.html#style
-                darkIconStyle: {
-                    marginLeft: '0px',
-                },
-                lightIconStyle: {
-                    marginLeft: '0px',
+            colorMode: {
+                defaultMode: 'light',
+                disableSwitch: false,
+                respectPrefersColorScheme: true,
+                switchConfig: {
+                    darkIcon: '⚫',
+                    lightIcon: '🔆',
+                    // React inline style object
+                    // see https://reactjs.org/docs/dom-elements.html#style
+                    darkIconStyle: {
+                        marginLeft: '0px',
+                    },
+                    lightIconStyle: {
+                        marginLeft: '0px',
+                    },
                 },
             },
-        },
-        footer: {
-            style: 'dark',
-            links: [
-                {
-                    title: 'Docs',
-                    items: [
-                        {
-                            label: 'Tutorial',
-                            to: '/docs/intro',
-                        },
-                    ],
-                },
-                {
-                    title: 'Community',
-                    items: [
-                        {
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                        },
-                        {
-                            label: 'Discord',
-                            href: 'https://discordapp.com/invite/docusaurus',
-                        },
-                        {
-                            label: 'Twitter',
-                            href: 'https://twitter.com/docusaurus',
-                        },
-                    ],
-                },
-                {
-                    title: 'More',
-                    items: [
-                        {
-                            label: 'Blog',
-                            to: '/blog',
-                        },
-                        {
-                            label: 'GitHub',
-                            href: 'https://github.com/facebook/docusaurus',
-                        },
-                    ],
-                },
-            ],
-            copyright: `Copyright © ${new Date().getFullYear()} ReNative, Inc. Built with Docusaurus.`,
-        },
-        image: 'img/logo.svg',
-        prism: {
-            theme: lightCodeTheme,
-            darkTheme: darkCodeTheme,
-        },
-    }),
+            footer: {
+                style: 'dark',
+                links: [
+                    {
+                        title: 'Docs',
+                        items: [
+                            {
+                                label: 'Tutorial',
+                                to: '/docs/intro',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Community',
+                        items: [
+                            {
+                                label: 'Stack Overflow',
+                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                            },
+                            {
+                                label: 'Discord',
+                                href: 'https://discordapp.com/invite/docusaurus',
+                            },
+                            {
+                                label: 'Twitter',
+                                href: 'https://twitter.com/docusaurus',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'More',
+                        items: [
+                            {
+                                label: 'Blog',
+                                to: '/blog',
+                            },
+                            {
+                                label: 'GitHub',
+                                href: 'https://github.com/facebook/docusaurus',
+                            },
+                        ],
+                    },
+                ],
+                copyright: `Copyright © ${new Date().getFullYear()} ReNative, Inc. Built with Docusaurus.`,
+            },
+            image: 'img/logo.svg',
+            prism: {
+                theme: lightCodeTheme,
+                darkTheme: darkCodeTheme,
+            },
+        }),
 };
 
 module.exports = config;
