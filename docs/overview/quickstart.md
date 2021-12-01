@@ -1,0 +1,24 @@
+---
+id: quickstart
+title: Quick Start
+sidebar_label: Quick Start
+original_id: quickstart
+---
+
+<img className="header-image" src="https://renative.org/img/ic_quickstart.png" width="50" height="50" />
+
+## Install rnv
+
+```bash
+$ npm install rnv -g
+```
+
+## Run it!
+
+```bash
+$ rnv
+```
+
+## Enjoy
+
+![](https://media.giphy.com/media/QC7Pr3M4gN0yuEDGgj/giphy.gif)
