@@ -257,7 +257,7 @@ import { isEngineWeb } from 'renative'
 Built-time platform checks for renative form factor per each specific platform
 
 returns true if running under specific form factor via `rnv ... -p <PLATFORM>` and matches one of the form factors ie for android:
-[Android Extenstion Support](platform-android.md#file-extension-support)
+[Android Extenstion Support](../platforms/android.md#file-extension-support)
 
 ### isFactorBrowser
 

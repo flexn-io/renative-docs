@@ -16,19 +16,7 @@ React native based engine with web transpiler provided by react-native-web and n
 
 ## Supported Platforms
 
-[macos](platforms/macos.md), [windows](platforms/windows.md)
-
-## Required Plugins
-
-[react](../plugins#react), [react-art](../plugins#react-art), [react-dom](../plugins#react-dom), [react-native](../plugins#react-native), [react-native-web](../plugins#react-native-web), [@react-native-community/cli-platform-ios](../plugins#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins#react-native-communitycli)
-
-## Required NPM Packages
-
-
-
-
-
-
+[macos](../platforms/macos.md), [windows](../platforms/windows.md)
 
 ## Extensions
 

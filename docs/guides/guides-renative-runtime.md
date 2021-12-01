@@ -37,4 +37,4 @@ import {
 />;
 ```
 
-[Full API Reference](api-renative.md)
+[Full API Reference](../api/renative.md)

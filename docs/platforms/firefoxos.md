@@ -64,4 +64,4 @@ rnv run -p firefoxos --hosted
 
 ## App Config
 
-[see: Web based config](api-config.md#web-props)
+[see: Web based config](../api/config.md)

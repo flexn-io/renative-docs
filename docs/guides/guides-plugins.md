@@ -39,11 +39,11 @@ and follow the command prompt steps
 
 ## Plugin CLI Reference
 
-[see: CLI API Reference](api-cli-engine-core.md#plugin-add)
+[see: CLI API Reference](../api/cli-engine-core.md#plugin-add)
 
 ## Plugin Renative Config Reference
 
-[see: Config API Reference](api-config.md#plugins)
+[see: Config API Reference](../api/config.md#plugins)
 
 ## Custom Plugin Support
 

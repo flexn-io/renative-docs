@@ -245,4 +245,4 @@ Adding new props to plist:
 
 ## App Config
 
-[see: iOS based config](api-config.md#ios-props)
+[see: iOS based config](../api/config.md#ios-props)

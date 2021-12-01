@@ -16,26 +16,7 @@ Default react-native based engine. Runs standard react native apps with native s
 
 ## Supported Platforms
 
-[ios](platforms/ios.md), [android](platforms/android.md), [androidtv](platforms/androidtv.md), [firetv](platforms/firetv.md), [androidwear](platforms/androidwear.md), [tvos](platforms/tvos.md)
-
-## Required Plugins
-
-[react](../plugins#react), [react-art](../plugins#react-art), [react-dom](../plugins#react-dom), [react-native](../plugins#react-native), [react-native-web](../plugins#react-native-web), [@react-native-community/cli-platform-ios](../plugins#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins#react-native-communitycli)
-
-## Required NPM Packages
-
-
-
-
-
-
-
-
-
-
-
-
-
+[ios](../platforms/ios.md), [android](../platforms/android.md), [androidtv](../platforms/androidtv.md), [firetv](../platforms/firetv.md), [androidwear](../platforms/androidwear.md), [tvos](../platforms/tvos.md)
 
 
 ## Extensions

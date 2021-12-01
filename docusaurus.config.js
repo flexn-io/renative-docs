@@ -9,7 +9,7 @@ const config = {
     title: 'ReNative',
     tagline: 'Unified Development Platform',
     url: 'https://renative.org',
-    baseUrl: '/',
+    baseUrl: '/renative-website/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
@@ -89,15 +89,6 @@ const config = {
                 style: 'dark',
                 links: [
                     {
-                        title: 'Docs',
-                        items: [
-                            {
-                                label: 'Tutorial',
-                                to: '/docs/intro',
-                            },
-                        ],
-                    },
-                    {
                         title: 'Community',
                         items: [
                             {
@@ -118,12 +109,8 @@ const config = {
                         title: 'More',
                         items: [
                             {
-                                label: 'Blog',
-                                to: '/blog',
-                            },
-                            {
                                 label: 'GitHub',
-                                href: 'https://github.com/facebook/docusaurus',
+                                href: 'https://github.com/renative-org/renative',
                             },
                         ],
                     },

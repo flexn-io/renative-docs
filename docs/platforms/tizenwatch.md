@@ -94,4 +94,4 @@ rnv run -p tizenwatch -t W-5.0-circle-x86
 
 ## App Config
 
-[see: Web based config](api-config.md#web-props)
+[see: Web based config](../api/config.md)

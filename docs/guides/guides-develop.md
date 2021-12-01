@@ -69,10 +69,10 @@ npm run deploy:prod
 
 ## Documentation
 
-[Documentation for CLI](api-cli-engine-core.md)
+[Documentation for CLI](../api/cli-engine-core.md)
 
-[Documentation for RNV](api-rnv.md)
+[Documentation for RNV](../api/renative.md)
 
-[Documentation for Config](api-config.md)
+[Documentation for Config](../api/config.md)
 
-[Documentation for Runtime](api-renative.md)
+[Documentation for Runtime](../api/renative.md)

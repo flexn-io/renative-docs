@@ -60,4 +60,4 @@ You can manage your templates in your project via rnv command line.
 
 ---
 
-for full CLI reference, visit [Engine Core API Reference](api-cli-engine-core.md#template-add)
+for full CLI reference, visit [Engine Core API Reference](../api/cli-engine-core.md#template-add)

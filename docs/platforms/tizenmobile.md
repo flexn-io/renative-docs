@@ -98,4 +98,4 @@ rnv run -p tizenmobile -t M-5.0-x86
 
 ## App Config
 
-[see: Web based config](api-config.md#web-props)
+[see: Web based config](../api/config.md)
