@@ -31,11 +31,11 @@ function HomepageHeader() {
                         className="button button--secondary button--lg"
                         to="/docs/intro"
                     >
-            Try it out
+                        Try it out
                     </Link>
                 </div>
                 <p>
-                  ReNative allows you build apps and scalable products via single development environment
+                    ReNative allows you build apps and scalable products via single development environment
 
                 </p>
             </div>
@@ -47,7 +47,7 @@ export default function Home() {
     const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
-            title={`Hello from ${siteConfig.title}`}
+            title={`Unified Development Platform`}
             description="Description will go into a meta tag in <head />"
         >
             <HomepageHeader />
