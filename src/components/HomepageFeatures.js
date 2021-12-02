@@ -109,15 +109,15 @@ function Feature({ Svg, title, description, float, imageWidth = 400 }) {
                     {title}
                 </h3>
 
-                <div>
+                <div className="feature-wrapper">
                     {description ? (
-                        <p style={{ float, width: '50%', padding: 100 }}>
+                        <p className="feature-wrapper-text">
                             {description}
                         </p>
                     ) : null}
 
                     <div className="text--center">
-                        <Svg className={styles.featureSvg} style={{ width: imageWidth }} alt={title} />
+                        <Svg className="featuresSvg" alt={title} />
                     </div>
                 </div>
 

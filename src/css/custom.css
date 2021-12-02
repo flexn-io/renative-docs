@@ -48,8 +48,57 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   height: 1.3em;
 }
 
+@media screen and (max-width: 826px) {
+  .hero .hero__title {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .hero .hero__title {
+    font-size: 3em;
+  }
+}
+
+.featuresSvg {
+  width: 100%;
+}
+
 .hero__title_alt {
   color: #0a74e6;
+}
+
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.feature-wrapper .feature-wrapper-text {
+  width: 80%;
+  padding: 100px;
+  align-self: center;
+}
+
+@media  screen and (max-width: 630px) {
+  .feature-wrapper .feature-wrapper-text {
+    width: 100%;
+    padding: 50px;
+  }
+}
+
+@media screen and (min-width: 1015px) {
+  .feature-wrapper .feature-wrapper-text {
+    width: 50%;
+  }
+
+  .feature-wrapper .feature-wrapper-text:nth-child(odd) {
+    align-self: start;
+  }
+
+  .feature-wrapper .feature-wrapper-text:nth-child(even) {
+    align-self: end;
+  }
 }
 
 .theme-doc-markdown {
