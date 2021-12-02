@@ -70,34 +70,44 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 .feature-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 827px) {
+  .col:nth-child(odd) .feature-wrapper {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 826px) {
+  .feature-wrapper {
+    flex-direction: column;
+  }
+  .feature-wrapper-image {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .feature-wrapper-image {
+    padding: 0;
+  }
+}
   
+.feature-wrapper-image {
+  flex: 1;
 }
 
 .feature-wrapper .feature-wrapper-text {
-  width: 80%;
+  flex: 1;
   padding: 100px;
-  align-self: center;
 }
 
-@media  screen and (max-width: 630px) {
+@media screen and (max-width: 630px) {
   .feature-wrapper .feature-wrapper-text {
-    width: 100%;
     padding: 50px;
-  }
-}
-
-@media screen and (min-width: 1015px) {
-  .feature-wrapper .feature-wrapper-text {
-    width: 50%;
-  }
-
-  .feature-wrapper .feature-wrapper-text:nth-child(odd) {
-    align-self: start;
-  }
-
-  .feature-wrapper .feature-wrapper-text:nth-child(even) {
-    align-self: end;
   }
 }
 

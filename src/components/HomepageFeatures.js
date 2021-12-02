@@ -115,7 +115,7 @@ function Feature({ Svg, title, description, float, imageWidth = 400 }) {
                 </p>
             ) : null}
 
-            <div className="text--center">
+            <div className="feature-wrapper-image">
                 <Svg className="featuresSvg" alt={title} />
             </div>
         </div>
