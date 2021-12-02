@@ -97,15 +97,15 @@ const config = {
                         items: [
                             {
                                 label: 'Stack Overflow',
-                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                                href: 'https://stackoverflow.com/search?q=renative',
                             },
                             {
-                                label: 'Discord',
-                                href: 'https://discordapp.com/invite/docusaurus',
+                                label: 'Discussions',
+                                href: 'https://github.com/renative-org/renative/discussions',
                             },
                             {
                                 label: 'Twitter',
-                                href: 'https://twitter.com/docusaurus',
+                                href: 'https://twitter.com/renative',
                             },
                         ],
                     },
@@ -119,7 +119,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} ReNative, Inc. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} ReNative Org. Built with Docusaurus.`,
             },
             image: 'img/logo.svg',
             prism: {
