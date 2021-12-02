@@ -9,7 +9,7 @@ const config = {
     title: 'ReNative',
     tagline: 'Unified Development Platform',
     url: 'https://renative.org',
-    baseUrl: '/renative-website/',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
