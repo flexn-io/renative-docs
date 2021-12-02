@@ -102,6 +102,10 @@ h3 {
   font-size: 3em;
 }
 
+.container {
+  max-width: 900px;
+}
+
 /* .padding-horiz--md {
   float: left;
   width: 200;
