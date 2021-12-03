@@ -43,12 +43,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Intergations',
+    title: 'Integrations',
     Svg: require('../../static/img/image4.svg').default,
     float: 'right',
     description: (
       <>
-        ReNative supports integration for various services and deployment infrastructures for your apps
+        ReNative supports integrations for various services and deployment infrastructures for your apps
       </>
     ),
   },
