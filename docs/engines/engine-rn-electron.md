@@ -1,7 +1,7 @@
 ---
 id: engine-rn-electron
 title: React Native Electron Engine
-sidebar_label: React Native Electron
+sidebar_label: engine-rn-electron
 original_id: engine-rn-electron
 ---
 

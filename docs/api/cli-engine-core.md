@@ -1,7 +1,7 @@
 ---
 id: cli-engine-core
 title: Engine Core CLI Reference
-sidebar_label: Engine Core
+sidebar_label: engine-core
 ---
 
 

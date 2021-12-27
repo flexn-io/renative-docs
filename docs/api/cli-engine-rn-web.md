@@ -1,7 +1,7 @@
 ---
 id: cli-engine-rn-web
 title: Engine RN Web CLI Reference
-sidebar_label: Engine RN Web
+sidebar_label: engine-rn-web
 ---
 
 

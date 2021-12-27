@@ -1,7 +1,7 @@
 ---
 id: engine-rn-web
 title: React Native Web Engine
-sidebar_label: React Native Web
+sidebar_label: engine-rn-web
 original_id: engine-rn-web
 ---
 

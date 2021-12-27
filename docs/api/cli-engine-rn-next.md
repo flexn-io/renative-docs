@@ -1,7 +1,7 @@
 ---
 id: cli-engine-rn-next
 title: Engine Next CLI Reference
-sidebar_label: Engine Next
+sidebar_label: engine-rn-next
 ---
 
 

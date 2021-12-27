@@ -49,8 +49,8 @@ const config = {
                 title: 'ReNative',
                 hideOnScroll: true,
                 logo: {
-                    alt: 'My Site Logo',
-                    src: 'img/renative-logo-transparent.png',
+                    alt: 'Renative Logo',
+                    src: 'img/logo.svg',
                 },
                 items: [
                     {
@@ -89,42 +89,43 @@ const config = {
                     },
                 },
             },
-            footer: {
-                style: 'dark',
-                links: [
-                    {
-                        title: 'Community',
-                        items: [
-                            {
-                                label: 'Stack Overflow',
-                                href: 'https://stackoverflow.com/search?q=renative',
-                            },
-                            {
-                                label: 'Discussions',
-                                href: 'https://github.com/renative-org/renative/discussions',
-                            },
-                            {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/renative',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'More',
-                        items: [
-                            {
-                                label: 'GitHub',
-                                href: 'https://github.com/renative-org/renative',
-                            },
-                        ],
-                    },
-                ],
-                copyright: `Copyright © ${new Date().getFullYear()} ReNative Org. Built with Docusaurus.`,
-            },
+            // footer: {
+            //     style: 'dark',
+            //     links: [
+            //         {
+            //             title: 'Community',
+            //             items: [
+            //                 {
+            //                     label: 'Stack Overflow',
+            //                     href: 'https://stackoverflow.com/search?q=renative',
+            //                 },
+            //                 {
+            //                     label: 'Discussions',
+            //                     href: 'https://github.com/renative-org/renative/discussions',
+            //                 },
+            //                 {
+            //                     label: 'Twitter',
+            //                     href: 'https://twitter.com/renative',
+            //                 },
+            //             ],
+            //         },
+            //         {
+            //             title: 'More',
+            //             items: [
+            //                 {
+            //                     label: 'GitHub',
+            //                     href: 'https://github.com/renative-org/renative',
+            //                 },
+            //             ],
+            //         },
+            //     ],
+            //     copyright: `Copyright © ${new Date().getFullYear()} ReNative Org. Built with Docusaurus.`,
+            // },
             image: 'img/logo.svg',
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
+                defaultLanguage: 'javascript',
             },
         }),
 };

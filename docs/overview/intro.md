@@ -3,7 +3,7 @@ id: introduction
 title: Introduction
 sidebar_label: Introduction
 original_id: introduction
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 ## Intro

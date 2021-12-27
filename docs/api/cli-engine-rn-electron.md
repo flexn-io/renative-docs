@@ -1,7 +1,7 @@
 ---
 id: cli-engine-rn-electron
 title: Engine Electron CLI Reference
-sidebar_label: Engine Electron
+sidebar_label: engine-rn-electron
 ---
 
 

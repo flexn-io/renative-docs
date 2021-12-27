@@ -145,9 +145,13 @@ header {
   --ifm-color-primary: #fff;
   --ifm-font-color-base-inverse: #fff; */
   /* --ifm-font-color-base-inverse: #ff0000; */
-  color: var(--ifm-color-primary-contrast-foreground);
+  color: #000;
   background-color: transparent;
   box-sizing: unset;
+}
+
+[data-theme="dark"] .hero--primary {
+  color: #fff;
 }
 
 .navbar {
@@ -162,7 +166,7 @@ h3 {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1100px;
 }
 
 /* .padding-horiz--md {
@@ -178,3 +182,114 @@ h3 {
   text-align: center;
   background-color: blue;
 } */
+
+a {
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  align-items: end;
+}
+.copyright {
+  font-weight: 400;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  align-items: end;
+}
+.social-link {
+  margin: 0 16px;
+}
+.social-link:hover :global(svg path) {
+  fill: #0A74E6;
+}
+
+.container-title {
+  font-weight: 700;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link {
+  margin-top: 16px;
+  color: #565656;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.social-links a:first-child {
+  margin-left: 0;
+}
+
+.social-link {
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    align-items: center;
+  }
+  .logo-wrapper {
+    align-self: center;
+  }  
+  .footer {
+    padding: 20px 20px;
+    flex-direction: column;
+    margin-top: 56px;
+  }
+  .links{
+    justify-self: center;
+  }
+
+  .footer {
+    margin-top: 0;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .social-links a:last-child {
+    margin-right: 0;
+  }
+
+  .social-links {
+    justify-content: space-between
+  }
+
+  .social-link {
+    margin-top: 16px;
+  }
+
+  .footer-container {
+    margin-bottom: 32px;
+  }
+
+  .featuresSvg {
+    max-height: 200px;
+    margin-bottom: 50px;
+  }
+}

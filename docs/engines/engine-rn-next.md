@@ -1,7 +1,7 @@
 ---
 id: engine-rn-next
 title: React Native Next Engine
-sidebar_label: React Native Next
+sidebar_label: engine-rn-next
 original_id: engine-rn-next
 ---
 

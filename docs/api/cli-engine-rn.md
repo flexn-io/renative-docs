@@ -1,7 +1,7 @@
 ---
 id: cli-engine-rn
 title: Engine RN CLI Reference
-sidebar_label: Engine RN
+sidebar_label: engine-rn
 ---
 
 
