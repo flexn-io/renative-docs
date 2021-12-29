@@ -4,7 +4,7 @@ title: rnv Build Config Object Reference
 sidebar_label: build config object
 ---
 
-List of available config props injected into [Build Hooks](guides/build_hooks) via method parameter
+List of available config props injected into [Build Hooks](../guides/build_hooks) via method parameter
 
 ---
 
