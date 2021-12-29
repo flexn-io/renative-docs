@@ -73,6 +73,6 @@ npm run deploy:prod
 
 [Documentation for RNV](../api/renative.md)
 
-[Documentation for Config](../api/config.md)
+[Documentation for Config](../api/json-config.md)
 
 [Documentation for Runtime](../api/renative.md)

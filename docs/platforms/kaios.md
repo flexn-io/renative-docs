@@ -22,13 +22,13 @@ original_id: kaios
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with kaios support: 
+Extenstions are defined via engines. Engines with kaios support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 ## Requirements
 
--   [KaiOSrt](https://developer.kaiostech.com/simulator) for emulator
+- [KaiOSrt](https://developer.kaiostech.com/simulator) for emulator
 
 After installation you can launch it via Applications:
 
@@ -62,4 +62,4 @@ rnv run -p kaios --hosted
 
 ## App Config
 
-[see: Web based config](../api/config.md)
+[see: Web based config](../api/json-config.md)

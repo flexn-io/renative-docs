@@ -20,20 +20,20 @@ original_id: tizenwatch
 
 ## Overview
 
--   Latest Tizen project
--   Support for Tizen 5.0
+- Latest Tizen project
+- Support for Tizen 5.0
 
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with tizenwatch support: 
+Extenstions are defined via engines. Engines with tizenwatch support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 ## Requirements
 
--   [Tizen SDK](https://developer.tizen.org/ko/development/tizen-studio/configurable-sdk) `5.0`
+- [Tizen SDK](https://developer.tizen.org/ko/development/tizen-studio/configurable-sdk) `5.0`
 
 ## Project Configuration
 
@@ -94,4 +94,4 @@ rnv run -p tizenwatch -t W-5.0-circle-x86
 
 ## App Config
 
-[see: Web based config](../api/config.md)
+[see: Web based config](../api/json-config.md)

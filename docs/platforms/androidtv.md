@@ -20,22 +20,22 @@ original_id: androidtv
 
 ## Overview
 
--   Latest Android project
--   Kotlin Support
--   Support for Gradle 4.9
+- Latest Android project
+- Kotlin Support
+- Support for Gradle 4.9
 
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with androidtv support: 
+Extenstions are defined via engines. Engines with androidtv support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 ## Requirements
 
--   [Android Studio](https://developer.android.com/studio/index.html) for Android development
--   [Android SDK](https://developer.android.com/sdk/) `23.0.1` or newer for Android development
+- [Android Studio](https://developer.android.com/studio/index.html) for Android development
+- [Android SDK](https://developer.android.com/sdk/) `23.0.1` or newer for Android development
 
 ## Project Configuration
 
@@ -117,4 +117,4 @@ or `renative.json:platforms.android.buildSchemes.[SCHEME].reactNativeEngine`
 
 ## App Config
 
-[see: Android based config](../api/config.md#android-props)
+[see: Android based config](../api/json-config.md#android-props)

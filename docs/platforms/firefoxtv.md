@@ -22,13 +22,13 @@ original_id: firefoxtv
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with firefoxtv support: 
+Extenstions are defined via engines. Engines with firefoxtv support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 #### Requirements
 
--   [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/) for IDE + Emulator
+- [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/) for IDE + Emulator
 
 After installation you can launch it via Applications:
 
@@ -64,4 +64,4 @@ rnv run -p firefoxtv --hosted
 
 ## App Config
 
-[see: Web based config](../api/config.md)
+[see: Web based config](../api/json-config.md)

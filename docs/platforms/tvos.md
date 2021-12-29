@@ -20,22 +20,22 @@ original_id: tvos
 
 ## Overview
 
--   Latest swift based Xcode project
--   Cocoapods Workspace ready
--   Swift 4.1 Support
+- Latest swift based Xcode project
+- Cocoapods Workspace ready
+- Swift 4.1 Support
 
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with tvos support: 
+Extenstions are defined via engines. Engines with tvos support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 ## Requirements
 
--   [CocoaPods](https://cocoapods.org) `1.5.3` or newer
--   [Xcode](https://developer.apple.com/xcode/) for iOS development
+- [CocoaPods](https://cocoapods.org) `1.5.3` or newer
+- [Xcode](https://developer.apple.com/xcode/) for iOS development
 
 ## Project Configuration
 
@@ -67,4 +67,4 @@ rnv run -p tvos -t "Apple TV 4K"
 
 ## App Config
 
-[see: iOS based config](../api/config.md#ios-props)
+[see: iOS based config](../api/json-config.md#ios-props)

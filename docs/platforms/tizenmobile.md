@@ -20,22 +20,22 @@ original_id: tizenmobile
 
 ## Overview
 
--   Latest Tizen project
--   Support for Tizen 5.0, 4.0, 3.0
+- Latest Tizen project
+- Support for Tizen 5.0, 4.0, 3.0
 
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with tizenmobile support: 
+Extenstions are defined via engines. Engines with tizenmobile support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 ## Requirements
 
--   [Tizen SDK](https://developer.tizen.org/ko/development/tizen-studio/configurable-sdk) `5.0`
--   Make sure your CPU supports virtualization. Otherwise Tizen emulator might not start.
--   If you are deploying to a TV, follow this guide to set your TV in developer mode [Link](https://developer.samsung.com/tv/develop/getting-started/using-sdk/tv-device)
+- [Tizen SDK](https://developer.tizen.org/ko/development/tizen-studio/configurable-sdk) `5.0`
+- Make sure your CPU supports virtualization. Otherwise Tizen emulator might not start.
+- If you are deploying to a TV, follow this guide to set your TV in developer mode [Link](https://developer.samsung.com/tv/develop/getting-started/using-sdk/tv-device)
 
 ## Project Configuration
 
@@ -98,4 +98,4 @@ rnv run -p tizenmobile -t M-5.0-x86
 
 ## App Config
 
-[see: Web based config](../api/config.md)
+[see: Web based config](../api/json-config.md)

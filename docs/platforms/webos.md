@@ -20,19 +20,19 @@ original_id: webos
 
 ## Overview
 
--   Latest LG webOS Project
+- Latest LG webOS Project
 
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with webos support: 
+Extenstions are defined via engines. Engines with webos support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 ## Requirements
 
--   [LG Emulator](http://webostv.developer.lge.com/sdk/tools/emulator/introduction-emulator/) v3.0.0
+- [LG Emulator](http://webostv.developer.lge.com/sdk/tools/emulator/introduction-emulator/) v3.0.0
 
 ## Project Configuration
 
@@ -43,13 +43,13 @@ Extenstions are defined via engines. Engines with webos support:
 
 ## Emulator
 
--   launch webOS emulator via CLI
+- launch webOS emulator via CLI
 
 ```bash
 rnv target launch -p webos -t emulator
 ```
 
--   launch webOS emulator Manually
+- launch webOS emulator Manually
 
 usually located in something like:
 
@@ -79,4 +79,4 @@ rnv run -p webos --hosted
 
 ## App Config
 
-[see: Web based config](../api/config.md)
+[see: Web based config](../api/json-config.md)

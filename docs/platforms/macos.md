@@ -20,21 +20,20 @@ original_id: macos
 
 ## Overview
 
--   support for OSX/macOS
--   Based on Electron
+- support for OSX/macOS
+- Based on Electron
 
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with macos support: 
+Extenstions are defined via engines. Engines with macos support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 #### Requirements
 
--   n/a
-
+- n/a
 
 #### Run
 
@@ -67,4 +66,4 @@ rnv export -p macos -s release
 
 ## App Config
 
-[see: Web based config](../api/config.md)
+[see: Web based config](../api/json-config.md)

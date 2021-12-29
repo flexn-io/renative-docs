@@ -20,19 +20,19 @@ original_id: chromecast
 
 ## Overview
 
--   Supports Chromecast devices
+- Supports Chromecast devices
 
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with chromecast support: 
+Extenstions are defined via engines. Engines with chromecast support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 ## Requirements
 
--   no extra requirements required
+- no extra requirements required
 
 ## Project Configuration
 
@@ -86,8 +86,8 @@ rnv run -p chromecast --port 9999
 
 ## Modifying index.html
 
-In order for you to do that you'll need to run the project first, so it generates the files you need first. Then you can copy `platformBuilds/<APP_ID>_chromecast/template.js` to `appConfigs/base/builds/template.js` and modify it. 
+In order for you to do that you'll need to run the project first, so it generates the files you need first. Then you can copy `platformBuilds/<APP_ID>_chromecast/template.js` to `appConfigs/base/builds/template.js` and modify it.
 
 ## App Config
 
-[see: Web based config](../api/config.md)
+[see: Web based config](../api/json-config.md)

@@ -22,21 +22,20 @@ original_id: windows
 
 ## Overview
 
--   support for Windows 10+
--   Based on Electron
+- support for Windows 10+
+- Based on Electron
 
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with windows support: 
+Extenstions are defined via engines. Engines with windows support:
 
 <!--EXTENSION_SUPPORT_END-->
 
 ## Requirements
 
--   Windows dev environment
-
+- Windows dev environment
 
 ## Run
 
@@ -54,4 +53,4 @@ rnv run -p windows --hosted
 
 ## App Config
 
-[see: Web based config](../api/config.md)
+[see: Web based config](../api/json-config.md)
