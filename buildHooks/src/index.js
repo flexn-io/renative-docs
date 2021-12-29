@@ -1,5 +1,4 @@
 import { generatePlugins } from './generatePlugins';
-import { updateVersions } from './updateVersions';
 import { updateMdFilesPlatforms } from './updateMdFilesPlatforms';
 import { updateMdFilesEngines } from './updateMdFilesEngines';
 import { generateChangelog, generateCombinedChangelog } from './changelog';
@@ -19,7 +18,6 @@ const hooks = {
         await generateCombinedChangelog(c);
     },
     prePublish: async (c) => {
-        await updateVersions(c);
         await generatePlugins(c);
         await updateMdFilesPlatforms(c);
         await updateMdFilesEngines(c);

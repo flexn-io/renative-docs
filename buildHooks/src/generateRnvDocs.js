@@ -23,7 +23,7 @@ sidebar_label: ${title}
 
     output += `${result}\n`;
 
-    fs.writeFileSync(path.join(c.paths.project.dir, '../../docs/api/rnv.md'), output);
+    fs.writeFileSync(path.join(c.paths.project.dir, 'docs/api/rnv.md'), output);
 };
 
 

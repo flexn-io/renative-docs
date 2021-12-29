@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs';
 import simpleGit from 'simple-git';
 
-const { version, currentRelease } = require('../../../../package.json');
+const { version, currentRelease } = require('../../package.json');
 
 const git = simpleGit();
 
@@ -41,7 +41,7 @@ ${logs}
 
   `;
                 // console.log(changelog.replace(/\*\*/g, '*'));
-                const changelogPath = path.join(c.paths.project.dir, '../../docs/changelog', `${version}.md`);
+                const changelogPath = path.join(c.paths.project.dir, 'docs/changelog', `${version}.md`);
                 if (!fs.existsSync(changelogPath)) {
                     fs.writeFileSync(
                         changelogPath,
@@ -77,8 +77,8 @@ const getVersionNumber = (vrs) => {
 };
 
 export const generateCombinedChangelog = async (c) => {
-    const chlogDirPath = path.join(c.paths.project.dir, '../../docs/changelog');
-    const chlogCombinedPath = path.join(c.paths.project.dir, '../../docs/changelog.md');
+    const chlogDirPath = path.join(c.paths.project.dir, 'docs/changelog');
+    const chlogCombinedPath = path.join(c.paths.project.dir, 'docs/changelog.md');
 
     let output = `---
 id: changelog

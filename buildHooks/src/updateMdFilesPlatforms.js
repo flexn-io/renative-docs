@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 export const updateMdFilesPlatforms = async (c) => {
-    const docsPath = path.join(c.paths.project.dir, '../../docs/platforms');
+    const docsPath = path.join(c.paths.project.dir, 'docs/platforms');
 
     fs.readdirSync(docsPath).forEach((dir) => {
         const docFilePath = path.join(docsPath, dir);

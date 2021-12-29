@@ -53,7 +53,7 @@ rnv plugin add ${key}
     });
 
     FileUtils.writeFileSync(
-        path.join(c.paths.project.dir, '../../docs/plugins/overview.md'),
+        path.join(c.paths.project.dir, 'docs/plugins/overview.md'),
         out
     );
 };

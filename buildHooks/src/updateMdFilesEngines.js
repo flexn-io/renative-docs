@@ -15,7 +15,7 @@ export const updateMdFilesEngines = async (c) => {
 };
 
 const _generateEngineDoc = (c, engine) => {
-    const docsPath = path.join(c.paths.project.dir, '../../docs/engines');
+    const docsPath = path.join(c.paths.project.dir, 'docs/engines');
     const docFilePath = path.join(docsPath, `${engine.config.id}.md`);
     const fileContent = fs.readFileSync(docFilePath).toString();
 

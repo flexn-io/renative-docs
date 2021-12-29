@@ -127,7 +127,7 @@ ${_parseSubProps(c, prop, 1, k1, {})}
     });
 
 
-    fs.writeFileSync(path.join(c.paths.project.dir, '../../docs/api-config.md'), output);
+    fs.writeFileSync(path.join(c.paths.project.dir, 'docs/api-config.md'), output);
 };
 
 
@@ -155,5 +155,5 @@ ${_parseSubProps(c, prop, 1, k1, { hidePath: true })}
     });
 
 
-    fs.writeFileSync(path.join(c.paths.project.dir, '../../docs/api/rnv-config.md'), output);
+    fs.writeFileSync(path.join(c.paths.project.dir, 'docs/api/rnv-config.md'), output);
 };
