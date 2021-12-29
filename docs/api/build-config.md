@@ -1,14 +1,13 @@
 ---
-id: api-rnv-config
+id: build-config
 title: rnv Build Config Object Reference
-sidebar_label: Build config object
+sidebar_label: build config object
 ---
 
-List of available config props injected into [Build Hooks](../guides/guides-build-hooks.md) via method parameter
+List of available config props injected into [Build Hooks](guides/build_hooks) via method parameter
 
 
 ## _currentTask
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -28,7 +27,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## appConfig
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `appConfig` | `object` |  | `` |
@@ -46,7 +44,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## buildConfig
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -66,7 +63,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## buildHooks
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `buildHooks` | `object` |  | `` |
@@ -84,7 +80,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## buildPipes
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -104,7 +99,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## cli
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `cli` | `object` |  | `` |
@@ -122,7 +116,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## command
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -142,7 +135,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## configPropsInjects
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `configPropsInjects` | `array` |  | `` |
@@ -160,7 +152,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## defaultWorkspace
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -180,7 +171,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## files
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `files` | `object` |  | `` |
@@ -195,7 +185,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### files.appConfig
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -213,7 +202,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### files.buildHooks
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `buildHooks` | `object` |  | `` |
@@ -229,7 +217,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### files.defaultWorkspace
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -247,7 +234,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### files.home
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `home` | `object` |  | `` |
@@ -263,7 +249,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### files.project
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -281,7 +266,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### files.rnv
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `rnv` | `object` |  | `` |
@@ -298,7 +282,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### files.template
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `template` | `object` |  | `` |
@@ -314,7 +297,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### files.workspace
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -335,7 +317,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## home
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `home` | `object` |  | `` |
@@ -353,7 +334,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## isBuildHookReady
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -373,7 +353,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## isBuildHooksReady
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `isBuildHooksReady` | `boolean` |  | `` |
@@ -392,7 +371,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## paths
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `paths` | `object` |  | `` |
@@ -407,7 +385,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### paths.GLOBAL_RNV_CONFIG
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -425,7 +402,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### paths.GLOBAL_RNV_DIR
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `GLOBAL_RNV_DIR` | `string` |  | `` |
@@ -441,7 +417,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### paths.appConfig
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -459,7 +434,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### paths.buildHooks
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `buildHooks` | `object` |  | `` |
@@ -475,7 +449,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### paths.defaultWorkspace
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -493,7 +466,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### paths.home
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `home` | `object` |  | `` |
@@ -509,7 +481,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### paths.project
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -527,7 +498,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### paths.rnv
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `rnv` | `object` |  | `` |
@@ -544,7 +514,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### paths.template
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `template` | `object` |  | `` |
@@ -560,7 +529,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### paths.workspace
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -581,7 +549,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## platform
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `platform` | `object` |  | `` |
@@ -599,7 +566,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## platformDefaults
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -619,7 +585,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## process
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `process` | `object` |  | `` |
@@ -637,7 +602,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## program
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -657,7 +621,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## project
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `project` | `object` |  | `` |
@@ -675,7 +638,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## rnv
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -695,7 +657,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## rnvVersion
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `rnvVersion` | `string` |  | `` |
@@ -714,7 +675,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## runtime
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `runtime` | `object` |  | `` |
@@ -729,7 +689,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### runtime.appId
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -747,7 +706,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### runtime.bundleAssets
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `bundleAssets` | `boolean` |  | `` |
@@ -763,7 +721,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### runtime.engine
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -781,7 +738,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### runtime.enginesById
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `enginesById` | `object` |  | `` |
@@ -797,7 +753,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### runtime.enginesByPlatform
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -815,7 +770,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### runtime.forceBundleAssets
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `forceBundleAssets` | `boolean` |  | `` |
@@ -831,7 +785,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### runtime.hosted
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -849,7 +802,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### runtime.isWrapper
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `isWrapper` | `boolean` |  | `` |
@@ -865,7 +817,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### runtime.localhost
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -883,7 +834,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### runtime.missingEnginePlugins
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `missingEnginePlugins` | `object` |  | `` |
@@ -899,7 +849,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### runtime.port
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -917,7 +866,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### runtime.scheme
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `scheme` | `string` |  | `` |
@@ -933,7 +881,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### runtime.supportedPlatforms
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -951,7 +898,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### runtime.target
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `target` | `string` |  | `` |
@@ -968,7 +914,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ### runtime.task
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `task` | `string` |  | `` |
@@ -984,7 +929,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ### runtime.timestamp
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -1005,7 +949,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## runtimePropsInjects
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `runtimePropsInjects` | `array` |  | `` |
@@ -1023,7 +966,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## subCommand
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -1043,7 +985,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## systemPropsInjects
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `systemPropsInjects` | `array` |  | `` |
@@ -1061,7 +1002,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## template
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
@@ -1081,7 +1021,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 ## timeStart
 
-
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `timeStart` | `object` |  | `` |
@@ -1099,7 +1038,6 @@ List of available config props injected into [Build Hooks](../guides/guides-buil
 
 
 ## workspace
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |

@@ -36,14 +36,14 @@ ${exStr}
 `;
     }
     const defaultProp = prop.default ? `\`${prop.default}\`` : '';
+    const description = prop.description?.replace?.(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') || ''
     return `${level < 2 ? '\n' : ''}${header} ${level < 1 ? key : keyPath}
-
 
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | \`${key}\` | \`${prop.type}\` | ${defaultProp} | \`${hidePath ? '' : keyPath}\` |
 
-${prop.description || ''}
+${description || ''}
 
 ${examplesStr}
 
@@ -88,9 +88,9 @@ ${_parseSubProps(c, properties[k], level + 1, key, conf)}
     return out;
 };
 
-export const generateApiConfigDocs = async (c) => {
+export const generateDocsApiJsonConfig = async (c) => {
     let output = `---
-id: api-config
+id: json-config
 title: renative.json API Reference
 sidebar_label: renative.json
 ---
@@ -126,19 +126,18 @@ ${_parseSubProps(c, prop, 1, k1, {})}
 `;
     });
 
-
-    fs.writeFileSync(path.join(c.paths.project.dir, 'docs/api-config.md'), output);
+    fs.writeFileSync(path.join(c.paths.project.dir, 'docs/api/json-config.md'), output);
 };
 
 
-export const generateRuntimeObjectDocs = async (c) => {
+export const generateDocsApiBuildConfig = async (c) => {
     let output = `---
-id: api-rnv-config
+id: build-config
 title: rnv Build Config Object Reference
 sidebar_label: build config object
 ---
 
-List of available config props injected into [Build Hooks](guide-build-hooks.md) via method parameter
+List of available config props injected into [Build Hooks](guides/build_hooks) via method parameter
 
 `;
 
@@ -155,5 +154,5 @@ ${_parseSubProps(c, prop, 1, k1, { hidePath: true })}
     });
 
 
-    fs.writeFileSync(path.join(c.paths.project.dir, 'docs/api/rnv-config.md'), output);
+    fs.writeFileSync(path.join(c.paths.project.dir, 'docs/api/build-config.md'), output);
 };
