@@ -30,7 +30,7 @@ export default function Footer() {
           <LogoLogo className="footer-logo" />
         </div>
         <div className="copyright">
-          Copyright © {new Date().getFullYear()} ReNative Org All rights reserved.
+          © {new Date().getFullYear()} ReNative Org
         </div>
       </div>
       <div className="footer-container">

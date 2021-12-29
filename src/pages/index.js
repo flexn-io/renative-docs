@@ -36,7 +36,7 @@ function HomepageHeader() {
                     </Link>
                 </div>
                 <p className={styles.h2}>
-                    ReNative allows you to bootstrap, develop and deploy apps for mobile, web, TVs, desktops, consoles, wearables and more via single development environment.
+                    ReNative allows you to bootstrap, develop and deploy apps for mobile, web, TVs, desktops, consoles, wearables and more via a single development environment.
 
                 </p>
             </div>
