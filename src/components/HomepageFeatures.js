@@ -136,11 +136,43 @@ function Feature({ Svg, title, description, float, imageWidth = 400 }) {
   );
 }
 
+const YoutubeVideo = ({ youtubeId, title }) => (
+    <div
+        className="wrapper"
+        style={{
+            margin: 'auto',
+            marginBottom: 50
+        }}
+    >
+        <div
+            style={{
+                position: 'relative',
+                paddingBottom: '56.25%' /* 16:9 */,
+                height: 0
+            }}
+        >
+            <iframe
+                title={title || 'video'}
+                style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%'
+                }}
+                src={`https://www.youtube.com/embed/${youtubeId}`}
+                frameBorder="0"
+            />
+        </div>
+    </div>
+);
+
 export default function HomepageFeatures() {
   const { isDarkTheme } = useThemeContext();
   return (
     <section className={styles.features}>
       <div className="container">
+      <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
         {FeatureList.map((props, idx) => {
           const img = isDarkTheme ? props.svgDark : props.svg;
           return <Feature key={idx} {...props} Svg={img} />
