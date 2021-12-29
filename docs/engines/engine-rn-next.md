@@ -16,7 +16,18 @@ React native based engine with web transpiler provided by react-native-web and r
 
 ## Supported Platforms
 
-[web](../platforms/web.md), [chromecast](../platforms/chromecast.md)
+[web](platforms/web.md), [chromecast](platforms/chromecast.md)
+
+## Required Plugins
+
+[react](../plugins#react), [react-art](../plugins#react-art), [react-dom](../plugins#react-dom), [react-native](../plugins#react-native), [react-native-web](../plugins#react-native-web), [next](../plugins#next)
+
+## Required NPM Packages
+
+
+
+
+
 
 
 ## Extensions

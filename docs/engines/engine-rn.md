@@ -16,7 +16,26 @@ Default react-native based engine. Runs standard react native apps with native s
 
 ## Supported Platforms
 
-[ios](../platforms/ios.md), [android](../platforms/android.md), [androidtv](../platforms/androidtv.md), [firetv](../platforms/firetv.md), [androidwear](../platforms/androidwear.md), [tvos](../platforms/tvos.md)
+[ios](platforms/ios.md), [android](platforms/android.md), [androidtv](platforms/androidtv.md), [firetv](platforms/firetv.md), [androidwear](platforms/androidwear.md), [macos](platforms/macos.md)
+
+## Required Plugins
+
+[react](../plugins#react), [react-art](../plugins#react-art), [react-dom](../plugins#react-dom), [react-native](../plugins#react-native), [@react-native-community/cli-platform-ios](../plugins#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins#react-native-communitycli)
+
+## Required NPM Packages
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Extensions
@@ -210,53 +229,69 @@ Default react-native based engine. Runs standard react native apps with native s
 | `firetv.tv.tsx` | 10 |
 | `firetv.tv.rn.ts` | 11 |
 | `firetv.tv.ts` | 12 |
-| `tv.rn.jsx` | 13 |
-| `tv.jsx` | 14 |
-| `tv.rn.js` | 15 |
-| `tv.js` | 16 |
-| `tv.rn.tsx` | 17 |
-| `tv.tsx` | 18 |
-| `tv.rn.ts` | 19 |
-| `tv.ts` | 20 |
-| `firetv.rn.jsx` | 21 |
-| `firetv.jsx` | 22 |
-| `firetv.rn.js` | 23 |
-| `firetv.js` | 24 |
-| `firetv.rn.tsx` | 25 |
-| `firetv.tsx` | 26 |
-| `firetv.rn.ts` | 27 |
-| `firetv.ts` | 28 |
-| `android.rn.jsx` | 29 |
-| `android.jsx` | 30 |
-| `android.rn.js` | 31 |
-| `android.js` | 32 |
-| `android.rn.tsx` | 33 |
-| `android.tsx` | 34 |
-| `android.rn.ts` | 35 |
-| `android.ts` | 36 |
-| `tv.native.rn.jsx` | 37 |
-| `tv.native.jsx` | 38 |
-| `tv.native.rn.js` | 39 |
-| `tv.native.js` | 40 |
-| `tv.native.rn.tsx` | 41 |
-| `tv.native.tsx` | 42 |
-| `tv.native.rn.ts` | 43 |
-| `tv.native.ts` | 44 |
-| `native.rn.jsx` | 45 |
-| `native.jsx` | 46 |
-| `native.rn.js` | 47 |
-| `native.js` | 48 |
-| `native.rn.tsx` | 49 |
-| `native.tsx` | 50 |
-| `native.rn.ts` | 51 |
-| `native.ts` | 52 |
-| `jsx` | 53 |
-| `js` | 54 |
-| `tsx` | 55 |
-| `ts` | 56 |
-| `mjs` | 57 |
-| `json` | 58 |
-| `wasm` | 59 |
+| `androidtv.tv.rn.jsx` | 13 |
+| `androidtv.tv.jsx` | 14 |
+| `androidtv.tv.rn.js` | 15 |
+| `androidtv.tv.js` | 16 |
+| `androidtv.tv.rn.tsx` | 17 |
+| `androidtv.tv.tsx` | 18 |
+| `androidtv.tv.rn.ts` | 19 |
+| `androidtv.tv.ts` | 20 |
+| `tv.rn.jsx` | 21 |
+| `tv.jsx` | 22 |
+| `tv.rn.js` | 23 |
+| `tv.js` | 24 |
+| `tv.rn.tsx` | 25 |
+| `tv.tsx` | 26 |
+| `tv.rn.ts` | 27 |
+| `tv.ts` | 28 |
+| `firetv.rn.jsx` | 29 |
+| `firetv.jsx` | 30 |
+| `firetv.rn.js` | 31 |
+| `firetv.js` | 32 |
+| `firetv.rn.tsx` | 33 |
+| `firetv.tsx` | 34 |
+| `firetv.rn.ts` | 35 |
+| `firetv.ts` | 36 |
+| `androidtv.rn.jsx` | 37 |
+| `androidtv.jsx` | 38 |
+| `androidtv.rn.js` | 39 |
+| `androidtv.js` | 40 |
+| `androidtv.rn.tsx` | 41 |
+| `androidtv.tsx` | 42 |
+| `androidtv.rn.ts` | 43 |
+| `androidtv.ts` | 44 |
+| `android.rn.jsx` | 45 |
+| `android.jsx` | 46 |
+| `android.rn.js` | 47 |
+| `android.js` | 48 |
+| `android.rn.tsx` | 49 |
+| `android.tsx` | 50 |
+| `android.rn.ts` | 51 |
+| `android.ts` | 52 |
+| `tv.native.rn.jsx` | 53 |
+| `tv.native.jsx` | 54 |
+| `tv.native.rn.js` | 55 |
+| `tv.native.js` | 56 |
+| `tv.native.rn.tsx` | 57 |
+| `tv.native.tsx` | 58 |
+| `tv.native.rn.ts` | 59 |
+| `tv.native.ts` | 60 |
+| `native.rn.jsx` | 61 |
+| `native.jsx` | 62 |
+| `native.rn.js` | 63 |
+| `native.js` | 64 |
+| `native.rn.tsx` | 65 |
+| `native.tsx` | 66 |
+| `native.rn.ts` | 67 |
+| `native.ts` | 68 |
+| `jsx` | 69 |
+| `js` | 70 |
+| `tsx` | 71 |
+| `ts` | 72 |
+| `mjs` | 73 |
+| `json` | 74 |
+| `wasm` | 75 |
 ### androidwear
 
 | Extension | Priority  |
@@ -320,7 +355,7 @@ Default react-native based engine. Runs standard react native apps with native s
 | `mjs` | 57 |
 | `json` | 58 |
 | `wasm` | 59 |
-### tvos
+### macos
 
 | Extension | Priority  |
       | --------- | :-------: |
@@ -328,30 +363,30 @@ Default react-native based engine. Runs standard react native apps with native s
 | `engine-rn.js` | 2 |
 | `engine-rn.tsx` | 3 |
 | `engine-rn.ts` | 4 |
-| `tvos.tv.rn.jsx` | 5 |
-| `tvos.tv.jsx` | 6 |
-| `tvos.tv.rn.js` | 7 |
-| `tvos.tv.js` | 8 |
-| `tvos.tv.rn.tsx` | 9 |
-| `tvos.tv.tsx` | 10 |
-| `tvos.tv.rn.ts` | 11 |
-| `tvos.tv.ts` | 12 |
-| `tv.rn.jsx` | 13 |
-| `tv.jsx` | 14 |
-| `tv.rn.js` | 15 |
-| `tv.js` | 16 |
-| `tv.rn.tsx` | 17 |
-| `tv.tsx` | 18 |
-| `tv.rn.ts` | 19 |
-| `tv.ts` | 20 |
-| `tvos.rn.jsx` | 21 |
-| `tvos.jsx` | 22 |
-| `tvos.rn.js` | 23 |
-| `tvos.js` | 24 |
-| `tvos.rn.tsx` | 25 |
-| `tvos.tsx` | 26 |
-| `tvos.rn.ts` | 27 |
-| `tvos.ts` | 28 |
+| `macos.desktop.rn.jsx` | 5 |
+| `macos.desktop.jsx` | 6 |
+| `macos.desktop.rn.js` | 7 |
+| `macos.desktop.js` | 8 |
+| `macos.desktop.rn.tsx` | 9 |
+| `macos.desktop.tsx` | 10 |
+| `macos.desktop.rn.ts` | 11 |
+| `macos.desktop.ts` | 12 |
+| `desktop.rn.jsx` | 13 |
+| `desktop.jsx` | 14 |
+| `desktop.rn.js` | 15 |
+| `desktop.js` | 16 |
+| `desktop.rn.tsx` | 17 |
+| `desktop.tsx` | 18 |
+| `desktop.rn.ts` | 19 |
+| `desktop.ts` | 20 |
+| `macos.rn.jsx` | 21 |
+| `macos.jsx` | 22 |
+| `macos.rn.js` | 23 |
+| `macos.js` | 24 |
+| `macos.rn.tsx` | 25 |
+| `macos.tsx` | 26 |
+| `macos.rn.ts` | 27 |
+| `macos.ts` | 28 |
 | `ios.rn.jsx` | 29 |
 | `ios.jsx` | 30 |
 | `ios.rn.js` | 31 |
@@ -360,14 +395,14 @@ Default react-native based engine. Runs standard react native apps with native s
 | `ios.tsx` | 34 |
 | `ios.rn.ts` | 35 |
 | `ios.ts` | 36 |
-| `tv.native.rn.jsx` | 37 |
-| `tv.native.jsx` | 38 |
-| `tv.native.rn.js` | 39 |
-| `tv.native.js` | 40 |
-| `tv.native.rn.tsx` | 41 |
-| `tv.native.tsx` | 42 |
-| `tv.native.rn.ts` | 43 |
-| `tv.native.ts` | 44 |
+| `desktop.native.rn.jsx` | 37 |
+| `desktop.native.jsx` | 38 |
+| `desktop.native.rn.js` | 39 |
+| `desktop.native.js` | 40 |
+| `desktop.native.rn.tsx` | 41 |
+| `desktop.native.tsx` | 42 |
+| `desktop.native.rn.ts` | 43 |
+| `desktop.native.ts` | 44 |
 | `native.rn.jsx` | 45 |
 | `native.jsx` | 46 |
 | `native.rn.js` | 47 |

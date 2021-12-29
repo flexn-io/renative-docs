@@ -16,7 +16,11 @@ React native based engine with web transpiler provided by react-native-web
 
 ## Supported Platforms
 
-[web](../platforms/web.md), [chromecast](../platforms/chromecast.md), [tizen](../platforms/tizen.md), [tizenmobile](../platforms/tizenmobile.md), [tizenwatch](../platforms/tizenwatch.md), [webos](../platforms/webos.md), [firefoxos](../platforms/firefoxos.md), [firefoxtv](../platforms/firefoxtv.md), [kaios](../platforms/kaios.md)
+[web](platforms/web.md), [chromecast](platforms/chromecast.md), [tizen](platforms/tizen.md), [webtv](platforms/webtv.md), [tizenmobile](platforms/tizenmobile.md), [tizenwatch](platforms/tizenwatch.md), [webos](platforms/webos.md), [firefoxos](platforms/firefoxos.md), [firefoxtv](platforms/firefoxtv.md), [kaios](platforms/kaios.md)
+
+## Required Plugins
+
+[react](../plugins#react), [react-art](../plugins#react-art), [react-dom](../plugins#react-dom), [react-native](../plugins#react-native), [react-native-web](../plugins#react-native-web), [@react-native-community/cli-platform-ios](../plugins#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins#react-native-communitycli)
 
 ## Required NPM Packages
 

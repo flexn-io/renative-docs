@@ -88,21 +88,21 @@ console.log('Writing Engine:', docFilePath);
 const _getExtensionContent = (c, platform, engine) => {
     let out = '';
     let p = {};
-    if (engine && engine.platforms && engine.platforms[platform]) {
+    if (engine?.platforms?.[platform]) {
         p = engine.platforms[platform];
     }
+
     out += `### ${platform}\n\n`;
-    let extenstions = [];
-    if (p.extenstions) { extenstions = p.extensions; }
-    if (extenstions) {
+    let extensions = [];
+    if (p.extensions) { extensions = p.extensions; }
+    if (extensions) {
         out += `| Extension | Priority  |
       | --------- | :-------: |\n`;
         let i = 1;
-        extenstions.forEach((v) => {
+        extensions.forEach((v) => {
             out += `| \`${v}\` | ${i} |\n`;
             i++;
         });
     }
-
     return out;
 };
