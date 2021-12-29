@@ -35,9 +35,9 @@ export default function Footer() {
       </div>
       <div className="footer-container">
         <div className="container-title">Docs</div>
-        <a href="" className="footer-link">Getting started</a>
-        <a href="" className="footer-link">Platforms</a>
-        <a href="" className="footer-link">Guides</a>
+        <a href="/docs/overview/introduction" className="footer-link">Getting started</a>
+        <a href="/docs/platforms/overview" className="footer-link">Platforms</a>
+        <a href="/docs/guides/cli" className="footer-link">Guides</a>
       </div>
       <div className="footer-container">
         <div className="container-title">Community</div>

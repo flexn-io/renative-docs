@@ -67,7 +67,12 @@ const config = {
                     },
                     {
                         href: 'https://github.com/renative-org/renative',
-                        label: 'GitHub',
+                        label: 'Github',
+                        position: 'right',
+                    },
+                    {
+                        href: 'https://twitter.com/renative',
+                        label: 'Twitter',
                         position: 'right',
                     },
                 ],
