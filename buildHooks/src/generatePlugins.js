@@ -52,6 +52,8 @@ rnv plugin add ${key}
 `;
     });
 
+    out = out.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') || ''
+
     FileUtils.writeFileSync(
         path.join(c.paths.project.dir, 'docs/plugins/overview.md'),
         out
