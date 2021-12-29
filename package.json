@@ -27,6 +27,16 @@
     "url-loader": "^4.1.1",
     "rnv": "0.33.0"
   },
+  "devDependencies": {
+    "@rnv/engine-lightning": "0.34.0-alpha.5",
+    "@rnv/engine-rn": "0.34.0-alpha.5",
+    "@rnv/engine-rn-electron": "0.34.0-alpha.5",
+    "@rnv/engine-rn-macos": "0.34.0-alpha.5",
+    "@rnv/engine-rn-next": "0.34.0-alpha.5",
+    "@rnv/engine-rn-tvos": "0.34.0-alpha.5",
+    "@rnv/engine-rn-web": "0.34.0-alpha.5",
+    "@rnv/engine-rn-windows": "0.34.0-alpha.5"
+  },
   "browserslist": {
     "production": [
       ">0.5%",

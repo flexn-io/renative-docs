@@ -30,6 +30,7 @@ const hooks = {
     },
     generateChangelog,
     generateCombinedChangelog,
+    updateMdFilesEngines,
     generateEngineTaks,
     gitCommit,
     gitTag,

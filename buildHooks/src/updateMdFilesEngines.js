@@ -76,6 +76,8 @@ ${extensions}
 ${extContent}
 <!--AUTO_GENERATED_END-->`);
 
+console.log('Writing Engine:', docFilePath);
+
     FileUtils.writeFileSync(
         docFilePath,
         fixedFile

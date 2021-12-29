@@ -1,0 +1,46 @@
+{
+    "projectName": "renative-docs",
+    "isTemplate": true,
+    "engines": {
+        "@rnv/engine-lightning": "source:rnv",
+        "@rnv/engine-rn": "source:rnv",
+        "@rnv/engine-rn-electron": "source:rnv",
+        "@rnv/engine-rn-macos": "source:rnv",
+        "@rnv/engine-rn-next": "source:rnv",
+        "@rnv/engine-rn-tvos": "source:rnv",
+        "@rnv/engine-rn-web": "source:rnv",
+        "@rnv/engine-rn-windows": "source:rnv"
+    },
+    "platforms": {
+        "web": {
+            "engine": "engine-rn-next"
+        },
+        "tvos": {
+            "engine": "engine-rn-tvos"
+        },
+        "macos": {
+            "engine": "engine-rn"
+        },
+        "windows": {
+            "engine": "engine-rn-electron"
+        },
+        "xbox": {
+            "engine": "engine-rn-windows"
+        },
+        "android": {
+
+        },
+        "androidtv": {
+            "engine": "engine-rn-tvos"
+        },
+        "firetv": {
+            "engine": "engine-rn-tvos",
+            "includedPermissions": [
+                "INTERNET"
+            ]
+        },
+        "androidwear": {
+
+        }
+    }
+}

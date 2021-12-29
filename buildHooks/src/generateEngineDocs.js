@@ -67,5 +67,5 @@ ${t.params.map((v) => {
 
     output += 'test';
 
-    fs.writeFileSync(path.join(c.paths.project.dir, `../../docs/api/cli-${id}.md`), output);
+    fs.writeFileSync(path.join(c.paths.project.dir, `/docs/api/${id}.md`), output);
 };
