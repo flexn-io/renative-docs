@@ -58,7 +58,7 @@ ${Object.keys(enginePlatforms).map(v => `[${v}](platforms/${v}.md)`).join(', ')}
 
 ## Required Plugins
 
-${Object.keys(extraPlgns).map(v => `[${v}](../plugins#${cleanUrl(v)})`).join(', ')}
+${Object.keys(extraPlgns).map(v => `[${v}](../plugins/overview#${cleanUrl(v)})`).join(', ')}
 
 ## Required NPM Packages
 
