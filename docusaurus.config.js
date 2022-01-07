@@ -16,6 +16,14 @@ const config = {
     trailingSlash: false,
     organizationName: 'renative-org', // Usually your GitHub org/user name.
     projectName: 'renative-website', // Usually your repo name.
+    plugins: [
+        [
+            '@docusaurus/plugin-google-analytics',
+            {
+                trackingID: 'G-V5GWQ4WYWK'
+            },
+        ],
+    ],
     presets: [
         [
             '@docusaurus/preset-classic',
