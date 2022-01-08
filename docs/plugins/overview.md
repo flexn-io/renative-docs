@@ -1,7 +1,7 @@
 ---
 id: overview
 title: Plugins Overview
-sidebar_label: Plugins Overview
+sidebar_label: Plugins
 ---
 
 ## @lightningjs/cli

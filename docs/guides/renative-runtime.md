@@ -12,29 +12,9 @@ original_id: runtime
 ReNative provides runtime SDK library to support multi-platform development
 
 ```js
-import {
-    Button,
-    Icon,
-    isPlatformTizen,
-    isFactorTv,
-    engine,
-    platform
-} from 'renative';
+import { isPlatformTizen, isFactorTv, engine, platform } from "renative";
 
-<Button
-    style={themeStyles.button}
-    textStyle={themeStyles.buttonText}
-    title="Try Me!"
-    className="focusable"
-    onPress={() => {
-        setBgColor(bgColor === '#666666' ? Theme.color1 : '#666666');
-    }}
-    onEnterPress={() => {
-        setBgColor(bgColor === '#666666' ? Theme.color1 : '#666666');
-    }}
-    onBecameFocused={handleFocus}
-    onArrowPress={handleUp}
-/>;
+<Text>{isFactorTv}</Text>;
 ```
 
 [Full API Reference](../api/renative.md)

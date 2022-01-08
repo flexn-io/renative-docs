@@ -1,20 +1,12 @@
 ---
-id: guide-overview
-title: Overview
-sidebar_label: Overview
+id: advanced-configuration
+title: Advanced Configurations
+sidebar_label: Advanced Configurations
 ---
-
-<img src="https://renative.org/img/ic_configuration.png" width=50 height=50 />
-
 
 Extremely versatile config system allows you to configure most of your project and environment by simple `renative.json` file changes.
 
-
-
-
-
 ## Project Configuration
-
 
 Your main `renative.json` sits at the root of your project.
 
@@ -30,11 +22,9 @@ Configurations typically stored in your project `renative.json` :
 - Crypto configuration
 - workspaceID
 
-
 ## App Configuration
 
 Every app configuration flavour contains its own `renative.*.json` file used to extend overall config with configurations specific to app flavour
-
 
 Configurations typically stored in your project `appConfigs/[APP_ID]/renative.json` :
 
@@ -44,7 +34,6 @@ Configurations typically stored in your project `appConfigs/[APP_ID]/renative.js
 - Build schemes
 - Runtime injections
 
-
 ## Global Configuration
 
 Global `renative.*.json` are located in your workspace folder and workspace project folders.
@@ -53,17 +42,14 @@ default workspace location is `~/.rnv` but that can be configured
 
 Because they are global, they will get merged into every build config regardless of the project. However as they get merged as one of the first files they can be easily overridden.
 
-
 Configurations typically stored in your project `~/./rnv/renative.json` :
 
 - SDK locations
 - default targets
 
-
 ## Workspace Configuration
 
 `renative.workspaces.json` is special type because it serves and 1st entry to your ReNative config ecosystem.
-
 
 Typical workspace config will look like this:
 
@@ -88,13 +74,9 @@ You can then switch to custom workspace per each project `./renative.json`
 }
 ```
 
-
-
 ## Template Configuration
 
 `renative.template.json` is special type because it serves as a template file during creation of new project.
-
-
 
 ## Build Configuration
 
@@ -112,11 +94,9 @@ ie command `rnv run -p android -c helloworld` will genreate build file at:
 
 ## Local Configuration
 
-
 `renative.local.json` is special type because it's never included in git repository.
 
 this allows you to create specific override related to your own local environment without compromising the integrity of your project
-
 
 ## Private Configuration
 
@@ -126,9 +106,7 @@ It's never included in git repository directly.
 
 It typically resides in your workspace directory and gets encrypted by `rnv crypto` as a means of secure sharing between developers
 
-
 this allows you to inject sensitive information (deployment keys, keystores, certificates passwords etc) into your project without compromising its security
-
 
 ## Runtime Configuration
 
@@ -142,41 +120,66 @@ You can decorate your `renative.*.json` with runtime value ie:
 
 ```json
 {
-   "runtime": {
-      "foo": "bar"
-   }
+  "runtime": {
+    "foo": "bar"
+  }
 }
 ```
-
 
 ie command `rnv run -p android -c helloworld` will generate build file at:
 
 `./platformAssets/renative.runtime.json`
 
-
 with followng value:
 
 ```json
 {
-   "foo": "bar"
+  "foo": "bar"
 }
 ```
 
+## Configuration Merges
 
+ReNative always merges all relevant renative configs into one single build config.
 
+Following is the order of merges of various renative configs (if present) producing final `platformAssets/renative.json` config file.
 
-
-
-
-
-
-
-
-
+⬇️
+`[RNV_PATH]/projectTemplates/renative.templates.json`<br />
+⬇️
+`[RNV_PATH]/pluginTemplates/renative.plugins.json`<br />
+⬇️
+`[WORKSPACE_PATH]/renative.json`<br />
+⬇️
+`[WORKSPACE_PATH]/renative.private.json`<br />
+⬇️
+`[WORKSPACE_PATH]/renative.local.json`<br />
+⬇️
+`[WORKSPACE_PATH]/[PROJECT_NAME]/renative.json`<br />
+⬇️
+`[WORKSPACE_PATH]/[PROJECT_NAME]/renative.private.json`<br />
+⬇️
+`[WORKSPACE_PATH]/[PROJECT_NAME]/renative.local.json`<br />
+⬇️
+`[WORKSPACE_PATH]/[PROJECT_NAME]/appConfigs/[APP_ID]/renative.json`<br />
+⬇️
+`[WORKSPACE_PATH]/[PROJECT_NAME]/appConfigs/[APP_ID]/renative.private.json`<br />
+⬇️
+`[WORKSPACE_PATH]/[PROJECT_NAME]/appConfigs/[APP_ID]/renative.local.json`<br />
+⬇️
+`[PROJECT_PATH]/renative.json`<br />
+⬇️
+`[PROJECT_PATH]/renative.private.json`<br />
+⬇️
+`[PROJECT_PATH]/renative.local.json`<br />
+⬇️
+`[PROJECT_PATH]/appConfigs/[APP_ID]/renative.json`<br />
+⬇️
+`[PROJECT_PATH]/appConfigs/[APP_ID]/renative.private.json`<br />
+⬇️
+`[PROJECT_PATH]/appConfigs/[APP_ID]/renative.local.json`<br />
 
 ---
-
-
 
 ## Dynamic Injectors
 
@@ -186,7 +189,6 @@ You can inject varietry of different dynamic props via `renative.*.json` configs
 {{INJECTOR}}
 ```
 
-
 ### configProps
 
 Any property in `renative.*.json` can be injected into build file.
@@ -194,7 +196,7 @@ Any property in `renative.*.json` can be injected into build file.
 ```json
 {
   "common": {
-     "id": "com.example.app"
+    "id": "com.example.app"
   }
 }
 ```
@@ -202,7 +204,7 @@ Any property in `renative.*.json` can be injected into build file.
 Inject example of `myInject.txt`:
 
 ```
-Inject app ID here: {{{{configProps.id}}}}
+Inject app ID here: {{configProps.id}}
 ```
 
 ### runtimeProps
@@ -214,7 +216,7 @@ Example:
 ```json
 {
   "common": {
-     "timestamp": "{{runtimeProps.timestamp}}"
+    "timestamp": "{{runtimeProps.timestamp}}"
   }
 }
 ```
@@ -234,7 +236,6 @@ Currently supported runtime properties:
 - target
 - shouldOpenBrowser
 - port
-
 
 ### props
 
@@ -291,22 +292,20 @@ Instead of overriding complex plugin definition you can simply override props
 
 ```json
 {
-   "plugins": {
-     "react-native-fbsdk": {
-         "props": {
-             "APP_ID": "xxxxxxxxx",
-             "APP_NAME": "xxxxxxxxxxxx"
-         }
+  "plugins": {
+    "react-native-fbsdk": {
+      "props": {
+        "APP_ID": "xxxxxxxxx",
+        "APP_NAME": "xxxxxxxxxxxx"
       }
-   }
+    }
+  }
 }
 ```
 
-
 ### resolvePackage
 
-resolvePackage allows you to dynamically resolve package location within `renative.*.json`` file
-
+resolvePackage allows you to dynamically resolve package location within `renative.*.json` file
 
 ```
 {
@@ -316,6 +315,47 @@ resolvePackage allows you to dynamically resolve package location within `renati
 }
 ```
 
+### files.\*
+
+you can reference values from all standard file references within renative config.
+
+```
+{
+  "runtime": {
+     "myId": "{{files.project.config.common.id}}"
+  }
+}
+```
+
+Supported file references:
+
+```
+files.project.package
+files.project.config
+files.project.configPrivate
+files.project.configLocal
+files.workspace.config
+files.workspace.configPrivate
+files.workspace.configLocal
+files.workspace.project.config
+files.workspace.project.configPrivate
+files.workspace.project.configLocal
+files.appConfig.config
+files.appConfig.configPrivate
+files.appConfig.configLocal
+```
+
+### env
+
+You can inject env variables
+
+```
+{
+  "runtime": {
+     "myEnvVariable": "{{env.MY_ENV_VARIABLE}}"
+  }
+}
+```
 
 ## Config Values Overrides
 
@@ -329,28 +369,28 @@ Example:
 
 ```json
 {
-    "common": {
-        "MY_PROP": "Value1"
-    },
-    "platforms": {
-        "ios": {
-            "MY_PROP": "Value2 overrides Value1",
-            "buildSchemes": {
-                "debug": {
-                    "MY_PROP": "Value3 overrides Value 2"
-                }
-            }
+  "common": {
+    "MY_PROP": "Value1"
+  },
+  "platforms": {
+    "ios": {
+      "MY_PROP": "Value2 overrides Value1",
+      "buildSchemes": {
+        "debug": {
+          "MY_PROP": "Value3 overrides Value 2"
         }
+      }
     }
+  }
 }
 ```
 
 Override Rules for json props:
 
--   `Strings` => Replaced
--   `Numbers` => Replaced
--   `Arrays` => Replaced
--   `Objects` => Merged by top level (not deep merge)
+- `Strings` => Replaced
+- `Numbers` => Replaced
+- `Arrays` => Replaced
+- `Objects` => Merged by top level (not deep merge)
 
 Example:
 https://github.com/pavjacko/renative/blob/develop/packages/renative-template-hello-world/appConfigs/helloworld/renative.json#L4
