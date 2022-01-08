@@ -18,7 +18,7 @@ const config = {
     projectName: 'renative-website', // Usually your repo name.
     plugins: [
         [
-            '@docusaurus/plugin-google-analytics',
+            '@docusaurus/plugin-google-gtag',
             {
                 trackingID: 'G-V5GWQ4WYWK'
             },
