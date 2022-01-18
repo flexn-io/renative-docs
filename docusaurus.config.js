@@ -50,11 +50,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
-        appId: "RDMUFOXXVC",
-        apiKey: "56cceb616493dc70a043d8d4c36c0589",
-        indexName: "renative",
-      },
+      //   algolia: {
+      //     appId: "RDMUFOXXVC",
+      //     apiKey: "56cceb616493dc70a043d8d4c36c0589",
+      //     indexName: "renative",
+      //   },
       navbar: {
         title: "ReNative",
         hideOnScroll: true,
