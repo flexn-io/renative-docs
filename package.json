@@ -29,14 +29,14 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "@rnv/engine-lightning": "0.34.0",
-    "@rnv/engine-rn": "0.34.0",
-    "@rnv/engine-rn-electron": "0.34.0",
-    "@rnv/engine-rn-macos": "0.34.0",
-    "@rnv/engine-rn-next": "0.34.0",
-    "@rnv/engine-rn-tvos": "0.34.0",
-    "@rnv/engine-rn-web": "0.34.0",
-    "@rnv/engine-rn-windows": "0.34.0"
+    "@rnv/engine-lightning": "0.35.0",
+    "@rnv/engine-rn": "0.35.0",
+    "@rnv/engine-rn-electron": "0.35.0",
+    "@rnv/engine-rn-macos": "0.35.0",
+    "@rnv/engine-rn-next": "0.35.0",
+    "@rnv/engine-rn-tvos": "0.35.0",
+    "@rnv/engine-rn-web": "0.35.0",
+    "@rnv/engine-rn-windows": "0.35.0"
   },
   "browserslist": {
     "production": [
