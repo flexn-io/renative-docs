@@ -102,6 +102,12 @@ rnv run -p tizen -t T-samsung-5.0-x86
 rnv run -p tizen -d -t <IP>
 ```
 
+##### Export production .wgt
+
+```
+rnv build -p tizen -s release
+```
+
 _Before you run on a physical device, make sure you have enabled `Dev Mode` and you set your IP correctly, otherwise the connection will fail. For more informations about `Dev Mode` consult https://developer.samsung.com/tv/develop/getting-started/using-sdk/tv-device_
 
 ## App Config
