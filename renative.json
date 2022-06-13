@@ -20,8 +20,7 @@
       "kaios",
       "firefoxos",
       "firefoxtv",
-      "chromecast",
-      "xbox"
+      "chromecast"
     ]
   },
   "engines": {
@@ -31,8 +30,7 @@
     "@rnv/engine-rn-macos": "source:rnv",
     "@rnv/engine-rn-next": "source:rnv",
     "@rnv/engine-rn-tvos": "source:rnv",
-    "@rnv/engine-rn-web": "source:rnv",
-    "@rnv/engine-rn-windows": "source:rnv"
+    "@rnv/engine-rn-web": "source:rnv"
   },
   "platforms": {
     "web": {
@@ -46,9 +44,6 @@
     },
     "windows": {
       "engine": "engine-rn-electron"
-    },
-    "xbox": {
-      "engine": "engine-rn-windows"
     },
     "android": {},
     "androidtv": {

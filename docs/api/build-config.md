@@ -800,22 +800,6 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
-### runtime.isWrapper
-
-| Prop Name | Type | Default Value | Path |
-| :----- | :----- | :---- | :---- |
-| `isWrapper` | `boolean` |  | `` |
-
-
-
-
-
----
-
-
-
-
-
 ### runtime.localhost
 
 | Prop Name | Type | Default Value | Path |

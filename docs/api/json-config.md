@@ -707,7 +707,7 @@ Currently active template used in this project. this allows you to re-bootstrap 
 
 ```json
 {
-  "currentTemplate": "renative-template-hello-world"
+  "currentTemplate": "@rnv/template-starter"
 }
 ```
 
@@ -804,7 +804,8 @@ Allows you to assign custom port per each supported platform specific to this pr
     "kaios": 8193,
     "firefoxos": 8194,
     "firefoxtv": 8114,
-    "webtv": 8195
+    "webtv": 8195,
+    "linux": 8200
   }
 }
 ```
@@ -1118,6 +1119,42 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+## extendsTemplate
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `extendsTemplate` | `string` |  | `extendsTemplate` |
+
+You can extend another renative.json file of currently applied template by providing relative or full package name path
+
+**examples**
+
+
+```json
+{
+  "extendsTemplate": "renative.json"
+}
+```
+
+
+
+```json
+{
+  "extendsTemplate": "@rnv/template-starter/renative.json"
+}
+```
+
+
+
+
+---
+
+
+
+
+
+
+
 ## hidden
 
 | Prop Name | Type | Default Value | Path |
@@ -1213,24 +1250,6 @@ ID of the app in `./appConfigs/[APP_ID]/renative.json`. MUST match APP_ID name o
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `isMonorepo` | `boolean` |  | `isMonorepo` |
-
-
-
-
-
----
-
-
-
-
-
-
-
-## isWrapper
-
-| Prop Name | Type | Default Value | Path |
-| :----- | :----- | :---- | :---- |
-| `isWrapper` | `boolean` |  | `isWrapper` |
 
 
 
@@ -1393,7 +1412,7 @@ To skip file overrides coming from source plugin you need to detach it from the 
 {
   "pluginTemplates": {
     "myCustomScope": {
-      "npm": "some-renative-template-package",
+      "npm": "some-template-package",
       "path": "./pluginTemplates"
     }
   }
@@ -2204,6 +2223,31 @@ Object ysed to extend your renative with custom props. This allows renative json
   "ext": {
     "myCustomRenativeProp": "foo"
   }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.android.extraGradleParams
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `extraGradleParams` | `string` |  | `platforms.android.extraGradleParams` |
+
+Allows passing extra params to gradle command
+
+**examples**
+
+
+```json
+{
+  "extraGradleParams": "assembleAndroidTest -DtestBuildType=debug"
 }
 ```
 
@@ -3641,6 +3685,31 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.androidtv.extraGradleParams
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `extraGradleParams` | `string` |  | `platforms.androidtv.extraGradleParams` |
+
+Allows passing extra params to gradle command
+
+**examples**
+
+
+```json
+{
+  "extraGradleParams": "assembleAndroidTest -DtestBuildType=debug"
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.androidtv.gradle.properties
 
 | Prop Name | Type | Default Value | Path |
@@ -5056,6 +5125,31 @@ Object ysed to extend your renative with custom props. This allows renative json
   "ext": {
     "myCustomRenativeProp": "foo"
   }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.androidwear.extraGradleParams
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `extraGradleParams` | `string` |  | `platforms.androidwear.extraGradleParams` |
+
+Allows passing extra params to gradle command
+
+**examples**
+
+
+```json
+{
+  "extraGradleParams": "assembleAndroidTest -DtestBuildType=debug"
 }
 ```
 
@@ -6609,6 +6703,21 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.chromecast.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.chromecast.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -7334,6 +7443,21 @@ Allows you to directly extend/override webpack config of your current platform
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `metaTags` | `object` |  | `platforms.firefoxos.webpackConfig.metaTags` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.firefoxos.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.firefoxos.webpackConfig.publicUrl` |
 
 
 
@@ -8079,6 +8203,21 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.firefoxtv.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.firefoxtv.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -8687,6 +8826,31 @@ Object ysed to extend your renative with custom props. This allows renative json
   "ext": {
     "myCustomRenativeProp": "foo"
   }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.firetv.extraGradleParams
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `extraGradleParams` | `string` |  | `platforms.firetv.extraGradleParams` |
+
+Allows passing extra params to gradle command
+
+**examples**
+
+
+```json
+{
+  "extraGradleParams": "assembleAndroidTest -DtestBuildType=debug"
 }
 ```
 
@@ -11645,6 +11809,886 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.kaios.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.kaios.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
+
+
+
+### platforms.linux
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `linux` | `object` |  | `platforms.linux` |
+
+
+
+
+
+---
+
+
+
+#### platforms.linux.BrowserWindow
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `BrowserWindow` | `object` |  | `platforms.linux.BrowserWindow` |
+
+Allows you to configure electron wrapper app window
+
+**examples**
+
+
+```json
+{
+  "BrowserWindow": {
+    "width": 1310,
+    "height": 800,
+    "webPreferences": {
+      "devTools": true
+    }
+  }
+}
+```
+
+
+
+
+---
+
+
+
+#### platforms.linux.BrowserWindow.height
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `height` | `integer` |  | `platforms.linux.BrowserWindow.height` |
+
+Default height of electron app
+
+
+
+---
+
+
+
+
+#### platforms.linux.BrowserWindow.webPreferences
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `webPreferences` | `object` |  | `platforms.linux.BrowserWindow.webPreferences` |
+
+Extra web preferences of electron app
+
+**examples**
+
+
+```json
+{
+  "webPreferences": {
+    "devTools": true
+  }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.BrowserWindow.width
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `width` | `integer` |  | `platforms.linux.BrowserWindow.width` |
+
+Default width of electron app
+
+
+
+---
+
+
+
+
+
+#### platforms.linux.author
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `author` | `object,string` |  | `platforms.linux.author` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.backgroundColor
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `backgroundColor` | `string` |  | `platforms.linux.backgroundColor` |
+
+Defines root view backgroundColor for all platforms in HEX format
+
+**examples**
+
+
+```json
+{
+  "backgroundColor": "#FFFFFF"
+}
+```
+
+
+
+```json
+{
+  "backgroundColor": "#222222"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.buildSchemes
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `buildSchemes` | `object` |  | `platforms.linux.buildSchemes` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.bundleAssets
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `bundleAssets` | `boolean` |  | `platforms.linux.bundleAssets` |
+
+If set to `true` compiled js bundle file will generated. this is needed if you want to make production like builds
+
+
+
+---
+
+
+
+
+#### platforms.linux.bundleIsDev
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `bundleIsDev` | `boolean` |  | `platforms.linux.bundleIsDev` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.deploy
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `deploy` | `object` |  | `platforms.linux.deploy` |
+
+
+
+
+
+---
+
+
+
+#### platforms.linux.deploy.type
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `type` | `string` |  | `platforms.linux.deploy.type` |
+
+
+
+
+
+---
+
+
+
+
+
+#### platforms.linux.description
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `description` | `string` |  | `platforms.linux.description` |
+
+General description of your app. This prop will be injected to actual projects where description field is applicable
+
+**examples**
+
+
+```json
+{
+  "description": "This app does awesome things"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.electronConfig
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `electronConfig` | `object` |  | `platforms.linux.electronConfig` |
+
+Allows you to configure electron app as per https://www.electron.build/
+
+**examples**
+
+
+```json
+{
+  "electronConfig": {
+    "mac": {
+      "target": [
+        "dmg",
+        "mas",
+        "mas-dev"
+      ],
+      "hardenedRuntime": true
+    },
+    "dmg": {
+      "sign": false
+    },
+    "mas": {
+      "type": "distribution",
+      "hardenedRuntime": false
+    },
+    "mainInjection": "console.log(\"Hello from main.js!\");"
+  }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.enableSourceMaps
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `enableSourceMaps` | `boolean` |  | `platforms.linux.enableSourceMaps` |
+
+If set to `true` dedicated source map file will be generated alongside of compiled js bundle
+
+
+
+---
+
+
+
+
+#### platforms.linux.engine
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `engine` | `string` |  | `platforms.linux.engine` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.entryFile
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `entryFile` | `string` |  | `platforms.linux.entryFile` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.excludedPlugins
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `excludedPlugins` | `array` |  | `platforms.linux.excludedPlugins` |
+
+Defines an array of all excluded plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: excludedPlugins is evaluated after includedPlugins
+
+**examples**
+
+
+```json
+{
+  "excludedPlugins": [
+    "*"
+  ]
+}
+```
+
+
+
+```json
+{
+  "excludedPlugins": [
+    "react-native-google-cast",
+    "react-navigation-tabs"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.ext
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `ext` | `object` |  | `platforms.linux.ext` |
+
+Object ysed to extend your renative with custom props. This allows renative json schema to be validated
+
+**examples**
+
+
+```json
+{
+  "ext": {
+    "myCustomRenativeProp": "foo"
+  }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.id
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `id` | `string` |  | `platforms.linux.id` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.ignoreLogs
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `ignoreLogs` | `boolean` |  | `platforms.linux.ignoreLogs` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.ignoreWarnings
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `ignoreWarnings` | `boolean` |  | `platforms.linux.ignoreWarnings` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.includedFonts
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `includedFonts` | `array` |  | `platforms.linux.includedFonts` |
+
+Array of fonts you want to include in specific app or scheme. Should use exact font file (without the extension) located in `./appConfigs/base/fonts` or `*` to mark all
+
+**examples**
+
+
+```json
+{
+  "includedFonts": [
+    "*"
+  ]
+}
+```
+
+
+
+```json
+{
+  "includedFonts": [
+    "TimeBurner",
+    "Entypo"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.includedPermissions
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `includedPermissions` | `array` |  | `platforms.linux.includedPermissions` |
+
+Allows you to include specific permissions by their KEY defined in `permissions` object
+
+**examples**
+
+
+```json
+{
+  "includedPermissions": [
+    "*"
+  ]
+}
+```
+
+
+
+```json
+{
+  "includedPermissions": [
+    "INTERNET",
+    "CAMERA",
+    "SYSTEM_ALERT_WINDOW",
+    "RECORD_AUDIO",
+    "RECORD_VIDEO",
+    "READ_EXTERNAL_STORAGE",
+    "WRITE_EXTERNAL_STORAGE",
+    "ACCESS_FINE_LOCATION",
+    "ACCESS_COARSE_LOCATION",
+    "VIBRATE",
+    "ACCESS_NETWORK_STATE",
+    "ACCESS_WIFI_STATE",
+    "RECEIVE_BOOT_COMPLETED",
+    "WRITE_CONTACTS",
+    "READ_CONTACTS"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.includedPlugins
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `includedPlugins` | `array` |  | `platforms.linux.includedPlugins` |
+
+Defines an array of all included plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: includedPlugins is evaluated before excludedPlugins
+
+**examples**
+
+
+```json
+{
+  "includedPlugins": [
+    "*"
+  ]
+}
+```
+
+
+
+```json
+{
+  "includedPlugins": [
+    "react-native-google-cast",
+    "react-navigation-tabs"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.license
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `license` | `string` |  | `platforms.linux.license` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.permissions
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `permissions` | `array` |  | `platforms.linux.permissions` |
+
+&gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.linux.runtime
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `runtime` | `object` |  | `platforms.linux.runtime` |
+
+This object will be automatically injected into `./platfromAssets/renative.runtime.json` making it possible to inject the values directly to JS source code
+
+**examples**
+
+
+```json
+{
+  "runtime": {
+    "someRuntimeProperty": "foo"
+  }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.splashScreen
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `splashScreen` | `boolean` |  | `platforms.linux.splashScreen` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.timestampAssets
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `timestampAssets` | `boolean` |  | `platforms.linux.timestampAssets` |
+
+If set to `true` generated js (bundle.js) files will be timestamped and named (bundle-12345678.js) every new build. This is useful if you want to enforce invalidate cache agains standard CDN cache policies every new build you deploy
+
+**examples**
+
+
+```json
+{
+  "timestampAssets": "true"
+}
+```
+
+
+
+```json
+{
+  "timestampAssets": "false"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.title
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `title` | `string` |  | `platforms.linux.title` |
+
+Title of your app will be used to create title of the binary. ie App title of installed app iOS/Android app or Tab title of the website
+
+**examples**
+
+
+```json
+{
+  "title": "Awesome App"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.versionedAssets
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `versionedAssets` | `boolean` |  | `platforms.linux.versionedAssets` |
+
+If set to `true` generated js (bundle.js) files will be timestamped and named (bundle-1.0.0.js) every new version. This is useful if you want to enforce invalidate cache agains standard CDN cache policies every new version you deploy
+
+**examples**
+
+
+```json
+{
+  "versionedAssets": "true"
+}
+```
+
+
+
+```json
+{
+  "versionedAssets": "false"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.webpackConfig
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `webpackConfig` | `object` |  | `platforms.linux.webpackConfig` |
+
+
+
+
+
+---
+
+
+
+#### platforms.linux.webpackConfig.customScripts
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `customScripts` | `array` |  | `platforms.linux.webpackConfig.customScripts` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.webpackConfig.devServerHost
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `devServerHost` | `string` |  | `platforms.linux.webpackConfig.devServerHost` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.webpackConfig.extend
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `extend` | `object` |  | `platforms.linux.webpackConfig.extend` |
+
+Allows you to directly extend/override webpack config of your current platform
+
+**examples**
+
+
+```json
+{
+  "extend": {
+    "devtool": "source-map"
+  }
+}
+```
+
+
+
+```json
+{
+  "extend": {
+    "module": {
+      "rules": [
+        {
+          "test": {},
+          "use": [
+            "source-map-loader"
+          ],
+          "enforce": "pre"
+        }
+      ]
+    }
+  }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.webpackConfig.metaTags
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `metaTags` | `object` |  | `platforms.linux.webpackConfig.metaTags` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.linux.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -11941,7 +12985,8 @@ Allows you to configure electron app as per https://www.electron.build/
     "mas": {
       "type": "distribution",
       "hardenedRuntime": false
-    }
+    },
+    "mainInjection": "console.log(\"Hello from main.js!\");"
   }
 }
 ```
@@ -12514,6 +13559,21 @@ Allows you to directly extend/override webpack config of your current platform
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `metaTags` | `object` |  | `platforms.macos.webpackConfig.metaTags` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.macos.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.macos.webpackConfig.publicUrl` |
 
 
 
@@ -13304,6 +14364,21 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.tizen.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.tizen.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -14084,6 +15159,21 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.tizenmobile.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.tizenmobile.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -14854,6 +15944,21 @@ Allows you to directly extend/override webpack config of your current platform
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `metaTags` | `object` |  | `platforms.tizenwatch.webpackConfig.metaTags` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.tizenwatch.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.tizenwatch.webpackConfig.publicUrl` |
 
 
 
@@ -17110,6 +18215,21 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.web.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.web.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -17835,6 +18955,21 @@ Allows you to directly extend/override webpack config of your current platform
 | Prop Name | Type | Default Value | Path |
 | :----- | :----- | :---- | :---- |
 | `metaTags` | `object` |  | `platforms.webos.webpackConfig.metaTags` |
+
+
+
+
+
+---
+
+
+
+
+#### platforms.webos.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.webos.webpackConfig.publicUrl` |
 
 
 
@@ -18610,6 +19745,21 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.webtv.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.webtv.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -19060,7 +20210,8 @@ Allows you to configure electron app as per https://www.electron.build/
     "mas": {
       "type": "distribution",
       "hardenedRuntime": false
-    }
+    },
+    "mainInjection": "console.log(\"Hello from main.js!\");"
   }
 }
 ```
@@ -19958,6 +21109,21 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.windows.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.windows.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -20408,7 +21574,8 @@ Allows you to configure electron app as per https://www.electron.build/
     "mas": {
       "type": "distribution",
       "hardenedRuntime": false
-    }
+    },
+    "mainInjection": "console.log(\"Hello from main.js!\");"
   }
 }
 ```
@@ -21306,6 +22473,21 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.xbox.webpackConfig.publicUrl
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `publicUrl` | `string` |  | `platforms.xbox.webpackConfig.publicUrl` |
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -21691,7 +22873,7 @@ NOTE: This prop will be updated by rnv if you run `rnv template install`
 ```json
 {
   "templates": {
-    "renative-template-hello-world": {
+    "@rnv/template-starter": {
       "version": "0.31.0"
     }
   }
