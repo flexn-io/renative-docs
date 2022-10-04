@@ -32,7 +32,7 @@ Extenstions are defined via engines. Engines with webos support:
 
 ## Requirements
 
-- [LG Emulator](http://webostv.developer.lge.com/sdk/tools/emulator/introduction-emulator/) v3.0.0
+- [LG Emulator](http://webostv.developer.lge.com/develop/tools/emulator-introduction/) v3.0.0
 
 ## Project Configuration
 
