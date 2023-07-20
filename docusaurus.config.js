@@ -65,8 +65,8 @@ const config = {
         items: [
           {
             position: "left",
-            label: "v0.36",
-            href: "https://github.com/renative-org/renative/releases/tag/0.36.0",
+            label: "v0.37",
+            href: "https://github.com/flexn-io/renative/releases/tag/0.37.0",
           },
           {
             type: "doc",
