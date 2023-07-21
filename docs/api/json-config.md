@@ -64,6 +64,60 @@ Common config props used as default props for all available buildSchemes
 
 
 
+### common.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `common.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+
+### common.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `common.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
+
 ### common.author
 
 | Prop Name | Type | Default Value | Path |
@@ -213,6 +267,34 @@ Object ysed to extend your renative with custom props. This allows renative json
   "ext": {
     "myCustomRenativeProp": "foo"
   }
+}
+```
+
+
+
+
+---
+
+
+
+
+
+### common.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `common.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -428,6 +510,22 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `common.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+
+### common.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `common.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -739,8 +837,8 @@ List of default target simulators and emulators
     "android": "Nexus_5X_API_26",
     "androidtv": "Android_TV_1080p_API_22",
     "androidwear": "Android_Wear_Round_API_28",
-    "ios": "iPhone 8",
-    "tvos": "Apple TV 4K",
+    "ios": "iPhone 14",
+    "tvos": "Apple TV",
     "tizen": "T-samsung-5.5-x86",
     "tizenwatch": "W-5.5-circle-x86",
     "tizenmobile": "M-5.5-x86",
@@ -896,8 +994,8 @@ Override of default targets specific to this project
 ```json
 {
   "targets": {
-    "ios": "iPhone 8",
-    "tvos": "Apple TV 4K"
+    "ios": "iPhone 14",
+    "tvos": "Apple TV"
   }
 }
 ```
@@ -1829,6 +1927,58 @@ Overrides values in `app/build.gradle` file of generated android based project
 
 
 
+#### platforms.android.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.android.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.android.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.android.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.android.author
 
 | Prop Name | Type | Default Value | Path |
@@ -2248,6 +2398,33 @@ Allows passing extra params to gradle command
 ```json
 {
   "extraGradleParams": "assembleAndroidTest -DtestBuildType=debug"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.android.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.android.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -2771,6 +2948,21 @@ If set to `true`, apk will be split into multiple ones for each architecture: "a
 
 
 
+#### platforms.android.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.android.portOffset` |
+
+Offset each port default value by increment
+
+
+
+---
+
+
+
+
 #### platforms.android.reactNativeEngine
 
 | Prop Name | Type | Default Value | Path |
@@ -3280,6 +3472,58 @@ Overrides values in `app/build.gradle` file of generated android based project
 
 
 
+#### platforms.androidtv.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.androidtv.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.androidtv.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.androidtv.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.androidtv.author
 
 | Prop Name | Type | Default Value | Path |
@@ -3699,6 +3943,33 @@ Allows passing extra params to gradle command
 ```json
 {
   "extraGradleParams": "assembleAndroidTest -DtestBuildType=debug"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.androidtv.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.androidtv.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -4222,6 +4493,21 @@ If set to `true`, apk will be split into multiple ones for each architecture: "a
 
 
 
+#### platforms.androidtv.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.androidtv.portOffset` |
+
+Offset each port default value by increment
+
+
+
+---
+
+
+
+
 #### platforms.androidtv.reactNativeEngine
 
 | Prop Name | Type | Default Value | Path |
@@ -4731,6 +5017,58 @@ Overrides values in `app/build.gradle` file of generated android based project
 
 
 
+#### platforms.androidwear.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.androidwear.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.androidwear.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.androidwear.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.androidwear.author
 
 | Prop Name | Type | Default Value | Path |
@@ -5150,6 +5488,33 @@ Allows passing extra params to gradle command
 ```json
 {
   "extraGradleParams": "assembleAndroidTest -DtestBuildType=debug"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.androidwear.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.androidwear.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -5673,6 +6038,21 @@ If set to `true`, apk will be split into multiple ones for each architecture: "a
 
 
 
+#### platforms.androidwear.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.androidwear.portOffset` |
+
+Offset each port default value by increment
+
+
+
+---
+
+
+
+
 #### platforms.androidwear.reactNativeEngine
 
 | Prop Name | Type | Default Value | Path |
@@ -5985,6 +6365,58 @@ If set to `true` generated js (bundle.js) files will be timestamped and named (b
 
 
 
+#### platforms.chromecast.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.chromecast.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.chromecast.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.chromecast.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.chromecast.author
 
 | Prop Name | Type | Default Value | Path |
@@ -6260,6 +6692,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.chromecast.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.chromecast.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.chromecast.id
 
 | Prop Name | Type | Default Value | Path |
@@ -6456,6 +6915,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.chromecast.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.chromecast.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.chromecast.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -6735,6 +7209,58 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.firefoxos.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.firefoxos.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.firefoxos.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.firefoxos.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.firefoxos.author
 
 | Prop Name | Type | Default Value | Path |
@@ -7010,6 +7536,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.firefoxos.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.firefoxos.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.firefoxos.id
 
 | Prop Name | Type | Default Value | Path |
@@ -7206,6 +7759,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.firefoxos.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.firefoxos.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.firefoxos.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -7485,6 +8053,58 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.firefoxtv.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.firefoxtv.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.firefoxtv.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.firefoxtv.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.firefoxtv.author
 
 | Prop Name | Type | Default Value | Path |
@@ -7760,6 +8380,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.firefoxtv.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.firefoxtv.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.firefoxtv.id
 
 | Prop Name | Type | Default Value | Path |
@@ -7956,6 +8603,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.firefoxtv.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.firefoxtv.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.firefoxtv.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -8432,6 +9094,58 @@ Overrides values in `app/build.gradle` file of generated android based project
 
 
 
+#### platforms.firetv.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.firetv.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.firetv.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.firetv.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.firetv.author
 
 | Prop Name | Type | Default Value | Path |
@@ -8851,6 +9565,33 @@ Allows passing extra params to gradle command
 ```json
 {
   "extraGradleParams": "assembleAndroidTest -DtestBuildType=debug"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.firetv.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.firetv.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -9366,6 +10107,21 @@ If set to `true`, apk will be split into multiple ones for each architecture: "a
 | `permissions` | `array` |  | `platforms.firetv.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.firetv.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.firetv.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -9926,6 +10682,58 @@ If set to `true` generated js (bundle.js) files will be timestamped and named (b
 
 
 
+#### platforms.ios.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.ios.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.ios.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.ios.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.ios.author
 
 | Prop Name | Type | Default Value | Path |
@@ -10454,6 +11262,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.ios.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.ios.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.ios.id
 
 | Prop Name | Type | Default Value | Path |
@@ -10733,6 +11568,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `plist` | `object` |  | `platforms.ios.plist` |
 
 
+
+
+
+---
+
+
+
+
+#### platforms.ios.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.ios.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -11091,6 +11941,58 @@ If set to `true` generated js (bundle.js) files will be timestamped and named (b
 
 
 
+#### platforms.kaios.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.kaios.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.kaios.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.kaios.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.kaios.author
 
 | Prop Name | Type | Default Value | Path |
@@ -11366,6 +12268,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.kaios.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.kaios.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.kaios.id
 
 | Prop Name | Type | Default Value | Path |
@@ -11562,6 +12491,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.kaios.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.kaios.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.kaios.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -11929,6 +12873,58 @@ Default width of electron app
 
 
 
+#### platforms.linux.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.linux.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.linux.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.linux.author
 
 | Prop Name | Type | Default Value | Path |
@@ -12106,7 +13102,8 @@ Allows you to configure electron app as per https://www.electron.build/
       "type": "distribution",
       "hardenedRuntime": false
     },
-    "mainInjection": "console.log(\"Hello from main.js!\");"
+    "mainInjection": "console.log(\"Hello from main.js!\");",
+    "mainHeadInjection": "console.log(\"Hello from main.js!\");"
   }
 }
 ```
@@ -12220,6 +13217,33 @@ Object ysed to extend your renative with custom props. This allows renative json
   "ext": {
     "myCustomRenativeProp": "foo"
   }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.linux.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.linux.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -12427,6 +13451,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.linux.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.linux.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.linux.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -12809,6 +13848,58 @@ Default width of electron app
 
 
 
+#### platforms.macos.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.macos.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.macos.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.macos.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.macos.author
 
 | Prop Name | Type | Default Value | Path |
@@ -12986,7 +14077,8 @@ Allows you to configure electron app as per https://www.electron.build/
       "type": "distribution",
       "hardenedRuntime": false
     },
-    "mainInjection": "console.log(\"Hello from main.js!\");"
+    "mainInjection": "console.log(\"Hello from main.js!\");",
+    "mainHeadInjection": "console.log(\"Hello from main.js!\");"
   }
 }
 ```
@@ -13115,6 +14207,33 @@ Object ysed to extend your renative with custom props. This allows renative json
   "ext": {
     "myCustomRenativeProp": "foo"
   }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.macos.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.macos.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -13322,6 +14441,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.macos.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.macos.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.macos.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -13607,6 +14741,58 @@ Allows you to directly extend/override webpack config of your current platform
 | :----- | :----- | :---- | :---- |
 | `appName` | `string` |  | `platforms.tizen.appName` |
 
+
+
+
+
+---
+
+
+
+
+#### platforms.tizen.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.tizen.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.tizen.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.tizen.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
 
 
 
@@ -13906,6 +15092,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.tizen.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.tizen.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.tizen.id
 
 | Prop Name | Type | Default Value | Path |
@@ -14117,6 +15330,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.tizen.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.tizen.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.tizen.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -14402,6 +15630,58 @@ Allows you to directly extend/override webpack config of your current platform
 | :----- | :----- | :---- | :---- |
 | `appName` | `string` |  | `platforms.tizenmobile.appName` |
 
+
+
+
+
+---
+
+
+
+
+#### platforms.tizenmobile.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.tizenmobile.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.tizenmobile.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.tizenmobile.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
 
 
 
@@ -14701,6 +15981,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.tizenmobile.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.tizenmobile.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.tizenmobile.id
 
 | Prop Name | Type | Default Value | Path |
@@ -14912,6 +16219,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.tizenmobile.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.tizenmobile.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.tizenmobile.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -15197,6 +16519,58 @@ Allows you to directly extend/override webpack config of your current platform
 | :----- | :----- | :---- | :---- |
 | `appName` | `string` |  | `platforms.tizenwatch.appName` |
 
+
+
+
+
+---
+
+
+
+
+#### platforms.tizenwatch.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.tizenwatch.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.tizenwatch.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.tizenwatch.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
 
 
 
@@ -15496,6 +16870,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.tizenwatch.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.tizenwatch.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.tizenwatch.id
 
 | Prop Name | Type | Default Value | Path |
@@ -15707,6 +17108,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.tizenwatch.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.tizenwatch.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.tizenwatch.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -16217,6 +17633,58 @@ Allows you to directly extend/override webpack config of your current platform
 | :----- | :----- | :---- | :---- |
 | `appleId` | `string` |  | `platforms.tvos.appleId` |
 
+
+
+
+
+---
+
+
+
+
+#### platforms.tvos.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.tvos.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.tvos.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.tvos.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
 
 
 
@@ -16754,6 +18222,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.tvos.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.tvos.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.tvos.id
 
 | Prop Name | Type | Default Value | Path |
@@ -17033,6 +18528,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `plist` | `object` |  | `platforms.tvos.plist` |
 
 
+
+
+
+---
+
+
+
+
+#### platforms.tvos.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.tvos.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -17391,6 +18901,58 @@ If set to `true` generated js (bundle.js) files will be timestamped and named (b
 
 
 
+#### platforms.web.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.web.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.web.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.web.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.web.author
 
 | Prop Name | Type | Default Value | Path |
@@ -17714,6 +19276,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.web.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.web.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.web.id
 
 | Prop Name | Type | Default Value | Path |
@@ -17968,6 +19557,21 @@ Custom pages directory used by nextjs. Use relative paths
 | `permissions` | `array` |  | `platforms.web.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.web.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.web.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -18247,6 +19851,58 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+#### platforms.webos.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.webos.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.webos.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.webos.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.webos.author
 
 | Prop Name | Type | Default Value | Path |
@@ -18522,6 +20178,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.webos.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.webos.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.webos.id
 
 | Prop Name | Type | Default Value | Path |
@@ -18718,6 +20401,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.webos.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.webos.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.webos.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -18994,6 +20692,58 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 ---
+
+
+
+#### platforms.webtv.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.webtv.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.webtv.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.webtv.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
 
 
 
@@ -19287,6 +21037,33 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+#### platforms.webtv.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.webtv.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.webtv.id
 
 | Prop Name | Type | Default Value | Path |
@@ -19498,6 +21275,21 @@ NOTE: includedPlugins is evaluated before excludedPlugins
 | `permissions` | `array` |  | `platforms.webtv.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.webtv.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.webtv.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -19944,6 +21736,58 @@ Specification of targeted architecture
 
 
 
+#### platforms.windows.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.windows.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.windows.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.windows.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.windows.author
 
 | Prop Name | Type | Default Value | Path |
@@ -20211,7 +22055,8 @@ Allows you to configure electron app as per https://www.electron.build/
       "type": "distribution",
       "hardenedRuntime": false
     },
-    "mainInjection": "console.log(\"Hello from main.js!\");"
+    "mainInjection": "console.log(\"Hello from main.js!\");",
+    "mainHeadInjection": "console.log(\"Hello from main.js!\");"
   }
 }
 ```
@@ -20355,6 +22200,33 @@ Object ysed to extend your renative with custom props. This allows renative json
   "ext": {
     "myCustomRenativeProp": "foo"
   }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.windows.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.windows.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -20712,6 +22584,21 @@ Whether to attempt to override the existing builds files when running a build on
 | `permissions` | `array` |  | `platforms.windows.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.windows.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.windows.portOffset` |
+
+Offset each port default value by increment
 
 
 
@@ -21308,6 +23195,58 @@ Specification of targeted architecture
 
 
 
+#### platforms.xbox.assetFolderPlatform
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetFolderPlatform` | `string` |  | `platforms.xbox.assetFolderPlatform` |
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+**examples**
+
+
+```json
+{
+  "assetFolderPlatform": "android"
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.xbox.assetSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `assetSources` | `array` |  | `platforms.xbox.assetSources` |
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project
+
+**examples**
+
+
+```json
+{
+  "assetSources": [
+    "{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets"
+  ]
+}
+```
+
+
+
+
+---
+
+
+
+
 #### platforms.xbox.author
 
 | Prop Name | Type | Default Value | Path |
@@ -21575,7 +23514,8 @@ Allows you to configure electron app as per https://www.electron.build/
       "type": "distribution",
       "hardenedRuntime": false
     },
-    "mainInjection": "console.log(\"Hello from main.js!\");"
+    "mainInjection": "console.log(\"Hello from main.js!\");",
+    "mainHeadInjection": "console.log(\"Hello from main.js!\");"
   }
 }
 ```
@@ -21719,6 +23659,33 @@ Object ysed to extend your renative with custom props. This allows renative json
   "ext": {
     "myCustomRenativeProp": "foo"
   }
+}
+```
+
+
+
+
+---
+
+
+
+
+#### platforms.xbox.fontSources
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `fontSources` | `array` |  | `platforms.xbox.fontSources` |
+
+Array of paths to location of external Fonts
+
+**examples**
+
+
+```json
+{
+  "fontSources": [
+    "{{resolvePackage(react-native-vector-icons)}}/Fonts"
+  ]
 }
 ```
 
@@ -22076,6 +24043,21 @@ Whether to attempt to override the existing builds files when running a build on
 | `permissions` | `array` |  | `platforms.xbox.permissions` |
 
 &gt; DEPRECATED in favor of includedPermissions
+
+
+
+---
+
+
+
+
+#### platforms.xbox.portOffset
+
+| Prop Name | Type | Default Value | Path |
+| :----- | :----- | :---- | :---- |
+| `portOffset` | `number` |  | `platforms.xbox.portOffset` |
+
+Offset each port default value by increment
 
 
 

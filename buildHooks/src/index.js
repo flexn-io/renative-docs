@@ -11,10 +11,10 @@ const hooks = {
         await updateMdFilesPlatforms(c);
         await updateMdFilesEngines(c);
         await generateChangelog(c);
-        await generateEngineTaks(c);
-        // await generateDocsApiJsonConfig(c);
-        // await generateDocsApiBuildConfig(c);
-        // await generateCombinedChangelog(c);
+        // await generateEngineTaks(c);
+        await generateDocsApiJsonConfig(c);
+        await generateDocsApiBuildConfig(c);
+        await generateCombinedChangelog(c);
     },
     prePublish: async (c) => {
         await generatePlugins(c);
