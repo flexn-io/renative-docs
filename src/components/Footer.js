@@ -14,7 +14,7 @@ const SocialLinks = () => <>
           <a href="https://twitter.com/renative" className="social-link" target="_blank">
             <Twitter />
           </a>
-          <a href="https://github.com/renative-org/renative" className="social-link" target="_blank">
+          <a href="https://github.com/flexn-io/renative" className="social-link" target="_blank">
             <Github />
           </a>
       </div>
@@ -41,9 +41,9 @@ export default function Footer() {
       </div>
       <div className="footer-container">
         <div className="container-title">Community</div>
-        <a href="https://github.com/renative-org/renative/discussions" className="footer-link">Chat</a>
+        <a href="https://github.com/flexn-io/renative/discussions" className="footer-link">Chat</a>
         <a href="https://twitter.com/renative" className="footer-link">Twitter</a>
-        <a href="https://github.com/renative-org/renative/graphs/contributors" className="footer-link">Contributors</a>
+        <a href="https://github.com/flexn-io/renative/graphs/contributors" className="footer-link">Contributors</a>
       </div>
       <div className="footer-container">
         <div className="container-title">Follow us</div>

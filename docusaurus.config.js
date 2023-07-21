@@ -14,8 +14,8 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   trailingSlash: false,
-  organizationName: "renative-org", // Usually your GitHub org/user name.
-  projectName: "renative-website", // Usually your repo name.
+  organizationName: "flexn-io", // Usually your GitHub org/user name.
+  projectName: "renative-docs", // Usually your repo name.
   plugins: [
     [
       "@docusaurus/plugin-google-gtag",
@@ -81,7 +81,7 @@ const config = {
             label: "API",
           },
           {
-            href: "https://github.com/renative-org/renative",
+            href: "https://github.com/flexn-io/renative",
             label: "Github",
             position: "right",
           },
