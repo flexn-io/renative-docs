@@ -27,7 +27,7 @@ original_id: macos
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with macos support:
+Extenstions are defined via engines. Engines with macos support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

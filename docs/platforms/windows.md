@@ -29,7 +29,7 @@ original_id: windows
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with windows support:
+Extenstions are defined via engines. Engines with windows support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

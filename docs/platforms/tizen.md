@@ -27,7 +27,7 @@ original_id: tizen
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with tizen support:
+Extenstions are defined via engines. Engines with tizen support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

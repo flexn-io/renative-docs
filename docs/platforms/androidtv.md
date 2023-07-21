@@ -28,7 +28,7 @@ original_id: androidtv
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with androidtv support:
+Extenstions are defined via engines. Engines with androidtv support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

@@ -26,7 +26,7 @@ original_id: webos
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with webos support:
+Extenstions are defined via engines. Engines with webos support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

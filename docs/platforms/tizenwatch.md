@@ -27,7 +27,7 @@ original_id: tizenwatch
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with tizenwatch support:
+Extenstions are defined via engines. Engines with tizenwatch support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

@@ -28,7 +28,7 @@ original_id: androidwear
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with androidwear support:
+Extenstions are defined via engines. Engines with androidwear support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

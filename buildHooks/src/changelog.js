@@ -1,63 +1,39 @@
 import path from 'path';
 import fs from 'fs';
 import simpleGit from 'simple-git';
+import axios from 'axios';
 
 const { version, currentRelease } = require('../../package.json');
 
 const git = simpleGit();
 
-export const generateChangelog = c => new Promise((resolve, reject) => {
-    const d = new Date();
-    let logs = '';
-    try {
-        git.tags([], (e, s) => {
-            const latestTag = s.latest;
-            // if (s.latest === version) {
-            //     s.all.pop();
-            //     latestTag = s.all.pop();
-            // }
+const getReleaseByTag = async (tag) => {
+    const res = await axios.get(`https://api.github.com/repos/flexn-io/renative/releases/tags/${tag}`);
+    return res.data;
+}
 
-            git.log(latestTag, 'HEAD', (_e, log) => {
-                // log.all.pop();
-                // log.all.pop();
-                log.all.forEach((v) => {
-                    const ss = v.message;
-                    logs += `- ${ss}\n`;
-                });
+export const generateChangelog = async (c) => {
+    
+    const release = await getReleaseByTag(version);
+    const logs = release.body;
+    const d = new Date(release.published_at);
 
-                const changelog = `## v${version} (${d.getFullYear()}-${d.getMonth()
-                      + 1}-${d.getDate()})
-
-### Fixed
+    const changelog = `## ${version} (${d.getFullYear()}-${d.getMonth()
+            + 1}-${d.getDate()})
 
 ${logs}
-### Added Features
-
-- none
-
-### Breaking Changes
-
-- none
-
-  `;
-                // console.log(changelog.replace(/\*\*/g, '*'));
-                const changelogPath = path.join(c.paths.project.dir, 'docs/changelog', `${version}.md`);
-                if (!fs.existsSync(changelogPath)) {
-                    fs.writeFileSync(
-                        changelogPath,
-                        changelog
-                    );
-                } else {
-                    // console.log(`Path ${changelogPath} exists. SKIPPING`);
-                }
-
-                resolve(true);
-            });
-        });
-    } catch (e) {
-        reject(e);
+`;
+    // console.log(changelog.replace(/\*\*/g, '*'));
+    const changelogPath = path.join(c.paths.project.dir, 'docs/changelog', `${version}.md`);
+    if (!fs.existsSync(changelogPath)) {
+        fs.writeFileSync(
+            changelogPath,
+            changelog
+        );
+    } else {
+        // console.log(`Path ${changelogPath} exists. SKIPPING`);
     }
-});
+};
 
 const getVersionNumber = (vrs) => {
     const verArr = vrs.split('-');

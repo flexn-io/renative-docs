@@ -28,7 +28,7 @@ original_id: firetv
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with firetv support:
+Extenstions are defined via engines. Engines with firetv support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

@@ -26,7 +26,7 @@ original_id: web
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with web support:
+Extenstions are defined via engines. Engines with web support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

@@ -22,7 +22,7 @@ original_id: firefoxos
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with firefoxos support:
+Extenstions are defined via engines. Engines with firefoxos support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

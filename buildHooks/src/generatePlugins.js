@@ -1,4 +1,5 @@
-import { FileUtils, Constants } from 'rnv';
+import { FileUtils, Constants, doResolve } from 'rnv';
+import merge from 'deepmerge';
 import path from 'path';
 
 export const generatePlugins = async (c) => {
@@ -7,11 +8,20 @@ id: overview
 title: Plugins Overview
 sidebar_label: Plugins Overview
 ---
-`;
-    const temps = FileUtils.readObjectSync(
-        c.paths.rnv.pluginTemplates.config
-    );
+`;  
+    const flexnPluginsPath = doResolve('@flexn/plugins');
+    if (!FileUtils.fsExistsSync(flexnPluginsPath)) {
+        return Promise.reject(`RNV Cannot find installed package: ${chalk().white('@flexn/plugins')}`);
+    }
+    const flexnPluginTemplatesPath = path.join(flexnPluginsPath, 'pluginTemplates/renative.plugins.json');
+
+    const flexnPluginTemplates = FileUtils.readObjectSync(flexnPluginTemplatesPath);
+    const rnvPluginTemplates = FileUtils.readObjectSync(c.paths.rnv.pluginTemplates.config);
+
+    const temps = merge(flexnPluginTemplates, rnvPluginTemplates);
+
     const ptk = Object.keys(temps.pluginTemplates).sort();
+ 
     ptk.forEach((key) => {
         const plugin = temps.pluginTemplates[key];
         const npm = plugin.version

@@ -22,7 +22,7 @@ original_id: firefoxtv
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with firefoxtv support:
+Extenstions are defined via engines. Engines with firefoxtv support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

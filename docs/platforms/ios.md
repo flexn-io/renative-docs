@@ -28,7 +28,7 @@ original_id: ios
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with ios support:
+Extenstions are defined via engines. Engines with ios support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

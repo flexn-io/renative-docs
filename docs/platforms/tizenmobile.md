@@ -27,7 +27,7 @@ original_id: tizenmobile
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with tizenmobile support:
+Extenstions are defined via engines. Engines with tizenmobile support: 
 
 <!--EXTENSION_SUPPORT_END-->
 

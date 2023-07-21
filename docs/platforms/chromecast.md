@@ -26,7 +26,7 @@ original_id: chromecast
 
 <!--EXTENSION_SUPPORT_START-->
 
-Extenstions are defined via engines. Engines with chromecast support:
+Extenstions are defined via engines. Engines with chromecast support: 
 
 <!--EXTENSION_SUPPORT_END-->
 
