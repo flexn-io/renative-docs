@@ -43,20 +43,22 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 .hero .hero__title {
   margin: auto;
-  font-size: 7em;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 4em;
   font-weight: 800;
   height: 1.3em;
 }
 
 @media screen and (max-width: 826px) {
   .hero .hero__title {
-    font-size: 5em;
+    font-size: 3em;
   }
 }
 
 @media screen and (max-width: 604px) {
   .hero .hero__title {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -172,14 +174,14 @@ h3 {
   width: 200;
 } */
 
-/* .container-in {
-  width: 800px;
-  height: 200px;
+.container-in {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  text-align: center;
-  background-color: blue;
-} */
+  gap: 1em;
+}
 
 a {
   cursor: pointer;
@@ -290,4 +292,50 @@ a {
     max-height: 200px;
     margin-bottom: 50px;
   }
+}
+
+.header-github-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link:before {
+  background: url("/img/github.svg")
+    no-repeat;
+  content: "";
+  display: flex;
+  height: 20px;
+  width: 20px;
+}
+
+.header-twitter-link:hover {
+  opacity: 0.6;
+}
+
+.header-twitter-link:before {
+  background: url("/img/twitter.svg")
+    no-repeat;
+  content: "";
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+.header-youtube-link:hover {
+    -webkit-filter: hue-rotate(220deg) saturate(5);
+    filter: hue-rotate(220deg) saturate(5);
+}
+
+.header-youtube-link:before {
+  background: url(/img/youtube.svg) no-repeat;
+  content: "";
+  display: flex;
+  height: 20px;
+  width: 24px;
+}
+.homepage-codeline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align:middle;
+  gap: 1em;
 }

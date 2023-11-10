@@ -82,65 +82,34 @@ const config = {
           },
           {
             href: "https://github.com/flexn-io/renative",
-            label: "Github",
             position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub",
           },
           {
             href: "https://twitter.com/renative",
-            label: "Twitter",
             position: "right",
+            className: "header-twitter-link",
+            "aria-label": "Twitter",
+          },
+          {
+            href: "https://www.youtube.com/@renative",
+            position: "right",
+            className: "header-youtube-link",
+            "aria-label": "Youtube",
+          },
+          {
+            to: '/docs/overview/introduction',
+            label: 'Try it out',
+            position: 'right',
+            className: 'button button--secondary button--lg padding--sm'
           },
         ],
       },
       colorMode: {
         defaultMode: "light",
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
-        switchConfig: {
-          darkIcon: "⚫",
-          lightIcon: "🔆",
-          // React inline style object
-          // see https://reactjs.org/docs/dom-elements.html#style
-          darkIconStyle: {
-            marginLeft: "0px",
-          },
-          lightIconStyle: {
-            marginLeft: "0px",
-          },
-        },
+        disableSwitch: true,
       },
-      // footer: {
-      //     style: 'dark',
-      //     links: [
-      //         {
-      //             title: 'Community',
-      //             items: [
-      //                 {
-      //                     label: 'Stack Overflow',
-      //                     href: 'https://stackoverflow.com/search?q=renative',
-      //                 },
-      //                 {
-      //                     label: 'Discussions',
-      //                     href: 'https://github.com/renative-org/renative/discussions',
-      //                 },
-      //                 {
-      //                     label: 'Twitter',
-      //                     href: 'https://twitter.com/renative',
-      //                 },
-      //             ],
-      //         },
-      //         {
-      //             title: 'More',
-      //             items: [
-      //                 {
-      //                     label: 'GitHub',
-      //                     href: 'https://github.com/renative-org/renative',
-      //                 },
-      //             ],
-      //         },
-      //     ],
-      //     copyright: `Copyright © ${new Date().getFullYear()} ReNative Org. Built with Docusaurus.`,
-      // },
       image: "img/logo.svg",
       prism: {
         theme: lightCodeTheme,
