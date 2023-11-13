@@ -5,13 +5,6 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 
 const FeatureList = [
   {
-    title: 'Any device',
-    svg: require('../../static/img/image0.svg').default,
-    svgDark: require('../../static/img/dark/image0.svg').default,
-    float: 'top',
-    imageWidth: 800,
-  },
-  {
     title: 'Supercharged frameworks',
     svg: require('../../static/img/image1.svg').default,
     svgDark: require('../../static/img/dark/image1.svg').default,
@@ -21,18 +14,6 @@ const FeatureList = [
         ReNative Supports popular front-end frameworks like <a href="https://reactjs.org/">React</a>,
         <a href="https://reactnative.dev/">React Native</a>, <a href="https://nextjs.org/">NextJS</a>, <a href="https://www.electronjs.org/">Electron</a>
 
-      </>
-    ),
-  },
-
-  {
-    title: 'Extendable by community plugins',
-    svg: require('../../static/img/image2.svg').default,
-    svgDark: require('../../static/img/dark/image2.svg').default,
-    float: 'right',
-    description: (
-      <>
-        ReNative supports standard community driven react-native plugins you can use to enhance the functionality of your apps
       </>
     ),
   },
@@ -55,6 +36,18 @@ const FeatureList = [
     description: (
       <>
         ReNative supports integrations for various services and deployment infrastructures for your apps
+      </>
+    ),
+  },
+
+  {
+    title: 'Extendable by community plugins',
+    svg: require('../../static/img/image2.svg').default,
+    svgDark: require('../../static/img/dark/image2.svg').default,
+    float: 'right',
+    description: (
+      <>
+        ReNative supports standard community driven react-native plugins you can use to enhance the functionality of your apps
       </>
     ),
   },
@@ -93,7 +86,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'powerful CLI',
+    title: 'Powerful CLI',
     svg: require('../../static/img/image8.svg').default,
     svgDark: require('../../static/img/dark/image8.svg').default,
     float: 'right',
@@ -110,74 +103,45 @@ const LinesvgDark = require('../../static/img/dark/line.svg').default;
 
 
 function Feature({ Svg, title, description, float, imageWidth = 400 }) {
-  const { isDarkTheme } = useThemeContext();
   return (
-    <div className={clsx('col col--6')}>
+    <div className={styles.feature_container}>
       <div className="text--center">
-        {isDarkTheme ? <LinesvgDark className={styles.linesvg} alt={title} /> : <Linesvg className={styles.linesvg} alt={title} />}
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>
+        <h2>
           {title}
-        </h3>
-        <div className="feature-wrapper">
-            {description ? (
-                <p className="feature-wrapper-text">
-                    {description}
-                </p>
-            ) : null}
+        </h2>
+        {description ? (
+          <p>
+            {description}
+          </p>
+        ) : null}
+      </div>
 
-            <div className="feature-wrapper-image">
-                <Svg className="featuresSvg" alt={title} />
-            </div>
-        </div>
+      <div className={styles.featuresSvg_container}>
+        <Svg className={styles.featuresSvg} alt={title} />
       </div>
     </div>
   );
 }
 
-const YoutubeVideo = ({ youtubeId, title }) => (
-    <div
-        className="wrapper"
-        style={{
-            margin: 'auto',
-            marginBottom: 50
-        }}
-    >
-        <div
-            style={{
-                position: 'relative',
-                paddingBottom: '56.25%' /* 16:9 */,
-                height: 0
-            }}
-        >
-            <iframe
-                title={title || 'video'}
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%'
-                }}
-                src={`https://www.youtube.com/embed/${youtubeId}`}
-                frameBorder="0"
-            />
-        </div>
-    </div>
-);
-
 export default function HomepageFeatures() {
   const { isDarkTheme } = useThemeContext();
   return (
-    <section className={styles.features}>
-      <div className="container">
-      <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
-        {FeatureList.map((props, idx) => {
-          const img = isDarkTheme ? props.svgDark : props.svg;
-          return <Feature key={idx} {...props} Svg={img} />
-        })}
-      </div>
-    </section>
+    <>
+      {/* TODO: change gif to json */}
+      {isDarkTheme ?
+        <img className='main_img' src='/img/dark/rnv-dark.gif' />
+        :
+        <img className='main_img' src='/img/light/rnv-light.gif' />
+      }
+      <h3 className="text--center">RNV is</h3>
+      <section className="container">
+        <div className={styles.features}>
+          {FeatureList.map((props, idx) => {
+            const img = isDarkTheme ? props.svgDark : props.svg;
+            return <Feature key={idx} {...props} Svg={img} />
+          })}
+        </div>
+      </section>
+    </>
   );
 }

@@ -1,15 +1,33 @@
 .features {
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  flex-flow: wrap;
+  justify-content: center;
   width: 100%;
 }
 
-.featuresSvg {
-  height: 400px;
-  width: 500px;
+.features .feature_container:nth-child(5n + 4) {
+  width: calc(100%/2);
+  flex-grow:0;
 }
 
-.lineSvg {
+.feature_container{
+  border-style: solid;
+  border-radius: 10%;
+  border-color: lightgray;
+  width:  300px;
+  height: 300px;
+  padding: 1em;
+  margin: 1em;
+  flex-grow: 1;
+}
+
+.featuresSvg_container{
+  width: 100%;
   height: 100px;
+}
+
+.featuresSvg{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
