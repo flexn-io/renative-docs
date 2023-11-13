@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import useThemeContext from '@theme/hooks/useThemeContext';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
@@ -98,9 +99,6 @@ const FeatureList = [
   },
 ];
 
-const Linesvg = require('../../static/img/line.svg').default;
-const LinesvgDark = require('../../static/img/dark/line.svg').default;
-
 
 function Feature({ Svg, title, description, float, imageWidth = 400 }) {
   return (
@@ -142,6 +140,26 @@ export default function HomepageFeatures() {
           })}
         </div>
       </section>
+      <div className={styles.banner_container}>
+        <div>
+          <h3>Some text should be here</h3>
+        </div>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/overview/introduction"
+          >
+            Try it out
+          </Link>
+        </div>
+        <div className={styles.banner_img}>
+          {isDarkTheme ?
+            <img src='/img/dark/rocket_dark.svg' />
+            :
+            <img src='/img/light/rocket_light.svg' />
+          }
+        </div>
+      </div>
     </>
   );
 }
