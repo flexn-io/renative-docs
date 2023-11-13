@@ -1,24 +1,31 @@
 import React from "react";
 import useThemeContext from '@theme/hooks/useThemeContext';
-import Youtube from '../../static/img/youtube.svg';
-import Twitter from '../../static/img/twitter.svg';
-import Github from '../../static/img/github.svg';
+import DarkMode from '../../static/img/dark/icon.svg';
+import LightMode from '../../static/img/light/icon.svg';
 import Logo from '../../static/img/light/logo.svg'
 import LogoDark from '../../static/img/dark/logo.svg'
 
-const SocialLinks = () => <>
-    <div className="social-links">
-          <a href="https://www.youtube.com/channel/UCD1OyGZZY2PG0mpmq6CUaRQ" className="social-link" target="_blank">
-            <Youtube />
-          </a>
-          <a href="https://twitter.com/renative" className="social-link" target="_blank">
-            <Twitter />
-          </a>
-          <a href="https://github.com/flexn-io/renative" className="social-link" target="_blank">
-            <Github />
-          </a>
+const ThemeModes = () => {
+  const { setLightTheme, setDarkTheme, isDarkTheme } = useThemeContext();
+  let darkThemeClasses = 'theme-mode'
+  let lightThemeClasses = 'theme-mode'
+  if (isDarkTheme) {
+    darkThemeClasses += ' theme-mode-active'
+  } else {
+    lightThemeClasses += ' theme-mode-active'
+  }
+  return (
+    <>
+      <div className="theme-modes">
+        <div className={lightThemeClasses} onClick={() => setLightTheme()}>
+          <LightMode />
+        </div>
+        <div className={darkThemeClasses} onClick={() => setDarkTheme()}>
+          <DarkMode />
+        </div>
       </div>
-</>
+    </>)
+}
 
 export default function Footer() {
   const { isDarkTheme } = useThemeContext();
@@ -30,7 +37,7 @@ export default function Footer() {
           <LogoLogo className="footer-logo" />
         </div>
         <div className="copyright">
-          © {new Date().getFullYear()} ReNative Org
+          Copyright © {new Date().getFullYear()} ReNative Org
         </div>
       </div>
       <div className="footer-container">
@@ -46,8 +53,13 @@ export default function Footer() {
         <a href="https://github.com/flexn-io/renative/graphs/contributors" className="footer-link">Contributors</a>
       </div>
       <div className="footer-container">
-        <div className="container-title">Follow us</div>
-        <SocialLinks />
+        <div className="container-title">About Flexn</div>
+        <a href="https://github.com/flexn-io/renative/discussions" className="footer-link">Website</a>
+        <a href="https://github.com/flexn-io/renative" className="footer-link">Github</a>
+        <a href="https://twitter.com/renative" className="footer-link">Twitter</a>
+      </div>
+      <div className="footer-container">
+        <ThemeModes />
       </div>
     </div>
   );
