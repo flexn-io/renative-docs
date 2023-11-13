@@ -92,6 +92,13 @@ header {
   color: white;
 }
 
+.button.button--secondary:hover {
+  color: #0a74e6;
+  background-color: #fff;
+  border-color: #0a74e6;
+}
+
+
 .col--4 {
   max-width: 500px;
   margin: auto;
@@ -249,7 +256,7 @@ a {
 }
 
 .header-github-link:hover {
-  opacity: 0.6;
+  filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
 }
 
 .header-github-link:before {
@@ -262,7 +269,7 @@ a {
 }
 
 .header-twitter-link:hover {
-  opacity: 0.6;
+  filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
 }
 
 .header-twitter-link:before {
@@ -274,8 +281,8 @@ a {
   width: 24px;
 }
 
-.header-youtube-link:hover  :global(svg path) {
-  fill: #0A74E6;
+.header-youtube-link:hover{
+  filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
 }
 
 .header-youtube-link:before {
@@ -291,7 +298,4 @@ a {
   align-items: center;
   vertical-align:middle;
   gap: 1em;
-}
-.main_img{
-  padding: 0 10%;
 }

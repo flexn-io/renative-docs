@@ -17,6 +17,7 @@ const FeatureList = [
 
       </>
     ),
+    link: "/docs/overview/introduction",
   },
   {
     title: 'Powerful templates',
@@ -28,6 +29,7 @@ const FeatureList = [
         ReNative allows you to build powerful multi-platform bootstrap templates.
       </>
     ),
+    link: "/docs/overview/introduction",
   },
   {
     title: 'Integrations',
@@ -39,6 +41,7 @@ const FeatureList = [
         ReNative supports integrations for various services and deployment infrastructures for your apps
       </>
     ),
+    link: "/docs/overview/introduction",
   },
 
   {
@@ -51,6 +54,7 @@ const FeatureList = [
         ReNative supports standard community driven react-native plugins you can use to enhance the functionality of your apps
       </>
     ),
+    link: "/docs/overview/introduction",
   },
   {
     title: 'Scalable configurations',
@@ -63,6 +67,7 @@ const FeatureList = [
         you can go as simple as most basic json config file to get yourself up and running
       </>
     ),
+    link: "/docs/overview/introduction",
   },
   {
     title: 'Build hooks',
@@ -74,6 +79,7 @@ const FeatureList = [
         Sometimes you need to extend CLI functionality with custom build scripts. ReNative makes this easy for you
       </>
     ),
+    link: "/docs/overview/introduction",
   },
   {
     title: 'Minimalistic Runtime',
@@ -85,6 +91,7 @@ const FeatureList = [
         ReNative runtime is an NPM dependency to help abstract away some of the complexities of building UI interfaces and features for large number of target platforms and devices
       </>
     ),
+    link: "/docs/overview/introduction",
   },
   {
     title: 'Powerful CLI',
@@ -96,13 +103,14 @@ const FeatureList = [
         One CLI to do it all. RNV is your entry point and control centre to building multi-platform apps with just a few commands to learn.
       </>
     ),
+    link: "/docs/overview/introduction",
   },
 ];
 
 
-function Feature({ Svg, title, description, float, imageWidth = 400 }) {
+function Feature({ Svg, title, description, link }) {
   return (
-    <div className={styles.feature_container}>
+    <div className={styles.feature_container} onClick={() => window.location.href = link}>
       <div className="text--center">
         <h2>
           {title}
@@ -127,9 +135,9 @@ export default function HomepageFeatures() {
     <>
       {/* TODO: change gif to json */}
       {isDarkTheme ?
-        <img className='main_img' src='/img/dark/rnv-dark.gif' />
+        <img className={styles.main_img} src='/img/dark/rnv-dark.gif' />
         :
-        <img className='main_img' src='/img/light/rnv-light.gif' />
+        <img className={styles.main_img} src='/img/light/rnv-light.gif' />
       }
       <h3 className="text--center">RNV is</h3>
       <section className="container">

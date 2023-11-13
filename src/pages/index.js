@@ -19,6 +19,7 @@ function HomepageHeader() {
 
                 <p className={styles.h2}>
                     Currently <a href="https://github.com/flexn-io/renative/releases/tag/0.37.0">v0.37</a>
+                    <img src='/img/link.svg'/>
                 </p>
                 <div className="container-in">
                     <span className="hero__title">

@@ -57,7 +57,7 @@ const config = {
       //   },
       navbar: {
         title: "ReNative",
-        hideOnScroll: true,
+        hideOnScroll: false,
         logo: {
           alt: "Renative Logo",
           src: "img/logo.svg",
