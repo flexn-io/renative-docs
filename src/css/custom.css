@@ -182,6 +182,10 @@ a {
   cursor: pointer;
 }
 
+[data-theme='dark'] .theme-mode {
+  fill: #fff;
+}
+
 .theme-mode-active {
   background-color: lightblue;
   border-radius: 50%;

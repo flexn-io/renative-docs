@@ -16,7 +16,7 @@ const FeatureList = [
 
       </>
     ),
-    link: "/docs/overview/introduction",
+    link: "/docs/engines/engine-rn",
   },
   {
     title: 'Powerful templates',
@@ -28,7 +28,7 @@ const FeatureList = [
         ReNative allows you to build powerful multi-platform bootstrap templates.
       </>
     ),
-    link: "/docs/overview/introduction",
+    link: "/docs/guides/templates",
   },
   {
     title: 'Integrations',
@@ -40,7 +40,7 @@ const FeatureList = [
         ReNative supports integrations for various services and deployment infrastructures for your apps
       </>
     ),
-    link: "/docs/overview/introduction",
+    link: "/docs/integrations/aws",
   },
 
   {
@@ -53,7 +53,7 @@ const FeatureList = [
         ReNative supports standard community driven react-native plugins you can use to enhance the functionality of your apps
       </>
     ),
-    link: "/docs/overview/introduction",
+    link: "/docs/plugins/overview",
   },
   {
     title: 'Scalable configurations',
@@ -66,7 +66,7 @@ const FeatureList = [
         you can go as simple as most basic json config file to get yourself up and running
       </>
     ),
-    link: "/docs/overview/introduction",
+    link: "/docs/guides/advanced-configuration",
   },
   {
     title: 'Build hooks',
@@ -78,7 +78,7 @@ const FeatureList = [
         Sometimes you need to extend CLI functionality with custom build scripts. ReNative makes this easy for you
       </>
     ),
-    link: "/docs/overview/introduction",
+    link: "/docs/guides/build_hooks",
   },
   {
     title: 'Minimalistic Runtime',
@@ -90,7 +90,7 @@ const FeatureList = [
         ReNative runtime is an NPM dependency to help abstract away some of the complexities of building UI interfaces and features for large number of target platforms and devices
       </>
     ),
-    link: "/docs/overview/introduction",
+    link: "/docs/guides/runtime",
   },
   {
     title: 'Powerful CLI',
@@ -102,7 +102,7 @@ const FeatureList = [
         One CLI to do it all. RNV is your entry point and control centre to building multi-platform apps with just a few commands to learn.
       </>
     ),
-    link: "/docs/overview/introduction",
+    link: "/docs/guides/cli",
   },
 ];
 

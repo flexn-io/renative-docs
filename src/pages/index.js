@@ -47,8 +47,7 @@ function HomepageHeader() {
                     </div>
                     <div>
                         <CodeBlock
-                            language="jsx"
-                            showLineNumbers>
+                            language="jsx">
                             {`$ npm install rnv -g`}
                         </CodeBlock>
                     </div>
