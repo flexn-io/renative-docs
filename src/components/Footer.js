@@ -1,15 +1,16 @@
 import React from "react";
-import useThemeContext from '@theme/hooks/useThemeContext';
 import DarkMode from '../../static/img/dark/icon.svg';
 import LightMode from '../../static/img/light/icon.svg';
 import Logo from '../../static/img/light/logo.svg'
 import LogoDark from '../../static/img/dark/logo.svg'
+import {useColorMode} from '@docusaurus/theme-common';
 
 const ThemeModes = () => {
-  const { setLightTheme, setDarkTheme, isDarkTheme } = useThemeContext();
+  const {colorMode, setColorMode} = useColorMode();
+
   let darkThemeClasses = 'theme-mode'
   let lightThemeClasses = 'theme-mode'
-  if (isDarkTheme) {
+  if (colorMode === 'dark') {
     darkThemeClasses += ' theme-mode-active'
   } else {
     lightThemeClasses += ' theme-mode-active'
@@ -17,10 +18,10 @@ const ThemeModes = () => {
   return (
     <>
       <div className="theme-modes">
-        <div className={lightThemeClasses} onClick={() => setLightTheme()}>
+        <div className={lightThemeClasses} onClick={() => setColorMode('light')}>
           <LightMode />
         </div>
-        <div className={darkThemeClasses} onClick={() => setDarkTheme()}>
+        <div className={darkThemeClasses} onClick={() => setColorMode('dark')}>
           <DarkMode />
         </div>
       </div>
@@ -28,8 +29,8 @@ const ThemeModes = () => {
 }
 
 export default function Footer() {
-  const { isDarkTheme } = useThemeContext();
-  const LogoLogo = isDarkTheme ? LogoDark : Logo;
+  const {colorMode} = useColorMode();
+  const LogoLogo = colorMode === 'dark' ? LogoDark : Logo;
   return (
     <div className="footer">
       <div className="logo-container">

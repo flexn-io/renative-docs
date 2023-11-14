@@ -1,8 +1,7 @@
 import React from 'react';
-import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
-import useThemeContext from '@theme/hooks/useThemeContext';
 import Link from '@docusaurus/Link';
+import {useColorMode} from '@docusaurus/theme-common';
 
 const FeatureList = [
   {
@@ -130,11 +129,11 @@ function Feature({ Svg, title, description, link }) {
 }
 
 export default function HomepageFeatures() {
-  const { isDarkTheme } = useThemeContext();
+  const {colorMode} = useColorMode();
   return (
     <>
       {/* TODO: change gif to json */}
-      {isDarkTheme ?
+      {colorMode === 'dark' ?
         <img className={styles.main_img} src='/img/dark/rnv-dark.gif' />
         :
         <img className={styles.main_img} src='/img/light/rnv-light.gif' />
@@ -143,7 +142,7 @@ export default function HomepageFeatures() {
       <section className="container">
         <div className={styles.features}>
           {FeatureList.map((props, idx) => {
-            const img = isDarkTheme ? props.svgDark : props.svg;
+            const img = colorMode === 'dark' ? props.svgDark : props.svg;
             return <Feature key={idx} {...props} Svg={img} />
           })}
         </div>
@@ -161,7 +160,7 @@ export default function HomepageFeatures() {
           </Link>
         </div>
         <div className={styles.banner_img}>
-          {isDarkTheme ?
+          {colorMode === 'dark' ?
             <img src='/img/dark/rocket_dark.svg' />
             :
             <img src='/img/light/rocket_light.svg' />

@@ -1,11 +1,12 @@
 import React from 'react';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import { useThemeConfig } from '@docusaurus/theme-common';
+import {useColorMode} from '@docusaurus/theme-common';
 
 const Image = ({ lightImage, darkImage, className, style, alt, width, height }) => {
-  const { isDarkTheme } = useThemeContext();
+  const {colorMode} = useColorMode();
 
   return (
-    <img style={style} className={className} src={isDarkTheme ? darkImage : lightImage} alt={alt} width={width} height={height} />
+    <img style={style} className={className} src={colorMode === 'dark' ? darkImage : lightImage} alt={alt} width={width} height={height} />
   )
 }
 
