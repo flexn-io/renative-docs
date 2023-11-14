@@ -10,6 +10,13 @@
   flex-grow:0;
 }
 
+@media screen and (max-width: 1030px) {
+  .features .feature_container:nth-child(5n + 4) {
+    width: 300px;
+    flex-grow: 1;
+  }
+}
+
 .feature_container{
   border-style: solid;
   border-width: 1px;

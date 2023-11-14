@@ -34,7 +34,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="logo-container">
-        <div className="logo-wrapper">
+        <div>
           <LogoLogo className="footer-logo" />
         </div>
         <div className="copyright">
@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
       <div className="footer-container">
         <div className="container-title">Community</div>
-        <a href="https://github.com/flexn-io/renative/discussions" className="footer-link">Chat</a>
+        <a href="https://github.com/flexn-io/renative/discussions" className="footer-link">Project Chat</a>
         <a href="https://twitter.com/renative" className="footer-link">Twitter</a>
         <a href="https://github.com/flexn-io/renative/graphs/contributors" className="footer-link">Contributors</a>
       </div>
