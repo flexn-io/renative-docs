@@ -84,19 +84,19 @@ const config = {
             href: "https://github.com/flexn-io/renative",
             position: "right",
             className: "header-github-link",
-            "aria-label": "GitHub",
+            ariaLabel: "GitHub",
           },
           {
             href: "https://twitter.com/renative",
             position: "right",
             className: "header-twitter-link",
-            "aria-label": "Twitter",
+            ariaLabel: "X(Twitter)",
           },
           {
             href: "https://www.youtube.com/@renative",
             position: "right",
             className: "header-youtube-link",
-            "aria-label": "Youtube",
+            ariaLabel: "Youtube",
           },
           {
             to: '/docs/overview/introduction',

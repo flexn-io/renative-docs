@@ -305,3 +305,39 @@ a {
   vertical-align:middle;
   gap: 1em;
 }
+.navbar-sidebar{
+  width: 100%;
+}
+.navbar-sidebar__item{
+  width: 100%;
+}
+.menu__list{
+  border-top: solid;
+  border-color: lightgray;
+}
+
+.menu_icons_grid{
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu_icon{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  align-self: baseline;
+}
+
+.navbar-sidebar__items--show-secondary{
+  transform: translate3d(-100%, 0, 0 );
+}
+
+.mobile_nav_btn_container{
+  list-style-type: none;
+}
+.mobile_nav_btn_container .button{
+  display: flex;
+  justify-content: center;
+}
+
