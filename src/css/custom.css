@@ -347,3 +347,9 @@ a {
 .link:hover{
   color: #0A74E6;
 }
+
+.mobile_toggle{
+  position: absolute;
+  right: 3%;
+  top: 30%;
+}
