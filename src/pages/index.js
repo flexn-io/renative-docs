@@ -13,12 +13,8 @@ function HomepageHeader() {
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className="container">
-                {/* <h1 className="hero__title">
-                    {siteConfig.title}
-                </h1> */}
-
                 <p className={styles.h2}>
-                    Currently <a href="https://github.com/flexn-io/renative/releases/tag/0.37.0">v0.37</a>
+                    Currently <a className='link' href="https://github.com/flexn-io/renative/releases/tag/0.37.0">v0.37</a>
                     <img src='/img/link.svg'/>
                 </p>
                 <div className="container-in">
@@ -48,7 +44,7 @@ function HomepageHeader() {
                     <div>
                         <CodeBlock
                             language="jsx">
-                            {`$ npm install rnv -g`}
+                            {`npm install rnv -g`}
                         </CodeBlock>
                     </div>
                 </div>
