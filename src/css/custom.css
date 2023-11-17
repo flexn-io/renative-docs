@@ -264,6 +264,11 @@ a {
   }
 }
 
+.navbar_button{
+  width: 101px;
+  height: 40px;
+}
+
 .header-github-link:hover {
   filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
 }
