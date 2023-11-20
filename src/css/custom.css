@@ -88,6 +88,11 @@ header {
   object-fit: contain;
 }
 
+.navbar_button{
+  width: 101px;
+  height: 40px;
+}
+
 .button.button--secondary {
   color: white;
 }
@@ -118,10 +123,13 @@ header {
 .navbar {
   box-shadow: transparent;
   border-bottom: solid;
-  border-color: lightgray;
+  border-color: #e4e4e4;
   border-width: 1px;
 }
 
+[data-theme='dark'] .navbar {
+  border-color: #3d3d3d;
+}
 
 h3 {
   font-size: 3em;
@@ -269,43 +277,32 @@ a {
   height: 40px;
 }
 
-.header-github-link:hover {
-  filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
-}
-
-.header-github-link:before {
-  background: url(/img/github.svg)
-    no-repeat;
+.navbar_icon_link{
   content: "";
   display: flex;
   height: 20px;
   width: 20px;
+  padding-right: 30px;
 }
-
-.header-twitter-link:hover {
+.navbar_icon_link:hover {
   filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
 }
 
-.header-twitter-link:before {
+.header-github-link {
+  background: url(/img/github.svg)
+    no-repeat;
+}
+
+.header-twitter-link {
   background: url(/img/twitter.svg)
     no-repeat;
-  content: "";
-  display: flex;
-  height: 24px;
-  width: 24px;
 }
 
-.header-youtube-link:hover{
-  filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
-}
-
-.header-youtube-link:before {
+.header-youtube-link {
   background: url(/img/youtube.svg) no-repeat;
-  content: "";
-  display: flex;
-  height: 20px;
   width: 24px;
 }
+
 .homepage-codeline{
   display: flex;
   justify-content: center;

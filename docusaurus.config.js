@@ -83,21 +83,21 @@ const config = {
           {
             href: "https://github.com/flexn-io/renative",
             position: "right",
-            className: "header-github-link",
+            className: "navbar_icon_link header-github-link",
             title: "GitHub",
             "aria-label": "GitHub",
           },
           {
             href: "https://twitter.com/renative",
             position: "right",
-            className: "header-twitter-link",
+            className: "navbar_icon_link header-twitter-link",
             title: "X(Twitter)",
             "aria-label": "X(Twitter)",
           },
           {
             href: "https://www.youtube.com/@renative",
             position: "right",
-            className: "header-youtube-link",
+            className: "navbar_icon_link header-youtube-link",
             title: "Youtube",
             "aria-label": "Youtube",
           },
@@ -105,7 +105,7 @@ const config = {
             to: '/docs/overview/introduction',
             label: 'Try it out',
             position: 'right',
-            className: 'button button--secondary button--lg padding--sm'
+            className: 'button button--secondary navbar_button padding--sm'
           },
         ],
       },
