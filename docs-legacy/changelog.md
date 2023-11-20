@@ -2385,7 +2385,7 @@ module.exports = withRNV(config);
 
 ### Breaking Changes
 
-- appConfigs/\*\*/builds/_shared is DEPRECATED. use appConfigs/\*\*/builds/<PLATFORM> instead
+- appConfigs/\*\*/builds/_shared is DEPRECATED. use appConfigs/\*\*/builds/\<PLATFORM> instead
 
 ## v0.31.0-alpha.25 (2020-9-15)
 
@@ -2575,7 +2575,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 ### Fixed
 
 - support for --only , better android error logs
-- enable executor override via -e <engine>
+- enable executor override via -e \<engine>
 - migrate platform templates to engines
 - 0.31.0-alpha.15
 - android sdk bundleAssets fix, remove cycle references
@@ -2648,7 +2648,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 ### Fixed
 
 - rename hack
-- filterable logger -i "<value>,<value>.."
+- filterable logger -i "\<value>,\<value>.."
 - auto generate platformBuilds, better logging
 - migration fixes
 - fix crypto, better logging
@@ -4115,31 +4115,31 @@ to your `./renative.json`
 
 ### Fixes
 
-- fix readme	bf2b9fd3	Pavel Jacko <beherithrone@gmail.com>	23 May 2019 at 07:41
-- webpack updates, docs	93d7b7b5	Pavel Jacko <beherithrone@gmail.com>	23 May 2019 at 07:39
-- Merge branch 'master' of github.com:pavjacko/renative	ad6a8ae0	Pavel Jacko <beherithrone@gmail.com>	22 May 2019 at 19:25
-- webpack	a56ff08d	Pavel Jacko <beherithrone@gmail.com>	22 May 2019 at 19:25
-- Merge pull request #59 from mihaiblaga89/eslint_plugin_add	5f46b68c	Pavel Jacko <beherithrone@gmail.com>	22 May 2019 at 19:14
-- 0.21.6-alpha.1	1f832112	Pavel Jacko <beherithrone@gmail.com>	22 May 2019 at 16:56
-- opt platforms	43f42a60	Pavel Jacko <beherithrone@gmail.com>	22 May 2019 at 16:37
-- added eslint-plugin-detox	b11a510e	Mihai Blaga <mihaiblaga89@gmail.com>	22 May 2019 at 15:43
-- linter updates	9ec5af1a	Pavel Jacko <beherithrone@gmail.com>	22 May 2019 at 15:11
-- Merge branch 'master' of github.com:pavjacko/renative	a176b84b	Pavel Jacko <beherithrone@gmail.com>	22 May 2019 at 12:39
-- Merge pull request #58 from mihaiblaga89/format_everything_ftw	89519fbb	Pavel Jacko <beherithrone@gmail.com>	22 May 2019 at 12:37
-- missed a file	3a8b390d	Mihai Blaga <legolas8911@gmail.com>	21 May 2019 at 23:35
-- added husky and ran prettier on every .js	93b11655	Mihai Blaga <legolas8911@gmail.com>	21 May 2019 at 23:27
-- Merge pull request #1 from pavjacko/master	19db3fda	Mihai Blaga <legolas8911@gmail.com>	21 May 2019 at 23:25
-- Merge pull request #57 from mihaiblaga89/pods_error_handling	28840463	Pavel Jacko <beherithrone@gmail.com>	21 May 2019 at 16:21
-- added function to check if Cocoapods is installed before invoking it	59463502	Mihai Blaga <mihaiblaga89@gmail.com>	21 May 2019 at 14:10
-- Merge pull request #56 from hosek/androidTV-theme	95b271b8	Pavel Jacko <beherithrone@gmail.com>	21 May 2019 at 13:20
-- AndroidTV style updated to AppCompat Added support for Android phones display notches	e1c0545c	Roman Hosek <>	21 May 2019 at 12:47
-- Merge branch 'master' of github.com:pavjacko/renative	9871189e	Pavel Jacko <beherithrone@gmail.com>	21 May 2019 at 10:27
-- Merge pull request #52 from hosek/master	3090c7eb	Pavel Jacko <beherithrone@gmail.com>	21 May 2019 at 10:23
-- Merge pull request #50 from CHaNGeTe/fix/gradlew-windows	f15ce642	Pavel Jacko <beherithrone@gmail.com>	21 May 2019 at 10:22
-- Merge pull request #51 from CHaNGeTe/fix/native-orientation-locker	15bfb18c	Pavel Jacko <beherithrone@gmail.com>	21 May 2019 at 10:22
-- support for cocoapods commit	a8bab1fe	Pavel Jacko <beherithrone@gmail.com>	21 May 2019 at 10:22
-- add packages install	30921c39	Roman Hosek <>	10 May 2019 at 14:08
-- create ANdroid emulator on demand	48da08cd	Roman Hosek <>	9 May 2019 at 16:24
+- fix readme	bf2b9fd3	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	23 May 2019 at 07:41
+- webpack updates, docs	93d7b7b5	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	23 May 2019 at 07:39
+- Merge branch 'master' of github.com:pavjacko/renative	ad6a8ae0	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	22 May 2019 at 19:25
+- webpack	a56ff08d	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	22 May 2019 at 19:25
+- Merge pull request #59 from mihaiblaga89/eslint_plugin_add	5f46b68c	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	22 May 2019 at 19:14
+- 0.21.6-alpha.1	1f832112	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	22 May 2019 at 16:56
+- opt platforms	43f42a60	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	22 May 2019 at 16:37
+- added eslint-plugin-detox	b11a510e	Mihai Blaga [mihaiblaga89@gmail.com](mailto:mihaiblaga89@gmail.com)	22 May 2019 at 15:43
+- linter updates	9ec5af1a	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	22 May 2019 at 15:11
+- Merge branch 'master' of github.com:pavjacko/renative	a176b84b	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	22 May 2019 at 12:39
+- Merge pull request #58 from mihaiblaga89/format_everything_ftw	89519fbb	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	22 May 2019 at 12:37
+- missed a file	3a8b390d	Mihai Blaga [legolas8911@gmail.com](mailto:legolas8911@gmail.com)	21 May 2019 at 23:35
+- added husky and ran prettier on every .js	93b11655	Mihai Blaga [legolas8911@gmail.com](mailto:legolas8911@gmail.com)	21 May 2019 at 23:27
+- Merge pull request #1 from pavjacko/master	19db3fda	Mihai Blaga [legolas8911@gmail.com](mailto:legolas8911@gmail.com)	21 May 2019 at 23:25
+- Merge pull request #57 from mihaiblaga89/pods_error_handling	28840463	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	21 May 2019 at 16:21
+- added function to check if Cocoapods is installed before invoking it	59463502	Mihai Blaga [mihaiblaga89@gmail.com](mailto:mihaiblaga89@gmail.com)	21 May 2019 at 14:10
+- Merge pull request #56 from hosek/androidTV-theme	95b271b8	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	21 May 2019 at 13:20
+- AndroidTV style updated to AppCompat Added support for Android phones display notches	e1c0545c	Roman Hosek \<>	21 May 2019 at 12:47
+- Merge branch 'master' of github.com:pavjacko/renative	9871189e	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	21 May 2019 at 10:27
+- Merge pull request #52 from hosek/master	3090c7eb	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	21 May 2019 at 10:23
+- Merge pull request #50 from CHaNGeTe/fix/gradlew-windows	f15ce642	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	21 May 2019 at 10:22
+- Merge pull request #51 from CHaNGeTe/fix/native-orientation-locker	15bfb18c	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	21 May 2019 at 10:22
+- support for cocoapods commit	a8bab1fe	Pavel Jacko [beherithrone@gmail.com](mailto:beherithrone@gmail.com)	21 May 2019 at 10:22
+- add packages install	30921c39	Roman Hosek \<>	10 May 2019 at 14:08
+- create ANdroid emulator on demand	48da08cd	Roman Hosek \<>	9 May 2019 at 16:24
 
 
 ### Optional Platforms Support
