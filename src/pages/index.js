@@ -27,7 +27,7 @@ function HomepageHeader() {
                         {'Platform'}
                     </span>
                 </div>
-                <p className={styles.h2}>
+                <p className={clsx(styles.h2, styles.description)}>
                     ReNative allows you to <b>bootstrap</b>, <b>develop</b> and <b>deploy</b> apps for mobile, web, TVs, desktops, consoles, wearables and more via a single development environment.
                 </p>
 

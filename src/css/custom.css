@@ -44,12 +44,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .hero .hero__title {
   font-size: 84px;
   font-weight: 800;
-  height: 1.3em;
+  line-height: 101.66px;
 }
 
-@media screen and (max-width: 826px) {
+@media screen and (max-width: 1133px) {
   .hero .hero__title {
-    font-size: 3em;
+    font-size: 72px;
   }
 }
 
@@ -246,7 +246,10 @@ a {
 
 @media (max-width: 1200px) {
   .footer {
-    padding: 5% 2%;
+    padding-top: 36px;
+    padding-bottom: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -261,7 +264,6 @@ a {
   .logo-container {
     flex-grow: 1;
     width: 100%;
-    padding-bottom: 5%;
   }
 
   .theme-modes a:last-child {
@@ -290,6 +292,7 @@ a {
 .navbar_button {
   width: 101px;
   height: 40px;
+  align-self:flex-start;
 }
 
 .navbar_icon_link {
