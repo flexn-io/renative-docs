@@ -19,10 +19,10 @@ const ThemeModes = () => {
     <>
       <div className="theme-modes">
         <div className={lightThemeClasses} onClick={() => setColorMode('light')}>
-          <LightMode />
+          <LightMode className="theme-mode-img"/>
         </div>
         <div className={darkThemeClasses} onClick={() => setColorMode('dark')}>
-          <DarkMode />
+          <DarkMode className="theme-mode-img"/>
         </div>
       </div>
     </>)

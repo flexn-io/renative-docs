@@ -41,3 +41,12 @@
     margin-right: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .h2 {
+    width: auto;
+    font-size: 14px;
+  }
+  .description{
+    margin-bottom: 48px;
+  }
+}

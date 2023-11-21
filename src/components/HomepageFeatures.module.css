@@ -29,7 +29,7 @@
   border-radius: 21px;
   width:  300px;
   height: 300px;
-  padding: 1em;
+  padding: 32px;
   margin: 1em;
   flex-grow: 1;
   height: auto;
@@ -67,7 +67,8 @@
 }
 
 .main_img{
-  width: auto;
+  width: 100%;
+  object-fit: contain ;
 }
 
 .banner_container{
@@ -83,4 +84,51 @@
 .banner_img{
   padding-top: 24px;
   padding-bottom: 72px;
+}
+
+@media (max-width: 768px) {
+  .main_img {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .feature_grid_title{
+    padding-top: 96px;
+    font-size: 24px;
+  }
+
+  .feature_container{
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 300px;
+  }
+
+  .feature_text{
+    font-size: 12px;
+  }
+
+  .feature_title{
+    margin-bottom: 12px; 
+    font-size: 18px;  
+  }
+
+  .features {
+    gap: 20px;
+  }
+
+  .banner_container{
+    padding-top: 96px;
+  }
+
+  .banner_title{
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .banner_img{
+    padding-top: 16px;
+    padding-bottom: 64px;
+  }
 }

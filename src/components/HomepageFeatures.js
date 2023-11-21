@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
+import clsx from 'clsx';
 
 const FeatureList = [
   {
@@ -133,9 +134,9 @@ export default function HomepageFeatures() {
     <>
       <div className="container">
         {colorMode === 'dark' ?
-          <img className="main_img" src='/img/dark/rnv-dark.gif' />
+          <img className={styles.main_img} src='/img/dark/rnv-dark.gif' />
           :
-          <img className="main_img" src='/img/light/rnv-light.gif' />
+          <img className={styles.main_img} src='/img/light/rnv-light.gif' />
         }
       </div>
       <h3 className={styles.feature_grid_title}>RNV is</h3>
