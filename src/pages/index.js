@@ -32,7 +32,7 @@ function HomepageHeader() {
                 <div className='homepage-codeline'>
                     <div className={styles.buttons}>
                         <Link
-                            className="button button--secondary button--lg"
+                            className="button button--secondary button--lg homepage_button"
                             to="/docs/overview/introduction"
                         >
                             Try it out
@@ -41,7 +41,7 @@ function HomepageHeader() {
                     <div>
                         <CodeBlock
                             language="jsx">
-                            {`npm install rnv -g`}
+                            {`npm install rnv -g    `}
                         </CodeBlock>
                     </div>
                 </div>

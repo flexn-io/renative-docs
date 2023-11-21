@@ -135,7 +135,7 @@ h3 {
 
 .container {
   max-width: 1200px;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .container-in {
@@ -426,5 +426,18 @@ a {
   }
   .navbar_button {
     width: 100%;
+  }
+
+  .homepage-codeline {
+    gap: 10px;
+  }
+
+  .homepage_button{
+    width: 88px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
   }
 }
