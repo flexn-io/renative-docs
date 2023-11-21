@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
-import {useColorMode} from '@docusaurus/theme-common';
+import { useColorMode } from '@docusaurus/theme-common';
 
 const FeatureList = [
   {
@@ -11,9 +11,8 @@ const FeatureList = [
     float: 'left',
     description: (
       <>
-        ReNative Supports popular front-end frameworks like <a href="https://reactjs.org/">React</a>,
-        <a href="https://reactnative.dev/">React Native</a>, <a href="https://nextjs.org/">NextJS</a>, <a href="https://www.electronjs.org/">Electron</a>
-
+        ReNative supports popular front-end frameworks like <span style={{ color: '#0A74E6' }}>React</span>,
+        <span style={{ color: '#0A74E6' }}> React Native</span>, <span style={{ color: '#0A74E6' }}> NextJS</span>, <span style={{ color: '#0A74E6' }}> Electron</span>
       </>
     ),
     link: "/docs/engines/engine-rn",
@@ -25,7 +24,7 @@ const FeatureList = [
     float: 'left',
     description: (
       <>
-        ReNative allows you to build powerful multi-platform bootstrap templates.
+        ReNative allows you to <span style={{ color: '#0A74E6' }}>build</span> powerful multi-platform bootstrap templates.
       </>
     ),
     link: "/docs/guides/templates",
@@ -37,7 +36,7 @@ const FeatureList = [
     float: 'right',
     description: (
       <>
-        ReNative supports integrations for various services and deployment infrastructures for your apps
+        ReNative supports integrations for various services and <span style={{ color: '#0A74E6' }}>deployment infrastructures</span> for your apps
       </>
     ),
     link: "/docs/integrations/aws",
@@ -50,7 +49,7 @@ const FeatureList = [
     float: 'right',
     description: (
       <>
-        ReNative supports standard community driven react-native plugins you can use to enhance the functionality of your apps
+        ReNative supports standard community driven <span style={{ color: '#0A74E6' }}>react native plugins</span> you can use to enhance the functionality of your apps
       </>
     ),
     link: "/docs/plugins/overview",
@@ -63,7 +62,7 @@ const FeatureList = [
     description: (
       <>
         Tired of setting up and managing countless of various projects?
-        you can go as simple as most basic json config file to get yourself up and running
+        you can go as simple as most <span style={{ color: '#0A74E6' }}>basic json config</span> file to get yourself up and running
       </>
     ),
     link: "/docs/guides/advanced-configuration",
@@ -75,7 +74,7 @@ const FeatureList = [
     float: 'right',
     description: (
       <>
-        Sometimes you need to extend CLI functionality with custom build scripts. ReNative makes this easy for you
+        Sometimes you need to extend CLI functionality with custom build scripts. ReNative <span style={{ color: '#0A74E6' }}>makes this easy</span> for you
       </>
     ),
     link: "/docs/guides/build_hooks",
@@ -87,7 +86,7 @@ const FeatureList = [
     float: 'left',
     description: (
       <>
-        ReNative runtime is an NPM dependency to help abstract away some of the complexities of building UI interfaces and features for large number of target platforms and devices
+        ReNative runtime, <span style={{ color: '#0A74E6' }}>an NPM dependency, streamlines UI</span> and feature development for diverse platforms and devices.
       </>
     ),
     link: "/docs/guides/runtime",
@@ -99,7 +98,7 @@ const FeatureList = [
     float: 'right',
     description: (
       <>
-        One CLI to do it all. RNV is your entry point and control centre to building multi-platform apps with just a few commands to learn.
+        <span style={{ color: '#0A74E6' }}>Customize</span> your website layout using <span style={{ color: '#0A74E6' }}>React</span>. Docusaurus allows you to extend it while keeping the same header and footer.
       </>
     ),
     link: "/docs/guides/cli",
@@ -110,15 +109,15 @@ const FeatureList = [
 function Feature({ Svg, title, description, link }) {
   return (
     <div className={styles.feature_container} onClick={() => window.location.href = link}>
-      <div className="text--center">
-        <h2>
+      <div className={styles.feature_text}>
+        <h2 className={styles.feature_title}>
           {title}
         </h2>
-        {description ? (
+        {description && (
           <p>
             {description}
           </p>
-        ) : null}
+        )}
       </div>
 
       <div className={styles.featuresSvg_container}>
@@ -129,16 +128,17 @@ function Feature({ Svg, title, description, link }) {
 }
 
 export default function HomepageFeatures() {
-  const {colorMode} = useColorMode();
+  const { colorMode } = useColorMode();
   return (
     <>
-      {/* TODO: change gif to json */}
-      {colorMode === 'dark' ?
-        <img className={styles.main_img} src='/img/dark/rnv-dark.gif' />
-        :
-        <img className={styles.main_img} src='/img/light/rnv-light.gif' />
-      }
-      <h3 className="text--center">RNV is</h3>
+      <div className="container">
+        {colorMode === 'dark' ?
+          <img className="main_img" src='/img/dark/rnv-dark.gif' />
+          :
+          <img className="main_img" src='/img/light/rnv-light.gif' />
+        }
+      </div>
+      <h3 className={styles.feature_grid_title}>RNV is</h3>
       <section className="container">
         <div className={styles.features}>
           {FeatureList.map((props, idx) => {
@@ -149,7 +149,7 @@ export default function HomepageFeatures() {
       </section>
       <div className={styles.banner_container}>
         <div>
-          <h3>Some text should be here</h3>
+          <h3 className={styles.banner_title}>Some text should be here</h3>
         </div>
         <div className={styles.buttons}>
           <Link

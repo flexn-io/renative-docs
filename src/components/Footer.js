@@ -50,14 +50,14 @@ export default function Footer() {
       <div className="footer-container">
         <div className="container-title">Community</div>
         <a href="https://github.com/flexn-io/renative/discussions" className="footer-link">Project Chat</a>
-        <a href="https://twitter.com/renative" className="footer-link">Twitter</a>
+        <a href="https://twitter.com/renative" className="footer-link">X (Twitter)</a>
         <a href="https://github.com/flexn-io/renative/graphs/contributors" className="footer-link">Contributors</a>
       </div>
       <div className="footer-container">
         <div className="container-title">About Flexn</div>
-        <a href="https://github.com/flexn-io/renative/discussions" className="footer-link">Website</a>
-        <a href="https://github.com/flexn-io/renative" className="footer-link">Github</a>
-        <a href="https://twitter.com/renative" className="footer-link">Twitter</a>
+        <a href="https://www.flexn.io/" className="footer-link"target="_blank">Website<img src='/img/link.svg' /></a>
+        <a href="https://github.com/flexn-io" className="footer-link"target="_blank">Github<img src='/img/link.svg' /></a>
+        <a href="https://twitter.com/flexn_io" className="footer-link"target="_blank">X (Twitter)<img src='/img/link.svg' /></a>
       </div>
       <div className="footer-container">
         <ThemeModes />

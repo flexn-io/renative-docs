@@ -14,8 +14,7 @@ function HomepageHeader() {
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className="container">
                 <p className={styles.h2}>
-                    Currently <a className='link' href="https://github.com/flexn-io/renative/releases/tag/0.37.0">v0.37</a>
-                    <img src='/img/link.svg'/>
+                    Currently <a className='link' href="https://github.com/flexn-io/renative/releases/tag/0.37.0"  target="_blank">v0.37<img src='/img/link.svg' /></a>
                 </p>
                 <div className="container-in">
                     <span className="hero__title">
