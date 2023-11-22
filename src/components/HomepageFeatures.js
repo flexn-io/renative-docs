@@ -134,9 +134,9 @@ export default function HomepageFeatures() {
     <>
       <div className="container">
         {colorMode === 'dark' ?
-          <img className={styles.main_img} src='/img/dark/rnv-dark.gif' />
+          <img className={styles.main_img} src='/img/dark/rnv-dark.svg' />
           :
-          <img className={styles.main_img} src='/img/light/rnv-light.gif' />
+          <img className={styles.main_img} src='/img/light/rnv-light.svg' />
         }
       </div>
       <h3 className={styles.feature_grid_title}>RNV is</h3>
