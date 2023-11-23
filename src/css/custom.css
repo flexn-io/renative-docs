@@ -193,10 +193,6 @@ a {
   border-color: #3d3d3d;
 }
 
-.footer a{
-  color: #A1A1A1;
-}
-
 .footer-logo {
   width: 140px;
   height: auto;
@@ -256,6 +252,10 @@ a {
   color: #565656;
   font-size: 14px;
   line-height: 16px;
+}
+
+[data-theme='dark'] .footer-link {
+  color: #A1A1A1;
 }
 
 .footer-link:hover {
