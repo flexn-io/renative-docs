@@ -37,6 +37,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 [data-theme="dark"] .feature_container {
