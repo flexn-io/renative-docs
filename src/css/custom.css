@@ -112,6 +112,10 @@ header {
   border-color: #0a74e6;
 }
 
+html[data-theme='dark'] .button.button--secondary:hover {
+  background-color: #000000;
+}
+
 
 .col--4 {
   max-width: 500px;

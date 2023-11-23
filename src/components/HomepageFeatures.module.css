@@ -2,7 +2,9 @@
 .feature_grid_title{
   text-align: center;
   padding-top: 144px;
+  padding-bottom: 64px;
   font-size: 40px;
+  margin: 0;
 }
 
 .features {
