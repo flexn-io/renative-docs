@@ -310,6 +310,16 @@ a {
   align-items: center;
   vertical-align: middle;
   gap: 1em;
+  width: fit-content;
+  margin: auto;
+  height: fit-content;
+}
+
+.homepage-codeline .homepage_button{
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-sidebar {
