@@ -68,11 +68,15 @@
   display: flex;
   align-items: center;
   background: transparent;
-  color: var(--prism-color);
   padding: 0.4rem;
   line-height: 0;
   transition: opacity var(--ifm-transition-fast) ease-in-out;
   opacity: 1;
+  color: #565656;
+}
+
+html[data-theme='dark'] .buttonGroup button {
+  color: #a1a1a1;
 }
 
 .buttonGroup button:focus-visible,
