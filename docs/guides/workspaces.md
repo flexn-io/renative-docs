@@ -5,7 +5,7 @@ sidebar_label: Workspaces
 original_id: workspaces
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_workspace.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_workspace.png" width="50" height="50" /> -->
 
 ## Overview
 

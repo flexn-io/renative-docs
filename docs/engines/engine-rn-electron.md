@@ -5,7 +5,7 @@ sidebar_label: engine-rn-electron
 original_id: engine-rn-electron
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
 
 <!--AUTO_GENERATED_START-->
 

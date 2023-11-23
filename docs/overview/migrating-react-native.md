@@ -5,7 +5,7 @@ sidebar_label: Migrating react-native
 original_id: migrating_react_native
 ---
 
-<img className="header-image" src="https://facebook.github.io/react-native/img/header_logo.svg" width="50" height="50" />
+<!-- <img className="header-image" src="https://facebook.github.io/react-native/img/header_logo.svg" width="50" height="50" /> -->
 
 ## Overview
 

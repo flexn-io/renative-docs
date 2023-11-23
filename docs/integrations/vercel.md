@@ -5,7 +5,7 @@ sidebar_label: Vercel
 original_id: vercel
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_integrations.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_integrations.png" width="50" height="50" /> -->
 
 ## Overview
 

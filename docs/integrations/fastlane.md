@@ -5,7 +5,7 @@ sidebar_label: Fastlane
 original_id: fastlane
 ---
 
-<img className="header-image" src="https://pbs.twimg.com/profile_images/571414468974739456/XtEn7sJS_400x400.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://pbs.twimg.com/profile_images/571414468974739456/XtEn7sJS_400x400.png" width="50" height="50" /> -->
 
 ## Overview
 

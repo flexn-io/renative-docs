@@ -5,7 +5,7 @@ sidebar_label: Architecture
 original_id: architecture
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_architecture.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_architecture.png" width="50" height="50" /> -->
 
 ## Build Process
 

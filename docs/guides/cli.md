@@ -5,7 +5,7 @@ sidebar_label: ReNative CLI
 original_id: cli
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_cli.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_cli.png" width="50" height="50" /> -->
 
 ## ReNative CLI
 

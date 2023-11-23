@@ -5,7 +5,7 @@ sidebar_label: Config Folders
 original_id: config_folders
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_appconfigs.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_appconfigs.png" width="50" height="50" /> -->
 
 ## Overview
 
