@@ -313,6 +313,7 @@ a {
   width: fit-content;
   margin: auto;
   height: fit-content;
+  margin-bottom: 144px;
 }
 
 .homepage-codeline .homepage_button{
