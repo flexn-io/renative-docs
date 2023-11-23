@@ -139,7 +139,7 @@ export default function HomepageFeatures() {
           <img className={styles.main_img} src='/img/light/rnv-light.svg' />
         }
       </div>
-      <h3 className={styles.feature_grid_title}>RNV is</h3>
+      <h3 className={styles.feature_grid_title}>ReNative is</h3>
       <section className="container">
         <div className={styles.features}>
           {FeatureList.map((props, idx) => {
@@ -150,7 +150,7 @@ export default function HomepageFeatures() {
       </section>
       <div className={styles.banner_container}>
         <div>
-          <h3 className={styles.banner_title}>Some text should be here</h3>
+          <h3 className={styles.banner_title}>Start your next project here</h3>
         </div>
         <div className={styles.buttons}>
           <Link

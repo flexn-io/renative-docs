@@ -194,6 +194,10 @@ a {
   border-color: #3d3d3d;
 }
 
+.footer a{
+  color: #A1A1A1;
+}
+
 .footer-logo {
   width: 140px;
   height: auto;
@@ -205,11 +209,11 @@ a {
 }
 
 .theme-mode {
-  margin: 0 5px;
   padding: 5px;
   margin-bottom: 0;
-  padding-bottom: 0;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 [data-theme='dark'] .theme-mode {
@@ -217,8 +221,8 @@ a {
 }
 
 .theme-mode-img {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 .theme-mode-active {
@@ -403,14 +407,6 @@ a {
     width: 100%;
   }
 
-  .theme-modes a:last-child {
-    margin-right: 0;
-  }
-
-  .theme-mode {
-    margin-top: 16px;
-  }
-
   .footer-container {
     margin-bottom: 48px;
     width: 30%;
@@ -434,15 +430,9 @@ a {
   }
 
   .theme-mode {
-    width: 28px;
-    height: 28px;
-    display: flex;
-    justify-content: center;
+    margin-top: 16px;
   }
-  .theme-mode-img{
-    width: 16px;
-    height: 16px;
-  }
+
   .navbar_button {
     width: 100%;
   }
