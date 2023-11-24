@@ -35,7 +35,7 @@ function HomepageHeader() {
                             className="button button--secondary button--lg homepage_button"
                             to="/docs/overview/introduction"
                         >
-                            Try it out
+                            Get started
                         </Link>
                     </div>
                     <div>
