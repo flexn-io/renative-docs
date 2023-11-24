@@ -5,7 +5,7 @@ sidebar_label: Build Hooks
 original_id: build_hooks
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_hooks.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_hooks.png" width="50" height="50" /> -->
 
 ## Overview
 
@@ -64,7 +64,7 @@ Sometimes you want to execute specific hook automatically before/after certain R
 
 To get list of available hook pipes run:
 
-`$ rnv hooks pipes`
+`rnv hooks pipes`
 
 You can connect your hook method to one of predefined pipes in your `./buildHooks/src/index.js`:
 
@@ -74,7 +74,7 @@ const pipes = {
 };
 ```
 
-Example code above will execute `hooks.hello()` before every time you run `$ rnv configure` commands
+Example code above will execute `hooks.hello()` before every time you run `rnv configure` commands
 
 ## Run Multiple Pipes on One Hook
 

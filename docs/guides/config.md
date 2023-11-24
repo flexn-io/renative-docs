@@ -5,7 +5,7 @@ sidebar_label: Config Files
 original_id: config
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_configuration.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_configuration.png" width="50" height="50" /> -->
 
 <br />
 

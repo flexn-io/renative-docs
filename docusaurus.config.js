@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require('prism-react-renderer').themes.github;;
+const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -57,7 +57,7 @@ const config = {
       //   },
       navbar: {
         title: "ReNative",
-        hideOnScroll: true,
+        hideOnScroll: false,
         logo: {
           alt: "Renative Logo",
           src: "img/logo.svg",
@@ -82,65 +82,37 @@ const config = {
           },
           {
             href: "https://github.com/flexn-io/renative",
-            label: "Github",
             position: "right",
+            className: "navbar_icon_link header-github-link",
+            title: "GitHub",
+            "aria-label": "GitHub",
           },
           {
             href: "https://twitter.com/renative",
-            label: "Twitter",
             position: "right",
+            className: "navbar_icon_link header-twitter-link",
+            title: "X(Twitter)",
+            "aria-label": "X(Twitter)",
+          },
+          {
+            href: "https://www.youtube.com/@renative",
+            position: "right",
+            className: "navbar_icon_link header-youtube-link",
+            title: "Youtube",
+            "aria-label": "Youtube",
+          },
+          {
+            to: '/docs/overview/introduction',
+            label: 'Try it out',
+            position: 'right',
+            className: 'button button--secondary navbar_button padding--sm'
           },
         ],
       },
       colorMode: {
         defaultMode: "light",
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
-        switchConfig: {
-          darkIcon: "⚫",
-          lightIcon: "🔆",
-          // React inline style object
-          // see https://reactjs.org/docs/dom-elements.html#style
-          darkIconStyle: {
-            marginLeft: "0px",
-          },
-          lightIconStyle: {
-            marginLeft: "0px",
-          },
-        },
+        disableSwitch: true,
       },
-      // footer: {
-      //     style: 'dark',
-      //     links: [
-      //         {
-      //             title: 'Community',
-      //             items: [
-      //                 {
-      //                     label: 'Stack Overflow',
-      //                     href: 'https://stackoverflow.com/search?q=renative',
-      //                 },
-      //                 {
-      //                     label: 'Discussions',
-      //                     href: 'https://github.com/renative-org/renative/discussions',
-      //                 },
-      //                 {
-      //                     label: 'Twitter',
-      //                     href: 'https://twitter.com/renative',
-      //                 },
-      //             ],
-      //         },
-      //         {
-      //             title: 'More',
-      //             items: [
-      //                 {
-      //                     label: 'GitHub',
-      //                     href: 'https://github.com/renative-org/renative',
-      //                 },
-      //             ],
-      //         },
-      //     ],
-      //     copyright: `Copyright © ${new Date().getFullYear()} ReNative Org. Built with Docusaurus.`,
-      // },
       image: "img/logo.svg",
       prism: {
         theme: lightCodeTheme,

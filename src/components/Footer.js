@@ -1,36 +1,44 @@
 import React from "react";
-import useThemeContext from '@theme/hooks/useThemeContext';
-import Youtube from '../../static/img/youtube.svg';
-import Twitter from '../../static/img/twitter.svg';
-import Github from '../../static/img/github.svg';
+import DarkMode from '../../static/img/dark/icon.svg';
+import LightMode from '../../static/img/light/icon.svg';
 import Logo from '../../static/img/light/logo.svg'
 import LogoDark from '../../static/img/dark/logo.svg'
+import {useColorMode} from '@docusaurus/theme-common';
 
-const SocialLinks = () => <>
-    <div className="social-links">
-          <a href="https://www.youtube.com/channel/UCD1OyGZZY2PG0mpmq6CUaRQ" className="social-link" target="_blank">
-            <Youtube />
-          </a>
-          <a href="https://twitter.com/renative" className="social-link" target="_blank">
-            <Twitter />
-          </a>
-          <a href="https://github.com/flexn-io/renative" className="social-link" target="_blank">
-            <Github />
-          </a>
+const ThemeModes = () => {
+  const {colorMode, setColorMode} = useColorMode();
+
+  let darkThemeClasses = 'theme-mode'
+  let lightThemeClasses = 'theme-mode'
+  if (colorMode === 'dark') {
+    darkThemeClasses += ' theme-mode-active'
+  } else {
+    lightThemeClasses += ' theme-mode-active'
+  }
+  return (
+    <>
+      <div className="theme-modes">
+        <div className={lightThemeClasses} onClick={() => setColorMode('light')}>
+          <LightMode className="theme-mode-img"/>
+        </div>
+        <div className={darkThemeClasses} onClick={() => setColorMode('dark')}>
+          <DarkMode className="theme-mode-img"/>
+        </div>
       </div>
-</>
+    </>)
+}
 
 export default function Footer() {
-  const { isDarkTheme } = useThemeContext();
-  const LogoLogo = isDarkTheme ? LogoDark : Logo;
+  const {colorMode} = useColorMode();
+  const LogoLogo = colorMode === 'dark' ? LogoDark : Logo;
   return (
     <div className="footer">
       <div className="logo-container">
-        <div className="logo-wrapper">
+        <div>
           <LogoLogo className="footer-logo" />
         </div>
         <div className="copyright">
-          © {new Date().getFullYear()} ReNative Org
+          Copyright © {new Date().getFullYear()} ReNative Org
         </div>
       </div>
       <div className="footer-container">
@@ -41,13 +49,18 @@ export default function Footer() {
       </div>
       <div className="footer-container">
         <div className="container-title">Community</div>
-        <a href="https://github.com/flexn-io/renative/discussions" className="footer-link">Chat</a>
-        <a href="https://twitter.com/renative" className="footer-link">Twitter</a>
+        <a href="https://github.com/flexn-io/renative/discussions" className="footer-link">Project Chat</a>
+        <a href="https://twitter.com/renative" className="footer-link">X (Twitter)</a>
         <a href="https://github.com/flexn-io/renative/graphs/contributors" className="footer-link">Contributors</a>
       </div>
       <div className="footer-container">
-        <div className="container-title">Follow us</div>
-        <SocialLinks />
+        <div className="container-title">About Flexn</div>
+        <a href="https://www.flexn.io/" className="footer-link"target="_blank">Website<img src='/img/link.svg' /></a>
+        <a href="https://github.com/flexn-io" className="footer-link"target="_blank">Github<img src='/img/link.svg' /></a>
+        <a href="https://twitter.com/flexn_io" className="footer-link"target="_blank">X (Twitter)<img src='/img/link.svg' /></a>
+      </div>
+      <div className="footer-container">
+        <ThemeModes />
       </div>
     </div>
   );

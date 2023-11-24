@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -18,12 +18,41 @@
 
 .buttons {
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
 }
 
 .h2 {
   font-size: large;
+  margin: 0;
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.version_link {
+  margin-top: 96px;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 72px;
+}
+
+@media screen and (max-width: 1133px) {
+  .h2 {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h2 {
+    width: auto;
+    font-size: 14px;
+  }
+
+  .description {
+    margin-bottom: 48px;
+  }
 }

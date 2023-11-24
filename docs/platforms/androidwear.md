@@ -84,7 +84,7 @@ make sure you have this piece of script in package.json
 Hermes can be enabled or disabled with `"reactNativeEngine": "hermes"` prop in `renative.json:platforms.android.reactNativeEngine`
 or `renative.json:platforms.android.buildSchemes.[SCHEME].reactNativeEngine`
 
-NOTE: There is a bug in RN. for now you must NOT have running bundler (`$ rnv start`) in order for wear sim to work
+NOTE: There is a bug in RN. for now you must NOT have running bundler (`rnv start`) in order for wear sim to work
 
 ## Advanced
 

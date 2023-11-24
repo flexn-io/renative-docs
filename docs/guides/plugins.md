@@ -5,7 +5,7 @@ sidebar_label: Plugins
 original_id: plugins
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_plugins.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_plugins.png" width="50" height="50" /> -->
 
 ## Overview
 
@@ -13,7 +13,7 @@ ReNative Supports standard community driven react-native plugins you can use to 
 
 Get list of all available community plugins. (NOTE you can always add new one manually into one of the `renative.json` files)
 
-`$ rnv plugin list`
+`rnv plugin list`
 
 you should get colorised overview similar to this:
 
@@ -27,13 +27,13 @@ you should get colorised overview similar to this:
 
 add new plugin to your project:
 
-`$ rnv plugin add`
+`rnv plugin add`
 
 and follow the command prompt steps
 
 Update your current plugins with latest ones from ReNative
 
-`$ rnv plugin update`
+`rnv plugin update`
 
 and follow the command prompt steps
 

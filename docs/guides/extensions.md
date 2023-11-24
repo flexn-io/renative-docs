@@ -5,7 +5,7 @@ sidebar_label: File Extensions
 original_id: file_extensions
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_file_extensions.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_file_extensions.png" width="50" height="50" /> -->
 
 ## Overview
 

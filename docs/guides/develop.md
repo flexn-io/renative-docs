@@ -5,7 +5,7 @@ sidebar_label: Develop ReNative
 original_id: develop
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_construction.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_construction.png" width="50" height="50" /> -->
 
 ## Developing ReNative Locally
 
@@ -18,7 +18,7 @@ If you need full control over whole ReNative build you can clone and develop it 
 4) yarn watch
 ```
 
-At this point your global `$ rnv` command is linked directly into project above.
+At this point your global `rnv` command is linked directly into project above.
 
 It's also best way to contribute back to RNV! :)
 

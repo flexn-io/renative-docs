@@ -432,11 +432,11 @@ Example:
 
 this will allow you to build 2 separate iOS apps with slightly different configurations:
 
-`$ rnv run -p ios -s debug` (`-s debug` is DEFAULT option so you don't have to add it every time)
+`rnv run -p ios -s debug` (`-s debug` is DEFAULT option so you don't have to add it every time)
 
 and
 
-`$ rnv run -p ios -s release`
+`rnv run -p ios -s release`
 
 ## Runtime Props
 

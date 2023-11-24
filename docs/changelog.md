@@ -2430,7 +2430,7 @@ module.exports = withRNV(config);
 
 ### Breaking Changes
 
-- appConfigs/\*\*/builds/_shared is DEPRECATED. use appConfigs/\*\*/builds/{PLATFORM} instead
+- appConfigs/\*\*/builds/_shared is DEPRECATED. use appConfigs/\*\*/builds/\{PLATFORM} instead
 
 ## v0.31.0-alpha.25 (2020-9-15)
 
@@ -2620,7 +2620,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 ### Fixed
 
 - support for --only , better android error logs
-- enable executor override via -e {engine}
+- enable executor override via -e \{engine}
 - migrate platform templates to engines
 - 0.31.0-alpha.15
 - android sdk bundleAssets fix, remove cycle references
@@ -2693,7 +2693,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 ### Fixed
 
 - rename hack
-- filterable logger -i "{value},{value}.."
+- filterable logger -i "\{value},\{value}.."
 - auto generate platformBuilds, better logging
 - migration fixes
 - fix crypto, better logging

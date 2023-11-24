@@ -5,7 +5,7 @@ sidebar_label: Installation
 original_id: installation
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_quickstart.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_quickstart.png" width="50" height="50" /> -->
 
 ## Requirements
 
@@ -20,7 +20,7 @@ original_id: installation
 ## Install ReNative CLI (rnv)
 
 ```bash
-$ npm install rnv -g
+npm install rnv -g
 ```
 
 ## Create new app
@@ -34,7 +34,7 @@ $ npm install rnv -g
 </table>
 
 ```bash
-$ rnv new
+rnv new
 ```
 
 Follow steps in the terminal
@@ -44,19 +44,19 @@ Follow steps in the terminal
 Run your first `ios` app
 
 ```bash
-$ rnv run -p ios
+rnv run -p ios
 ```
 
 Run your first `android` app
 
 ```bash
-$ rnv run -p android
+rnv run -p android
 ```
 
 Run your first `web` app
 
 ```bash
-$ rnv run -p web
+rnv run -p web
 ```
 
 ... and so on

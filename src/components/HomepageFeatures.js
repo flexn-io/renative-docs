@@ -1,16 +1,10 @@
 import React from 'react';
-import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import Link from '@docusaurus/Link';
+import { useColorMode } from '@docusaurus/theme-common';
+import clsx from 'clsx';
 
 const FeatureList = [
-  {
-    title: 'Any device',
-    svg: require('../../static/img/image0.svg').default,
-    svgDark: require('../../static/img/dark/image0.svg').default,
-    float: 'top',
-    imageWidth: 800,
-  },
   {
     title: 'Supercharged frameworks',
     svg: require('../../static/img/image1.svg').default,
@@ -18,11 +12,35 @@ const FeatureList = [
     float: 'left',
     description: (
       <>
-        ReNative Supports popular front-end frameworks like <a href="https://reactjs.org/">React</a>,
-        <a href="https://reactnative.dev/">React Native</a>, <a href="https://nextjs.org/">NextJS</a>, <a href="https://www.electronjs.org/">Electron</a>
-
+        ReNative supports popular front-end frameworks like <span style={{ color: '#0A74E6' }}>React</span>,
+        <span style={{ color: '#0A74E6' }}> React Native</span>, <span style={{ color: '#0A74E6' }}> NextJS</span>, <span style={{ color: '#0A74E6' }}> Electron</span>
       </>
     ),
+    link: "/docs/engines/engine-rn",
+  },
+  {
+    title: 'Powerful templates',
+    svg: require('../../static/img/image3.svg').default,
+    svgDark: require('../../static/img/dark/image3.svg').default,
+    float: 'left',
+    description: (
+      <>
+        ReNative allows you to <span style={{ color: '#0A74E6' }}>build</span> powerful multi-platform bootstrap templates.
+      </>
+    ),
+    link: "/docs/guides/templates",
+  },
+  {
+    title: 'Integrations',
+    svg: require('../../static/img/image4.svg').default,
+    svgDark: require('../../static/img/dark/image4.svg').default,
+    float: 'right',
+    description: (
+      <>
+        ReNative supports integrations for various services and <span style={{ color: '#0A74E6' }}>deployment infrastructures</span> for your apps
+      </>
+    ),
+    link: "/docs/integrations/aws",
   },
 
   {
@@ -32,31 +50,10 @@ const FeatureList = [
     float: 'right',
     description: (
       <>
-        ReNative supports standard community driven react-native plugins you can use to enhance the functionality of your apps
+        ReNative supports standard community driven <span style={{ color: '#0A74E6' }}>react native plugins</span> you can use to enhance the functionality of your apps
       </>
     ),
-  },
-  {
-    title: 'Powerful templates',
-    svg: require('../../static/img/image3.svg').default,
-    svgDark: require('../../static/img/dark/image3.svg').default,
-    float: 'left',
-    description: (
-      <>
-        ReNative allows you to build powerful multi-platform bootstrap templates.
-      </>
-    ),
-  },
-  {
-    title: 'Integrations',
-    svg: require('../../static/img/image4.svg').default,
-    svgDark: require('../../static/img/dark/image4.svg').default,
-    float: 'right',
-    description: (
-      <>
-        ReNative supports integrations for various services and deployment infrastructures for your apps
-      </>
-    ),
+    link: "/docs/plugins/overview",
   },
   {
     title: 'Scalable configurations',
@@ -66,9 +63,10 @@ const FeatureList = [
     description: (
       <>
         Tired of setting up and managing countless of various projects?
-        you can go as simple as most basic json config file to get yourself up and running
+        you can go as simple as most <span style={{ color: '#0A74E6' }}>basic json config</span> file to get yourself up and running
       </>
     ),
+    link: "/docs/guides/advanced-configuration",
   },
   {
     title: 'Build hooks',
@@ -77,9 +75,10 @@ const FeatureList = [
     float: 'right',
     description: (
       <>
-        Sometimes you need to extend CLI functionality with custom build scripts. ReNative makes this easy for you
+        Sometimes you need to extend CLI functionality with custom build scripts. ReNative <span style={{ color: '#0A74E6' }}>makes this easy</span> for you
       </>
     ),
+    link: "/docs/guides/build_hooks",
   },
   {
     title: 'Minimalistic Runtime',
@@ -88,96 +87,87 @@ const FeatureList = [
     float: 'left',
     description: (
       <>
-        ReNative runtime is an NPM dependency to help abstract away some of the complexities of building UI interfaces and features for large number of target platforms and devices
+        ReNative runtime, <span style={{ color: '#0A74E6' }}>an NPM dependency, streamlines UI</span> and feature development for diverse platforms and devices.
       </>
     ),
+    link: "/docs/guides/runtime",
   },
   {
-    title: 'powerful CLI',
+    title: 'Powerful CLI',
     svg: require('../../static/img/image8.svg').default,
     svgDark: require('../../static/img/dark/image8.svg').default,
     float: 'right',
     description: (
       <>
-        One CLI to do it all. RNV is your entry point and control centre to building multi-platform apps with just a few commands to learn.
+        <span style={{ color: '#0A74E6' }}>Customize</span> your website layout using <span style={{ color: '#0A74E6' }}>React</span>. Docusaurus allows you to extend it while keeping the same header and footer.
       </>
     ),
+    link: "/docs/guides/cli",
   },
 ];
 
-const Linesvg = require('../../static/img/line.svg').default;
-const LinesvgDark = require('../../static/img/dark/line.svg').default;
 
-
-function Feature({ Svg, title, description, float, imageWidth = 400 }) {
-  const { isDarkTheme } = useThemeContext();
+function Feature({ Svg, title, description, link }) {
   return (
-    <div className={clsx('col col--6')}>
-      <div className="text--center">
-        {isDarkTheme ? <LinesvgDark className={styles.linesvg} alt={title} /> : <Linesvg className={styles.linesvg} alt={title} />}
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>
+    <div className={styles.feature_container} onClick={() => window.location.href = link}>
+      <div className={styles.feature_text}>
+        <h2 className={styles.feature_title}>
           {title}
-        </h3>
-        <div className="feature-wrapper">
-            {description ? (
-                <p className="feature-wrapper-text">
-                    {description}
-                </p>
-            ) : null}
+        </h2>
+        {description && (
+          <p>
+            {description}
+          </p>
+        )}
+      </div>
 
-            <div className="feature-wrapper-image">
-                <Svg className="featuresSvg" alt={title} />
-            </div>
-        </div>
+      <div className={styles.featuresSvg_container}>
+        <Svg className={styles.featuresSvg} alt={title} />
       </div>
     </div>
   );
 }
 
-const YoutubeVideo = ({ youtubeId, title }) => (
-    <div
-        className="wrapper"
-        style={{
-            margin: 'auto',
-            marginBottom: 50
-        }}
-    >
-        <div
-            style={{
-                position: 'relative',
-                paddingBottom: '56.25%' /* 16:9 */,
-                height: 0
-            }}
-        >
-            <iframe
-                title={title || 'video'}
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%'
-                }}
-                src={`https://www.youtube.com/embed/${youtubeId}`}
-                frameBorder="0"
-            />
-        </div>
-    </div>
-);
-
 export default function HomepageFeatures() {
-  const { isDarkTheme } = useThemeContext();
+  const { colorMode } = useColorMode();
   return (
-    <section className={styles.features}>
+    <>
       <div className="container">
-      <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
-        {FeatureList.map((props, idx) => {
-          const img = isDarkTheme ? props.svgDark : props.svg;
-          return <Feature key={idx} {...props} Svg={img} />
-        })}
+        {colorMode === 'dark' ?
+          <img className={styles.main_img} src='/img/dark/rnv-dark.svg' />
+          :
+          <img className={styles.main_img} src='/img/light/rnv-light.svg' />
+        }
       </div>
-    </section>
+      <h3 className={styles.feature_grid_title}>ReNative is</h3>
+      <section className="container">
+        <div className={styles.features}>
+          {FeatureList.map((props, idx) => {
+            const img = colorMode === 'dark' ? props.svgDark : props.svg;
+            return <Feature key={idx} {...props} Svg={img} />
+          })}
+        </div>
+      </section>
+      <div className={styles.banner_container}>
+        <div>
+          <h3 className={styles.banner_title}>Start your next project here</h3>
+        </div>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/overview/introduction"
+          >
+            Try it out
+          </Link>
+        </div>
+        <div className={styles.banner_img}>
+          {colorMode === 'dark' ?
+            <img src='/img/dark/rocket_dark.svg' />
+            :
+            <img src='/img/light/rocket_light.svg' />
+          }
+        </div>
+      </div>
+    </>
   );
 }

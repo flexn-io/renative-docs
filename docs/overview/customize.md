@@ -5,7 +5,7 @@ sidebar_label: Customize ReNative
 original_id: customize
 ---
 
-<img className="header-image" src="https://renative.org/img/ic_configuration.png" width="50" height="50" />
+<!-- <img className="header-image" src="https://renative.org/img/ic_configuration.png" width="50" height="50" /> -->
 
 ## Overview
 
