@@ -1,4 +1,26 @@
 
+.img_video_container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.img_video_container_in{
+  width: 616px;
+  height: 346.5px;
+}
+
+.main_img_title h2{
+  width: 390px;
+}
+.main_img_title h2{
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 64px;
+}
+
 .feature_grid_title{
   text-align: center;
   padding-top: 144px;

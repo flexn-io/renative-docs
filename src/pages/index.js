@@ -41,7 +41,7 @@ function HomepageHeader() {
                     <div>
                         <CodeBlock
                             language="jsx">
-                            {`npm install rnv -g    `}
+                            {`npx rnv new    `}
                         </CodeBlock>
                     </div>
                 </div>

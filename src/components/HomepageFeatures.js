@@ -106,6 +106,36 @@ const FeatureList = [
   },
 ];
 
+const YoutubeVideo = ({ youtubeId, title }) => (
+  <div
+      className="wrapper"
+      style={{
+          margin: 'auto',
+          marginBottom: 50
+      }}
+  >
+      <div
+          style={{
+              position: 'relative',
+              paddingBottom: '56.25%' /* 16:9 */,
+              height: 0
+          }}
+      >
+          <iframe
+              title={title || 'video'}
+              style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%'
+              }}
+              src={`https://www.youtube.com/embed/${youtubeId}`}
+              frameBorder="0"
+          />
+      </div>
+  </div>
+);
 
 function Feature({ Svg, title, description, link }) {
   return (
@@ -132,12 +162,20 @@ export default function HomepageFeatures() {
   const { colorMode } = useColorMode();
   return (
     <>
-      <div className="container">
-        {colorMode === 'dark' ?
-          <img className={styles.main_img} src='/img/dark/rnv-dark.svg' />
-          :
-          <img className={styles.main_img} src='/img/light/rnv-light.svg' />
-        }
+      <div className={clsx("container", styles.img_video_container)} >
+        <div className={styles.img_video_container_in}>
+          <div className={styles.main_img_title}>
+            <h2>Build react native app with ReNative framework</h2>
+          </div>
+          {colorMode === 'dark' ?
+            <img className={styles.main_img} src='/img/dark/rnv-dark.svg' />
+            :
+            <img className={styles.main_img} src='/img/light/rnv-light.svg' />
+          }
+        </div>
+        <div className={styles.img_video_container_in}>
+          <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
+        </div>
       </div>
       <h3 className={styles.feature_grid_title}>ReNative is</h3>
       <section className="container">
