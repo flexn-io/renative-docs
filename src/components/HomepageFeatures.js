@@ -1,24 +1,35 @@
 import React from 'react';
 import styles from './HomepageFeatures.module.css';
-import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
 import clsx from 'clsx';
+import CodeBlock from '@theme/CodeBlock';
 
 const FeatureList = [
   {
     title: 'Extendable by community plugins',
-    icon: '/img/feature_icon1.svg',
+    icon: '/img/light/feature_icon1.svg',
+    iconDark: '/img/dark/feature_icon1.svg',
     description: (
       <>
         ReNative supports standard community driven <span style={{ color: '#0A74E6' }}>react native plugins</span> you can use to enhance
         the functionality of your apps.
       </>
     ),
+    children:
+      <div className={styles.plugin_grid}>
+        <PluginItemComponent title='@flexn/create' codeSnippet='rnv plugin add @flexn/create   ' />
+        <PluginItemComponent title='@flexn/sdk' codeSnippet='rnv plugin add @flexn/sdk  ' />
+        <PluginItemComponent title='@lightningjs/cli' codeSnippet='rnv plugin add @lightningjs/cli  ' />
+        <PluginItemComponent title='@reach/router' codeSnippet='rnv plugin add @reach/router  ' />
+        <PluginItemComponent title='@react-navigation' codeSnippet='rnv plugin add @react-navigation  ' />
+        <PluginItemComponent title='@reduxjs/toolkit' codeSnippet='rnv plugin add @reduxjs/toolkit  ' />
+      </div>,
     link: "/docs",
   },
   {
     title: 'Scalable configurations',
-    icon: '/img/feature_icon2.svg',
+    icon: '/img/light/feature_icon2.svg',
+    iconDark: '/img/dark/feature_icon2.svg',
     description: (
       <>
         Tired of setting up and managing countless of various projects? You can go
@@ -29,7 +40,8 @@ const FeatureList = [
   },
   {
     title: 'Powerful CLI',
-    icon: '/img/feature_icon3.svg',
+    icon: '/img/light/feature_icon3.svg',
+    iconDark: '/img/dark/feature_icon3.svg',
     description: (
       <>
         <span style={{ color: '#0A74E6' }}>Customize</span> your website layout using <span style={{ color: '#0A74E6' }}>React</span>. Docusaurus allows you to extend it
@@ -40,22 +52,26 @@ const FeatureList = [
   },
   {
     title: 'Minimalistic runtime',
-    icon: '/img/feature_icon4.svg',
+    icon: '/img/light/feature_icon4.svg',
+    iconDark: '/img/dark/feature_icon4.svg',
     description: (
       <>
         ReNative runtime, an <span style={{ color: '#0A74E6' }}>NPM dependency</span>, <span style={{ color: '#0A74E6' }}>streamlines UI</span> and feature development
         for diverse platforms and devices.
       </>
     ),
-    code: (
-      'import { isPlatformTizen, isFactorTv, engine, platform } from "renative";<Text>{isFactorTv}</Text>;'
-    ),
+    children:
+      <CodeBlock
+        language="jsx">
+        {`import { isPlatformTizen, isFactorTv, engine, platform } from "renative";\n\n<Text>{isFactorTv}</Text>; `}
+      </CodeBlock>,
     link: "/docs",
   },
 
   {
     title: 'Supercharged frameworks',
-    icon: '/img/feature_icon5.svg',
+    icon: '/img/light/feature_icon5.svg',
+    iconDark: '/img/dark/feature_icon5.svg',
     description: (
       <>
         ReNative supports popular front-end frameworks like <span style={{ color: '#0A74E6' }}>React</span>, <span style={{ color: '#0A74E6' }}>React Native</span>, <span style={{ color: '#0A74E6' }}>NextJS</span>, <span style={{ color: '#0A74E6' }}>Electron</span>
@@ -65,28 +81,48 @@ const FeatureList = [
   },
   {
     title: 'Build hooks',
-    icon: '/img/feature_icon6.svg',
+    icon: '/img/light/feature_icon6.svg',
+    iconDark: '/img/dark/feature_icon6.svg',
     description: (
       <>
         Sometimes you need to extend CLI functionality with custom build scripts.
         ReNative <span style={{ color: '#0A74E6' }}>makes this easy</span> for you.
       </>
     ),
+    children:
+      <CodeBlock
+        language="jsx">
+        {`import chalk from 'chalk';\n\nconst hooks = {    
+        hello: c =>       
+              new Promise((resolve, reject) => {            
+                      console.log(\`\\n$\{chalk.yellow('HELLO FROM BUILD HOOKS!')}\\n\`);
+                      resolve();        
+              })};\n
+              const pipes = {};\n
+              export { pipes, hooks };`}
+      </CodeBlock>,
     link: "/docs",
   },
   {
     title: 'Powerful templates',
-    icon: '/img/feature_icon7.svg',
+    icon: '/img/light/feature_icon7.svg',
+    iconDark: '/img/dark/feature_icon7.svg',
     description: (
       <>
         ReNative allows you to <span style={{ color: '#0A74E6' }}>build</span> powerful multi-platform bootstrap templates.
       </>
     ),
+    children:
+      <CodeBlock
+        language="jsx">
+        {`rnv new\n\n...\n\n? What template to use? => 'renative-template-hello-world'`}
+      </CodeBlock>,
     link: "/docs",
   },
   {
     title: 'Integrations',
-    icon: '/img/feature_icon8.svg',
+    icon: '/img/light/feature_icon8.svg',
+    iconDark: '/img/dark/feature_icon8.svg',
     description: (
       <>
         ReNative supports integration for various services and <span style={{ color: '#0A74E6' }}>deployment infrastructures</span> for your apps.
@@ -129,23 +165,25 @@ const YoutubeVideo = ({ youtubeId, title }) => (
 
 function PluginItemComponent({ title, codeSnippet }) {
   return (
-    <div className={styles.feature_container}>
-      <div className={styles.feature_text}>
-        <h2 className={styles.feature_title}>
+    <div className={styles.plugin_container}>
+      <div>
+        <p className={styles.plugin_title}>
           {title}
-        </h2>
-        <p>
-          {codeSnippet}
         </p>
+        <CodeBlock
+          language="jsx">
+          {codeSnippet}
+        </CodeBlock>
       </div>
     </div>
   );
 }
-function SectionItemComponent({ icon, title, description, link }) {
+
+function SectionItemComponent({ Svg, title, description, link, children }) {
   return (
     <div className={styles.feature_container}>
       <div className={styles.feature_title_container}>
-        <img className='link_img' src={icon} />
+        <img className='link_img' src={Svg} />
         <h2 className={styles.feature_title}>
           {title}
         </h2>
@@ -155,6 +193,7 @@ function SectionItemComponent({ icon, title, description, link }) {
           {description}
         </p>
       )}
+      {children}
       <a className={styles.feature_link} href={link}>Learn more <img className='link_img' src='/img/link.svg' /></a>
     </div>
   );
@@ -180,10 +219,11 @@ export default function HomepageFeatures() {
         </div>
       </div>
 
-      <section className="container"  style={{padding: '0'}}>
+      <section className="container" style={{ padding: '0' }}>
         <div className={styles.features}>
           {FeatureList.map((props, idx) => {
-            return <SectionItemComponent key={idx} {...props} />
+            const img = colorMode === 'dark' ? props.iconDark : props.icon;
+            return <SectionItemComponent key={idx} {...props} Svg={img}/>
           })}
         </div>
       </section>
