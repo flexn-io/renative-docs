@@ -36,12 +36,13 @@
   width: 100%;
   margin: 144px 0;
   padding: 0;
+  gap: 32px;
 }
 
 .feature_container {
-  width: 500px;
+  width: 616px;
   height: 300px;
-  padding: 32px;
+  padding: 32px 0;
   flex-grow: 1;
   height: auto;
 }
@@ -67,6 +68,7 @@
 }
 
 .feature_link {
+  margin-top: 24px;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
@@ -81,6 +83,23 @@
 .main_img {
   width: 100%;
   object-fit: contain;
+}
+
+.plugin_grid{
+  display: flex;
+  flex-flow: wrap;
+  gap: 32px;
+}
+
+.plugin_container{
+  width: 360px;
+}
+
+.plugin_title{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 @media screen and (max-width: 1030px) {
