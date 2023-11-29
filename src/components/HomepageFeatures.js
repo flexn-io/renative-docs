@@ -39,18 +39,6 @@ const FeatureList = [
     link: "/docs",
   },
   {
-    title: 'Powerful CLI',
-    icon: '/img/light/feature_icon3.svg',
-    iconDark: '/img/dark/feature_icon3.svg',
-    description: (
-      <>
-        <span style={{ color: '#0A74E6' }}>Customize</span> your website layout using <span style={{ color: '#0A74E6' }}>React</span>. Docusaurus allows you to extend it
-        while keeping the same header and footer.
-      </>
-    ),
-    link: "/docs",
-  },
-  {
     title: 'Minimalistic runtime',
     icon: '/img/light/feature_icon4.svg',
     iconDark: '/img/dark/feature_icon4.svg',
@@ -67,7 +55,6 @@ const FeatureList = [
       </CodeBlock>,
     link: "/docs",
   },
-
   {
     title: 'Supercharged frameworks',
     icon: '/img/light/feature_icon5.svg',
@@ -75,6 +62,34 @@ const FeatureList = [
     description: (
       <>
         ReNative supports popular front-end frameworks like <span style={{ color: '#0A74E6' }}>React</span>, <span style={{ color: '#0A74E6' }}>React Native</span>, <span style={{ color: '#0A74E6' }}>NextJS</span>, <span style={{ color: '#0A74E6' }}>Electron</span>
+      </>
+    ),
+    link: "/docs",
+  },
+  {
+    title: 'Powerful templates',
+    icon: '/img/light/feature_icon7.svg',
+    iconDark: '/img/dark/feature_icon7.svg',
+    description: (
+      <>
+        ReNative allows you to <span style={{ color: '#0A74E6' }}>build</span> powerful multi-platform bootstrap templates.
+      </>
+    ),
+    children:
+      <CodeBlock
+        language="jsx">
+        {`rnv new\n\n...\n\n? What template to use? => 'renative-template-hello-world'`}
+      </CodeBlock>,
+    link: "/docs",
+  },
+  {
+    title: 'Powerful CLI',
+    icon: '/img/light/feature_icon3.svg',
+    iconDark: '/img/dark/feature_icon3.svg',
+    description: (
+      <>
+        <span style={{ color: '#0A74E6' }}>Customize</span> your website layout using <span style={{ color: '#0A74E6' }}>React</span>. Docusaurus allows you to extend it
+        while keeping the same header and footer.
       </>
     ),
     link: "/docs",
@@ -100,22 +115,6 @@ const FeatureList = [
               })};\n
               const pipes = {};\n
               export { pipes, hooks };`}
-      </CodeBlock>,
-    link: "/docs",
-  },
-  {
-    title: 'Powerful templates',
-    icon: '/img/light/feature_icon7.svg',
-    iconDark: '/img/dark/feature_icon7.svg',
-    description: (
-      <>
-        ReNative allows you to <span style={{ color: '#0A74E6' }}>build</span> powerful multi-platform bootstrap templates.
-      </>
-    ),
-    children:
-      <CodeBlock
-        language="jsx">
-        {`rnv new\n\n...\n\n? What template to use? => 'renative-template-hello-world'`}
       </CodeBlock>,
     link: "/docs",
   },
@@ -179,11 +178,11 @@ function PluginItemComponent({ title, codeSnippet }) {
   );
 }
 
-function SectionItemComponent({ Svg, title, description, link, children }) {
+function SectionItemComponent({ Svg, title, description, link, children, linkName='Learn more'}) {
   return (
     <div className={styles.feature_container}>
       <div className={styles.feature_title_container}>
-        <img className='link_img' src={Svg} />
+        <img src={Svg} />
         <h2 className={styles.feature_title}>
           {title}
         </h2>
@@ -194,7 +193,7 @@ function SectionItemComponent({ Svg, title, description, link, children }) {
         </p>
       )}
       {children}
-      <a className={styles.feature_link} href={link}>Learn more <img className='link_img' src='/img/link.svg' /></a>
+      <a className={styles.feature_link} href={link}>{linkName}<img src='/img/link.svg' /></a>
     </div>
   );
 }
@@ -219,9 +218,10 @@ export default function HomepageFeatures() {
         </div>
       </div>
 
-      <section className="container" style={{ padding: '0' }}>
+      <section className="container">
+        <SectionItemComponent key='0' {...FeatureList[0]} Svg={colorMode === 'dark' ? FeatureList[0].iconDark : FeatureList[0].icon} linkName='Explore more'/>
         <div className={styles.features}>
-          {FeatureList.map((props, idx) => {
+          {FeatureList.slice(1).map((props, idx) => {
             const img = colorMode === 'dark' ? props.iconDark : props.icon;
             return <SectionItemComponent key={idx} {...props} Svg={img}/>
           })}

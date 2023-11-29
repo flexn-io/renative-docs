@@ -15,7 +15,7 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 75%;
   --ifm-color-secondary: #0a74e6;
   --ifm-navbar-shadow: transparent;
   --ifm-button-font-weight: 300
@@ -317,7 +317,7 @@ a {
 }
 
 .homepage-codeline .homepage_button{
-  height: 56px;
+  height: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
