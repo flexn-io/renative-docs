@@ -218,7 +218,7 @@ export default function HomepageFeatures() {
         </div>
       </div>
 
-      <section className="container" style={{ padding: '0' }}>
+      <section className="container">
         <SectionItemComponent key='0' {...FeatureList[0]} Svg={colorMode === 'dark' ? FeatureList[0].iconDark : FeatureList[0].icon}/>
         <div className={styles.features}>
           {FeatureList.slice(1).map((props, idx) => {
