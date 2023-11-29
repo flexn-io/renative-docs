@@ -178,11 +178,11 @@ function PluginItemComponent({ title, codeSnippet }) {
   );
 }
 
-function SectionItemComponent({ Svg, title, description, link, children }) {
+function SectionItemComponent({ Svg, title, description, link, children, linkName='Learn more'}) {
   return (
     <div className={styles.feature_container}>
       <div className={styles.feature_title_container}>
-        <img className='link_img' src={Svg} />
+        <img src={Svg} />
         <h2 className={styles.feature_title}>
           {title}
         </h2>
@@ -193,7 +193,7 @@ function SectionItemComponent({ Svg, title, description, link, children }) {
         </p>
       )}
       {children}
-      <a className={styles.feature_link} href={link}>Learn more <img className='link_img' src='/img/link.svg' /></a>
+      <a className={styles.feature_link} href={link}>{linkName}<img src='/img/link.svg' /></a>
     </div>
   );
 }
@@ -219,7 +219,7 @@ export default function HomepageFeatures() {
       </div>
 
       <section className="container">
-        <SectionItemComponent key='0' {...FeatureList[0]} Svg={colorMode === 'dark' ? FeatureList[0].iconDark : FeatureList[0].icon}/>
+        <SectionItemComponent key='0' {...FeatureList[0]} Svg={colorMode === 'dark' ? FeatureList[0].iconDark : FeatureList[0].icon} linkName='Explore more'/>
         <div className={styles.features}>
           {FeatureList.slice(1).map((props, idx) => {
             const img = colorMode === 'dark' ? props.iconDark : props.icon;
