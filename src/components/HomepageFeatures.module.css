@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
+  padding-bottom: 144px;
 }
 
 .img_video_container_in {
@@ -31,24 +32,23 @@
 
 .features {
   display: flex;
-  flex-flow: wrap;
+  flex-flow: column;
   justify-content: center;
-  width: 100%;
+  width: 50%;
+  flex-wrap: wrap;
+  height: 1300px;
   margin: 144px 0;
   padding: 0;
-  gap: 32px;
 }
 
-.feature_container {
+.features .feature_container {
   width: 616px;
-  height: 300px;
+}
+
+.feature_container{
   padding: 32px 0;
   flex-grow: 1;
   height: auto;
-}
-
-.features .feature_container:nth-child(1) {
-  width: 100%;
 }
 
 .feature_title_container {
