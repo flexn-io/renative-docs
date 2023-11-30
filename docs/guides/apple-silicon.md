@@ -6,7 +6,7 @@ original_id: apple-silicon
 ---
 import Image from '../../src/components/Image.js';
 
-<Image className="header-image" lightImage="/img/light/apple.png" darkImage="/img/dark/apple.png" width="40" height="50" />
+
 
 ## Overview
 
