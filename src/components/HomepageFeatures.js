@@ -130,48 +130,48 @@ const FeatureList = [
     ),
     children:
       <div className={styles.plugin_grid}>
-      <ThemedImage
-        sources={{
-          light: '/img/light/integration_logo1.svg',
-          dark: '/img/dark/integration_logo1.svg',
-        }}
-      />
-      <ThemedImage
-        sources={{
-          light: '/img/light/integration_logo2.svg',
-          dark: '/img/dark/integration_logo2.svg',
-        }}
-      />
-      <ThemedImage
-        sources={{
-          light: '/img/light/integration_logo3.svg',
-          dark: '/img/dark/integration_logo3.svg',
-        }}
-      />
-      <ThemedImage
-        sources={{
-          light: '/img/light/integration_logo4.svg',
-          dark: '/img/dark/integration_logo4.svg',
-        }}
-      />
-      <ThemedImage
-        sources={{
-          light: '/img/light/integration_logo5.svg',
-          dark: '/img/dark/integration_logo5.svg',
-        }}
-      />
-      <ThemedImage
-        sources={{
-          light: '/img/light/integration_logo6.svg',
-          dark: '/img/dark/integration_logo6.svg',
-        }}
-      />
-      <ThemedImage
-        sources={{
-          light: '/img/light/integration_logo7.svg',
-          dark: '/img/dark/integration_logo7.svg',
-        }}
-      />
+        <ThemedImage
+          sources={{
+            light: '/img/light/integration_logo1.svg',
+            dark: '/img/dark/integration_logo1.svg',
+          }}
+        />
+        <ThemedImage
+          sources={{
+            light: '/img/light/integration_logo2.svg',
+            dark: '/img/dark/integration_logo2.svg',
+          }}
+        />
+        <ThemedImage
+          sources={{
+            light: '/img/light/integration_logo3.svg',
+            dark: '/img/dark/integration_logo3.svg',
+          }}
+        />
+        <ThemedImage
+          sources={{
+            light: '/img/light/integration_logo4.svg',
+            dark: '/img/dark/integration_logo4.svg',
+          }}
+        />
+        <ThemedImage
+          sources={{
+            light: '/img/light/integration_logo5.svg',
+            dark: '/img/dark/integration_logo5.svg',
+          }}
+        />
+        <ThemedImage
+          sources={{
+            light: '/img/light/integration_logo6.svg',
+            dark: '/img/dark/integration_logo6.svg',
+          }}
+        />
+        <ThemedImage
+          sources={{
+            light: '/img/light/integration_logo7.svg',
+            dark: '/img/dark/integration_logo7.svg',
+          }}
+        />
       </div>,
     link: "/docs/integrations/aws",
   },
@@ -181,8 +181,7 @@ const YoutubeVideo = ({ youtubeId, title }) => (
   <div
     className="wrapper"
     style={{
-      margin: 'auto',
-      marginBottom: 50
+      margin: 'auto'
     }}
   >
     <div
@@ -234,11 +233,13 @@ function SectionItemComponent({ Svg, title, description, link, children, linkNam
         </h2>
       </div>
       {description && (
-        <p>
-          {description}
-        </p>
+        <p>{description}</p>
       )}
-      {children}
+      {children && (
+        <div className={styles.feature_child_container}> 
+          {children}
+        </div>
+      )}
       <div className={styles.feature_link_container}>
         <a className={styles.feature_link} href={link}>{linkName}<img src='/img/link.svg' /></a>
       </div>
@@ -284,7 +285,7 @@ export default function HomepageFeatures() {
             return <SectionItemComponent key={idx} {...props} Svg={img} />
           })}
         </div>
-        <div className={styles.features_line} style={{paddingBottom: '176px'}}>
+        <div className={styles.features_line} style={{ paddingBottom: '176px' }}>
           {FeatureList.slice(-2).map((props, idx) => {
             const img = colorMode === 'dark' ? props.iconDark : props.icon;
             return <SectionItemComponent key={idx} {...props} Svg={img} />

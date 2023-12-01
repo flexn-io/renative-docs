@@ -42,32 +42,19 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .hero .hero__title {
-  font-size: 91px;
+  font-size: 89px;
   font-weight: 800;
   line-height: normal;
 }
 
 @media screen and (max-width: 1300px) {
   .hero .hero__title {
-    font-size: 72px;
+    font-size: 6.8vw;
   }
 }
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 966px) {
   .hero .hero__title {
-    font-size: 62px;
-  }
-}
-
-@media screen and (max-width: 890px) {
-  .hero .hero__title {
-    font-size: 52px;
-  }
-}
-
-@media screen and (max-width: 604px) {
-  .hero .hero__title {
-    font-size: 46px;
+    font-size: 6vw;
   }
 }
 
@@ -396,6 +383,9 @@ a {
     padding-bottom: 48px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .homepage-codeline{
+    margin-bottom: 164px;
   }
 }
 
