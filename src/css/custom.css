@@ -313,7 +313,7 @@ a {
   width: fit-content;
   margin: auto;
   height: fit-content;
-  margin-bottom: 144px;
+  margin-bottom: 244px;
 }
 
 .homepage-codeline .homepage_button{
@@ -321,6 +321,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
 }
 
 .navbar-sidebar {
