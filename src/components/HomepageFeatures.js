@@ -110,7 +110,6 @@ const FeatureList = [
     description: (
       <>
         ReNative allows you to <span style={{ color: '#0A74E6' }}>build</span> powerful multi-platform bootstrap templates.
-        <br/><br/>
       </>
     ),
     children:
@@ -130,7 +129,7 @@ const FeatureList = [
       </>
     ),
     children:
-      <div className={styles.plugin_grid}>
+      <div className={styles.plugin_grid} style={{gap: '24px'}}>
         <ThemedImage
           className={styles.feature_img}
           sources={{

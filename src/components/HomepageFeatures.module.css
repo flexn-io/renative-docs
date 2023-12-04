@@ -165,22 +165,33 @@
   
   .main_img_title h2 {
     width: 390px;
-    font-size: 2.5vw;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 4.6vw;
+    margin-bottom: 54px;
+  }
+
+  .img_video_container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 144px;
+    gap: 78px;
+  }
+
+  .img_video_container_in {
+    width: auto;
+    height: fit-content;
   }
 
   .feature_title_container {
-    margin-bottom: 16px;
-  }
-
-  .feature_title {
-    font-size: 3.5vw;
+    margin-bottom: 24px;
   }
   .feature_description{
     padding-bottom: 48px;
+  }
+  .feature_img{
+    height: 20px;
   }
 }
 

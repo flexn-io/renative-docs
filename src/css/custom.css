@@ -398,6 +398,11 @@ a {
 }
 
 @media (max-width: 1200px) {
+  .container-in {
+    margin-top: 48px;
+    margin-bottom: 64px;
+  }
+
   .footer {
     padding-top: 36px;
     padding-bottom: 48px;
