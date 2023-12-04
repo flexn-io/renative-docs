@@ -93,7 +93,7 @@ const FeatureList = [
       <CodeBlock
         language="jsx">
         {`import chalk from 'chalk';\n\nconst hooks = {    
-        hello: c =>       
+        hello: c => \n      
               new Promise((resolve, reject) => {            
                       console.log(\`\\n$\{chalk.yellow('HELLO FROM BUILD HOOKS!')}\\n\`);
                       resolve();        
