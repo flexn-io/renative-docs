@@ -138,6 +138,24 @@ h3 {
   margin-bottom: 64px;
 }
 
+.framework_container{
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 144px;
+}
+.framework_container h2{
+  margin: auto;
+  margin-bottom: 48px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.framework_container_img_grid{
+  display: flex;
+  gap: 72.8px;
+}
+
 a {
   cursor: pointer;
 }
@@ -389,6 +407,9 @@ a {
   .homepage-codeline{
     margin-bottom: 164px;
   }
+  .framework_container_img_grid{
+    gap: 5vw;
+  }
 }
 
 @media (max-width: 770px) {
@@ -459,5 +480,9 @@ a {
     display: flex;
     justify-content: center;
     font-size: 14px;
+  }
+  .framework_container_img_grid{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

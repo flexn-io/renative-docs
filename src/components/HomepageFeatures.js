@@ -243,7 +243,7 @@ function SectionItemComponent({ Svg, title, description, link, children, linkNam
         <p>{description}</p>
       )}
       {children && (
-        <div className={styles.feature_child_container}> 
+        <div className={styles.feature_child_container}>
           {children}
         </div>
       )}
@@ -258,16 +258,29 @@ export default function HomepageFeatures() {
   const { colorMode } = useColorMode();
   return (
     <>
+    <div className={clsx("container", "framework_container")}>
+      <div>
+        <h2>Supported frameworks</h2>
+      </div>
+      <div className='framework_container_img_grid'>
+        <ThemedImage sources={{light: '/img/light/react_native.svg', dark: '/img/dark/react_native.svg'}}/>
+        <ThemedImage sources={{light: '/img/light/react.svg', dark: '/img/dark/react.svg'}}/>
+        <ThemedImage sources={{light: '/img/light/electron.svg', dark: '/img/dark/electron.svg'}}/>
+        <ThemedImage sources={{light: '/img/light/nextjs.svg', dark: '/img/dark/nextjs.svg'}}/>
+      </div>
+    </div>
       <div className={clsx("container", styles.img_video_container)} >
         <div className={styles.img_video_container_in}>
           <div className={styles.main_img_title}>
             <h2>Build react native app with ReNative framework</h2>
           </div>
-          {colorMode === 'dark' ?
-            <img className={styles.main_img} src='/img/dark/rnv-dark.svg' />
-            :
-            <img className={styles.main_img} src='/img/light/rnv-light.svg' />
-          }
+          <ThemedImage
+            className={styles.main_img}
+            sources={{
+              light: '/img/light/rnv-light.svg',
+              dark: '/img/dark/rnv-dark.svg',
+            }}
+          />
         </div>
         <div className={styles.img_video_container_in}>
           <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
