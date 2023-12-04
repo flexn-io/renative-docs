@@ -256,6 +256,11 @@ function SectionItemComponent({ Svg, title, description, link, children, linkNam
 
 export default function HomepageFeatures() {
   const { colorMode } = useColorMode();
+  var hrStyle;
+  if (colorMode === 'dark')
+    hrStyle = 'lineDark';
+  else 
+    hrStyle = 'lineLight';
   return (
     <>
     <div className={clsx("container", "framework_container")}>
@@ -290,14 +295,14 @@ export default function HomepageFeatures() {
       <section className="container">
         <SectionItemComponent key='0' {...FeatureList[0]} Svg={colorMode === 'dark' ? FeatureList[0].iconDark : FeatureList[0].icon} linkName='Explore more' />
       </section>
-      <hr class={styles.solid}></hr>
+      <hr class={hrStyle}></hr>
       <section className={clsx("container", styles.features_line)}>
         {FeatureList.slice(1, 3).map((props, idx) => {
           const img = colorMode === 'dark' ? props.iconDark : props.icon;
           return <SectionItemComponent key={idx} {...props} Svg={img} />
         })}
       </section>
-      <hr class={styles.solid}></hr>
+      <hr class={hrStyle}></hr>
       <section className="container">
         <div className={styles.features}>
           {FeatureList.slice(3, -2).map((props, idx) => {
