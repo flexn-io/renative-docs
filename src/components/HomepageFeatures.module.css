@@ -169,7 +169,7 @@
   }
 
   .feature_title {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .feature_description{
     padding-bottom: 48px;
@@ -245,6 +245,6 @@
     padding-bottom: 96px;
   }
   .feature_img{
-    width: 11vw;
+    height: 4vw;
   }
 }
