@@ -47,17 +47,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   line-height: normal;
 }
 
-@media screen and (max-width: 1300px) {
-  .hero .hero__title {
-    font-size: 6.8vw;
-  }
-}
-@media screen and (max-width: 966px) {
-  .hero .hero__title {
-    font-size: 6vw;
-  }
-}
-
 .featuresSvg {
   width: 100%;
 }
@@ -309,7 +298,9 @@ a {
   align-items: center;
   justify-content: center;
   font-weight: 500;
+  padding: 16px 14px;
 }
+
 
 .navbar-sidebar {
   width: 100%;
@@ -377,6 +368,17 @@ a {
   top: 30%;
 }
 
+@media screen and (max-width: 1300px) {
+  .hero .hero__title {
+    font-size: 6.8vw;
+  }
+}
+@media screen and (max-width: 966px) {
+  .hero .hero__title {
+    font-size: 6vw;
+  }
+}
+
 @media (max-width: 1200px) {
   .footer {
     padding-top: 36px;
@@ -390,6 +392,14 @@ a {
 }
 
 @media (max-width: 770px) {
+  .hero .hero__title {
+    font-size: 13vw;
+  }
+
+  .homepage-codeline{
+    margin-bottom: 124px;
+  }
+
   .container-in {
     flex-flow:column;
     gap: 0;

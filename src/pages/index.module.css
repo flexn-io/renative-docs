@@ -43,17 +43,14 @@
   }
 }
 
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
+  .version_link {
+    margin-top: 72px;
+  }
+
   .h2 {
     width: auto;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .description {

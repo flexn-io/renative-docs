@@ -53,6 +53,10 @@
   gap: 16px;
 }
 
+.bottom_element{
+  padding-bottom: 176px;
+}
+
 .features_line .feature_container {
   width: 49%;
 }
@@ -71,10 +75,6 @@
 
 .feature_container p{
   margin-bottom: 24px;
-}
-.feature_container .codeBlockLines{
-  background-color: red;
-  /* margin-top: 100px; */
 }
 
 .feature_title_container {
@@ -167,13 +167,21 @@
   .feature_title_container {
     margin-bottom: 16px;
   }
+
+  .feature_title {
+    font-size: 4vw;
+  }
   .feature_description{
     padding-bottom: 48px;
-    background-color: red;
   }
 }
 
 @media (max-width: 768px) {
+
+  .plugin_container{
+    width: 100%;
+  }
+
   .img_video_container {
     flex-flow: column;
     padding-bottom: 96px;
@@ -183,20 +191,12 @@
     width: 100%;
   }
 
-  .main_img_title {
-    padding-right: 2em;
-    padding-left: 2em;
-  }
   .main_img_title h2 {
     width: 100%;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  }
-  .main_img {
-    padding-right: 2em;
-    padding-left: 2em;
   }
 
   .feature_grid_title {
@@ -206,12 +206,14 @@
 
   .feature_title {
     margin-bottom: 12px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .features {
     width: 100%;
     height: auto;
+    max-height: none;
+    margin-bottom: 96px;
   }
   .features .feature_container {
     width: 100%;
@@ -220,5 +222,29 @@
 
   .feature_container {
     width: 100%;
+  }
+
+  .feature_container p{
+    margin-bottom: 32px;
+  }
+  .features_line{
+    flex-wrap: wrap;
+  }
+  .solid{
+    margin: 48px 0;
+  }
+
+  .feature_title_container {
+    gap: 12px;
+  }
+  
+  .feature_link_container{
+    margin-top: 16px;
+  }
+  .bottom_element{
+    padding-bottom: 96px;
+  }
+  .feature_img{
+    width: 11vw;
   }
 }

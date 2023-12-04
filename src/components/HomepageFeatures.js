@@ -131,42 +131,49 @@ const FeatureList = [
     children:
       <div className={styles.plugin_grid}>
         <ThemedImage
+          className={styles.feature_img}
           sources={{
             light: '/img/light/integration_logo1.svg',
             dark: '/img/dark/integration_logo1.svg',
           }}
         />
         <ThemedImage
+          className={styles.feature_img}
           sources={{
             light: '/img/light/integration_logo2.svg',
             dark: '/img/dark/integration_logo2.svg',
           }}
         />
         <ThemedImage
+          className={styles.feature_img}
           sources={{
             light: '/img/light/integration_logo3.svg',
             dark: '/img/dark/integration_logo3.svg',
           }}
         />
         <ThemedImage
+          className={styles.feature_img}
           sources={{
             light: '/img/light/integration_logo4.svg',
             dark: '/img/dark/integration_logo4.svg',
           }}
         />
         <ThemedImage
+          className={styles.feature_img}
           sources={{
             light: '/img/light/integration_logo5.svg',
             dark: '/img/dark/integration_logo5.svg',
           }}
         />
         <ThemedImage
+          className={styles.feature_img}
           sources={{
             light: '/img/light/integration_logo6.svg',
             dark: '/img/dark/integration_logo6.svg',
           }}
         />
         <ThemedImage
+          className={styles.feature_img}
           sources={{
             light: '/img/light/integration_logo7.svg',
             dark: '/img/dark/integration_logo7.svg',
@@ -285,7 +292,7 @@ export default function HomepageFeatures() {
             return <SectionItemComponent key={idx} {...props} Svg={img} />
           })}
         </div>
-        <div className={styles.features_line} style={{ paddingBottom: '176px' }}>
+        <div className={clsx(styles.features_line, styles.bottom_element)}>
           {FeatureList.slice(-2).map((props, idx) => {
             const img = colorMode === 'dark' ? props.iconDark : props.icon;
             return <SectionItemComponent key={idx} {...props} Svg={img} />
