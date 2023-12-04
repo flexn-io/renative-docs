@@ -20,6 +20,7 @@
   padding: 0;
   border: 1px solid #E4E4E4;
   background-color: #FFF !important;
+  padding-right: 10%;
 }
 
 [data-theme='dark'] .codeBlock {
@@ -60,13 +61,18 @@
   column-gap: 0.2rem;
   position: absolute;
   /* rtl:ignore */
-  right: calc(var(--ifm-pre-padding) / 2);
-  top: calc(var(--ifm-pre-padding) / 1.5);
+  right: 1px;
+  top: 5px;
+  background-color: #fff;
+  height: calc(100% - 15px);
+}
+[data-theme='dark'] .buttonGroup {
+  background-color: #000;
 }
 
 .buttonGroup button {
   display: flex;
-  align-items: center;
+  align-items:first baseline;
   background: transparent;
   padding: 0.4rem;
   line-height: 0;
