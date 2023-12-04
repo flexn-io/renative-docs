@@ -92,14 +92,14 @@ const FeatureList = [
     children:
       <CodeBlock
         language="jsx">
-        {`import chalk from 'chalk';\n\nconst hooks = {    
+        {`\nimport chalk from 'chalk';\n\nconst hooks = {    
         hello: c => \n      
               new Promise((resolve, reject) => {            
                       console.log(\`\\n$\{chalk.yellow('HELLO FROM BUILD HOOKS!')}\\n\`);
                       resolve();        
               })};\n
               const pipes = {};\n
-              export { pipes, hooks };`}
+              export { pipes, hooks };\n`}
       </CodeBlock>,
     link: "/docs/guides/build_hooks",
   },
@@ -110,6 +110,7 @@ const FeatureList = [
     description: (
       <>
         ReNative allows you to <span style={{ color: '#0A74E6' }}>build</span> powerful multi-platform bootstrap templates.
+        <br/><br/>
       </>
     ),
     children:
@@ -282,7 +283,7 @@ export default function HomepageFeatures() {
             }}
           />
         </div>
-        <div className={styles.img_video_container_in}>
+        <div className={styles.img_video_container_in} style={{width: '616px'}}>
           <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
         </div>
       </div>
