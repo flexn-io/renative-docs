@@ -26,10 +26,14 @@
 
 hr.lineLight {
   border: 0.5px solid #e4e4e4;
+  background-color: #e4e4e4;
+  margin: 72px 0;
 }
 
 hr.lineDark {
   border: 0.5px solid #3d3d3d;
+  background-color: #3d3d3d;
+  margin: 72px 0;
 }
 
 .docusaurus-highlight-code-line {
@@ -421,7 +425,7 @@ a {
     margin-bottom: 164px;
   }
   .framework_container_img_grid{
-    gap: 5vw;
+    gap: 72px;
   }
 }
 
@@ -483,7 +487,7 @@ a {
   }
 
   .homepage-codeline {
-    gap: 10px;
+    gap: 16px;
   }
 
   .homepage_button{
@@ -494,8 +498,30 @@ a {
     justify-content: center;
     font-size: 14px;
   }
+
+  .framework_container{
+    margin-bottom: 96px;
+  }
+
   .framework_container_img_grid{
     flex-wrap: wrap;
     justify-content: center;
+    gap: 24px;
+  }
+
+  .framework_img{
+    height: 24px;
+  }
+
+  .framework_container h2{
+    margin-bottom: 32px;
+  }
+
+  hr.lineLight {
+    margin: 48px 0;
+  }
+  
+  hr.lineDark {
+    margin: 48px 0;
   }
 }

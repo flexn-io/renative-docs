@@ -268,10 +268,10 @@ export default function HomepageFeatures() {
         <h2>Supported frameworks</h2>
       </div>
       <div className='framework_container_img_grid'>
-        <ThemedImage sources={{light: '/img/light/react_native.svg', dark: '/img/dark/react_native.svg'}}/>
-        <ThemedImage sources={{light: '/img/light/react.svg', dark: '/img/dark/react.svg'}}/>
-        <ThemedImage sources={{light: '/img/light/electron.svg', dark: '/img/dark/electron.svg'}}/>
-        <ThemedImage sources={{light: '/img/light/nextjs.svg', dark: '/img/dark/nextjs.svg'}}/>
+        <ThemedImage className='framework_img' sources={{light: '/img/light/react_native.svg', dark: '/img/dark/react_native.svg'}}/>
+        <ThemedImage className='framework_img' sources={{light: '/img/light/react.svg', dark: '/img/dark/react.svg'}}/>
+        <ThemedImage className='framework_img' sources={{light: '/img/light/electron.svg', dark: '/img/dark/electron.svg'}}/>
+        <ThemedImage className='framework_img' sources={{light: '/img/light/nextjs.svg', dark: '/img/dark/nextjs.svg'}}/>
       </div>
     </div>
       <div className={clsx("container", styles.img_video_container)} >
@@ -287,7 +287,7 @@ export default function HomepageFeatures() {
             }}
           />
         </div>
-        <div className={styles.img_video_container_in} style={{width: '616px'}}>
+        <div className={clsx( styles.img_video_container_in, styles.youtube_video)}>
           <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
         </div>
       </div>
@@ -295,14 +295,14 @@ export default function HomepageFeatures() {
       <section className="container">
         <SectionItemComponent key='0' {...FeatureList[0]} Svg={colorMode === 'dark' ? FeatureList[0].iconDark : FeatureList[0].icon} linkName='Explore more' />
       </section>
-      <hr class={hrStyle}></hr>
+      <hr className={hrStyle}></hr>
       <section className={clsx("container", styles.features_line)}>
         {FeatureList.slice(1, 3).map((props, idx) => {
           const img = colorMode === 'dark' ? props.iconDark : props.icon;
           return <SectionItemComponent key={idx} {...props} Svg={img} />
         })}
       </section>
-      <hr class={hrStyle}></hr>
+      <hr className={hrStyle}></hr>
       <section className="container">
         <div className={styles.features}>
           {FeatureList.slice(3, -2).map((props, idx) => {
