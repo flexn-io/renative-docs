@@ -429,6 +429,11 @@ a {
   }
 }
 
+@media (max-width: 850px) {
+  .framework_container_img_grid{
+    gap: 30px;
+  }
+}
 @media (max-width: 770px) {
   .hero .hero__title {
     font-size: 13vw;

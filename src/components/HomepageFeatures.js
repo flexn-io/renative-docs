@@ -129,7 +129,7 @@ const FeatureList = [
       </>
     ),
     children:
-      <div className={styles.plugin_grid} style={{gap: '24px'}}>
+      <div className={clsx(styles.plugin_grid, styles.img_grid)}>
         <ThemedImage
           className={styles.feature_img}
           sources={{
