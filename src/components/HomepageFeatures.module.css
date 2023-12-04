@@ -84,7 +84,6 @@
 }
 
 .feature_container{
-  flex-grow: 1;
   height: auto;
 }
 
@@ -276,6 +275,7 @@
 
   .feature_container {
     width: 100%;
+    flex-grow: 1;
   }
 
   .feature_container p{

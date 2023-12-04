@@ -38,10 +38,10 @@ function HomepageHeader() {
                             Get started
                         </Link>
                     </div>
-                    <div>
+                    <div style={{width: '150px'}}>
                         <CodeBlock
                             language="jsx">
-                            {`npx rnv new    `}
+                            {`npx rnv new`}
                         </CodeBlock>
                     </div>
                 </div>
