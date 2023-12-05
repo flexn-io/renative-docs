@@ -102,8 +102,8 @@ const config = {
             "aria-label": "Youtube",
           },
           {
-            to: '/docs/overview/introduction',
-            label: 'Try it out',
+            to: '/docs/overview/quickstart',
+            label: 'Get started',
             position: 'right',
             className: 'button button--secondary navbar_button padding--sm'
           },
