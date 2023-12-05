@@ -63,6 +63,7 @@ const FeatureList = [
     ),
     children:
       <CodeBlock
+        title="multi-platform.js"
         language="jsx">
         {`import { isPlatformTizen, isFactorTv, engine, platform } from "renative";\n\n<Text>{isFactorTv}</Text>; `}
       </CodeBlock>,
@@ -91,6 +92,7 @@ const FeatureList = [
     ),
     children:
       <CodeBlock
+        title="/buildHooks/src/index.js"
         language="jsx">
         {`\nimport chalk from 'chalk';\n\nconst hooks = {    
         hello: c => \n      
@@ -114,6 +116,7 @@ const FeatureList = [
     ),
     children:
       <CodeBlock
+        title="Terminal"
         language="jsx">
         {`rnv new\n\n...\n\n? What template to use? => 'renative-template-hello-world'`}
       </CodeBlock>,
@@ -259,21 +262,21 @@ export default function HomepageFeatures() {
   var hrStyle;
   if (colorMode === 'dark')
     hrStyle = 'lineDark';
-  else 
+  else
     hrStyle = 'lineLight';
   return (
     <>
-    <div className={clsx("container", "framework_container")}>
-      <div>
-        <h2>Supported frameworks</h2>
+      <div className={clsx("container", "framework_container")}>
+        <div>
+          <h2>Supported frameworks</h2>
+        </div>
+        <div className='framework_container_img_grid'>
+          <ThemedImage className='framework_img' sources={{ light: '/img/light/react_native.svg', dark: '/img/dark/react_native.svg' }} />
+          <ThemedImage className='framework_img' sources={{ light: '/img/light/react.svg', dark: '/img/dark/react.svg' }} />
+          <ThemedImage className='framework_img' sources={{ light: '/img/light/electron.svg', dark: '/img/dark/electron.svg' }} />
+          <ThemedImage className='framework_img' sources={{ light: '/img/light/nextjs.svg', dark: '/img/dark/nextjs.svg' }} />
+        </div>
       </div>
-      <div className='framework_container_img_grid'>
-        <ThemedImage className='framework_img' sources={{light: '/img/light/react_native.svg', dark: '/img/dark/react_native.svg'}}/>
-        <ThemedImage className='framework_img' sources={{light: '/img/light/react.svg', dark: '/img/dark/react.svg'}}/>
-        <ThemedImage className='framework_img' sources={{light: '/img/light/electron.svg', dark: '/img/dark/electron.svg'}}/>
-        <ThemedImage className='framework_img' sources={{light: '/img/light/nextjs.svg', dark: '/img/dark/nextjs.svg'}}/>
-      </div>
-    </div>
       <div className={clsx("container", styles.img_video_container)} >
         <div className={styles.img_video_container_in}>
           <div className={styles.main_img_title}>
@@ -287,7 +290,7 @@ export default function HomepageFeatures() {
             }}
           />
         </div>
-        <div className={clsx( styles.img_video_container_in, styles.youtube_video)}>
+        <div className={clsx(styles.img_video_container_in, styles.youtube_video)}>
           <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
         </div>
       </div>

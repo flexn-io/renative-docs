@@ -12,6 +12,13 @@
   padding: 0.75rem var(--ifm-pre-padding);
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+  border: 1px solid #E4E4E4;
+  background-color: #fff;
+}
+
+[data-theme='dark'] .codeBlockTitle {
+  border: 1px solid #3D3D3D;
+  background-color: #000 !important;
 }
 
 .codeBlock {
@@ -66,8 +73,15 @@
   background-color: #fff;
   height: calc(100% - 15px);
 }
+
 [data-theme='dark'] .buttonGroup {
   background-color: #000;
+}
+
+
+.buttonGroup_with_title{
+  top: -48px;
+  height: fit-content;
 }
 
 .buttonGroup button {
