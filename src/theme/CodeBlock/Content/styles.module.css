@@ -72,7 +72,7 @@
 
 .buttonGroup button {
   display: flex;
-  align-items:start;
+  align-items: flex-start;
   background: transparent;
   padding: 0.8rem;
   line-height: 0;
