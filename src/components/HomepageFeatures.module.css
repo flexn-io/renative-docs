@@ -325,6 +325,7 @@
     gap: 24px;
   }
   .plugin_title{
+    font-size: 16px;
     margin-bottom: 12px !important;
   }
   .plugin_grid{
@@ -333,10 +334,12 @@
   .feature_child_container{
     margin-top: 32px;
   }
-  .feature_img{
-    height: 11px;
-  }
   .img_grid{
     gap: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .feature_img{
+    height: 11px;
   }
 }

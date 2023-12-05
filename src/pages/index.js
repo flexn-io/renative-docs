@@ -38,7 +38,7 @@ function HomepageHeader() {
                             Get started
                         </Link>
                     </div>
-                    <div style={{width: '150px'}}>
+                    <div style={{fontSize: '16px', width: '180px'}}>
                         <CodeBlock
                             language="jsx">
                             {`npx rnv new`}

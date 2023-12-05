@@ -104,7 +104,6 @@ html[data-theme='dark'] .button.button--secondary:hover {
   background-color: #000000;
 }
 
-
 .col--4 {
   max-width: 500px;
   margin: auto;
@@ -166,8 +165,8 @@ h3 {
 .framework_container_img_grid{
   display: flex;
   gap: 72px;
+  align-items: center;
 }
-
 a {
   cursor: pointer;
 }
@@ -324,13 +323,18 @@ a {
 
 .homepage-codeline .homepage_button{
   height: 56px;
+  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
+  font-size: 16px;
   padding: 14px 16px 15px 16px;
 }
 
+.homepage-codeline pre code{
+  font-size: 16px;
+}
 
 .navbar-sidebar {
   width: 100%;
@@ -517,8 +521,12 @@ a {
   .framework_img{
     height: 24px;
   }
+  .framework_img:last-child{
+    height: 15px;
+  }
 
   .framework_container h2{
+    font-size: 20px;
     margin-bottom: 32px;
   }
 
@@ -528,5 +536,11 @@ a {
   
   hr.lineDark {
     margin: 48px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .homepage-codeline .homepage_button{
+    font-size: 14px;
   }
 }

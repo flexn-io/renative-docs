@@ -72,9 +72,9 @@
 
 .buttonGroup button {
   display: flex;
-  align-items:first baseline;
+  align-items:start;
   background: transparent;
-  padding: 0.4rem;
+  padding: 0.8rem;
   line-height: 0;
   transition: opacity var(--ifm-transition-fast) ease-in-out;
   opacity: 1;
