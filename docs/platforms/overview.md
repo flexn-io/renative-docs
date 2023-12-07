@@ -10,121 +10,121 @@ original_id: overview
 <table>
   <tr>
     <th>
-      <img src="https://renative.org/img/ic_ios.png" width="20" height="20" />
+      <img src="/img/ic_ios.png" width="20" height="20" />
       <br />
-      <a href="https://renative.org/docs/platform-ios">iOS</a>
+      <a href="/docs/platforms/ios">iOS</a>
     </th><th>
-      <img src="https://renative.org/img/ic_tvos.png" width="36" height="20" />
+      <img src="/img/ic_tvos.png" width="36" height="20" />
       <br />
-      <a href="https://renative.org/docs/platform-tvos">tvOS</a>
+      <a href="/docs/platforms/tvos">tvOS</a>
     </th><th>
-      <img src="https://renative.org/img/ic_androidtv.png" width="20" height="20" />
+      <img src="/img/ic_androidtv.png" width="20" height="20" />
       <br />
-      <a href="https://renative.org/docs/platform-androidtv">Android TV</a>
+      <a href="/docs/platforms/androidtv">Android TV</a>
     </th><th>
-      <img src="https://renative.org/img/ic_macos.png" width="20" height="20" />
+      <img src="/img/ic_macos.png" width="20" height="20" />
       <br />
-      <a href="https://renative.org/docs/platform-macos">macOS</a>
+      <a href="/docs/platforms/macos">macOS</a>
     </th>
   </tr>
   <tr>
     <th>
-      <img src="https://renative.org/img/rnv_ios.gif" />
+      <img src="/img/rnv_ios.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_tvos.gif" />
+    <img src="/img/rnv_tvos.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_android-tv.gif" />
+    <img src="/img/rnv_android-tv.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_macos.gif" />
+    <img src="/img/rnv_macos.gif" />
     </th>
   </tr>
   <tr>
     <th>
-    <img src="https://renative.org/img/ic_android.png" width="20" height="20" />
+    <img src="/img/ic_android.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-android">Android</a>
+    <a href="/docs/platforms/android">Android</a>
     </th><th>
-    <img src="https://renative.org/img/ic_web.png" width="100" height="20" />
+    <img src="/img/ic_web.png" width="100" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-web">Web</a>
+    <a href="/docs/platforms/web">Web</a>
     </th><th>
-    <img src="https://renative.org/img/ic_tizen.png" width="20" height="20" />
+    <img src="/img/ic_tizen.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-tizen">Tizen TV</a>
+    <a href="/docs/platforms/tizen">Tizen TV</a>
     </th><th>
-    <img src="https://renative.org/img/ic_webos.png" width="20" height="20" />
+    <img src="/img/ic_webos.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-webos">LG webOS</a>
+    <a href="/docs/platforms/webos">LG webOS</a>
     </th>
   </tr>
   <tr>
     <th>
-    <img src="https://renative.org/img/rnv_android.gif" />
+    <img src="/img/rnv_android.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_web.gif" />
+    <img src="/img/rnv_web.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_tizen.gif" />
+    <img src="/img/rnv_tizen.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_webos.gif" />
+    <img src="/img/rnv_webos.gif" />
     </th>
   </tr>
   <tr>
     <th>
-    <img src="https://renative.org/img/ic_firefoxos.png" width="20" height="20" />
+    <img src="/img/ic_firefoxos.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-firefoxos">FirefoxOS</a>
+    <a href="/docs/platforms/firefoxos">FirefoxOS</a>
     </th><th>
-    <img src="https://renative.org/img/ic_windows.png" width="20" height="20" />
+    <img src="/img/ic_windows.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-windows">Windows</a>
+    <a href="/docs/platforms/windows">Windows</a>
     </th><th>
-    <img src="https://renative.org/img/ic_firefoxtv.png" width="20" height="20" />
+    <img src="/img/ic_firefoxtv.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-firefoxtv">Firefox TV</a>
+    <a href="/docs/platforms/firefoxtv">Firefox TV</a>
     </th><th>
-    <img src="https://renative.org/img/ic_kaios.png" width="55" height="20" />
+    <img src="/img/ic_kaios.png" width="55" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-kaios">KaiOS</a>
+    <a href="/docs/platforms/kaios">KaiOS</a>
     </th>
   </tr>
   <tr>
     <th>
-    <img src="https://renative.org/img/rnv_firefoxos.gif" />
+    <img src="/img/rnv_firefoxos.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_windows.gif" />
+    <img src="/img/rnv_windows.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_firefoxtv.gif" />
+    <img src="/img/rnv_firefoxtv.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_kaios.gif" />
+    <img src="/img/rnv_kaios.gif" />
     </th>
   </tr>
 
   <tr>
     <th>
-    <img src="https://renative.org/img/ic_tizen.png" width="20" height="20" />
+    <img src="/img/ic_tizen.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-tizenmobile">Tizen Mobile</a>
+    <a href="/docs/platforms/tizenmobile">Tizen Mobile</a>
     </th><th>
-    <img src="https://renative.org/img/ic_tizenwatch.png" width="20" height="20" />
+    <img src="/img/ic_tizenwatch.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-tizenwatch">Tizen Watch</a>
+    <a href="/docs/platforms/tizenwatch">Tizen Watch</a>
     </th><th>
-    <img src="https://renative.org/img/ic_androidwear.png" width="20" height="20" />
+    <img src="/img/ic_androidwear.png" width="20" height="20" />
     <br />
-    <a href="https://renative.org/docs/platform-androidwear">Android Wear</a>
+    <a href="/docs/platforms/androidwear">Android Wear</a>
     </th><th>
-    <img src="https://renative.org/img/ic_xbox.png" width="20" height="20" />
+    <img src="/img/ic_xbox.png" width="20" height="20" />
     <br />
     <a>Xbox</a>
     </th>
   </tr>
   <tr>
     <th>
-    <img src="https://renative.org/img/rnv_tizenmobile.gif" />
+    <img src="/img/rnv_tizenmobile.gif" />
     </th><th>
-    <img src="https://renative.org/img/rnv_tizenwatch.gif" width="136" height="184" />
+    <img src="/img/rnv_tizenwatch.gif" width="136" height="184" />
     </th><th>
-    <img src="https://renative.org/img/rnv_androidwear.gif" width="150" height="150" />
+    <img src="/img/rnv_androidwear.gif" width="150" height="150" />
     </th><th>
     coming soon
     </th>

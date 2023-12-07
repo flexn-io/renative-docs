@@ -135,6 +135,11 @@ h3 {
   font-size: 3em;
 }
 
+.docRoot_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-styles-module{
+  max-width: 1288px;
+  margin: auto;
+}
+
 .container {
   max-width: 1288px;
 }

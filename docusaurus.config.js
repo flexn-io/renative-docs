@@ -70,15 +70,39 @@ const config = {
           },
           {
             type: "doc",
-            docId: "overview/introduction",
+            docId: "tutorials/quickstart",
             position: "left",
-            label: "Docs",
+            label: "Tutorials",
           },
           {
             type: "doc",
-            docId: "api/renative",
+            docId: "references/cli",
             position: "left",
-            label: "API",
+            label: "Reference",
+          },
+          {
+            type: "doc",
+            docId: "descriptor",
+            position: "left",
+            label: "APIs",
+          },
+          {
+            type: "doc",
+            docId: "marketplace/templates",
+            position: "left",
+            label: "Marketplace",
+          },
+          {
+            type: "doc",
+            docId: "concepts/architecture",
+            position: "left",
+            label: "Concepts",
+          },
+          {
+            type: "doc",
+            docId: "releases/releasenotes",
+            position: "left",
+            label: "Releases",
           },
           {
             href: "https://github.com/flexn-io/renative",
