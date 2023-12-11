@@ -51,9 +51,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       algolia: {
-        appId: "RDMUFOXXVC",
-        apiKey: "56cceb616493dc70a043d8d4c36c0589",
-        indexName: "renative",
+        appId: "FMYKKKF9Q8",
+        apiKey: "fd3bf87fce092e08e71378cf066734b2",
+        indexName: "renative_docs",
+        placeHolder: "Search...",
       },
       navbar: {
         title: "ReNative",
@@ -80,39 +81,61 @@ const config = {
             position: "left",
             label: "API",
           },
-          {
-            href: "https://github.com/flexn-io/renative",
-            position: "right",
-            className: "navbar_icon_link header-github-link",
-            title: "GitHub",
-            "aria-label": "GitHub",
-          },
-          {
-            href: "https://twitter.com/renative",
-            position: "right",
-            className: "navbar_icon_link header-twitter-link",
-            title: "X(Twitter)",
-            "aria-label": "X(Twitter)",
-          },
-          {
-            href: "https://www.youtube.com/@renative",
-            position: "right",
-            className: "navbar_icon_link header-youtube-link",
-            title: "Youtube",
-            "aria-label": "Youtube",
-          },
+          // {
+          //   href: "https://github.com/flexn-io/renative",
+          //   position: "right",
+          //   className: "navbar_icon_link header-github-link",
+          //   title: "GitHub",
+          //   "aria-label": "GitHub",
+          // },
+          // {
+          //   href: "https://twitter.com/renative",
+          //   position: "right",
+          //   className: "navbar_icon_link header-twitter-link",
+          //   title: "X(Twitter)",
+          //   "aria-label": "X(Twitter)",
+          // },
+          // {
+          //   href: "https://www.youtube.com/@renative",
+          //   position: "right",
+          //   className: "navbar_icon_link header-youtube-link",
+          //   title: "Youtube",
+          //   "aria-label": "Youtube",
+          // },
           {
             to: '/docs/overview/quickstart',
             label: 'Get started',
             position: 'right',
             className: 'button button--secondary navbar_button padding--sm'
           },
+          // {
+          //   type: 'html',
+          //   value: '<ThemeModes />',
+          //   position: 'right',
+          // }
         ],
       },
       colorMode: {
         defaultMode: "light",
-        disableSwitch: true,
+        disableSwitch: false,
       },
+    //   colorMode: {
+    //     defaultMode: 'light',
+    //     disableSwitch: false,
+    //     respectPrefersColorScheme: true,
+    //     switchConfig: {
+    //         darkIcon: '⚫',
+    //         lightIcon: '🔆',
+    //         // React inline style object
+    //         // see https://reactjs.org/docs/dom-elements.html#style
+    //         darkIconStyle: {
+    //             marginLeft: '0px',
+    //         },
+    //         lightIconStyle: {
+    //             marginLeft: '0px',
+    //         },
+    //     },
+    // },
       image: "img/logo.svg",
       prism: {
         theme: lightCodeTheme,
