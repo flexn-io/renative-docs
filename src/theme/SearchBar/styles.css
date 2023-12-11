@@ -19,6 +19,7 @@
   /* Footer */
   --docsearch-footer-background: #fff;
 }
+
 [data-theme='dark'] .DocSearch {
   --docsearch-text-color: var(--ifm-font-color-base);
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
@@ -34,17 +35,14 @@
   --docsearch-hit-background: var(--ifm-color-emphasis-100);
   /* Footer */
   --docsearch-footer-background: var(--ifm-background-surface-color);
-  --docsearch-key-gradient: linear-gradient(
-    -26.5deg,
-    var(--ifm-color-emphasis-200) 0%,
-    var(--ifm-color-emphasis-100) 100%
-  );
+  --docsearch-key-gradient: linear-gradient(-26.5deg,
+      var(--ifm-color-emphasis-200) 0%,
+      var(--ifm-color-emphasis-100) 100%);
 }
 
 .DocSearch-Button {
   margin: 0;
-  transition: all var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
+  transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
   border: 1px solid #e4e4e4;
   border-radius: 8px;
   position: relative;
@@ -53,16 +51,65 @@
 @media (max-width:996px) {
   .DocSearch-Button {
     border: none;
+    height: auto;
+  }
+
+  .DocSearch-Button:active,
+  .DocSearch-Button:focus,
+  .DocSearch-Button:hover {
+    box-shadow: none;
   }
 }
 
-[data-theme='dark'] .DocSearch-Button{
+[data-theme='dark'] .DocSearch-Button {
   border-color: #3d3d3d;
 }
 
 .DocSearch-Container {
   z-index: calc(var(--ifm-z-index-fixed) + 1);
 }
-.DocSearch-Footer{
+
+.DocSearch-Footer {
   box-shadow: none;
+}
+
+.DocSearch-Button-Keys{
+  display: flex;
+  gap: 2px;
+  min-width: auto;
+  box-sizing: border-box;
+  padding: 0 6px;
+  font-family: inherit;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.DocSearch-Button-Keys {
+  background: rgba(10, 116, 230, 0.08);
+}
+
+[data-theme='dark'] .DocSearch-Button-Keys {
+  background: rgba(10, 116, 230, 0.32);
+}
+
+.DocSearch-Button-Key{
+  width: auto;
+  min-width: auto;
+  font-family: inherit;
+  font-size: 12px;
+  height: 22px;
+  padding: 0;
+  margin: 0;
+  color: #3d3d3d;
+  background: transparent;
+  box-shadow: none;
+}
+[data-theme='dark'] .DocSearch-Button-Key{
+  color: #e4e4e4;
+}
+.DocSearch-Button-Key :hover{
+  color: rgb(0, 143, 190);
 }

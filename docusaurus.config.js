@@ -107,35 +107,13 @@ const config = {
             label: 'Get started',
             position: 'right',
             className: 'button button--secondary navbar_button padding--sm'
-          },
-          // {
-          //   type: 'html',
-          //   value: '<ThemeModes />',
-          //   position: 'right',
-          // }
+          }
         ],
       },
       colorMode: {
         defaultMode: "light",
-        disableSwitch: false,
+        disableSwitch: true,
       },
-    //   colorMode: {
-    //     defaultMode: 'light',
-    //     disableSwitch: false,
-    //     respectPrefersColorScheme: true,
-    //     switchConfig: {
-    //         darkIcon: '⚫',
-    //         lightIcon: '🔆',
-    //         // React inline style object
-    //         // see https://reactjs.org/docs/dom-elements.html#style
-    //         darkIconStyle: {
-    //             marginLeft: '0px',
-    //         },
-    //         lightIconStyle: {
-    //             marginLeft: '0px',
-    //         },
-    //     },
-    // },
       image: "img/logo.svg",
       prism: {
         theme: lightCodeTheme,

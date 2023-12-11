@@ -1,7 +1,32 @@
 import React from "react";
+import DarkMode from '../../static/img/dark/icon.svg';
+import LightMode from '../../static/img/light/icon.svg';
 import Logo from '../../static/img/light/logo.svg'
 import LogoDark from '../../static/img/dark/logo.svg'
 import {useColorMode} from '@docusaurus/theme-common';
+
+const ThemeModes = () => {
+  const { colorMode, setColorMode } = useColorMode();
+
+  let darkThemeClasses = 'theme-mode'
+  let lightThemeClasses = 'theme-mode'
+  if (colorMode === 'dark') {
+      darkThemeClasses += ' theme-mode-active'
+  } else {
+      lightThemeClasses += ' theme-mode-active'
+  }
+  return (
+      <>
+          <div className="theme-modes">
+              <div className={lightThemeClasses} onClick={() => setColorMode('light')}>
+                  <LightMode className="theme-mode-img" />
+              </div>
+              <div className={darkThemeClasses} onClick={() => setColorMode('dark')}>
+                  <DarkMode className="theme-mode-img" />
+              </div>
+          </div>
+      </>)
+}
 
 export default function Footer() {
   const {colorMode} = useColorMode();
@@ -33,6 +58,9 @@ export default function Footer() {
         <a href="https://www.flexn.io/" className="footer-link"target="_blank">Website<img src='/img/link.svg' /></a>
         <a href="https://github.com/flexn-io" className="footer-link"target="_blank">Github<img src='/img/link.svg' /></a>
         <a href="https://twitter.com/flexn_io" className="footer-link"target="_blank">X (Twitter)<img src='/img/link.svg' /></a>
+      </div>
+      <div className="footer-container">
+        <ThemeModes />
       </div>
     </div>
   );

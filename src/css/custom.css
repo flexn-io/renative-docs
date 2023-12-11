@@ -35,16 +35,24 @@ hr.lineDark {
   margin: 72px 0;
 }
 
-/* TODO: is this only way to position search? */
 .navbarSearchContainer_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module{
   position: fixed;
-  right: 160px;
+  right: 130px;
+}
+
+.DocSearch-Search-Icon{
+  filter: invert(37%) sepia(0%) saturate(365%) hue-rotate(195deg) brightness(84%) contrast(85%);
+}
+
+[data-theme='dark'] .DocSearch-Search-Icon {
+  filter: invert(71%) sepia(0%) saturate(90%) hue-rotate(195deg) brightness(92%) contrast(88%);
 }
 
 @media (max-width:996px) {
   .navbarSearchContainer_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module{
-    position: fixed !important;
-    right: 70px !important;
+    position: relative !important;
+    right: 7vw !important;
+    top: -4px;
   }
   .DocSearch-Button-Keys,
   .DocSearch-Button-Placeholder {
