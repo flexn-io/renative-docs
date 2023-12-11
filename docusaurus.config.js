@@ -103,6 +103,11 @@ const config = {
           //   "aria-label": "Youtube",
           // },
           {
+            type: 'search',
+            position: 'right',
+            className: 'search_navbar'
+          },
+          {
             to: '/docs/overview/quickstart',
             label: 'Get started',
             position: 'right',

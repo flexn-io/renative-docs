@@ -35,11 +35,6 @@ hr.lineDark {
   margin: 72px 0;
 }
 
-.navbarSearchContainer_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module{
-  position: fixed;
-  right: 130px;
-}
-
 .DocSearch-Search-Icon{
   filter: invert(37%) sepia(0%) saturate(365%) hue-rotate(195deg) brightness(84%) contrast(85%);
 }
@@ -49,7 +44,7 @@ hr.lineDark {
 }
 
 @media (max-width:996px) {
-  .navbarSearchContainer_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module{
+  .search_navbar{
     position: relative !important;
     right: 7vw !important;
     top: -4px;
