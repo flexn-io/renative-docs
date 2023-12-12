@@ -71,6 +71,7 @@
   .DocSearch-Button:focus,
   .DocSearch-Button:hover {
     box-shadow: none;
+    border: none;
   }
 }
 
@@ -167,10 +168,10 @@
 [data-theme='dark'] .DocSearch-Title strong{
   color: #fff;
 }
-.DocSearch-Screen-Icon, 
+/* .DocSearch-Screen-Icon, 
 .DocSearch-Commands{
   display: none;
-}
+} */
 .DocSearch-Container{
   background-color: #0000001F;
 }
