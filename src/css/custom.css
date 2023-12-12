@@ -35,19 +35,16 @@ hr.lineDark {
   margin: 72px 0;
 }
 
-.DocSearch-Search-Icon{
-  filter: invert(37%) sepia(0%) saturate(365%) hue-rotate(195deg) brightness(84%) contrast(85%);
-}
-
-[data-theme='dark'] .DocSearch-Search-Icon {
-  filter: invert(71%) sepia(0%) saturate(90%) hue-rotate(195deg) brightness(92%) contrast(88%);
+.search_navbar{
+  padding: 0 !important;
+  margin-right: 12px;
 }
 
 @media (max-width:996px) {
   .search_navbar{
-    position: relative !important;
-    right: 7vw !important;
-    top: -4px;
+    position: absolute !important;
+    right: 52px !important;
+    top: 30%;
   }
   .DocSearch-Button-Keys,
   .DocSearch-Button-Placeholder {
@@ -290,7 +287,9 @@ a {
 .theme-modes a:first-child {
   margin-left: 0;
 }
-
+.navbar__items--right{
+  height: 40px;
+}
 .navbar_button {
   width: 101px;
   height: 40px;
@@ -417,8 +416,11 @@ a {
 
 .mobile_toggle {
   position: absolute;
-  right: 3%;
+  right: 16px;
   top: 30%;
+  width: auto;
+  margin: 0;
+  padding: 3px 0;
 }
 
 @media screen and (max-width: 1300px) {

@@ -6,7 +6,7 @@
 .DocSearch {
   /* --docsearch-primary-color: var(--ifm-color-primary); */
   /* --docsearch-text-color: var(--ifm-font-color-base); */
-  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-muted-color: #565656;
   --docsearch-container-background: rgba(94, 100, 112, 0.7);
   /* Modal */
   --docsearch-modal-background: #fff;
@@ -22,7 +22,7 @@
 
 [data-theme='dark'] .DocSearch {
   --docsearch-text-color: var(--ifm-font-color-base);
-  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-muted-color: #a1a1a1;
   --docsearch-container-background: rgba(47, 55, 69, 0.7);
   /* Modal */
   --docsearch-modal-background: var(--ifm-background-color);
@@ -46,12 +46,25 @@
   border: 1px solid #e4e4e4;
   border-radius: 8px;
   position: relative;
+  height: 40px;
+  width: 252px;
+}
+[data-theme='dark'] .DocSearch-Button {
+  border-color: #3d3d3d;
 }
 
+.DocSearch-Button:active,
+.DocSearch-Button:focus,
+.DocSearch-Button:hover {
+  border: 1px solid #0A74E6;
+  box-shadow: none;
+}
 @media (max-width:996px) {
   .DocSearch-Button {
     border: none;
     height: auto;
+    width: auto;
+    padding: 0;
   }
 
   .DocSearch-Button:active,
@@ -59,10 +72,6 @@
   .DocSearch-Button:hover {
     box-shadow: none;
   }
-}
-
-[data-theme='dark'] .DocSearch-Button {
-  border-color: #3d3d3d;
 }
 
 .DocSearch-Container {
@@ -110,6 +119,61 @@
 [data-theme='dark'] .DocSearch-Button-Key{
   color: #e4e4e4;
 }
-.DocSearch-Button-Key :hover{
-  color: rgb(0, 143, 190);
+
+.DocSearch-Search-Icon{
+  filter: invert(36%) sepia(38%) saturate(0%) hue-rotate(204deg) brightness(91%) contrast(109%);
+}
+
+[data-theme='dark'] .DocSearch-Search-Icon {
+  filter: invert(56%) sepia(15%) saturate(0%) hue-rotate(167deg) brightness(112%) contrast(86%);
+}
+
+/* .DocSearch-Search-Icon{
+  background-color: red;
+  background: url(/img/Search.svg) no-repeat;
+} */
+
+.DocSearch-Modal{
+  background: #FFF;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='dark'] .DocSearch-Modal{
+  border: 1px solid #3D3D3D;
+  background: #000;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.DocSearch-SearchBar{
+  border-bottom: 1px solid #E4E4E4;
+  padding: 0;
+}
+[data-theme='dark'] .DocSearch-Container{
+  border-bottom: 1px solid #3D3D3D;
+}
+.DocSearch-Form{
+  height: 46px;
+  box-shadow: none;
+}
+.DocSearch-Title{
+  color: #565656;
+}
+.DocSearch-Title strong{
+  color: #000000;
+}
+[data-theme='dark'] .DocSearch-Title{
+  color: #a1a1a1;
+}
+[data-theme='dark'] .DocSearch-Title strong{
+  color: #fff;
+}
+.DocSearch-Screen-Icon, 
+.DocSearch-Commands{
+  display: none;
+}
+.DocSearch-Container{
+  background-color: #0000001F;
+}
+[data-theme='dark'] .DocSearch-Container{
+  background-color: #000000B8;
 }

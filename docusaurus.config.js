@@ -54,7 +54,7 @@ const config = {
         appId: "FMYKKKF9Q8",
         apiKey: "fd3bf87fce092e08e71378cf066734b2",
         indexName: "renative_docs",
-        placeHolder: "Search...",
+        placeholder: "Search...",
       },
       navbar: {
         title: "ReNative",
