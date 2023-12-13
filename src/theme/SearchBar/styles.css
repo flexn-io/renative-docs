@@ -168,10 +168,6 @@
 [data-theme='dark'] .DocSearch-Title strong{
   color: #fff;
 }
-/* .DocSearch-Screen-Icon, 
-.DocSearch-Commands{
-  display: none;
-} */
 .DocSearch-Container{
   background-color: #0000001F;
 }

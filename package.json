@@ -21,11 +21,13 @@
         "@docusaurus/theme-search-algolia": "^3.0.1",
         "@mdx-js/react": "^3.0.0",
         "@svgr/webpack": "^5.5.0",
+        "algoliasearch": "^4.21.1",
         "clsx": "^1.1.1",
         "file-loader": "^6.2.0",
         "prism-react-renderer": "^2.1.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-instantsearch": "^7.4.1",
         "rnv": "0.37.0",
         "simple-git": "3.7.1",
         "url-loader": "^4.1.1"
