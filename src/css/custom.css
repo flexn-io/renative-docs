@@ -284,6 +284,13 @@ a {
 }
 
 
+.navbar_logo {
+  content: "";
+  /* display: flex; */
+  height: 37px;
+  width: auto;
+  padding-right: 30px;
+}
 .navbar_icon_link {
   content: "";
   /* display: flex; */
@@ -313,6 +320,20 @@ a {
   background: url(/img/youtube.svg) no-repeat;
   width: 24px;
 }
+
+.header-flexn-link {
+  background: url(/img/flexn.svg) no-repeat;
+}
+
+.header-separator-link {
+  background: url(/img/separator.svg) no-repeat;
+}
+
+
+.header-renative-link {
+  background: url(/img/logo.svg) no-repeat;
+}
+
 
 .homepage-codeline {
   display: flex;
