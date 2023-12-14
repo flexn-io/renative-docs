@@ -81,31 +81,9 @@ const config = {
             position: "left",
             label: "API",
           },
-          // {
-          //   href: "https://github.com/flexn-io/renative",
-          //   position: "right",
-          //   className: "navbar_icon_link header-github-link",
-          //   title: "GitHub",
-          //   "aria-label": "GitHub",
-          // },
-          // {
-          //   href: "https://twitter.com/renative",
-          //   position: "right",
-          //   className: "navbar_icon_link header-twitter-link",
-          //   title: "X(Twitter)",
-          //   "aria-label": "X(Twitter)",
-          // },
-          // {
-          //   href: "https://www.youtube.com/@renative",
-          //   position: "right",
-          //   className: "navbar_icon_link header-youtube-link",
-          //   title: "Youtube",
-          //   "aria-label": "Youtube",
-          // },
           {
-            type: 'search',
-            position: 'right',
-            className: 'search_navbar'
+            type: 'custom-search-navbar-item',
+            position: 'right'
           },
           {
             to: '/docs/overview/quickstart',

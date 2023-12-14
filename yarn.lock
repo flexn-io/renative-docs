@@ -7,6 +7,14 @@
   resolved "https://registry.yarnpkg.com/7zip-bin/-/7zip-bin-5.1.1.tgz#9274ec7460652f9c632c59addf24efb1684ef876"
   integrity sha512-sAP4LldeWNz0lNzmTird3uWfFDWWTeg6V/MsmyyLR9X1idwKBWIgt/ZvinqQldJm3LecKEs1emkbquO6PCiLVQ==
 
+"@algolia/autocomplete-core@1.12.2":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-core/-/autocomplete-core-1.12.2.tgz#f36c8276c57a93b70cd5da6dcdb8817dfd9949ab"
+  integrity sha512-9H11byD/LotKdsAQW8LKfJRwTKde33nxieKgBRbG8jhPErnREsiAmdF82910mv2zimu66T4f9BL9zT1kGEF74g==
+  dependencies:
+    "@algolia/autocomplete-plugin-algolia-insights" "1.12.2"
+    "@algolia/autocomplete-shared" "1.12.2"
+
 "@algolia/autocomplete-core@1.9.3":
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/@algolia/autocomplete-core/-/autocomplete-core-1.9.3.tgz#1d56482a768c33aae0868c8533049e02e8961be7"
@@ -15,12 +23,37 @@
     "@algolia/autocomplete-plugin-algolia-insights" "1.9.3"
     "@algolia/autocomplete-shared" "1.9.3"
 
+"@algolia/autocomplete-js@^1.12.2":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-js/-/autocomplete-js-1.12.2.tgz#53e6564cc8a806121d2da59bc6ad869045e37e74"
+  integrity sha512-urCborbT4qJHZJ8atCe1YNicWQ0rJPRK6KWoufmukqZV0ktxXcRlJCstRV9j/8CqxOheB/eDWo/Rm3v9nXSJLg==
+  dependencies:
+    "@algolia/autocomplete-core" "1.12.2"
+    "@algolia/autocomplete-preset-algolia" "1.12.2"
+    "@algolia/autocomplete-shared" "1.12.2"
+    htm "^3.1.1"
+    preact "^10.13.2"
+
+"@algolia/autocomplete-plugin-algolia-insights@1.12.2":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-plugin-algolia-insights/-/autocomplete-plugin-algolia-insights-1.12.2.tgz#8d1d85f9c3f26de30fc6ece20713be849602eadf"
+  integrity sha512-jPlBXFZs3ukUl5bn27kF3D6JHsWwK9g2bcjIeFBld2UaZnH6ec8tcldVeYbUy6QzDevmFyTohzhb1j6MtSZBrQ==
+  dependencies:
+    "@algolia/autocomplete-shared" "1.12.2"
+
 "@algolia/autocomplete-plugin-algolia-insights@1.9.3":
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/@algolia/autocomplete-plugin-algolia-insights/-/autocomplete-plugin-algolia-insights-1.9.3.tgz#9b7f8641052c8ead6d66c1623d444cbe19dde587"
   integrity sha512-a/yTUkcO/Vyy+JffmAnTWbr4/90cLzw+CC3bRbhnULr/EM0fGNvM13oQQ14f2moLMcVDyAx/leczLlAOovhSZg==
   dependencies:
     "@algolia/autocomplete-shared" "1.9.3"
+
+"@algolia/autocomplete-preset-algolia@1.12.2":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.12.2.tgz#0f4c37735f369a3fbe0604c0e7dd720db1ff5c26"
+  integrity sha512-eIKg14xSr5nHp4Qc9ddl59iVTGmJzOTN8KSZMR/cp76Wa78VvYG5SWSU3Qi+visFrlPWH6I0aM8RrevsnhprtQ==
+  dependencies:
+    "@algolia/autocomplete-shared" "1.12.2"
 
 "@algolia/autocomplete-preset-algolia@1.9.3":
   version "1.9.3"
@@ -29,10 +62,20 @@
   dependencies:
     "@algolia/autocomplete-shared" "1.9.3"
 
+"@algolia/autocomplete-shared@1.12.2":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.12.2.tgz#b42e193a439b8affdc54dc43ccb1d67f0740eebb"
+  integrity sha512-XOaJ0LeXh8jgLKgR1FF2l3aF/8pw4gdjNWucaZh2NfwU1EfXmgjsvUHS7GglJgvxUcSHDoQglr2I5zUo3piSbA==
+
 "@algolia/autocomplete-shared@1.9.3":
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.9.3.tgz#2e22e830d36f0a9cf2c0ccd3c7f6d59435b77dfa"
   integrity sha512-Wnm9E4Ye6Rl6sTTqjoymD+l8DjSTHsHboVRYrKgEt8Q7UHm9nYbqhN/i0fhUYA3OAEH7WA8x3jfpnmJm3rKvaQ==
+
+"@algolia/autocomplete-theme-classic@^1.12.2":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-theme-classic/-/autocomplete-theme-classic-1.12.2.tgz#f845ddec82ed87d4d0397007d817c4dd56ada117"
+  integrity sha512-0AZzaX4jiN9fc/uO00PTZ4GUYMS/W5BIjCVMF6Rry21VhH5RYBnhH1VLNw3WUH++K2xwcyIoDIBV+tCInF0lOg==
 
 "@algolia/cache-browser-local-storage@4.20.0":
   version "4.20.0"
@@ -11379,7 +11422,7 @@ hsla-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/hsla-regex/-/hsla-regex-1.0.0.tgz#c1ce7a3168c8c6614033a4b5f7877f3b225f9c38"
   integrity sha512-7Wn5GMLuHBjZCb2bTmnDOycho0p/7UVaAeqXZGbHrBCl6Yd/xDhQJAXe6Ga9AXJH2I5zY1dEdYw2u1UptnSBJA==
 
-htm@^3.0.0:
+htm@^3.0.0, htm@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/htm/-/htm-3.1.1.tgz#49266582be0dc66ed2235d5ea892307cc0c24b78"
   integrity sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ==
@@ -17578,7 +17621,7 @@ postcss@^8.3.5, postcss@^8.4.17, postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-preact@^10.10.0:
+preact@^10.10.0, preact@^10.13.2, preact@^10.19.3:
   version "10.19.3"
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.19.3.tgz#7a7107ed2598a60676c943709ea3efb8aaafa899"
   integrity sha512-nHHTeFVBTHRGxJXKkKu5hT8C/YWBkPso4/Gad6xuj5dbptt9iF9NZr9pHbPhBrnT2klheu7mHTxTZ/LjwJiEiQ==
