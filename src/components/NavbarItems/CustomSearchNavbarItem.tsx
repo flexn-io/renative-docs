@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { Autocomplete, ProductItem } from '../../theme/SearchBar';
+import { Autocomplete, Footer, ProductItem } from '../../theme/SearchBar';
 import { getAlgoliaResults } from '@algolia/autocomplete-js';
 import algoliasearch from 'algoliasearch';
 
@@ -21,6 +21,7 @@ export default function CustomSearchNavbarItem(props: {
     return (
         <Autocomplete
             openOnFocus={true}
+            placeholder='Search...'
             className={props.className}
             getSources={({ query }) => [
                 {
@@ -36,9 +37,19 @@ export default function CustomSearchNavbarItem(props: {
                             ],
                         });
                     },
+                    getItemUrl({ item }) {
+                        return item.url;
+                    },
                     templates: {
                         item({ item, components }) {
                             return <ProductItem hit={item} components={components} />;
+                        },
+                        noResults() {
+                            return (
+                                <div style={{margin: 'auto', height: '113px', width: '204px'}}>
+                                        <span>No results found for "<strong>{query}</strong>"</span>
+                                </div>
+                            );
                         },
                     },
                 },

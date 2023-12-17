@@ -26,7 +26,14 @@ export function Autocomplete(props) {
                     panelRootRef.current = createRoot(root);
                 }
 
-                panelRootRef.current.render(children);
+                // panelRootRef.current.render(children);
+                panelRootRef.current.render(
+                    <>
+                    {children}
+                    <Footer/>
+                    </>,
+                    root
+                );
             },
             ...props,
         });
@@ -41,7 +48,7 @@ export function Autocomplete(props) {
 
 export function ProductItem({ hit, components }) {
     return (
-        <a href={hit.url} className="aa-ItemLink">
+        <a href={hit.url} className="aa-ItemLink" style={{marginBottom: '10px'}}>
             <div className="aa-ItemContent">
                 <div className="aa-ItemTitle search_result_title_container">
                     <img src='/img/page_icon.svg' />
@@ -52,7 +59,7 @@ export function ProductItem({ hit, components }) {
                 </div>
                 {hit._highlightResult.sections.map(section => (
                     (section.name.matchLevel != 'none' || section.content.matchLevel != 'none') &&
-                    <div style={{paddingLeft: '25px'}}>
+                    <div style={{ paddingLeft: '25px' }}>
                         <div className="aa-ItemTitle search_result_title_container">
                             <img src='/img/section_icon.svg' />
                             <components.Highlight hit={section.name} attribute="value" />
@@ -65,4 +72,17 @@ export function ProductItem({ hit, components }) {
             </div>
         </a>
     );
+}
+
+export function Footer() {
+    return (
+        <div className='search_footer'>
+            <div className='search_footer_item'>
+            <span>Search by</span>
+            </div>
+            <div className='search_footer_item'>
+            <img src='/img/algolia_logo.svg' />
+            </div>
+        </div>
+    )
 }

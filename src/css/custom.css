@@ -35,14 +35,6 @@ hr.lineDark {
   margin: 72px 0;
 }
 
-
-@media (max-width:996px) {
-  .DocSearch-Button-Keys,
-  .DocSearch-Button-Placeholder {
-      display: none !important;
-  }
-}
-
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
@@ -443,7 +435,7 @@ a {
 .aa-DetachedCancelButton{
   background-color: #0A74E614 !important;
   color: #000 !important;
-  width: 36px;
+  width: auto;
   height: 23px;
   padding: 0 !important;
   margin: auto 16px !important;
@@ -476,7 +468,6 @@ a {
 }
 .aa-DetachedContainer--modal{
   margin-top: 10% !important;
-  min-height: 30%;
 }
 .aa-ItemContent{
   display: block !important;
@@ -484,6 +475,59 @@ a {
 .aa-ItemContentDescription{
   margin-left: 25px;
 }
+
+.aa-List{
+  height: 200px;
+}
+
+.aa-SubmitIcon {
+  fill: #565656;
+}
+[data-theme='dark'] .aa-SubmitIcon {
+  fill: #A1A1A1;
+}
+
+.search_footer{
+  background-color: rgb(200, 200, 200);
+  height: 40px;
+  display: flex;
+  gap: 12px;
+  padding: 0 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search_footer_item{
+  display: flex;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+@media (max-width:996px) {
+  .aa-DetachedSearchButtonPlaceholder,
+  .aa-DetachedSearchButtonQuery {
+      display: none !important;
+      width: auto;
+  }
+  .aa-Autocomplete{
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 42px;
+    top: 30%;
+  }
+  .aa-DetachedSearchButton{
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    height: auto !important;
+    width: auto !important;
+  }
+  .aa-DetachedSearchButtonIcon{
+    width: auto !important;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .hero .hero__title {
     font-size: 6.8vw;
