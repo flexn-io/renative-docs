@@ -24,7 +24,7 @@ export default function NavbarMobilePrimaryMenu() {
           />
         ))}
       </ul>
-      <ul className="menu__list menu_icons_grid">
+      {/* <ul className="menu__list menu_icons_grid">
         {items.filter(item => item.position === 'right' && item.title).map((item, i) => (
           <div key={i} className="menu_icon">
             <NavbarItem
@@ -36,16 +36,20 @@ export default function NavbarMobilePrimaryMenu() {
             <span>{item.title}</span>
           </div>
         ))}
-      </ul>
+      </ul> */}
+      <div className='mobile_nav_search'>
+        <NavbarItem
+          mobile
+          {...items.at(-2)}
+          onClick={() => mobileSidebar.toggle()}
+        />
+      </div>
       <div className='mobile_nav_btn_container'>
-        {items.filter(item => item.position === 'right' && !item.title).map((item, i) => (
-          <NavbarItem
-            mobile
-            {...item}
-            onClick={() => mobileSidebar.toggle()}
-            key={i}
-          />
-        ))}
+        <NavbarItem
+          mobile
+          {...items.at(-1)}
+          onClick={() => mobileSidebar.toggle()}
+        />
       </div>
     </>
   );
