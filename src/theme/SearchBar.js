@@ -80,7 +80,9 @@ export function Footer() {
             <span>Search by</span>
             </div>
             <div className='search_footer_item'>
-            <img src='/img/algolia_logo.svg' />
+                <a href='https://www.algolia.com/developers/?utm_medium=referral&utm_content=powered_by&utm_source=renative.com&utm_campaign=autocomplete'>
+                    <img src='/img/algolia_logo.svg' />
+                </a>
             </div>
         </div>
     )
