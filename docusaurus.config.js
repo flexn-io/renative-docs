@@ -56,42 +56,37 @@ const config = {
       //     indexName: "renative",
       //   },
       navbar: {
-        // title: "ReNative",
+        title: "ReNative",
         hideOnScroll: false,
-        // logo: {
-        //   alt: "Renative Logo",
-        //   src: "img/logo.svg",
-        // },
+        logo: {
+          alt: "Renative Logo",
+          src: "img/logo.svg",
+        },
         items: [
-          {
-            href: "https://www.flexn.io/",
-            position: "left",
-            className: "navbar_logo header-flexn-link",
-            title: "Flexn",
-            "aria-label": "Flexn",
-          },
-          {
-            href: "/",
-            position: "left",
-            className: "navbar_logo header-separator-link",
-            title: "Separator",
-            "aria-label": "Separator",
-          },
-          {
-            href: "/",
-            position: "left",
-            className: "navbar_logo header-renative-link",
-            title: "Renative",
-            "aria-label": "Renative",
-          },
+          // {
+          //   href: "https://www.flexn.io/",
+          //   position: "left",
+          //   className: "navbar_logo header-flexn-link",
+          //   title: "Flexn",
+          //   "aria-label": "Flexn",
+          // },
+          // {
+          //   href: "/",
+          //   position: "left",
+          //   className: "navbar_logo header-separator-link",
+          //   title: "Separator",
+          //   "aria-label": "Separator",
+          // },
+          // {
+          //   href: "/",
+          //   position: "left",
+          //   className: "navbar_logo header-renative-link",
+          //   title: "Renative",
+          //   "aria-label": "Renative",
+          // },
           {
             position: "left",
             label: "v0.37",
-            href: "https://github.com/flexn-io/renative/releases/tag/0.37.0",
-          },
-          {
-            position: "left",
-            label: "Pro",
             href: "https://github.com/flexn-io/renative/releases/tag/0.37.0",
           },
           {
@@ -129,27 +124,6 @@ const config = {
             docId: "releases/releasenotes",
             position: "left",
             label: "Releases",
-          },
-          {
-            href: "https://github.com/flexn-io/renative",
-            position: "right",
-            className: "navbar_icon_link header-github-link",
-            title: "GitHub",
-            "aria-label": "GitHub",
-          },
-          {
-            href: "https://twitter.com/renative",
-            position: "right",
-            className: "navbar_icon_link header-twitter-link",
-            title: "X(Twitter)",
-            "aria-label": "X(Twitter)",
-          },
-          {
-            href: "https://www.youtube.com/@renative",
-            position: "right",
-            className: "navbar_icon_link header-youtube-link",
-            title: "Youtube",
-            "aria-label": "Youtube",
           },
           {
             to: '/docs/overview/quickstart',

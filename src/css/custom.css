@@ -23,7 +23,109 @@
     font-family: "Inter";
   font-weight: 300;
 }
+/* ======================================================================================= */
+.main-wrapper{
+  flex: 0 !important;
+}
+.markdown h1{
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.markdown header{
+  text-align: start !important;
+}
+html[data-theme="dark"] .markdown h1{
+  color: #fff;
+}
 
+.markdown h2{
+  border-top: 1px solid #e4e4e4;
+  padding-top: 40px;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+html[data-theme="dark"] .markdown h2{
+  color: #fff;
+  border-top: 1px solid #3d3d3d;
+}
+.markdown h3{
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+html[data-theme="dark"] .markdown h3{
+  color: #fff;
+}
+.markdown h4{
+  background-color: red;
+}
+html[data-theme="dark"] .markdown h4{
+  color: #fff;
+}
+.markdown p,
+.markdown li{
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.markdown > p > code,
+.markdown > ul > li > code{
+  color: #0A74E6;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 8px;
+  align-content: center;
+}
+
+html[data-theme="dark"] .markdown p,
+html[data-theme="dark"] .markdown li{
+  color: #fff;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link{
+  background: none;
+}
+.breadcrumbs__link{
+  color: #565656;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.breadcrumbs__link:hover{
+  background-color: transparent !important;
+}
+.menu__link--active:not(.menu__link--sublist){
+  background-color: #0A74E614;
+}
+.table-of-contents__left-border{
+  border: none;
+}
+.table-of-contents__right-border,
+.theme-doc-sidebar-container{
+  border: none !important;
+}
+
+/* ======================================================================================= */
 hr.lineLight {
   border: 0.5px solid #e4e4e4;
   background-color: #e4e4e4;
