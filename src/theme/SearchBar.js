@@ -81,7 +81,7 @@ export function Footer() {
             </div>
             <div className='search_footer_item'>
                 <a href='https://www.algolia.com/developers/?utm_medium=referral&utm_content=powered_by&utm_source=renative.com&utm_campaign=autocomplete'>
-                    <img src='/img/algolia_logo.svg' />
+                    <img className='algolia_logo' src='/img/algolia_logo.svg' />
                 </a>
             </div>
         </div>

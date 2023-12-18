@@ -257,8 +257,11 @@ a {
   font-size: 14px;
   line-height: 16px;
 }
-
-[data-theme='dark'] .footer-link {
+.no_results {
+  color: #565656;
+}
+[data-theme='dark'] .footer-link,
+[data-theme='dark'] .no_results {
   color: #A1A1A1;
 }
 
@@ -391,7 +394,8 @@ a {
   color: inherit;
 }
 
-[data-theme="dark"] .link_img {
+[data-theme="dark"] .link_img,
+[data-theme="dark"] .algolia_logo {
   filter: invert(71%) sepia(0%) saturate(90%) hue-rotate(195deg) brightness(92%) contrast(88%);
 }
 
@@ -432,6 +436,11 @@ a {
 
 .aa-DetachedFormContainer{
   padding: 0 !important;
+  border-bottom: 1px solid #e4e4e4;
+}
+[data-theme="dark"] .aa-DetachedFormContainer{
+  border-bottom: 1px solid #3d3d3d;
+  background-color: #000;
 }
 .aa-Form{
   border: none !important;
@@ -479,6 +488,7 @@ a {
 [data-theme="dark"] .aa-DetachedContainer--modal{
   background-color: #000 !important;
   color: #FFF !important;
+  box-shadow: none !important;
 }
 
 
@@ -492,7 +502,8 @@ a {
 [data-theme='dark'] .aa-ItemContentDescription,
 [data-theme='dark'] .aa-Input,
 [data-theme='dark'] .aa-SourceNoResults,
-[data-theme='dark'] .search_footer_item{
+[data-theme='dark'] .search_footer_item,
+[data-theme='dark'] .aa-DetachedSearchButtonQuery{
   color: #fff;
 }
 [data-theme='dark'] .aa-Form
@@ -530,6 +541,14 @@ a {
   vertical-align: middle;
   font-size: 12px;
 }
+.aa-GradientBottom{
+  display: none;
+}
+[data-theme='dark'] .aa-PanelLayout{
+  background-color: #000; 
+  overflow: auto;
+  overscroll-behavior: contain;
+}
 
 @media (max-width:996px) {
   .aa-DetachedSearchButtonPlaceholder,
@@ -554,6 +573,9 @@ a {
 
   .aa-DetachedSearchButtonIcon{
     width: auto !important;
+  }
+  [data-theme="dark"] .aa-DetachedSearchButton {
+    border: none !important;
   }
 }
 

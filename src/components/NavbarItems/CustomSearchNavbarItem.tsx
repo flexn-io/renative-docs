@@ -47,7 +47,7 @@ export default function CustomSearchNavbarItem(props: {
                         noResults() {
                             return (
                                 <div style={{margin: 'auto', height: '113px', width: '204px'}}>
-                                        <span>No results found for "<strong>{query}</strong>"</span>
+                                        <span className='no_results'>No results found for </span><strong>"{query}"</strong>
                                 </div>
                             );
                         },
