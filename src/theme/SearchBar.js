@@ -31,8 +31,7 @@ export function Autocomplete(props) {
                     <>
                     {children}
                     <Footer/>
-                    </>,
-                    root
+                    </>
                 );
             },
             ...props,
@@ -59,7 +58,7 @@ export function ProductItem({ hit, components }) {
                 </div>
                 {hit._highlightResult.sections.map(section => (
                     (section.name.matchLevel != 'none' || section.content.matchLevel != 'none') &&
-                    <div style={{ paddingLeft: '25px' }}>
+                    <div key={section.name.value} style={{ paddingLeft: '25px' }}>
                         <div className="aa-ItemTitle search_result_title_container">
                             <img src='/img/section_icon.svg' />
                             <components.Highlight hit={section.name} attribute="value" />
