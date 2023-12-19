@@ -460,6 +460,14 @@ a {
   font-weight: 400 !important;
   line-height: normal !important;
 }
+.aa-DetachedCancelButton {
+  font-size: 0 !important;
+}
+.aa-DetachedCancelButton:after {
+  font-size: 14px;
+  padding: 3px 6px;
+  content: 'Esc';
+}
 
 [data-theme="dark"] .aa-DetachedCancelButton{
   background-color: #0A74E652 !important;
