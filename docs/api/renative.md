@@ -13,7 +13,7 @@ Help to render UI with unified relative scaled factor
 
 type: `function`
 
-```
+```jsx title="/src/components/HelloCodeTitle.js"
 import { getScaledValue } from 'renative'
 
 StyleSheet.create({
