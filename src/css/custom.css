@@ -115,6 +115,11 @@ html[data-theme="dark"] .markdown li{
 }
 .table-of-contents__left-border{
   border: none;
+  padding-top: 0;
+}
+.table-of-contents__left-border li{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .table-of-contents__right-border,
 .theme-doc-sidebar-container{
@@ -122,6 +127,21 @@ html[data-theme="dark"] .markdown li{
 }
 .markdown table{
   display: inline-table;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.markdown table th, 
+.markdown table td {
+  border: 1px solid #E4E4E4;
+}
+
+html[data-theme="dark"] .markdown table th, 
+html[data-theme="dark"] .markdown table td {
+  border: 1px solid #3d3d3d;
+}
+.markdown > table > thead > tr{
+  height: 41px;
 }
 .markdown > table > thead > tr > th{
   background-color: #fff;
@@ -150,6 +170,37 @@ tr:last-of-type td:last-of-type {
 .markdown > p > a:after { 
   filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
   content:url('/img/link.svg'); 
+}
+.menu__list-item-collapsible{
+  border: none;
+}
+.breadcrumbs li:first-of-type{
+  display: none;
+}
+.breadcrumbs .breadcrumbs__link {
+  padding-left: 0;
+}
+.theme-doc-toc-desktop::before {
+  content: 'Overview';
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: var(--ifm-toc-padding-horizontal);
+  margin: 0 var(--ifm-toc-padding-horizontal);
+}
+.table-of-contents__link {
+  color: #565656;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 14px;
+}
+html[data-theme="dark"] .table-of-contents__link {
+  color: #A1A1A1;
 }
 /* ======================================================================================= */
 hr.lineLight {
@@ -498,15 +549,6 @@ a {
   width: 100%;
 }
 
-.menu__list {
-  border-top: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-}
-
-[data-theme="dark"] .menu__list {
-  border-color: #3d3d3d;
-}
 
 .menu_icons_grid {
   height: 100px;
@@ -556,6 +598,17 @@ a {
   top: 30%;
 }
 
+@media (max-width: 996px) {
+  .menu__list {
+    border-top: solid;
+    border-color: #e4e4e4;
+    border-width: 1px;
+  }
+  
+  [data-theme="dark"] .menu__list {
+    border-color: #3d3d3d;
+  }
+}
 @media screen and (max-width: 1300px) {
   .hero .hero__title {
     font-size: 6.8vw;
