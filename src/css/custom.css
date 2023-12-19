@@ -129,12 +129,20 @@ html[data-theme="dark"] .markdown li{
 html[data-theme="dark"] .markdown > table > thead > tr > th{
   background-color: #000;
 }
-/* .markdown blockquote{
-  border-radius: 8px;
-  background: rgba(10, 116, 230, 0.06);
-  padding: 18px;
-  border: none;
-} */
+
+tr:last-of-type th:first-of-type {
+  border-top-left-radius: 10px;
+}
+tr:last-of-type th:last-of-type {
+  border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
 .theme-admonition{
   border-radius: 8px;
   border: none;
