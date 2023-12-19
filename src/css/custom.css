@@ -67,12 +67,6 @@ html[data-theme="dark"] .markdown h2{
 html[data-theme="dark"] .markdown h3{
   color: #fff;
 }
-.markdown h4{
-  background-color: red;
-}
-html[data-theme="dark"] .markdown h4{
-  color: #fff;
-}
 .markdown p,
 .markdown li{
   color: #000;
@@ -84,7 +78,9 @@ html[data-theme="dark"] .markdown h4{
 }
 
 .markdown > p > code,
-.markdown > ul > li > code{
+.markdown > ul > li > code,
+.markdown > table > tbody > tr > td > code,
+.markdown > blockquote > p > code{
   color: #0A74E6;
   font-family: Inter;
   font-size: 16px;
@@ -124,7 +120,29 @@ html[data-theme="dark"] .markdown li{
 .theme-doc-sidebar-container{
   border: none !important;
 }
-
+.markdown table{
+  display: inline-table;
+}
+.markdown > table > thead > tr > th{
+  background-color: #fff;
+}
+html[data-theme="dark"] .markdown > table > thead > tr > th{
+  background-color: #000;
+}
+/* .markdown blockquote{
+  border-radius: 8px;
+  background: rgba(10, 116, 230, 0.06);
+  padding: 18px;
+  border: none;
+} */
+.theme-admonition{
+  border-radius: 8px;
+  border: none;
+}
+.markdown > p > a:after { 
+  filter: invert(47%) sepia(100%) saturate(4115%) hue-rotate(196deg) brightness(90%) contrast(100%);
+  content:url('/img/link.svg'); 
+}
 /* ======================================================================================= */
 hr.lineLight {
   border: 0.5px solid #e4e4e4;

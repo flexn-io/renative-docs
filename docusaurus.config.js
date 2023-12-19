@@ -50,11 +50,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      //   algolia: {
-      //     appId: "RDMUFOXXVC",
-      //     apiKey: "56cceb616493dc70a043d8d4c36c0589",
-      //     indexName: "renative",
-      //   },
       navbar: {
         title: "ReNative",
         hideOnScroll: false,
@@ -89,42 +84,56 @@ const config = {
             label: "v0.37",
             href: "https://github.com/flexn-io/renative/releases/tag/0.37.0",
           },
+          // ====================================================================
           {
             type: "doc",
-            docId: "tutorials/quickstart",
+            docId: "overview/introduction",
             position: "left",
-            label: "Tutorials",
+            label: "Docs",
           },
           {
             type: "doc",
-            docId: "references/cli",
+            docId: "api/renative",
             position: "left",
-            label: "Reference",
+            label: "API",
           },
-          {
-            type: "doc",
-            docId: "descriptor",
-            position: "left",
-            label: "APIs",
-          },
-          {
-            type: "doc",
-            docId: "marketplace/templates",
-            position: "left",
-            label: "Marketplace",
-          },
-          {
-            type: "doc",
-            docId: "concepts/architecture",
-            position: "left",
-            label: "Concepts",
-          },
-          {
-            type: "doc",
-            docId: "releases/releasenotes",
-            position: "left",
-            label: "Releases",
-          },
+          // ====================================================================
+          // {
+          //   type: "doc",
+          //   docId: "tutorials/quickstart",
+          //   position: "left",
+          //   label: "Tutorials",
+          // },
+          // {
+          //   type: "doc",
+          //   docId: "references/cli",
+          //   position: "left",
+          //   label: "Reference",
+          // },
+          // {
+          //   type: "doc",
+          //   docId: "descriptor",
+          //   position: "left",
+          //   label: "APIs",
+          // },
+          // {
+          //   type: "doc",
+          //   docId: "marketplace/templates",
+          //   position: "left",
+          //   label: "Marketplace",
+          // },
+          // {
+          //   type: "doc",
+          //   docId: "concepts/architecture",
+          //   position: "left",
+          //   label: "Concepts",
+          // },
+          // {
+          //   type: "doc",
+          //   docId: "releases/releasenotes",
+          //   position: "left",
+          //   label: "Releases",
+          // },
           {
             to: '/docs/overview/quickstart',
             label: 'Get started',

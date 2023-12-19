@@ -19,6 +19,18 @@ This command reference applies if your platform uses engine `engine-core`.
 
 > Decrypt encrypted project files into local `~/<wokspace>/<project>/..`
 
+:::info TEST
+:::
+
+:::success TEST
+:::
+
+:::warning TEST
+:::
+
+:::danger TEST
+:::
+
 Supported Platforms:
 
 `ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
