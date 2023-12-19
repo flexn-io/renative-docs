@@ -320,7 +320,7 @@ h3 {
 }
 
 .container {
-  max-width: 1288px;
+  max-width: 1288px !important;
 }
 
 .container-in {
