@@ -70,10 +70,10 @@ All app code is located in `./src` directory
 ---
 ## NPX
 
-⚠️
-
+:::info
 It is recommended that after initial project setup you start using `npx rnv ...` prefix instead of `rnv ...`
 
 This ensures that every project uses correct version of `rnv` to avoid potential compatibility issues
 
 make sure you have npx installed globally via `npm install npx -g`
+:::

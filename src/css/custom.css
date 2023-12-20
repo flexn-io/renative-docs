@@ -79,7 +79,6 @@ html[data-theme="dark"] .markdown h3{
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .markdown > p > code,
@@ -206,6 +205,9 @@ tr:last-of-type td:last-of-type {
 }
 html[data-theme="dark"] .table-of-contents__link {
   color: #A1A1A1;
+}
+.markdown .theme-code-block{
+  margin-bottom: 20px;
 }
 /* ======================================================================================= */
 hr.lineLight {
