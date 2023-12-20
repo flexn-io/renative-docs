@@ -18,10 +18,12 @@ original_id: webos
 
 <img className="platform-image" src="https://renative.org/img/rnv_webos.gif" height="250"/>
 
+---
 ## Overview
 
 - Latest LG webOS Project
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
@@ -30,10 +32,12 @@ Extenstions are defined via engines. Engines with webos support:
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - [LG Emulator](http://webostv.developer.lge.com/develop/tools/emulator-introduction/) v3.0.0
 
+---
 ## Project Configuration
 
 | Feature          | Version |
@@ -41,6 +45,7 @@ Extenstions are defined via engines. Engines with webos support:
 | react-native-web | `0.9.9` |
 | Babel Core       | `7.1.2` |
 
+---
 ## Emulator
 
 - launch webOS emulator via CLI
@@ -57,6 +62,7 @@ usually located in something like:
 <USER_PATH>/Library/webOS_TV_SDK/Emulator/v4.0.0/LG_webOS_TV_Emulator_RCU.app
 ```
 
+---
 ## Run
 
 Run on Simulator
@@ -77,6 +83,7 @@ Run in Browser
 rnv run -p webos --hosted
 ```
 
+---
 ## App Config
 
 [see: Web based config](../api/json-config.md)

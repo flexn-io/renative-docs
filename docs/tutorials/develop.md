@@ -8,6 +8,7 @@ sidebar_position: 12
 
 <!-- <img className="header-image" src="https://renative.org/img/ic_construction.png" width="50" height="50" /> -->
 
+---
 ## Developing ReNative Locally
 
 If you need full control over whole ReNative build you can clone and develop it locally
@@ -32,6 +33,7 @@ rnv template apply
 
 Requirements: Python 2.7, Visual Studio installed or install `windows-build-tools`(https://www.npmjs.com/package/windows-build-tools). **Please make sure you follow the package's instructions, especially running it in PowerShell as Administrator**
 
+---
 ## Deployments
 
 ### Feature
@@ -68,6 +70,7 @@ npm tag: `latest`
 npm run deploy:prod
 ```
 
+---
 ## Documentation
 
 [Documentation for CLI](../api/cli-engine-core.md)

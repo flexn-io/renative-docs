@@ -22,6 +22,7 @@ Following Config reference applies to all `renative.json` files, including:
 
 
 
+---
 ## common
 
 | Prop Name | Type | Default Value | Path |
@@ -676,6 +677,7 @@ If set to `true` generated js (bundle.js) files will be timestamped and named (b
 
 
 
+---
 ## crypto
 
 | Prop Name | Type | Default Value | Path |
@@ -792,6 +794,7 @@ Location of encrypted file in your project used as destination of encryption fro
 
 
 
+---
 ## currentTemplate
 
 | Prop Name | Type | Default Value | Path |
@@ -812,13 +815,8 @@ Currently active template used in this project. this allows you to re-bootstrap 
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## defaultTargets
 
@@ -850,13 +848,8 @@ List of default target simulators and emulators
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## defaults
 
@@ -1012,6 +1005,7 @@ Override of default targets specific to this project
 
 
 
+---
 ## description
 
 | Prop Name | Type | Default Value | Path |
@@ -1022,13 +1016,8 @@ Override of default targets specific to this project
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## enableAnalytics
 
@@ -1058,13 +1047,8 @@ Enable or disable sending analytics to improve ReNative
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## enableHookRebuild
 
@@ -1094,13 +1078,8 @@ If set to true in `./renative.json` build hooks will be compiled at each rnv com
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## engines
 
@@ -1143,13 +1122,8 @@ List of engines available in this project
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## env
 
@@ -1161,13 +1135,8 @@ List of engines available in this project
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## ext
 
@@ -1191,13 +1160,8 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## extend
 
@@ -1209,13 +1173,8 @@ Object ysed to extend your renative with custom props. This allows renative json
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## extendsTemplate
 
@@ -1245,13 +1204,8 @@ You can extend another renative.json file of currently applied template by provi
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## hidden
 
@@ -1281,13 +1235,8 @@ If set to true in `./appConfigs/[APP_ID]/renative.json` the APP_ID will be hidde
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## id
 
@@ -1317,13 +1266,8 @@ ID of the app in `./appConfigs/[APP_ID]/renative.json`. MUST match APP_ID name o
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## integrations
 
@@ -1335,13 +1279,8 @@ ID of the app in `./appConfigs/[APP_ID]/renative.json`. MUST match APP_ID name o
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## isMonorepo
 
@@ -1353,13 +1292,8 @@ ID of the app in `./appConfigs/[APP_ID]/renative.json`. MUST match APP_ID name o
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## monoRepo
 
@@ -1371,13 +1305,8 @@ Define custom path to monorepo root where starting point is project directory
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## paths
 
@@ -1529,6 +1458,7 @@ To skip file overrides coming from source plugin you need to detach it from the 
 
 
 
+---
 ## permissions
 
 | Prop Name | Type | Default Value | Path |
@@ -1667,6 +1597,7 @@ iOS SDK specific permissions
 
 
 
+---
 ## pipes
 
 | Prop Name | Type | Default Value | Path |
@@ -1693,13 +1624,8 @@ To avoid rnv building `buildHooks/src` every time you can specify which specific
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## platforms
 
@@ -24476,6 +24402,7 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+---
 ## pluginTemplates
 
 | Prop Name | Type | Default Value | Path |
@@ -24486,13 +24413,8 @@ Allows you to directly extend/override webpack config of your current platform
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## plugins
 
@@ -24522,13 +24444,8 @@ Define all plugins available in your project. you can then use `includedPlugins`
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## private
 
@@ -24552,13 +24469,8 @@ Special object which contains private info. this object should be used only in `
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## projectName
 
@@ -24588,13 +24500,8 @@ Name of the project which will be used in workspace as folder name. this will al
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## projectTemplates
 
@@ -24618,13 +24525,8 @@ Custom list of renative templates (NPM package names) which will be displayed du
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## publish
 
@@ -24636,13 +24538,8 @@ Custom list of renative templates (NPM package names) which will be displayed du
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## runtime
 
@@ -24666,13 +24563,8 @@ This object will be automatically injected into `./platfromAssets/renative.runti
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## sdks
 
@@ -24700,13 +24592,8 @@ List of SDK locations used by RNV. This property is usually located in your `WOR
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## tasks
 
@@ -24732,13 +24619,8 @@ Allows to override specific task within renative toolchain. (currently only `ins
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## templateConfig
 
@@ -24839,6 +24721,7 @@ Defines list of all file/dir paths you want to include in template
 
 
 
+---
 ## templates
 
 | Prop Name | Type | Default Value | Path |
@@ -24865,13 +24748,8 @@ NOTE: This prop will be updated by rnv if you run `rnv template install`
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## version
 
@@ -24925,13 +24803,8 @@ Semver style version of your app.
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## versionCode
 
@@ -24961,13 +24834,8 @@ Manual verride of generated version code
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## versionCodeFormat
 
@@ -25035,13 +24903,8 @@ IN: 1.0.23 OUT: 100230000
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## versionFormat
 
@@ -25103,13 +24966,8 @@ IN: 1.2.3 OUT: 1.2.3
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## workspaceID
 

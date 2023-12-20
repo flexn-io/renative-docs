@@ -7,6 +7,7 @@ original_id: installation
 
 <!-- <img className="header-image" src="https://renative.org/img/ic_quickstart.png" width="50" height="50" /> -->
 
+---
 ## Requirements
 
 -   [Node](https://nodejs.org) `10.13.0` or newer
@@ -17,12 +18,14 @@ original_id: installation
 -   [WebOS SDK](http://webostv.developer.lge.com/sdk/installation/) (if you want to develop for WebOS)
 -   [KaiOS SDK](https://developer.kaiostech.com) (if you want to develop for KaiOS)
 
+---
 ## Install ReNative CLI (rnv)
 
 ```bash
 npm install rnv -g
 ```
 
+---
 ## Create new app
 
 <table>
@@ -39,6 +42,7 @@ rnv new
 
 Follow steps in the terminal
 
+---
 ## Run first app
 
 Run your first `ios` app
@@ -63,6 +67,7 @@ rnv run -p web
 
 All app code is located in `./src` directory
 
+---
 ## NPX
 
 ⚠️

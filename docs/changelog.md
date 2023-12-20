@@ -5,8 +5,10 @@ sidebar_label: Changelog
 ---
 
 
+---
 ## 0.37.0 (2023-7-17)
 
+---
 ## What's Changed
 * Release 0.36.0 by @mihaiblaga89 in https://github.com/flexn-io/renative/pull/878
 * Release/0.36 by @mihaiblaga89 in https://github.com/flexn-io/renative/pull/888
@@ -45,11 +47,13 @@ sidebar_label: Changelog
 * chore: remove e2e tests by @pauliusguzas in https://github.com/flexn-io/renative/pull/1054
 * Fix/metro cache while global by @mihaiblaga89 in https://github.com/flexn-io/renative/pull/1065
 
+---
 ## New Contributors
 * @himu243 made their first contribution in https://github.com/flexn-io/renative/pull/944
 
 **Full Changelog**: https://github.com/flexn-io/renative/compare/0.36.1...0.37.0
 
+---
 ## v0.33.0-alpha.5 (2021-12-3)
 
 ### Fixed
@@ -67,6 +71,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.33.0-alpha.4 (2021-12-2)
 
 ### Fixed
@@ -102,6 +107,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.33.0-alpha.3 (2021-11-30)
 
 ### Fixed
@@ -119,6 +125,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.33.0-alpha.2 (2021-11-25)
 
 ### Fixed
@@ -145,6 +152,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.33.0-alpha.1 (2021-11-18)
 
 ### Fixed
@@ -176,6 +184,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.33.0 (2021-12-5)
 
 ### Fixed
@@ -190,6 +199,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.2 (2021-11-18)
 
 ### Fixed
@@ -208,6 +218,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.1 (2021-11-17)
 
 ### Fixed
@@ -232,6 +243,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.50 (2021-11-16)
 
 ### Fixed
@@ -267,6 +279,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.49 (2021-11-14)
 
 ### Fixed
@@ -295,6 +308,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.48 (2021-11-13)
 
 ### Fixed
@@ -629,6 +643,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.47 (2021-11-12)
 
 ### Fixed
@@ -944,6 +959,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.45 (2021-6-2)
 
 ### Fixed
@@ -959,6 +975,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.44 (2021-5-27)
 
 ### Fixed
@@ -987,6 +1004,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.43 (2021-5-5)
 
 ### Fixed
@@ -1012,6 +1030,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.42 (2021-4-19)
 
 ### Fixed
@@ -1027,6 +1046,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.41 (2021-4-13)
 
 ### Fixed
@@ -1043,6 +1063,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.40 (2021-4-11)
 
 ### Fixed
@@ -1059,6 +1080,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.39 (2021-3-18)
 
 ### Fixed
@@ -1085,6 +1107,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.38 (2021-3-14)
 
 ### Fixed
@@ -1101,6 +1124,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.37 (2021-3-14)
 
 ### Fixed
@@ -1118,6 +1142,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.36 (2021-3-4)
 
 ### Fixed
@@ -1134,6 +1159,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.35 (2021-3-3)
 
 ### Fixed
@@ -1152,6 +1178,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.34 (2021-2-25)
 
 ### Fixed
@@ -1168,6 +1195,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.33 (2021-2-25)
 
 ### Fixed
@@ -1184,6 +1212,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.32 (2021-2-16)
 
 ### Fixed
@@ -1199,6 +1228,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.31 (2021-2-14)
 
 ### Fixed
@@ -1217,6 +1247,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.30 (2021-2-11)
 
 ### Fixed
@@ -1233,6 +1264,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.29 (2021-2-10)
 
 ### Fixed
@@ -1250,6 +1282,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.28 (2021-2-8)
 
 ### Fixed
@@ -1272,6 +1305,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.27 (2021-1-20)
 
 ### Fixed
@@ -1289,6 +1323,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.26 (2021-1-18)
 
 ### Fixed
@@ -1312,6 +1347,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.25 (2021-1-3)
 
 ### Fixed
@@ -1336,6 +1372,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.24 (2020-12-14)
 
 ### Fixed
@@ -1355,6 +1392,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.23 (2020-12-14)
 
 ### Fixed
@@ -1371,6 +1409,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.22 (2020-12-12)
 
 ### Fixed
@@ -1395,6 +1434,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.21 (2020-11-29)
 
 ### Fixed
@@ -1416,6 +1456,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.20 (2020-11-26)
 
 ### Fixed
@@ -1431,6 +1472,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.19 (2020-11-26)
 
 ### Fixed
@@ -1446,6 +1488,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.18 (2020-11-23)
 
 ### Fixed
@@ -1460,6 +1503,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.17 (2020-11-23)
 
 ### Fixed
@@ -1475,6 +1519,7 @@ sidebar_label: Changelog
 
 - if you use custom vector icons fonts in `appConfigs/base/fonts` make sure you copy latest versions from `node_modules/react-native-vector-icons/Fonts` to that folder.
 
+---
 ## v0.32.0-alpha.16 (2020-11-22)
 
 ### Fixed
@@ -1491,6 +1536,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.15 (2020-11-22)
 
 ### Fixed
@@ -1506,6 +1552,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.14 (2020-11-21)
 
 ### Fixed
@@ -1520,6 +1567,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.13 (2020-11-21)
 
 ### Fixed
@@ -1537,6 +1585,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.12 (2020-11-15)
 
 ### Fixed
@@ -1552,6 +1601,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.11 (2020-11-13)
 
 ### Fixed
@@ -1567,6 +1617,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.10 (2020-11-13)
 
 ### Fixed
@@ -1582,6 +1633,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.9 (2020-11-13)
 
 ### Fixed
@@ -1597,6 +1649,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.8 (2020-11-12)
 
 ### Fixed
@@ -1614,6 +1667,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.7 (2020-11-12)
 
 ### Fixed
@@ -1630,6 +1684,7 @@ sidebar_label: Changelog
 - none
 
   
+---
 ## v0.32.0-alpha.6 (2020-11-11)
 
 ### Fixed
@@ -1672,6 +1727,7 @@ renative runtime deprecated API:
 
 ### Breaking Changes
 
+---
 ## v0.32.0-alpha.5 (2020-11-9)
 
 ### Fixed
@@ -1690,6 +1746,7 @@ renative runtime deprecated API:
 
 - none
 
+---
 ## v0.32.0-alpha.4 (2020-11-9)
 
 ### Fixed
@@ -1722,6 +1779,7 @@ renative runtime deprecated API:
 - Common.areNodeModulesInstalled moved to NPMUtils.areNodeModulesInstalled
 - Common.importPackageFromProject DEPRECATED
 
+---
 ## v0.32.0-alpha.3 (2020-11-6)
 
 ### Fixed
@@ -1750,6 +1808,7 @@ renative runtime deprecated API:
 - none
 
 
+---
 ## v0.32.0-alpha.1 (2021-11-12)
 
 ### Fixed
@@ -2062,6 +2121,7 @@ renative runtime deprecated API:
 - none
 
   
+---
 ## v0.32.0-rc.1 (2021-11-16)
 
 ### Fixed
@@ -2077,6 +2137,7 @@ renative runtime deprecated API:
 - none
 
   
+---
 ## v0.32.0 (2021-11-16)
 
 ### Fixed
@@ -2093,6 +2154,7 @@ renative runtime deprecated API:
 - none
 
   
+---
 ## v0.31.2 (2020-10-19)
 
 ### Fixed
@@ -2131,6 +2193,7 @@ renative runtime deprecated API:
 - none
 
 
+---
 ## v0.31.1 (2020-10-15)
 
 ### Fixed
@@ -2209,6 +2272,7 @@ renative runtime deprecated API:
 - none
 
 
+---
 ## v0.31.0-alpha.34 (2020-10-3)
 
 ### Fixed
@@ -2239,6 +2303,7 @@ renative runtime deprecated API:
 - none
 
 
+---
 ## v0.31.0-alpha.33 (2020-10-1)
 
 ### Fixed
@@ -2261,6 +2326,7 @@ renative runtime deprecated API:
 - none
 
 
+---
 ## v0.31.0-alpha.32 (2020-9-29)
 
 ### Fixed
@@ -2279,6 +2345,7 @@ renative runtime deprecated API:
 
 - none
 
+---
 ## v0.31.0-alpha.31 (2020-9-23)
 
 ### Fixed
@@ -2329,6 +2396,7 @@ const config = {
 module.exports = withRNV(config);
 ```
 
+---
 ## v0.31.0-alpha.30 (2020-9-21)
 
 ### Fixed
@@ -2344,6 +2412,7 @@ module.exports = withRNV(config);
 - none
 
 
+---
 ## v0.31.0-alpha.29 (2020-9-21)
 
 ### Fixed
@@ -2364,6 +2433,7 @@ module.exports = withRNV(config);
 - none
 
 
+---
 ## v0.31.0-alpha.28 (2020-9-20)
 
 ### Fixed
@@ -2379,6 +2449,7 @@ module.exports = withRNV(config);
 - none
 
 
+---
 ## v0.31.0-alpha.27 (2020-9-20)
 
 ### Fixed
@@ -2406,6 +2477,7 @@ module.exports = withRNV(config);
 - none
 
 
+---
 ## v0.31.0-alpha.26 (2020-9-17)
 
 ### Fixed
@@ -2432,6 +2504,7 @@ module.exports = withRNV(config);
 
 - appConfigs/\*\*/builds/_shared is DEPRECATED. use appConfigs/\*\*/builds/\{PLATFORM} instead
 
+---
 ## v0.31.0-alpha.25 (2020-9-15)
 
 ### Fixed
@@ -2450,6 +2523,7 @@ module.exports = withRNV(config);
 - none
 
 
+---
 ## v0.31.0-alpha.24 (2020-9-13)
 
 ### Fixed
@@ -2479,6 +2553,7 @@ module.exports = withRNV(config);
 - none
 
 
+---
 ## v0.31.0-alpha.23 (2020-7-31)
 
 ### Fixed
@@ -2500,6 +2575,7 @@ REASON: next.js was temporary `web-next` platform extension. this has been repla
 REASON: `rnv configure` used to run configure command on all supported platforms of the project at once but that is hardly ever needed as all platform commands chain back to configure anyway. this created unnecessary log builds
 NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / export / package` afterwards as these commands will run configure task as dependency anyway
 
+---
 ## v0.31.0-alpha.22 (2020-7-30)
 
 ### Fixed
@@ -2516,6 +2592,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.21 (2020-7-29)
 
 ### Fixed
@@ -2533,6 +2610,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.20 (2020-7-28)
 
 ### Fixed
@@ -2550,6 +2628,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.19 (2020-7-28)
 
 ### Fixed
@@ -2571,6 +2650,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.18 (2020-7-28)
 
 ### Fixed
@@ -2595,6 +2675,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.17 (2020-7-27)
 
 ### Fixed
@@ -2615,6 +2696,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.16 (2020-7-26)
 
 ### Fixed
@@ -2637,6 +2719,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.15 (2020-7-26)
 
 ### Fixed
@@ -2655,6 +2738,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.14 (2020-7-26)
 
 ### Fixed
@@ -2673,6 +2757,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.13 (2020-7-25)
 
 ### Fixed
@@ -2688,6 +2773,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.12 (2020-7-25)
 
 ### Fixed
@@ -2758,6 +2844,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 
 - none
 
+---
 ## v0.31.0-alpha.11 (2020-7-16)
 
 ### Fixed
@@ -2778,6 +2865,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.10 (2020-10-12)
 
 ### Fixed
@@ -2847,6 +2935,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.10 (2020-7-12)
 
 ### Fixed
@@ -2863,6 +2952,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.9 (2020-10-11)
 
 ### Fixed
@@ -2930,6 +3020,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.9 (2020-7-12)
 
 ### Fixed
@@ -2945,6 +3036,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.8 (2020-10-9)
 
 ### Fixed
@@ -2996,6 +3088,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.8 (2020-7-11)
 
 ### Fixed
@@ -3022,6 +3115,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.7 (2020-10-8)
 
 ### Fixed
@@ -3068,6 +3162,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.7 (2020-7-11)
 
 ### Fixed
@@ -3092,6 +3187,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.6 (2020-10-6)
 
 ### Fixed
@@ -3134,6 +3230,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.6 (2020-7-9)
 
 ### Fixed
@@ -3150,6 +3247,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.5 (2020-10-5)
 
 ### Fixed
@@ -3187,6 +3285,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.5 (2020-7-9)
 
 ### Fixed
@@ -3202,6 +3301,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.4 (2020-10-4)
 
 ### Fixed
@@ -3236,6 +3336,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.4 (2020-7-8)
 
 ### Fixed
@@ -3254,6 +3355,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.3 (2020-10-4)
 
 ### Fixed
@@ -3281,6 +3383,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.3 (2020-7-8)
 
 ### Fixed
@@ -3299,6 +3402,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-RC.2 (2020-10-4)
 
 ### Fixed
@@ -3324,6 +3428,7 @@ NOTE: `rnv configure` is not necessary if you plan to run `rnv run / build / exp
 - none
 
 
+---
 ## v0.31.0-alpha.2 (2020-7-7)
 
 ### Fixed
@@ -3369,6 +3474,7 @@ Use:
 
 instead
 
+---
 ## v0.31.0-RC.1 (2020-10-4)
 
 ### Fixed
@@ -3391,6 +3497,7 @@ instead
 - none
 
 
+---
 ## v0.31.0-alpha.1 (2020-6-30)
 
 ### Fixed
@@ -3423,6 +3530,7 @@ Recommended size is 1000x1000, 2000x2000 and 3000x3000 to cover all iOS screen d
 
 ![ios launch image guide](/img/launch-image-guide.png)
 
+---
 ## v0.31.0 (2020-10-13)
 
 ### Fixed
@@ -3498,6 +3606,7 @@ Recommended size is 1000x1000, 2000x2000 and 3000x3000 to cover all iOS screen d
 - none
 
 
+---
 ## v0.30.4 (2020-7-14)
 
 ### Fixed
@@ -3569,6 +3678,7 @@ Recommended size is 1000x1000, 2000x2000 and 3000x3000 to cover all iOS screen d
 - none
 
 
+---
 ## v0.30.3 (2020-6-26)
 
 ### Fixed
@@ -3589,6 +3699,7 @@ Recommended size is 1000x1000, 2000x2000 and 3000x3000 to cover all iOS screen d
 
 - none
 
+---
 ## v0.30.2-alpha.2 (2020-6-24)
 
 ### Fixed
@@ -3605,6 +3716,7 @@ Recommended size is 1000x1000, 2000x2000 and 3000x3000 to cover all iOS screen d
 - none
 
 
+---
 ## v0.30.2-alpha.1 (2020-6-24)
 
 ### Fixed
@@ -3621,6 +3733,7 @@ Recommended size is 1000x1000, 2000x2000 and 3000x3000 to cover all iOS screen d
 - none
 
 
+---
 ## v0.30.2 (2020-6-25)
 
 ### Fixed
@@ -3639,6 +3752,7 @@ Recommended size is 1000x1000, 2000x2000 and 3000x3000 to cover all iOS screen d
 
 - none
 
+---
 ## v0.30.1 (2020-6-24)
 
 ### Fixed
@@ -3674,6 +3788,7 @@ NOTE: Following plugins have been updated to newer versions:
 - `react-native-root-toast`
 - `react-native-animatable`
 
+---
 ## v0.30.0 (2020-6-23)
 
 ### Fixed
@@ -3695,6 +3810,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.25 (2020-6-20)
 
 ### Fixed
@@ -3710,6 +3826,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.24 (2020-6-19)
 
 ### Fixed
@@ -3726,6 +3843,7 @@ NOTE: Following plugins have been updated to newer versions:
 
 - none
 
+---
 ## v0.29.1-alpha.23 (2020-6-19)
 
 ### Fixed
@@ -3741,6 +3859,7 @@ NOTE: Following plugins have been updated to newer versions:
 
 - none
 
+---
 ## v0.29.1-alpha.22 (2020-6-18)
 
 ### Fixed
@@ -3769,6 +3888,7 @@ NOTE: Following plugins have been updated to newer versions:
 
 - none
 
+---
 ## v0.29.1-alpha.21 (2020-6-17)
 
 ### Fixed
@@ -3787,6 +3907,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.20 (2020-6-11)
 
 ### Fixed
@@ -3804,6 +3925,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.19 (2020-6-9)
 
 ### Fixed
@@ -3825,6 +3947,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.18 (2020-6-2)
 
 ### Fixed
@@ -3841,6 +3964,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.16 (2020-6-2)
 
 ### Fixed
@@ -3856,6 +3980,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.15 (2020-5-31)
 
 ### Fixed
@@ -3875,6 +4000,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.14 (2020-5-31)
 
 ### Fixed
@@ -3890,6 +4016,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.13 (2020-5-30)
 
 ### Fixed
@@ -3910,6 +4037,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.12 (2020-5-24)
 
 ### Fixed
@@ -3927,6 +4055,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.11 (2020-5-23)
 
 ### Fixed
@@ -3953,6 +4082,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.10 (2020-5-22)
 
 ### Fixed
@@ -3971,6 +4101,7 @@ NOTE: Following plugins have been updated to newer versions:
 - none
 
 
+---
 ## v0.29.1-alpha.9 (2020-5-20)
 
 ### Fixed
@@ -4008,6 +4139,7 @@ if you using next engine (`-e next`) in your app make sure you add
 
 to your `./renative.json`
 
+---
 ## v0.29.1-alpha.8 (2020-5-18)
 
 ### Fixed
@@ -4023,6 +4155,7 @@ to your `./renative.json`
 
 - none
 
+---
 ## v0.29.1-alpha.7 (2020-5-18)
 
 ### Fixed
@@ -4043,6 +4176,7 @@ to your `./renative.json`
 - none
 
 
+---
 ## v0.32.0-feat-tvos.2 (2021-8-4)
 
 ### Fixed
@@ -4083,6 +4217,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-tvos.1 (2021-7-22)
 
 ### Fixed
@@ -4121,6 +4256,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-tvos.0 (2021-7-22)
 
 ### Fixed
@@ -4157,6 +4293,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.31.0-feat-tasks.4 (2020-9-11)
 
 ### Fixed
@@ -4181,6 +4318,7 @@ to your `./renative.json`
 - none
 
 
+---
 ## v0.31.0-feat-tasks.3 (2020-9-10)
 
 ### Fixed
@@ -4202,6 +4340,7 @@ to your `./renative.json`
 - none
 
 
+---
 ## v0.31.0-feat-tasks.2 (2020-9-8)
 
 ### Fixed
@@ -4221,6 +4360,7 @@ to your `./renative.json`
 - none
 
 
+---
 ## v0.31.0-feat-tasks.1 (2020-8-26)
 
 ### Fixed
@@ -4237,6 +4377,7 @@ to your `./renative.json`
 - none
 
 
+---
 ## v0.32.0-feat-asdk-0 (2021-8-18)
 
 ### Fixed
@@ -4264,6 +4405,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-asdk-1 (2021-8-18)
 
 ### Fixed
@@ -4283,6 +4425,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-asdk-2 (2021-8-20)
 
 ### Fixed
@@ -4457,6 +4600,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-asdk-3 (2021-8-24)
 
 ### Fixed
@@ -4632,6 +4776,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-asdk-4 (2021-8-25)
 
 ### Fixed
@@ -4814,6 +4959,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-asdk-5 (2021-8-25)
 
 ### Fixed
@@ -4997,6 +5143,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-asdk-6 (2021-8-25)
 
 ### Fixed
@@ -5181,6 +5328,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-asdk-7 (2021-8-29)
 
 ### Fixed
@@ -5366,6 +5514,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-1 (2021-8-30)
 
 ### Fixed
@@ -5576,6 +5725,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-10 (2021-9-28)
 
 ### Fixed
@@ -5814,6 +5964,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-11 (2021-10-7)
 
 ### Fixed
@@ -6057,6 +6208,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-12 (2021-10-12)
 
 ### Fixed
@@ -6302,6 +6454,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-13 (2021-10-18)
 
 ### Fixed
@@ -6554,6 +6707,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-14 (2021-10-20)
 
 ### Fixed
@@ -6810,6 +6964,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-15 (2021-10-25)
 
 ### Fixed
@@ -7070,6 +7225,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-16 (2021-11-9)
 
 ### Fixed
@@ -7335,6 +7491,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-2 (2021-8-31)
 
 ### Fixed
@@ -7550,6 +7707,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-3 (2021-9-1)
 
 ### Fixed
@@ -7767,6 +7925,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-4 (2021-9-3)
 
 ### Fixed
@@ -7987,6 +8146,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-5 (2021-9-16)
 
 ### Fixed
@@ -8214,6 +8374,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-6 (2021-9-17)
 
 ### Fixed
@@ -8443,6 +8604,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-7 (2021-9-17)
 
 ### Fixed
@@ -8674,6 +8836,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-8 (2021-9-23)
 
 ### Fixed
@@ -8908,6 +9071,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-engines-merged-9 (2021-9-23)
 
 ### Fixed
@@ -9144,6 +9308,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-lightning-1 (2021-7-15)
 
 ### Fixed
@@ -9189,6 +9354,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rn-electron-0 (2021-11-10)
 
 ### Fixed
@@ -9493,6 +9659,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-0 (2021-7-22)
 
 ### Fixed
@@ -9536,6 +9703,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-1 (2021-7-23)
 
 ### Fixed
@@ -9581,6 +9749,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-2 (2021-7-28)
 
 ### Fixed
@@ -9635,6 +9804,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-3 (2021-7-28)
 
 ### Fixed
@@ -9691,6 +9861,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-4 (2021-7-29)
 
 ### Fixed
@@ -9753,6 +9924,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-5 (2021-7-29)
 
 ### Fixed
@@ -9817,6 +9989,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-6 (2021-7-29)
 
 ### Fixed
@@ -9882,6 +10055,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-7 (2021-8-3)
 
 ### Fixed
@@ -9950,6 +10124,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnmacos-8 (2021-8-12)
 
 ### Fixed
@@ -10026,6 +10201,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnwin-0 (2021-8-24)
 
 ### Fixed
@@ -10083,6 +10259,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnwin-1 (2021-8-24)
 
 ### Fixed
@@ -10142,6 +10319,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnwin-2 (2021-8-24)
 
 ### Fixed
@@ -10204,6 +10382,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnwin-3 (2021-8-24)
 
 ### Fixed
@@ -10269,6 +10448,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnwin-4 (2021-8-25)
 
 ### Fixed
@@ -10338,6 +10518,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-rnwin-5 (2021-8-26)
 
 ### Fixed
@@ -10409,6 +10590,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-task-rnv-new-args-0 (2021-11-10)
 
 ### Fixed
@@ -10712,6 +10894,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-task-rnv-new-args-1 (2021-11-10)
 
 ### Fixed
@@ -11017,6 +11200,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-task-rnv-new-args-2 (2021-11-10)
 
 ### Fixed
@@ -11324,6 +11508,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-task-rnv-new-args-3 (2021-11-11)
 
 ### Fixed
@@ -11640,6 +11825,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-tvos-3 (2021-8-4)
 
 ### Fixed
@@ -11681,6 +11867,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-tvos-4 (2021-8-10)
 
 ### Fixed
@@ -11729,6 +11916,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-winbuilds-0 (2021-8-6)
 
 ### Fixed
@@ -11755,6 +11943,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.32.0-feat-winbuilds-1 (2021-8-9)
 
 ### Fixed
@@ -11784,6 +11973,7 @@ to your `./renative.json`
 - none
 
   
+---
 ## v0.30.0-rc1 (2020-6-21)
 
 ### Fixed
@@ -11807,6 +11997,7 @@ to your `./renative.json`
 - none
 
 
+---
 ## v0.30.0-rc2 (2020-6-21)
 
 ### Fixed

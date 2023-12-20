@@ -10,18 +10,22 @@ original_id: engine-rn
 <!--AUTO_GENERATED_START-->
 
 
+---
 ## Overview
 
 Default react-native based engine. Runs standard react native apps with native support
 
+---
 ## Supported Platforms
 
 [ios](platforms/ios.md), [android](platforms/android.md), [androidtv](platforms/androidtv.md), [firetv](platforms/firetv.md), [androidwear](platforms/androidwear.md), [macos](platforms/macos.md)
 
+---
 ## Required Plugins
 
 [react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [@react-native-community/cli-platform-ios](../plugins/overview#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins/overview#react-native-communitycli)
 
+---
 ## Required NPM Packages
 
 
@@ -38,6 +42,7 @@ Default react-native based engine. Runs standard react native apps with native s
 
 
 
+---
 ## Extensions
 
 ### ios

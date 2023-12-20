@@ -8,14 +8,17 @@ sidebar_position: 9
 
 <!-- <img className="header-image" src="https://renative.org/img/ic_file_extensions.png" width="50" height="50" /> -->
 
+---
 ## Overview
 
 ReNative supports powerful file extension mechanism to enable developers to tailor the code and UX towards the needs of specific UI requirements
 
+---
 ## File Extension Map
 
 <img src="https://renative.org/img/file_extensions.png" />
 
+---
 ## How it works
 
 Based on the map above, each platform `-p [PLATFORM]` triggers compile process and always picks first available extension going from top to bottom.
@@ -49,6 +52,7 @@ Example of `tizen` platform file extensions:
 | `tsx`         | `fallback`    |    8     |
 | `ts`          | `fallback`    |    9     |
 
+---
 ## Form Factors
 
 Building multi-platform UI sometimes needs "shared" UI to avoid code duplication. ie `mobile` for all mobile experience and `tv` for "leanback" or "big screen" experience

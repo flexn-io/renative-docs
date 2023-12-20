@@ -7,6 +7,7 @@ sidebar_label: build config object
 List of available config props injected into [Build Hooks](../guides/build_hooks) via method parameter
 
 
+---
 ## _currentTask
 
 | Prop Name | Type | Default Value | Path |
@@ -17,13 +18,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## appConfig
 
@@ -35,13 +31,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## buildConfig
 
@@ -53,13 +44,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## buildHooks
 
@@ -71,13 +57,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## buildPipes
 
@@ -89,13 +70,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## cli
 
@@ -107,13 +83,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## command
 
@@ -125,13 +96,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## configPropsInjects
 
@@ -143,13 +109,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## defaultWorkspace
 
@@ -161,13 +122,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## files
 
@@ -315,6 +271,7 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+---
 ## home
 
 | Prop Name | Type | Default Value | Path |
@@ -325,13 +282,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## isBuildHookReady
 
@@ -343,13 +295,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## isBuildHooksReady
 
@@ -361,13 +308,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## paths
 
@@ -547,6 +489,7 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+---
 ## platform
 
 | Prop Name | Type | Default Value | Path |
@@ -557,13 +500,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## platformDefaults
 
@@ -575,13 +513,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## process
 
@@ -593,13 +526,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## program
 
@@ -611,13 +539,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## project
 
@@ -629,13 +552,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## rnv
 
@@ -647,13 +565,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## rnvVersion
 
@@ -665,13 +578,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## runtime
 
@@ -931,6 +839,7 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+---
 ## runtimePropsInjects
 
 | Prop Name | Type | Default Value | Path |
@@ -941,13 +850,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## subCommand
 
@@ -959,13 +863,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## systemPropsInjects
 
@@ -977,13 +876,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## template
 
@@ -995,13 +889,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## timeStart
 
@@ -1013,13 +902,8 @@ List of available config props injected into [Build Hooks](../guides/build_hooks
 
 
 
+
 ---
-
-
-
-
-
-
 
 ## workspace
 

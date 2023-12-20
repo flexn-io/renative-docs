@@ -8,12 +8,14 @@ sidebar_position: 8
 
 <!-- <img className="header-image" src="https://facebook.github.io/react-native/img/header_logo.svg" width="50" height="50" /> -->
 
+---
 ## Overview
 
 ReNative supports react-native projects pretty much out of the box in terms of your application code
 
 Due to variety of possibilities / complexity fo react-native projects (ie plugins, custom build scripts and so on) there might be some extra work required to reconnect existing plugins
 
+---
 ## Migration Guide
 
 1. Install rnv

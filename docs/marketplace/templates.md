@@ -7,6 +7,7 @@ original_id: templates
 
 <!-- <img className="header-image" src="https://renative.org/img/ic_templates.png" width="50" height="50" /> -->
 
+---
 ## Templates / Starters
 
 Templates are used as initial bootstrap structure you can use instead of creating your project source, configs and assets from scratch.
@@ -14,6 +15,7 @@ Templates are used as initial bootstrap structure you can use instead of creatin
 Templates are offered during creation of new project ( `rnv new` )
 
 
+---
 ## Built-in
 
 Hello World:
@@ -24,12 +26,14 @@ Blank:
 
 https://www.npmjs.com/package/renative-template-blank
 
+---
 ## Community
 
 Chat App:
 
 https://www.npmjs.com/package/@reactseals/renative-template-chat
 
+---
 ## Custom
 
 During `rnv new` you will be give an option to choose between existing built-in templates or option to type your custom one.
@@ -47,6 +51,7 @@ or
 and so on
 
 
+---
 ## CLI Support
 
 You can manage your templates in your project via rnv command line.

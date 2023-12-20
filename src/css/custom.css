@@ -43,19 +43,20 @@ html[data-theme="dark"] .markdown h1{
 }
 
 .markdown h2{
-  padding-top: 40px;
   color: #000;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: 0;
 }
 html[data-theme="dark"] .markdown h2{
   color: #fff;
 }
 .markdown hr{
   background: #e4e4e4;
+  margin-bottom: 40px;
 }
 html[data-theme="dark"] .markdown hr{
   background: #3d3d3d;

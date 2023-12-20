@@ -7,6 +7,7 @@ original_id: architecture
 
 <!-- <img className="header-image" src="https://renative.org/img/ic_architecture.png" width="50" height="50" /> -->
 
+---
 ## Build Process
 
 <table>
@@ -33,6 +34,7 @@ Folder Structure (Generated Project)
     ├── src                         # Source files
     └── renative.json           # React Native Plugins configuration
 
+---
 ## Override Mechanism
 
 ReNative support flexible override mechanism which allows you customise your project to great degree

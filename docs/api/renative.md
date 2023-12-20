@@ -7,6 +7,7 @@ sidebar_position: 0
 
 <br />
 
+---
 ## getScaledValue
 
 Help to render UI with unified relative scaled factor
@@ -24,6 +25,7 @@ StyleSheet.create({
 })
 ```
 
+---
 ## useOpenURL
 
 Cross-platform hook to open external URLs
@@ -37,6 +39,7 @@ const openURL = useOpenURL();
 openURL('https://renative.org')
 ```
 
+---
 ## useNavigate
 
 Cross-platform hook to navigate to specific section of app
@@ -50,6 +53,7 @@ const navigate = useNavigate();
 navigate(route, opts, params)
 ```
 
+---
 ## usePop
 
 Cross-platform hook to navigate back to previous screen
@@ -63,6 +67,7 @@ const pop = usePop();
 pop()
 ```
 
+---
 ## useOpenDrawer
 
 Cross-platform hook to open drawer
@@ -76,6 +81,7 @@ const openDrawer = useOpenDrawer();
 openDrawer(drawerName)
 ```
 
+---
 ## platform
 
 Returns string representing current platform
@@ -86,6 +92,7 @@ type: `string`
 import { platform } from 'renative'
 ```
 
+---
 ## factor
 
 Returns string representing current form factor
@@ -96,6 +103,7 @@ type: `string`
 import { factor } from 'renative'
 ```
 
+---
 ## engine
 
 Returns string representing current core engine
@@ -106,6 +114,7 @@ type: `string`
 import { engine } from 'renative'
 ```
 
+---
 ## isPlatform...
 
 Built-time platform checks for renative target platform
@@ -232,6 +241,7 @@ type: `bool`
 import { isPlatformKaios } from 'renative'
 ```
 
+---
 ## isEngine...
 
 Built-time platform checks for renative core engine
@@ -252,6 +262,7 @@ type: `bool`
 import { isEngineWeb } from 'renative'
 ```
 
+---
 ## isFactor...
 
 Built-time platform checks for renative form factor per each specific platform
