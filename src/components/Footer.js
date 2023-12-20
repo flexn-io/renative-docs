@@ -32,7 +32,7 @@ export default function Footer() {
   const {colorMode} = useColorMode();
   const LogoLogo = colorMode === 'dark' ? LogoDark : Logo;
   return (
-    <div className="footer">
+    <div className="footer container">
       <div className="logo-container">
         <div>
           <LogoLogo className="footer-logo" />
@@ -40,6 +40,12 @@ export default function Footer() {
         <div className="copyright">
           Copyright © {new Date().getFullYear()} ReNative Org
         </div>
+
+        <div style={{display: 'flex', marginTop: 'auto', gap: '24px'}}>
+            <div className="icon_link github-link" onClick={() => window.location = 'https://github.com/flexn-io/renative'}></div>
+            <div className="icon_link twitter-link" onClick={() => window.location = 'https://twitter.com/renative'}></div>
+            <div className="icon_link youtube-link" onClick={() => window.location = 'https://www.youtube.com/@renative'}></div>
+          </div>
       </div>
       <div className="footer-container">
         <div className="container-title">Docs</div>
