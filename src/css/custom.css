@@ -700,6 +700,10 @@ a {
     justify-content: space-between;
     margin-top: 0;
   }
+  
+  .footer .icon_link{
+    display: none;
+  }
 
   .logo-container {
     flex-grow: 1;
