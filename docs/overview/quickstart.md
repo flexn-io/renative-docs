@@ -6,8 +6,18 @@ original_id: quickstart
 sidebar_position: 0
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_quickstart.png" width="50" height="50" /> -->
-
+:::warning Title
+Description
+:::
+:::success Title
+Description
+:::
+:::info Title
+Description
+:::
+:::danger
+This one has a title "Error". Default "Danger" won't be written
+:::
 ---
 ## Install rnv
 

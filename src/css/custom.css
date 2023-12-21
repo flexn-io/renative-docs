@@ -209,9 +209,32 @@ html[data-theme="dark"] .table-of-contents__link {
 .markdown .theme-code-block{
   margin-bottom: 20px;
 }
+.alert [class^="admonitionIcon"] {
+  display: none !important;
+  margin: 0;
+}
+.alert [class^="admonitionHeading"] {
+  text-transform: capitalize;
+}
+.alert--warning{
+  background-color: #FFF9DA;
+  color: #FFE564;
+}
+.alert--success{
+  background-color: #E8F3ED;
+  color: #107C10;
+}
+.alert--info{
+  background-color: #F0F7FD;
+  color: #0A74E6;
+}
+.alert--danger{
+  background-color: #FDECEB;
+  color: #EB0C00;
+}
 /* ======================================================================================= */
 hr.lineLight {
-  border: 0.5px solid #e4e4e4;
+  border: 0.5px solid #FDECEB;
   background-color: #e4e4e4;
   margin: 72px 0;
 }
@@ -376,7 +399,6 @@ a {
   border-color: #e4e4e4;
   border-width: 1px;
   width: 100%;
-  /* padding: 0 15%; */
   display: flex;
   flex-direction: row;
   padding-top: 36px;
@@ -473,7 +495,6 @@ a {
   content: "";
   height: 37px;
   width: auto;
-  /* padding-right: 30px; */
 }
 
 .icon_link {
