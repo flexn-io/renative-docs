@@ -51,12 +51,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        // title: "ReNative",
         hideOnScroll: false,
-        // logo: {
-        //   alt: "Renative Logo",
-        //   src: "img/logo.svg",
-        // },
         items: [
           {
             href: "https://www.flexn.io/",

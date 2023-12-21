@@ -631,16 +631,16 @@ a {
   .menu__list-item .header-separator-link,
   .menu__list-item .header-renative-link  {
     position: absolute;
-    top: -45px;
+    top: -48px;
   }
   .menu__list-item .header-flexn-link {
-    left: 15px;
+    left: 32px;
   }
   .menu__list-item .header-separator-link {
-    left: 50px;
+    left: 70px;
   }
   .menu__list-item .header-renative-link {
-    left: 65px;
+    left: 83px;
   }
 }
 @media screen and (max-width: 1300px) {
