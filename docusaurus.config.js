@@ -91,43 +91,6 @@ const config = {
             position: "left",
             label: "API",
           },
-          // ====================================================================
-          // {
-          //   type: "doc",
-          //   docId: "tutorials/quickstart",
-          //   position: "left",
-          //   label: "Tutorials",
-          // },
-          // {
-          //   type: "doc",
-          //   docId: "references/cli",
-          //   position: "left",
-          //   label: "Reference",
-          // },
-          // {
-          //   type: "doc",
-          //   docId: "descriptor",
-          //   position: "left",
-          //   label: "APIs",
-          // },
-          // {
-          //   type: "doc",
-          //   docId: "marketplace/templates",
-          //   position: "left",
-          //   label: "Marketplace",
-          // },
-          // {
-          //   type: "doc",
-          //   docId: "concepts/architecture",
-          //   position: "left",
-          //   label: "Concepts",
-          // },
-          // {
-          //   type: "doc",
-          //   docId: "releases/releasenotes",
-          //   position: "left",
-          //   label: "Releases",
-          // },
           {
             to: '/docs/overview/quickstart',
             label: 'Get started',

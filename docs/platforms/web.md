@@ -18,8 +18,6 @@ original_id: web
 
 <img className="platform-image" src="https://renative.org/img/rnv_web.gif" height="250"/>
 
----
-## Overview
 
 - Supports Chrome, Safari, Firefox, IE10+
 

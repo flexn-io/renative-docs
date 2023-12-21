@@ -20,6 +20,7 @@ original_id: architecture
 
 Folder Structure (Generated Project)
 
+```
     .
     ├── appConfigs                  # Application flavour configuration files/assets
     │   ├── base                    # Shared project configuration files/assets
@@ -33,6 +34,7 @@ Folder Structure (Generated Project)
     ├── platformBuilds              # Generated platform app projects
     ├── src                         # Source files
     └── renative.json           # React Native Plugins configuration
+```
 
 ---
 ## Override Mechanism

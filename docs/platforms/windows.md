@@ -20,8 +20,6 @@ original_id: windows
 
 <img className="platform-image" src="https://renative.org/img/rnv_windows.gif" height="250"/>
 
----
-## Overview
 
 - support for Windows 10+
 - Based on Electron

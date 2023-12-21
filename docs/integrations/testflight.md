@@ -5,10 +5,7 @@ sidebar_label: TestFlight
 original_id: testflight
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_integrations.png" width="50" height="50" /> -->
 
----
-## Overview
 
 Coming soon
 

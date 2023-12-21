@@ -5,13 +5,9 @@ sidebar_label: engine-rn-windows
 original_id: engine-rn-windows
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
 
 <!--AUTO_GENERATED_START-->
 
-
----
-## Overview
 
 React native based engine with react-native-windows cli tool
 

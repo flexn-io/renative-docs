@@ -5,10 +5,7 @@ sidebar_label: Analytics
 original_id: analytics
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_analytics.png" width="50" height="50" /> -->
 
----
-## Overview
 
 To improve stability of the platform and help us fine-tune the most used features, ReNative collects anonymous crash logs via https://sentry.io/
 

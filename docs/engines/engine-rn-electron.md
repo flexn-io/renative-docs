@@ -5,13 +5,9 @@ sidebar_label: engine-rn-electron
 original_id: engine-rn-electron
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
-
 <!--AUTO_GENERATED_START-->
 
 
----
-## Overview
 
 React native based engine with web transpiler provided by react-native-web and native desktop wrapper provided by electron
 

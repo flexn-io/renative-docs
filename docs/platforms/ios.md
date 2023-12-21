@@ -18,8 +18,6 @@ original_id: ios
 
 <img className="platform-image" src="https://renative.org/img/rnv_ios.gif" height="250"/>
 
----
-## Overview
 
 - Latest swift based Xcode project
 - Cocoapods Workspace ready

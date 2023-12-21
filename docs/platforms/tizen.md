@@ -18,8 +18,6 @@ original_id: tizen
 
 <img className="platform-image" src="https://renative.org/img/rnv_tizen.gif" height="250"/>
 
----
-## Overview
 
 - Latest Tizen project
 - Support for Tizen 5.0, 4.0, 3.0

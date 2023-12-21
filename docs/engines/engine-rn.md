@@ -5,13 +5,10 @@ sidebar_label: engine-rn
 original_id: engine-rn
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
 
 <!--AUTO_GENERATED_START-->
 
 
----
-## Overview
 
 Default react-native based engine. Runs standard react native apps with native support
 

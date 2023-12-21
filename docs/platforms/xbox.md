@@ -20,7 +20,5 @@ original_id: Xbox
 
 <img className="platform-image" src="https://renative.org/img/rnv_xbox.gif" height="250"/>
 
----
-## Overview
 
 Experimental support

@@ -5,13 +5,7 @@ sidebar_label: engine-rn-web
 original_id: engine-rn-web
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
-
 <!--AUTO_GENERATED_START-->
-
-
----
-## Overview
 
 React native based engine with web transpiler provided by react-native-web
 

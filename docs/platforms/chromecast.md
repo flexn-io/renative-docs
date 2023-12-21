@@ -18,8 +18,6 @@ original_id: chromecast
 
 <img className="platform-image" src="https://renative.org/img/rnv_chromecast.gif" height="250"/>
 
----
-## Overview
 
 - Supports Chromecast devices
 

@@ -5,10 +5,7 @@ sidebar_label: Docker
 original_id: docker
 ---
 
-<img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" height="50" />
 
----
-## Overview
 
 ReNative has the ability to deploy your website made with `rnv` to Docker hub or export it to a Docker container.
 

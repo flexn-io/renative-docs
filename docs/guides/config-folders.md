@@ -5,10 +5,6 @@ sidebar_label: Config Folders
 original_id: config_folders
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_appconfigs.png" width="50" height="50" /> -->
-
----
-## Overview
 
 Legend:
 
@@ -46,6 +42,7 @@ You can then switch to custom workspace per each project `./renative.json`
 
 applies for both public and private `./..` and `~./rnv/[PROJECT_NAME]/..`
 
+```
     .
     └── appConfigs
         ├── base
@@ -61,6 +58,7 @@ applies for both public and private `./..` and `~./rnv/[PROJECT_NAME]/..`
                 └── [PLUGIN_KEY]
                     ├── fonts
                     └── builds
+```
 
 ---
 ## Merges

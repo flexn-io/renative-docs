@@ -18,8 +18,6 @@ original_id: webos
 
 <img className="platform-image" src="https://renative.org/img/rnv_webos.gif" height="250"/>
 
----
-## Overview
 
 - Latest LG webOS Project
 

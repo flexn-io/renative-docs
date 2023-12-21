@@ -7,9 +7,6 @@ sidebar_position: 1
 
 ---
 
-## Intro
-
-
 
 Scale from simple command to enterprise ecosystem
 

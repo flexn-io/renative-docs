@@ -20,7 +20,5 @@ original_id: WebTV
 
 <img className="platform-image" src="https://renative.org/img/rnv_webtv.gif" height="250"/>
 
----
-## Overview
 
 Experimental support

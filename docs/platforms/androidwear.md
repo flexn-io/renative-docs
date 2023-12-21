@@ -18,8 +18,6 @@ original_id: androidwear
 
 <img className="platform-image" src="https://renative.org/img/rnv_androidwear.gif" height="250"/>
 
----
-## Overview
 
 - Latest Android project
 - Kotlin Support

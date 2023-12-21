@@ -5,10 +5,6 @@ sidebar_label: Plugins
 original_id: plugins
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_plugins.png" width="50" height="50" /> -->
-
----
-## Overview
 
 ReNative Supports standard community driven react-native plugins you can use to enhance the functionality of your apps:
 

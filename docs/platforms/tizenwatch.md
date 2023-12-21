@@ -18,8 +18,6 @@ original_id: tizenwatch
 
 <img className="platform-image" src="https://renative.org/img/rnv_tizenwatch.gif" height="250"/>
 
----
-## Overview
 
 - Latest Tizen project
 - Support for Tizen 5.0

@@ -5,10 +5,6 @@ sidebar_label: Build Hooks
 original_id: build_hooks
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_hooks.png" width="50" height="50" /> -->
-
----
-## Overview
 
 Sometimes you need to extend CLI functionality with custom build scripts. ReNative makes this easy for you.
 

@@ -18,9 +18,6 @@ original_id: android
 
 <img className="platform-image" src="https://renative.org/img/rnv_android.gif" height="250"  />
 
----
-## Overview
-
 - Latest Android project
 - Kotlin Support
 - Support for Gradle 4.9

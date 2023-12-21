@@ -18,8 +18,6 @@ original_id: tvos
 
 <img className="platform-image" src="https://renative.org/img/rnv_tvos.gif" height="250"/>
 
----
-## Overview
 
 - Latest swift based Xcode project
 - Cocoapods Workspace ready
