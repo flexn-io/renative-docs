@@ -621,6 +621,24 @@ a {
   [data-theme="dark"] .menu__list {
     border-color: #3d3d3d;
   }
+
+  .header-flexn-link {
+    position: absolute;
+    top: -45px;
+    left: 15px;
+  }
+
+  .header-separator-link {
+    position: absolute;
+    top: -45px;
+    left: 50px;
+  }
+
+  .header-renative-link {
+    position: absolute;
+    top: -45px;
+    left: 65px;
+  }
 }
 @media screen and (max-width: 1300px) {
   .hero .hero__title {
