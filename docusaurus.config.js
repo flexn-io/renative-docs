@@ -51,34 +51,34 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "ReNative",
+        // title: "ReNative",
         hideOnScroll: false,
-        logo: {
-          alt: "Renative Logo",
-          src: "img/logo.svg",
-        },
+        // logo: {
+        //   alt: "Renative Logo",
+        //   src: "img/logo.svg",
+        // },
         items: [
-          // {
-          //   href: "https://www.flexn.io/",
-          //   position: "left",
-          //   className: "navbar_logo header-flexn-link",
-          //   title: "Flexn",
-          //   "aria-label": "Flexn",
-          // },
-          // {
-          //   href: "/",
-          //   position: "left",
-          //   className: "navbar_logo header-separator-link",
-          //   title: "Separator",
-          //   "aria-label": "Separator",
-          // },
-          // {
-          //   href: "/",
-          //   position: "left",
-          //   className: "navbar_logo header-renative-link",
-          //   title: "Renative",
-          //   "aria-label": "Renative",
-          // },
+          {
+            href: "https://www.flexn.io/",
+            position: "left",
+            className: "navbar_logo header-flexn-link",
+            title: "Flexn",
+            "aria-label": "Flexn",
+          },
+          {
+            href: "/",
+            position: "left",
+            className: "navbar_logo header-separator-link",
+            title: "Separator",
+            "aria-label": "Separator",
+          },
+          {
+            href: "/",
+            position: "left",
+            className: "navbar_logo header-renative-link",
+            title: "Renative",
+            "aria-label": "Renative",
+          },
           {
             position: "left",
             label: "v0.37",

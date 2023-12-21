@@ -471,16 +471,14 @@ a {
 
 .navbar_logo {
   content: "";
-  /* display: flex; */
   height: 37px;
   width: auto;
-  padding-right: 30px;
+  /* padding-right: 30px; */
 }
+
 .icon_link {
   content: "";
-  /* display: flex; */
   height: 20px;
-  width: 20px;
   padding-right: 30px;
   filter: invert(37%) sepia(0%) saturate(365%) hue-rotate(195deg) brightness(84%) contrast(85%);
 }
@@ -508,16 +506,24 @@ a {
 }
 
 .header-flexn-link {
-  background: url(/img/flexn.svg) no-repeat;
+  content: url(/img/flexn.svg);
+  padding: 0;
 }
 
 .header-separator-link {
-  background: url(/img/separator.svg) no-repeat;
+  content: url(/img/separator.svg);
+  padding: 0;
 }
 
-
 .header-renative-link {
-  background: url(/img/logo.svg) no-repeat;
+  content: url(/img/logo_full.svg);
+  width: auto;
+  padding: 0;
+}
+
+[data-theme='dark'] .header-renative-link {
+  content: url(/img/dark/logo_full.svg);
+  width: auto;
 }
 
 
