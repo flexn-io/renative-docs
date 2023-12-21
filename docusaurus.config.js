@@ -84,7 +84,6 @@ const config = {
             label: "v0.37",
             href: "https://github.com/flexn-io/renative/releases/tag/0.37.0",
           },
-          // ====================================================================
           {
             type: "doc",
             docId: "overview/introduction",
