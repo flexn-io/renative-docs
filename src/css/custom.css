@@ -112,10 +112,13 @@ html[data-theme="dark"] .markdown li{
   line-height: normal;
 }
 .breadcrumbs__link:hover{
-  background-color: transparent !important;
+  background-color: #0A74E63D !important;
 }
 .menu__link--active:not(.menu__link--sublist){
   background-color: #0A74E614;
+}
+html[data-theme="dark"] .menu__link--active:not(.menu__link--sublist){
+  background-color: #0A74E63D;
 }
 .table-of-contents__left-border{
   border: none;
