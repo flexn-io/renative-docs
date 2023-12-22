@@ -221,7 +221,7 @@ html[data-theme="dark"] .table-of-contents__link {
   color: #FFE564;
 }
 .alert--success{
-  background-color: #092A17;
+  background-color: #E8F3ED;
   color: #107C10;
 }
 .alert--info{
@@ -235,15 +235,19 @@ html[data-theme="dark"] .table-of-contents__link {
 
 html[data-theme="dark"] .alert--warning{
   background-color: #524920;
+  color: #FFE564;
 }
 html[data-theme="dark"] .alert--success{
   background-color: #092A17;
+  color: #107C10;
 }
 html[data-theme="dark"] .alert--info{
   background-color: #021C37;
+  color: #0A74E6;
 }
 html[data-theme="dark"] .alert--danger{
   background-color: #66221F;
+  color: #D1180E;
 }
 /* ======================================================================================= */
 hr.lineLight {
