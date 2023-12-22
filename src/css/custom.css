@@ -220,17 +220,17 @@ html[data-theme="dark"] .table-of-contents__link {
   background-color: #FFF9DA;
   color: #FFE564;
 }
-.alert--success{
-  background-color: #E8F3ED;
-  color: #107C10;
+html[data-theme="dark"] .alert--warning{
+  background-color: #524920;
 }
-.alert--info{
-  background-color: #F0F7FD;
-  color: #0A74E6;
+html[data-theme="dark"] .alert--success{
+  background-color: #092A17;
 }
-.alert--danger{
-  background-color: #FDECEB;
-  color: #EB0C00;
+html[data-theme="dark"] .alert--info{
+  background-color: #021C37;
+}
+html[data-theme="dark"] .alert--danger{
+  background-color: #66221F;
 }
 /* ======================================================================================= */
 hr.lineLight {
