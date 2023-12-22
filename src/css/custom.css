@@ -220,6 +220,19 @@ html[data-theme="dark"] .table-of-contents__link {
   background-color: #FFF9DA;
   color: #FFE564;
 }
+.alert--success{
+  background-color: #092A17;
+  color: #107C10;
+}
+.alert--info{
+  background-color: #F0F7FD;
+  color: #0A74E6;
+}
+.alert--danger{
+  background-color: #FDECEB;
+  color: #EB0C00;
+}
+
 html[data-theme="dark"] .alert--warning{
   background-color: #524920;
 }
