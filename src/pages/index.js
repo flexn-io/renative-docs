@@ -10,7 +10,7 @@ import CodeBlock from '@theme/CodeBlock';
 function HomepageHeader() {
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
-            <div className="container" style={{padding: '0'}}>
+            <div className="container">
                 <p className={clsx(styles.h2, styles.version_link)}>
                     Currently <a className='link' href="https://github.com/flexn-io/renative/releases/tag/0.37.0"  target="_blank">v0.37<img className='link_img' src='/img/link.svg' /></a>
                 </p>
@@ -33,15 +33,15 @@ function HomepageHeader() {
                     <div className={styles.buttons}>
                         <Link
                             className="button button--secondary button--lg homepage_button"
-                            to="/docs/overview/introduction"
+                            to="/docs/overview/quickstart"
                         >
-                            Try it out
+                            Get started
                         </Link>
                     </div>
-                    <div>
+                    <div style={{fontSize: '16px', width: '180px'}}>
                         <CodeBlock
                             language="jsx">
-                            {`npm install rnv -g    `}
+                            {`npx rnv new`}
                         </CodeBlock>
                     </div>
                 </div>
