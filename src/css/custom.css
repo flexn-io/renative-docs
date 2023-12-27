@@ -186,6 +186,7 @@ tr:last-of-type td:last-of-type {
 }
 .breadcrumbs .breadcrumbs__link {
   padding-left: 0;
+  padding-right: 0;
 }
 .theme-doc-toc-desktop::before {
   content: 'Overview';
