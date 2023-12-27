@@ -50,11 +50,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      //   algolia: {
-      //     appId: "RDMUFOXXVC",
-      //     apiKey: "56cceb616493dc70a043d8d4c36c0589",
-      //     indexName: "renative",
-      //   },
+      algolia: {
+        appId: "FMYKKKF9Q8",
+        apiKey: "fd3bf87fce092e08e71378cf066734b2",
+        indexName: "renative_docs",
+        placeholder: "Search...",
+      },
       navbar: {
         title: "ReNative",
         hideOnScroll: false,
@@ -81,32 +82,15 @@ const config = {
             label: "API",
           },
           {
-            href: "https://github.com/flexn-io/renative",
-            position: "right",
-            className: "navbar_icon_link header-github-link",
-            title: "GitHub",
-            "aria-label": "GitHub",
-          },
-          {
-            href: "https://twitter.com/renative",
-            position: "right",
-            className: "navbar_icon_link header-twitter-link",
-            title: "X(Twitter)",
-            "aria-label": "X(Twitter)",
-          },
-          {
-            href: "https://www.youtube.com/@renative",
-            position: "right",
-            className: "navbar_icon_link header-youtube-link",
-            title: "Youtube",
-            "aria-label": "Youtube",
+            type: 'custom-search-navbar-item',
+            position: 'right'
           },
           {
             to: '/docs/overview/quickstart',
             label: 'Get started',
             position: 'right',
             className: 'button button--secondary navbar_button padding--sm'
-          },
+          }
         ],
       },
       colorMode: {
