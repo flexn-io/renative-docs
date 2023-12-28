@@ -27,5 +27,7 @@ jobs:
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --git-branch=release/1.0 --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prebuilt --git-branch=release/1.0 --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+        run: |
+          url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
+          vercel alias --token=${{ secrets.VERCEL_TOKEN }} set "$url" renative-docs-current.vercel.app
 
