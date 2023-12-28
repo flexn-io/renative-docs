@@ -27,5 +27,5 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         run: |
           url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
-          vercel alias --token=${{ secrets.VERCEL_TOKEN }} set "$url" renative-docs-current.vercel.app
+          vercel alias --token=${{ secrets.VERCEL_TOKEN }} set "$url" docs-current.renative.org
 
