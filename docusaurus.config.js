@@ -49,7 +49,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    (
       navbar: {
         hideOnScroll: false,
         items: [
@@ -92,11 +92,15 @@ const config = {
             label: "API",
           },
           {
+            type: 'custom-search-navbar-item',
+            position: 'right'
+          },
+          {
             to: '/docs/overview/quickstart',
             label: 'Get started',
             position: 'right',
             className: 'button button--secondary navbar_button padding--sm'
-          },
+          }
         ],
       },
       colorMode: {

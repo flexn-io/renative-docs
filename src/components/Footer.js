@@ -6,26 +6,26 @@ import LogoDark from '../../static/img/dark/logo.svg'
 import {useColorMode} from '@docusaurus/theme-common';
 
 const ThemeModes = () => {
-  const {colorMode, setColorMode} = useColorMode();
+  const { colorMode, setColorMode } = useColorMode();
 
   let darkThemeClasses = 'theme-mode'
   let lightThemeClasses = 'theme-mode'
   if (colorMode === 'dark') {
-    darkThemeClasses += ' theme-mode-active'
+      darkThemeClasses += ' theme-mode-active'
   } else {
-    lightThemeClasses += ' theme-mode-active'
+      lightThemeClasses += ' theme-mode-active'
   }
   return (
-    <>
-      <div className="theme-modes">
-        <div className={lightThemeClasses} onClick={() => setColorMode('light')}>
-          <LightMode className="theme-mode-img"/>
-        </div>
-        <div className={darkThemeClasses} onClick={() => setColorMode('dark')}>
-          <DarkMode className="theme-mode-img"/>
-        </div>
-      </div>
-    </>)
+      <>
+          <div className="theme-modes">
+              <div className={lightThemeClasses} onClick={() => setColorMode('light')}>
+                  <LightMode className="theme-mode-img" />
+              </div>
+              <div className={darkThemeClasses} onClick={() => setColorMode('dark')}>
+                  <DarkMode className="theme-mode-img" />
+              </div>
+          </div>
+      </>)
 }
 
 export default function Footer() {

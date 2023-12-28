@@ -24,6 +24,13 @@ export default function NavbarMobilePrimaryMenu() {
           />
         ))}
       </ul>
+      <div className='mobile_nav_search'>
+        <NavbarItem
+          mobile
+          {...items.at(-2)}
+          onClick={() => mobileSidebar.toggle()}
+        />
+      </div>
       <div className='mobile_nav_btn_container'>
         <NavbarItem
           mobile
