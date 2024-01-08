@@ -29,8 +29,8 @@ export function Autocomplete(props) {
                 // panelRootRef.current.render(children);
                 panelRootRef.current.render(
                     <>
-                    {children}
-                    <Footer/>
+                        {children}
+                        <Footer />
                     </>
                 );
             },
@@ -47,11 +47,13 @@ export function Autocomplete(props) {
 
 export function ProductItem({ hit, components }) {
     return (
-        <a href={hit.url} className="aa-ItemLink" style={{marginBottom: '10px'}}>
+        <a href={hit.url} className="aa-ItemLink" style={{ marginBottom: '10px' }}>
             <div className="aa-ItemContent">
                 <div className="aa-ItemTitle search_result_title_container">
                     <img src='/img/page_icon.svg' />
-                    <components.Highlight hit={hit._highlightResult.title} attribute="value" />
+                    <div>
+                        <components.Highlight hit={hit._highlightResult.title} attribute="value" />
+                    </div>
                 </div>
                 <div className="aa-ItemContentDescription">
                     <components.Highlight hit={hit} attribute="description" />
@@ -61,7 +63,9 @@ export function ProductItem({ hit, components }) {
                     <div key={section.name.value} style={{ paddingLeft: '25px' }}>
                         <div className="aa-ItemTitle search_result_title_container">
                             <img src='/img/section_icon.svg' />
-                            <components.Highlight hit={section.name} attribute="value" />
+                            <div>
+                                <components.Highlight hit={section.name} attribute="value" />
+                            </div>
                         </div>
                         <div className="aa-ItemContentDescription">
                             <components.Highlight hit={section.content} attribute="value" />
@@ -77,7 +81,7 @@ export function Footer() {
     return (
         <div className='search_footer'>
             <div className='search_footer_item'>
-            <span>Search by</span>
+                <span>Search by</span>
             </div>
             <div className='search_footer_item'>
                 <a href='https://www.algolia.com/developers/?utm_medium=referral&utm_content=powered_by&utm_source=renative.com&utm_campaign=autocomplete'>
