@@ -51,7 +51,9 @@ export function ProductItem({ hit, components }) {
             <div className="aa-ItemContent">
                 <div className="aa-ItemTitle search_result_title_container">
                     <img src='/img/page_icon.svg' />
-                    <components.Highlight hit={hit._highlightResult.title} attribute="value" />
+                    <div>
+                        <components.Highlight hit={hit._highlightResult.title} attribute="value" />
+                    </div>
                 </div>
                 <div className="aa-ItemContentDescription">
                     <components.Highlight hit={hit} attribute="description" />
@@ -61,7 +63,9 @@ export function ProductItem({ hit, components }) {
                     <div key={section.name.value} style={{ paddingLeft: '25px' }}>
                         <div className="aa-ItemTitle search_result_title_container">
                             <img src='/img/section_icon.svg' />
-                            <components.Highlight hit={section.name} attribute="value" />
+                            <div>
+                               <components.Highlight hit={section.name} attribute="value" />
+                            </div>
                         </div>
                         <div className="aa-ItemContentDescription">
                             <components.Highlight hit={section.content} attribute="value" />
