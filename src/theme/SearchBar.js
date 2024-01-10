@@ -48,30 +48,22 @@ export function Autocomplete(props) {
 export function ProductItem({ hit, components }) {
     return (
         <a href={hit.url} className="aa-ItemLink" style={{ marginBottom: '10px' }}>
-            <div className="aa-ItemContent">
-                <div className="aa-ItemTitle search_result_title_container">
-                    <img src='/img/page_icon.svg' />
-                    <div>
-                        <components.Highlight hit={hit._highlightResult.title} attribute="value" />
+            <div className="aa-ItemContent search_result_title_container">
+                <img src='/img/page_icon.svg' />
+
+                <div>
+                    <div className="aa-ItemTitle" style={{fontSize: "15px", fontWeight: "bold"}}>
+                        <components.Highlight hit={hit._highlightResult.hierarchy.lvl1} attribute="value" />
+                    </div>
+
+                    <div className="aa-ItemTitle" style={{ fontSize: "12px"}}>
+                        <components.Highlight hit={hit._highlightResult.hierarchy.lvl0} attribute="value" />
+                    </div>
+
+                    <div className="aa-ItemContentDescription">
+                        <components.Highlight hit={hit._highlightResult.content} attribute="value" />
                     </div>
                 </div>
-                <div className="aa-ItemContentDescription">
-                    <components.Highlight hit={hit} attribute="description" />
-                </div>
-                {hit._highlightResult.sections.map(section => (
-                    (section.name.matchLevel != 'none' || section.content.matchLevel != 'none') &&
-                    <div key={section.name.value} style={{ paddingLeft: '25px' }}>
-                        <div className="aa-ItemTitle search_result_title_container">
-                            <img src='/img/section_icon.svg' />
-                            <div>
-                                <components.Highlight hit={section.name} attribute="value" />
-                            </div>
-                        </div>
-                        <div className="aa-ItemContentDescription">
-                            <components.Highlight hit={section.content} attribute="value" />
-                        </div>
-                    </div>
-                ))}
             </div>
         </a>
     );
