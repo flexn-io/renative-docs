@@ -498,27 +498,24 @@ a {
   color: #FFF !important;
   box-shadow: none !important;
 }
-
-
-.aa-ItemContent{
-  display: block !important;
+.aa-ItemContent mark{
+  background: rgba(var(--aa-description-highlight-background-color-rgb),var(--aa-description-highlight-background-color-alpha)) !important;
+  font-weight: bolder;
 }
-.aa-ItemContentDescription{
-  margin-left: 25px;
-}
+
 [data-theme='dark'] .aa-ItemTitle, 
 [data-theme='dark'] .aa-ItemContentDescription,
 [data-theme='dark'] .aa-Input,
 [data-theme='dark'] .aa-SourceNoResults,
 [data-theme='dark'] .search_footer_item,
-[data-theme='dark'] .aa-DetachedSearchButtonQuery{
+[data-theme='dark'] .aa-DetachedSearchButtonQuery,
+[data-theme='dark'] .aa-ItemContent mark{
   color: #fff;
 }
 [data-theme='dark'] .aa-Form
 {
   background-color: #000;
 }
-
 .aa-List{
   height: 200px;
 }
