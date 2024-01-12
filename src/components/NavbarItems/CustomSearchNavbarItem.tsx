@@ -31,7 +31,7 @@ export default function CustomSearchNavbarItem(props: {
                             searchClient,
                             queries: [
                                 {
-                                    indexName: 'renative_docs',
+                                    indexName: 'renative_docsearch',
                                     query,
                                 },
                             ],
