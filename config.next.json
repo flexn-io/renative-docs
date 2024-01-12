@@ -1,0 +1,23 @@
+{
+    "index_name": "renative_docsearch",
+    "start_urls": [
+        "https://renative.org/docs/overview/introduction",
+        "https://renative.org/docs/api/renative"
+    ],
+    "sitemap_urls": [
+        "https://renative.org/sitemap.xml"
+    ],
+    "selectors": {
+        "lvl0": {
+            "selector": "header h1, article h1",
+            "global": true,
+            "default_value": "Documentation"
+        },
+        "lvl1": "article h2",
+        "lvl2": "article h3",
+        "lvl3": "article h4",
+        "lvl4": "article h5, article td:first-child",
+        "lvl5": "article h6",
+        "content": "article p, article li, article td:last-child"
+    }
+}

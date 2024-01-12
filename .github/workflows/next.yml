@@ -28,4 +28,10 @@ jobs:
         run: |
           url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
           vercel alias --token=${{ secrets.VERCEL_TOKEN }} set "$url" docs-current.renative.org
+      - name: Update Algolia index
+        uses: addnab/docker-run-action@v3
+        with:
+          image: algolia/docsearch-scraper
+          options: --env-file=algolia.env -e "CONFIG=$(cat ./config.next.json | tr -d '\n')" -e "ALGOLIA_APPLICATION_ID=${{ secrets.ALGOLIA_APPLICATION_ID }}" -e "ALGOLIA_API_KEY=${{ secrets.ALGOLIA_API_KEY }}"
+            
 
