@@ -27,7 +27,7 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         run: |
           url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
-          vercel alias --token=${{ secrets.VERCEL_TOKEN }} set "$url" docs-next.renative.org
+          vercel alias --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} set "$url" docs-next.renative.org
       - name: Update Algolia index
         uses: addnab/docker-run-action@v3
         with:
