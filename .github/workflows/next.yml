@@ -2,6 +2,8 @@ name: Vercel Next Deployment
 env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  ALGOLIA_APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+  ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
 
 on:
   push:
@@ -32,6 +34,6 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: algolia/docsearch-scraper
-          options: --env-file=algolia.env 
+          options: --env-file=algolia.env -e "CONFIG=$(cat ./config.next.json | tr -d '\n')"
             
 
