@@ -21,7 +21,7 @@ jobs:
           node-version: "18.x"
       - name: test
         run: |
-          export CONFIG=$(cat ./config.next.json | tr -d '\n')
+          export CONFIG=$(cat ./config.next.json | jq -r tostring)
           echo $CONFIG
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
