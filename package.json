@@ -1,6 +1,6 @@
 {
     "name": "renative-docs",
-    "version": "0.37.0",
+    "version": "1.0.0",
     "private": true,
     "scripts": {
         "docusaurus": "docusaurus",
@@ -25,25 +25,26 @@
         "@svgr/webpack": "^5.5.0",
         "algoliasearch": "^4.21.1",
         "clsx": "^1.1.1",
+        "docusaurus-json-schema-plugin": "^1.11.0",
         "file-loader": "^6.2.0",
         "preact": "^10.19.3",
         "prism-react-renderer": "^2.1.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-instantsearch": "^7.4.1",
-        "rnv": "0.37.0",
+        "rnv": "1.0.0-rc.11",
         "simple-git": "3.7.1",
         "url-loader": "^4.1.1"
     },
     "devDependencies": {
-        "@rnv/engine-lightning": "0.37.0",
-        "@rnv/engine-rn": "0.37.4",
-        "@rnv/engine-rn-electron": "0.37.4",
-        "@rnv/engine-rn-macos": "0.37.0",
-        "@rnv/engine-rn-next": "0.37.4",
-        "@rnv/engine-rn-tvos": "0.37.4",
-        "@rnv/engine-rn-web": "0.37.4",
-        "@rnv/engine-rn-windows": "0.37.0"
+        "@rnv/engine-lightning": "1.0.0-rc.11",
+        "@rnv/engine-rn": "1.0.0-rc.11",
+        "@rnv/engine-rn-electron": "1.0.0-rc.11",
+        "@rnv/engine-rn-macos": "1.0.0-rc.11",
+        "@rnv/engine-rn-next": "1.0.0-rc.11",
+        "@rnv/engine-rn-tvos": "1.0.0-rc.11",
+        "@rnv/engine-rn-web": "1.0.0-rc.11",
+        "@rnv/engine-rn-windows": "1.0.0-rc.11"
     },
     "browserslist": {
         "production": [

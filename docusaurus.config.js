@@ -16,6 +16,7 @@ const config = {
   trailingSlash: false,
   organizationName: "flexn-io", // Usually your GitHub org/user name.
   projectName: "renative-docs", // Usually your repo name.
+  themes: ["docusaurus-json-schema-plugin"],
   plugins: [
     [
       "@docusaurus/plugin-google-gtag",
