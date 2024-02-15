@@ -1,4 +1,4 @@
-import { FileUtils } from 'rnv';
+import { writeFileSync } from '@rnv/core';
 import path from 'path';
 import fs from 'fs';
 
@@ -19,7 +19,7 @@ export const updateMdFilesPlatforms = async (c) => {
 ${extContent}
 <!--EXTENSION_SUPPORT_END-->`);
 
-            FileUtils.writeFileSync(
+            writeFileSync(
                 docFilePath,
                 fixedFile
             );

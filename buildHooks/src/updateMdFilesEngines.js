@@ -1,4 +1,4 @@
-import { FileUtils } from 'rnv';
+import { writeFileSync } from '@rnv/core';
 import path from 'path';
 import fs from 'fs';
 
@@ -78,7 +78,7 @@ ${extContent}
 
 console.log('Writing Engine:', docFilePath);
 
-    FileUtils.writeFileSync(
+    writeFileSync(
         docFilePath,
         fixedFile
     );

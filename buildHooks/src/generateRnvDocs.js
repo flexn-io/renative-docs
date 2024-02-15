@@ -1,11 +1,11 @@
-import { Logger } from 'rnv';
+import { logHook } from '@rnv/core';
 import path from 'path';
 import fs from 'fs';
 import jsdoc2md from 'jsdoc-to-markdown';
 
 
 const execute = async (c) => {
-    Logger.logHook('generatePlugins');
+    logHook('generatePlugins');
 
     await generateRnvDocs(c, 'rnv', 'RNV');
 };

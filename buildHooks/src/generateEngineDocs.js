@@ -1,11 +1,10 @@
-import { Constants, Logger, EngineManager } from 'rnv';
+import { writeFileSync, SUPPORTED_PLATFORMS, logHook, getRegisteredEngines } from '@rnv/core';
 import path from 'path';
-import fs from 'fs';
 
 export const generateEngineTaks = async (c) => {
-    Logger.logHook('generateEngineTaks');
+    logHook('generateEngineTaks');
 
-    const engines = EngineManager.getRegisteredEngines(c);
+    const engines = getRegisteredEngines(c);
 
     engines.forEach((engine) => {
         _generateEngineTaks(c, engine);
@@ -14,7 +13,7 @@ export const generateEngineTaks = async (c) => {
 
 const getSupportedPlatforms = (c, t) => (t.platforms.length
     ? t.platforms.map(v => `\`${v}\``).join(', ')
-    : Constants.SUPPORTED_PLATFORMS.map(v => `\`${v}\``).join(', '));
+    : SUPPORTED_PLATFORMS.map(v => `\`${v}\``).join(', '));
 
 const _generateEngineTaks = (c, engine) => {
     const { id, title } = engine.config;
@@ -67,5 +66,5 @@ ${t.params.map((v) => {
 
     output += 'test';
 
-    fs.writeFileSync(path.join(c.paths.project.dir, `/docs/api/${id}.md`), output);
+    writeFileSync(path.join(c.paths.project.dir, `/docs/api/${id}.md`), output);
 };

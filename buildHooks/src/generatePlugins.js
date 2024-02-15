@@ -1,4 +1,4 @@
-import { FileUtils, Constants, doResolve } from 'rnv';
+import { doResolve, readObjectSync, fsExistsSync, writeFileSync, SUPPORTED_PLATFORMS } from '@rnv/core';
 import merge from 'deepmerge';
 import path from 'path';
 
@@ -10,13 +10,13 @@ sidebar_label: Plugins Overview
 ---
 `;  
     const flexnPluginsPath = doResolve('@flexn/plugins');
-    if (!FileUtils.fsExistsSync(flexnPluginsPath)) {
+    if (!fsExistsSync(flexnPluginsPath)) {
         return Promise.reject(`RNV Cannot find installed package: ${chalk().white('@flexn/plugins')}`);
     }
     const flexnPluginTemplatesPath = path.join(flexnPluginsPath, 'pluginTemplates/renative.plugins.json');
 
-    const flexnPluginTemplates = FileUtils.readObjectSync(flexnPluginTemplatesPath);
-    const rnvPluginTemplates = FileUtils.readObjectSync(c.paths.rnv.pluginTemplates.config);
+    const flexnPluginTemplates = readObjectSync(flexnPluginTemplatesPath);
+    const rnvPluginTemplates = readObjectSync(c.paths.rnv.pluginTemplates.config);
 
     const temps = merge(flexnPluginTemplates, rnvPluginTemplates);
 
@@ -31,11 +31,11 @@ sidebar_label: Plugins Overview
             ? `Version: \`${plugin.version}\``
             : '';
         const platforms = Object.keys(plugin)
-            .map(v => (Constants.SUPPORTED_PLATFORMS.includes(v) ? v : null))
+            .map(v => (SUPPORTED_PLATFORMS.includes(v) ? v : null))
             .filter(v => v);
         const supPlats = platforms.length
             ? platforms
-            : Constants.SUPPORTED_PLATFORMS;
+            : SUPPORTED_PLATFORMS;
         const deprecated = plugin.deprecated
             ? `> ${plugin.deprecated}`
             : '';
@@ -64,7 +64,7 @@ rnv plugin add ${key}
 
     out = out.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') || ''
 
-    FileUtils.writeFileSync(
+    writeFileSync(
         path.join(c.paths.project.dir, 'docs/plugins/overview.md'),
         out
     );
