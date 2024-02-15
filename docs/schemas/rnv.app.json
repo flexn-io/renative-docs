@@ -132,7 +132,7 @@
           "description": "This object will be automatically injected into `./platfromAssets/renative.runtime.json` making it possible to inject the values directly to JS source code"
         },
         "custom": {
-          "$ref": "#/definitions/rnv.app/properties/custom"
+          "$ref": "#/properties/custom"
         },
         "buildSchemes": {
           "type": "object",
@@ -140,71 +140,71 @@
             "type": "object",
             "properties": {
               "includedPermissions": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+                "$ref": "#/properties/common/properties/includedPermissions"
               },
               "excludedPermissions": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+                "$ref": "#/properties/common/properties/excludedPermissions"
               },
               "id": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+                "$ref": "#/properties/common/properties/id"
               },
               "idSuffix": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+                "$ref": "#/properties/common/properties/idSuffix"
               },
               "version": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+                "$ref": "#/properties/common/properties/version"
               },
               "versionCode": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+                "$ref": "#/properties/common/properties/versionCode"
               },
               "versionFormat": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+                "$ref": "#/properties/common/properties/versionFormat"
               },
               "versionCodeFormat": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+                "$ref": "#/properties/common/properties/versionCodeFormat"
               },
               "versionCodeOffset": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+                "$ref": "#/properties/common/properties/versionCodeOffset"
               },
               "title": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+                "$ref": "#/properties/common/properties/title"
               },
               "description": {
                 "type": "string",
                 "description": "Custom description of the buildScheme will be displayed directly in cli if you run rnv with an empty paramener `-s`"
               },
               "author": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+                "$ref": "#/properties/common/properties/author"
               },
               "license": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+                "$ref": "#/properties/common/properties/license"
               },
               "includedFonts": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+                "$ref": "#/properties/common/properties/includedFonts"
               },
               "backgroundColor": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+                "$ref": "#/properties/common/properties/backgroundColor"
               },
               "splashScreen": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+                "$ref": "#/properties/common/properties/splashScreen"
               },
               "fontSources": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+                "$ref": "#/properties/common/properties/fontSources"
               },
               "assetSources": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+                "$ref": "#/properties/common/properties/assetSources"
               },
               "includedPlugins": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+                "$ref": "#/properties/common/properties/includedPlugins"
               },
               "excludedPlugins": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+                "$ref": "#/properties/common/properties/excludedPlugins"
               },
               "runtime": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+                "$ref": "#/properties/common/properties/runtime"
               },
               "custom": {
-                "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+                "$ref": "#/properties/common/properties/custom"
               },
               "enabled": {
                 "type": "boolean",
@@ -276,94 +276,94 @@
           "type": "object",
           "properties": {
             "includedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+              "$ref": "#/properties/common/properties/includedPermissions"
             },
             "excludedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+              "$ref": "#/properties/common/properties/excludedPermissions"
             },
             "id": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+              "$ref": "#/properties/common/properties/id"
             },
             "idSuffix": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+              "$ref": "#/properties/common/properties/idSuffix"
             },
             "version": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+              "$ref": "#/properties/common/properties/version"
             },
             "versionCode": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+              "$ref": "#/properties/common/properties/versionCode"
             },
             "versionFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+              "$ref": "#/properties/common/properties/versionFormat"
             },
             "versionCodeFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+              "$ref": "#/properties/common/properties/versionCodeFormat"
             },
             "versionCodeOffset": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+              "$ref": "#/properties/common/properties/versionCodeOffset"
             },
             "title": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+              "$ref": "#/properties/common/properties/title"
             },
             "description": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+              "$ref": "#/properties/common/properties/description"
             },
             "author": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+              "$ref": "#/properties/common/properties/author"
             },
             "license": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+              "$ref": "#/properties/common/properties/license"
             },
             "includedFonts": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+              "$ref": "#/properties/common/properties/includedFonts"
             },
             "backgroundColor": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+              "$ref": "#/properties/common/properties/backgroundColor"
             },
             "splashScreen": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+              "$ref": "#/properties/common/properties/splashScreen"
             },
             "fontSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+              "$ref": "#/properties/common/properties/fontSources"
             },
             "assetSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+              "$ref": "#/properties/common/properties/assetSources"
             },
             "includedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+              "$ref": "#/properties/common/properties/includedPlugins"
             },
             "excludedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+              "$ref": "#/properties/common/properties/excludedPlugins"
             },
             "runtime": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+              "$ref": "#/properties/common/properties/runtime"
             },
             "custom": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+              "$ref": "#/properties/common/properties/custom"
             },
             "extendPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
             },
             "assetFolderPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
             },
             "engine": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
             },
             "entryFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
             },
             "bundleAssets": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
             },
             "enableSourceMaps": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
             },
             "bundleIsDev": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
             },
             "getJsBundleFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
             },
             "enableAndroidX": {
               "type": [
@@ -456,7 +456,7 @@
             },
             "buildToolsVersion": {
               "type": "string",
-              "default": "34.0.0",
+              "default": "30.0.0",
               "description": "Override android build tools version"
             },
             "disableSigning": {
@@ -648,18 +648,18 @@
                         "type": "object",
                         "properties": {
                           "tag": {
-                            "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml/properties/tag"
+                            "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml/properties/tag"
                           },
                           "android:name": {
-                            "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml/properties/android:name"
+                            "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml/properties/android:name"
                           },
                           "android:required": {
-                            "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml/properties/android:required"
+                            "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml/properties/android:required"
                           },
                           "children": {
                             "type": "array",
                             "items": {
-                              "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml/properties/children/items"
+                              "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml/properties/children/items"
                             }
                           }
                         },
@@ -796,169 +796,169 @@
                 "type": "object",
                 "properties": {
                   "includedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+                    "$ref": "#/properties/common/properties/includedPermissions"
                   },
                   "excludedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+                    "$ref": "#/properties/common/properties/excludedPermissions"
                   },
                   "id": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+                    "$ref": "#/properties/common/properties/id"
                   },
                   "idSuffix": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+                    "$ref": "#/properties/common/properties/idSuffix"
                   },
                   "version": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+                    "$ref": "#/properties/common/properties/version"
                   },
                   "versionCode": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+                    "$ref": "#/properties/common/properties/versionCode"
                   },
                   "versionFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+                    "$ref": "#/properties/common/properties/versionFormat"
                   },
                   "versionCodeFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+                    "$ref": "#/properties/common/properties/versionCodeFormat"
                   },
                   "versionCodeOffset": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+                    "$ref": "#/properties/common/properties/versionCodeOffset"
                   },
                   "title": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+                    "$ref": "#/properties/common/properties/title"
                   },
                   "description": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+                    "$ref": "#/properties/common/properties/description"
                   },
                   "author": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+                    "$ref": "#/properties/common/properties/author"
                   },
                   "license": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+                    "$ref": "#/properties/common/properties/license"
                   },
                   "includedFonts": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+                    "$ref": "#/properties/common/properties/includedFonts"
                   },
                   "backgroundColor": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+                    "$ref": "#/properties/common/properties/backgroundColor"
                   },
                   "splashScreen": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+                    "$ref": "#/properties/common/properties/splashScreen"
                   },
                   "fontSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+                    "$ref": "#/properties/common/properties/fontSources"
                   },
                   "assetSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+                    "$ref": "#/properties/common/properties/assetSources"
                   },
                   "includedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+                    "$ref": "#/properties/common/properties/includedPlugins"
                   },
                   "excludedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+                    "$ref": "#/properties/common/properties/excludedPlugins"
                   },
                   "runtime": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+                    "$ref": "#/properties/common/properties/runtime"
                   },
                   "custom": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+                    "$ref": "#/properties/common/properties/custom"
                   },
                   "extendPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
                   },
                   "assetFolderPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
                   },
                   "engine": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
                   },
                   "entryFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
                   },
                   "bundleAssets": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
                   },
                   "enableSourceMaps": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
                   },
                   "bundleIsDev": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
                   },
                   "getJsBundleFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
                   },
                   "enableAndroidX": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/enableAndroidX"
+                    "$ref": "#/properties/platforms/properties/android/properties/enableAndroidX"
                   },
                   "enableJetifier": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/enableJetifier"
+                    "$ref": "#/properties/platforms/properties/android/properties/enableJetifier"
                   },
                   "signingConfig": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/signingConfig"
+                    "$ref": "#/properties/platforms/properties/android/properties/signingConfig"
                   },
                   "minSdkVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/minSdkVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/minSdkVersion"
                   },
                   "multipleAPKs": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/multipleAPKs"
+                    "$ref": "#/properties/platforms/properties/android/properties/multipleAPKs"
                   },
                   "aab": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/aab"
+                    "$ref": "#/properties/platforms/properties/android/properties/aab"
                   },
                   "extraGradleParams": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/extraGradleParams"
+                    "$ref": "#/properties/platforms/properties/android/properties/extraGradleParams"
                   },
                   "minifyEnabled": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/minifyEnabled"
+                    "$ref": "#/properties/platforms/properties/android/properties/minifyEnabled"
                   },
                   "targetSdkVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/targetSdkVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/targetSdkVersion"
                   },
                   "compileSdkVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/compileSdkVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/compileSdkVersion"
                   },
                   "kotlinVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/kotlinVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/kotlinVersion"
                   },
                   "ndkVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/ndkVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/ndkVersion"
                   },
                   "supportLibVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/supportLibVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/supportLibVersion"
                   },
                   "googleServicesVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/googleServicesVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/googleServicesVersion"
                   },
                   "gradleBuildToolsVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/gradleBuildToolsVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/gradleBuildToolsVersion"
                   },
                   "gradleWrapperVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/gradleWrapperVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/gradleWrapperVersion"
                   },
                   "excludedFeatures": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/excludedFeatures"
+                    "$ref": "#/properties/platforms/properties/android/properties/excludedFeatures"
                   },
                   "includedFeatures": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/includedFeatures"
+                    "$ref": "#/properties/platforms/properties/android/properties/includedFeatures"
                   },
                   "buildToolsVersion": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/buildToolsVersion"
+                    "$ref": "#/properties/platforms/properties/android/properties/buildToolsVersion"
                   },
                   "disableSigning": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/disableSigning"
+                    "$ref": "#/properties/platforms/properties/android/properties/disableSigning"
                   },
                   "storeFile": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/storeFile"
+                    "$ref": "#/properties/platforms/properties/android/properties/storeFile"
                   },
                   "keyAlias": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/keyAlias"
+                    "$ref": "#/properties/platforms/properties/android/properties/keyAlias"
                   },
                   "newArchEnabled": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/newArchEnabled"
+                    "$ref": "#/properties/platforms/properties/android/properties/newArchEnabled"
                   },
                   "reactNativeEngine": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/reactNativeEngine"
+                    "$ref": "#/properties/platforms/properties/android/properties/reactNativeEngine"
                   },
                   "templateAndroid": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid"
+                    "$ref": "#/properties/platforms/properties/android/properties/templateAndroid"
                   }
                 },
                 "additionalProperties": false
@@ -969,106 +969,106 @@
           "description": "Allows to customize platforms configurations based on chosen build scheme `-s`"
         },
         "androidtv": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/android"
+          "$ref": "#/properties/platforms/properties/android"
         },
         "androidwear": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/android"
+          "$ref": "#/properties/platforms/properties/android"
         },
         "firetv": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/android"
+          "$ref": "#/properties/platforms/properties/android"
         },
         "ios": {
           "type": "object",
           "properties": {
             "includedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+              "$ref": "#/properties/common/properties/includedPermissions"
             },
             "excludedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+              "$ref": "#/properties/common/properties/excludedPermissions"
             },
             "id": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+              "$ref": "#/properties/common/properties/id"
             },
             "idSuffix": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+              "$ref": "#/properties/common/properties/idSuffix"
             },
             "version": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+              "$ref": "#/properties/common/properties/version"
             },
             "versionCode": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+              "$ref": "#/properties/common/properties/versionCode"
             },
             "versionFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+              "$ref": "#/properties/common/properties/versionFormat"
             },
             "versionCodeFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+              "$ref": "#/properties/common/properties/versionCodeFormat"
             },
             "versionCodeOffset": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+              "$ref": "#/properties/common/properties/versionCodeOffset"
             },
             "title": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+              "$ref": "#/properties/common/properties/title"
             },
             "description": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+              "$ref": "#/properties/common/properties/description"
             },
             "author": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+              "$ref": "#/properties/common/properties/author"
             },
             "license": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+              "$ref": "#/properties/common/properties/license"
             },
             "includedFonts": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+              "$ref": "#/properties/common/properties/includedFonts"
             },
             "backgroundColor": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+              "$ref": "#/properties/common/properties/backgroundColor"
             },
             "splashScreen": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+              "$ref": "#/properties/common/properties/splashScreen"
             },
             "fontSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+              "$ref": "#/properties/common/properties/fontSources"
             },
             "assetSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+              "$ref": "#/properties/common/properties/assetSources"
             },
             "includedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+              "$ref": "#/properties/common/properties/includedPlugins"
             },
             "excludedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+              "$ref": "#/properties/common/properties/excludedPlugins"
             },
             "runtime": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+              "$ref": "#/properties/common/properties/runtime"
             },
             "custom": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+              "$ref": "#/properties/common/properties/custom"
             },
             "extendPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
             },
             "assetFolderPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
             },
             "engine": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
             },
             "entryFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
             },
             "bundleAssets": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
             },
             "enableSourceMaps": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
             },
             "bundleIsDev": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
             },
             "getJsBundleFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
             },
             "ignoreWarnings": {
               "type": "boolean",
@@ -1228,7 +1228,7 @@
               "additionalProperties": false
             },
             "reactNativeEngine": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/reactNativeEngine"
+              "$ref": "#/properties/platforms/properties/android/properties/reactNativeEngine"
             },
             "templateXcode": {
               "type": "object",
@@ -1382,67 +1382,67 @@
                             "applicationDidBecomeActive": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "open": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "supportedInterfaceOrientationsFor": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "didReceiveRemoteNotification": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "didFailToRegisterForRemoteNotificationsWithError": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "didReceive": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "didRegister": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "didRegisterForRemoteNotificationsWithDeviceToken": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "continue": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "didConnectCarInterfaceController": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             },
                             "didDisconnectCarInterfaceController": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             }
                           },
@@ -1468,7 +1468,7 @@
                             "willPresent": {
                               "type": "array",
                               "items": {
-                                "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
+                                "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm/properties/appDelegateMethods/properties/application/properties/didFinishLaunchingWithOptions/items"
                               }
                             }
                           },
@@ -1525,181 +1525,181 @@
                 "type": "object",
                 "properties": {
                   "includedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+                    "$ref": "#/properties/common/properties/includedPermissions"
                   },
                   "excludedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+                    "$ref": "#/properties/common/properties/excludedPermissions"
                   },
                   "id": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+                    "$ref": "#/properties/common/properties/id"
                   },
                   "idSuffix": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+                    "$ref": "#/properties/common/properties/idSuffix"
                   },
                   "version": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+                    "$ref": "#/properties/common/properties/version"
                   },
                   "versionCode": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+                    "$ref": "#/properties/common/properties/versionCode"
                   },
                   "versionFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+                    "$ref": "#/properties/common/properties/versionFormat"
                   },
                   "versionCodeFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+                    "$ref": "#/properties/common/properties/versionCodeFormat"
                   },
                   "versionCodeOffset": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+                    "$ref": "#/properties/common/properties/versionCodeOffset"
                   },
                   "title": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+                    "$ref": "#/properties/common/properties/title"
                   },
                   "description": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+                    "$ref": "#/properties/common/properties/description"
                   },
                   "author": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+                    "$ref": "#/properties/common/properties/author"
                   },
                   "license": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+                    "$ref": "#/properties/common/properties/license"
                   },
                   "includedFonts": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+                    "$ref": "#/properties/common/properties/includedFonts"
                   },
                   "backgroundColor": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+                    "$ref": "#/properties/common/properties/backgroundColor"
                   },
                   "splashScreen": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+                    "$ref": "#/properties/common/properties/splashScreen"
                   },
                   "fontSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+                    "$ref": "#/properties/common/properties/fontSources"
                   },
                   "assetSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+                    "$ref": "#/properties/common/properties/assetSources"
                   },
                   "includedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+                    "$ref": "#/properties/common/properties/includedPlugins"
                   },
                   "excludedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+                    "$ref": "#/properties/common/properties/excludedPlugins"
                   },
                   "runtime": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+                    "$ref": "#/properties/common/properties/runtime"
                   },
                   "custom": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+                    "$ref": "#/properties/common/properties/custom"
                   },
                   "extendPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
                   },
                   "assetFolderPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
                   },
                   "engine": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
                   },
                   "entryFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
                   },
                   "bundleAssets": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
                   },
                   "enableSourceMaps": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
                   },
                   "bundleIsDev": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
                   },
                   "getJsBundleFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
                   },
                   "ignoreWarnings": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/ignoreWarnings"
+                    "$ref": "#/properties/platforms/properties/ios/properties/ignoreWarnings"
                   },
                   "ignoreLogs": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/ignoreLogs"
+                    "$ref": "#/properties/platforms/properties/ios/properties/ignoreLogs"
                   },
                   "deploymentTarget": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/deploymentTarget"
+                    "$ref": "#/properties/platforms/properties/ios/properties/deploymentTarget"
                   },
                   "orientationSupport": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/orientationSupport"
+                    "$ref": "#/properties/platforms/properties/ios/properties/orientationSupport"
                   },
                   "teamID": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/teamID"
+                    "$ref": "#/properties/platforms/properties/ios/properties/teamID"
                   },
                   "excludedArchs": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/excludedArchs"
+                    "$ref": "#/properties/platforms/properties/ios/properties/excludedArchs"
                   },
                   "urlScheme": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/urlScheme"
+                    "$ref": "#/properties/platforms/properties/ios/properties/urlScheme"
                   },
                   "teamIdentifier": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/teamIdentifier"
+                    "$ref": "#/properties/platforms/properties/ios/properties/teamIdentifier"
                   },
                   "scheme": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/scheme"
+                    "$ref": "#/properties/platforms/properties/ios/properties/scheme"
                   },
                   "schemeTarget": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/schemeTarget"
+                    "$ref": "#/properties/platforms/properties/ios/properties/schemeTarget"
                   },
                   "appleId": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/appleId"
+                    "$ref": "#/properties/platforms/properties/ios/properties/appleId"
                   },
                   "provisioningStyle": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisioningStyle"
+                    "$ref": "#/properties/platforms/properties/ios/properties/provisioningStyle"
                   },
                   "newArchEnabled": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/newArchEnabled"
+                    "$ref": "#/properties/platforms/properties/ios/properties/newArchEnabled"
                   },
                   "codeSignIdentity": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/codeSignIdentity"
+                    "$ref": "#/properties/platforms/properties/ios/properties/codeSignIdentity"
                   },
                   "commandLineArguments": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/commandLineArguments"
+                    "$ref": "#/properties/platforms/properties/ios/properties/commandLineArguments"
                   },
                   "provisionProfileSpecifier": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisionProfileSpecifier"
+                    "$ref": "#/properties/platforms/properties/ios/properties/provisionProfileSpecifier"
                   },
                   "provisionProfileSpecifiers": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisionProfileSpecifiers"
+                    "$ref": "#/properties/platforms/properties/ios/properties/provisionProfileSpecifiers"
                   },
                   "allowProvisioningUpdates": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/allowProvisioningUpdates"
+                    "$ref": "#/properties/platforms/properties/ios/properties/allowProvisioningUpdates"
                   },
                   "provisioningProfiles": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisioningProfiles"
+                    "$ref": "#/properties/platforms/properties/ios/properties/provisioningProfiles"
                   },
                   "codeSignIdentities": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/codeSignIdentities"
+                    "$ref": "#/properties/platforms/properties/ios/properties/codeSignIdentities"
                   },
                   "systemCapabilities": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/systemCapabilities"
+                    "$ref": "#/properties/platforms/properties/ios/properties/systemCapabilities"
                   },
                   "entitlements": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/entitlements"
+                    "$ref": "#/properties/platforms/properties/ios/properties/entitlements"
                   },
                   "runScheme": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/runScheme"
+                    "$ref": "#/properties/platforms/properties/ios/properties/runScheme"
                   },
                   "sdk": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/sdk"
+                    "$ref": "#/properties/platforms/properties/ios/properties/sdk"
                   },
                   "testFlightId": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/testFlightId"
+                    "$ref": "#/properties/platforms/properties/ios/properties/testFlightId"
                   },
                   "firebaseId": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/firebaseId"
+                    "$ref": "#/properties/platforms/properties/ios/properties/firebaseId"
                   },
                   "exportOptions": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/exportOptions"
+                    "$ref": "#/properties/platforms/properties/ios/properties/exportOptions"
                   },
                   "reactNativeEngine": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/reactNativeEngine"
+                    "$ref": "#/properties/platforms/properties/android/properties/reactNativeEngine"
                   },
                   "templateXcode": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode"
+                    "$ref": "#/properties/platforms/properties/ios/properties/templateXcode"
                   }
                 },
                 "additionalProperties": false
@@ -1710,100 +1710,100 @@
           "description": "Allows to customize platforms configurations based on chosen build scheme `-s`"
         },
         "tvos": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios"
+          "$ref": "#/properties/platforms/properties/ios"
         },
         "tizen": {
           "type": "object",
           "properties": {
             "includedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+              "$ref": "#/properties/common/properties/includedPermissions"
             },
             "excludedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+              "$ref": "#/properties/common/properties/excludedPermissions"
             },
             "id": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+              "$ref": "#/properties/common/properties/id"
             },
             "idSuffix": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+              "$ref": "#/properties/common/properties/idSuffix"
             },
             "version": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+              "$ref": "#/properties/common/properties/version"
             },
             "versionCode": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+              "$ref": "#/properties/common/properties/versionCode"
             },
             "versionFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+              "$ref": "#/properties/common/properties/versionFormat"
             },
             "versionCodeFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+              "$ref": "#/properties/common/properties/versionCodeFormat"
             },
             "versionCodeOffset": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+              "$ref": "#/properties/common/properties/versionCodeOffset"
             },
             "title": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+              "$ref": "#/properties/common/properties/title"
             },
             "description": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+              "$ref": "#/properties/common/properties/description"
             },
             "author": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+              "$ref": "#/properties/common/properties/author"
             },
             "license": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+              "$ref": "#/properties/common/properties/license"
             },
             "includedFonts": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+              "$ref": "#/properties/common/properties/includedFonts"
             },
             "backgroundColor": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+              "$ref": "#/properties/common/properties/backgroundColor"
             },
             "splashScreen": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+              "$ref": "#/properties/common/properties/splashScreen"
             },
             "fontSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+              "$ref": "#/properties/common/properties/fontSources"
             },
             "assetSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+              "$ref": "#/properties/common/properties/assetSources"
             },
             "includedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+              "$ref": "#/properties/common/properties/includedPlugins"
             },
             "excludedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+              "$ref": "#/properties/common/properties/excludedPlugins"
             },
             "runtime": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+              "$ref": "#/properties/common/properties/runtime"
             },
             "custom": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+              "$ref": "#/properties/common/properties/custom"
             },
             "extendPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
             },
             "assetFolderPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
             },
             "engine": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
             },
             "entryFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
             },
             "bundleAssets": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
             },
             "enableSourceMaps": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
             },
             "bundleIsDev": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
             },
             "getJsBundleFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
             },
             "package": {
               "type": "string"
@@ -1851,118 +1851,118 @@
                 "type": "object",
                 "properties": {
                   "includedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+                    "$ref": "#/properties/common/properties/includedPermissions"
                   },
                   "excludedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+                    "$ref": "#/properties/common/properties/excludedPermissions"
                   },
                   "id": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+                    "$ref": "#/properties/common/properties/id"
                   },
                   "idSuffix": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+                    "$ref": "#/properties/common/properties/idSuffix"
                   },
                   "version": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+                    "$ref": "#/properties/common/properties/version"
                   },
                   "versionCode": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+                    "$ref": "#/properties/common/properties/versionCode"
                   },
                   "versionFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+                    "$ref": "#/properties/common/properties/versionFormat"
                   },
                   "versionCodeFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+                    "$ref": "#/properties/common/properties/versionCodeFormat"
                   },
                   "versionCodeOffset": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+                    "$ref": "#/properties/common/properties/versionCodeOffset"
                   },
                   "title": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+                    "$ref": "#/properties/common/properties/title"
                   },
                   "description": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+                    "$ref": "#/properties/common/properties/description"
                   },
                   "author": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+                    "$ref": "#/properties/common/properties/author"
                   },
                   "license": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+                    "$ref": "#/properties/common/properties/license"
                   },
                   "includedFonts": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+                    "$ref": "#/properties/common/properties/includedFonts"
                   },
                   "backgroundColor": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+                    "$ref": "#/properties/common/properties/backgroundColor"
                   },
                   "splashScreen": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+                    "$ref": "#/properties/common/properties/splashScreen"
                   },
                   "fontSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+                    "$ref": "#/properties/common/properties/fontSources"
                   },
                   "assetSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+                    "$ref": "#/properties/common/properties/assetSources"
                   },
                   "includedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+                    "$ref": "#/properties/common/properties/includedPlugins"
                   },
                   "excludedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+                    "$ref": "#/properties/common/properties/excludedPlugins"
                   },
                   "runtime": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+                    "$ref": "#/properties/common/properties/runtime"
                   },
                   "custom": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+                    "$ref": "#/properties/common/properties/custom"
                   },
                   "extendPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
                   },
                   "assetFolderPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
                   },
                   "engine": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
                   },
                   "entryFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
                   },
                   "bundleAssets": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
                   },
                   "enableSourceMaps": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
                   },
                   "bundleIsDev": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
                   },
                   "getJsBundleFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
                   },
                   "package": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/package"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/package"
                   },
                   "certificateProfile": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/certificateProfile"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/certificateProfile"
                   },
                   "appName": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/appName"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/appName"
                   },
                   "timestampBuildFiles": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/timestampBuildFiles"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/timestampBuildFiles"
                   },
                   "devServerHost": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/devServerHost"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/devServerHost"
                   },
                   "environment": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/environment"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/environment"
                   },
                   "hostedShellHeaders": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/hostedShellHeaders"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/hostedShellHeaders"
                   },
                   "webpackConfig": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/webpackConfig"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/webpackConfig"
                   }
                 },
                 "additionalProperties": false
@@ -1973,118 +1973,118 @@
           "description": "Allows to customize platforms configurations based on chosen build scheme `-s`"
         },
         "tizenmobile": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen"
+          "$ref": "#/properties/platforms/properties/tizen"
         },
         "tizenwatch": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen"
+          "$ref": "#/properties/platforms/properties/tizen"
         },
         "webos": {
           "type": "object",
           "properties": {
             "includedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+              "$ref": "#/properties/common/properties/includedPermissions"
             },
             "excludedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+              "$ref": "#/properties/common/properties/excludedPermissions"
             },
             "id": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+              "$ref": "#/properties/common/properties/id"
             },
             "idSuffix": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+              "$ref": "#/properties/common/properties/idSuffix"
             },
             "version": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+              "$ref": "#/properties/common/properties/version"
             },
             "versionCode": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+              "$ref": "#/properties/common/properties/versionCode"
             },
             "versionFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+              "$ref": "#/properties/common/properties/versionFormat"
             },
             "versionCodeFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+              "$ref": "#/properties/common/properties/versionCodeFormat"
             },
             "versionCodeOffset": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+              "$ref": "#/properties/common/properties/versionCodeOffset"
             },
             "title": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+              "$ref": "#/properties/common/properties/title"
             },
             "description": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+              "$ref": "#/properties/common/properties/description"
             },
             "author": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+              "$ref": "#/properties/common/properties/author"
             },
             "license": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+              "$ref": "#/properties/common/properties/license"
             },
             "includedFonts": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+              "$ref": "#/properties/common/properties/includedFonts"
             },
             "backgroundColor": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+              "$ref": "#/properties/common/properties/backgroundColor"
             },
             "splashScreen": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+              "$ref": "#/properties/common/properties/splashScreen"
             },
             "fontSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+              "$ref": "#/properties/common/properties/fontSources"
             },
             "assetSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+              "$ref": "#/properties/common/properties/assetSources"
             },
             "includedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+              "$ref": "#/properties/common/properties/includedPlugins"
             },
             "excludedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+              "$ref": "#/properties/common/properties/excludedPlugins"
             },
             "runtime": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+              "$ref": "#/properties/common/properties/runtime"
             },
             "custom": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+              "$ref": "#/properties/common/properties/custom"
             },
             "extendPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
             },
             "assetFolderPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
             },
             "engine": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
             },
             "entryFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
             },
             "bundleAssets": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
             },
             "enableSourceMaps": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
             },
             "bundleIsDev": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
             },
             "getJsBundleFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
             },
             "timestampBuildFiles": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/timestampBuildFiles"
+              "$ref": "#/properties/platforms/properties/tizen/properties/timestampBuildFiles"
             },
             "devServerHost": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/devServerHost"
+              "$ref": "#/properties/platforms/properties/tizen/properties/devServerHost"
             },
             "environment": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/environment"
+              "$ref": "#/properties/platforms/properties/tizen/properties/environment"
             },
             "hostedShellHeaders": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/hostedShellHeaders"
+              "$ref": "#/properties/platforms/properties/tizen/properties/hostedShellHeaders"
             },
             "webpackConfig": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/webpackConfig"
+              "$ref": "#/properties/platforms/properties/tizen/properties/webpackConfig"
             },
             "iconColor": {
               "type": "string"
@@ -2095,112 +2095,112 @@
                 "type": "object",
                 "properties": {
                   "includedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+                    "$ref": "#/properties/common/properties/includedPermissions"
                   },
                   "excludedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+                    "$ref": "#/properties/common/properties/excludedPermissions"
                   },
                   "id": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+                    "$ref": "#/properties/common/properties/id"
                   },
                   "idSuffix": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+                    "$ref": "#/properties/common/properties/idSuffix"
                   },
                   "version": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+                    "$ref": "#/properties/common/properties/version"
                   },
                   "versionCode": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+                    "$ref": "#/properties/common/properties/versionCode"
                   },
                   "versionFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+                    "$ref": "#/properties/common/properties/versionFormat"
                   },
                   "versionCodeFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+                    "$ref": "#/properties/common/properties/versionCodeFormat"
                   },
                   "versionCodeOffset": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+                    "$ref": "#/properties/common/properties/versionCodeOffset"
                   },
                   "title": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+                    "$ref": "#/properties/common/properties/title"
                   },
                   "description": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+                    "$ref": "#/properties/common/properties/description"
                   },
                   "author": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+                    "$ref": "#/properties/common/properties/author"
                   },
                   "license": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+                    "$ref": "#/properties/common/properties/license"
                   },
                   "includedFonts": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+                    "$ref": "#/properties/common/properties/includedFonts"
                   },
                   "backgroundColor": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+                    "$ref": "#/properties/common/properties/backgroundColor"
                   },
                   "splashScreen": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+                    "$ref": "#/properties/common/properties/splashScreen"
                   },
                   "fontSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+                    "$ref": "#/properties/common/properties/fontSources"
                   },
                   "assetSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+                    "$ref": "#/properties/common/properties/assetSources"
                   },
                   "includedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+                    "$ref": "#/properties/common/properties/includedPlugins"
                   },
                   "excludedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+                    "$ref": "#/properties/common/properties/excludedPlugins"
                   },
                   "runtime": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+                    "$ref": "#/properties/common/properties/runtime"
                   },
                   "custom": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+                    "$ref": "#/properties/common/properties/custom"
                   },
                   "extendPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
                   },
                   "assetFolderPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
                   },
                   "engine": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
                   },
                   "entryFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
                   },
                   "bundleAssets": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
                   },
                   "enableSourceMaps": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
                   },
                   "bundleIsDev": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
                   },
                   "getJsBundleFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
                   },
                   "timestampBuildFiles": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/timestampBuildFiles"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/timestampBuildFiles"
                   },
                   "devServerHost": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/devServerHost"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/devServerHost"
                   },
                   "environment": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/environment"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/environment"
                   },
                   "hostedShellHeaders": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/hostedShellHeaders"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/hostedShellHeaders"
                   },
                   "webpackConfig": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/webpackConfig"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/webpackConfig"
                   },
                   "iconColor": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/webos/properties/iconColor"
+                    "$ref": "#/properties/platforms/properties/webos/properties/iconColor"
                   }
                 },
                 "additionalProperties": false
@@ -2214,97 +2214,97 @@
           "type": "object",
           "properties": {
             "includedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+              "$ref": "#/properties/common/properties/includedPermissions"
             },
             "excludedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+              "$ref": "#/properties/common/properties/excludedPermissions"
             },
             "id": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+              "$ref": "#/properties/common/properties/id"
             },
             "idSuffix": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+              "$ref": "#/properties/common/properties/idSuffix"
             },
             "version": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+              "$ref": "#/properties/common/properties/version"
             },
             "versionCode": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+              "$ref": "#/properties/common/properties/versionCode"
             },
             "versionFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+              "$ref": "#/properties/common/properties/versionFormat"
             },
             "versionCodeFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+              "$ref": "#/properties/common/properties/versionCodeFormat"
             },
             "versionCodeOffset": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+              "$ref": "#/properties/common/properties/versionCodeOffset"
             },
             "title": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+              "$ref": "#/properties/common/properties/title"
             },
             "description": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+              "$ref": "#/properties/common/properties/description"
             },
             "author": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+              "$ref": "#/properties/common/properties/author"
             },
             "license": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+              "$ref": "#/properties/common/properties/license"
             },
             "includedFonts": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+              "$ref": "#/properties/common/properties/includedFonts"
             },
             "backgroundColor": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+              "$ref": "#/properties/common/properties/backgroundColor"
             },
             "splashScreen": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+              "$ref": "#/properties/common/properties/splashScreen"
             },
             "fontSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+              "$ref": "#/properties/common/properties/fontSources"
             },
             "assetSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+              "$ref": "#/properties/common/properties/assetSources"
             },
             "includedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+              "$ref": "#/properties/common/properties/includedPlugins"
             },
             "excludedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+              "$ref": "#/properties/common/properties/excludedPlugins"
             },
             "runtime": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+              "$ref": "#/properties/common/properties/runtime"
             },
             "custom": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+              "$ref": "#/properties/common/properties/custom"
             },
             "extendPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
             },
             "assetFolderPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
             },
             "engine": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
             },
             "entryFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
             },
             "bundleAssets": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
             },
             "enableSourceMaps": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
             },
             "bundleIsDev": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
             },
             "getJsBundleFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
             },
             "webpackConfig": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/webpackConfig"
+              "$ref": "#/properties/platforms/properties/tizen/properties/webpackConfig"
             },
             "pagesDir": {
               "type": "string",
@@ -2325,16 +2325,16 @@
               }
             },
             "timestampBuildFiles": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/timestampBuildFiles"
+              "$ref": "#/properties/platforms/properties/tizen/properties/timestampBuildFiles"
             },
             "devServerHost": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/devServerHost"
+              "$ref": "#/properties/platforms/properties/tizen/properties/devServerHost"
             },
             "environment": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/environment"
+              "$ref": "#/properties/platforms/properties/tizen/properties/environment"
             },
             "hostedShellHeaders": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/hostedShellHeaders"
+              "$ref": "#/properties/platforms/properties/tizen/properties/hostedShellHeaders"
             },
             "buildSchemes": {
               "type": "object",
@@ -2342,121 +2342,121 @@
                 "type": "object",
                 "properties": {
                   "includedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+                    "$ref": "#/properties/common/properties/includedPermissions"
                   },
                   "excludedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+                    "$ref": "#/properties/common/properties/excludedPermissions"
                   },
                   "id": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+                    "$ref": "#/properties/common/properties/id"
                   },
                   "idSuffix": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+                    "$ref": "#/properties/common/properties/idSuffix"
                   },
                   "version": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+                    "$ref": "#/properties/common/properties/version"
                   },
                   "versionCode": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+                    "$ref": "#/properties/common/properties/versionCode"
                   },
                   "versionFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+                    "$ref": "#/properties/common/properties/versionFormat"
                   },
                   "versionCodeFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+                    "$ref": "#/properties/common/properties/versionCodeFormat"
                   },
                   "versionCodeOffset": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+                    "$ref": "#/properties/common/properties/versionCodeOffset"
                   },
                   "title": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+                    "$ref": "#/properties/common/properties/title"
                   },
                   "description": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+                    "$ref": "#/properties/common/properties/description"
                   },
                   "author": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+                    "$ref": "#/properties/common/properties/author"
                   },
                   "license": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+                    "$ref": "#/properties/common/properties/license"
                   },
                   "includedFonts": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+                    "$ref": "#/properties/common/properties/includedFonts"
                   },
                   "backgroundColor": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+                    "$ref": "#/properties/common/properties/backgroundColor"
                   },
                   "splashScreen": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+                    "$ref": "#/properties/common/properties/splashScreen"
                   },
                   "fontSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+                    "$ref": "#/properties/common/properties/fontSources"
                   },
                   "assetSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+                    "$ref": "#/properties/common/properties/assetSources"
                   },
                   "includedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+                    "$ref": "#/properties/common/properties/includedPlugins"
                   },
                   "excludedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+                    "$ref": "#/properties/common/properties/excludedPlugins"
                   },
                   "runtime": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+                    "$ref": "#/properties/common/properties/runtime"
                   },
                   "custom": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+                    "$ref": "#/properties/common/properties/custom"
                   },
                   "extendPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
                   },
                   "assetFolderPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
                   },
                   "engine": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
                   },
                   "entryFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
                   },
                   "bundleAssets": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
                   },
                   "enableSourceMaps": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
                   },
                   "bundleIsDev": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
                   },
                   "getJsBundleFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
                   },
                   "webpackConfig": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/webpackConfig"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/webpackConfig"
                   },
                   "pagesDir": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/web/properties/pagesDir"
+                    "$ref": "#/properties/platforms/properties/web/properties/pagesDir"
                   },
                   "outputDir": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/web/properties/outputDir"
+                    "$ref": "#/properties/platforms/properties/web/properties/outputDir"
                   },
                   "exportDir": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/web/properties/exportDir"
+                    "$ref": "#/properties/platforms/properties/web/properties/exportDir"
                   },
                   "nextTranspileModules": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/web/properties/nextTranspileModules"
+                    "$ref": "#/properties/platforms/properties/web/properties/nextTranspileModules"
                   },
                   "timestampBuildFiles": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/timestampBuildFiles"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/timestampBuildFiles"
                   },
                   "devServerHost": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/devServerHost"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/devServerHost"
                   },
                   "environment": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/environment"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/environment"
                   },
                   "hostedShellHeaders": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/tizen/properties/hostedShellHeaders"
+                    "$ref": "#/properties/platforms/properties/tizen/properties/hostedShellHeaders"
                   }
                 },
                 "additionalProperties": false
@@ -2467,193 +2467,193 @@
           "description": "Allows to customize platforms configurations based on chosen build scheme `-s`"
         },
         "webtv": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/web"
+          "$ref": "#/properties/platforms/properties/web"
         },
         "chromecast": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/web"
+          "$ref": "#/properties/platforms/properties/web"
         },
         "kaios": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/web"
+          "$ref": "#/properties/platforms/properties/web"
         },
         "macos": {
           "type": "object",
           "properties": {
             "includedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+              "$ref": "#/properties/common/properties/includedPermissions"
             },
             "excludedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+              "$ref": "#/properties/common/properties/excludedPermissions"
             },
             "id": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+              "$ref": "#/properties/common/properties/id"
             },
             "idSuffix": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+              "$ref": "#/properties/common/properties/idSuffix"
             },
             "version": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+              "$ref": "#/properties/common/properties/version"
             },
             "versionCode": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+              "$ref": "#/properties/common/properties/versionCode"
             },
             "versionFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+              "$ref": "#/properties/common/properties/versionFormat"
             },
             "versionCodeFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+              "$ref": "#/properties/common/properties/versionCodeFormat"
             },
             "versionCodeOffset": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+              "$ref": "#/properties/common/properties/versionCodeOffset"
             },
             "title": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+              "$ref": "#/properties/common/properties/title"
             },
             "description": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+              "$ref": "#/properties/common/properties/description"
             },
             "author": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+              "$ref": "#/properties/common/properties/author"
             },
             "license": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+              "$ref": "#/properties/common/properties/license"
             },
             "includedFonts": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+              "$ref": "#/properties/common/properties/includedFonts"
             },
             "backgroundColor": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+              "$ref": "#/properties/common/properties/backgroundColor"
             },
             "splashScreen": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+              "$ref": "#/properties/common/properties/splashScreen"
             },
             "fontSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+              "$ref": "#/properties/common/properties/fontSources"
             },
             "assetSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+              "$ref": "#/properties/common/properties/assetSources"
             },
             "includedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+              "$ref": "#/properties/common/properties/includedPlugins"
             },
             "excludedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+              "$ref": "#/properties/common/properties/excludedPlugins"
             },
             "runtime": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+              "$ref": "#/properties/common/properties/runtime"
             },
             "custom": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+              "$ref": "#/properties/common/properties/custom"
             },
             "extendPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
             },
             "assetFolderPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
             },
             "engine": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
             },
             "entryFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
             },
             "bundleAssets": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
             },
             "enableSourceMaps": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
             },
             "bundleIsDev": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
             },
             "getJsBundleFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
             },
             "ignoreWarnings": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/ignoreWarnings"
+              "$ref": "#/properties/platforms/properties/ios/properties/ignoreWarnings"
             },
             "ignoreLogs": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/ignoreLogs"
+              "$ref": "#/properties/platforms/properties/ios/properties/ignoreLogs"
             },
             "deploymentTarget": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/deploymentTarget"
+              "$ref": "#/properties/platforms/properties/ios/properties/deploymentTarget"
             },
             "orientationSupport": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/orientationSupport"
+              "$ref": "#/properties/platforms/properties/ios/properties/orientationSupport"
             },
             "teamID": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/teamID"
+              "$ref": "#/properties/platforms/properties/ios/properties/teamID"
             },
             "excludedArchs": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/excludedArchs"
+              "$ref": "#/properties/platforms/properties/ios/properties/excludedArchs"
             },
             "urlScheme": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/urlScheme"
+              "$ref": "#/properties/platforms/properties/ios/properties/urlScheme"
             },
             "teamIdentifier": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/teamIdentifier"
+              "$ref": "#/properties/platforms/properties/ios/properties/teamIdentifier"
             },
             "scheme": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/scheme"
+              "$ref": "#/properties/platforms/properties/ios/properties/scheme"
             },
             "schemeTarget": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/schemeTarget"
+              "$ref": "#/properties/platforms/properties/ios/properties/schemeTarget"
             },
             "appleId": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/appleId"
+              "$ref": "#/properties/platforms/properties/ios/properties/appleId"
             },
             "provisioningStyle": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisioningStyle"
+              "$ref": "#/properties/platforms/properties/ios/properties/provisioningStyle"
             },
             "newArchEnabled": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/newArchEnabled"
+              "$ref": "#/properties/platforms/properties/ios/properties/newArchEnabled"
             },
             "codeSignIdentity": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/codeSignIdentity"
+              "$ref": "#/properties/platforms/properties/ios/properties/codeSignIdentity"
             },
             "commandLineArguments": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/commandLineArguments"
+              "$ref": "#/properties/platforms/properties/ios/properties/commandLineArguments"
             },
             "provisionProfileSpecifier": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisionProfileSpecifier"
+              "$ref": "#/properties/platforms/properties/ios/properties/provisionProfileSpecifier"
             },
             "provisionProfileSpecifiers": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisionProfileSpecifiers"
+              "$ref": "#/properties/platforms/properties/ios/properties/provisionProfileSpecifiers"
             },
             "allowProvisioningUpdates": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/allowProvisioningUpdates"
+              "$ref": "#/properties/platforms/properties/ios/properties/allowProvisioningUpdates"
             },
             "provisioningProfiles": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisioningProfiles"
+              "$ref": "#/properties/platforms/properties/ios/properties/provisioningProfiles"
             },
             "codeSignIdentities": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/codeSignIdentities"
+              "$ref": "#/properties/platforms/properties/ios/properties/codeSignIdentities"
             },
             "systemCapabilities": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/systemCapabilities"
+              "$ref": "#/properties/platforms/properties/ios/properties/systemCapabilities"
             },
             "entitlements": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/entitlements"
+              "$ref": "#/properties/platforms/properties/ios/properties/entitlements"
             },
             "runScheme": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/runScheme"
+              "$ref": "#/properties/platforms/properties/ios/properties/runScheme"
             },
             "sdk": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/sdk"
+              "$ref": "#/properties/platforms/properties/ios/properties/sdk"
             },
             "testFlightId": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/testFlightId"
+              "$ref": "#/properties/platforms/properties/ios/properties/testFlightId"
             },
             "firebaseId": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/firebaseId"
+              "$ref": "#/properties/platforms/properties/ios/properties/firebaseId"
             },
             "exportOptions": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/exportOptions"
+              "$ref": "#/properties/platforms/properties/ios/properties/exportOptions"
             },
             "reactNativeEngine": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/reactNativeEngine"
+              "$ref": "#/properties/platforms/properties/android/properties/reactNativeEngine"
             },
             "templateXcode": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode"
+              "$ref": "#/properties/platforms/properties/ios/properties/templateXcode"
             },
             "electronConfig": {
               "description": "Allows you to configure electron app as per https://www.electron.build/"
@@ -2687,187 +2687,187 @@
                 "type": "object",
                 "properties": {
                   "includedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+                    "$ref": "#/properties/common/properties/includedPermissions"
                   },
                   "excludedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+                    "$ref": "#/properties/common/properties/excludedPermissions"
                   },
                   "id": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+                    "$ref": "#/properties/common/properties/id"
                   },
                   "idSuffix": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+                    "$ref": "#/properties/common/properties/idSuffix"
                   },
                   "version": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+                    "$ref": "#/properties/common/properties/version"
                   },
                   "versionCode": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+                    "$ref": "#/properties/common/properties/versionCode"
                   },
                   "versionFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+                    "$ref": "#/properties/common/properties/versionFormat"
                   },
                   "versionCodeFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+                    "$ref": "#/properties/common/properties/versionCodeFormat"
                   },
                   "versionCodeOffset": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+                    "$ref": "#/properties/common/properties/versionCodeOffset"
                   },
                   "title": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+                    "$ref": "#/properties/common/properties/title"
                   },
                   "description": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+                    "$ref": "#/properties/common/properties/description"
                   },
                   "author": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+                    "$ref": "#/properties/common/properties/author"
                   },
                   "license": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+                    "$ref": "#/properties/common/properties/license"
                   },
                   "includedFonts": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+                    "$ref": "#/properties/common/properties/includedFonts"
                   },
                   "backgroundColor": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+                    "$ref": "#/properties/common/properties/backgroundColor"
                   },
                   "splashScreen": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+                    "$ref": "#/properties/common/properties/splashScreen"
                   },
                   "fontSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+                    "$ref": "#/properties/common/properties/fontSources"
                   },
                   "assetSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+                    "$ref": "#/properties/common/properties/assetSources"
                   },
                   "includedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+                    "$ref": "#/properties/common/properties/includedPlugins"
                   },
                   "excludedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+                    "$ref": "#/properties/common/properties/excludedPlugins"
                   },
                   "runtime": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+                    "$ref": "#/properties/common/properties/runtime"
                   },
                   "custom": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+                    "$ref": "#/properties/common/properties/custom"
                   },
                   "extendPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
                   },
                   "assetFolderPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
                   },
                   "engine": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
                   },
                   "entryFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
                   },
                   "bundleAssets": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
                   },
                   "enableSourceMaps": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
                   },
                   "bundleIsDev": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
                   },
                   "getJsBundleFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
                   },
                   "ignoreWarnings": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/ignoreWarnings"
+                    "$ref": "#/properties/platforms/properties/ios/properties/ignoreWarnings"
                   },
                   "ignoreLogs": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/ignoreLogs"
+                    "$ref": "#/properties/platforms/properties/ios/properties/ignoreLogs"
                   },
                   "deploymentTarget": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/deploymentTarget"
+                    "$ref": "#/properties/platforms/properties/ios/properties/deploymentTarget"
                   },
                   "orientationSupport": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/orientationSupport"
+                    "$ref": "#/properties/platforms/properties/ios/properties/orientationSupport"
                   },
                   "teamID": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/teamID"
+                    "$ref": "#/properties/platforms/properties/ios/properties/teamID"
                   },
                   "excludedArchs": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/excludedArchs"
+                    "$ref": "#/properties/platforms/properties/ios/properties/excludedArchs"
                   },
                   "urlScheme": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/urlScheme"
+                    "$ref": "#/properties/platforms/properties/ios/properties/urlScheme"
                   },
                   "teamIdentifier": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/teamIdentifier"
+                    "$ref": "#/properties/platforms/properties/ios/properties/teamIdentifier"
                   },
                   "scheme": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/scheme"
+                    "$ref": "#/properties/platforms/properties/ios/properties/scheme"
                   },
                   "schemeTarget": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/schemeTarget"
+                    "$ref": "#/properties/platforms/properties/ios/properties/schemeTarget"
                   },
                   "appleId": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/appleId"
+                    "$ref": "#/properties/platforms/properties/ios/properties/appleId"
                   },
                   "provisioningStyle": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisioningStyle"
+                    "$ref": "#/properties/platforms/properties/ios/properties/provisioningStyle"
                   },
                   "newArchEnabled": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/newArchEnabled"
+                    "$ref": "#/properties/platforms/properties/ios/properties/newArchEnabled"
                   },
                   "codeSignIdentity": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/codeSignIdentity"
+                    "$ref": "#/properties/platforms/properties/ios/properties/codeSignIdentity"
                   },
                   "commandLineArguments": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/commandLineArguments"
+                    "$ref": "#/properties/platforms/properties/ios/properties/commandLineArguments"
                   },
                   "provisionProfileSpecifier": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisionProfileSpecifier"
+                    "$ref": "#/properties/platforms/properties/ios/properties/provisionProfileSpecifier"
                   },
                   "provisionProfileSpecifiers": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisionProfileSpecifiers"
+                    "$ref": "#/properties/platforms/properties/ios/properties/provisionProfileSpecifiers"
                   },
                   "allowProvisioningUpdates": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/allowProvisioningUpdates"
+                    "$ref": "#/properties/platforms/properties/ios/properties/allowProvisioningUpdates"
                   },
                   "provisioningProfiles": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/provisioningProfiles"
+                    "$ref": "#/properties/platforms/properties/ios/properties/provisioningProfiles"
                   },
                   "codeSignIdentities": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/codeSignIdentities"
+                    "$ref": "#/properties/platforms/properties/ios/properties/codeSignIdentities"
                   },
                   "systemCapabilities": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/systemCapabilities"
+                    "$ref": "#/properties/platforms/properties/ios/properties/systemCapabilities"
                   },
                   "entitlements": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/entitlements"
+                    "$ref": "#/properties/platforms/properties/ios/properties/entitlements"
                   },
                   "runScheme": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/runScheme"
+                    "$ref": "#/properties/platforms/properties/ios/properties/runScheme"
                   },
                   "sdk": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/sdk"
+                    "$ref": "#/properties/platforms/properties/ios/properties/sdk"
                   },
                   "testFlightId": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/testFlightId"
+                    "$ref": "#/properties/platforms/properties/ios/properties/testFlightId"
                   },
                   "firebaseId": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/firebaseId"
+                    "$ref": "#/properties/platforms/properties/ios/properties/firebaseId"
                   },
                   "exportOptions": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/exportOptions"
+                    "$ref": "#/properties/platforms/properties/ios/properties/exportOptions"
                   },
                   "reactNativeEngine": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/reactNativeEngine"
+                    "$ref": "#/properties/platforms/properties/android/properties/reactNativeEngine"
                   },
                   "templateXcode": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode"
+                    "$ref": "#/properties/platforms/properties/ios/properties/templateXcode"
                   },
                   "electronConfig": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/macos/properties/electronConfig"
+                    "$ref": "#/properties/platforms/properties/macos/properties/electronConfig"
                   },
                   "BrowserWindow": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/macos/properties/BrowserWindow"
+                    "$ref": "#/properties/platforms/properties/macos/properties/BrowserWindow"
                   }
                 },
                 "additionalProperties": false
@@ -2878,109 +2878,109 @@
           "description": "Allows to customize platforms configurations based on chosen build scheme `-s`"
         },
         "linux": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/web"
+          "$ref": "#/properties/platforms/properties/web"
         },
         "windows": {
           "type": "object",
           "properties": {
             "includedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+              "$ref": "#/properties/common/properties/includedPermissions"
             },
             "excludedPermissions": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+              "$ref": "#/properties/common/properties/excludedPermissions"
             },
             "id": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+              "$ref": "#/properties/common/properties/id"
             },
             "idSuffix": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+              "$ref": "#/properties/common/properties/idSuffix"
             },
             "version": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+              "$ref": "#/properties/common/properties/version"
             },
             "versionCode": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+              "$ref": "#/properties/common/properties/versionCode"
             },
             "versionFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+              "$ref": "#/properties/common/properties/versionFormat"
             },
             "versionCodeFormat": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+              "$ref": "#/properties/common/properties/versionCodeFormat"
             },
             "versionCodeOffset": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+              "$ref": "#/properties/common/properties/versionCodeOffset"
             },
             "title": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+              "$ref": "#/properties/common/properties/title"
             },
             "description": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+              "$ref": "#/properties/common/properties/description"
             },
             "author": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+              "$ref": "#/properties/common/properties/author"
             },
             "license": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+              "$ref": "#/properties/common/properties/license"
             },
             "includedFonts": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+              "$ref": "#/properties/common/properties/includedFonts"
             },
             "backgroundColor": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+              "$ref": "#/properties/common/properties/backgroundColor"
             },
             "splashScreen": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+              "$ref": "#/properties/common/properties/splashScreen"
             },
             "fontSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+              "$ref": "#/properties/common/properties/fontSources"
             },
             "assetSources": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+              "$ref": "#/properties/common/properties/assetSources"
             },
             "includedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+              "$ref": "#/properties/common/properties/includedPlugins"
             },
             "excludedPlugins": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+              "$ref": "#/properties/common/properties/excludedPlugins"
             },
             "runtime": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+              "$ref": "#/properties/common/properties/runtime"
             },
             "custom": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+              "$ref": "#/properties/common/properties/custom"
             },
             "extendPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
             },
             "assetFolderPlatform": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
             },
             "engine": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
             },
             "entryFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
             },
             "bundleAssets": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
             },
             "enableSourceMaps": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
             },
             "bundleIsDev": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
             },
             "getJsBundleFile": {
-              "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+              "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
             },
             "electronConfig": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/macos/properties/electronConfig"
+              "$ref": "#/properties/platforms/properties/macos/properties/electronConfig"
             },
             "BrowserWindow": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/macos/properties/BrowserWindow"
+              "$ref": "#/properties/platforms/properties/macos/properties/BrowserWindow"
             },
             "reactNativeEngine": {
-              "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/reactNativeEngine"
+              "$ref": "#/properties/platforms/properties/android/properties/reactNativeEngine"
             },
             "templateVSProject": {
               "type": "object",
@@ -3108,106 +3108,106 @@
                 "type": "object",
                 "properties": {
                   "includedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPermissions"
+                    "$ref": "#/properties/common/properties/includedPermissions"
                   },
                   "excludedPermissions": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPermissions"
+                    "$ref": "#/properties/common/properties/excludedPermissions"
                   },
                   "id": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/id"
+                    "$ref": "#/properties/common/properties/id"
                   },
                   "idSuffix": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/idSuffix"
+                    "$ref": "#/properties/common/properties/idSuffix"
                   },
                   "version": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/version"
+                    "$ref": "#/properties/common/properties/version"
                   },
                   "versionCode": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCode"
+                    "$ref": "#/properties/common/properties/versionCode"
                   },
                   "versionFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionFormat"
+                    "$ref": "#/properties/common/properties/versionFormat"
                   },
                   "versionCodeFormat": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeFormat"
+                    "$ref": "#/properties/common/properties/versionCodeFormat"
                   },
                   "versionCodeOffset": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/versionCodeOffset"
+                    "$ref": "#/properties/common/properties/versionCodeOffset"
                   },
                   "title": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/title"
+                    "$ref": "#/properties/common/properties/title"
                   },
                   "description": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/description"
+                    "$ref": "#/properties/common/properties/description"
                   },
                   "author": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/author"
+                    "$ref": "#/properties/common/properties/author"
                   },
                   "license": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/license"
+                    "$ref": "#/properties/common/properties/license"
                   },
                   "includedFonts": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedFonts"
+                    "$ref": "#/properties/common/properties/includedFonts"
                   },
                   "backgroundColor": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/backgroundColor"
+                    "$ref": "#/properties/common/properties/backgroundColor"
                   },
                   "splashScreen": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/splashScreen"
+                    "$ref": "#/properties/common/properties/splashScreen"
                   },
                   "fontSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/fontSources"
+                    "$ref": "#/properties/common/properties/fontSources"
                   },
                   "assetSources": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/assetSources"
+                    "$ref": "#/properties/common/properties/assetSources"
                   },
                   "includedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/includedPlugins"
+                    "$ref": "#/properties/common/properties/includedPlugins"
                   },
                   "excludedPlugins": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/excludedPlugins"
+                    "$ref": "#/properties/common/properties/excludedPlugins"
                   },
                   "runtime": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/runtime"
+                    "$ref": "#/properties/common/properties/runtime"
                   },
                   "custom": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/custom"
+                    "$ref": "#/properties/common/properties/custom"
                   },
                   "extendPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/extendPlatform"
                   },
                   "assetFolderPlatform": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/assetFolderPlatform"
                   },
                   "engine": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/engine"
                   },
                   "entryFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/entryFile"
                   },
                   "bundleAssets": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleAssets"
                   },
                   "enableSourceMaps": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/enableSourceMaps"
                   },
                   "bundleIsDev": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/bundleIsDev"
                   },
                   "getJsBundleFile": {
-                    "$ref": "#/definitions/rnv.app/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
+                    "$ref": "#/properties/common/properties/buildSchemes/additionalProperties/properties/getJsBundleFile"
                   },
                   "electronConfig": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/macos/properties/electronConfig"
+                    "$ref": "#/properties/platforms/properties/macos/properties/electronConfig"
                   },
                   "BrowserWindow": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/macos/properties/BrowserWindow"
+                    "$ref": "#/properties/platforms/properties/macos/properties/BrowserWindow"
                   },
                   "reactNativeEngine": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/reactNativeEngine"
+                    "$ref": "#/properties/platforms/properties/android/properties/reactNativeEngine"
                   },
                   "templateVSProject": {
-                    "$ref": "#/definitions/rnv.app/properties/platforms/properties/windows/properties/templateVSProject"
+                    "$ref": "#/properties/platforms/properties/windows/properties/templateVSProject"
                   }
                 },
                 "additionalProperties": false
@@ -3218,7 +3218,7 @@
           "description": "Allows to customize platforms configurations based on chosen build scheme `-s`"
         },
         "xbox": {
-          "$ref": "#/definitions/rnv.app/properties/platforms/properties/windows"
+          "$ref": "#/properties/platforms/properties/windows"
         }
       },
       "additionalProperties": false,
@@ -3353,11 +3353,6 @@
                     "default": false,
                     "description": "Marks plugin platform disabled"
                   },
-                  "forceLinking": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Packages that cannot be autolinked yet can still be added to MainApplication PackageList dynamically by setting this to true"
-                  },
                   "path": {
                     "type": "string",
                     "description": "Enables you to pass custom path to plugin. If undefined, the default `node_modules/[plugin-name]` will be used."
@@ -3381,16 +3376,16 @@
                     "type": "object",
                     "properties": {
                       "gradle_properties": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/gradle_properties"
+                        "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/gradle_properties"
                       },
                       "build_gradle": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/build_gradle"
+                        "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/build_gradle"
                       },
                       "app_build_gradle": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/app_build_gradle"
+                        "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/app_build_gradle"
                       },
                       "AndroidManifest_xml": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml"
+                        "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/AndroidManifest_xml"
                       },
                       "strings_xml": {
                         "type": "object",
@@ -3422,10 +3417,10 @@
                         "additionalProperties": false
                       },
                       "MainActivity_java": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/MainActivity_java"
+                        "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/MainActivity_java"
                       },
                       "MainApplication_java": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/android/properties/templateAndroid/properties/MainApplication_java"
+                        "$ref": "#/properties/platforms/properties/android/properties/templateAndroid/properties/MainApplication_java"
                       }
                     },
                     "additionalProperties": false
@@ -3434,25 +3429,22 @@
                 "additionalProperties": false
               },
               "androidtv": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/android"
               },
               "androidwear": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/android"
               },
               "firetv": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/android"
               },
               "ios": {
                 "type": "object",
                 "properties": {
                   "disabled": {
-                    "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/disabled"
-                  },
-                  "forceLinking": {
-                    "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/forceLinking"
+                    "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/disabled"
                   },
                   "path": {
-                    "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/path"
+                    "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/path"
                   },
                   "git": {
                     "type": "string",
@@ -3485,19 +3477,19 @@
                     "type": "object",
                     "properties": {
                       "Podfile": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/Podfile"
+                        "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/Podfile"
                       },
                       "project_pbxproj": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/project_pbxproj"
+                        "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/project_pbxproj"
                       },
                       "AppDelegate_mm": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm"
+                        "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_mm"
                       },
                       "AppDelegate_h": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_h"
+                        "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/AppDelegate_h"
                       },
                       "Info_plist": {
-                        "$ref": "#/definitions/rnv.app/properties/platforms/properties/ios/properties/templateXcode/properties/Info_plist"
+                        "$ref": "#/properties/platforms/properties/ios/properties/templateXcode/properties/Info_plist"
                       }
                     },
                     "additionalProperties": false
@@ -3517,55 +3509,52 @@
                 "additionalProperties": false
               },
               "tvos": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/ios"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/ios"
               },
               "tizen": {
                 "type": "object",
                 "properties": {
                   "disabled": {
-                    "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/disabled"
-                  },
-                  "forceLinking": {
-                    "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/forceLinking"
+                    "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/disabled"
                   },
                   "path": {
-                    "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/path"
+                    "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/android/properties/path"
                   }
                 },
                 "additionalProperties": false
               },
               "tizenmobile": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "tizenwatch": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "webos": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "web": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "webtv": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "chromecast": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "kaios": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "macos": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "linux": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "windows": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               },
               "xbox": {
-                "$ref": "#/definitions/rnv.app/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
+                "$ref": "#/properties/plugins/additionalProperties/anyOf/0/properties/tizen"
               }
             },
             "additionalProperties": false
@@ -3576,11 +3565,8 @@
         ]
       },
       "description": "Define all plugins available in your project. you can then use `includedPlugins` and `excludedPlugins` props to define active and inactive plugins per each app config"
-    },
-    "$schema": {
-      "type": "string",
-      "description": "schema definition"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-04/schema#"
 }

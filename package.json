@@ -45,7 +45,8 @@
         "@rnv/engine-rn-next": "1.0.0-rc.11",
         "@rnv/engine-rn-tvos": "1.0.0-rc.11",
         "@rnv/engine-rn-web": "1.0.0-rc.11",
-        "@rnv/engine-rn-windows": "1.0.0-rc.11"
+        "@rnv/engine-rn-windows": "1.0.0-rc.11",
+        "zod-to-json-schema": "^3.22.4"
     },
     "browserslist": {
         "production": [

@@ -3,7 +3,7 @@ import { updateMdFilesPlatforms } from './updateMdFilesPlatforms';
 import { updateMdFilesEngines } from './updateMdFilesEngines';
 import { generateChangelog, generateCombinedChangelog } from './changelog';
 import { generateEngineTaks } from './generateEngineDocs';
-import { generateDocsApiJsonConfig, generateDocsApiBuildConfig } from './generateDocsApiConfig';
+import { generateSchema } from './generateDocsApiConfig';
 
 const hooks = {
     generateDocs: async (c) => {
@@ -14,6 +14,7 @@ const hooks = {
         // await generateEngineTaks(c);
         // await generateDocsApiJsonConfig(c);
         // await generateDocsApiBuildConfig(c);
+        await generateSchema(c);
         await generateCombinedChangelog(c);
     },
     prePublish: async (c) => {
@@ -22,8 +23,8 @@ const hooks = {
         await updateMdFilesEngines(c);
         // await generateChangelog(c);
         // await generateEngineTaks(c);
-        await generateDocsApiJsonConfig(c);
-        await generateDocsApiBuildConfig(c);
+        // await generateDocsApiJsonConfig(c);
+        // await generateDocsApiBuildConfig(c);
         // await generateCombinedChangelog(c);
         return true;
     },
@@ -31,8 +32,8 @@ const hooks = {
     generateCombinedChangelog,
     updateMdFilesEngines,
     generateEngineTaks,
-    generateDocsApiBuildConfig,
-    generateDocsApiJsonConfig
+    // generateDocsApiBuildConfig,
+    // generateDocsApiJsonConfig
 };
 
 const pipes = {};
