@@ -11,7 +11,7 @@ const hooks = {
         await updateMdFilesPlatforms(c);
         await updateMdFilesEngines(c);
         // await generateChangelog(c);
-        // await generateEngineTaks(c);
+        await generateEngineTaks(c);
         // await generateDocsApiJsonConfig(c);
         // await generateDocsApiBuildConfig(c);
         await generateSchema(c);
