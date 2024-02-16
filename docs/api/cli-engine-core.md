@@ -17,7 +17,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## crypto decrypt
 
-> Decrypt encrypted project files into local ~/<wokspace>/<project>/..
+> Decrypt encrypted project files into local `~/<wokspace>/<project>/..`
 
 Supported Platforms:
 
@@ -54,7 +54,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## crypto encrypt
 
-> Encrypts secure files from ~/<wokspace>/<project>/.. to project
+> Encrypts secure files from `~/<wokspace>/<project>/..` to project
 
 Supported Platforms:
 
