@@ -1,3 +1,11 @@
+
+---
+id: rnv.global
+title: rnv.global Schema
+sidebar_label: rnv.global
+---
+
+
 # rnv.global Schema Definition
 
 The schema defines the following properties:

@@ -1,3 +1,11 @@
+
+---
+id: rnv.plugins
+title: rnv.plugins Schema
+sidebar_label: rnv.plugins
+---
+
+
 # rnv.plugins Schema Definition
 
 The schema defines the following properties:

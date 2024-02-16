@@ -23,13 +23,13 @@ Following Config reference applies to all `renative.json` files, including:
 
 ## API references
 
-[renative.json](/docs/schemas/rnv.project)
+[renative.json](schemas/rnv.project)
 
-[renative.plugin.json](/docs/schemas/rnv.plugin)
+[renative.plugin.json](schemas/rnv.plugin)
 
-[renative.engine.json](/docs/schemas/rnv.engine)
+[renative.engine.json](schemas/rnv.engine)
 
-[renative.template.json](/docs/schemas/rnv.template)
+[renative.template.json](schemas/rnv.template)
 
-[renative.private.json](/docs/schemas/rnv.private)
+[renative.private.json](schemas/rnv.private)
 

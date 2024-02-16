@@ -1,3 +1,11 @@
+
+---
+id: rnv.local
+title: rnv.local Schema
+sidebar_label: rnv.local
+---
+
+
 # rnv.local Schema Definition
 
 The schema defines the following properties:

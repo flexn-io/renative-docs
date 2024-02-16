@@ -41,11 +41,11 @@ const _generateSchemaFile = (opts: { schema: z.ZodObject<any>; schemaId: string 
     const jsonSchema: unknown = zodToJsonSchema(schema);
     jsonSchema['$schema'] = 'http://json-schema.org/draft-04/schema#';
 
-    const destFolder = path.join(ctx.paths.project.dir, `docs/schemas`);
+    const destFolder = path.join(ctx.paths.project.dir, `docs/api/schemas`);
     if (!fs.existsSync(destFolder)) {
         fs.mkdirSync(destFolder, { recursive: true });
     }
-    const destPath = path.join(destFolder, `${schemaId}.mdx`);
+    const destPath = path.join(destFolder, `${schemaId}.md`);
     // console.log(generate(jsonSchema));
     fs.writeFileSync(destPath, generate(jsonSchema, schemaId));
 };
@@ -221,7 +221,15 @@ const generate = (schema: any, id: string) => {
         return map
     }, {})
 
-    let text: string[] = [`# ${id} Schema Definition`]
+    const header = `
+---
+id: ${id}
+title: ${id} Schema
+sidebar_label: ${id}
+---
+`
+
+    let text: string[] = [header, `# ${id} Schema Definition`]
     let hashtags = '#'
 
     if (schema.title) {

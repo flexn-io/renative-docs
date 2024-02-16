@@ -1,3 +1,11 @@
+
+---
+id: rnv.template
+title: rnv.template Schema
+sidebar_label: rnv.template
+---
+
+
 # rnv.template Schema Definition
 
 The schema defines the following properties:

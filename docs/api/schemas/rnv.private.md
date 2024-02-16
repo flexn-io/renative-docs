@@ -1,3 +1,11 @@
+
+---
+id: rnv.private
+title: rnv.private Schema
+sidebar_label: rnv.private
+---
+
+
 # rnv.private Schema Definition
 
 The schema defines the following properties:
