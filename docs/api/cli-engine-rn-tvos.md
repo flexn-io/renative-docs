@@ -1,7 +1,7 @@
 ---
-id: cli-engine-rn-next
-title: Engine Rn Next CLI Reference
-sidebar_label: Engine Rn Next
+id: cli-engine-rn-tvos
+title: Engine Rn Tvos CLI Reference
+sidebar_label: Engine Rn Tvos
 ---
 
 
@@ -9,19 +9,19 @@ sidebar_label: Engine Rn Next
 
 ---
 
-This command reference applies if your platform uses engine `engine-rn-next`.
+This command reference applies if your platform uses engine `engine-rn-tvos`.
 
-More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ---
 
 ## run
 
-> Run your app in browser
+> Run your app on target device or emulator
 
 Supported Platforms:
 
-`web`, `chromecast`
+`tvos`, `androidtv`, `firetv`
 
 Example:
 
@@ -76,9 +76,9 @@ Options:
 
 ---
 
-This command reference applies if your platform uses engine `engine-rn-next`.
+This command reference applies if your platform uses engine `engine-rn-tvos`.
 
-More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ---
 
@@ -88,7 +88,7 @@ More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
 
 Supported Platforms:
 
-`web`, `chromecast`
+`tvos`, `androidtv`, `firetv`
 
 Example:
 
@@ -127,9 +127,9 @@ Options:
 
 ---
 
-This command reference applies if your platform uses engine `engine-rn-next`.
+This command reference applies if your platform uses engine `engine-rn-tvos`.
 
-More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ---
 
@@ -139,7 +139,7 @@ More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
 
 Supported Platforms:
 
-`web`, `chromecast`
+`tvos`, `androidtv`, `firetv`
 
 Example:
 
@@ -178,9 +178,9 @@ Options:
 
 ---
 
-This command reference applies if your platform uses engine `engine-rn-next`.
+This command reference applies if your platform uses engine `engine-rn-tvos`.
 
-More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ---
 
@@ -190,7 +190,7 @@ More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
 
 Supported Platforms:
 
-`web`, `chromecast`
+`tvos`, `androidtv`, `firetv`
 
 Example:
 
@@ -229,9 +229,9 @@ Options:
 
 ---
 
-This command reference applies if your platform uses engine `engine-rn-next`.
+This command reference applies if your platform uses engine `engine-rn-tvos`.
 
-More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ---
 
@@ -241,7 +241,7 @@ More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
 
 Supported Platforms:
 
-`web`, `chromecast`
+`tvos`, `androidtv`, `firetv`
 
 Example:
 
@@ -280,9 +280,9 @@ Options:
 
 ---
 
-This command reference applies if your platform uses engine `engine-rn-next`.
+This command reference applies if your platform uses engine `engine-rn-tvos`.
 
-More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ---
 
@@ -292,7 +292,7 @@ More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
 
 Supported Platforms:
 
-`web`, `chromecast`
+`tvos`, `androidtv`, `firetv`
 
 Example:
 
@@ -331,9 +331,9 @@ Options:
 
 ---
 
-This command reference applies if your platform uses engine `engine-rn-next`.
+This command reference applies if your platform uses engine `engine-rn-tvos`.
 
-More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ---
 
@@ -343,7 +343,7 @@ More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
 
 Supported Platforms:
 
-`web`, `chromecast`
+`tvos`, `androidtv`, `firetv`
 
 Example:
 
@@ -382,9 +382,9 @@ Options:
 
 ---
 
-This command reference applies if your platform uses engine `engine-rn-next`.
+This command reference applies if your platform uses engine `engine-rn-tvos`.
 
-More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ---
 
@@ -394,12 +394,197 @@ More info at [Engine Rn Next Guide](cli-engine-rn-next.md)
 
 Supported Platforms:
 
-`web`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
 ```bash
 rnv debug
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-rn-tvos`.
+
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
+
+---
+
+## crypto installCerts
+
+> 
+
+Supported Platforms:
+
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
+
+Example:
+
+```bash
+rnv crypto installCerts
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-rn-tvos`.
+
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
+
+---
+
+## crypto updateProfile
+
+> Update provisioning profile
+
+Supported Platforms:
+
+`tvos`
+
+Example:
+
+```bash
+rnv crypto updateProfile
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-rn-tvos`.
+
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
+
+---
+
+## crypto updateProfiles
+
+> 
+
+Supported Platforms:
+
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
+
+Example:
+
+```bash
+rnv crypto updateProfiles
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-rn-tvos`.
+
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
+
+---
+
+## crypto installProfiles
+
+> 
+
+Supported Platforms:
+
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
+
+Example:
+
+```bash
+rnv crypto installProfiles
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-rn-tvos`.
+
+More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
+
+---
+
+## log
+
+> Attach logger to device or emulator and print out logs
+
+Supported Platforms:
+
+`tvos`, `androidtv`, `firetv`
+
+Example:
+
+```bash
+rnv log
 ```
 
 Options:

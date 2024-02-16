@@ -1,7 +1,7 @@
 ---
 id: cli-engine-rn-electron
-title: Engine Electron CLI Reference
-sidebar_label: engine-rn-electron
+title: Engine Rn Electron CLI Reference
+sidebar_label: Engine Rn Electron
 ---
 
 
@@ -11,7 +11,7 @@ sidebar_label: engine-rn-electron
 
 This command reference applies if your platform uses engine `engine-rn-electron`.
 
-More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
+More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ---
 
@@ -21,7 +21,7 @@ More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
 
 Supported Platforms:
 
-`macos`, `windows`
+`macos`, `windows`, `linux`
 
 Example:
 
@@ -78,7 +78,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-electron`.
 
-More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
+More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ---
 
@@ -88,7 +88,7 @@ More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
 
 Supported Platforms:
 
-`macos`, `windows`
+`macos`, `windows`, `linux`
 
 Example:
 
@@ -129,7 +129,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-electron`.
 
-More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
+More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ---
 
@@ -139,7 +139,7 @@ More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
 
 Supported Platforms:
 
-`macos`, `windows`
+`macos`, `windows`, `linux`
 
 Example:
 
@@ -180,7 +180,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-electron`.
 
-More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
+More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ---
 
@@ -190,7 +190,7 @@ More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
 
 Supported Platforms:
 
-`macos`, `windows`
+`macos`, `windows`, `linux`
 
 Example:
 
@@ -231,7 +231,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-electron`.
 
-More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
+More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ---
 
@@ -241,7 +241,7 @@ More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
 
 Supported Platforms:
 
-`macos`, `windows`
+`macos`, `windows`, `linux`
 
 Example:
 
@@ -282,7 +282,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-electron`.
 
-More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
+More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ---
 
@@ -292,7 +292,7 @@ More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
 
 Supported Platforms:
 
-`macos`, `windows`
+`macos`, `windows`, `linux`
 
 Example:
 
@@ -333,7 +333,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-electron`.
 
-More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
+More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ---
 
@@ -343,7 +343,7 @@ More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
 
 Supported Platforms:
 
-`macos`, `windows`
+`macos`, `windows`, `linux`
 
 Example:
 
@@ -384,7 +384,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-electron`.
 
-More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
+More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ---
 
@@ -394,7 +394,7 @@ More info at [Engine RN Electron Guide](../engines/engine-rn-electron.md)
 
 Supported Platforms:
 
-`macos`, `windows`
+`macos`, `windows`, `linux`
 
 Example:
 

@@ -1,7 +1,7 @@
 ---
 id: cli-engine-core
 title: Engine Core CLI Reference
-sidebar_label: engine-core
+sidebar_label: Engine Core
 ---
 
 
@@ -11,17 +11,17 @@ sidebar_label: engine-core
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
 ## crypto decrypt
 
-> Decrypt encrypted project files into local `~/<wokspace>/<project>/..`
+> Decrypt encrypted project files into local ~/<wokspace>/<project>/..
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -48,17 +48,17 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
 ## crypto encrypt
 
-> Encrypts secure files from `~/<wokspace>/<project>/..` to project
+> Encrypts secure files from ~/<wokspace>/<project>/.. to project
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -85,7 +85,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -95,7 +95,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -122,7 +122,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -132,7 +132,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -159,7 +159,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -169,7 +169,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -196,7 +196,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -206,7 +206,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -233,7 +233,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -243,7 +243,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -270,7 +270,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -280,7 +280,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -307,7 +307,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -317,7 +317,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -344,7 +344,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -354,7 +354,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -381,7 +381,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -391,7 +391,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -418,7 +418,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -428,7 +428,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -455,7 +455,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -465,7 +465,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -492,7 +492,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -502,7 +502,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -529,7 +529,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -539,7 +539,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -566,7 +566,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -576,7 +576,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -603,7 +603,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -613,7 +613,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -640,7 +640,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -650,7 +650,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -677,7 +677,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -687,7 +687,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -716,7 +716,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -726,7 +726,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -753,7 +753,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -763,7 +763,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -790,118 +790,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
-
----
-
-## fastlane
-
-> Run fstalane commands directly
-
-Supported Platforms:
-
-`ios`, `tvos`, `android`, `androidtv`, `firetv`, `androidwear`
-
-Example:
-
-```bash
-rnv fastlane
-```
-
-Options:
-
-`-i`, `--info` - Show full debug Info
-
-`--ci` - CI/CD flag so it wont ask questions
-
-`--mono` - Monochrome console output without chalk
-
-`--maxErrorLength` - Specify how many characters each error should display. Default 200
-
-`-o`, `--only` - run Only top command (Skip dependencies)
-
-
-
-
----
-
-This command reference applies if your platform uses engine `engine-core`.
-
-
-
----
-
-## publish
-
-> 
-
-Supported Platforms:
-
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
-
-Example:
-
-```bash
-rnv publish
-```
-
-Options:
-
-`-i`, `--info` - Show full debug Info
-
-`--ci` - CI/CD flag so it wont ask questions
-
-`--mono` - Monochrome console output without chalk
-
-`--maxErrorLength` - Specify how many characters each error should display. Default 200
-
-`-o`, `--only` - run Only top command (Skip dependencies)
-
-
-
-
----
-
-This command reference applies if your platform uses engine `engine-core`.
-
-
-
----
-
-## pkg
-
-> 
-
-Supported Platforms:
-
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
-
-Example:
-
-```bash
-rnv pkg
-```
-
-Options:
-
-`-i`, `--info` - Show full debug Info
-
-`--ci` - CI/CD flag so it wont ask questions
-
-`--mono` - Monochrome console output without chalk
-
-`--maxErrorLength` - Specify how many characters each error should display. Default 200
-
-`-o`, `--only` - run Only top command (Skip dependencies)
-
-
-
-
----
-
-This command reference applies if your platform uses engine `engine-core`.
-
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -911,7 +800,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -938,17 +827,17 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
 ## config
 
-> Edit or display RNV configs
+> Display RNV config
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -975,7 +864,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -985,7 +874,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1012,7 +901,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1022,7 +911,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1049,7 +938,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1059,7 +948,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1086,7 +975,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1096,7 +985,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1123,7 +1012,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1133,7 +1022,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1160,7 +1049,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1170,7 +1059,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1211,7 +1100,44 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
+More info at [Engine Core Guide](cli-engine-core.md)
 
+---
+
+## app create
+
+> Create new app config
+
+Supported Platforms:
+
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
+
+Example:
+
+```bash
+rnv app create
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-core`.
+
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1221,7 +1147,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1248,7 +1174,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1258,7 +1184,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1285,7 +1211,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1295,7 +1221,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1322,7 +1248,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1332,7 +1258,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1359,7 +1285,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1369,7 +1295,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1396,7 +1322,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1406,7 +1332,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1433,7 +1359,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1443,7 +1369,7 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -1470,7 +1396,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-core`.
 
-
+More info at [Engine Core Guide](cli-engine-core.md)
 
 ---
 
@@ -1480,12 +1406,123 @@ This command reference applies if your platform uses engine `engine-core`.
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
 ```bash
 rnv unlink
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-core`.
+
+More info at [Engine Core Guide](cli-engine-core.md)
+
+---
+
+## telemetry status
+
+> Show current rnv telemetry status on your machine
+
+Supported Platforms:
+
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
+
+Example:
+
+```bash
+rnv telemetry status
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-core`.
+
+More info at [Engine Core Guide](cli-engine-core.md)
+
+---
+
+## telemetry enable
+
+> Enables rnv telemetry on your machine
+
+Supported Platforms:
+
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
+
+Example:
+
+```bash
+rnv telemetry enable
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-core`.
+
+More info at [Engine Core Guide](cli-engine-core.md)
+
+---
+
+## telemetry disable
+
+> Disables rnv telemetry on your machine
+
+Supported Platforms:
+
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
+
+Example:
+
+```bash
+rnv telemetry disable
 ```
 
 Options:

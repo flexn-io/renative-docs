@@ -1,7 +1,7 @@
 ---
 id: cli-engine-rn
-title: Engine RN CLI Reference
-sidebar_label: engine-rn
+title: Engine Rn CLI Reference
+sidebar_label: Engine Rn
 ---
 
 
@@ -11,7 +11,7 @@ sidebar_label: engine-rn
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [Engine RN Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -21,7 +21,7 @@ More info at [Engine RN Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`, `android`, `androidtv`, `firetv`, `androidwear`
+`ios`, `macos`, `android`, `androidtv`, `firetv`, `androidwear`
 
 Example:
 
@@ -78,7 +78,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -88,7 +88,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`, `android`, `androidtv`, `firetv`, `androidwear`
+`ios`, `macos`, `android`, `androidtv`, `firetv`, `androidwear`
 
 Example:
 
@@ -129,7 +129,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -139,7 +139,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`, `android`, `androidtv`, `androidwear`
+`ios`, `android`, `androidtv`, `androidwear`, `macos`
 
 Example:
 
@@ -180,7 +180,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -190,7 +190,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`, `android`, `androidtv`, `firetv`, `androidwear`
+`ios`, `macos`, `android`, `androidtv`, `firetv`, `androidwear`
 
 Example:
 
@@ -231,7 +231,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -241,7 +241,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`, `android`, `androidtv`, `firetv`, `androidwear`
+`ios`, `macos`, `android`, `androidtv`, `firetv`, `androidwear`
 
 Example:
 
@@ -282,7 +282,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -292,7 +292,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`, `android`, `androidtv`, `firetv`, `androidwear`
+`ios`, `macos`, `android`, `androidtv`, `firetv`, `androidwear`
 
 Example:
 
@@ -333,7 +333,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -343,7 +343,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`, `android`, `androidtv`, `firetv`, `androidwear`
+`ios`, `macos`, `android`, `androidtv`, `firetv`, `androidwear`
 
 Example:
 
@@ -384,7 +384,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -394,7 +394,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -421,7 +421,58 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
+
+---
+
+## eject
+
+> Eject current project app to self contained native project
+
+Supported Platforms:
+
+`ios`, `macos`, `android`, `androidtv`, `firetv`, `androidwear`
+
+Example:
+
+```bash
+rnv eject
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
+`-r`, `--reset` - also perform reset of platform build
+
+`-R`, `--resetHard` - also perform reset of platform platform and platform assets
+
+`-e`, `--engine` - engine to be used (next)
+
+`-a`, `--resetAssets` - also perform reset of platform assets
+
+`-c`, `--appConfigID` - select specific app Config id
+
+`-s`, `--scheme` - select build Scheme
+
+`-p`, `--platform` - select specific Platform
+
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-rn`.
+
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -431,7 +482,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -458,7 +509,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -468,7 +519,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`
+`ios`
 
 Example:
 
@@ -495,7 +546,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -505,7 +556,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -532,7 +583,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -542,7 +593,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
 
 Example:
 
@@ -569,7 +620,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn`.
 
-More info at [undefined Guide](../engines/engine-rn.md)
+More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ---
 
@@ -579,7 +630,7 @@ More info at [undefined Guide](../engines/engine-rn.md)
 
 Supported Platforms:
 
-`ios`, `tvos`, `android`, `androidtv`, `firetv`, `androidwear`
+`ios`, `android`, `androidtv`, `firetv`, `androidwear`
 
 Example:
 

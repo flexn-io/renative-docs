@@ -1,7 +1,7 @@
 ---
 id: cli-engine-rn-web
-title: Engine RN Web CLI Reference
-sidebar_label: engine-rn-web
+title: Engine Rn Web CLI Reference
+sidebar_label: Engine Rn Web
 ---
 
 
@@ -11,7 +11,7 @@ sidebar_label: engine-rn-web
 
 This command reference applies if your platform uses engine `engine-rn-web`.
 
-More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
+More info at [Engine Rn Web Guide](cli-engine-rn-web.md)
 
 ---
 
@@ -21,7 +21,7 @@ More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
 
 Supported Platforms:
 
-`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `chromecast`
 
 Example:
 
@@ -78,7 +78,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-web`.
 
-More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
+More info at [Engine Rn Web Guide](cli-engine-rn-web.md)
 
 ---
 
@@ -88,7 +88,7 @@ More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
 
 Supported Platforms:
 
-`web`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`web`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `chromecast`
 
 Example:
 
@@ -129,7 +129,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-web`.
 
-More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
+More info at [Engine Rn Web Guide](cli-engine-rn-web.md)
 
 ---
 
@@ -139,7 +139,7 @@ More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
 
 Supported Platforms:
 
-`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `chromecast`
 
 Example:
 
@@ -180,7 +180,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-web`.
 
-More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
+More info at [Engine Rn Web Guide](cli-engine-rn-web.md)
 
 ---
 
@@ -190,7 +190,7 @@ More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
 
 Supported Platforms:
 
-`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `chromecast`
 
 Example:
 
@@ -231,7 +231,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-web`.
 
-More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
+More info at [Engine Rn Web Guide](cli-engine-rn-web.md)
 
 ---
 
@@ -241,7 +241,7 @@ More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
 
 Supported Platforms:
 
-`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `chromecast`
 
 Example:
 
@@ -282,7 +282,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-web`.
 
-More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
+More info at [Engine Rn Web Guide](cli-engine-rn-web.md)
 
 ---
 
@@ -292,7 +292,7 @@ More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
 
 Supported Platforms:
 
-`web`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`web`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `chromecast`
 
 Example:
 
@@ -333,7 +333,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-web`.
 
-More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
+More info at [Engine Rn Web Guide](cli-engine-rn-web.md)
 
 ---
 
@@ -343,7 +343,7 @@ More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
 
 Supported Platforms:
 
-`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `firefoxos`, `firefoxtv`, `chromecast`
+`web`, `webtv`, `tizen`, `webos`, `tizenmobile`, `tizenwatch`, `kaios`, `chromecast`
 
 Example:
 
@@ -384,7 +384,7 @@ Options:
 
 This command reference applies if your platform uses engine `engine-rn-web`.
 
-More info at [Engine RN Web Guide](../engines/engine-rn-web.md)
+More info at [Engine Rn Web Guide](cli-engine-rn-web.md)
 
 ---
 

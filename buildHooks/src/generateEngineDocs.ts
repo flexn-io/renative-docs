@@ -1,8 +1,21 @@
-import { writeFileSync, SUPPORTED_PLATFORMS, logHook, getRegisteredEngines } from '@rnv/core';
+import { writeFileSync, SUPPORTED_PLATFORMS, logHook, getRegisteredEngines, registerAllPlatformEngines } from '@rnv/core';
 import path from 'path';
+
+const kebabToTitleCase = (string: string): string => {
+  return string.split('-')
+    .map(word => {
+      return word.slice(0, 1).toUpperCase() + word.slice(1)
+    })
+    .join(' ')
+}
 
 export const generateEngineTaks = async (c) => {
     logHook('generateEngineTaks');
+
+    registerAllPlatformEngines(c);
+
+    // console.log(c.runtime)
+    // console.log(c.buildConfig?.engines)
 
     const engines = getRegisteredEngines(c);
 
@@ -16,7 +29,10 @@ const getSupportedPlatforms = (c, t) => (t.platforms.length
     : SUPPORTED_PLATFORMS.map(v => `\`${v}\``).join(', '));
 
 const _generateEngineTaks = (c, engine) => {
-    const { id, title } = engine.config;
+
+    console.log(engine)
+    const { id } = engine.config;
+    const title = kebabToTitleCase(id);
     let output = `---
 id: cli-${id}
 title: ${title} CLI Reference
@@ -34,7 +50,7 @@ sidebar_label: ${title}
 
 This command reference applies if your platform uses engine \`${id}\`.
 
-More info at [${title} Guide](${id}.md)
+More info at [${title} Guide](cli-${id}.md)
 
 ---
 
@@ -66,5 +82,5 @@ ${t.params.map((v) => {
 
     output += 'test';
 
-    writeFileSync(path.join(c.paths.project.dir, `/docs/api/${id}.md`), output);
+    writeFileSync(path.join(c.paths.project.dir, `/docs/api/cli-${id}.md`), output);
 };
