@@ -20,8 +20,8 @@ import fs from 'fs';
 
 
 export const generateSchema = async () => {
-    // _generateSchemaFile({ schema: RootProjectSchema, schemaId: 'rnv.project' });
-    // _generateSchemaFile({ schema: RootAppSchema, schemaId: 'rnv.app' });
+    _generateSchemaFile({ schema: RootProjectSchema, schemaId: 'rnv.project' });
+    _generateSchemaFile({ schema: RootAppSchema, schemaId: 'rnv.app' });
     _generateSchemaFile({ schema: RootLocalSchema, schemaId: 'rnv.local' });
     _generateSchemaFile({ schema: RootEngineSchema, schemaId: 'rnv.engine' });
     _generateSchemaFile({ schema: RootGlobalSchema, schemaId: 'rnv.global' });

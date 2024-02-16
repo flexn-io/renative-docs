@@ -1,4 +1,4 @@
-import { writeFileSync } from '@rnv/core';
+import { writeFileSync, registerAllPlatformEngines } from '@rnv/core';
 import path from 'path';
 import fs from 'fs';
 
@@ -32,6 +32,7 @@ ${extContent}
 const _getExtensionContent = (c, platform) => {
     let out = `Extenstions are defined via engines. Engines with ${platform} support: \n`;
 
+    registerAllPlatformEngines(c);
     const engines = c.runtime.enginesById;
 
     Object.values(engines).forEach((engine) => {
