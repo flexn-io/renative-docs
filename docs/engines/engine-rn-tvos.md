@@ -20,7 +20,7 @@ React native based engine with added support for tvOS platform. Runs standard re
 
 ## Required Plugins
 
-[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-tvos](../plugins/overview#react-native-tvos), [react-native-web](../plugins/overview#react-native-web), [@react-native-community/cli-platform-ios](../plugins/overview#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins/overview#react-native-communitycli)
+[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-tvos](../plugins/overview#react-native-tvos), [react-native-web](../plugins/overview#react-native-web)
 
 ## Required NPM Packages
 
@@ -88,7 +88,8 @@ React native based engine with added support for tvOS platform. Runs standard re
 | `ts` | 48 |
 | `mjs` | 49 |
 | `json` | 50 |
-| `wasm` | 51 |
+| `cjs` | 51 |
+| `wasm` | 52 |
 ### androidtv
 
 | Extension | Priority  |
@@ -151,7 +152,8 @@ React native based engine with added support for tvOS platform. Runs standard re
 | `ts` | 56 |
 | `mjs` | 57 |
 | `json` | 58 |
-| `wasm` | 59 |
+| `cjs` | 59 |
+| `wasm` | 60 |
 ### firetv
 
 | Extension | Priority  |
@@ -230,7 +232,8 @@ React native based engine with added support for tvOS platform. Runs standard re
 | `ts` | 72 |
 | `mjs` | 73 |
 | `json` | 74 |
-| `wasm` | 75 |
+| `cjs` | 75 |
+| `wasm` | 76 |
 
 
 

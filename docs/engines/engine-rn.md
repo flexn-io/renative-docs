@@ -20,7 +20,7 @@ Default react-native based engine. Runs standard react native apps with native s
 
 ## Required Plugins
 
-[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [@react-native-community/cli-platform-ios](../plugins/overview#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins/overview#react-native-communitycli)
+[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native)
 
 ## Required NPM Packages
 
@@ -94,7 +94,8 @@ Default react-native based engine. Runs standard react native apps with native s
 | `ts` | 48 |
 | `mjs` | 49 |
 | `json` | 50 |
-| `wasm` | 51 |
+| `cjs` | 51 |
+| `wasm` | 52 |
 ### android
 
 | Extension | Priority  |
@@ -149,7 +150,8 @@ Default react-native based engine. Runs standard react native apps with native s
 | `ts` | 48 |
 | `mjs` | 49 |
 | `json` | 50 |
-| `wasm` | 51 |
+| `cjs` | 51 |
+| `wasm` | 52 |
 ### androidtv
 
 | Extension | Priority  |
@@ -212,7 +214,8 @@ Default react-native based engine. Runs standard react native apps with native s
 | `ts` | 56 |
 | `mjs` | 57 |
 | `json` | 58 |
-| `wasm` | 59 |
+| `cjs` | 59 |
+| `wasm` | 60 |
 ### firetv
 
 | Extension | Priority  |
@@ -291,7 +294,8 @@ Default react-native based engine. Runs standard react native apps with native s
 | `ts` | 72 |
 | `mjs` | 73 |
 | `json` | 74 |
-| `wasm` | 75 |
+| `cjs` | 75 |
+| `wasm` | 76 |
 ### androidwear
 
 | Extension | Priority  |
@@ -354,7 +358,8 @@ Default react-native based engine. Runs standard react native apps with native s
 | `ts` | 56 |
 | `mjs` | 57 |
 | `json` | 58 |
-| `wasm` | 59 |
+| `cjs` | 59 |
+| `wasm` | 60 |
 ### macos
 
 | Extension | Priority  |
@@ -417,7 +422,8 @@ Default react-native based engine. Runs standard react native apps with native s
 | `ts` | 56 |
 | `mjs` | 57 |
 | `json` | 58 |
-| `wasm` | 59 |
+| `cjs` | 59 |
+| `wasm` | 60 |
 
 
 

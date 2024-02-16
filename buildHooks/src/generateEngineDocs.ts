@@ -30,7 +30,6 @@ const getSupportedPlatforms = (c, t) => (t.platforms.length
 
 const _generateEngineTaks = (c, engine) => {
 
-    console.log(engine)
     const { id } = engine.config;
     const title = kebabToTitleCase(id);
     let output = `---
@@ -65,7 +64,7 @@ ${getSupportedPlatforms(c, t)}
 Example:
 
 \`\`\`bash
-rnv ${t.task}
+npx rnv ${t.task}
 \`\`\`
 
 Options:

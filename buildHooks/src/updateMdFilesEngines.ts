@@ -1,10 +1,12 @@
-import { writeFileSync } from '@rnv/core';
+import { writeFileSync, registerAllPlatformEngines } from '@rnv/core';
 import path from 'path';
 import fs from 'fs';
 
 const cleanUrl = v => v.replace('@', '').replace('/', '');
 
 export const updateMdFilesEngines = async (c) => {
+    
+    registerAllPlatformEngines(c);
     const engines = c.runtime.enginesById;
 
     Object.values(engines).forEach((engine) => {

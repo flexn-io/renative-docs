@@ -20,7 +20,7 @@ React native based engine with web transpiler provided by react-native-web and n
 
 ## Required Plugins
 
-[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web), [@react-native-community/cli-platform-ios](../plugins/overview#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins/overview#react-native-communitycli)
+[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web)
 
 ## Required NPM Packages
 
@@ -96,7 +96,8 @@ React native based engine with web transpiler provided by react-native-web and n
 | `ts` | 56 |
 | `mjs` | 57 |
 | `json` | 58 |
-| `wasm` | 59 |
+| `cjs` | 59 |
+| `wasm` | 60 |
 ### windows
 
 | Extension | Priority  |
@@ -159,7 +160,8 @@ React native based engine with web transpiler provided by react-native-web and n
 | `ts` | 56 |
 | `mjs` | 57 |
 | `json` | 58 |
-| `wasm` | 59 |
+| `cjs` | 59 |
+| `wasm` | 60 |
 ### linux
 
 | Extension | Priority  |
@@ -222,7 +224,8 @@ React native based engine with web transpiler provided by react-native-web and n
 | `ts` | 56 |
 | `mjs` | 57 |
 | `json` | 58 |
-| `wasm` | 59 |
+| `cjs` | 59 |
+| `wasm` | 60 |
 
 
 

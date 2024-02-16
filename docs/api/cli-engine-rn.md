@@ -26,7 +26,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv run
+npx rnv run
 ```
 
 Options:
@@ -93,7 +93,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv package
+npx rnv package
 ```
 
 Options:
@@ -144,7 +144,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv build
+npx rnv build
 ```
 
 Options:
@@ -195,7 +195,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv configure
+npx rnv configure
 ```
 
 Options:
@@ -246,7 +246,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv start
+npx rnv start
 ```
 
 Options:
@@ -297,7 +297,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv export
+npx rnv export
 ```
 
 Options:
@@ -348,7 +348,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv deploy
+npx rnv deploy
 ```
 
 Options:
@@ -399,7 +399,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv debug
+npx rnv debug
 ```
 
 Options:
@@ -436,7 +436,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv eject
+npx rnv eject
 ```
 
 Options:
@@ -487,7 +487,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv crypto installCerts
+npx rnv crypto installCerts
 ```
 
 Options:
@@ -524,7 +524,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv crypto updateProfile
+npx rnv crypto updateProfile
 ```
 
 Options:
@@ -561,7 +561,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv crypto updateProfiles
+npx rnv crypto updateProfiles
 ```
 
 Options:
@@ -598,7 +598,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv crypto installProfiles
+npx rnv crypto installProfiles
 ```
 
 Options:
@@ -635,7 +635,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv log
+npx rnv log
 ```
 
 Options:

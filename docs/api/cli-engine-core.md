@@ -26,7 +26,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv crypto decrypt
+npx rnv crypto decrypt
 ```
 
 Options:
@@ -63,7 +63,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv crypto encrypt
+npx rnv crypto encrypt
 ```
 
 Options:
@@ -100,7 +100,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv platform eject
+npx rnv platform eject
 ```
 
 Options:
@@ -137,7 +137,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv platform connect
+npx rnv platform connect
 ```
 
 Options:
@@ -174,7 +174,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv platform list
+npx rnv platform list
 ```
 
 Options:
@@ -211,7 +211,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv platform configure
+npx rnv platform configure
 ```
 
 Options:
@@ -248,7 +248,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv platform setup
+npx rnv platform setup
 ```
 
 Options:
@@ -285,7 +285,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv template add
+npx rnv template add
 ```
 
 Options:
@@ -322,7 +322,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv template apply
+npx rnv template apply
 ```
 
 Options:
@@ -359,7 +359,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv template list
+npx rnv template list
 ```
 
 Options:
@@ -396,7 +396,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv plugin add
+npx rnv plugin add
 ```
 
 Options:
@@ -433,7 +433,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv plugin list
+npx rnv plugin list
 ```
 
 Options:
@@ -470,7 +470,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv plugin update
+npx rnv plugin update
 ```
 
 Options:
@@ -507,7 +507,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv workspace list
+npx rnv workspace list
 ```
 
 Options:
@@ -544,7 +544,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv workspace add
+npx rnv workspace add
 ```
 
 Options:
@@ -581,7 +581,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv workspace connect
+npx rnv workspace connect
 ```
 
 Options:
@@ -618,7 +618,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv workspace update
+npx rnv workspace update
 ```
 
 Options:
@@ -655,7 +655,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv hooks list
+npx rnv hooks list
 ```
 
 Options:
@@ -692,7 +692,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv hooks run
+npx rnv hooks run
 ```
 
 Options:
@@ -731,7 +731,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv hooks pipes
+npx rnv hooks pipes
 ```
 
 Options:
@@ -768,7 +768,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv clean
+npx rnv clean
 ```
 
 Options:
@@ -805,7 +805,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv status
+npx rnv status
 ```
 
 Options:
@@ -842,7 +842,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv config
+npx rnv config
 ```
 
 Options:
@@ -879,7 +879,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv help
+npx rnv help
 ```
 
 Options:
@@ -916,7 +916,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv new
+npx rnv new
 ```
 
 Options:
@@ -953,7 +953,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv install
+npx rnv install
 ```
 
 Options:
@@ -990,7 +990,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv project configure
+npx rnv project configure
 ```
 
 Options:
@@ -1027,7 +1027,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv project upgrade
+npx rnv project upgrade
 ```
 
 Options:
@@ -1064,7 +1064,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv app configure
+npx rnv app configure
 ```
 
 Options:
@@ -1115,7 +1115,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv app create
+npx rnv app create
 ```
 
 Options:
@@ -1152,7 +1152,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv workspace configure
+npx rnv workspace configure
 ```
 
 Options:
@@ -1189,7 +1189,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv configureSoft
+npx rnv configureSoft
 ```
 
 Options:
@@ -1226,7 +1226,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv kill
+npx rnv kill
 ```
 
 Options:
@@ -1263,7 +1263,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv doctor
+npx rnv doctor
 ```
 
 Options:
@@ -1300,7 +1300,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv target list
+npx rnv target list
 ```
 
 Options:
@@ -1337,7 +1337,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv target launch
+npx rnv target launch
 ```
 
 Options:
@@ -1374,7 +1374,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv link
+npx rnv link
 ```
 
 Options:
@@ -1411,7 +1411,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv unlink
+npx rnv unlink
 ```
 
 Options:
@@ -1448,7 +1448,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv telemetry status
+npx rnv telemetry status
 ```
 
 Options:
@@ -1485,7 +1485,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv telemetry enable
+npx rnv telemetry enable
 ```
 
 Options:
@@ -1522,7 +1522,7 @@ Supported Platforms:
 Example:
 
 ```bash
-rnv telemetry disable
+npx rnv telemetry disable
 ```
 
 Options:

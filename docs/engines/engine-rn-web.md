@@ -16,17 +16,13 @@ React native based engine with web transpiler provided by react-native-web
 
 ## Supported Platforms
 
-[web](platforms/web.md), [chromecast](platforms/chromecast.md), [tizen](platforms/tizen.md), [webtv](platforms/webtv.md), [tizenmobile](platforms/tizenmobile.md), [tizenwatch](platforms/tizenwatch.md), [webos](platforms/webos.md), [firefoxos](platforms/firefoxos.md), [firefoxtv](platforms/firefoxtv.md), [kaios](platforms/kaios.md)
+[web](platforms/web.md), [chromecast](platforms/chromecast.md), [tizen](platforms/tizen.md), [webtv](platforms/webtv.md), [tizenmobile](platforms/tizenmobile.md), [tizenwatch](platforms/tizenwatch.md), [webos](platforms/webos.md), [kaios](platforms/kaios.md)
 
 ## Required Plugins
 
-[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web), [@react-native-community/cli-platform-ios](../plugins/overview#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins/overview#react-native-communitycli)
+[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web)
 
 ## Required NPM Packages
-
-
-
-
 
 
 
@@ -78,7 +74,8 @@ React native based engine with web transpiler provided by react-native-web
 | `ts` | 24 |
 | `mjs` | 25 |
 | `json` | 26 |
-| `wasm` | 27 |
+| `cjs` | 27 |
+| `wasm` | 28 |
 ### chromecast
 
 | Extension | Priority  |
@@ -117,7 +114,8 @@ React native based engine with web transpiler provided by react-native-web
 | `ts` | 32 |
 | `mjs` | 33 |
 | `json` | 34 |
-| `wasm` | 35 |
+| `cjs` | 35 |
+| `wasm` | 36 |
 ### tizen
 
 | Extension | Priority  |
@@ -156,7 +154,8 @@ React native based engine with web transpiler provided by react-native-web
 | `ts` | 32 |
 | `mjs` | 33 |
 | `json` | 34 |
-| `wasm` | 35 |
+| `cjs` | 35 |
+| `wasm` | 36 |
 ### webtv
 
 | Extension | Priority  |
@@ -195,7 +194,8 @@ React native based engine with web transpiler provided by react-native-web
 | `ts` | 32 |
 | `mjs` | 33 |
 | `json` | 34 |
-| `wasm` | 35 |
+| `cjs` | 35 |
+| `wasm` | 36 |
 ### tizenmobile
 
 | Extension | Priority  |
@@ -230,7 +230,8 @@ React native based engine with web transpiler provided by react-native-web
 | `ts` | 28 |
 | `mjs` | 29 |
 | `json` | 30 |
-| `wasm` | 31 |
+| `cjs` | 31 |
+| `wasm` | 32 |
 ### tizenwatch
 
 | Extension | Priority  |
@@ -269,7 +270,8 @@ React native based engine with web transpiler provided by react-native-web
 | `ts` | 32 |
 | `mjs` | 33 |
 | `json` | 34 |
-| `wasm` | 35 |
+| `cjs` | 35 |
+| `wasm` | 36 |
 ### webos
 
 | Extension | Priority  |
@@ -308,81 +310,8 @@ React native based engine with web transpiler provided by react-native-web
 | `ts` | 32 |
 | `mjs` | 33 |
 | `json` | 34 |
-| `wasm` | 35 |
-### firefoxos
-
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `firefoxos.mobile.jsx` | 5 |
-| `firefoxos.mobile.js` | 6 |
-| `firefoxos.mobile.tsx` | 7 |
-| `firefoxos.mobile.ts` | 8 |
-| `mobile.jsx` | 9 |
-| `mobile.js` | 10 |
-| `mobile.tsx` | 11 |
-| `mobile.ts` | 12 |
-| `firefoxos.jsx` | 13 |
-| `firefoxos.js` | 14 |
-| `firefoxos.tsx` | 15 |
-| `firefoxos.ts` | 16 |
-| `mobile.web.jsx` | 17 |
-| `mobile.web.js` | 18 |
-| `mobile.web.tsx` | 19 |
-| `mobile.web.ts` | 20 |
-| `native.jsx` | 21 |
-| `native.js` | 22 |
-| `native.tsx` | 23 |
-| `native.ts` | 24 |
-| `jsx` | 25 |
-| `js` | 26 |
-| `tsx` | 27 |
-| `ts` | 28 |
-| `mjs` | 29 |
-| `json` | 30 |
-| `wasm` | 31 |
-### firefoxtv
-
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `firefoxtv.tv.jsx` | 5 |
-| `firefoxtv.tv.js` | 6 |
-| `firefoxtv.tv.tsx` | 7 |
-| `firefoxtv.tv.ts` | 8 |
-| `web.tv.jsx` | 9 |
-| `web.tv.js` | 10 |
-| `web.tv.tsx` | 11 |
-| `web.tv.ts` | 12 |
-| `tv.jsx` | 13 |
-| `tv.js` | 14 |
-| `tv.tsx` | 15 |
-| `tv.ts` | 16 |
-| `firefoxtv.jsx` | 17 |
-| `firefoxtv.js` | 18 |
-| `firefoxtv.tsx` | 19 |
-| `firefoxtv.ts` | 20 |
-| `tv.web.jsx` | 21 |
-| `tv.web.js` | 22 |
-| `tv.web.tsx` | 23 |
-| `tv.web.ts` | 24 |
-| `web.jsx` | 25 |
-| `web.js` | 26 |
-| `web.tsx` | 27 |
-| `web.ts` | 28 |
-| `jsx` | 29 |
-| `js` | 30 |
-| `tsx` | 31 |
-| `ts` | 32 |
-| `mjs` | 33 |
-| `json` | 34 |
-| `wasm` | 35 |
+| `cjs` | 35 |
+| `wasm` | 36 |
 ### kaios
 
 | Extension | Priority  |
@@ -417,7 +346,8 @@ React native based engine with web transpiler provided by react-native-web
 | `ts` | 28 |
 | `mjs` | 29 |
 | `json` | 30 |
-| `wasm` | 31 |
+| `cjs` | 31 |
+| `wasm` | 32 |
 
 
 

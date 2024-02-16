@@ -11,7 +11,7 @@ sidebar_label: Plugins Overview
 `;  
     const flexnPluginsPath = doResolve('@flexn/plugins');
     if (!fsExistsSync(flexnPluginsPath)) {
-        return Promise.reject(`RNV Cannot find installed package: ${chalk().white('@flexn/plugins')}`);
+        return Promise.reject(`RNV Cannot find installed package: '@flexn/plugins`);
     }
     const flexnPluginTemplatesPath = path.join(flexnPluginsPath, 'pluginTemplates/renative.plugins.json');
 
@@ -21,7 +21,7 @@ sidebar_label: Plugins Overview
     const temps = merge(flexnPluginTemplates, rnvPluginTemplates);
 
     const ptk = Object.keys(temps.pluginTemplates).sort();
- 
+    
     ptk.forEach((key) => {
         const plugin = temps.pluginTemplates[key];
         const npm = plugin.version
@@ -57,7 +57,7 @@ ${npm}
 Installation:
 
 \`\`\`
-rnv plugin add ${key}
+npx rnv plugin add ${key}
 \`\`\`
 `;
     });

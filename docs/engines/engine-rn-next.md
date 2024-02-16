@@ -102,7 +102,8 @@ React native based engine with web transpiler provided by react-native-web and r
 | `ts` | 64 |
 | `mjs` | 65 |
 | `json` | 66 |
-| `wasm` | 67 |
+| `cjs` | 67 |
+| `wasm` | 68 |
 ### chromecast
 
 | Extension | Priority  |
@@ -165,7 +166,8 @@ React native based engine with web transpiler provided by react-native-web and r
 | `ts` | 56 |
 | `mjs` | 57 |
 | `json` | 58 |
-| `wasm` | 59 |
+| `cjs` | 59 |
+| `wasm` | 60 |
 
 
 
