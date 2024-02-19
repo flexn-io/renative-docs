@@ -32,7 +32,6 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-instantsearch": "^7.4.1",
-        "rnv": "1.0.0-rc.11",
         "simple-git": "3.7.1",
         "url-loader": "^4.1.1"
     },
@@ -49,6 +48,7 @@
         "@rnv/engine-rn-tvos": "1.0.0-rc.11",
         "@rnv/engine-rn-web": "1.0.0-rc.11",
         "@rnv/engine-rn-windows": "1.0.0-rc.11",
+        "rnv": "1.0.0-rc.11",
         "typescript": "^5.3.3",
         "zod-to-json-schema": "^3.22.4"
     },
