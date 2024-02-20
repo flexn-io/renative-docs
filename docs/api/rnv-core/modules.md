@@ -1,26 +1,17 @@
-[@rnv/core](README.md) / Exports
+---
+id: "modules"
+title: "@rnv/core"
+sidebar_label: "Exports"
+sidebar_position: 0.5
+custom_edit_url: null
+---
 
-# @rnv/core
-
-## Table of contents
-
-### Interfaces
+## Interfaces
 
 - [RnvContext](interfaces/RnvContext.md)
 - [RnvContextFileObj](interfaces/RnvContextFileObj.md)
 - [RnvContextPathObj](interfaces/RnvContextPathObj.md)
 - [RnvContextPlatform](interfaces/RnvContextPlatform.md)
-
-### Type Aliases
-
-- [CreateContextOptions](modules.md#createcontextoptions)
-- [RnvContextBuildConfig](modules.md#rnvcontextbuildconfig)
-- [RnvContextFileKey](modules.md#rnvcontextfilekey)
-- [RnvContextFiles](modules.md#rnvcontextfiles)
-- [RnvContextPaths](modules.md#rnvcontextpaths)
-- [RnvContextProgram](modules.md#rnvcontextprogram)
-- [RnvContextRuntime](modules.md#rnvcontextruntime)
-- [RuntimePropKey](modules.md#runtimepropkey)
 
 ## Type Aliases
 

@@ -1,4 +1,3 @@
-
 ---
 id: rnv.global
 title: rnv.global Schema

@@ -1,24 +1,16 @@
-[@rnv/core](../README.md) / [Exports](../modules.md) / RnvContextFileObj
-
-# Interface: RnvContextFileObj\<T\>
+---
+id: "RnvContextFileObj"
+title: "Interface: RnvContextFileObj<T>"
+sidebar_label: "RnvContextFileObj"
+sidebar_position: 0
+custom_edit_url: null
+---
 
 ## Type parameters
 
 | Name |
 | :------ |
 | `T` |
-
-## Table of contents
-
-### Properties
-
-- [config](RnvContextFileObj.md#config)
-- [configLocal](RnvContextFileObj.md#configlocal)
-- [configPrivate](RnvContextFileObj.md#configprivate)
-- [config\_original](RnvContextFileObj.md#config_original)
-- [configs](RnvContextFileObj.md#configs)
-- [configsLocal](RnvContextFileObj.md#configslocal)
-- [configsPrivate](RnvContextFileObj.md#configsprivate)
 
 ## Properties
 

@@ -1,4 +1,3 @@
-
 ---
 id: rnv.template
 title: rnv.template Schema

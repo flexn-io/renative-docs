@@ -1,16 +1,10 @@
-[@rnv/core](../README.md) / [Exports](../modules.md) / RnvContextPlatform
-
-# Interface: RnvContextPlatform
-
-## Table of contents
-
-### Properties
-
-- [engine](RnvContextPlatform.md#engine)
-- [isConnected](RnvContextPlatform.md#isconnected)
-- [isValid](RnvContextPlatform.md#isvalid)
-- [platform](RnvContextPlatform.md#platform)
-- [port](RnvContextPlatform.md#port)
+---
+id: "RnvContextPlatform"
+title: "Interface: RnvContextPlatform"
+sidebar_label: "RnvContextPlatform"
+sidebar_position: 0
+custom_edit_url: null
+---
 
 ## Properties
 

@@ -1,26 +1,10 @@
-[@rnv/core](../README.md) / [Exports](../modules.md) / RnvContextPathObj
-
-# Interface: RnvContextPathObj
-
-## Table of contents
-
-### Properties
-
-- [appConfigsDir](RnvContextPathObj.md#appconfigsdir)
-- [config](RnvContextPathObj.md#config)
-- [configExists](RnvContextPathObj.md#configexists)
-- [configLocal](RnvContextPathObj.md#configlocal)
-- [configLocalExists](RnvContextPathObj.md#configlocalexists)
-- [configPrivate](RnvContextPathObj.md#configprivate)
-- [configPrivateExists](RnvContextPathObj.md#configprivateexists)
-- [configs](RnvContextPathObj.md#configs)
-- [configsLocal](RnvContextPathObj.md#configslocal)
-- [configsPrivate](RnvContextPathObj.md#configsprivate)
-- [dir](RnvContextPathObj.md#dir)
-- [dirs](RnvContextPathObj.md#dirs)
-- [fontsDir](RnvContextPathObj.md#fontsdir)
-- [fontsDirs](RnvContextPathObj.md#fontsdirs)
-- [pluginDirs](RnvContextPathObj.md#plugindirs)
+---
+id: "RnvContextPathObj"
+title: "Interface: RnvContextPathObj"
+sidebar_label: "RnvContextPathObj"
+sidebar_position: 0
+custom_edit_url: null
+---
 
 ## Properties
 

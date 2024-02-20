@@ -1,47 +1,16 @@
-[@rnv/core](../README.md) / [Exports](../modules.md) / RnvContext
-
-# Interface: RnvContext\<Payload\>
+---
+id: "RnvContext"
+title: "Interface: RnvContext<Payload>"
+sidebar_label: "RnvContext"
+sidebar_position: 0
+custom_edit_url: null
+---
 
 ## Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `Payload` | `any` |
-
-## Table of contents
-
-### Properties
-
-- [\_currentTask](RnvContext.md#_currenttask)
-- [\_renativePluginCache](RnvContext.md#_renativeplugincache)
-- [\_requiresNpmInstall](RnvContext.md#_requiresnpminstall)
-- [assetConfig](RnvContext.md#assetconfig)
-- [buildConfig](RnvContext.md#buildconfig)
-- [buildHooks](RnvContext.md#buildhooks)
-- [buildPipes](RnvContext.md#buildpipes)
-- [cli](RnvContext.md#cli)
-- [command](RnvContext.md#command)
-- [configPropsInjects](RnvContext.md#configpropsinjects)
-- [files](RnvContext.md#files)
-- [injectableConfigProps](RnvContext.md#injectableconfigprops)
-- [isBuildHooksReady](RnvContext.md#isbuildhooksready)
-- [isDefault](RnvContext.md#isdefault)
-- [isSystemWin](RnvContext.md#issystemwin)
-- [logMessages](RnvContext.md#logmessages)
-- [paths](RnvContext.md#paths)
-- [payload](RnvContext.md#payload)
-- [platform](RnvContext.md#platform)
-- [process](RnvContext.md#process)
-- [program](RnvContext.md#program)
-- [rnvVersion](RnvContext.md#rnvversion)
-- [runningProcesses](RnvContext.md#runningprocesses)
-- [runtime](RnvContext.md#runtime)
-- [runtimePropsInjects](RnvContext.md#runtimepropsinjects)
-- [subCommand](RnvContext.md#subcommand)
-- [supportedPlatforms](RnvContext.md#supportedplatforms)
-- [systemPropsInjects](RnvContext.md#systempropsinjects)
-- [timeEnd](RnvContext.md#timeend)
-- [timeStart](RnvContext.md#timestart)
 
 ## Properties
 

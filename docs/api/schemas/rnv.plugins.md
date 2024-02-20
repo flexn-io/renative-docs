@@ -1,4 +1,3 @@
-
 ---
 id: rnv.plugins
 title: rnv.plugins Schema

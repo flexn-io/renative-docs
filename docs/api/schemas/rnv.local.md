@@ -1,4 +1,3 @@
-
 ---
 id: rnv.local
 title: rnv.local Schema

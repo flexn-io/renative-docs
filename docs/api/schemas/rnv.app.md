@@ -1,10 +1,8 @@
-
 ---
 id: rnv.app
 title: rnv.app Schema
 sidebar_label: rnv.app
 ---
-
 
 # rnv.app Schema Definition
 
@@ -76,8 +74,6 @@ IN: 1.2.3-rc.4+build.56 OUT: 1.2.3
 
 IN: 1.2.3 OUT: 1.2.3
 
-
-
 "versionFormat" : "0.0.0.0.0"
 
 IN: 1.2.3-rc.4+build.56 OUT: 1.2.3.4.56
@@ -89,8 +85,6 @@ IN: 1.2.3 OUT: 1.2.3
 IN: 1.2.3-rc.4+build.56 OUT: 1.2.3.rc.4.build.56
 
 IN: 1.2.3 OUT: 1.2.3
-
-
 
 ### `versionCodeFormat` (string)
 
@@ -124,8 +118,6 @@ IN: 1.0.23-rc.15 OUT: 100230015
 
 IN: 1.0.23 OUT: 100230000
 
-
-
 ### `versionCodeOffset` (number)
 
 ### `title` (string)
@@ -154,9 +146,9 @@ The object is an array with all elements of the type `string`.
 
 Defines root view backgroundColor for all platforms in HEX format
 
-*Constraints:*
+_Constraints:_
 
-* Regex pattern: `^#`
+-   Regex pattern: `^#`
 
 ### `splashScreen` (boolean)
 
@@ -338,7 +330,7 @@ Allows you define custom googleServicesVersion equivalent to: `googleServicesVer
 
 #### `gradleBuildToolsVersion` (string)
 
-Allows you define custom gradle build tools version equivalent to:  `classpath 'com.android.tools.build:gradle:[VERSION]'`
+Allows you define custom gradle build tools version equivalent to: `classpath 'com.android.tools.build:gradle:[VERSION]'`
 
 #### `gradleWrapperVersion` (string)
 
@@ -382,12 +374,12 @@ Allows you to define specific native render engine to be used
 
 This element must be one of the following enum values:
 
-* `jsc`
-* `v8-android`
-* `v8-android-nointl`
-* `v8-android-jit`
-* `v8-android-jit-nointl`
-* `hermes`
+-   `jsc`
+-   `v8-android`
+-   `v8-android-nointl`
+-   `v8-android-jit`
+-   `v8-android-jit-nointl`
+-   `hermes`
 
 Default: `"hermes"`
 
@@ -471,8 +463,8 @@ The object is an array with all elements of the type `string`.
 
 Allows you to directly manipulate `AndroidManifest.xml` via json override mechanism
 Injects / Overrides values in AndroidManifest.xml file of generated android based project
+
 > IMPORTANT: always ensure that your object contains `tag` and `android:name` to target correct tag to merge into
- 
 
 Properties of the `AndroidManifest_xml` object:
 
@@ -848,7 +840,7 @@ Properties of the `application` object:
 
 ######## `didFinishLaunchingWithOptions` (array, required)
 
-The elements of the array must match *at least one* of the following properties:
+The elements of the array must match _at least one_ of the following properties:
 
 ######## (string)
 
