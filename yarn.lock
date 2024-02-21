@@ -3499,6 +3499,11 @@
     "@rnv/sdk-react-native" "1.0.0-rc.11"
     metro-react-native-babel-preset "0.76.8"
 
+"@rnv/renative@1.0.0-rc.11":
+  version "1.0.0-rc.11"
+  resolved "https://registry.yarnpkg.com/@rnv/renative/-/renative-1.0.0-rc.11.tgz#1e25f8b4f298cdf6a2ec0e0f8e5be30b099fb14c"
+  integrity sha512-vj+Ji/5BiTIsT7eqCc6aLpNkre9LHZLKGb/4l6ApPKIwWb6P6FCq7qP1CqVa+DN3NHjIoqs/v8MmEFUTcatL1g==
+
 "@rnv/sdk-android@1.0.0-rc.11":
   version "1.0.0-rc.11"
   resolved "https://registry.yarnpkg.com/@rnv/sdk-android/-/sdk-android-1.0.0-rc.11.tgz#ce437478e7eedf125b39f017365009af2d1436fd"

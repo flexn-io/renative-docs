@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:282
+@rnv/core/lib/context/types.d.ts:283
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:279
+@rnv/core/lib/context/types.d.ts:280
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:287
+@rnv/core/lib/context/types.d.ts:288
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:280
+@rnv/core/lib/context/types.d.ts:281
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:288
+@rnv/core/lib/context/types.d.ts:289
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:281
+@rnv/core/lib/context/types.d.ts:282
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:289
+@rnv/core/lib/context/types.d.ts:290
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:284
+@rnv/core/lib/context/types.d.ts:285
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:285
+@rnv/core/lib/context/types.d.ts:286
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:286
+@rnv/core/lib/context/types.d.ts:287
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:278
+@rnv/core/lib/context/types.d.ts:279
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:283
+@rnv/core/lib/context/types.d.ts:284
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:291
+@rnv/core/lib/context/types.d.ts:292
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:292
+@rnv/core/lib/context/types.d.ts:293
 
 ___
 
@@ -154,4 +154,4 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:290
+@rnv/core/lib/context/types.d.ts:291

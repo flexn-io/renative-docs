@@ -28,11 +28,39 @@ const config = {
             'docusaurus-plugin-typedoc',
             // Plugin / TypeDoc options
             {
+                id: 'api-core',
                 entryPoints: ['node_modules/@rnv/core/lib/index.d.ts'],
                 tsconfig: './tsconfig.typedoc.json',
                 out: 'api/rnv-core',
+                watch: true,
                 sidebar: {
                     categoryLabel: '@rnv/core',
+                },
+            },
+        ],
+        [
+            'docusaurus-plugin-typedoc',
+            {
+                id: 'api-renative',
+                entryPoints: ['node_modules/@rnv/renative/lib/index.d.ts'],
+                tsconfig: './tsconfig.typedoc.json',
+                out: 'api/renative',
+                watch: true,
+                sidebar: {
+                    categoryLabel: '@rnv/renative',
+                },
+            },
+        ],
+        [
+            'docusaurus-plugin-typedoc',
+            {
+                id: 'api-rnv',
+                entryPoints: ['node_modules/rnv/lib/index.d.ts'],
+                tsconfig: './tsconfig.typedoc.json',
+                out: 'api/rnv',
+                watch: true,
+                sidebar: {
+                    categoryLabel: 'rnv',
                 },
             },
         ],

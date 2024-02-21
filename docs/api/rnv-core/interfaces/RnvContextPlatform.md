@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:297
+@rnv/core/lib/context/types.d.ts:298
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:296
+@rnv/core/lib/context/types.d.ts:297
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:299
+@rnv/core/lib/context/types.d.ts:300
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:295
+@rnv/core/lib/context/types.d.ts:296
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:298
+@rnv/core/lib/context/types.d.ts:299
