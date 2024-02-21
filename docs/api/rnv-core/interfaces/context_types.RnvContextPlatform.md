@@ -1,20 +1,21 @@
 ---
-id: "RnvContextPlatform"
+id: "context_types.RnvContextPlatform"
 title: "Interface: RnvContextPlatform"
 sidebar_label: "RnvContextPlatform"
-sidebar_position: 0
 custom_edit_url: null
 ---
+
+[context/types](../modules/context_types.md).RnvContextPlatform
 
 ## Properties
 
 ### engine
 
-• `Optional` **engine**: `RnvEngine`
+• `Optional` **engine**: [`RnvEngine`](../modules/engines_types.md#rnvengine)
 
 #### Defined in
 
-context/types.d.ts:297
+@rnv/core/lib/context/types.d.ts:297
 
 ___
 
@@ -24,7 +25,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:296
+@rnv/core/lib/context/types.d.ts:296
 
 ___
 
@@ -34,7 +35,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:299
+@rnv/core/lib/context/types.d.ts:299
 
 ___
 
@@ -44,7 +45,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:295
+@rnv/core/lib/context/types.d.ts:295
 
 ___
 
@@ -54,4 +55,4 @@ ___
 
 #### Defined in
 
-context/types.d.ts:298
+@rnv/core/lib/context/types.d.ts:298

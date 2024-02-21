@@ -1,10 +1,11 @@
 ---
-id: "RnvContextFileObj"
+id: "context_types.RnvContextFileObj"
 title: "Interface: RnvContextFileObj<T>"
 sidebar_label: "RnvContextFileObj"
-sidebar_position: 0
 custom_edit_url: null
 ---
+
+[context/types](../modules/context_types.md).RnvContextFileObj
 
 ## Type parameters
 
@@ -20,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-context/types.d.ts:158
+@rnv/core/lib/context/types.d.ts:158
 
 ___
 
@@ -40,7 +41,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:160
+@rnv/core/lib/context/types.d.ts:160
 
 ___
 
@@ -91,7 +92,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:161
+@rnv/core/lib/context/types.d.ts:161
 
 ___
 
@@ -101,7 +102,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:159
+@rnv/core/lib/context/types.d.ts:159
 
 ___
 
@@ -111,7 +112,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:162
+@rnv/core/lib/context/types.d.ts:162
 
 ___
 
@@ -121,7 +122,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:163
+@rnv/core/lib/context/types.d.ts:163
 
 ___
 
@@ -131,4 +132,4 @@ ___
 
 #### Defined in
 
-context/types.d.ts:164
+@rnv/core/lib/context/types.d.ts:164

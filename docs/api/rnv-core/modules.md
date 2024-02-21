@@ -6,222 +6,86 @@ sidebar_position: 0.5
 custom_edit_url: null
 ---
 
-## Interfaces
+## Modules
 
-- [RnvContext](interfaces/RnvContext.md)
-- [RnvContextFileObj](interfaces/RnvContextFileObj.md)
-- [RnvContextPathObj](interfaces/RnvContextPathObj.md)
-- [RnvContextPlatform](interfaces/RnvContextPlatform.md)
-
-## Type Aliases
-
-### CreateContextOptions
-
-Ƭ **CreateContextOptions**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `RNV_HOME_DIR?` | `string` |
-| `cmd?` | `string` |
-| `process` | `NodeJS.Process` |
-| `program` | [`RnvContextProgram`](modules.md#rnvcontextprogram) |
-| `subCmd?` | `string` |
-
-#### Defined in
-
-context/types.d.ts:12
-
-___
-
-### RnvContextBuildConfig
-
-Ƭ **RnvContextBuildConfig**: `Partial`\<`ConfigFileBuildConfig`\> & \{ `_meta?`: \{ `currentAppConfigId`: `string`  } ; `_refs?`: `Record`\<`string`, `string`\>  }
-
-#### Defined in
-
-context/types.d.ts:69
-
-___
-
-### RnvContextFileKey
-
-Ƭ **RnvContextFileKey**: ``"config"`` \| ``"configLocal"`` \| ``"configPrivate"``
-
-#### Defined in
-
-context/types.d.ts:301
-
-___
-
-### RnvContextFiles
-
-Ƭ **RnvContextFiles**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `appConfig` | [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<`ConfigFileApp`\> |
-| `defaultWorkspace` | [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<`ConfigFileWorkspace`\> & \{ `appConfig`: [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<`ConfigFileApp`\> ; `project`: [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<`ConfigFileProject`\>  } |
-| `project` | [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<`ConfigFileProject`\> & \{ `assets`: \{ `config?`: `ConfigFileRuntime`  } ; `builds`: `Record`\<`string`, `ConfigFileBuildConfig`\> ; `package`: `NpmPackageFile`  } |
-| `rnv` | \{ `configWorkspaces?`: `ConfigFileWorkspaces` ; `package`: `NpmPackageFile` ; `pluginTemplates`: \{ `config?`: `ConfigFilePlugins` ; `configs`: `Record`\<`string`, `ConfigFilePlugins`\>  } ; `projectTemplates`: \{ `config?`: `ConfigFileTemplates`  }  } |
-| `rnv.configWorkspaces?` | `ConfigFileWorkspaces` |
-| `rnv.package` | `NpmPackageFile` |
-| `rnv.pluginTemplates` | \{ `config?`: `ConfigFilePlugins` ; `configs`: `Record`\<`string`, `ConfigFilePlugins`\>  } |
-| `rnv.pluginTemplates.config?` | `ConfigFilePlugins` |
-| `rnv.pluginTemplates.configs` | `Record`\<`string`, `ConfigFilePlugins`\> |
-| `rnv.projectTemplates` | \{ `config?`: `ConfigFileTemplates`  } |
-| `rnv.projectTemplates.config?` | `ConfigFileTemplates` |
-| `workspace` | [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<`ConfigFileWorkspace`\> & \{ `appConfig`: [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<`ConfigFileApp`\> ; `project`: [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<`ConfigFileProject`\>  } |
-
-#### Defined in
-
-context/types.d.ts:128
-
-___
-
-### RnvContextPaths
-
-Ƭ **RnvContextPaths**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `CURRENT_DIR` | `string` |
-| `GLOBAL_RNV_CONFIG` | `string` |
-| `GLOBAL_RNV_DIR` | `string` |
-| `IS_LINKED` | `boolean` |
-| `IS_NPX_MODE` | `boolean` |
-| `RNV_HOME_DIR` | `string` |
-| `RNV_NODE_MODULES_DIR` | `string` |
-| `appConfig` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) |
-| `appConfigBase` | `string` |
-| `buildHooks` | \{ `dir`: `string` ; `dist`: \{ `dir`: `string` ; `index`: `string`  } ; `index`: `string`  } |
-| `buildHooks.dir` | `string` |
-| `buildHooks.dist` | \{ `dir`: `string` ; `index`: `string`  } |
-| `buildHooks.dist.dir` | `string` |
-| `buildHooks.dist.index` | `string` |
-| `buildHooks.index` | `string` |
-| `defaultWorkspace` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) & \{ `appConfig`: \{ `configs`: `string`[] ; `configsLocal`: `string`[] ; `configsPrivate`: `string`[]  } ; `project`: \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: \{ `dir`: `string`  } ; `builds`: \{ `dir`: `string`  }  }  } |
-| `home` | \{ `dir`: `string`  } |
-| `home.dir` | `string` |
-| `project` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) & \{ `appConfigBase`: \{ `dir`: `string` ; `fontsDir`: `string` ; `fontsDirs`: `string`[] ; `pluginsDir`: `string`  } ; `appConfigsDirNames`: `string`[] ; `appConfigsDirs`: `string`[] ; `assets`: \{ `config`: `string` ; `dir`: `string` ; `runtimeDir`: `string`  } ; `babelConfig?`: `string` ; `builds`: \{ `config`: `string` ; `dir`: `string`  } ; `dir`: `string` ; `fontSourceDirs?`: `string`[] ; `nodeModulesDir`: `string` ; `package?`: `string` ; `platformTemplatesDirs`: `Record`\<`string`, `string`\> ; `srcDir?`: `string`  } |
-| `rnv` | \{ `configWorkspaces`: `string` ; `dir`: `string` ; `engines`: \{ `dir`: `string`  } ; `package`: `string` ; `pluginTemplates`: \{ `config?`: `string` ; `dirs`: `Record`\<`string`, `string`\> ; `overrideDir?`: `string`  } ; `projectTemplate`: \{ `dir`: `string`  } ; `projectTemplates`: \{ `config`: `string` ; `dir`: `string`  }  } |
-| `rnv.configWorkspaces` | `string` |
-| `rnv.dir` | `string` |
-| `rnv.engines` | \{ `dir`: `string`  } |
-| `rnv.engines.dir` | `string` |
-| `rnv.package` | `string` |
-| `rnv.pluginTemplates` | \{ `config?`: `string` ; `dirs`: `Record`\<`string`, `string`\> ; `overrideDir?`: `string`  } |
-| `rnv.pluginTemplates.config?` | `string` |
-| `rnv.pluginTemplates.dirs` | `Record`\<`string`, `string`\> |
-| `rnv.pluginTemplates.overrideDir?` | `string` |
-| `rnv.projectTemplate` | \{ `dir`: `string`  } |
-| `rnv.projectTemplate.dir` | `string` |
-| `rnv.projectTemplates` | \{ `config`: `string` ; `dir`: `string`  } |
-| `rnv.projectTemplates.config` | `string` |
-| `rnv.projectTemplates.dir` | `string` |
-| `template` | \{ `appConfigBase`: \{ `dir`: `string`  } ; `appConfigsDir`: `string` ; `assets`: \{ `dir`: `string`  } ; `builds`: \{ `dir`: `string`  } ; `config`: `string` ; `configTemplate`: `string` ; `dir`: `string`  } |
-| `template.appConfigBase` | \{ `dir`: `string`  } |
-| `template.appConfigBase.dir` | `string` |
-| `template.appConfigsDir` | `string` |
-| `template.assets` | \{ `dir`: `string`  } |
-| `template.assets.dir` | `string` |
-| `template.builds` | \{ `dir`: `string`  } |
-| `template.builds.dir` | `string` |
-| `template.config` | `string` |
-| `template.configTemplate` | `string` |
-| `template.dir` | `string` |
-| `workspace` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) & \{ `appConfig`: [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) ; `project`: [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) & \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: `string` ; `builds`: `string`  }  } |
-
-#### Defined in
-
-context/types.d.ts:166
-
-___
-
-### RnvContextProgram
-
-Ƭ **RnvContextProgram**: `ParamKeys` & \{ `args`: `string`[] ; `option`: (`cmd`: `string`, `desc`: `string`) => `void` ; `parse`: (`arg`: `string`[]) => `void` ; `rawArgs`: `string`[]  }
-
-#### Defined in
-
-context/types.d.ts:19
-
-___
-
-### RnvContextRuntime
-
-Ƭ **RnvContextRuntime**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `_platformBuildsSuffix?` | `string` |
-| `_skipNativeDepResolutions` | `boolean` |
-| `_skipPluginScopeWarnings` | `boolean` |
-| `activeTemplate?` | `string` |
-| `appConfigDir?` | `string` |
-| `appDir?` | `string` |
-| `appId?` | `string` |
-| `availablePlatforms` | `string`[] |
-| `bundleAssets` | `boolean` |
-| `currentEngine?` | `RnvEngine` |
-| `currentPlatform?` | `RnvEnginePlatform` |
-| `currentTemplate?` | `string` |
-| `disableReset` | `boolean` |
-| `engine?` | `RnvEngine` |
-| `enginesById` | `Record`\<`string`, `RnvEngine`\> |
-| `enginesByIndex` | `RnvEngine`[] |
-| `enginesByPlatform` | `Record`\<`string`, `RnvEngine`\> |
-| `forceBuildHookRebuild` | `boolean` |
-| `forceBundleAssets?` | `boolean` |
-| `hasAllEnginesRegistered` | `boolean` |
-| `hosted` | `boolean` |
-| `isTargetTrue` | `boolean` |
-| `isWSConfirmed` | `boolean` |
-| `keepSessionActive` | `boolean` |
-| `localhost?` | `string` |
-| `missingEnginePlugins` | `Record`\<`string`, `string`\> |
-| `platform` | `RnvPlatform` |
-| `platformBuildsProjectPath?` | `string` |
-| `pluginVersions` | `Record`\<`string`, `string`\> |
-| `plugins` | `Record`\<`string`, `RnvPlugin`\> |
-| `port` | `number` |
-| `requiresBootstrap` | `boolean` |
-| `requiresForcedTemplateApply` | `boolean` |
-| `rnvVersionProject?` | `string` |
-| `rnvVersionRunner?` | `string` |
-| `runtimeExtraProps` | `Record`\<`string`, `string`\> |
-| `scheme?` | `string` |
-| `selectedTemplate?` | `string` |
-| `selectedWorkspace?` | `string` |
-| `shouldOpenBrowser?` | `boolean` |
-| `skipActiveServerCheck` | `boolean` |
-| `skipBuildHooks` | `boolean` |
-| `skipPackageUpdate?` | `boolean` |
-| `supportedPlatforms` | [`RnvContextPlatform`](interfaces/RnvContextPlatform.md)[] |
-| `target?` | `string` |
-| `targetUDID?` | `string` |
-| `task?` | `string` |
-| `timestamp?` | `number` |
-| `versionCheckCompleted` | `boolean` |
-| `webpackTarget?` | `string` |
-
-#### Defined in
-
-context/types.d.ts:75
-
-___
-
-### RuntimePropKey
-
-Ƭ **RuntimePropKey**: keyof [`RnvContextRuntime`](modules.md#rnvcontextruntime)
-
-#### Defined in
-
-context/types.d.ts:127
+- [api](modules/api.md)
+- [api/provider](modules/api_provider.md)
+- [api/types](modules/api_types.md)
+- [buildHooks](modules/buildHooks.md)
+- [common](modules/common.md)
+- [configs](modules/configs.md)
+- [configs/appConfigs](modules/configs_appConfigs.md)
+- [configs/buildConfig](modules/configs_buildConfig.md)
+- [configs/buildSchemes](modules/configs_buildSchemes.md)
+- [configs/configLocal](modules/configs_configLocal.md)
+- [configs/configProject](modules/configs_configProject.md)
+- [configs/engines](modules/configs_engines.md)
+- [configs/platformAssets](modules/configs_platformAssets.md)
+- [configs/pluginTemplates](modules/configs_pluginTemplates.md)
+- [configs/templates](modules/configs_templates.md)
+- [configs/types](modules/configs_types.md)
+- [configs/utils](modules/configs_utils.md)
+- [configs/workspaces](modules/configs_workspaces.md)
+- [constants](modules/constants.md)
+- [context](modules/context.md)
+- [context/provider](modules/context_provider.md)
+- [context/runtime](modules/context_runtime.md)
+- [context/types](modules/context_types.md)
+- [crypto](modules/crypto.md)
+- [doctor](modules/doctor.md)
+- [engines](modules/engines.md)
+- [engines/types](modules/engines_types.md)
+- [env](modules/env.md)
+- [env/types](modules/env_types.md)
+- [index](modules/)
+- [integrations](modules/integrations.md)
+- [logger](modules/logger.md)
+- [logger/defaults](modules/logger_defaults.md)
+- [migrator](modules/migrator.md)
+- [modules](modules/modules.md)
+- [platforms](modules/platforms.md)
+- [plugins](modules/plugins.md)
+- [plugins/types](modules/plugins_types.md)
+- [projects](modules/projects.md)
+- [projects/dependencyManager](modules/projects_dependencyManager.md)
+- [projects/npm](modules/projects_npm.md)
+- [projects/package](modules/projects_package.md)
+- [projects/types](modules/projects_types.md)
+- [runner](modules/runner.md)
+- [schema](modules/schema.md)
+- [schema/common](modules/schema_common.md)
+- [schema/configFiles/app](modules/schema_configFiles_app.md)
+- [schema/configFiles/buildConfig](modules/schema_configFiles_buildConfig.md)
+- [schema/configFiles/engine](modules/schema_configFiles_engine.md)
+- [schema/configFiles/integration](modules/schema_configFiles_integration.md)
+- [schema/configFiles/local](modules/schema_configFiles_local.md)
+- [schema/configFiles/overrides](modules/schema_configFiles_overrides.md)
+- [schema/configFiles/plugin](modules/schema_configFiles_plugin.md)
+- [schema/configFiles/plugins](modules/schema_configFiles_plugins.md)
+- [schema/configFiles/private](modules/schema_configFiles_private.md)
+- [schema/configFiles/project](modules/schema_configFiles_project.md)
+- [schema/configFiles/runtime](modules/schema_configFiles_runtime.md)
+- [schema/configFiles/template](modules/schema_configFiles_template.md)
+- [schema/configFiles/templates](modules/schema_configFiles_templates.md)
+- [schema/configFiles/types](modules/schema_configFiles_types.md)
+- [schema/configFiles/workspace](modules/schema_configFiles_workspace.md)
+- [schema/configFiles/workspaces](modules/schema_configFiles_workspaces.md)
+- [schema/defaults](modules/schema_defaults.md)
+- [schema/platforms](modules/schema_platforms.md)
+- [schema/platforms/fragments/templateAndroidBase](modules/schema_platforms_fragments_templateAndroidBase.md)
+- [schema/platforms/fragments/templateXcodeBase](modules/schema_platforms_fragments_templateXcodeBase.md)
+- [schema/plugins](modules/schema_plugins.md)
+- [schema/shared](modules/schema_shared.md)
+- [schema/types](modules/schema_types.md)
+- [schema/validators](modules/schema_validators.md)
+- [system/exec](modules/system_exec.md)
+- [system/fs](modules/system_fs.md)
+- [system/resolve](modules/system_resolve.md)
+- [system/types](modules/system_types.md)
+- [tasks](modules/tasks.md)
+- [tasks/constants](modules/tasks_constants.md)
+- [tasks/types](modules/tasks_types.md)
+- [templates](modules/templates.md)
+- [types](modules/types.md)
+- [utils/is](modules/utils_is.md)
+- [utils/utils](modules/utils_utils.md)

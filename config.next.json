@@ -1,7 +1,7 @@
 {
     "index_name": "renative_docsearch",
     "sitemap_urls": [
-        "https://renative.org/sitemap.xml"
+        "https://renative-docs-testing-3wne5iutp-flexn-io.vercel.app/sitemap.xml"
     ],
     "selectors": {
         "lvl0": {
