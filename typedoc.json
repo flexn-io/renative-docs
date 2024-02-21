@@ -1,5 +1,0 @@
-{
-    "$schema": "https://typedoc.org/schema.json",
-    "entryPoints": ["node_modules/@rnv/core/lib/context/types.d.ts"],
-    "out": "typedoc"
-}

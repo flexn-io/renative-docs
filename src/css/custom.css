@@ -130,10 +130,6 @@ html[data-theme='dark'] .button.button--secondary:hover {
   border-color: #3d3d3d;
 }
 
-h3 {
-  font-size: 3em;
-}
-
 .container {
   max-width: 1288px;
 }
