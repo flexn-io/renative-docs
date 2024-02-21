@@ -4,6 +4,8 @@ title: Engine Core CLI Reference
 sidebar_label: Engine Core
 ---
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -37,6 +39,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -72,6 +76,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -105,6 +111,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -140,6 +148,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -174,6 +184,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -184,7 +196,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## platform configure
 
->
+> Low-level task used by engines to prepare platformBuilds folder
 
 Supported Platforms:
 
@@ -208,6 +220,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -218,7 +232,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## platform setup
 
->
+> Allows you to change supportedPlatforms for your project
 
 Supported Platforms:
 
@@ -241,6 +255,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -276,6 +292,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -309,6 +327,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -344,6 +364,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -377,6 +399,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -412,6 +436,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -445,6 +471,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -480,6 +508,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -513,6 +543,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -548,6 +580,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -558,7 +592,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## workspace update
 
->
+> TODO: unused task
 
 Supported Platforms:
 
@@ -581,6 +615,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -615,6 +651,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -652,6 +690,8 @@ Options:
 
 `-x`, `--exeMethod` - eXecutable method in buildHooks
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -685,6 +725,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -720,6 +762,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -753,6 +797,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -788,6 +834,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -821,6 +869,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -856,6 +906,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -889,6 +941,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -924,6 +978,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -957,6 +1013,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -1006,6 +1064,8 @@ Options:
 
 `-p`, `--platform` - select specific Platform
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1040,6 +1100,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1050,7 +1112,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## workspace configure
 
->
+> Preconfigures your current workspace defined via "workspaceID" prop in renative config file
 
 Supported Platforms:
 
@@ -1074,6 +1136,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1084,7 +1148,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## configureSoft
 
-> Configure system and project wothout recreating files (used for --only)
+> Configure system and project without recreating files (used for --only)
 
 Supported Platforms:
 
@@ -1107,6 +1171,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -1142,6 +1208,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1176,6 +1244,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1186,7 +1256,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## target list
 
-> List all available devices / emulators for specific platform
+> List all available targets for specific platform
 
 Supported Platforms:
 
@@ -1210,6 +1280,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1220,7 +1292,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## target launch
 
-> Launch specific emulator
+> Launch specific target
 
 Supported Platforms:
 
@@ -1244,6 +1316,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1254,7 +1328,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## link
 
->
+> Links development version or renative with this project
 
 Supported Platforms:
 
@@ -1278,6 +1352,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1288,7 +1364,7 @@ More info at [Engine Core Guide](cli-engine-core.md)
 
 ## unlink
 
->
+> Replaces rnv version in project with original node_modules version
 
 Supported Platforms:
 
@@ -1311,6 +1387,8 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
 
 ---
 
@@ -1346,6 +1424,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1380,6 +1460,8 @@ Options:
 
 `-o`, `--only` - run Only top command (Skip dependencies)
 
+
+
 ---
 
 This command reference applies if your platform uses engine `engine-core`.
@@ -1413,5 +1495,42 @@ Options:
 `--maxErrorLength` - Specify how many characters each error should display. Default 200
 
 `-o`, `--only` - run Only top command (Skip dependencies)
+
+
+
+---
+
+This command reference applies if your platform uses engine `engine-core`.
+
+More info at [Engine Core Guide](cli-engine-core.md)
+
+---
+
+## switch
+
+> Switch between different app configs in current project
+
+Supported Platforms:
+
+`ios`, `android`, `firetv`, `androidtv`, `androidwear`, `web`, `webtv`, `tizen`, `tizenmobile`, `tvos`, `webos`, `macos`, `windows`, `linux`, `tizenwatch`, `kaios`, `chromecast`, `xbox`
+
+Example:
+
+```bash
+npx rnv switch
+```
+
+Options:
+
+`-i`, `--info` - Show full debug Info
+
+`--ci` - CI/CD flag so it wont ask questions
+
+`--mono` - Monochrome console output without chalk
+
+`--maxErrorLength` - Specify how many characters each error should display. Default 200
+
+`-o`, `--only` - run Only top command (Skip dependencies)
+
 
 test

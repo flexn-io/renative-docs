@@ -31,6 +31,13 @@ export const generateSchema = async () => {
     _generateSchemaFile({ schema: RootTemplatesSchema, schemaId: 'rnv.templates' });
     _generateSchemaFile({ schema: RootIntegrationSchema, schemaId: 'rnv.integration' });
 
+    // add _category_ file
+    const categoryContent = `label: "Config Descriptors"`;
+    const ctx = getContext();
+    const destFolder = path.join(ctx.paths.project.dir, `docs/api/schemas`);
+    const destPath = path.join(destFolder, `_category_.yml`);
+    fs.writeFileSync(destPath, categoryContent);
+
     logSuccess('Sucessfully exported all schemas');
 };
 

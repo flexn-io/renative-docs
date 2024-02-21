@@ -16,7 +16,7 @@ More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ## run
 
-> Run your app on target device or emulator
+> Run your tv app on target device or emulator
 
 Supported Platforms:
 
@@ -418,7 +418,7 @@ More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ## crypto installCerts
 
-> 
+> Installs certificates into keychain (mac only)
 
 Supported Platforms:
 
@@ -454,7 +454,7 @@ More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ## crypto updateProfile
 
-> Update provisioning profile
+> Update provisioning profile (mac only)
 
 Supported Platforms:
 
@@ -490,7 +490,7 @@ More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ## crypto updateProfiles
 
-> 
+> Will attempt to update all provisioning profiles (mac only)
 
 Supported Platforms:
 
@@ -526,7 +526,7 @@ More info at [Engine Rn Tvos Guide](cli-engine-rn-tvos.md)
 
 ## crypto installProfiles
 
-> 
+> Installs provisioning certificates found in your workspace (mac only)
 
 Supported Platforms:
 

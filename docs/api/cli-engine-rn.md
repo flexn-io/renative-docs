@@ -16,7 +16,7 @@ More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ## run
 
-> Run your app on target device or emulator
+> Run your rn app on target device or emulator
 
 Supported Platforms:
 
@@ -468,7 +468,7 @@ More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ## crypto installCerts
 
-> 
+> Installs certificates into keychain (mac only)
 
 Supported Platforms:
 
@@ -504,7 +504,7 @@ More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ## crypto updateProfile
 
-> Update provisioning profile
+> Update provisioning profile (mac only)
 
 Supported Platforms:
 
@@ -540,7 +540,7 @@ More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ## crypto updateProfiles
 
-> 
+> Will attempt to update all provisioning profiles (mac only)
 
 Supported Platforms:
 
@@ -576,7 +576,7 @@ More info at [Engine Rn Guide](cli-engine-rn.md)
 
 ## crypto installProfiles
 
-> 
+> Installs provisioning certificates found in your workspace (mac only)
 
 Supported Platforms:
 

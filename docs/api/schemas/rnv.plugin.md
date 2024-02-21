@@ -83,6 +83,12 @@ Marks plugin platform disabled
 
 Default: `false`
 
+### `forceLinking` (boolean)
+
+Packages that cannot be autolinked yet can still be added to MainApplication PackageList dynamically by setting this to true
+
+Default: `false`
+
 ### `path` (string)
 
 Enables you to pass custom path to plugin. If undefined, the default `node_modules/[plugin-name]` will be used.
@@ -284,6 +290,8 @@ Properties of the `ios` object:
 
 ### `disabled`
 
+### `forceLinking`
+
 ### `path`
 
 ### `git` (string)
@@ -477,6 +485,8 @@ Properties of the `tizen` object:
 
 ### `disabled`
 
+### `forceLinking`
+
 ### `path`
 
 ## `tizenmobile`
@@ -503,4 +513,4 @@ Properties of the `tizen` object:
 
 ## `custom`
 
-Object ysed to extend your renative with custom props. This allows renative json schema to be validated
+Object used to extend your renative with custom props. This allows renative json schema to be validated

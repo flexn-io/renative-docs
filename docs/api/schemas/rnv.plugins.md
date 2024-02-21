@@ -11,7 +11,7 @@ The schema defines the following properties:
 
 ## `custom`
 
-Object ysed to extend your renative with custom props. This allows renative json schema to be validated
+Object used to extend your renative with custom props. This allows renative json schema to be validated
 
 ## `pluginTemplates` (object, required)
 

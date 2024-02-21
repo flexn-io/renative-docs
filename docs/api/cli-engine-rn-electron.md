@@ -16,7 +16,7 @@ More info at [Engine Rn Electron Guide](cli-engine-rn-electron.md)
 
 ## run
 
-> Run your app on target device or emulator
+> Run your electron app on your machine
 
 Supported Platforms:
 
