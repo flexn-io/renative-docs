@@ -1,9 +1,5 @@
 {
     "index_name": "renative_docsearch",
-    "start_urls": [
-        "https://renative.org/docs/overview/introduction",
-        "https://renative.org/docs/api/renative"
-    ],
     "sitemap_urls": [
         "https://renative.org/sitemap.xml"
     ],
