@@ -1,17 +1,16 @@
 ---
-id: "context_types.RnvContextPlatform"
+id: "RnvContextPlatform"
 title: "Interface: RnvContextPlatform"
 sidebar_label: "RnvContextPlatform"
+sidebar_position: 0
 custom_edit_url: null
 ---
-
-[context/types](../modules/context_types.md).RnvContextPlatform
 
 ## Properties
 
 ### engine
 
-• `Optional` **engine**: [`RnvEngine`](../modules/engines_types.md#rnvengine)
+• `Optional` **engine**: [`RnvEngine`](../modules.md#rnvengine)
 
 #### Defined in
 

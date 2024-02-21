@@ -1,17 +1,16 @@
 ---
-id: "api_types.RnvApi"
+id: "RnvApi"
 title: "Interface: RnvApi"
 sidebar_label: "RnvApi"
+sidebar_position: 0
 custom_edit_url: null
 ---
-
-[api/types](../modules/api_types.md).RnvApi
 
 ## Properties
 
 ### analytics
 
-• **analytics**: [`RnvContextAnalytics`](../modules/api_types.md#rnvcontextanalytics)
+• **analytics**: [`RnvContextAnalytics`](../modules.md#rnvcontextanalytics)
 
 #### Defined in
 
@@ -21,7 +20,7 @@ ___
 
 ### doResolve
 
-• **doResolve**: [`DoResolveFn`](../modules/system_types.md#doresolvefn)
+• **doResolve**: [`DoResolveFn`](../modules.md#doresolvefn)
 
 #### Defined in
 
@@ -148,7 +147,7 @@ ___
 
 ### getConfigProp
 
-• **getConfigProp**: [`GetConfigPropFn`](../modules/api_types.md#getconfigpropfn)
+• **getConfigProp**: [`GetConfigPropFn`](../modules.md#getconfigpropfn)
 
 #### Defined in
 
@@ -168,7 +167,7 @@ ___
 
 ### logger
 
-• **logger**: [`RnvApiLogger`](../modules/api_types.md#rnvapilogger)
+• **logger**: [`RnvApiLogger`](../modules.md#rnvapilogger)
 
 #### Defined in
 
@@ -188,7 +187,7 @@ ___
 
 ### prompt
 
-• **prompt**: [`RnvApiPrompt`](../modules/api_types.md#rnvapiprompt)
+• **prompt**: [`RnvApiPrompt`](../modules.md#rnvapiprompt)
 
 #### Defined in
 
@@ -198,7 +197,7 @@ ___
 
 ### spinner
 
-• **spinner**: [`RnvApiSpinner`](../modules/api_types.md#rnvapispinner)
+• **spinner**: [`RnvApiSpinner`](../modules.md#rnvapispinner)
 
 #### Defined in
 

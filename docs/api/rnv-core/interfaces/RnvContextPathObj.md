@@ -1,11 +1,10 @@
 ---
-id: "context_types.RnvContextPathObj"
+id: "RnvContextPathObj"
 title: "Interface: RnvContextPathObj"
 sidebar_label: "RnvContextPathObj"
+sidebar_position: 0
 custom_edit_url: null
 ---
-
-[context/types](../modules/context_types.md).RnvContextPathObj
 
 ## Properties
 

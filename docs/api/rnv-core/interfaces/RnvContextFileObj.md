@@ -1,11 +1,10 @@
 ---
-id: "context_types.RnvContextFileObj"
+id: "RnvContextFileObj"
 title: "Interface: RnvContextFileObj<T>"
 sidebar_label: "RnvContextFileObj"
+sidebar_position: 0
 custom_edit_url: null
 ---
-
-[context/types](../modules/context_types.md).RnvContextFileObj
 
 ## Type parameters
 

@@ -28,21 +28,7 @@ const config = {
             'docusaurus-plugin-typedoc',
             // Plugin / TypeDoc options
             {
-                entryPoints: [
-                    // 'node_modules/@rnv/core/lib/context/types.d.ts',
-                    // 'node_modules/@rnv/core/lib/api/index.d.ts',
-                    // 'node_modules/@rnv/core/lib/runner.d.ts',
-                    // 'node_modules/@rnv/core/lib/engines/index.d.ts',
-                    // 'node_modules/@rnv/core/lib/platforms/index.d.ts',
-                    // 'node_modules/@rnv/core/lib/plugins/index.d.ts',
-                    // 'node_modules/@rnv/core/lib/buildHooks/index.d.ts',
-                    // 'node_modules/@rnv/core/lib/projects/index.d.ts',
-                    // 'node_modules/@rnv/core/lib/env/index.d.ts',
-                    // 'node_modules/@rnv/core/lib/engines/types.d.ts',
-                    // 'node_modules/@rnv/core/lib/context/types.d.ts',
-                    // 'node_modules/@rnv/core/lib/plugins/types.d.ts',
-                    'node_modules/@rnv/core/lib/**/*.d.ts',
-                ],
+                entryPoints: ['node_modules/@rnv/core/lib/index.d.ts'],
                 tsconfig: './tsconfig.typedoc.json',
                 out: 'api/rnv-core',
                 sidebar: {
