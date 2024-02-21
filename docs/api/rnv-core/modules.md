@@ -3714,7 +3714,7 @@ will be treated as a filepath from root of resolved package (i.e. will ignore su
 | :------ | :------ | :------ |
 | `aPath?` | `string` | package name. e.g. 'file:../rel/path', 'react-native', 'react-native/android', '@react-native-community/masked-view/android' |
 | `mandatory?` | `boolean` | whether it throws |
-| `options?` | [`ResolveOptions`](modules.md#resolveoptions) | docs - https://tinyurl.com/r9sfpf7 |
+| `options?` | [`ResolveOptions`](modules.md#resolveoptions) | docs - https://tinyurl.com/r9sfpf7 keepSuffix: boolean |
 
 #### Returns
 

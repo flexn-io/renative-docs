@@ -32,7 +32,7 @@ const config = {
                 tsconfig: './tsconfig.typedoc.json',
                 out: 'api/rnv-core',
                 sidebar: {
-                    categoryLabel: 'Renative Core Generated API',
+                    categoryLabel: '@rnv/core',
                 },
             },
         ],
