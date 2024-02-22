@@ -3,7 +3,6 @@ id: tasks
 title: RNV CLI Tasks Reference
 sidebar_label: RNV CLI Tasks Reference
 ---
-
 ## crypto
 
 ### decrypt
@@ -13,10 +12,12 @@ Decrypt encrypted project files into local `~/<wokspace>/<project>/..`
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv crypto decrypt
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### encrypt
 
@@ -25,10 +26,12 @@ Encrypts secure files from `~/<wokspace>/<project>/..` to project
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv crypto encrypt
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### installCerts
 
@@ -37,10 +40,12 @@ Installs certificates into keychain (mac only)
 Provider: engine-rn
 
 Example:
-
 ```bash
 npx rnv crypto installCerts
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### updateProfile
 
@@ -49,10 +54,12 @@ Update provisioning profile (mac only)
 Provider: engine-rn
 
 Example:
-
 ```bash
 npx rnv crypto updateProfile
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### updateProfiles
 
@@ -61,10 +68,12 @@ Will attempt to update all provisioning profiles (mac only)
 Provider: engine-rn
 
 Example:
-
 ```bash
 npx rnv crypto updateProfiles
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### installProfiles
 
@@ -73,10 +82,12 @@ Installs provisioning certificates found in your workspace (mac only)
 Provider: engine-rn
 
 Example:
-
 ```bash
 npx rnv crypto installProfiles
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## platform
 
@@ -87,10 +98,12 @@ Copy all platform files directly to project
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv platform eject
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### connect
 
@@ -99,10 +112,12 @@ Connect platform template back to rnv
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv platform connect
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### list
 
@@ -111,10 +126,12 @@ List all available platforms
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv platform list
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### configure
 
@@ -123,10 +140,12 @@ Low-level task used by engines to prepare platformBuilds folder
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv platform configure
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### setup
 
@@ -135,10 +154,12 @@ Allows you to change supportedPlatforms for your project
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv platform setup
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## template
 
@@ -149,10 +170,12 @@ Install additional template to the project
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv template add
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### apply
 
@@ -161,10 +184,12 @@ Reset project to specific template
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv template apply
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### list
 
@@ -173,10 +198,12 @@ Show list of available templates
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv template list
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## plugin
 
@@ -187,10 +214,12 @@ Add selected plugin to the project
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv plugin add
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### list
 
@@ -199,10 +228,12 @@ Show list of all available plugins
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv plugin list
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### update
 
@@ -211,10 +242,12 @@ Update specific plugin to latest supported version (rnv)
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv plugin update
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## workspace
 
@@ -225,10 +258,12 @@ Show list of all available workspaces
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv workspace list
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### add
 
@@ -237,10 +272,12 @@ Add new workspace
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv workspace add
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### connect
 
@@ -249,10 +286,12 @@ Connect project with selected workspace
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv workspace connect
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### update
 
@@ -261,10 +300,12 @@ TODO: unused task
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv workspace update
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### configure
 
@@ -273,10 +314,12 @@ Preconfigures your current workspace defined via "workspaceID" prop in renative 
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv workspace configure
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## hooks
 
@@ -287,10 +330,12 @@ Get list of all available hooks
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv hooks list
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### run
 
@@ -299,10 +344,12 @@ Run specific build hook
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv hooks run
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`exeMethod`](#exemethod)
 
 ### pipes
 
@@ -311,10 +358,12 @@ Get the list of all available pipes
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv hooks pipes
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## clean
 
@@ -385,10 +434,12 @@ Configure current project
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv project configure
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### upgrade
 
@@ -397,10 +448,12 @@ Upgrade or downgrade RNV dependencies in your ReNative project
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv project upgrade
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## app
 
@@ -411,10 +464,12 @@ Configure project with specific appConfig
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv app configure
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
 
 ### create
 
@@ -423,10 +478,12 @@ Create new app config
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv app create
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## configureSoft
 
@@ -467,10 +524,12 @@ List all available targets for specific platform
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv target list
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### launch
 
@@ -479,10 +538,12 @@ Launch specific target
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv target launch
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## link
 
@@ -513,10 +574,12 @@ Show current rnv telemetry status on your machine
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv telemetry status
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### enable
 
@@ -525,10 +588,12 @@ Enables rnv telemetry on your machine
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv telemetry enable
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ### disable
 
@@ -537,10 +602,12 @@ Disables rnv telemetry on your machine
 Provider: engine-core
 
 Example:
-
 ```bash
 npx rnv telemetry disable
 ```
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
 ## switch
 
@@ -652,69 +719,313 @@ Example:
 npx rnv log
 ```
 
-## CLI Options
+## Options
 
-| Option                                | Shorthand | Description                                                                                    |
-| ------------------------------------- | --------- | ---------------------------------------------------------------------------------------------- | ------- |
-| `--info [value]`                      | `-i`      | Show full debug Info                                                                           |
-| `--printExec`                         |           | Print exec commands in full                                                                    |
-| `--updatePods`                        | `-u`      | Force update dependencies (iOS only)                                                           |
-| `--platform [value]`                  | `-p`      | select specific Platform                                                                       |
-| `--appConfigID [value]`               | `-c`      | select specific app Config id                                                                  |
-| `--target [value]`                    | `-t`      | select specific Target device/simulator                                                        |
-| `--projectName [value]`               |           | select the name of the new project                                                             |
-| `--projectTemplate [value]`           |           | select the template of new project                                                             |
-| `--templateVersion [value]`           |           | select the template version                                                                    |
-| `--title [value]`                     |           | select the title of the app                                                                    |
-| `--id [value]`                        |           | select the id of the app                                                                       |
-| `--appVersion [value]`                |           | select the version of the app                                                                  |
-| `--workspace [value]`                 |           | select the workspace for the new project                                                       |
-| `--template <value>`                  | `-T`      | select specific template                                                                       |
-| `--device [value]`                    | `-d`      | select connected Device                                                                        |
-| `--scheme [value]`                    | `-s`      | select build Scheme                                                                            |
-| `--filter <value>`                    | `-f`      | Filter value                                                                                   |
-| `--list`                              | `-l`      | return List of items related to command                                                        |
-| `--only`                              | `-o`      | run Only top command (Skip dependencies)                                                       |
-| `--reset`                             | `-r`      | also perform reset of platform build                                                           |
-| `--resetHard`                         | `-R`      | also perform reset of platform platform and platform assets                                    |
-| `--resetAssets`                       | `-a`      | also perform reset of platform assets                                                          |
-| `--key <value>`                       | `-k`      | Pass the key/password                                                                          |
-| `--blueprint [value]`                 | `-b`      | Blueprint for targets                                                                          |
-| `--help`                              | `-h`      | Displays help info for particular command                                                      |
-| `--host <value>`                      | `-H`      | custom Host ip                                                                                 |
-| `--exeMethod [value]`                 | `-x`      | eXecutable method in buildHooks                                                                |
-| `--port <value>`                      | `-P`      | custom Port                                                                                    |
-| `--debug [value]`                     | `-D`      | enable or disable remote debugger.                                                             |
-| `--global`                            | `-G`      | Flag for setting a config value for all RNV projects                                           |
-| `--engine <value>`                    | `-e`      | engine to be used (next)                                                                       |
-| `--debugIp <value>`                   |           | (optional) overwrite the ip to which the remote debugger will connect                          |
-| `--ci`                                |           | CI/CD flag so it wont ask questions                                                            |
-| `--mono`                              |           | Monochrome console output without chalk                                                        |
-| `--skipNotifications`                 |           | Skip sending any integrated notifications                                                      |
-| `--keychain <value>`                  |           | Name of the keychain                                                                           |
-| `--provisioningStyle <value>`         |           | Set provisioningStyle (Automatic                                                               | Manual) |
-| `--codeSignIdentity <value>`          |           | Set codeSignIdentity (ie iPhone Distribution)                                                  |
-| `--provisionProfileSpecifier <value>` |           | Name of provisionProfile                                                                       |
-| `--hosted`                            |           | Run in a hosted environment (skip budleAssets)                                                 |
-| `--hooks`                             |           | Force rebuild hooks                                                                            |
-| `--maxErrorLength <number>`           |           | Specify how many characters each error should display. Default 200                             |
-| `--skipTargetCheck`                   |           | Skip Android target check, just display the raw adb devices to choose from                     |
-| `--analyzer`                          |           | Enable real-time bundle analyzer                                                               |
-| `--xcodebuildArgs <value>`            |           | pass down custom xcodebuild arguments                                                          |
-| `--xcodebuildArchiveArgs <value>`     |           | pass down custom xcodebuild arguments                                                          |
-| `--xcodebuildExportArgs <value>`      |           | pass down custom xcodebuild arguments                                                          |
-| `--skipDependencyCheck`               |           | Skips auto update of npm dependencies if mismatch found                                        |
-| `--skipRnvCheck`                      |           | Skips auto update of rnv dependencies if mismatch found                                        |
-| `--configName <value>`                |           | Use custom name for ./renative.json. (applies only at root level)                              |
-| `--sourceAppConfigID <value>`         |           | name of source appConfig folder to copy from                                                   |
-| `--hostIp <value>`                    |           | Custom IP override                                                                             |
-| `--unlinked`                          |           | Force engines to be loaded from node_modules rather than locally                               |
-| `--yes`                               |           | Default all prompts to yes                                                                     |
-| `--gitEnabled [value]`                |           | Enable git in your newly created project                                                       |
-| `--npxMode`                           |           | Ensures you can use local npx rnv version after the command is done                            |
-| `--json`                              |           | Outputs the result as json                                                                     |
-| `--packageManager <value>`            |           | Set specific package manager to use                                                            |
-| `--skipTasks <value>`                 |           | List tasks which you want to skip during rnv execution                                         |
-| `--answer [value]`                    |           | Pass in answers to prompts                                                                     |
-| `--resetAdb`                          |           | Forces to reset android adb                                                                    |
-| `--telemetryDebug`                    |           | If you have telemetry enabled, will print out exactly what is being collected into the console |
+### info
+Show full debug Info
+
+Shortcut: ``-i``
+
+Value: ``value``
+
+### printExec
+Print exec commands in full
+
+### updatePods
+Force update dependencies (iOS only)
+
+Shortcut: ``-u``
+
+### platform
+select specific Platform
+
+Shortcut: ``-p``
+
+Value: ``value``
+
+### appConfigID
+select specific app Config id
+
+Shortcut: ``-c``
+
+Value: ``value``
+
+### target
+select specific Target device/simulator
+
+Shortcut: ``-t``
+
+Value: ``value``
+
+### projectName
+select the name of the new project
+
+Value: ``value``
+
+### projectTemplate
+select the template of new project
+
+Value: ``value``
+
+### templateVersion
+select the template version
+
+Value: ``value``
+
+### title
+select the title of the app
+
+Value: ``value``
+
+### id
+select the id of the app
+
+Value: ``value``
+
+### appVersion
+select the version of the app
+
+Value: ``value``
+
+### workspace
+select the workspace for the new project
+
+Value: ``value``
+
+### template
+select specific template
+
+Shortcut: ``-T``
+
+Value: ``value``
+
+### device
+select connected Device
+
+Shortcut: ``-d``
+
+Value: ``value``
+
+### scheme
+select build Scheme
+
+Shortcut: ``-s``
+
+Value: ``value``
+
+### filter
+Filter value
+
+Shortcut: ``-f``
+
+Value: ``value``
+
+### list
+return List of items related to command
+
+Shortcut: ``-l``
+
+### only
+run Only top command (Skip dependencies)
+
+Shortcut: ``-o``
+
+### reset
+also perform reset of platform build
+
+Shortcut: ``-r``
+
+### resetHard
+also perform reset of platform platform and platform assets
+
+Shortcut: ``-R``
+
+### resetAssets
+also perform reset of platform assets
+
+Shortcut: ``-a``
+
+### key
+Pass the key/password
+
+Shortcut: ``-k``
+
+Value: ``value``
+
+### blueprint
+Blueprint for targets
+
+Shortcut: ``-b``
+
+Value: ``value``
+
+### help
+Displays help info for particular command
+
+Shortcut: ``-h``
+
+### host
+custom Host ip
+
+Shortcut: ``-H``
+
+Value: ``value``
+
+### exeMethod
+eXecutable method in buildHooks
+
+Shortcut: ``-x``
+
+Value: ``value``
+
+### port
+custom Port
+
+Shortcut: ``-P``
+
+Value: ``value``
+
+### debug
+enable or disable remote debugger.
+
+Shortcut: ``-D``
+
+Value: ``value``
+
+### global
+Flag for setting a config value for all RNV projects
+
+Shortcut: ``-G``
+
+### engine
+engine to be used (next)
+
+Shortcut: ``-e``
+
+Value: ``value``
+
+### debugIp
+(optional) overwrite the ip to which the remote debugger will connect
+
+Value: ``value``
+
+### ci
+CI/CD flag so it wont ask questions
+
+### mono
+Monochrome console output without chalk
+
+### skipNotifications
+Skip sending any integrated notifications
+
+### keychain
+Name of the keychain
+
+Value: ``value``
+
+### provisioningStyle
+Set provisioningStyle (Automatic | Manual)
+
+Value: ``value``
+
+### codeSignIdentity
+Set codeSignIdentity (ie iPhone Distribution)
+
+Value: ``value``
+
+### provisionProfileSpecifier
+Name of provisionProfile
+
+Value: ``value``
+
+### hosted
+Run in a hosted environment (skip budleAssets)
+
+### hooks
+Force rebuild hooks
+
+### maxErrorLength
+Specify how many characters each error should display. Default 200
+
+Value: ``number``
+
+### skipTargetCheck
+Skip Android target check, just display the raw adb devices to choose from
+
+### analyzer
+Enable real-time bundle analyzer
+
+### xcodebuildArgs
+pass down custom xcodebuild arguments
+
+Value: ``value``
+
+### xcodebuildArchiveArgs
+pass down custom xcodebuild arguments
+
+Value: ``value``
+
+### xcodebuildExportArgs
+pass down custom xcodebuild arguments
+
+Value: ``value``
+
+### skipDependencyCheck
+Skips auto update of npm dependencies if mismatch found
+
+### skipRnvCheck
+Skips auto update of rnv dependencies if mismatch found
+
+### configName
+Use custom name for ./renative.json. (applies only at root level)
+
+Value: ``value``
+
+### sourceAppConfigID
+name of source appConfig folder to copy from
+
+Value: ``value``
+
+### hostIp
+Custom IP override
+
+Value: ``value``
+
+### unlinked
+Force engines to be loaded from node_modules rather than locally
+
+### yes
+Default all prompts to yes
+
+### gitEnabled
+Enable git in your newly created project
+
+Value: ``value``
+
+### npxMode
+Ensures you can use local npx rnv version after the command is done
+
+### json
+Outputs the result as json
+
+### packageManager
+Set specific package manager to use
+
+Value: ``value``
+
+### skipTasks
+List tasks which you want to skip during rnv execution
+
+Value: ``value``
+
+### answer
+Pass in answers to prompts
+
+Value: ``value``
+
+### resetAdb
+Forces to reset android adb
+
+### telemetryDebug
+If you have telemetry enabled, will print out exactly what is being collected into the console
+

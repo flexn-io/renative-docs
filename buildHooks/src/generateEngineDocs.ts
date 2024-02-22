@@ -59,81 +59,30 @@ sidebar_label: RNV CLI Tasks Reference
                 content += `### ${task.subCommand}\n\n`;
                 content += `${task.description}\n\n`;
                 task.provider && (content += `Provider: ${task.provider}\n\n`);
-                content += `Example:\n\n\`\`\`bash\nnpx rnv ${command} ${task.subCommand}\n\`\`\`\n\n`;
+                content += `Example:\n\`\`\`bash\nnpx rnv ${command} ${task.subCommand}\n\`\`\``;
+                content += '\n\n';
+
+                // options
+                content += `Available Options:\n`;
+                const toDisplay = [];
+                task.params?.forEach((param) => {
+                    toDisplay.push(`[\`${param.key}\`](#${param.key.toLowerCase()})`);
+                });
+                content += toDisplay.join(', ');
+                content += `\n\n`;
             });
         }
     });
 
     // CLI options
-    // | Syntax      | Description |
-    // | ----------- | ----------- |
-    content += `# Options\n\n`;
-    content += '| Option | Shorthand | Description |\n';
-    content += '| ------ | --------- | ----------- |\n';
+    content += `## Options\n\n`;
     PARAMS.withAll().forEach((param) => {
-        let argument = '';
-        if (param.value) {
-            argument = param.isRequired ? ` <${param.value}>` : ` [${param.value}]`;
-        }
-        content += `| \`--${param.key}${argument}\` | ${param.shortcut ? `\`-${param.shortcut}\`` : ''} | ${
-            param.description
-        } |\n`;
+        content += `### ${param.key}\n`;
+        content += `${param.description}\n\n`;
+        // content += `Required: ${param.isRequired ? 'Yes' : 'No'}\n\n`;
+        if (param.shortcut) content += `Shortcut: \`\`-${param.shortcut}\`\`\n\n`;
+        if (param.value) content += `Value: \`\`${param.value}\`\`\n\n`;
     });
 
     writeFileSync(path.join(c.paths.project.dir, `/docs/api/tasks.md`), header + content);
-};
-
-const _generateEngineTaks = (c, engine) => {
-    const { id } = engine.config;
-    const title = kebabToTitleCase(id);
-    let output = `---
-id: cli-${id}
-title: ${title} CLI Reference
-sidebar_label: ${title}
----
-
-
-`;
-    const { tasks } = engine;
-
-    Object.values(tasks).forEach((t) => {
-        output += `
----
-
-This command reference applies if your platform uses engine \`${id}\`.
-
-More info at [${title} Guide](cli-${id}.md)
-
----
-
-## ${t.task}
-
-> ${t.description}
-
-Supported Platforms:
-
-${getSupportedPlatforms(c, t)}
-
-Example:
-
-\`\`\`bash
-npx rnv ${t.task}
-\`\`\`
-
-Options:
-
-${t.params
-    .map((v) => {
-        const option = v.shortcut ? `\`-${v.shortcut}\`, ` : '';
-        return `${option}\`--${v.key}\` - ${v.description}`;
-    })
-    .join('\n\n')}
-
-
-`;
-    });
-
-    output += 'test';
-
-    writeFileSync(path.join(c.paths.project.dir, `/docs/api/cli-${id}.md`), output);
 };
