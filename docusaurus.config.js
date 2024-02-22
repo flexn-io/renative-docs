@@ -31,11 +31,8 @@ const config = {
                 id: 'api-core',
                 entryPoints: ['node_modules/@rnv/core/lib/index.d.ts'],
                 tsconfig: './tsconfig.typedoc.json',
-                out: 'api/rnv-core',
+                out: 'api/node/rnv-core',
                 // watch: true,
-                sidebar: {
-                    categoryLabel: '@rnv/core',
-                },
             },
         ],
         [
@@ -44,7 +41,7 @@ const config = {
                 id: 'api-renative',
                 entryPoints: ['node_modules/@rnv/renative/lib/index.d.ts'],
                 tsconfig: './tsconfig.typedoc.json',
-                out: 'api/renative',
+                out: 'api/node/renative',
                 // watch: true,
                 sidebar: {
                     categoryLabel: '@rnv/renative',
@@ -57,7 +54,7 @@ const config = {
                 id: 'api-rnv',
                 entryPoints: ['node_modules/rnv/lib/index.d.ts'],
                 tsconfig: './tsconfig.typedoc.json',
-                out: 'api/rnv',
+                out: 'api/node/rnv',
                 // watch: true,
                 sidebar: {
                     categoryLabel: 'rnv',
@@ -117,7 +114,7 @@ const config = {
                     },
                     {
                         type: 'doc',
-                        docId: 'api/renative/index',
+                        docId: 'api/node/renative/index',
                         position: 'left',
                         label: 'API',
                     },

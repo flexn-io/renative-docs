@@ -13,7 +13,7 @@
         "write-translations": "docusaurus write-translations",
         "write-heading-ids": "docusaurus write-heading-ids",
         "pre-publish": "rnv hooks run -x prePublish -p all",
-        "clean-typedoc-generated": "rm -rf ./docs/api/rnv-core ./docs/api/renative",
+        "clean-typedoc-generated": "rm -rf ./docs/api/node",
         "generate-docs": "npx rnv hooks run -x generateDocs"
     },
     "dependencies": {
@@ -42,7 +42,6 @@
         "@docusaurus/tsconfig": "^3.1.1",
         "@docusaurus/types": "^3.1.1",
         "@flexn/prettier-config": "^1.0.0",
-        "@rnv/renative": "1.0.0-rc.11",
         "@rnv/core": "1.0.0-rc.11",
         "@rnv/engine-lightning": "1.0.0-rc.11",
         "@rnv/engine-rn": "1.0.0-rc.11",
@@ -52,6 +51,8 @@
         "@rnv/engine-rn-tvos": "1.0.0-rc.11",
         "@rnv/engine-rn-web": "1.0.0-rc.11",
         "@rnv/engine-rn-windows": "1.0.0-rc.11",
+        "@rnv/renative": "1.0.0-rc.11",
+        "@types/mocha": "^10.0.6",
         "docusaurus-plugin-typedoc": "^0.22.0",
         "rnv": "1.0.0-rc.11",
         "typedoc": "^0.25.8",
