@@ -32,6 +32,9 @@ const config = {
                 entryPoints: ['node_modules/@rnv/core/lib/index.d.ts'],
                 tsconfig: './tsconfig.typedoc.json',
                 out: 'api/node/rnv-core',
+                sidebar: {
+                    sidebar_label: '@rnv/core',
+                },
                 // watch: true,
             },
         ],
@@ -114,7 +117,7 @@ const config = {
                     },
                     {
                         type: 'doc',
-                        docId: 'api/node/renative/index',
+                        docId: 'api/node/rnv-core/modules',
                         position: 'left',
                         label: 'API',
                     },

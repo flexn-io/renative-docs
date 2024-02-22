@@ -1,8 +1,8 @@
 ---
 id: "RnvApi"
 title: "Interface: RnvApi"
-sidebar_label: "RnvApi"
-sidebar_position: 0
+sidebar_label: "@rnv/core"
+sidebar_position: 0.5
 custom_edit_url: null
 ---
 
