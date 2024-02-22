@@ -117,7 +117,7 @@ const config = {
                     },
                     {
                         type: 'doc',
-                        docId: 'api/renative',
+                        docId: 'api/renative/index',
                         position: 'left',
                         label: 'API',
                     },
