@@ -1,18 +1,10 @@
 ---
 id: "modules"
 title: "@rnv/core"
-sidebar_label: "@rnv/core"
+sidebar_label: "@rnv/core (Node)"
 sidebar_position: 0.5
 custom_edit_url: null
 ---
-
-## Interfaces
-
-- [RnvApi](interfaces/RnvApi.md)
-- [RnvContext](interfaces/RnvContext.md)
-- [RnvContextFileObj](interfaces/RnvContextFileObj.md)
-- [RnvContextPathObj](interfaces/RnvContextPathObj.md)
-- [RnvContextPlatform](interfaces/RnvContextPlatform.md)
 
 ## Type Aliases
 
@@ -22,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:20
+schema/types.d.ts:20
 
 ___
 
@@ -32,7 +24,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:19
+schema/types.d.ts:19
 
 ___
 
@@ -48,7 +40,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:27
+types.d.ts:27
 
 ___
 
@@ -66,7 +58,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:11
+types.d.ts:11
 
 ___
 
@@ -76,7 +68,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:34
+types.d.ts:34
 
 ___
 
@@ -86,7 +78,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:32
+types.d.ts:32
 
 ___
 
@@ -96,7 +88,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:33
+types.d.ts:33
 
 ___
 
@@ -106,7 +98,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:16
+schema/configFiles/types.d.ts:16
 
 ___
 
@@ -116,7 +108,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/buildConfig.d.ts:23
+schema/configFiles/buildConfig.d.ts:23
 
 ___
 
@@ -126,7 +118,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:17
+schema/configFiles/types.d.ts:17
 
 ___
 
@@ -136,7 +128,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:26
+schema/configFiles/types.d.ts:26
 
 ___
 
@@ -146,7 +138,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:20
+schema/configFiles/types.d.ts:20
 
 ___
 
@@ -156,7 +148,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:28
+schema/configFiles/types.d.ts:28
 
 ___
 
@@ -166,7 +158,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:18
+schema/configFiles/types.d.ts:18
 
 ___
 
@@ -176,7 +168,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:19
+schema/configFiles/types.d.ts:19
 
 ___
 
@@ -186,7 +178,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:21
+schema/configFiles/types.d.ts:21
 
 ___
 
@@ -196,7 +188,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:15
+schema/configFiles/types.d.ts:15
 
 ___
 
@@ -206,7 +198,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:27
+schema/configFiles/types.d.ts:27
 
 ___
 
@@ -216,7 +208,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:22
+schema/configFiles/types.d.ts:22
 
 ___
 
@@ -226,7 +218,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:23
+schema/configFiles/types.d.ts:23
 
 ___
 
@@ -236,7 +228,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:24
+schema/configFiles/types.d.ts:24
 
 ___
 
@@ -246,7 +238,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/types.d.ts:25
+schema/configFiles/types.d.ts:25
 
 ___
 
@@ -256,7 +248,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:10
+schema/types.d.ts:10
 
 ___
 
@@ -266,7 +258,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:11
+schema/types.d.ts:11
 
 ___
 
@@ -286,7 +278,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:12
+context/types.d.ts:12
 
 ___
 
@@ -312,7 +304,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:1
+system/types.d.ts:1
 
 ___
 
@@ -322,7 +314,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:10
+types.d.ts:10
 
 ___
 
@@ -347,7 +339,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:27
+system/types.d.ts:27
 
 ___
 
@@ -378,7 +370,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:8
+system/types.d.ts:8
 
 ___
 
@@ -397,13 +389,13 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:37
+system/types.d.ts:37
 
 ___
 
 ### GetConfigPropFn
 
-Ƭ **GetConfigPropFn**: \<T\>(`c`: [`RnvContext`](interfaces/RnvContext.md), `platform`: [`RnvPlatform`](modules.md#rnvplatform), `key`: `T`, `defaultVal?`: [`ConfigProp`](modules.md#configprop)[`T`]) => [`ConfigProp`](modules.md#configprop)[`T`]
+Ƭ **GetConfigPropFn**: \<T\>(`c`: [`RnvContext`](modules.md#rnvcontext), `platform`: [`RnvPlatform`](modules.md#rnvplatform), `key`: `T`, `defaultVal?`: [`ConfigProp`](modules.md#configprop)[`T`]) => [`ConfigProp`](modules.md#configprop)[`T`]
 
 #### Type declaration
 
@@ -419,7 +411,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md) |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `key` | `T` |
 | `defaultVal?` | [`ConfigProp`](modules.md#configprop)[`T`] |
@@ -430,7 +422,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:115
+api/types.d.ts:115
 
 ___
 
@@ -440,7 +432,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:28
+system/types.d.ts:28
 
 ___
 
@@ -450,7 +442,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:342
+tasks/constants.d.ts:342
 
 ___
 
@@ -475,7 +467,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/types.d.ts:1
+projects/types.d.ts:1
 
 ___
 
@@ -485,7 +477,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:31
+types.d.ts:31
 
 ___
 
@@ -495,7 +487,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:16
+schema/types.d.ts:16
 
 ___
 
@@ -521,7 +513,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:3
+plugins/types.d.ts:3
 
 ___
 
@@ -540,7 +532,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:4
+plugins/types.d.ts:4
 
 ___
 
@@ -559,7 +551,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:10
+plugins/types.d.ts:10
 
 ___
 
@@ -580,7 +572,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:91
+api/types.d.ts:91
 
 ___
 
@@ -605,7 +597,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:99
+api/types.d.ts:99
 
 ___
 
@@ -632,7 +624,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:114
+api/types.d.ts:114
 
 ___
 
@@ -642,7 +634,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:18
+schema/types.d.ts:18
 
 ___
 
@@ -652,7 +644,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:13
+schema/types.d.ts:13
 
 ___
 
@@ -662,7 +654,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:12
+schema/types.d.ts:12
 
 ___
 
@@ -672,7 +664,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:14
+schema/types.d.ts:14
 
 ___
 
@@ -682,7 +674,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:17
+schema/types.d.ts:17
 
 ___
 
@@ -692,7 +684,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:6
+types.d.ts:6
 
 ___
 
@@ -702,7 +694,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:15
+schema/types.d.ts:15
 
 ___
 
@@ -721,7 +713,34 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:2
+system/types.d.ts:2
+
+___
+
+### RnvApi
+
+Ƭ **RnvApi**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `analytics` | [`RnvContextAnalytics`](modules.md#rnvcontextanalytics) |
+| `doResolve` | [`DoResolveFn`](modules.md#doresolvefn) |
+| `fsExistsSync` | typeof `fs.existsSync` |
+| `fsReadFileSync` | (`dest`: `fs.PathLike` \| `undefined`) => `Buffer` |
+| `fsReaddirSync` | (`dest`: `fs.PathLike` \| `undefined`) => `string`[] |
+| `fsWriteFileSync` | (`dest`: `string` \| `undefined`, `data`: `string`, `options?`: `fs.WriteFileOptions`) => `void` |
+| `getConfigProp` | [`GetConfigPropFn`](modules.md#getconfigpropfn) |
+| `isDefault` | `boolean` |
+| `logger` | [`RnvApiLogger`](modules.md#rnvapilogger) |
+| `path` | typeof `path` |
+| `prompt` | [`RnvApiPrompt`](modules.md#rnvapiprompt) |
+| `spinner` | [`RnvApiSpinner`](modules.md#rnvapispinner) |
+
+#### Defined in
+
+api/types.d.ts:10
 
 ___
 
@@ -747,7 +766,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:50
+api/types.d.ts:50
 
 ___
 
@@ -757,7 +776,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:63
+api/types.d.ts:63
 
 ___
 
@@ -773,7 +792,7 @@ ___
 | `getCurrentCommand` | (`excludeDollar`: `boolean`) => `void` |
 | `isInfoEnabled` | () => `boolean` |
 | `logAndSave` | (`msg`: `string`, `skipLog?`: `boolean`) => `void` |
-| `logAppInfo` | (`c`: [`RnvContext`](interfaces/RnvContext.md)) => `void` |
+| `logAppInfo` | (`c`: [`RnvContext`](modules.md#rnvcontext)) => `void` |
 | `logComplete` | (`isEnd?`: `boolean`) => `void` |
 | `logDebug` | (...`args`: `any`[]) => `void` |
 | `logEnd` | (`code`: `number`) => `void` |
@@ -797,7 +816,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:64
+api/types.d.ts:64
 
 ___
 
@@ -816,7 +835,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:32
+api/types.d.ts:32
 
 ___
 
@@ -847,7 +866,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:24
+api/types.d.ts:24
 
 ___
 
@@ -857,7 +876,58 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:36
+system/types.d.ts:36
+
+___
+
+### RnvContext
+
+Ƭ **RnvContext**\<`Payload`\>: `Object`
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `Payload` | `any` |
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_currentTask?` | `string` | - |
+| `_renativePluginCache` | `Record`\<`string`, [`ConfigFilePlugin`](modules.md#configfileplugin)\> | - |
+| `_requiresNpmInstall?` | `boolean` | - |
+| `assetConfig` | `object` | - |
+| `buildConfig` | [`RnvContextBuildConfig`](modules.md#rnvcontextbuildconfig) | complete object containing ALL renative.*.json files collected and merged during execution |
+| `buildHooks` | `Record`\<`string`, (`c`: [`RnvContext`](modules.md#rnvcontext)) => `Promise`\<`void`\>\> | - |
+| `buildPipes` | `Record`\<`string`, (`c`: [`RnvContext`](modules.md#rnvcontext)) => `Promise`\<`boolean`\>[]\> | - |
+| `cli` | `Record`\<`string`, `string` \| `undefined`\> | - |
+| `command` | `string` \| ``null`` | first command value from cli (ie "rnv run -p android") returns "run" |
+| `configPropsInjects` | [`OverridesOptions`](modules.md#overridesoptions) | - |
+| `files` | [`RnvContextFiles`](modules.md#rnvcontextfiles) | - |
+| `injectableConfigProps` | `Record`\<`string`, [`ConfigProp`](modules.md#configprop)[[`ConfigPropKey`](modules.md#configpropkey)]\> | - |
+| `isBuildHooksReady` | `boolean` | - |
+| `isDefault` | `boolean` | - |
+| `isSystemWin` | `boolean` | - |
+| `logMessages` | `string`[] | - |
+| `paths` | [`RnvContextPaths`](modules.md#rnvcontextpaths) | - |
+| `payload` | `Payload` | Extra payload object used by 3rd party (ie @rnv/sdk-apple) to decorate context with extra typed information |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) | - |
+| `process` | `NodeJS.Process` | - |
+| `program` | [`RnvContextProgram`](modules.md#rnvcontextprogram) | - |
+| `rnvVersion` | `string` | - |
+| `runningProcesses` | `ExecaChildProcess`[] | - |
+| `runtime` | [`RnvContextRuntime`](modules.md#rnvcontextruntime) | - |
+| `runtimePropsInjects` | [`OverridesOptions`](modules.md#overridesoptions) | - |
+| `subCommand` | `string` \| ``null`` | second command value from cli (ie "rnv hooks list") returns "list" |
+| `supportedPlatforms` | `string`[] | - |
+| `systemPropsInjects` | [`OverridesOptions`](modules.md#overridesoptions) | - |
+| `timeEnd` | `Date` | - |
+| `timeStart` | `Date` | - |
+
+#### Defined in
+
+context/types.d.ts:25
 
 ___
 
@@ -875,7 +945,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:38
+api/types.d.ts:38
 
 ___
 
@@ -885,7 +955,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:69
+context/types.d.ts:69
 
 ___
 
@@ -895,7 +965,35 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:302
+context/types.d.ts:302
+
+___
+
+### RnvContextFileObj
+
+Ƭ **RnvContextFileObj**\<`T`\>: `Object`
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `config?` | `T` |
+| `configLocal?` | [`ConfigFileLocal`](modules.md#configfilelocal) |
+| `configPrivate?` | [`ConfigFilePrivate`](modules.md#configfileprivate) |
+| `config_original?` | `T` |
+| `configs` | `T`[] |
+| `configsLocal` | [`ConfigFileLocal`](modules.md#configfilelocal)[] |
+| `configsPrivate` | [`ConfigFilePrivate`](modules.md#configfileprivate)[] |
+
+#### Defined in
+
+context/types.d.ts:157
 
 ___
 
@@ -907,9 +1005,9 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `appConfig` | [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<[`ConfigFileApp`](modules.md#configfileapp)\> |
-| `defaultWorkspace` | [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<[`ConfigFileWorkspace`](modules.md#configfileworkspace)\> & \{ `appConfig`: [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<[`ConfigFileApp`](modules.md#configfileapp)\> ; `project`: [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<[`ConfigFileProject`](modules.md#configfileproject)\>  } |
-| `project` | [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<[`ConfigFileProject`](modules.md#configfileproject)\> & \{ `assets`: \{ `config?`: [`ConfigFileRuntime`](modules.md#configfileruntime)  } ; `builds`: `Record`\<`string`, [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\> ; `package`: `NpmPackageFile`  } |
+| `appConfig` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileApp`](modules.md#configfileapp)\> |
+| `defaultWorkspace` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileWorkspace`](modules.md#configfileworkspace)\> & \{ `appConfig`: [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileApp`](modules.md#configfileapp)\> ; `project`: [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileProject`](modules.md#configfileproject)\>  } |
+| `project` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileProject`](modules.md#configfileproject)\> & \{ `assets`: \{ `config?`: [`ConfigFileRuntime`](modules.md#configfileruntime)  } ; `builds`: `Record`\<`string`, [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\> ; `package`: `NpmPackageFile`  } |
 | `rnv` | \{ `configWorkspaces?`: [`ConfigFileWorkspaces`](modules.md#configfileworkspaces) ; `package`: `NpmPackageFile` ; `pluginTemplates`: \{ `config?`: [`ConfigFilePlugins`](modules.md#configfileplugins) ; `configs`: `Record`\<`string`, [`ConfigFilePlugins`](modules.md#configfileplugins)\>  } ; `projectTemplates`: \{ `config?`: [`ConfigFileTemplates`](modules.md#configfiletemplates)  }  } |
 | `rnv.configWorkspaces?` | [`ConfigFileWorkspaces`](modules.md#configfileworkspaces) |
 | `rnv.package` | `NpmPackageFile` |
@@ -918,11 +1016,41 @@ ___
 | `rnv.pluginTemplates.configs` | `Record`\<`string`, [`ConfigFilePlugins`](modules.md#configfileplugins)\> |
 | `rnv.projectTemplates` | \{ `config?`: [`ConfigFileTemplates`](modules.md#configfiletemplates)  } |
 | `rnv.projectTemplates.config?` | [`ConfigFileTemplates`](modules.md#configfiletemplates) |
-| `workspace` | [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<[`ConfigFileWorkspace`](modules.md#configfileworkspace)\> & \{ `appConfig`: [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<[`ConfigFileApp`](modules.md#configfileapp)\> ; `project`: [`RnvContextFileObj`](interfaces/RnvContextFileObj.md)\<[`ConfigFileProject`](modules.md#configfileproject)\>  } |
+| `workspace` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileWorkspace`](modules.md#configfileworkspace)\> & \{ `appConfig`: [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileApp`](modules.md#configfileapp)\> ; `project`: [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileProject`](modules.md#configfileproject)\>  } |
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:128
+context/types.d.ts:128
+
+___
+
+### RnvContextPathObj
+
+Ƭ **RnvContextPathObj**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `appConfigsDir` | `string` |
+| `config` | `string` |
+| `configExists?` | `boolean` |
+| `configLocal` | `string` |
+| `configLocalExists?` | `boolean` |
+| `configPrivate` | `string` |
+| `configPrivateExists?` | `boolean` |
+| `configs` | `string`[] |
+| `configsLocal` | `string`[] |
+| `configsPrivate` | `string`[] |
+| `dir` | `string` |
+| `dirs` | `string`[] |
+| `fontsDir` | `string` |
+| `fontsDirs` | `string`[] |
+| `pluginDirs` | `string`[] |
+
+#### Defined in
+
+context/types.d.ts:278
 
 ___
 
@@ -941,7 +1069,7 @@ ___
 | `IS_NPX_MODE` | `boolean` |
 | `RNV_HOME_DIR` | `string` |
 | `RNV_NODE_MODULES_DIR` | `string` |
-| `appConfig` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) |
+| `appConfig` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) |
 | `appConfigBase` | `string` |
 | `buildHooks` | \{ `dir`: `string` ; `dist`: \{ `dir`: `string` ; `index`: `string`  } ; `index`: `string`  } |
 | `buildHooks.dir` | `string` |
@@ -949,10 +1077,10 @@ ___
 | `buildHooks.dist.dir` | `string` |
 | `buildHooks.dist.index` | `string` |
 | `buildHooks.index` | `string` |
-| `defaultWorkspace` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) & \{ `appConfig`: \{ `configs`: `string`[] ; `configsLocal`: `string`[] ; `configsPrivate`: `string`[]  } ; `project`: \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: \{ `dir`: `string`  } ; `builds`: \{ `dir`: `string`  }  }  } |
+| `defaultWorkspace` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfig`: \{ `configs`: `string`[] ; `configsLocal`: `string`[] ; `configsPrivate`: `string`[]  } ; `project`: \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: \{ `dir`: `string`  } ; `builds`: \{ `dir`: `string`  }  }  } |
 | `home` | \{ `dir`: `string`  } |
 | `home.dir` | `string` |
-| `project` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) & \{ `appConfigBase`: \{ `dir`: `string` ; `fontsDir`: `string` ; `fontsDirs`: `string`[] ; `pluginsDir`: `string`  } ; `appConfigsDirNames`: `string`[] ; `appConfigsDirs`: `string`[] ; `assets`: \{ `config`: `string` ; `dir`: `string` ; `runtimeDir`: `string`  } ; `babelConfig?`: `string` ; `builds`: \{ `config`: `string` ; `dir`: `string`  } ; `dir`: `string` ; `dotRnvDir`: `string` ; `fontSourceDirs?`: `string`[] ; `nodeModulesDir`: `string` ; `package?`: `string` ; `platformTemplatesDirs`: `Record`\<`string`, `string`\> ; `srcDir?`: `string`  } |
+| `project` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfigBase`: \{ `dir`: `string` ; `fontsDir`: `string` ; `fontsDirs`: `string`[] ; `pluginsDir`: `string`  } ; `appConfigsDirNames`: `string`[] ; `appConfigsDirs`: `string`[] ; `assets`: \{ `config`: `string` ; `dir`: `string` ; `runtimeDir`: `string`  } ; `babelConfig?`: `string` ; `builds`: \{ `config`: `string` ; `dir`: `string`  } ; `dir`: `string` ; `dotRnvDir`: `string` ; `fontSourceDirs?`: `string`[] ; `nodeModulesDir`: `string` ; `package?`: `string` ; `platformTemplatesDirs`: `Record`\<`string`, `string`\> ; `srcDir?`: `string`  } |
 | `rnv` | \{ `configWorkspaces`: `string` ; `dir`: `string` ; `engines`: \{ `dir`: `string`  } ; `package`: `string` ; `pluginTemplates`: \{ `config?`: `string` ; `dirs`: `Record`\<`string`, `string`\> ; `overrideDir?`: `string`  } ; `projectTemplate`: \{ `dir`: `string`  } ; `projectTemplates`: \{ `config`: `string` ; `dir`: `string`  }  } |
 | `rnv.configWorkspaces` | `string` |
 | `rnv.dir` | `string` |
@@ -979,11 +1107,31 @@ ___
 | `template.config` | `string` |
 | `template.configTemplate` | `string` |
 | `template.dir` | `string` |
-| `workspace` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) & \{ `appConfig`: [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) ; `project`: [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) & \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: `string` ; `builds`: `string`  }  } |
+| `workspace` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfig`: [`RnvContextPathObj`](modules.md#rnvcontextpathobj) ; `project`: [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: `string` ; `builds`: `string`  }  } |
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:166
+context/types.d.ts:166
+
+___
+
+### RnvContextPlatform
+
+Ƭ **RnvContextPlatform**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `engine?` | [`RnvEngine`](modules.md#rnvengine) |
+| `isConnected` | `boolean` |
+| `isValid?` | `boolean` |
+| `platform` | [`PlatformKey`](modules.md#platformkey) |
+| `port?` | `number` |
+
+#### Defined in
+
+context/types.d.ts:295
 
 ___
 
@@ -993,7 +1141,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:19
+context/types.d.ts:19
 
 ___
 
@@ -1048,7 +1196,7 @@ ___
 | `skipActiveServerCheck` | `boolean` |
 | `skipBuildHooks` | `boolean` |
 | `skipPackageUpdate?` | `boolean` |
-| `supportedPlatforms` | [`RnvContextPlatform`](interfaces/RnvContextPlatform.md)[] |
+| `supportedPlatforms` | [`RnvContextPlatform`](modules.md#rnvcontextplatform)[] |
 | `target?` | `string` |
 | `targetUDID?` | `string` |
 | `task?` | `string` |
@@ -1058,7 +1206,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:75
+context/types.d.ts:75
 
 ___
 
@@ -1083,7 +1231,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:3
+engines/types.d.ts:3
 
 ___
 
@@ -1102,7 +1250,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:25
+engines/types.d.ts:25
 
 ___
 
@@ -1120,7 +1268,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:15
+engines/types.d.ts:15
 
 ___
 
@@ -1137,7 +1285,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:20
+engines/types.d.ts:20
 
 ___
 
@@ -1147,7 +1295,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:24
+engines/types.d.ts:24
 
 ___
 
@@ -1157,7 +1305,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:9
+types.d.ts:9
 
 ___
 
@@ -1167,7 +1315,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:4
+types.d.ts:4
 
 ___
 
@@ -1177,7 +1325,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:5
+types.d.ts:5
 
 ___
 
@@ -1187,7 +1335,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:20
+plugins/types.d.ts:20
 
 ___
 
@@ -1204,7 +1352,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:16
+plugins/types.d.ts:16
 
 ___
 
@@ -1230,13 +1378,13 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:2
+tasks/types.d.ts:2
 
 ___
 
 ### RnvTaskFn
 
-Ƭ **RnvTaskFn**: (`c`: [`RnvContext`](interfaces/RnvContext.md), `parentTask?`: `string`, `originTask?`: `string`) => `Promise`\<`any`\>
+Ƭ **RnvTaskFn**: (`c`: [`RnvContext`](modules.md#rnvcontext), `parentTask?`: `string`, `originTask?`: `string`) => `Promise`\<`any`\>
 
 #### Type declaration
 
@@ -1246,7 +1394,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md) |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `parentTask?` | `string` |
 | `originTask?` | `string` |
 
@@ -1256,7 +1404,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:38
+tasks/types.d.ts:38
 
 ___
 
@@ -1266,7 +1414,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:37
+tasks/types.d.ts:37
 
 ___
 
@@ -1289,7 +1437,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:27
+tasks/types.d.ts:27
 
 ___
 
@@ -1299,7 +1447,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:127
+context/types.d.ts:127
 
 ___
 
@@ -1309,7 +1457,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:39
+tasks/types.d.ts:39
 
 ___
 
@@ -1326,7 +1474,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:43
+tasks/types.d.ts:43
 
 ___
 
@@ -1351,7 +1499,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:15
+tasks/types.d.ts:15
 
 ___
 
@@ -1368,7 +1516,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:32
+system/types.d.ts:32
 
 ## Variables
 
@@ -1378,7 +1526,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:6
+constants.d.ts:6
 
 ___
 
@@ -1388,7 +1536,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:2
+constants.d.ts:2
 
 ___
 
@@ -1398,7 +1546,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:3
+constants.d.ts:3
 
 ___
 
@@ -1408,7 +1556,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:4
+constants.d.ts:4
 
 ___
 
@@ -1418,7 +1566,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:5
+constants.d.ts:5
 
 ___
 
@@ -1428,7 +1576,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:7
+constants.d.ts:7
 
 ___
 
@@ -1438,7 +1586,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:8
+constants.d.ts:8
 
 ___
 
@@ -1448,7 +1596,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:9
+constants.d.ts:9
 
 ___
 
@@ -1458,7 +1606,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:10
+constants.d.ts:10
 
 ___
 
@@ -1468,7 +1616,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:11
+constants.d.ts:11
 
 ___
 
@@ -1485,7 +1633,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/env/index.d.ts:2
+env/index.d.ts:2
 
 ___
 
@@ -1511,7 +1659,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/defaults.d.ts:1
+schema/defaults.d.ts:1
 
 ___
 
@@ -1521,7 +1669,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:62
+tasks/constants.d.ts:62
 
 ___
 
@@ -1540,7 +1688,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:4
+system/exec.d.ts:4
 
 ___
 
@@ -1550,7 +1698,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:12
+constants.d.ts:12
 
 ___
 
@@ -1560,7 +1708,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:13
+constants.d.ts:13
 
 ___
 
@@ -1570,7 +1718,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:14
+constants.d.ts:14
 
 ___
 
@@ -1580,7 +1728,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:15
+constants.d.ts:15
 
 ___
 
@@ -1590,7 +1738,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:16
+constants.d.ts:16
 
 ___
 
@@ -1600,7 +1748,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:44
+constants.d.ts:44
 
 ___
 
@@ -1610,7 +1758,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:17
+constants.d.ts:17
 
 ___
 
@@ -1620,7 +1768,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:18
+constants.d.ts:18
 
 ___
 
@@ -1630,7 +1778,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:19
+constants.d.ts:19
 
 ___
 
@@ -1640,7 +1788,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:20
+constants.d.ts:20
 
 ___
 
@@ -1650,7 +1798,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:21
+constants.d.ts:21
 
 ___
 
@@ -1670,7 +1818,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:343
+tasks/constants.d.ts:343
 
 ___
 
@@ -1680,7 +1828,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:338
+tasks/constants.d.ts:338
 
 ___
 
@@ -1690,7 +1838,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:22
+constants.d.ts:22
 
 ___
 
@@ -1700,7 +1848,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:53
+constants.d.ts:53
 
 ___
 
@@ -1710,7 +1858,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:59
+constants.d.ts:59
 
 ___
 
@@ -1720,7 +1868,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:50
+constants.d.ts:50
 
 ___
 
@@ -1730,7 +1878,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:49
+constants.d.ts:49
 
 ___
 
@@ -1740,7 +1888,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:58
+constants.d.ts:58
 
 ___
 
@@ -1750,7 +1898,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:56
+constants.d.ts:56
 
 ___
 
@@ -1760,7 +1908,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:51
+constants.d.ts:51
 
 ___
 
@@ -1770,7 +1918,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:54
+constants.d.ts:54
 
 ___
 
@@ -1780,7 +1928,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:57
+constants.d.ts:57
 
 ___
 
@@ -1790,7 +1938,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:52
+constants.d.ts:52
 
 ___
 
@@ -1800,7 +1948,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:55
+constants.d.ts:55
 
 ___
 
@@ -1810,7 +1958,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:23
+constants.d.ts:23
 
 ___
 
@@ -1820,27 +1968,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/app.d.ts:37602
+schema/configFiles/app.d.ts:37602
 
 ___
 
 ### RootEngineSchema
 
-• `Const` **RootEngineSchema**: `z.ZodObject`\<\{ `custom`: `z.ZodOptional`\<`z.ZodAny`\> ; `engineExtension`: `z.ZodString` ; `extends`: `z.ZodOptional`\<`z.ZodString`\> ; `id`: `z.ZodString` ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\> ; `overview`: `z.ZodString` ; `platforms`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodOptional`\<`z.ZodString`\> ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\>\> ; `plugins`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }\>
+• `Const` **RootEngineSchema**: `z.ZodObject`\<\{ `custom`: `z.ZodOptional`\<`z.ZodAny`\> ; `engineExtension`: `z.ZodString` ; `extends`: `z.ZodOptional`\<`z.ZodString`\> ; `id`: `z.ZodString` ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\> ; `overview`: `z.ZodString` ; `platforms`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodOptional`\<`z.ZodString`\> ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\>\> ; `plugins`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }\>
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/engine.d.ts:2
+schema/configFiles/engine.d.ts:2
 
 ___
 
 ### RootGlobalSchema
 
-• `Const` **RootGlobalSchema**: `z.ZodObject`\<\{ `appConfigsPath`: `z.ZodOptional`\<`z.ZodString`\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `disableTelemetry`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `projectTemplates`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\>\> ; `sdks`: `z.ZodOptional`\<`z.ZodObject`\<\{ `ANDROID_NDK`: `z.ZodOptional`\<`z.ZodString`\> ; `ANDROID_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `KAIOS_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `TIZEN_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `WEBOS_SDK`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }\>
+• `Const` **RootGlobalSchema**: `z.ZodObject`\<\{ `appConfigsPath`: `z.ZodOptional`\<`z.ZodString`\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `disableTelemetry`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `projectTemplates`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\>\> ; `sdks`: `z.ZodOptional`\<`z.ZodObject`\<\{ `ANDROID_NDK`: `z.ZodOptional`\<`z.ZodString`\> ; `ANDROID_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `KAIOS_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `TIZEN_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `WEBOS_SDK`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }\>
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/workspace.d.ts:2
+schema/configFiles/workspace.d.ts:2
 
 ___
 
@@ -1850,17 +1998,17 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/integration.d.ts:2
+schema/configFiles/integration.d.ts:2
 
 ___
 
 ### RootLocalSchema
 
-• `Const` **RootLocalSchema**: `z.ZodObject`\<\{ `_meta`: `z.ZodOptional`\<`z.ZodObject`\<\{ `currentAppConfigId`: `z.ZodOptional`\<`z.ZodString`\> ; `requiresJetify`: `z.ZodOptional`\<`z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }\>\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `workspaceAppConfigsDir`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }\>
+• `Const` **RootLocalSchema**: `z.ZodObject`\<\{ `_meta`: `z.ZodOptional`\<`z.ZodObject`\<\{ `currentAppConfigId`: `z.ZodOptional`\<`z.ZodString`\> ; `requiresJetify`: `z.ZodOptional`\<`z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }\>\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `workspaceAppConfigsDir`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }\>
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/local.d.ts:2
+schema/configFiles/local.d.ts:2
 
 ___
 
@@ -1870,7 +2018,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/plugin.d.ts:2
+schema/configFiles/plugin.d.ts:2
 
 ___
 
@@ -1880,7 +2028,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/plugins.d.ts:5189
+schema/configFiles/plugins.d.ts:5189
 
 ___
 
@@ -1890,7 +2038,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/private.d.ts:18
+schema/configFiles/private.d.ts:18
 
 ___
 
@@ -1900,27 +2048,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/project.d.ts:37891
+schema/configFiles/project.d.ts:37891
 
 ___
 
 ### RootTemplateSchema
 
-• `Const` **RootTemplateSchema**: `z.ZodObject`\<\{ `defaults`: `z.ZodOptional`\<`z.ZodObject`\<\{ `defaultCommandSchemes`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"run"``, ``"export"``, ``"build"``]\>, `z.ZodString`\>\> ; `portOffset`: `z.ZodOptional`\<`z.ZodNumber`\> ; `ports`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodNumber`\>\> ; `supportedPlatforms`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, ``"many"``\>\> ; `targets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\>  }, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\>  }\>\> ; `engines`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodLiteral`\<``"source:rnv"``\>\>\> ; `templateConfig`: `z.ZodOptional`\<`z.ZodObject`\<\{ `bootstrapQuestions`: `z.ZodArray`\<`z.ZodObject`\<\{ `configProp`: `z.ZodOptional`\<`z.ZodObject`\<\{ `key`: `z.ZodString` ; `prop`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `key`: `string` ; `prop`: `string`  }, \{ `key`: `string` ; `prop`: `string`  }\>\> ; `options`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `title`: `z.ZodString` ; `value`: `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `title`: `string` ; `value`: {}  }, \{ `title`: `string` ; `value`: {}  }\>, ``"many"``\>\> ; `title`: `z.ZodString` ; `type`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }\>, ``"many"``\> ; `includedPaths`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageTemplate`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `name`: `z.ZodOptional`\<`z.ZodString`\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }\>
+• `Const` **RootTemplateSchema**: `z.ZodObject`\<\{ `defaults`: `z.ZodOptional`\<`z.ZodObject`\<\{ `defaultCommandSchemes`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"run"``, ``"export"``, ``"build"``]\>, `z.ZodString`\>\> ; `portOffset`: `z.ZodOptional`\<`z.ZodNumber`\> ; `ports`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodNumber`\>\> ; `supportedPlatforms`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, ``"many"``\>\> ; `targets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"export"`` \| ``"build"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  }, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"export"`` \| ``"build"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  }\>\> ; `engines`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodLiteral`\<``"source:rnv"``\>\>\> ; `templateConfig`: `z.ZodOptional`\<`z.ZodObject`\<\{ `bootstrapQuestions`: `z.ZodArray`\<`z.ZodObject`\<\{ `configProp`: `z.ZodOptional`\<`z.ZodObject`\<\{ `key`: `z.ZodString` ; `prop`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `key`: `string` ; `prop`: `string`  }, \{ `key`: `string` ; `prop`: `string`  }\>\> ; `options`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `title`: `z.ZodString` ; `value`: `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `title`: `string` ; `value`: {}  }, \{ `title`: `string` ; `value`: {}  }\>, ``"many"``\>\> ; `title`: `z.ZodString` ; `type`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }\>, ``"many"``\> ; `includedPaths`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageTemplate`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `name`: `z.ZodOptional`\<`z.ZodString`\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"export"`` \| ``"build"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"export"`` \| ``"build"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }\>
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/template.d.ts:2
+schema/configFiles/template.d.ts:2
 
 ___
 
 ### RootTemplatesSchema
 
-• `Const` **RootTemplatesSchema**: `z.ZodObject`\<\{ `engineTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `id`: `z.ZodString` ; `key`: `z.ZodOptional`\<`z.ZodString`\> ; `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\>\> ; `integrationTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `version`: `string`  }, \{ `version`: `string`  }\>\> ; `platformTemplates`: `z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine`: `string`  }, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `description`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `description`: `string`  }, \{ `description`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"linux"`` \| ``"windows"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }\>
+• `Const` **RootTemplatesSchema**: `z.ZodObject`\<\{ `engineTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `id`: `z.ZodString` ; `key`: `z.ZodOptional`\<`z.ZodString`\> ; `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\>\> ; `integrationTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `version`: `string`  }, \{ `version`: `string`  }\>\> ; `platformTemplates`: `z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine`: `string`  }, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `description`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `description`: `string`  }, \{ `description`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }\>
 
 #### Defined in
 
-@rnv/core/lib/schema/configFiles/templates.d.ts:2
+schema/configFiles/templates.d.ts:2
 
 ___
 
@@ -1930,7 +2078,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:24
+constants.d.ts:24
 
 ___
 
@@ -1940,7 +2088,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:60
+constants.d.ts:60
 
 ___
 
@@ -1950,7 +2098,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:53
+tasks/constants.d.ts:53
 
 ___
 
@@ -1960,7 +2108,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:54
+tasks/constants.d.ts:54
 
 ___
 
@@ -1970,7 +2118,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:7
+tasks/constants.d.ts:7
 
 ___
 
@@ -1980,7 +2128,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:15
+tasks/constants.d.ts:15
 
 ___
 
@@ -1990,7 +2138,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:3
+tasks/constants.d.ts:3
 
 ___
 
@@ -2000,7 +2148,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:56
+tasks/constants.d.ts:56
 
 ___
 
@@ -2010,7 +2158,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:43
+tasks/constants.d.ts:43
 
 ___
 
@@ -2020,7 +2168,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:42
+tasks/constants.d.ts:42
 
 ___
 
@@ -2030,7 +2178,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:44
+tasks/constants.d.ts:44
 
 ___
 
@@ -2040,7 +2188,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:46
+tasks/constants.d.ts:46
 
 ___
 
@@ -2050,7 +2198,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:45
+tasks/constants.d.ts:45
 
 ___
 
@@ -2060,7 +2208,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:47
+tasks/constants.d.ts:47
 
 ___
 
@@ -2070,7 +2218,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:48
+tasks/constants.d.ts:48
 
 ___
 
@@ -2080,7 +2228,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:11
+tasks/constants.d.ts:11
 
 ___
 
@@ -2090,7 +2238,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:13
+tasks/constants.d.ts:13
 
 ___
 
@@ -2100,7 +2248,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:4
+tasks/constants.d.ts:4
 
 ___
 
@@ -2110,7 +2258,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:58
+tasks/constants.d.ts:58
 
 ___
 
@@ -2120,7 +2268,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:10
+tasks/constants.d.ts:10
 
 ___
 
@@ -2130,7 +2278,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:6
+tasks/constants.d.ts:6
 
 ___
 
@@ -2140,7 +2288,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:50
+tasks/constants.d.ts:50
 
 ___
 
@@ -2150,7 +2298,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:51
+tasks/constants.d.ts:51
 
 ___
 
@@ -2160,7 +2308,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:49
+tasks/constants.d.ts:49
 
 ___
 
@@ -2170,7 +2318,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:8
+tasks/constants.d.ts:8
 
 ___
 
@@ -2180,7 +2328,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:18
+tasks/constants.d.ts:18
 
 ___
 
@@ -2190,7 +2338,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:57
+tasks/constants.d.ts:57
 
 ___
 
@@ -2200,7 +2348,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:16
+tasks/constants.d.ts:16
 
 ___
 
@@ -2210,7 +2358,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:14
+tasks/constants.d.ts:14
 
 ___
 
@@ -2220,7 +2368,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:5
+tasks/constants.d.ts:5
 
 ___
 
@@ -2230,7 +2378,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:12
+tasks/constants.d.ts:12
 
 ___
 
@@ -2240,7 +2388,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:52
+tasks/constants.d.ts:52
 
 ___
 
@@ -2250,7 +2398,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:32
+tasks/constants.d.ts:32
 
 ___
 
@@ -2260,7 +2408,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:33
+tasks/constants.d.ts:33
 
 ___
 
@@ -2270,7 +2418,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:34
+tasks/constants.d.ts:34
 
 ___
 
@@ -2280,7 +2428,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:35
+tasks/constants.d.ts:35
 
 ___
 
@@ -2290,7 +2438,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:36
+tasks/constants.d.ts:36
 
 ___
 
@@ -2300,7 +2448,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:39
+tasks/constants.d.ts:39
 
 ___
 
@@ -2310,7 +2458,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:40
+tasks/constants.d.ts:40
 
 ___
 
@@ -2320,7 +2468,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:41
+tasks/constants.d.ts:41
 
 ___
 
@@ -2330,7 +2478,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:37
+tasks/constants.d.ts:37
 
 ___
 
@@ -2340,7 +2488,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:38
+tasks/constants.d.ts:38
 
 ___
 
@@ -2350,7 +2498,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:19
+tasks/constants.d.ts:19
 
 ___
 
@@ -2360,7 +2508,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:2
+tasks/constants.d.ts:2
 
 ___
 
@@ -2370,7 +2518,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:9
+tasks/constants.d.ts:9
 
 ___
 
@@ -2380,7 +2528,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:20
+tasks/constants.d.ts:20
 
 ___
 
@@ -2390,7 +2538,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:21
+tasks/constants.d.ts:21
 
 ___
 
@@ -2400,7 +2548,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:24
+tasks/constants.d.ts:24
 
 ___
 
@@ -2410,7 +2558,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:22
+tasks/constants.d.ts:22
 
 ___
 
@@ -2420,7 +2568,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:23
+tasks/constants.d.ts:23
 
 ___
 
@@ -2430,7 +2578,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:59
+tasks/constants.d.ts:59
 
 ___
 
@@ -2440,7 +2588,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:60
+tasks/constants.d.ts:60
 
 ___
 
@@ -2450,7 +2598,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:61
+tasks/constants.d.ts:61
 
 ___
 
@@ -2460,7 +2608,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:25
+tasks/constants.d.ts:25
 
 ___
 
@@ -2470,7 +2618,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:27
+tasks/constants.d.ts:27
 
 ___
 
@@ -2480,7 +2628,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:26
+tasks/constants.d.ts:26
 
 ___
 
@@ -2490,7 +2638,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:17
+tasks/constants.d.ts:17
 
 ___
 
@@ -2500,7 +2648,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:28
+tasks/constants.d.ts:28
 
 ___
 
@@ -2510,7 +2658,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:55
+tasks/constants.d.ts:55
 
 ___
 
@@ -2520,7 +2668,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:29
+tasks/constants.d.ts:29
 
 ___
 
@@ -2530,7 +2678,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:30
+tasks/constants.d.ts:30
 
 ___
 
@@ -2540,7 +2688,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:31
+tasks/constants.d.ts:31
 
 ___
 
@@ -2550,7 +2698,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:25
+constants.d.ts:25
 
 ___
 
@@ -2560,7 +2708,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:26
+constants.d.ts:26
 
 ___
 
@@ -2570,7 +2718,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:28
+constants.d.ts:28
 
 ___
 
@@ -2580,7 +2728,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:27
+constants.d.ts:27
 
 ___
 
@@ -2590,7 +2738,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:29
+constants.d.ts:29
 
 ___
 
@@ -2600,7 +2748,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:30
+constants.d.ts:30
 
 ___
 
@@ -2610,7 +2758,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:31
+constants.d.ts:31
 
 ___
 
@@ -2620,7 +2768,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:32
+constants.d.ts:32
 
 ___
 
@@ -2630,7 +2778,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:1
+constants.d.ts:1
 
 ___
 
@@ -2640,7 +2788,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:33
+constants.d.ts:33
 
 ___
 
@@ -2650,7 +2798,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:34
+constants.d.ts:34
 
 ___
 
@@ -2660,7 +2808,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:35
+constants.d.ts:35
 
 ___
 
@@ -2670,7 +2818,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:36
+constants.d.ts:36
 
 ___
 
@@ -2680,7 +2828,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:37
+constants.d.ts:37
 
 ___
 
@@ -2690,7 +2838,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:38
+constants.d.ts:38
 
 ___
 
@@ -2700,7 +2848,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:41
+constants.d.ts:41
 
 ___
 
@@ -2710,7 +2858,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:40
+constants.d.ts:40
 
 ___
 
@@ -2720,7 +2868,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:39
+constants.d.ts:39
 
 ___
 
@@ -2730,7 +2878,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:42
+constants.d.ts:42
 
 ___
 
@@ -2740,7 +2888,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:43
+constants.d.ts:43
 
 ___
 
@@ -2750,7 +2898,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:45
+constants.d.ts:45
 
 ___
 
@@ -2760,7 +2908,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:46
+constants.d.ts:46
 
 ___
 
@@ -2770,7 +2918,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:47
+constants.d.ts:47
 
 ___
 
@@ -2780,7 +2928,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/constants.d.ts:48
+constants.d.ts:48
 
 ___
 
@@ -2790,7 +2938,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/utils.d.ts:2
+utils/utils.d.ts:2
 
 ___
 
@@ -2800,7 +2948,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/utils.d.ts:1
+utils/utils.d.ts:1
 
 ___
 
@@ -2810,7 +2958,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/utils.d.ts:3
+utils/utils.d.ts:3
 
 ___
 
@@ -2820,7 +2968,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:46
+system/exec.d.ts:46
 
 ## Functions
 
@@ -2838,7 +2986,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `key` | `T` |
 | `defaultVal?` | \{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`] |
@@ -2850,7 +2998,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProp.d.ts:7
+configs/configProp.d.ts:7
 
 ___
 
@@ -2862,7 +3010,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `selectedTemplate?` | `string` |
 
 #### Returns
@@ -2871,7 +3019,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/templates/index.d.ts:8
+templates/index.d.ts:8
 
 ___
 
@@ -2885,7 +3033,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:3
+projects/npm.d.ts:3
 
 ___
 
@@ -2906,7 +3054,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:41
+system/fs.d.ts:39
 
 ___
 
@@ -2918,7 +3066,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -2926,7 +3074,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/buildHooks/index.d.ts:3
+buildHooks/index.d.ts:3
 
 ___
 
@@ -2940,7 +3088,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:2
+logger/index.d.ts:2
 
 ___
 
@@ -2952,7 +3100,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -2960,7 +3108,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:4
+projects/index.d.ts:4
 
 ___
 
@@ -2972,7 +3120,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -2980,7 +3128,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:5
+projects/index.d.ts:5
 
 ___
 
@@ -2992,7 +3140,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3000,7 +3148,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/package.d.ts:2
+projects/package.d.ts:2
 
 ___
 
@@ -3014,7 +3162,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/migrator/index.d.ts:1
+migrator/index.d.ts:1
 
 ___
 
@@ -3026,7 +3174,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3034,7 +3182,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:12
+plugins/index.d.ts:12
 
 ___
 
@@ -3046,7 +3194,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3054,7 +3202,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/dependencyManager.d.ts:3
+projects/dependencyManager.d.ts:3
 
 ___
 
@@ -3066,7 +3214,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3074,7 +3222,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/templates.d.ts:2
+configs/templates.d.ts:2
 
 ___
 
@@ -3088,7 +3236,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:2
+projects/npm.d.ts:2
 
 ___
 
@@ -3100,7 +3248,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `pkg` | `string` |
 | `version` | `string` |
 | `type` | `NpmDepKey` |
@@ -3114,7 +3262,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/dependencyManager.d.ts:4
+projects/dependencyManager.d.ts:4
 
 ___
 
@@ -3134,7 +3282,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:51
+system/fs.d.ts:49
 
 ___
 
@@ -3154,7 +3302,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:31
+system/fs.d.ts:29
 
 ___
 
@@ -3168,7 +3316,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:8
+projects/npm.d.ts:8
 
 ___
 
@@ -3180,7 +3328,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3188,7 +3336,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:12
+projects/index.d.ts:12
 
 ___
 
@@ -3200,7 +3348,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
@@ -3209,7 +3357,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:9
+platforms/index.d.ts:9
 
 ___
 
@@ -3230,7 +3378,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:44
+system/exec.d.ts:44
 
 ___
 
@@ -3250,7 +3398,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:45
+system/exec.d.ts:45
 
 ___
 
@@ -3262,7 +3410,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3270,7 +3418,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:10
+engines/index.d.ts:10
 
 ___
 
@@ -3282,7 +3430,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
@@ -3291,7 +3439,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/templates/index.d.ts:5
+templates/index.d.ts:5
 
 ___
 
@@ -3303,7 +3451,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3311,7 +3459,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:6
+projects/index.d.ts:6
 
 ___
 
@@ -3323,7 +3471,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3331,7 +3479,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:6
+plugins/index.d.ts:6
 
 ___
 
@@ -3343,7 +3491,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3351,7 +3499,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/runtime.d.ts:2
+context/runtime.d.ts:2
 
 ___
 
@@ -3363,7 +3511,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3371,7 +3519,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/templates/index.d.ts:4
+templates/index.d.ts:4
 
 ___
 
@@ -3383,10 +3531,10 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `subPath?` | `string` |
-| `customFn?` | (`c`: [`RnvContext`](interfaces/RnvContext.md)\<`any`\>, `platform`: [`RnvPlatform`](modules.md#rnvplatform)) => `void` |
+| `customFn?` | (`c`: [`RnvContext`](modules.md#rnvcontext), `platform`: [`RnvPlatform`](modules.md#rnvplatform)) => `void` |
 
 #### Returns
 
@@ -3394,7 +3542,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:9
+projects/index.d.ts:9
 
 ___
 
@@ -3406,7 +3554,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
@@ -3415,7 +3563,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:10
+projects/index.d.ts:10
 
 ___
 
@@ -3436,7 +3584,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:53
+system/fs.d.ts:51
 
 ___
 
@@ -3459,7 +3607,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:20
+system/fs.d.ts:18
 
 ___
 
@@ -3476,7 +3624,7 @@ ___
 | `skipOverride?` | `boolean` |
 | `injectObject?` | [`OverridesOptions`](modules.md#overridesoptions) |
 | `timestampPathsConfig?` | [`TimestampPathsConfig`](modules.md#timestamppathsconfig) |
-| `c?` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c?` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3484,7 +3632,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:23
+system/fs.d.ts:21
 
 ___
 
@@ -3507,7 +3655,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:27
+system/fs.d.ts:25
 
 ___
 
@@ -3526,7 +3674,7 @@ ___
 | `skipOverride?` | `boolean` |
 | `injectObject?` | [`OverridesOptions`](modules.md#overridesoptions) |
 | `timestampPathsConfig?` | [`TimestampPathsConfig`](modules.md#timestamppathsconfig) |
-| `c?` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c?` | [`RnvContext`](modules.md#rnvcontext) |
 | `extFilter?` | `string`[] |
 
 #### Returns
@@ -3535,7 +3683,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:26
+system/fs.d.ts:24
 
 ___
 
@@ -3553,7 +3701,7 @@ ___
 | `skipOverride?` | `boolean` |
 | `injectObject?` | [`OverridesOptions`](modules.md#overridesoptions) |
 | `timestampPathsConfig?` | [`TimestampPathsConfig`](modules.md#timestamppathsconfig) |
-| `c?` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c?` | [`RnvContext`](modules.md#rnvcontext) |
 | `extFilter?` | `string`[] |
 
 #### Returns
@@ -3562,7 +3710,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:25
+system/fs.d.ts:23
 
 ___
 
@@ -3574,7 +3722,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3582,7 +3730,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:7
+projects/index.d.ts:7
 
 ___
 
@@ -3594,7 +3742,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3602,7 +3750,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:14
+platforms/index.d.ts:14
 
 ___
 
@@ -3614,7 +3762,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3622,7 +3770,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:14
+plugins/index.d.ts:14
 
 ___
 
@@ -3634,7 +3782,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
@@ -3643,7 +3791,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:10
+platforms/index.d.ts:10
 
 ___
 
@@ -3669,7 +3817,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:3
+api/index.d.ts:3
 
 ___
 
@@ -3689,7 +3837,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/index.d.ts:3
+context/index.d.ts:3
 
 ___
 
@@ -3701,7 +3849,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `workspaceID` | `string` |
 | `workspacePath` | `string` |
 
@@ -3711,7 +3859,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:3
+configs/workspaces.d.ts:3
 
 ___
 
@@ -3744,7 +3892,7 @@ will be treated as a filepath from root of resolved package (i.e. will ignore su
 
 #### Defined in
 
-@rnv/core/lib/system/resolve.d.ts:18
+system/resolve.d.ts:18
 
 ___
 
@@ -3767,7 +3915,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/resolve.d.ts:19
+system/resolve.d.ts:19
 
 ___
 
@@ -3779,7 +3927,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | `string` |
 
 #### Returns
@@ -3788,7 +3936,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:15
+platforms/index.d.ts:15
 
 ___
 
@@ -3802,7 +3950,7 @@ Execute CLI command
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> | the trusty old c object |
+| `c` | [`RnvContext`](modules.md#rnvcontext) | the trusty old c object |
 | `cli` | `string` | the cli to be executed |
 | `command` | `string` | the command to be executed |
 | `opts?` | [`ExecOptions`](modules.md#execoptions) | the options for the command |
@@ -3813,7 +3961,7 @@ Execute CLI command
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:21
+system/exec.d.ts:21
 
 ___
 
@@ -3834,7 +3982,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:32
+system/exec.d.ts:32
 
 ___
 
@@ -3848,7 +3996,7 @@ Execute a plain command
 
 | Name | Type |
 | :------ | :------ |
-| `_c` | `string` \| `string`[] \| [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `_c` | `string` \| `string`[] \| [`RnvContext`](modules.md#rnvcontext) |
 | `_cmd?` | `string` \| `string`[] \| [`ExecOptions`](modules.md#execoptions) |
 | `_opts?` | [`ExecOptions`](modules.md#execoptions) |
 
@@ -3858,7 +4006,7 @@ Execute a plain command
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:31
+system/exec.d.ts:31
 
 ___
 
@@ -3870,7 +4018,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `task` | `string` |
 | `parentTask?` | `string` |
 | `originTask?` | `string` |
@@ -3883,7 +4031,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/index.d.ts:9
+tasks/index.d.ts:9
 
 ___
 
@@ -3895,7 +4043,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `task` | `string` |
 | `parentTask` | `string` |
 | `originTask?` | `string` |
@@ -3906,7 +4054,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/index.d.ts:7
+tasks/index.d.ts:7
 
 ___
 
@@ -3918,7 +4066,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `key` | `string` |
 
 #### Returns
@@ -3927,7 +4075,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/buildHooks/index.d.ts:2
+buildHooks/index.d.ts:2
 
 ___
 
@@ -3941,7 +4089,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/runner.d.ts:1
+runner.d.ts:1
 
 ___
 
@@ -3953,7 +4101,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `task` | `string` |
 | `parentTask?` | `string` |
 | `originTask?` | `string` |
@@ -3965,7 +4113,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/index.d.ts:6
+tasks/index.d.ts:6
 
 ___
 
@@ -3979,7 +4127,7 @@ Connect to a local telnet server and execute a command
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> | - |
+| `c` | [`RnvContext`](modules.md#rnvcontext) | - |
 | `port` | `string` | where do you want me to connect to? |
 | `command` | `string` | the command to be executed once I'm connected |
 
@@ -3989,7 +4137,7 @@ Connect to a local telnet server and execute a command
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:42
+system/exec.d.ts:42
 
 ___
 
@@ -4001,7 +4149,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `specificTask?` | `string` |
 
 #### Returns
@@ -4010,7 +4158,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/index.d.ts:5
+tasks/index.d.ts:5
 
 ___
 
@@ -4022,7 +4170,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `pkgPath` | `string` |
 
 #### Returns
@@ -4031,7 +4179,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/doctor/index.d.ts:2
+doctor/index.d.ts:2
 
 ___
 
@@ -4051,7 +4199,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/doctor/index.d.ts:3
+doctor/index.d.ts:3
 
 ___
 
@@ -4072,7 +4220,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:49
+system/fs.d.ts:47
 
 ___
 
@@ -4093,7 +4241,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:12
+system/fs.d.ts:10
 
 ___
 
@@ -4114,7 +4262,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:7
+system/fs.d.ts:5
 
 ___
 
@@ -4134,7 +4282,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:8
+system/fs.d.ts:6
 
 ___
 
@@ -4154,7 +4302,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:10
+system/fs.d.ts:8
 
 ___
 
@@ -4174,7 +4322,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:15
+system/fs.d.ts:13
 
 ___
 
@@ -4195,7 +4343,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:18
+system/fs.d.ts:16
 
 ___
 
@@ -4215,7 +4363,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:11
+system/fs.d.ts:9
 
 ___
 
@@ -4236,7 +4384,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:19
+system/fs.d.ts:17
 
 ___
 
@@ -4256,7 +4404,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:9
+system/fs.d.ts:7
 
 ___
 
@@ -4277,7 +4425,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:13
+system/fs.d.ts:11
 
 ___
 
@@ -4297,7 +4445,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:14
+system/fs.d.ts:12
 
 ___
 
@@ -4318,7 +4466,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:17
+system/fs.d.ts:15
 
 ___
 
@@ -4338,7 +4486,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:16
+system/fs.d.ts:14
 
 ___
 
@@ -4360,7 +4508,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:6
+system/fs.d.ts:4
 
 ___
 
@@ -4372,7 +4520,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `_c?` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `_c?` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -4380,21 +4528,21 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/buildConfig.d.ts:2
+configs/buildConfig.d.ts:2
 
 ___
 
 ### generateContextDefaults
 
-▸ **generateContextDefaults**(): [`RnvContext`](interfaces/RnvContext.md)\<`any`\>
+▸ **generateContextDefaults**(): [`RnvContext`](modules.md#rnvcontext)
 
 #### Returns
 
-[`RnvContext`](interfaces/RnvContext.md)\<`any`\>
+[`RnvContext`](modules.md#rnvcontext)
 
 #### Defined in
 
-@rnv/core/lib/context/defaults.d.ts:8
+context/defaults.d.ts:8
 
 ___
 
@@ -4406,7 +4554,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `pathObj` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) |
+| `pathObj` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) |
 | `dir` | `string` |
 | `configName?` | `string` |
 
@@ -4416,7 +4564,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/index.d.ts:2
+context/index.d.ts:2
 
 ___
 
@@ -4430,7 +4578,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/defaults.d.ts:2
+logger/defaults.d.ts:2
 
 ___
 
@@ -4463,7 +4611,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:8
+engines/index.d.ts:8
 
 ___
 
@@ -4483,7 +4631,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:9
+engines/index.d.ts:9
 
 ___
 
@@ -4495,7 +4643,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `resetAppId?` | `boolean` |
 
 #### Returns
@@ -4504,7 +4652,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configLocal.d.ts:2
+configs/configLocal.d.ts:2
 
 ___
 
@@ -4518,7 +4666,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/schemaManager.d.ts:1
+schema/schemaManager.d.ts:1
 
 ___
 
@@ -4541,7 +4689,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:13
+api/index.d.ts:13
 
 ___
 
@@ -4553,7 +4701,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -4561,7 +4709,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/platformAssets.d.ts:2
+configs/platformAssets.d.ts:2
 
 ___
 
@@ -4573,7 +4721,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -4581,7 +4729,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:4
+platforms/index.d.ts:4
 
 ___
 
@@ -4593,7 +4741,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -4601,7 +4749,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProject.d.ts:8
+configs/configProject.d.ts:8
 
 ___
 
@@ -4621,35 +4769,35 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/defaults.d.ts:3
+context/defaults.d.ts:3
 
 ___
 
 ### generateRnvConfigPathObj
 
-▸ **generateRnvConfigPathObj**(): [`RnvContextPathObj`](interfaces/RnvContextPathObj.md)
+▸ **generateRnvConfigPathObj**(): [`RnvContextPathObj`](modules.md#rnvcontextpathobj)
 
 #### Returns
 
-[`RnvContextPathObj`](interfaces/RnvContextPathObj.md)
+[`RnvContextPathObj`](modules.md#rnvcontextpathobj)
 
 #### Defined in
 
-@rnv/core/lib/context/defaults.d.ts:2
+context/defaults.d.ts:2
 
 ___
 
 ### getApi
 
-▸ **getApi**(): [`RnvApi`](interfaces/RnvApi.md)
+▸ **getApi**(): [`RnvApi`](modules.md#rnvapi)
 
 #### Returns
 
-[`RnvApi`](interfaces/RnvApi.md)
+[`RnvApi`](modules.md#rnvapi)
 
 #### Defined in
 
-@rnv/core/lib/api/provider.d.ts:2
+api/provider.d.ts:2
 
 ___
 
@@ -4661,7 +4809,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `customPath?` | `string` |
 
@@ -4671,7 +4819,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/common.d.ts:7
+common.d.ts:7
 
 ___
 
@@ -4683,7 +4831,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `isRelativePath?` | `boolean` |
 
 #### Returns
@@ -4692,7 +4840,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/common.d.ts:5
+common.d.ts:5
 
 ___
 
@@ -4710,7 +4858,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `key` | `T` |
 | `defaultVal?` | [`ConfigProp`](modules.md#configprop)[`T`] |
@@ -4721,13 +4869,13 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProp.d.ts:6
+configs/configProp.d.ts:6
 
 ___
 
 ### getContext
 
-▸ **getContext**\<`C`\>(): [`RnvContext`](interfaces/RnvContext.md)\<`C`\>
+▸ **getContext**\<`C`\>(): [`RnvContext`](modules.md#rnvcontext)\<`C`\>
 
 #### Type parameters
 
@@ -4737,11 +4885,11 @@ ___
 
 #### Returns
 
-[`RnvContext`](interfaces/RnvContext.md)\<`C`\>
+[`RnvContext`](modules.md#rnvcontext)\<`C`\>
 
 #### Defined in
 
-@rnv/core/lib/context/provider.d.ts:2
+context/provider.d.ts:2
 
 ___
 
@@ -4761,7 +4909,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:5
+logger/index.d.ts:5
 
 ___
 
@@ -4781,7 +4929,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:50
+system/fs.d.ts:48
 
 ___
 
@@ -4793,7 +4941,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `task` | `string` |
 | `customTasks?` | [`RnvTaskMap`](modules.md#rnvtaskmap) |
 | `failOnMissingEngine?` | `boolean` |
@@ -4804,7 +4952,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:20
+engines/index.d.ts:20
 
 ___
 
@@ -4816,7 +4964,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `ignoreMissingError?` | `boolean` |
 
@@ -4826,7 +4974,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:16
+engines/index.d.ts:16
 
 ___
 
@@ -4848,7 +4996,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:19
+engines/index.d.ts:19
 
 ___
 
@@ -4870,7 +5018,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:17
+engines/index.d.ts:17
 
 ___
 
@@ -4882,7 +5030,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
@@ -4891,7 +5039,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/engines.d.ts:4
+configs/engines.d.ts:4
 
 ___
 
@@ -4911,7 +5059,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:47
+system/fs.d.ts:45
 
 ___
 
@@ -4930,7 +5078,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `obj` | `T` |
 | `key` | `K` |
 
@@ -4940,7 +5088,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProp.d.ts:768
+configs/configProp.d.ts:768
 
 ___
 
@@ -4952,7 +5100,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -4960,7 +5108,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/templates/index.d.ts:6
+templates/index.d.ts:6
 
 ___
 
@@ -4983,7 +5131,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:17
+plugins/index.d.ts:17
 
 ___
 
@@ -4995,7 +5143,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `key` | `string` |
 
 #### Returns
@@ -5004,7 +5152,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:5
+plugins/index.d.ts:5
 
 ___
 
@@ -5016,7 +5164,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5024,7 +5172,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/common.d.ts:6
+common.d.ts:6
 
 ___
 
@@ -5036,7 +5184,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `p` | `string` |
 | `key?` | `string` |
 | `original?` | `string` |
@@ -5047,7 +5195,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:40
+system/fs.d.ts:38
 
 ___
 
@@ -5059,7 +5207,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5067,7 +5215,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:21
+engines/index.d.ts:21
 
 ___
 
@@ -5088,7 +5236,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:52
+system/fs.d.ts:50
 
 ___
 
@@ -5100,7 +5248,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `isGlobalScope?` | `boolean` |
 
 #### Returns
@@ -5109,7 +5257,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/templates.d.ts:3
+configs/templates.d.ts:3
 
 ___
 
@@ -5121,7 +5269,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
@@ -5130,7 +5278,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/common.d.ts:4
+common.d.ts:4
 
 ___
 
@@ -5154,7 +5302,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:5
+configs/workspaces.d.ts:5
 
 ___
 
@@ -5166,7 +5314,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5174,7 +5322,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:4
+configs/workspaces.d.ts:4
 
 ___
 
@@ -5186,7 +5334,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5194,7 +5342,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:6
+configs/workspaces.d.ts:6
 
 ___
 
@@ -5216,7 +5364,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:18
+engines/index.d.ts:18
 
 ___
 
@@ -5236,7 +5384,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:16
+plugins/index.d.ts:16
 
 ___
 
@@ -5248,7 +5396,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `task` | `string` |
 
 #### Returns
@@ -5257,7 +5405,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/index.d.ts:4
+tasks/index.d.ts:4
 
 ___
 
@@ -5269,7 +5417,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5277,7 +5425,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/dependencyManager.d.ts:5
+projects/dependencyManager.d.ts:5
 
 ___
 
@@ -5297,7 +5445,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:11
+api/index.d.ts:11
 
 ___
 
@@ -5317,7 +5465,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:12
+api/index.d.ts:12
 
 ___
 
@@ -5329,7 +5477,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `failOnError?` | `boolean` |
 
 #### Returns
@@ -5338,7 +5486,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:6
+projects/npm.d.ts:6
 
 ___
 
@@ -5350,7 +5498,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5358,7 +5506,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:11
+plugins/index.d.ts:11
 
 ___
 
@@ -5370,7 +5518,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5378,7 +5526,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:24
+system/fs.d.ts:22
 
 ___
 
@@ -5398,7 +5546,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:2
+utils/is.d.ts:2
 
 ___
 
@@ -5418,7 +5566,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:6
+utils/is.d.ts:6
 
 ___
 
@@ -5438,7 +5586,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:11
+utils/is.d.ts:11
 
 ___
 
@@ -5458,7 +5606,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:10
+utils/is.d.ts:10
 
 ___
 
@@ -5478,7 +5626,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:5
+utils/is.d.ts:5
 
 ___
 
@@ -5492,7 +5640,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:16
+logger/index.d.ts:16
 
 ___
 
@@ -5512,7 +5660,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:13
+utils/is.d.ts:13
 
 ___
 
@@ -5532,7 +5680,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:7
+utils/is.d.ts:7
 
 ___
 
@@ -5552,7 +5700,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:4
+utils/is.d.ts:4
 
 ___
 
@@ -5572,7 +5720,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:1
+utils/is.d.ts:1
 
 ___
 
@@ -5584,7 +5732,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `resolve?` | () => `void` |
 
@@ -5594,7 +5742,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:13
+platforms/index.d.ts:13
 
 ___
 
@@ -5606,7 +5754,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `isGlobalScope?` | `boolean` |
 
 #### Returns
@@ -5615,7 +5763,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:11
+platforms/index.d.ts:11
 
 ___
 
@@ -5627,7 +5775,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `resolve?` | () => `void` |
 | `reject?` | (`e`: `string`) => `void` |
@@ -5638,7 +5786,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:12
+platforms/index.d.ts:12
 
 ___
 
@@ -5658,7 +5806,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:9
+utils/is.d.ts:9
 
 ___
 
@@ -5678,7 +5826,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/resolve.d.ts:20
+system/resolve.d.ts:20
 
 ___
 
@@ -5698,7 +5846,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:3
+utils/is.d.ts:3
 
 ___
 
@@ -5718,7 +5866,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:12
+utils/is.d.ts:12
 
 ___
 
@@ -5730,7 +5878,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5738,7 +5886,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/templates/index.d.ts:7
+templates/index.d.ts:7
 
 ___
 
@@ -5758,7 +5906,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/utils/is.d.ts:8
+utils/is.d.ts:8
 
 ___
 
@@ -5772,7 +5920,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:5
+projects/npm.d.ts:5
 
 ___
 
@@ -5784,7 +5932,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5792,7 +5940,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:7
+projects/npm.d.ts:7
 
 ___
 
@@ -5804,7 +5952,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `npmPackage` | `string` |
 
 #### Returns
@@ -5813,7 +5961,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:4
+projects/npm.d.ts:4
 
 ___
 
@@ -5825,7 +5973,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `ignoreHiddenConfigs` | `boolean` |
 | `appConfigsDirPath?` | `string` |
 
@@ -5835,7 +5983,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/appConfigs.d.ts:2
+configs/appConfigs.d.ts:2
 
 ___
 
@@ -5847,7 +5995,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `engineConfigs` | [`RnvEngineInstallConfig`](modules.md#rnvengineinstallconfig)[] |
 
 #### Returns
@@ -5856,7 +6004,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:14
+engines/index.d.ts:14
 
 ___
 
@@ -5868,7 +6016,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `engineConfigs` | [`RnvEngineInstallConfig`](modules.md#rnvengineinstallconfig)[] |
 
 #### Returns
@@ -5877,7 +6025,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:13
+engines/index.d.ts:13
 
 ___
 
@@ -5889,7 +6037,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `failOnMissingDeps?` | `boolean` |
 
 #### Returns
@@ -5898,7 +6046,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:15
+engines/index.d.ts:15
 
 ___
 
@@ -5927,7 +6075,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:48
+system/fs.d.ts:46
 
 ___
 
@@ -5939,9 +6087,9 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `fileObj` | `Record`\<`string`, `any`\> |
-| `pathObj` | [`RnvContextPathObj`](interfaces/RnvContextPathObj.md) |
+| `pathObj` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) |
 | `key` | [`RnvContextFileKey`](modules.md#rnvcontextfilekey) |
 
 #### Returns
@@ -5950,7 +6098,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/index.d.ts:2
+configs/index.d.ts:2
 
 ___
 
@@ -5962,7 +6110,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5970,7 +6118,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/integrations/index.d.ts:2
+integrations/index.d.ts:2
 
 ___
 
@@ -5982,7 +6130,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5990,7 +6138,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:9
+plugins/index.d.ts:9
 
 ___
 
@@ -6004,7 +6152,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:7
+configs/workspaces.d.ts:7
 
 ___
 
@@ -6025,7 +6173,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:4
+logger/index.d.ts:4
 
 ___
 
@@ -6037,7 +6185,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6045,7 +6193,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:22
+logger/index.d.ts:22
 
 ___
 
@@ -6065,7 +6213,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:17
+logger/index.d.ts:17
 
 ___
 
@@ -6085,7 +6233,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:15
+logger/index.d.ts:15
 
 ___
 
@@ -6105,7 +6253,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:20
+logger/index.d.ts:20
 
 ___
 
@@ -6127,7 +6275,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:19
+logger/index.d.ts:19
 
 ___
 
@@ -6139,7 +6287,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6147,7 +6295,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:3
+platforms/index.d.ts:3
 
 ___
 
@@ -6168,7 +6316,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:11
+logger/index.d.ts:11
 
 ___
 
@@ -6189,7 +6337,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:12
+logger/index.d.ts:12
 
 ___
 
@@ -6209,7 +6357,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:14
+logger/index.d.ts:14
 
 ___
 
@@ -6230,7 +6378,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:10
+logger/index.d.ts:10
 
 ___
 
@@ -6244,7 +6392,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:21
+logger/index.d.ts:21
 
 ___
 
@@ -6264,7 +6412,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:7
+logger/index.d.ts:7
 
 ___
 
@@ -6284,7 +6432,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:18
+logger/index.d.ts:18
 
 ___
 
@@ -6304,7 +6452,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:8
+logger/index.d.ts:8
 
 ___
 
@@ -6325,7 +6473,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:9
+logger/index.d.ts:9
 
 ___
 
@@ -6346,7 +6494,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:6
+logger/index.d.ts:6
 
 ___
 
@@ -6366,7 +6514,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:13
+logger/index.d.ts:13
 
 ___
 
@@ -6380,7 +6528,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:3
+logger/index.d.ts:3
 
 ___
 
@@ -6398,7 +6546,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `obj1` | `Partial`\<`T1`\> |
 | `obj2` | `Partial`\<`T1`\> |
 | `dynamicRefs?` | `boolean` |
@@ -6410,7 +6558,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:45
+system/fs.d.ts:43
 
 ___
 
@@ -6430,7 +6578,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:30
+system/fs.d.ts:28
 
 ___
 
@@ -6452,7 +6600,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:10
+plugins/index.d.ts:10
 
 ___
 
@@ -6464,7 +6612,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6472,7 +6620,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:13
+plugins/index.d.ts:13
 
 ___
 
@@ -6493,7 +6641,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:43
+system/exec.d.ts:43
 
 ___
 
@@ -6505,7 +6653,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `callback` | [`ParseFontsCallback`](modules.md#parsefontscallback) |
 
 #### Returns
@@ -6514,7 +6662,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:8
+projects/index.d.ts:8
 
 ___
 
@@ -6526,7 +6674,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `pluginCallback` | [`PluginCallback`](modules.md#plugincallback) |
 | `ignorePlatformObjectCheck?` | `boolean` |
@@ -6538,7 +6686,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:8
+plugins/index.d.ts:8
 
 ___
 
@@ -6550,7 +6698,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6558,7 +6706,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/index.d.ts:3
+configs/index.d.ts:3
 
 ___
 
@@ -6572,7 +6720,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:14
+api/index.d.ts:14
 
 ___
 
@@ -6593,7 +6741,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:24
+logger/index.d.ts:24
 
 ___
 
@@ -6607,7 +6755,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:26
+logger/index.d.ts:26
 
 ___
 
@@ -6628,7 +6776,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:25
+logger/index.d.ts:25
 
 ___
 
@@ -6648,7 +6796,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:23
+logger/index.d.ts:23
 
 ___
 
@@ -6669,7 +6817,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:22
+system/fs.d.ts:20
 
 ___
 
@@ -6689,7 +6837,7 @@ ___
 | :------ | :------ |
 | `filePath?` | `string` |
 | `sanitize?` | `boolean` |
-| `c?` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c?` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6697,7 +6845,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:38
+system/fs.d.ts:36
 
 ___
 
@@ -6709,7 +6857,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6717,7 +6865,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:12
+engines/index.d.ts:12
 
 ___
 
@@ -6729,7 +6877,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `_c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `_c` | [`RnvContext`](modules.md#rnvcontext) |
 | `task` | [`RnvTask`](modules.md#rnvtask) |
 
 #### Returns
@@ -6738,7 +6886,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/index.d.ts:3
+tasks/index.d.ts:3
 
 ___
 
@@ -6760,7 +6908,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:6
+engines/index.d.ts:6
 
 ___
 
@@ -6782,7 +6930,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:7
+engines/index.d.ts:7
 
 ___
 
@@ -6796,7 +6944,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/integrations/index.d.ts:3
+integrations/index.d.ts:3
 
 ___
 
@@ -6808,7 +6956,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `taskInstance?` | [`RnvTask`](modules.md#rnvtask) |
 
 #### Returns
@@ -6817,7 +6965,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:11
+engines/index.d.ts:11
 
 ___
 
@@ -6838,7 +6986,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:29
+system/fs.d.ts:27
 
 ___
 
@@ -6859,7 +7007,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:35
+system/fs.d.ts:33
 
 ___
 
@@ -6879,7 +7027,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:34
+system/fs.d.ts:32
 
 ___
 
@@ -6899,7 +7047,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:33
+system/fs.d.ts:31
 
 ___
 
@@ -6919,7 +7067,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:32
+system/fs.d.ts:30
 
 ___
 
@@ -6939,7 +7087,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:46
+system/fs.d.ts:44
 
 ___
 
@@ -6959,7 +7107,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:43
+system/fs.d.ts:41
 
 ___
 
@@ -6971,7 +7119,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6979,7 +7127,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:7
+plugins/index.d.ts:7
 
 ___
 
@@ -7006,7 +7154,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:44
+system/fs.d.ts:42
 
 ___
 
@@ -7024,7 +7172,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `obj` | `T` |
 
 #### Returns
@@ -7033,7 +7181,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:42
+system/fs.d.ts:40
 
 ___
 
@@ -7056,7 +7204,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:15
+plugins/index.d.ts:15
 
 ___
 
@@ -7077,7 +7225,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:28
+system/fs.d.ts:26
 
 ___
 
@@ -7089,7 +7237,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `taskKey` | `string` |
 | `originTaskKey?` | `string` |
 
@@ -7099,7 +7247,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/index.d.ts:8
+tasks/index.d.ts:8
 
 ___
 
@@ -7120,7 +7268,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:39
+system/fs.d.ts:37
 
 ___
 
@@ -7132,7 +7280,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platforms` | (``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``)[] |
 
 #### Returns
@@ -7141,7 +7289,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProject.d.ts:7
+configs/configProject.d.ts:7
 
 ___
 
@@ -7153,7 +7301,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -7161,7 +7309,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:28
+plugins/index.d.ts:28
 
 ___
 
@@ -7185,7 +7333,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProject.d.ts:6
+configs/configProject.d.ts:6
 
 ___
 
@@ -7197,7 +7345,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `version` | `string` |
 
 #### Returns
@@ -7206,7 +7354,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProject.d.ts:5
+configs/configProject.d.ts:5
 
 ___
 
@@ -7226,7 +7374,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/validators.d.ts:1
+schema/validators.d.ts:1
 
 ___
 
@@ -7238,7 +7386,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -7246,7 +7394,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/index.d.ts:11
+projects/index.d.ts:11
 
 ___
 
@@ -7258,7 +7406,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `cli` | `string` |
 | `command` | `string` |
 | `callback` | (`resp`: `string` \| ``true``) => `boolean` |
@@ -7269,7 +7417,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:47
+system/exec.d.ts:47
 
 ___
 
@@ -7285,7 +7433,7 @@ ___
 | `destination` | `string` |
 | `overrides?` | [`OverridesOptions`](modules.md#overridesoptions) |
 | `timestampPathsConfig?` | [`TimestampPathsConfig`](modules.md#timestamppathsconfig) |
-| `c?` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c?` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -7293,7 +7441,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:21
+system/fs.d.ts:19
 
 ___
 
@@ -7316,7 +7464,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:36
+system/fs.d.ts:34
 
 ___
 
@@ -7339,7 +7487,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:37
+system/fs.d.ts:35
 
 ___
 
@@ -7351,7 +7499,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | [`RnvContext`](interfaces/RnvContext.md)\<`any`\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `configPath` | `string` |
 | `configData` | `string` \| `object` |
 
@@ -7361,4 +7509,4 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/utils.d.ts:2
+configs/utils.d.ts:2

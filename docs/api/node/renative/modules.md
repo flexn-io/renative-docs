@@ -1,7 +1,7 @@
 ---
 id: "modules"
 title: "@rnv/renative"
-sidebar_label: "Exports"
+sidebar_label: "@rnv/renative (Node)"
 sidebar_position: 0.5
 custom_edit_url: null
 ---

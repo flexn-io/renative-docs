@@ -32,8 +32,9 @@ const config = {
                 entryPoints: ['node_modules/@rnv/core/lib/index.d.ts'],
                 tsconfig: './tsconfig.typedoc.json',
                 out: 'api/node/rnv-core',
-                sidebar: {
-                    sidebar_label: '@rnv/core',
+
+                frontmatter: {
+                    sidebar_label: '@rnv/core (Node)',
                 },
                 // watch: true,
             },
@@ -46,8 +47,8 @@ const config = {
                 tsconfig: './tsconfig.typedoc.json',
                 out: 'api/node/renative',
                 // watch: true,
-                sidebar: {
-                    categoryLabel: '@rnv/renative',
+                frontmatter: {
+                    sidebar_label: '@rnv/renative (Node)',
                 },
             },
         ],
@@ -59,8 +60,9 @@ const config = {
                 tsconfig: './tsconfig.typedoc.json',
                 out: 'api/node/rnv',
                 // watch: true,
-                sidebar: {
-                    categoryLabel: 'rnv',
+
+                frontmatter: {
+                    sidebar_label: 'rnv (Node)',
                 },
             },
         ],

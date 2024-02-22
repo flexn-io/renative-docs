@@ -1,7 +1,7 @@
 ---
 id: "PlatformGroup"
 title: "Enumeration: PlatformGroup"
-sidebar_label: "PlatformGroup"
+sidebar_label: "@rnv/renative (Node)"
 sidebar_position: 0
 custom_edit_url: null
 ---
