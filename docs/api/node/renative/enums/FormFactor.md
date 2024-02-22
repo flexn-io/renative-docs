@@ -1,7 +1,7 @@
 ---
 id: "FormFactor"
 title: "Enumeration: FormFactor"
-sidebar_label: "FormFactor"
+sidebar_label: "@rnv/renative (Node)"
 sidebar_position: 0
 custom_edit_url: null
 ---

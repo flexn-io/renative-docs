@@ -1,7 +1,7 @@
 ---
 id: "modules"
 title: "rnv"
-sidebar_label: "Exports"
+sidebar_label: "rnv (Node)"
 sidebar_position: 0.5
 custom_edit_url: null
 ---
@@ -18,7 +18,7 @@ Execute a plain command
 
 | Name | Type |
 | :------ | :------ |
-| `_c` | `string` \| `string`[] \| `RnvContext`\<`any`\> |
+| `_c` | `string` \| `string`[] \| `RnvContext` |
 | `_cmd?` | `string` \| `string`[] \| `ExecOptions` |
 | `_opts?` | `ExecOptions` |
 
@@ -67,7 +67,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `c` | `RnvContext`\<`any`\> |
+| `c` | `RnvContext` |
 | `task` | `string` |
 | `parentTask?` | `string` |
 | `originTask?` | `string` |
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-renative/packages/core/lib/system/fs.d.ts:34
+renative/packages/core/lib/system/fs.d.ts:32
 
 ___
 

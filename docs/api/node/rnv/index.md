@@ -1,7 +1,7 @@
 ---
 id: "index"
 title: "rnv"
-sidebar_label: "Readme"
+sidebar_label: "rnv (Node)"
 sidebar_position: 0
 custom_edit_url: null
 ---

@@ -45,7 +45,7 @@ sidebar_label: RNV CLI Tasks Reference
     let content = '';
 
     Object.keys(tasksGroupedByCommand).forEach((command) => {
-        content += `# ${command}\n\n`;
+        content += `## ${command}\n\n`;
 
         const subCommandsOrTask = tasksGroupedByCommand[command];
 
@@ -56,7 +56,7 @@ sidebar_label: RNV CLI Tasks Reference
         } else {
             Object.keys(subCommandsOrTask).forEach((subCommand) => {
                 const task = subCommandsOrTask[subCommand];
-                content += `## ${task.subCommand}\n\n`;
+                content += `### ${task.subCommand}\n\n`;
                 content += `${task.description}\n\n`;
                 task.provider && (content += `Provider: ${task.provider}\n\n`);
                 content += `Example:\n\n\`\`\`bash\nnpx rnv ${command} ${task.subCommand}\n\`\`\`\n\n`;
@@ -67,7 +67,7 @@ sidebar_label: RNV CLI Tasks Reference
     // CLI options
     // | Syntax      | Description |
     // | ----------- | ----------- |
-    content += `## CLI Options\n\n`;
+    content += `# Options\n\n`;
     content += '| Option | Shorthand | Description |\n';
     content += '| ------ | --------- | ----------- |\n';
     PARAMS.withAll().forEach((param) => {
