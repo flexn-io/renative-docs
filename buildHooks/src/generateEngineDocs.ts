@@ -2,8 +2,9 @@ import {
     writeFileSync,
     SUPPORTED_PLATFORMS,
     logHook,
-    getRegisteredEngines,
     registerAllPlatformEngines,
+    getAllSuitableTasks,
+    PARAMS,
 } from '@rnv/core';
 import path from 'path';
 
@@ -21,20 +22,66 @@ export const generateEngineTaks = async (c) => {
 
     registerAllPlatformEngines(c);
 
-    // console.log(c.runtime)
-    // console.log(c.buildConfig?.engines)
+    const tasks = getAllSuitableTasks(c);
+    const tasksGroupedByCommand = Object.values(tasks).reduce((acc, task: any) => {
+        if (!acc[task.command]) {
+            acc[task.command] = {};
+        }
+        if (task.subCommand) {
+            acc[task.command][task.subCommand] = task;
+        } else {
+            acc[task.command] = task;
+        }
+        return acc;
+    }, {});
 
-    const engines = getRegisteredEngines(c);
+    const header = `---
+id: tasks
+title: RNV CLI Tasks Reference
+sidebar_label: RNV CLI Tasks Reference
+---
+`;
 
-    engines.forEach((engine) => {
-        _generateEngineTaks(c, engine);
+    let content = '';
+
+    Object.keys(tasksGroupedByCommand).forEach((command) => {
+        content += `# ${command}\n\n`;
+
+        const subCommandsOrTask = tasksGroupedByCommand[command];
+
+        if (subCommandsOrTask.command) {
+            // it's a task
+            content += `${subCommandsOrTask.description}\n\n`;
+            content += `Example:\n\n\`\`\`bash\nnpx rnv ${command}\n\`\`\`\n\n`;
+        } else {
+            Object.keys(subCommandsOrTask).forEach((subCommand) => {
+                const task = subCommandsOrTask[subCommand];
+                content += `## ${task.subCommand}\n\n`;
+                content += `${task.description}\n\n`;
+                task.provider && (content += `Provider: ${task.provider}\n\n`);
+                content += `Example:\n\n\`\`\`bash\nnpx rnv ${command} ${task.subCommand}\n\`\`\`\n\n`;
+            });
+        }
     });
-};
 
-const getSupportedPlatforms = (c, t) =>
-    t.platforms.length
-        ? t.platforms.map((v) => `\`${v}\``).join(', ')
-        : SUPPORTED_PLATFORMS.map((v) => `\`${v}\``).join(', ');
+    // CLI options
+    // | Syntax      | Description |
+    // | ----------- | ----------- |
+    content += `## CLI Options\n\n`;
+    content += '| Option | Shorthand | Description |\n';
+    content += '| ------ | --------- | ----------- |\n';
+    PARAMS.withAll().forEach((param) => {
+        let argument = '';
+        if (param.value) {
+            argument = param.isRequired ? ` <${param.value}>` : ` [${param.value}]`;
+        }
+        content += `| \`--${param.key}${argument}\` | ${param.shortcut ? `\`-${param.shortcut}\`` : ''} | ${
+            param.description
+        } |\n`;
+    });
+
+    writeFileSync(path.join(c.paths.project.dir, `/docs/api/tasks.md`), header + content);
+};
 
 const _generateEngineTaks = (c, engine) => {
     const { id } = engine.config;
