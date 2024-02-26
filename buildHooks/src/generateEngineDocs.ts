@@ -37,8 +37,8 @@ export const generateEngineTaks = async (c) => {
 
     const header = `---
 id: tasks
-title: RNV CLI Tasks Reference
-sidebar_label: RNV CLI Tasks Reference
+title: rnv Command-Line Interface
+sidebar_label: rnv CLI
 ---
 `;
 
@@ -63,7 +63,7 @@ sidebar_label: RNV CLI Tasks Reference
                 content += '\n\n';
 
                 // options
-                content += `Available Options:\n`;
+                content += `\nAvailable Options:\n`;
                 const toDisplay = [];
                 task.params?.forEach((param) => {
                     toDisplay.push(`[\`${param.key}\`](#${param.key.toLowerCase()})`);

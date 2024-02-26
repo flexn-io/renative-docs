@@ -1160,7 +1160,7 @@ ___
 | `appConfigDir?` | `string` |
 | `appDir?` | `string` |
 | `appId?` | `string` |
-| `availablePlatforms` | `string`[] |
+| `availablePlatforms` | [`PlatformKey`](modules.md#platformkey)[] |
 | `bundleAssets` | `boolean` |
 | `currentEngine?` | [`RnvEngine`](modules.md#rnvengine) |
 | `currentPlatform?` | [`RnvEnginePlatform`](modules.md#rnvengineplatform) |
@@ -1222,7 +1222,7 @@ ___
 | `originalTemplatePlatformProjectDir?` | `string` |
 | `originalTemplatePlatformsDir?` | `string` |
 | `outputDirName?` | `string` |
-| `platforms` | `Record`\<`string`, [`RnvEnginePlatform`](modules.md#rnvengineplatform)\> |
+| `platforms` | `Partial`\<`Record`\<[`PlatformKey`](modules.md#platformkey), [`RnvEnginePlatform`](modules.md#rnvengineplatform)\>\> |
 | `projectDirName` | `string` |
 | `rootPath?` | `string` |
 | `runtimeExtraProps` | `Record`\<`string`, `string`\> |
@@ -1231,7 +1231,7 @@ ___
 
 #### Defined in
 
-engines/types.d.ts:3
+engines/types.d.ts:4
 
 ___
 
@@ -1250,7 +1250,7 @@ ___
 
 #### Defined in
 
-engines/types.d.ts:25
+engines/types.d.ts:26
 
 ___
 
@@ -1268,7 +1268,7 @@ ___
 
 #### Defined in
 
-engines/types.d.ts:15
+engines/types.d.ts:16
 
 ___
 
@@ -1285,7 +1285,7 @@ ___
 
 #### Defined in
 
-engines/types.d.ts:20
+engines/types.d.ts:21
 
 ___
 
@@ -1295,7 +1295,7 @@ ___
 
 #### Defined in
 
-engines/types.d.ts:24
+engines/types.d.ts:25
 
 ___
 
@@ -1373,12 +1373,12 @@ ___
 | `isPriorityOrder?` | `boolean` |
 | `isPrivate?` | `boolean` |
 | `params` | [`RnvTaskParameter`](modules.md#rnvtaskparameter)[] |
-| `platforms` | `string`[] |
+| `platforms` | [`PlatformKey`](modules.md#platformkey)[] |
 | `task` | `string` |
 
 #### Defined in
 
-tasks/types.d.ts:2
+tasks/types.d.ts:3
 
 ___
 
@@ -1404,7 +1404,7 @@ ___
 
 #### Defined in
 
-tasks/types.d.ts:40
+tasks/types.d.ts:41
 
 ___
 
@@ -1414,7 +1414,7 @@ ___
 
 #### Defined in
 
-tasks/types.d.ts:39
+tasks/types.d.ts:40
 
 ___
 
@@ -1437,7 +1437,7 @@ ___
 
 #### Defined in
 
-tasks/types.d.ts:29
+tasks/types.d.ts:30
 
 ___
 
@@ -1457,7 +1457,7 @@ ___
 
 #### Defined in
 
-tasks/types.d.ts:41
+tasks/types.d.ts:42
 
 ___
 
@@ -1474,7 +1474,7 @@ ___
 
 #### Defined in
 
-tasks/types.d.ts:45
+tasks/types.d.ts:46
 
 ___
 
@@ -1501,7 +1501,7 @@ ___
 
 #### Defined in
 
-tasks/types.d.ts:15
+tasks/types.d.ts:16
 
 ___
 
@@ -1521,106 +1521,6 @@ ___
 system/types.d.ts:32
 
 ## Variables
-
-### ALEXA
-
-• `Const` **ALEXA**: ``"alexa"``
-
-#### Defined in
-
-constants.d.ts:6
-
-___
-
-### ANDROID
-
-• `Const` **ANDROID**: ``"android"``
-
-#### Defined in
-
-constants.d.ts:2
-
-___
-
-### ANDROID\_AUTO
-
-• `Const` **ANDROID\_AUTO**: ``"androidauto"``
-
-#### Defined in
-
-constants.d.ts:3
-
-___
-
-### ANDROID\_TV
-
-• `Const` **ANDROID\_TV**: ``"androidtv"``
-
-#### Defined in
-
-constants.d.ts:4
-
-___
-
-### ANDROID\_WEAR
-
-• `Const` **ANDROID\_WEAR**: ``"androidwear"``
-
-#### Defined in
-
-constants.d.ts:5
-
-___
-
-### APPLE\_AUTO
-
-• `Const` **APPLE\_AUTO**: ``"appleauto"``
-
-#### Defined in
-
-constants.d.ts:7
-
-___
-
-### ASTIAN
-
-• `Const` **ASTIAN**: ``"astian"``
-
-#### Defined in
-
-constants.d.ts:8
-
-___
-
-### BLACKBERRY
-
-• `Const` **BLACKBERRY**: ``"blackberry"``
-
-#### Defined in
-
-constants.d.ts:9
-
-___
-
-### CHROMECAST
-
-• `Const` **CHROMECAST**: ``"chromecast"``
-
-#### Defined in
-
-constants.d.ts:10
-
-___
-
-### CHROME\_OS
-
-• `Const` **CHROME\_OS**: ``"chromeos"``
-
-#### Defined in
-
-constants.d.ts:11
-
-___
 
 ### CoreEnvVars
 
@@ -1694,116 +1594,6 @@ system/exec.d.ts:4
 
 ___
 
-### FIRE\_OS
-
-• `Const` **FIRE\_OS**: ``"fireos"``
-
-#### Defined in
-
-constants.d.ts:12
-
-___
-
-### FIRE\_TV
-
-• `Const` **FIRE\_TV**: ``"firetv"``
-
-#### Defined in
-
-constants.d.ts:13
-
-___
-
-### HBBTV
-
-• `Const` **HBBTV**: ``"hbbtv"``
-
-#### Defined in
-
-constants.d.ts:14
-
-___
-
-### IOS
-
-• `Const` **IOS**: ``"ios"``
-
-#### Defined in
-
-constants.d.ts:15
-
-___
-
-### KAIOS
-
-• `Const` **KAIOS**: ``"kaios"``
-
-#### Defined in
-
-constants.d.ts:16
-
-___
-
-### LINUX
-
-• `Const` **LINUX**: ``"linux"``
-
-#### Defined in
-
-constants.d.ts:44
-
-___
-
-### MACOS
-
-• `Const` **MACOS**: ``"macos"``
-
-#### Defined in
-
-constants.d.ts:17
-
-___
-
-### MEEGO
-
-• `Const` **MEEGO**: ``"meego"``
-
-#### Defined in
-
-constants.d.ts:18
-
-___
-
-### NETCAST
-
-• `Const` **NETCAST**: ``"netcast"``
-
-#### Defined in
-
-constants.d.ts:19
-
-___
-
-### OCCULUS
-
-• `Const` **OCCULUS**: ``"occulus"``
-
-#### Defined in
-
-constants.d.ts:20
-
-___
-
-### ORSAY
-
-• `Const` **ORSAY**: ``"orsay"``
-
-#### Defined in
-
-constants.d.ts:21
-
-___
-
 ### PARAMS
 
 • `Const` **PARAMS**: `Object`
@@ -1834,23 +1624,13 @@ tasks/constants.d.ts:338
 
 ___
 
-### PS4
-
-• `Const` **PS4**: ``"ps4"``
-
-#### Defined in
-
-constants.d.ts:22
-
-___
-
 ### RENATIVE\_CONFIG\_BUILD\_NAME
 
 • `Const` **RENATIVE\_CONFIG\_BUILD\_NAME**: ``"renative.build.json"``
 
 #### Defined in
 
-constants.d.ts:53
+constants.d.ts:5
 
 ___
 
@@ -1860,7 +1640,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:59
+constants.d.ts:11
 
 ___
 
@@ -1870,7 +1650,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:50
+constants.d.ts:2
 
 ___
 
@@ -1880,7 +1660,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:49
+constants.d.ts:1
 
 ___
 
@@ -1890,7 +1670,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:58
+constants.d.ts:10
 
 ___
 
@@ -1900,7 +1680,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:56
+constants.d.ts:8
 
 ___
 
@@ -1910,7 +1690,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:51
+constants.d.ts:3
 
 ___
 
@@ -1920,7 +1700,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:54
+constants.d.ts:6
 
 ___
 
@@ -1930,7 +1710,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:57
+constants.d.ts:9
 
 ___
 
@@ -1940,7 +1720,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:52
+constants.d.ts:4
 
 ___
 
@@ -1950,17 +1730,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:55
-
-___
-
-### ROKU
-
-• `Const` **ROKU**: ``"roku"``
-
-#### Defined in
-
-constants.d.ts:23
+constants.d.ts:7
 
 ___
 
@@ -1976,7 +1746,7 @@ ___
 
 ### RootEngineSchema
 
-• `Const` **RootEngineSchema**: `z.ZodObject`\<\{ `custom`: `z.ZodOptional`\<`z.ZodAny`\> ; `engineExtension`: `z.ZodString` ; `extends`: `z.ZodOptional`\<`z.ZodString`\> ; `id`: `z.ZodString` ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\> ; `overview`: `z.ZodString` ; `platforms`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodOptional`\<`z.ZodString`\> ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\>\> ; `plugins`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }\>
+• `Const` **RootEngineSchema**: `z.ZodObject`\<\{ `custom`: `z.ZodOptional`\<`z.ZodAny`\> ; `engineExtension`: `z.ZodString` ; `extends`: `z.ZodOptional`\<`z.ZodString`\> ; `id`: `z.ZodString` ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\> ; `overview`: `z.ZodString` ; `platforms`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodOptional`\<`z.ZodString`\> ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\>\> ; `plugins`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }\>
 
 #### Defined in
 
@@ -1986,7 +1756,7 @@ ___
 
 ### RootGlobalSchema
 
-• `Const` **RootGlobalSchema**: `z.ZodObject`\<\{ `appConfigsPath`: `z.ZodOptional`\<`z.ZodString`\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `disableTelemetry`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `projectTemplates`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\>\> ; `sdks`: `z.ZodOptional`\<`z.ZodObject`\<\{ `ANDROID_NDK`: `z.ZodOptional`\<`z.ZodString`\> ; `ANDROID_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `KAIOS_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `TIZEN_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `WEBOS_SDK`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }\>
+• `Const` **RootGlobalSchema**: `z.ZodObject`\<\{ `appConfigsPath`: `z.ZodOptional`\<`z.ZodString`\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `disableTelemetry`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `projectTemplates`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\>\> ; `sdks`: `z.ZodOptional`\<`z.ZodObject`\<\{ `ANDROID_NDK`: `z.ZodOptional`\<`z.ZodString`\> ; `ANDROID_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `KAIOS_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `TIZEN_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `WEBOS_SDK`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }\>
 
 #### Defined in
 
@@ -2006,7 +1776,7 @@ ___
 
 ### RootLocalSchema
 
-• `Const` **RootLocalSchema**: `z.ZodObject`\<\{ `_meta`: `z.ZodOptional`\<`z.ZodObject`\<\{ `currentAppConfigId`: `z.ZodOptional`\<`z.ZodString`\> ; `requiresJetify`: `z.ZodOptional`\<`z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }\>\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `workspaceAppConfigsDir`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }\>
+• `Const` **RootLocalSchema**: `z.ZodObject`\<\{ `_meta`: `z.ZodOptional`\<`z.ZodObject`\<\{ `currentAppConfigId`: `z.ZodOptional`\<`z.ZodString`\> ; `requiresJetify`: `z.ZodOptional`\<`z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }\>\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `workspaceAppConfigsDir`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }\>
 
 #### Defined in
 
@@ -2056,7 +1826,7 @@ ___
 
 ### RootTemplateSchema
 
-• `Const` **RootTemplateSchema**: `z.ZodObject`\<\{ `defaults`: `z.ZodOptional`\<`z.ZodObject`\<\{ `defaultCommandSchemes`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"run"``, ``"export"``, ``"build"``]\>, `z.ZodString`\>\> ; `portOffset`: `z.ZodOptional`\<`z.ZodNumber`\> ; `ports`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodNumber`\>\> ; `supportedPlatforms`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, ``"many"``\>\> ; `targets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"export"`` \| ``"build"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  }, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"export"`` \| ``"build"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  }\>\> ; `engines`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodLiteral`\<``"source:rnv"``\>\>\> ; `templateConfig`: `z.ZodOptional`\<`z.ZodObject`\<\{ `bootstrapQuestions`: `z.ZodArray`\<`z.ZodObject`\<\{ `configProp`: `z.ZodOptional`\<`z.ZodObject`\<\{ `key`: `z.ZodString` ; `prop`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `key`: `string` ; `prop`: `string`  }, \{ `key`: `string` ; `prop`: `string`  }\>\> ; `options`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `title`: `z.ZodString` ; `value`: `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `title`: `string` ; `value`: {}  }, \{ `title`: `string` ; `value`: {}  }\>, ``"many"``\>\> ; `title`: `z.ZodString` ; `type`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }\>, ``"many"``\> ; `includedPaths`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageTemplate`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `name`: `z.ZodOptional`\<`z.ZodString`\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"export"`` \| ``"build"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"export"`` \| ``"build"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }\>
+• `Const` **RootTemplateSchema**: `z.ZodObject`\<\{ `defaults`: `z.ZodOptional`\<`z.ZodObject`\<\{ `defaultCommandSchemes`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"run"``, ``"export"``, ``"build"``]\>, `z.ZodString`\>\> ; `portOffset`: `z.ZodOptional`\<`z.ZodNumber`\> ; `ports`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodNumber`\>\> ; `supportedPlatforms`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, ``"many"``\>\> ; `targets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\>  }, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\>  }\>\> ; `engines`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodLiteral`\<``"source:rnv"``\>\>\> ; `templateConfig`: `z.ZodOptional`\<`z.ZodObject`\<\{ `bootstrapQuestions`: `z.ZodArray`\<`z.ZodObject`\<\{ `configProp`: `z.ZodOptional`\<`z.ZodObject`\<\{ `key`: `z.ZodString` ; `prop`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `key`: `string` ; `prop`: `string`  }, \{ `key`: `string` ; `prop`: `string`  }\>\> ; `options`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `title`: `z.ZodString` ; `value`: `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `title`: `string` ; `value`: {}  }, \{ `title`: `string` ; `value`: {}  }\>, ``"many"``\>\> ; `title`: `z.ZodString` ; `type`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }\>, ``"many"``\> ; `includedPaths`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageTemplate`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `name`: `z.ZodOptional`\<`z.ZodString`\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }\>
 
 #### Defined in
 
@@ -2066,21 +1836,11 @@ ___
 
 ### RootTemplatesSchema
 
-• `Const` **RootTemplatesSchema**: `z.ZodObject`\<\{ `engineTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `id`: `z.ZodString` ; `key`: `z.ZodOptional`\<`z.ZodString`\> ; `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\>\> ; `integrationTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `version`: `string`  }, \{ `version`: `string`  }\>\> ; `platformTemplates`: `z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine`: `string`  }, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `description`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `description`: `string`  }, \{ `description`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }\>
+• `Const` **RootTemplatesSchema**: `z.ZodObject`\<\{ `engineTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `id`: `z.ZodString` ; `key`: `z.ZodOptional`\<`z.ZodString`\> ; `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\>\> ; `integrationTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `version`: `string`  }, \{ `version`: `string`  }\>\> ; `platformTemplates`: `z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine`: `string`  }, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `description`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `description`: `string`  }, \{ `description`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }\>
 
 #### Defined in
 
 schema/configFiles/templates.d.ts:2
-
-___
-
-### SAILFISH
-
-• `Const` **SAILFISH**: ``"sailfish"``
-
-#### Defined in
-
-constants.d.ts:24
 
 ___
 
@@ -2090,7 +1850,7 @@ ___
 
 #### Defined in
 
-constants.d.ts:60
+constants.d.ts:12
 
 ___
 
@@ -2694,243 +2454,13 @@ tasks/constants.d.ts:31
 
 ___
 
-### TIVO
-
-• `Const` **TIVO**: ``"tivo"``
-
-#### Defined in
-
-constants.d.ts:25
-
-___
-
-### TIZEN
-
-• `Const` **TIZEN**: ``"tizen"``
-
-#### Defined in
-
-constants.d.ts:26
-
-___
-
-### TIZEN\_MOBILE
-
-• `Const` **TIZEN\_MOBILE**: ``"tizenmobile"``
-
-#### Defined in
-
-constants.d.ts:28
-
-___
-
-### TIZEN\_WATCH
-
-• `Const` **TIZEN\_WATCH**: ``"tizenwatch"``
-
-#### Defined in
-
-constants.d.ts:27
-
-___
-
-### TVOS
-
-• `Const` **TVOS**: ``"tvos"``
-
-#### Defined in
-
-constants.d.ts:29
-
-___
-
-### UBUNTU
-
-• `Const` **UBUNTU**: ``"ubuntu"``
-
-#### Defined in
-
-constants.d.ts:30
-
-___
-
-### UBUNTU\_TOUCH
-
-• `Const` **UBUNTU\_TOUCH**: ``"ubuntutouch"``
-
-#### Defined in
-
-constants.d.ts:31
-
-___
-
-### UNITY
-
-• `Const` **UNITY**: ``"unity"``
-
-#### Defined in
-
-constants.d.ts:32
-
-___
-
 ### USER\_HOME\_DIR
 
 • `Const` **USER\_HOME\_DIR**: `string`
 
 #### Defined in
 
-constants.d.ts:1
-
-___
-
-### VEWD
-
-• `Const` **VEWD**: ``"vewd"``
-
-#### Defined in
-
-constants.d.ts:33
-
-___
-
-### VIDAA
-
-• `Const` **VIDAA**: ``"vidaa"``
-
-#### Defined in
-
-constants.d.ts:34
-
-___
-
-### VIERACONNECT
-
-• `Const` **VIERACONNECT**: ``"vieraconnect"``
-
-#### Defined in
-
-constants.d.ts:35
-
-___
-
-### VIZIO
-
-• `Const` **VIZIO**: ``"vizio"``
-
-#### Defined in
-
-constants.d.ts:36
-
-___
-
-### WATCHOS
-
-• `Const` **WATCHOS**: ``"watchos"``
-
-#### Defined in
-
-constants.d.ts:37
-
-___
-
-### WEB
-
-• `Const` **WEB**: ``"web"``
-
-#### Defined in
-
-constants.d.ts:38
-
-___
-
-### WEBIAN
-
-• `Const` **WEBIAN**: ``"webian"``
-
-#### Defined in
-
-constants.d.ts:41
-
-___
-
-### WEBOS
-
-• `Const` **WEBOS**: ``"webos"``
-
-#### Defined in
-
-constants.d.ts:40
-
-___
-
-### WEBTV
-
-• `Const` **WEBTV**: ``"webtv"``
-
-#### Defined in
-
-constants.d.ts:39
-
-___
-
-### WII
-
-• `Const` **WII**: ``"wii"``
-
-#### Defined in
-
-constants.d.ts:42
-
-___
-
-### WINDOWS
-
-• `Const` **WINDOWS**: ``"windows"``
-
-#### Defined in
-
-constants.d.ts:43
-
-___
-
-### WP10
-
-• `Const` **WP10**: ``"wp10"``
-
-#### Defined in
-
-constants.d.ts:45
-
-___
-
-### WP8
-
-• `Const` **WP8**: ``"wp8"``
-
-#### Defined in
-
-constants.d.ts:46
-
-___
-
-### XBOX
-
-• `Const` **XBOX**: ``"xbox"``
-
-#### Defined in
-
-constants.d.ts:47
-
-___
-
-### XBOX360
-
-• `Const` **XBOX360**: ``"xbox360"``
-
-#### Defined in
-
-constants.d.ts:48
+context/defaults.d.ts:2
 
 ___
 
@@ -2940,7 +2470,7 @@ ___
 
 #### Defined in
 
-utils/utils.d.ts:2
+system/is.d.ts:2
 
 ___
 
@@ -2950,7 +2480,7 @@ ___
 
 #### Defined in
 
-utils/utils.d.ts:1
+system/is.d.ts:1
 
 ___
 
@@ -2960,7 +2490,7 @@ ___
 
 #### Defined in
 
-utils/utils.d.ts:3
+system/is.d.ts:3
 
 ___
 
@@ -2976,7 +2506,7 @@ system/exec.d.ts:46
 
 ### \_getConfigProp
 
-▸ **_getConfigProp**\<`T`\>(`c`, `platform`, `key`, `defaultVal?`, `sourceObj?`): \{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`]
+▸ **_getConfigProp**\<`T`\>(`c`, `platform`, `key`, `defaultVal?`, `sourceObj?`): \{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`]
 
 #### Type parameters
 
@@ -2991,16 +2521,16 @@ system/exec.d.ts:46
 | `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `key` | `T` |
-| `defaultVal?` | \{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`] |
+| `defaultVal?` | \{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`] |
 | `sourceObj?` | `Partial`\<`_ConfigRootMerged`\> |
 
 #### Returns
 
-\{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`]
+\{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`]
 
 #### Defined in
 
-configs/configProp.d.ts:7
+context/contextProps.d.ts:8
 
 ___
 
@@ -3056,7 +2586,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:39
+system/fs.d.ts:41
 
 ___
 
@@ -3284,7 +2814,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:49
+system/fs.d.ts:51
 
 ___
 
@@ -3304,7 +2834,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:29
+system/fs.d.ts:31
 
 ___
 
@@ -3586,7 +3116,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:51
+system/fs.d.ts:53
 
 ___
 
@@ -3609,7 +3139,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:18
+system/fs.d.ts:20
 
 ___
 
@@ -3634,7 +3164,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:21
+system/fs.d.ts:23
 
 ___
 
@@ -3657,7 +3187,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:25
+system/fs.d.ts:27
 
 ___
 
@@ -3685,7 +3215,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:24
+system/fs.d.ts:26
 
 ___
 
@@ -3712,7 +3242,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:23
+system/fs.d.ts:25
 
 ___
 
@@ -4222,7 +3752,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:47
+system/fs.d.ts:49
 
 ___
 
@@ -4243,7 +3773,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:10
+system/fs.d.ts:12
 
 ___
 
@@ -4264,7 +3794,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:5
+system/fs.d.ts:7
 
 ___
 
@@ -4284,7 +3814,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:6
+system/fs.d.ts:8
 
 ___
 
@@ -4304,7 +3834,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:8
+system/fs.d.ts:10
 
 ___
 
@@ -4324,7 +3854,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:13
+system/fs.d.ts:15
 
 ___
 
@@ -4345,7 +3875,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:16
+system/fs.d.ts:18
 
 ___
 
@@ -4365,7 +3895,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:9
+system/fs.d.ts:11
 
 ___
 
@@ -4386,7 +3916,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:17
+system/fs.d.ts:19
 
 ___
 
@@ -4406,7 +3936,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:7
+system/fs.d.ts:9
 
 ___
 
@@ -4427,7 +3957,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:11
+system/fs.d.ts:13
 
 ___
 
@@ -4447,7 +3977,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:12
+system/fs.d.ts:14
 
 ___
 
@@ -4468,7 +3998,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:15
+system/fs.d.ts:17
 
 ___
 
@@ -4488,7 +4018,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:14
+system/fs.d.ts:16
 
 ___
 
@@ -4510,7 +4040,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:4
+system/fs.d.ts:6
 
 ___
 
@@ -4544,7 +4074,7 @@ ___
 
 #### Defined in
 
-context/defaults.d.ts:8
+context/defaults.d.ts:9
 
 ___
 
@@ -4604,7 +4134,7 @@ ___
 | `config.npm.optionalDependencies?` | `Record`\<`string`, `string`\> |
 | `config.npm.peerDependencies?` | `Record`\<`string`, `string`\> |
 | `config.overview` | `string` |
-| `config.platforms?` | `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> |
+| `config.platforms?` | `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> |
 | `config.plugins?` | `Record`\<`string`, `string`\> |
 
 #### Returns
@@ -4717,7 +4247,7 @@ ___
 
 ### generatePlatformChoices
 
-▸ **generatePlatformChoices**(`c`): \{ `isConnected`: `boolean` ; `name`: `string` ; `value`: ``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``  }[]
+▸ **generatePlatformChoices**(`c`): \{ `isConnected`: `boolean` ; `name`: `string` ; `value`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``  }[]
 
 #### Parameters
 
@@ -4727,7 +4257,7 @@ ___
 
 #### Returns
 
-\{ `isConnected`: `boolean` ; `name`: `string` ; `value`: ``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``  }[]
+\{ `isConnected`: `boolean` ; `name`: `string` ; `value`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``  }[]
 
 #### Defined in
 
@@ -4771,7 +4301,7 @@ ___
 
 #### Defined in
 
-context/defaults.d.ts:3
+context/defaults.d.ts:4
 
 ___
 
@@ -4785,7 +4315,7 @@ ___
 
 #### Defined in
 
-context/defaults.d.ts:2
+context/defaults.d.ts:3
 
 ___
 
@@ -4841,7 +4371,7 @@ ___
 
 #### Defined in
 
-common.d.ts:7
+context/contextProps.d.ts:773
 
 ___
 
@@ -4862,7 +4392,7 @@ ___
 
 #### Defined in
 
-common.d.ts:5
+context/contextProps.d.ts:771
 
 ___
 
@@ -4891,7 +4421,7 @@ ___
 
 #### Defined in
 
-configs/configProp.d.ts:6
+context/contextProps.d.ts:7
 
 ___
 
@@ -4951,7 +4481,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:48
+system/fs.d.ts:50
 
 ___
 
@@ -5081,7 +4611,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:45
+system/fs.d.ts:47
 
 ___
 
@@ -5110,7 +4640,7 @@ ___
 
 #### Defined in
 
-configs/configProp.d.ts:768
+context/contextProps.d.ts:769
 
 ___
 
@@ -5194,7 +4724,7 @@ ___
 
 #### Defined in
 
-common.d.ts:6
+context/contextProps.d.ts:772
 
 ___
 
@@ -5217,7 +4747,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:38
+system/fs.d.ts:40
 
 ___
 
@@ -5258,7 +4788,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:50
+system/fs.d.ts:52
 
 ___
 
@@ -5300,7 +4830,7 @@ ___
 
 #### Defined in
 
-common.d.ts:4
+context/contextProps.d.ts:770
 
 ___
 
@@ -5548,107 +5078,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:22
-
-___
-
-### isArray
-
-▸ **isArray**(`value`): `unknown`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`unknown`
-
-#### Defined in
-
-utils/is.d.ts:2
-
-___
-
-### isBool
-
-▸ **isBool**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:6
-
-___
-
-### isDate
-
-▸ **isDate**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:11
-
-___
-
-### isError
-
-▸ **isError**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:10
-
-___
-
-### isFunction
-
-▸ **isFunction**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:5
+system/fs.d.ts:24
 
 ___
 
@@ -5663,86 +5093,6 @@ ___
 #### Defined in
 
 logger/index.d.ts:16
-
-___
-
-### isLikeNull
-
-▸ **isLikeNull**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:13
-
-___
-
-### isNull
-
-▸ **isNull**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:7
-
-___
-
-### isNumber
-
-▸ **isNumber**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:4
-
-___
-
-### isObject
-
-▸ **isObject**(`value`): `unknown`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`unknown`
-
-#### Defined in
-
-utils/is.d.ts:1
 
 ___
 
@@ -5812,26 +5162,6 @@ platforms/index.d.ts:12
 
 ___
 
-### isRegExp
-
-▸ **isRegExp**(`value`): `unknown`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`unknown`
-
-#### Defined in
-
-utils/is.d.ts:9
-
-___
-
 ### isScopedPackagePath
 
 ▸ **isScopedPackagePath**(`aPath`): ``true``
@@ -5852,46 +5182,6 @@ system/resolve.d.ts:20
 
 ___
 
-### isString
-
-▸ **isString**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:3
-
-___
-
-### isSymbol
-
-▸ **isSymbol**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:12
-
-___
-
 ### isTemplateInstalled
 
 ▸ **isTemplateInstalled**(`c`): `string` \| ``false``
@@ -5909,26 +5199,6 @@ ___
 #### Defined in
 
 templates/index.d.ts:7
-
-___
-
-### isUndefined
-
-▸ **isUndefined**(`value`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-utils/is.d.ts:8
 
 ___
 
@@ -6097,7 +5367,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:46
+system/fs.d.ts:48
 
 ___
 
@@ -6580,7 +5850,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:43
+system/fs.d.ts:45
 
 ___
 
@@ -6600,7 +5870,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:28
+system/fs.d.ts:30
 
 ___
 
@@ -6839,7 +6109,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:20
+system/fs.d.ts:22
 
 ___
 
@@ -6867,7 +6137,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:36
+system/fs.d.ts:38
 
 ___
 
@@ -7008,7 +6278,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:27
+system/fs.d.ts:29
 
 ___
 
@@ -7029,7 +6299,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:33
+system/fs.d.ts:35
 
 ___
 
@@ -7049,7 +6319,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:32
+system/fs.d.ts:34
 
 ___
 
@@ -7069,7 +6339,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:31
+system/fs.d.ts:33
 
 ___
 
@@ -7089,7 +6359,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:30
+system/fs.d.ts:32
 
 ___
 
@@ -7109,7 +6379,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:44
+system/fs.d.ts:46
 
 ___
 
@@ -7129,7 +6399,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:41
+system/fs.d.ts:43
 
 ___
 
@@ -7176,7 +6446,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:42
+system/fs.d.ts:44
 
 ___
 
@@ -7203,7 +6473,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:40
+system/fs.d.ts:42
 
 ___
 
@@ -7247,7 +6517,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:26
+system/fs.d.ts:28
 
 ___
 
@@ -7290,7 +6560,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:37
+system/fs.d.ts:39
 
 ___
 
@@ -7303,7 +6573,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `c` | [`RnvContext`](modules.md#rnvcontext) |
-| `platforms` | (``"android"`` \| ``"linux"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"firetv"`` \| ``"ios"`` \| ``"tvos"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tizenwatch"`` \| ``"webos"`` \| ``"web"`` \| ``"webtv"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"macos"`` \| ``"windows"`` \| ``"xbox"``)[] |
+| `platforms` | (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] |
 
 #### Returns
 
@@ -7463,7 +6733,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:19
+system/fs.d.ts:21
 
 ___
 
@@ -7486,7 +6756,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:34
+system/fs.d.ts:36
 
 ___
 
@@ -7509,7 +6779,7 @@ ___
 
 #### Defined in
 
-system/fs.d.ts:35
+system/fs.d.ts:37
 
 ___
 

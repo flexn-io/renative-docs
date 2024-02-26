@@ -16014,6 +16014,11 @@ typedoc-plugin-markdown@^3.17.1:
   dependencies:
     handlebars "^4.7.7"
 
+typedoc-plugin-zod@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/typedoc-plugin-zod/-/typedoc-plugin-zod-1.1.2.tgz#45599c4ef8c96b9d50ed9c4a79b02a70af4c0003"
+  integrity sha512-jsmuYg1xsGjwKdhKN4tgRYORnbKpU7v5B1ZpsazMH5lUsI6ZLxBqAY5iiZ06oz/01gHOsAdhpABgWD97MOjKQA==
+
 typedoc@^0.25.8:
   version "0.25.8"
   resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.25.8.tgz#7d0e1bf12d23bf1c459fd4893c82cb855911ff12"

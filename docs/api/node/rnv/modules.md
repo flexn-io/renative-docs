@@ -8,30 +8,6 @@ custom_edit_url: null
 
 ## Functions
 
-### executeAsync
-
-▸ **executeAsync**(`_c`, `_cmd?`, `_opts?`): `Promise`\<`string`\>
-
-Execute a plain command
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `_c` | `string` \| `string`[] \| `RnvContext` |
-| `_cmd?` | `string` \| `string`[] \| `ExecOptions` |
-| `_opts?` | `ExecOptions` |
-
-#### Returns
-
-`Promise`\<`string`\>
-
-#### Defined in
-
-renative/packages/core/lib/system/exec.d.ts:31
-
-___
-
 ### executeRnv
 
 ▸ **executeRnv**(`«destructured»`): `Promise`\<`void`\>
@@ -55,51 +31,7 @@ ___
 
 #### Defined in
 
-renative-docs/node_modules/rnv/lib/runner.d.ts:7
-
-___
-
-### executeTask
-
-▸ **executeTask**(`c`, `task`, `parentTask?`, `originTask?`, `isFirstTask?`): `Promise`\<`undefined`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `c` | `RnvContext` |
-| `task` | `string` |
-| `parentTask?` | `string` |
-| `originTask?` | `string` |
-| `isFirstTask?` | `boolean` |
-
-#### Returns
-
-`Promise`\<`undefined`\>
-
-#### Defined in
-
-renative/packages/core/lib/tasks/index.d.ts:7
-
-___
-
-### removeDirs
-
-▸ **removeDirs**(`dirPaths`): `Promise`\<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `dirPaths` | `string`[] |
-
-#### Returns
-
-`Promise`\<`void`\>
-
-#### Defined in
-
-renative/packages/core/lib/system/fs.d.ts:32
+runner.d.ts:7
 
 ___
 
@@ -119,7 +51,7 @@ ___
 
 #### Defined in
 
-renative-docs/node_modules/rnv/lib/adapter/index.d.ts:2
+adapter/index.d.ts:2
 
 ___
 
@@ -151,7 +83,7 @@ ___
 
 #### Defined in
 
-renative-docs/node_modules/rnv/lib/adapter/index.d.ts:3
+adapter/index.d.ts:3
 
 ___
 
@@ -171,7 +103,7 @@ ___
 
 #### Defined in
 
-renative-docs/node_modules/rnv/lib/adapter/index.d.ts:4
+adapter/index.d.ts:4
 
 ___
 
@@ -191,4 +123,4 @@ ___
 
 #### Defined in
 
-renative-docs/node_modules/rnv/lib/adapter/index.d.ts:5
+adapter/index.d.ts:5

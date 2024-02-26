@@ -57,6 +57,7 @@
         "rnv": "1.0.0-rc.11",
         "typedoc": "^0.25.8",
         "typedoc-plugin-markdown": "^3.17.1",
+        "typedoc-plugin-zod": "1.1.2",
         "typescript": "^5.3.3",
         "zod-to-json-schema": "^3.22.4"
     },

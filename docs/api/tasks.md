@@ -1,7 +1,7 @@
 ---
 id: tasks
-title: RNV CLI Tasks Reference
-sidebar_label: RNV CLI Tasks Reference
+title: rnv Command-Line Interface
+sidebar_label: rnv CLI
 ---
 ## crypto
 
