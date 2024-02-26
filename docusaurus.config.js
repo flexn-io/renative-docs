@@ -36,7 +36,7 @@ const config = {
                 frontmatter: {
                     sidebar_label: '@rnv/core (Node)',
                 },
-                // plugin: ['typedoc-plugin-zod'],
+                plugin: ['typedoc-plugin-zod'],
                 // watch: true,
             },
         ],
