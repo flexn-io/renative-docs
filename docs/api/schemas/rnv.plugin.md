@@ -402,49 +402,51 @@ Properties of the `appDelegateMethods` object:
 
 Properties of the `application` object:
 
-####### `didFinishLaunchingWithOptions` (array, required)
+**`didFinishLaunchingWithOptions`** (array, required)
 
 The elements of the array must match *at least one* of the following properties:
 
-####### (string)
+ (string)
 
-####### (object)
+ (object)
 
 Properties of the `undefined` object:
 
-######## `order` (number, required)
+**`order`** (number, required)
 
-######## `value` (string, required)
+**`value`** (string, required)
 
-######## `weight` (number, required)
+**`weight`** (number, required)
 
-####### `applicationDidBecomeActive` (array, required)
+**`applicationDidBecomeActive`** (array, required)
 
-####### `open` (array, required)
+**`open`** (array, required)
 
-####### `supportedInterfaceOrientationsFor` (array, required)
+**`supportedInterfaceOrientationsFor`** (array, required)
 
-####### `didReceiveRemoteNotification` (array, required)
+**`didReceiveRemoteNotification`** (array, required)
 
-####### `didFailToRegisterForRemoteNotificationsWithError` (array, required)
+**`didFailToRegisterForRemoteNotificationsWithError`** (array, required)
 
-####### `didReceive` (array, required)
+**`didReceive`** (array, required)
 
-####### `didRegister` (array, required)
+**`didRegister`** (array, required)
 
-####### `didRegisterForRemoteNotificationsWithDeviceToken` (array, required)
+**`didRegisterForRemoteNotificationsWithDeviceToken`** (array, required)
 
-####### `continue` (array, required)
+**`continue`** (array, required)
 
-####### `didConnectCarInterfaceController` (array, required)
+**`didConnectCarInterfaceController`** (array, required)
 
-####### `didDisconnectCarInterfaceController` (array, required)
+**`didDisconnectCarInterfaceController`** (array, required)
 
 ###### `userNotificationCenter` (object, required)
 
 Properties of the `userNotificationCenter` object:
 
-####### `willPresent` (array, required)
+**`willPresent`** (array, required)
+
+**`didReceiveNotificationResponse`** (array, required)
 
 ##### `appDelegateImports` (array)
 

@@ -13,7 +13,6 @@ Templates are used as initial bootstrap structure you can use instead of creatin
 
 Templates are offered during creation of new project ( `rnv new` )
 
-
 ## Built-in
 
 Hello World:
@@ -46,11 +45,9 @@ or
 
 and so on
 
-
 ## CLI Support
 
 You can manage your templates in your project via rnv command line.
-
 
 `rnv template list` - list available and installed templated in your project
 
@@ -60,4 +57,4 @@ You can manage your templates in your project via rnv command line.
 
 ---
 
-for full CLI reference, visit [Engine Core API Reference](../api/cli-engine-core.md#template-add)
+for full CLI reference, visit [RNV API Reference](../api/tasks)

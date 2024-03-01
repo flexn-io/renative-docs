@@ -584,7 +584,7 @@ Properties of the `build_gradle` object:
 
 Properties of the `allprojects` object:
 
-####### `repositories` (object, required)
+**`repositories`** (object, required)
 
 Customize repositories section of build.gradle
 
@@ -596,9 +596,9 @@ The object is an array with all elements of the type `string`.
 
 Properties of the `buildscript` object:
 
-####### `repositories` (object, required)
+**`repositories`** (object, required)
 
-####### `dependencies` (object, required)
+**`dependencies`** (object, required)
 
 ###### `dexOptions` (object, required)
 
@@ -624,11 +624,11 @@ The object is an array with all elements of the type `string`.
 
 Properties of the `buildTypes` object:
 
-####### `debug` (array)
+**`debug`** (array)
 
 The object is an array with all elements of the type `string`.
 
-####### `release` (array)
+**`release`** (array)
 
 The object is an array with all elements of the type `string`.
 
@@ -665,13 +665,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-####### `tag` (, required)
+**`tag`** (, required)
 
-####### `android:name` (, required)
+**`android:name`** (, required)
 
-####### `android:required`
+**`android:required`**
 
-####### `children` (array, required)
+**`children`** (array, required)
 
 ##### `strings_xml` (object)
 
@@ -995,11 +995,11 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-####### `shellPath` (string, required)
+**`shellPath`** (string, required)
 
-####### `shellScript` (string, required)
+**`shellScript`** (string, required)
 
-####### `inputPaths` (array, required)
+**`inputPaths`** (array, required)
 
 The object is an array with all elements of the type `string`.
 
@@ -1017,53 +1017,55 @@ Properties of the `AppDelegate_mm` object:
 
 Properties of the `appDelegateMethods` object:
 
-####### `application` (object, required)
+**`application`** (object, required)
 
 Properties of the `application` object:
 
-######## `didFinishLaunchingWithOptions` (array, required)
+**`didFinishLaunchingWithOptions`** (array, required)
 
 The elements of the array must match *at least one* of the following properties:
 
-######## (string)
+ (string)
 
-######## (object)
+ (object)
 
 Properties of the `undefined` object:
 
-######### `order` (number, required)
+**`order`** (number, required)
 
-######### `value` (string, required)
+**`value`** (string, required)
 
-######### `weight` (number, required)
+**`weight`** (number, required)
 
-######## `applicationDidBecomeActive` (array, required)
+**`applicationDidBecomeActive`** (array, required)
 
-######## `open` (array, required)
+**`open`** (array, required)
 
-######## `supportedInterfaceOrientationsFor` (array, required)
+**`supportedInterfaceOrientationsFor`** (array, required)
 
-######## `didReceiveRemoteNotification` (array, required)
+**`didReceiveRemoteNotification`** (array, required)
 
-######## `didFailToRegisterForRemoteNotificationsWithError` (array, required)
+**`didFailToRegisterForRemoteNotificationsWithError`** (array, required)
 
-######## `didReceive` (array, required)
+**`didReceive`** (array, required)
 
-######## `didRegister` (array, required)
+**`didRegister`** (array, required)
 
-######## `didRegisterForRemoteNotificationsWithDeviceToken` (array, required)
+**`didRegisterForRemoteNotificationsWithDeviceToken`** (array, required)
 
-######## `continue` (array, required)
+**`continue`** (array, required)
 
-######## `didConnectCarInterfaceController` (array, required)
+**`didConnectCarInterfaceController`** (array, required)
 
-######## `didDisconnectCarInterfaceController` (array, required)
+**`didDisconnectCarInterfaceController`** (array, required)
 
-####### `userNotificationCenter` (object, required)
+**`userNotificationCenter`** (object, required)
 
 Properties of the `userNotificationCenter` object:
 
-######## `willPresent` (array, required)
+**`willPresent`** (array, required)
+
+**`didReceiveNotificationResponse`** (array, required)
 
 ###### `appDelegateImports` (array)
 

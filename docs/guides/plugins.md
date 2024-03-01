@@ -39,7 +39,7 @@ and follow the command prompt steps
 
 ## Plugin CLI Reference
 
-[see: CLI API Reference](../api/cli-engine-core.md#plugin-add)
+[see: CLI API Reference](../api/tasks.md)
 
 ## Plugin Renative Config Reference
 
@@ -54,20 +54,20 @@ Example:
 
 ```json
 {
-  "plugins": {
-    "renative": "source:rnv",
-    "react": "source:rnv",
-    "react-art": "source:rnv",
-    "react-dom": "source:rnv",
-    "react-native": "source:rnv",
-    "react-native-web": "source:rnv",
-    "react-native-web-image-loader": "source:rnv",
-    "react-native-gesture-handler": "source:rnv",
-    "react-navigation": "source:rnv",
-    "react-navigation-tabs": "source:rnv",
-    "react-native-reanimated": "source:rnv",
-    "react-native-vector-icons": "source:rnv"
-  }
+    "plugins": {
+        "renative": "source:rnv",
+        "react": "source:rnv",
+        "react-art": "source:rnv",
+        "react-dom": "source:rnv",
+        "react-native": "source:rnv",
+        "react-native-web": "source:rnv",
+        "react-native-web-image-loader": "source:rnv",
+        "react-native-gesture-handler": "source:rnv",
+        "react-navigation": "source:rnv",
+        "react-navigation-tabs": "source:rnv",
+        "react-native-reanimated": "source:rnv",
+        "react-native-vector-icons": "source:rnv"
+    }
 }
 ```
 
@@ -75,19 +75,19 @@ You can also customise default plugin configuration:
 
 ```json
 {
-  "plugins": {
-    "react-native-gesture-handler": {
-      "version": "0.1.0",
-      "ios": {
-        "podName": "RNGestureHandler",
-        "path": "node_modules/react-native-gesture-handler"
-      },
-      "android": {
-        "package": "com.swmansion.gesturehandler.react.RNGestureHandlerPackage",
-        "path": "node_modules/react-native-gesture-handler/android"
-      }
+    "plugins": {
+        "react-native-gesture-handler": {
+            "version": "0.1.0",
+            "ios": {
+                "podName": "RNGestureHandler",
+                "path": "node_modules/react-native-gesture-handler"
+            },
+            "android": {
+                "package": "com.swmansion.gesturehandler.react.RNGestureHandlerPackage",
+                "path": "node_modules/react-native-gesture-handler/android"
+            }
+        }
     }
-  }
 }
 ```
 
@@ -97,14 +97,14 @@ Some cocoapod dependecies required library to be imported as static one. you can
 
 ```json
 {
-  "plugin-name": {
-    "ios": {
-      "isStatic": true
-    },
-    "tvos": {
-      "isStatic": true
+    "plugin-name": {
+        "ios": {
+            "isStatic": true
+        },
+        "tvos": {
+            "isStatic": true
+        }
     }
-  }
 }
 ```
 

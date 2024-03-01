@@ -3,866 +3,594 @@ id: tasks
 title: rnv Command-Line Interface
 sidebar_label: rnv CLI
 ---
-## Commands
+## crypto
 
-### crypto
-
-#### decrypt
+### decrypt
 
 Decrypt encrypted project files into local `~/<wokspace>/<project>/..`
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv crypto decrypt
 ```
 
-#### encrypt
-
-Encrypts secure files from `~/<wokspace>/<project>/..` to project
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### encrypt
+
+Encrypts secure files from `~/<wokspace>/<project>/..` to project
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv crypto encrypt
 ```
 
-#### installCerts
-
-Installs certificates into keychain (mac only)
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
-Example:
-```bash
-npx rnv crypto installCerts
-```
+## platform
 
-#### updateProfile
-
-Update provisioning profile (mac only)
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv crypto updateProfile
-```
-
-#### updateProfiles
-
-Will attempt to update all provisioning profiles (mac only)
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv crypto updateProfiles
-```
-
-#### installProfiles
-
-Installs provisioning certificates found in your workspace (mac only)
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv crypto installProfiles
-```
-
-### platform
-
-#### eject
+### eject
 
 Copy all platform files directly to project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv platform eject
 ```
 
-#### connect
-
-Connect platform template back to rnv
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### connect
+
+Connect platform template back to rnv
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv platform connect
 ```
 
-#### list
-
-List all available platforms
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### list
+
+List all available platforms
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv platform list
 ```
 
-#### configure
-
-Low-level task used by engines to prepare platformBuilds folder
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### configure
+
+Low-level task used by engines to prepare platformBuilds folder
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv platform configure
 ```
 
-#### setup
-
-Allows you to change supportedPlatforms for your project
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### setup
+
+Allows you to change supportedPlatforms for your project
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv platform setup
 ```
 
-### template
-
-#### add
-
-Install additional template to the project
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+## template
+
+### add
+
+Install additional template to the project
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv template add
 ```
 
-#### apply
-
-Reset project to specific template
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### apply
+
+Reset project to specific template
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv template apply
 ```
 
-#### list
-
-Show list of available templates
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### list
+
+Show list of available templates
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv template list
 ```
 
-### plugin
-
-#### add
-
-Add selected plugin to the project
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+## plugin
+
+### add
+
+Add selected plugin to the project
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv plugin add
 ```
 
-#### list
-
-Show list of all available plugins
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### list
+
+Show list of all available plugins
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv plugin list
 ```
 
-#### update
-
-Update specific plugin to latest supported version (rnv)
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### update
+
+Update specific plugin to latest supported version (rnv)
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv plugin update
 ```
 
-### workspace
-
-#### list
-
-Show list of all available workspaces
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+## workspace
+
+### list
+
+Show list of all available workspaces
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv workspace list
 ```
 
-#### add
-
-Add new workspace
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### add
+
+Add new workspace
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv workspace add
 ```
 
-#### connect
-
-Connect project with selected workspace
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### connect
+
+Connect project with selected workspace
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv workspace connect
 ```
 
-#### update
-
-TODO: unused task
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### update
+
+TODO: unused task
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv workspace update
 ```
 
-#### configure
-
-Preconfigures your current workspace defined via "workspaceID" prop in renative config file
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### configure
+
+Preconfigures your current workspace defined via "workspaceID" prop in renative config file
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv workspace configure
 ```
 
-### hooks
-
-#### list
-
-Get list of all available hooks
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+## hooks
+
+### list
+
+Get list of all available hooks
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv hooks list
 ```
 
-#### run
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### run
 
 Run specific build hook
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`exeMethod`](#exemethod)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv hooks run
 ```
 
-#### pipes
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`exeMethod`](#exemethod)
+
+### pipes
 
 Get the list of all available pipes
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv hooks pipes
 ```
 
-### clean
-
-Automatically removes all node_modules and lock in your project and its dependencies
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
+## clean
+
+Automatically removes all node_modules and lock in your project and its dependencies
+
 Example:
+
 ```bash
 npx rnv clean
 ```
 
-### status
+## status
 
 Show current info about the project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv status
 ```
 
-### config
+## config
 
 Display RNV config
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv config
 ```
 
-### help
+## help
 
 Display generic help
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv help
 ```
 
-### new
+## new
 
 Create new ReNative project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv new
 ```
 
-### install
+## install
 
 Install package node_modules via yarn or npm
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv install
 ```
 
-### project
+## project
 
-#### configure
+### configure
 
 Configure current project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv project configure
 ```
 
-#### upgrade
-
-Upgrade or downgrade RNV dependencies in your ReNative project
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### upgrade
+
+Upgrade or downgrade RNV dependencies in your ReNative project
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv project upgrade
 ```
 
-### app
 
-#### configure
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+## app
+
+### configure
 
 Configure project with specific appConfig
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv app configure
 ```
 
-#### create
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+
+### create
 
 Create new app config
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv app create
 ```
 
-### configureSoft
-
-Configure system and project without recreating files (used for --only)
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
+## configureSoft
+
+Configure system and project without recreating files (used for --only)
+
 Example:
+
 ```bash
 npx rnv configureSoft
 ```
 
-### kill
+## kill
 
 Kills all the processes related to this project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv kill
 ```
 
-### doctor
+## doctor
 
 Checks validity and config health of your project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv doctor
 ```
 
-### target
+## target
 
-#### list
+### list
 
 List all available targets for specific platform
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv target list
 ```
 
-#### launch
-
-Launch specific target
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### launch
+
+Launch specific target
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv target launch
 ```
 
-### link
-
-Links development version or renative with this project
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
 
+## link
+
+Links development version or renative with this project
+
 Example:
+
 ```bash
 npx rnv link
 ```
 
-### unlink
+## unlink
 
 Replaces rnv version in project with original node_modules version
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv unlink
 ```
 
-### telemetry
+## telemetry
 
-#### status
+### status
 
 Show current rnv telemetry status on your machine
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv telemetry status
 ```
 
-#### enable
-
-Enables rnv telemetry on your machine
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### enable
+
+Enables rnv telemetry on your machine
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv telemetry enable
 ```
 
-#### disable
-
-Disables rnv telemetry on your machine
-
-Available in engines: [engine-core](engines/engine-core.md)
-
 
 Available Options:
 [`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+### disable
+
+Disables rnv telemetry on your machine
+
+Provider: engine-core
 
 Example:
 ```bash
 npx rnv telemetry disable
 ```
 
-### switch
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+## switch
 
 Switch between different app configs in current project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
 Example:
+
 ```bash
 npx rnv switch
-```
-
-### run
-
-Run your app on target device or emulator
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug`](#debug), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
-
-Example:
-```bash
-npx rnv run
-```
-
-### package
-
-Package source files into bundle
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
-
-Example:
-```bash
-npx rnv package
-```
-
-### build
-
-Build project binary
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
-
-Example:
-```bash
-npx rnv build
-```
-
-### configure
-
-Configure current project
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
-
-Example:
-```bash
-npx rnv configure
-```
-
-### start
-
-Starts bundler / server
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
-
-Example:
-```bash
-npx rnv start
-```
-
-### export
-
-Export the app into deployable binary
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
-
-Example:
-```bash
-npx rnv export
-```
-
-### deploy
-
-Deploy the binary via selected deployment intgeration or buld hook
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
-
-Example:
-```bash
-npx rnv deploy
-```
-
-### debug
-
-Debug your app on target device or emulator
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv debug
-```
-
-### eject
-
-Eject current project app to self contained native project
-
-Available in engines: [engine-rn](engines/engine-rn.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
-
-Example:
-```bash
-npx rnv eject
-```
-
-### log
-
-Attach logger to device or emulator and print out logs
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv log
 ```
 
 ## Options

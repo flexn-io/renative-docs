@@ -1034,7 +1034,7 @@ npx rnv plugin add @reduxjs/toolkit
 ## @rnv/renative
 
 
-Version: `1.0.0-rc.11`
+Version: `1.0.0-rc.12`
 
 Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
