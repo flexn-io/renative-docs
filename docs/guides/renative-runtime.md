@@ -12,9 +12,9 @@ original_id: runtime
 ReNative provides runtime SDK library to support multi-platform development
 
 ```js
-import { isPlatformTizen, isFactorTv, engine, platform } from "renative";
+import { isPlatformTizen, isFactorTv, engine, platform } from 'renative';
 
 <Text>{isFactorTv}</Text>;
 ```
 
-[Full API Reference](../api/renative.md)
+[Full API Reference](../api/node/renative/index.md)

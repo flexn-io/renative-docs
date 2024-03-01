@@ -21,6 +21,6 @@ Just like the DNA it contains core information about your project, structure, te
 
 Once you trigger your first `rnv ...` command this file is used to generate everything on demand
 
-[Full Build Config Reference](../api/build-config.md)
+[Full Build Config Reference](../api/schemas/rnv.project.md)
 
 [Full JSON Config Reference](../api/json-config.md)

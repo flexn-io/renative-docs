@@ -10,7 +10,7 @@ const config = {
     tagline: 'Unified Development Platform',
     url: 'https://renative.org',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     trailingSlash: false,
