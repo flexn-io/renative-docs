@@ -446,6 +446,8 @@ Properties of the `userNotificationCenter` object:
 
 ####### `willPresent` (array, required)
 
+####### `didReceiveNotificationResponse` (array, required)
+
 ##### `appDelegateImports` (array)
 
 The object is an array with all elements of the type `string`.

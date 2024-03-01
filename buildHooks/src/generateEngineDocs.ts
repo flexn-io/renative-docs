@@ -23,6 +23,7 @@ export const generateEngineTaks = async (c) => {
     registerAllPlatformEngines(c);
 
     const tasks = getAllSuitableTasks(c);
+    // console.log('tasks', tasks);
     const tasksGroupedByCommand = Object.values(tasks).reduce((acc, task: any) => {
         if (!acc[task.command]) {
             acc[task.command] = {};
