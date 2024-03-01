@@ -64,9 +64,15 @@ const generateElementTitle = (
     isEnum: boolean,
     example: string
 ) => {
-    const text = [hashtags];
+    const tooManyHashtags = hashtags.length > 6;
+    const text = [tooManyHashtags ? '' : hashtags];
+
     if (elementName) {
-        text.push(' `' + elementName + '`');
+        if (tooManyHashtags) {
+            text.push('**`' + elementName + '`**');
+        } else {
+            text.push(' `' + elementName + '`');
+        }
     }
     if (elementType || isRequired) {
         text.push(' (');
