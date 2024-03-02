@@ -100,12 +100,12 @@ const config = {
                 placeholder: 'Search...',
             },
             navbar: {
-                title: 'ReNative',
+                // title: 'ReNative',
                 hideOnScroll: false,
-                logo: {
-                    alt: 'Renative Logo',
-                    src: 'img/logo.svg',
-                },
+                // logo: {
+                //     alt: 'Renative Logo',
+                //     src: 'img/logo.svg',
+                // },
                 items: [
                     // {
                     //     position: 'left',
