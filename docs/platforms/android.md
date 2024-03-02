@@ -18,12 +18,11 @@ original_id: android
 
 <img className="platform-image" src="https://renative.org/img/rnv_android.gif" height="250"  />
 
-## Overview
-
 - Latest Android project
 - Kotlin Support
 - Support for Gradle 4.9
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
@@ -33,12 +32,14 @@ Extenstions are defined via engines. Engines with android support:
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - [Android Studio](https://developer.android.com/studio/index.html) for Android development
 - [Android SDK](https://developer.android.com/sdk/) `23.0.1` or newer for Android development
 - Windows 10 Pro or a better variant if you want to start the emulator on a Windows machine. Windows Home or Educational do not support Hyper-V and that's required for starting the Android emulators
 
+---
 ## Project Configuration
 
 | Feature        | Version  |
@@ -48,6 +49,7 @@ Extenstions are defined via engines. Engines with android support:
 | Kotlin         | `1.3.20` |
 | Target SDK     |   `27`   |
 
+---
 ## Emulators
 
 You can create variety of emulators via Android Studio IDE
@@ -60,18 +62,21 @@ You can create variety of emulators via Android Studio IDE
   </tr>
 </table>
 
+---
 ## Run on Simulator
 
 ```
 rnv run -p android
 ```
 
+---
 ## Run on Device
 
 ```
 rnv run -p android -d
 ```
 
+---
 ## Deploy on Device
 
 This will run production version on your device (not connected to metro bundler)
@@ -81,6 +86,7 @@ You can configure each `buildScheme` ie `-s release` in your config file `./appC
 rnv run -p android -s release -d
 ```
 
+---
 ## Android X support
 
 androidX is enabled by default
@@ -93,11 +99,13 @@ make sure you have this piece of script in package.json
 }
 ```
 
+---
 ## Hermes support
 
 Hermes can be enabled or disabled with `"reactNativeEngine": "hermes"` prop in `renative.json:platforms.android.reactNativeEngine`
 or `renative.json:platforms.android.buildSchemes.[SCHEME].reactNativeEngine`
 
+---
 ## Advanced
 
 Clean and Re-build platform project
@@ -148,6 +156,7 @@ Get device/simulator logs with filter
 rnv log -p android -f com.myapp
 ```
 
+---
 ## App Config
 
 [see: Android based config](../api/json-config.md#android-props)

@@ -18,10 +18,10 @@ original_id: web
 
 <img className="platform-image" src="https://renative.org/img/rnv_web.gif" height="250"/>
 
-## Overview
 
 - Supports Chrome, Safari, Firefox, IE10+
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
@@ -32,10 +32,12 @@ Extenstions are defined via engines. Engines with web support:
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - no extra requirements required
 
+---
 ## Project Configuration
 
 | Feature          | Version  |
@@ -44,6 +46,7 @@ Extenstions are defined via engines. Engines with web support:
 | react-native-web | `0.9.1`  |
 | Babel Core       | `7.1.2`  |
 
+---
 ## Run
 
 ```
@@ -58,6 +61,7 @@ If you only want to run server:
 rnv start -p web
 ```
 
+---
 ## Build
 
 ```
@@ -66,6 +70,7 @@ rnv build -p web
 
 your deployable web app folder will be located in `./platformBuilds/<APP_ID>_web/public`
 
+---
 ## Advanced
 
 Clean and Re-build platform project
@@ -86,10 +91,12 @@ Run app on custom port `9999`:
 rnv run -p web --port 9999
 ```
 
+---
 ## Modifying index.html
 
 In order for you to do that you'll need to run the project first, so it generates the files you need first. Then you can copy `platformBuilds/<APP_ID>_web/template.js` to `appConfigs/base/builds/template.js` and modify it.
 
+---
 ## App Config
 
 [see: Web based config](../api/json-config.md)

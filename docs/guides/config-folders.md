@@ -5,9 +5,6 @@ sidebar_label: Config Folders
 original_id: config_folders
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_appconfigs.png" width="50" height="50" /> -->
-
-## Overview
 
 Legend:
 
@@ -40,10 +37,12 @@ You can then switch to custom workspace per each project `./renative.json`
 }
 ```
 
+---
 ## Structure
 
 applies for both public and private `./..` and `~./rnv/[PROJECT_NAME]/..`
 
+```
     .
     └── appConfigs
         ├── base
@@ -59,7 +58,9 @@ applies for both public and private `./..` and `~./rnv/[PROJECT_NAME]/..`
                 └── [PLUGIN_KEY]
                     ├── fonts
                     └── builds
+```
 
+---
 ## Merges
 
 Following is the order of merges of various folders (if present) contributing to final `platformBuilds/*/**`.
@@ -106,6 +107,7 @@ Following is the order of merges of various folders (if present) contributing to
 ⬇️
 `./platformAssets`
 
+---
 ## Special Folders
 
 -   `platformBuilds` - all builds and projects are dynamically generated
@@ -119,6 +121,7 @@ Following is the order of merges of various folders (if present) contributing to
 -   `fonts` - special folder used for dynamic fonts injections
 -   `assets` - contents of this folder will be injected into `./platformAssets` destination
 
+---
 ## File Overrides / Injectors
 
 Every time you run RNV command, ReNative checks following "special" folders and copies contents of those into designated target folders
@@ -137,6 +140,7 @@ You can utilise above folders in following places:
 -   `[WORKSPACE_PATH]/[PROJECT_NAME]/appConfigs/[APP_ID]`
 -   `[WORKSPACE_PATH]/[PROJECT_NAME]/appConfigs/base`
 
+---
 ## Platform Builds Overrides
 
 Project Scoped Build Override
@@ -240,6 +244,7 @@ Combination of features above allows you to configure and build large number of 
   </tr>
 </table>
 
+---
 ## Files / Assets
 
 Override Rules:

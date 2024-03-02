@@ -24,19 +24,6 @@ export default function NavbarMobilePrimaryMenu() {
           />
         ))}
       </ul>
-      {/* <ul className="menu__list menu_icons_grid">
-        {items.filter(item => item.position === 'right' && item.title).map((item, i) => (
-          <div key={i} className="menu_icon">
-            <NavbarItem
-              mobile
-              {...item}
-              onClick={() => mobileSidebar.toggle()}
-              key={i}
-            />
-            <span>{item.title}</span>
-          </div>
-        ))}
-      </ul> */}
       <div className='mobile_nav_search'>
         <NavbarItem
           mobile

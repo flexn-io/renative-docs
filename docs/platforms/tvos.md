@@ -18,12 +18,12 @@ original_id: tvos
 
 <img className="platform-image" src="https://renative.org/img/rnv_tvos.gif" height="250"/>
 
-## Overview
 
 - Latest swift based Xcode project
 - Cocoapods Workspace ready
 - Swift 4.1 Support
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
@@ -33,11 +33,13 @@ Extenstions are defined via engines. Engines with tvos support:
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - [CocoaPods](https://cocoapods.org) `1.5.3` or newer
 - [Xcode](https://developer.apple.com/xcode/) for iOS development
 
+---
 ## Project Configuration
 
 | Feature           | Version |
@@ -45,6 +47,7 @@ Extenstions are defined via engines. Engines with tvos support:
 | Swift             |  `4.1`  |
 | Deployment Target | `11.4`  |
 
+---
 ## Run
 
 ```
@@ -52,6 +55,7 @@ rnv start
 rnv run -p tvos
 ```
 
+---
 ## Advanced
 
 Clean and Re-build platform project
@@ -66,6 +70,7 @@ Launch with specific tvOS simulator
 rnv run -p tvos -t "Apple TV 4K"
 ```
 
+---
 ## App Config
 
 [see: iOS based config](../api/json-config.md#ios-props)

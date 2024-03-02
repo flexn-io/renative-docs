@@ -5,23 +5,23 @@ sidebar_label: engine-rn-electron
 original_id: engine-rn-electron
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
-
 <!--AUTO_GENERATED_START-->
 
 
-## Overview
 
 React native based engine with web transpiler provided by react-native-web and native desktop wrapper provided by electron
 
+---
 ## Supported Platforms
 
 [macos](platforms/macos.md), [windows](platforms/windows.md), [linux](platforms/linux.md)
 
+---
 ## Required Plugins
 
 [react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web)
 
+---
 ## Required NPM Packages
 
 
@@ -32,6 +32,7 @@ React native based engine with web transpiler provided by react-native-web and n
 
 
 
+---
 ## Extensions
 
 ### macos

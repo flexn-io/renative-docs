@@ -20,11 +20,11 @@ original_id: windows
 
 <img className="platform-image" src="https://renative.org/img/rnv_windows.gif" height="250"/>
 
-## Overview
 
 - support for Windows 10+
 - Based on Electron
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
@@ -34,10 +34,12 @@ Extenstions are defined via engines. Engines with windows support:
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - Windows dev environment
 
+---
 ## Run
 
 Run on Simulator
@@ -52,6 +54,7 @@ Run in Browser
 rnv run -p windows --hosted
 ```
 
+---
 ## App Config
 
 [see: Web based config](../api/json-config.md)

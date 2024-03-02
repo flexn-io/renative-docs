@@ -59,7 +59,7 @@
         "typedoc-plugin-markdown": "^3.17.1",
         "typedoc-plugin-zod": "1.1.2",
         "typescript": "^5.3.3",
-        "zod-to-json-schema": "^3.22.4"
+        "zod-to-json-schema": "^3.22.4"  
     },
     "browserslist": {
         "production": [

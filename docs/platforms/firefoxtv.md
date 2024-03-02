@@ -18,6 +18,7 @@ original_id: firefoxtv
 
 <img className="platform-image" src="https://renative.org/img/rnv_firefoxtv.gif" height="250"/>
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
@@ -62,6 +63,7 @@ Run in Browser
 rnv run -p firefoxtv --hosted
 ```
 
+---
 ## App Config
 
 [see: Web based config](../api/json-config.md)

@@ -5,23 +5,21 @@ sidebar_label: engine-rn-web
 original_id: engine-rn-web
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
-
 <!--AUTO_GENERATED_START-->
-
-
-## Overview
 
 React native based engine with web transpiler provided by react-native-web
 
+---
 ## Supported Platforms
 
 [web](platforms/web.md), [chromecast](platforms/chromecast.md), [tizen](platforms/tizen.md), [webtv](platforms/webtv.md), [tizenmobile](platforms/tizenmobile.md), [tizenwatch](platforms/tizenwatch.md), [webos](platforms/webos.md), [kaios](platforms/kaios.md)
 
+---
 ## Required Plugins
 
 [react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web)
 
+---
 ## Required NPM Packages
 
 
@@ -42,6 +40,11 @@ React native based engine with web transpiler provided by react-native-web
 
 
 
+
+
+
+
+---
 ## Extensions
 
 ### web

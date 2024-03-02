@@ -40,12 +40,16 @@ Provide at least `SUMMARY` box from your console
 
 #### Common Errors:
 
-⚠️`linker command failed with exit code 1 (use -v to see invocation)`
+:::danger Error
+`linker command failed with exit code 1 (use -v to see invocation)`
+:::
 
 Make sure your Xcode version is `10.2` or newer
 
-⚠️`Description: Invalid runtime: com.apple.CoreSimulator.SimRuntime.iOS-.......`
 
+:::danger Error
+`Description: Invalid runtime: com.apple.CoreSimulator.SimRuntime.iOS-.......`
+:::
 try to run
 
 ```bash
@@ -56,10 +60,14 @@ and then
 
 `rnv run ...`
 
-⚠️`Could not create service of type ScriptPluginFactory using BuildScopeServices.createScriptPluginFactory()`
 
+:::danger Error
+`Could not create service of type ScriptPluginFactory using BuildScopeServices.createScriptPluginFactory()`
+:::
 Try killing all `gradle` processes and running the build again, that should help
 
-⚠️`> Execution of compression failed.`
 
+:::danger Error
+`> Execution of compression failed.`
+:::
 https://github.com/pavjacko/renative/issues/183

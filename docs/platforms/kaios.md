@@ -18,6 +18,7 @@ original_id: kaios
 
 <img className="platform-image" src="https://renative.org/img/rnv_kaios.gif" height="250"/>
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
@@ -27,6 +28,7 @@ Extenstions are defined via engines. Engines with kaios support:
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - [KaiOSrt](https://developer.kaiostech.com/simulator) for emulator
@@ -41,6 +43,7 @@ After installation you can launch it via Applications:
   </tr>
 </table>
 
+---
 ## Run
 
 Run on Simulator
@@ -61,6 +64,7 @@ Run in Browser
 rnv run -p kaios --hosted
 ```
 
+---
 ## App Config
 
 [see: Web based config](../api/json-config.md)

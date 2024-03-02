@@ -5,23 +5,23 @@ sidebar_label: engine-rn-next
 original_id: engine-rn-next
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
 
 <!--AUTO_GENERATED_START-->
 
 
-## Overview
-
 React native based engine with web transpiler provided by react-native-web and render by nextjs
 
+---
 ## Supported Platforms
 
 [web](platforms/web.md), [chromecast](platforms/chromecast.md)
 
+---
 ## Required Plugins
 
 [react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web), [next](../plugins/overview#next)
 
+---
 ## Required NPM Packages
 
 
@@ -30,6 +30,7 @@ React native based engine with web transpiler provided by react-native-web and r
 
 
 
+---
 ## Extensions
 
 ### web

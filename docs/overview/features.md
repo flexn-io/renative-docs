@@ -5,9 +5,7 @@ sidebar_label: Features
 original_id: features
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_features.png" width="50" height="50" /> -->
 
-## Overview
 
 Build app blazingly fast with built-in features:
 
