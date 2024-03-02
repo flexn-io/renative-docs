@@ -31,7 +31,7 @@ export const generateDocsApiCli = async (c) => {
     }, {});
 
     const header = `---
-id: tasks
+id: cli
 title: rnv Command-Line Interface
 sidebar_label: rnv CLI
 ---

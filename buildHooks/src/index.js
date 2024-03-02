@@ -22,7 +22,7 @@ const hooks = {
         return true;
     },
     updateMdFilesEngines,
-    generateEngineTaks,
+    generateDocsApiCli,
     // generateDocsApiBuildConfig,
     // generateDocsApiJsonConfig
 };
