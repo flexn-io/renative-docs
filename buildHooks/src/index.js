@@ -1,15 +1,15 @@
-import { generatePlugins } from './generatePlugins';
-import { updateMdFilesPlatforms } from './updateMdFilesPlatforms';
-import { updateMdFilesEngines } from './updateMdFilesEngines';
-import { generateEngineTaks } from './generateEngineDocs';
-import { generateSchema } from './generateDocsApiConfig';
+import { generatePlugins } from './genReferencePlugins';
+import { updateMdFilesPlatforms } from './genReferencePlatforms';
+import { updateMdFilesEngines } from './genReferenceEngines';
+import { generateDocsApiCli } from './genApiCli';
+import { generateSchema } from './genApiSchema';
 
 const hooks = {
     generateDocs: async (c) => {
         await generatePlugins(c);
         await updateMdFilesPlatforms(c);
         await updateMdFilesEngines(c);
-        await generateEngineTaks(c);
+        await generateDocsApiCli(c);
         await generateSchema(c);
     },
     prePublish: async (c) => {

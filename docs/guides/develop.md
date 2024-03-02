@@ -69,7 +69,7 @@ npm run deploy:prod
 
 ## Documentation
 
-[Documentation for CLI](../api/tasks.md)
+[Documentation for CLI](../api/cli.md)
 
 [Documentation for RNV](../api/node/renative/index.md)
 

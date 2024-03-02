@@ -10,8 +10,8 @@ const kebabToTitleCase = (string: string): string => {
         .join(' ');
 };
 
-export const generateEngineTaks = async (c) => {
-    logHook('generateEngineTaks');
+export const generateDocsApiCli = async (c) => {
+    logHook('generateDocsApiCli');
 
     registerAllPlatformEngines(c);
 
@@ -94,5 +94,5 @@ sidebar_label: rnv CLI
         if (param.value) content += `Value: \`\`${param.value}\`\`\n\n`;
     });
 
-    writeFileSync(path.join(c.paths.project.dir, `/docs/api/tasks.md`), header + content);
+    writeFileSync(path.join(c.paths.project.dir, `/docs/api/cli.md`), header + content);
 };

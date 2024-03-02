@@ -39,7 +39,7 @@ and follow the command prompt steps
 
 ## Plugin CLI Reference
 
-[see: CLI API Reference](../api/tasks.md)
+[see: CLI API Reference](../api/cli.md)
 
 ## Plugin Renative Config Reference
 

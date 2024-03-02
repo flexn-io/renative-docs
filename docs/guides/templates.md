@@ -57,4 +57,4 @@ You can manage your templates in your project via rnv command line.
 
 ---
 
-for full CLI reference, visit [RNV API Reference](../api/tasks)
+for full CLI reference, visit [RNV API Reference](../api/cli)
