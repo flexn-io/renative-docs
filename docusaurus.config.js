@@ -165,13 +165,30 @@ const config = {
                         type: 'doc',
                         docId: 'overview/introduction',
                         position: 'left',
-                        label: 'Docs',
+                        label: 'Guides',
+                    },
+                    {
+                        type: 'doc',
+                        docId: 'templates/overview',
+                        position: 'left',
+                        label: 'References',
                     },
                     {
                         type: 'doc',
                         docId: 'api/node/rnv-core/modules',
                         position: 'left',
                         label: 'API',
+                    },
+                    // {
+                    //     type: 'doc',
+                    //     docId: 'api/node/rnv-core/modules',
+                    //     position: 'left',
+                    //     label: 'Marketplace',
+                    // },
+                    {
+                        position: 'left',
+                        label: 'Enterprise',
+                        href: 'https:/flexn.io',
                     },
                     {
                         type: 'custom-search-navbar-item',

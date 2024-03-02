@@ -1,8 +1,7 @@
 ---
-id: overview
-title: Overview
-sidebar_label: Overview
-original_id: overview
+id: platforms
+title: Platforms Overview
+sidebar_label: Platforms
 
 ---
 
