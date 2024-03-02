@@ -29,6 +29,7 @@ original_id: android
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with android support: 
+- [engine-rn](../engines/engine-rn#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 

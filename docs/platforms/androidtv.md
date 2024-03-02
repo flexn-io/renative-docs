@@ -29,6 +29,8 @@ original_id: androidtv
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with androidtv support: 
+- [engine-rn](../engines/engine-rn#extensions)
+- [engine-rn-tvos](../engines/engine-rn-tvos#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 

@@ -27,6 +27,8 @@ original_id: web
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with web support: 
+- [engine-rn-next](../engines/engine-rn-next#extensions)
+- [engine-rn-web](../engines/engine-rn-web#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 
