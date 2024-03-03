@@ -26,6 +26,8 @@ N/A
 
 ## Extensions
 
+Extensions are shown in order of priority. The first extension in the list has highest priority.
+
 
 
 

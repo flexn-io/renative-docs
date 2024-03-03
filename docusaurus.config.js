@@ -165,7 +165,7 @@ const config = {
                         type: 'doc',
                         docId: 'overview/introduction',
                         position: 'left',
-                        label: 'Guides',
+                        label: 'Docs',
                     },
                     {
                         type: 'doc',

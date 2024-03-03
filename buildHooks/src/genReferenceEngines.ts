@@ -76,6 +76,8 @@ ${npmPackages}
 
 ## Extensions
 
+Extensions are shown in order of priority. The first extension in the list has highest priority.
+
 ${extensions}
 
 `;
@@ -101,7 +103,7 @@ const _getExtensionContent = (c, platform, engine) => {
         p = engine.platforms[platform];
     }
 
-    out += `\n### ${platform}\n\n`;
+    out += `### ${platform}\n\n`;
     let extensions = [];
     if (p.extensions) {
         extensions = p.extensions;
@@ -111,9 +113,10 @@ const _getExtensionContent = (c, platform, engine) => {
         //   | --------- | :-------: |\n`;
         let i = 1;
         extensions.forEach((v) => {
-            out += `\`${v}\` `;
+            out += `\`${v}\`, `;
             i++;
         });
+        out += '\n';
     }
     // if (extensions) {
     //     out += `| Extension | Priority  |
