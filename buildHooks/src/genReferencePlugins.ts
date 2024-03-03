@@ -6,7 +6,7 @@ export const generatePlugins = async (c) => {
     let out = `---
 id: overview
 title: Plugins Overview
-sidebar_label: Plugins Overview
+sidebar_label: Plugins
 ---
 `;
     const flexnPluginsPath = doResolve('@flexn/plugins');

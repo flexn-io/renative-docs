@@ -7,19 +7,19 @@ original_id: engine-rn-web
 
 <!--AUTO_GENERATED_START-->
 
+
+## Overview
+
 React native based engine with web transpiler provided by react-native-web
 
----
 ## Supported Platforms
 
 [web](platforms/web.md), [chromecast](platforms/chromecast.md), [tizen](platforms/tizen.md), [webtv](platforms/webtv.md), [tizenmobile](platforms/tizenmobile.md), [tizenwatch](platforms/tizenwatch.md), [webos](platforms/webos.md), [kaios](platforms/kaios.md)
 
----
 ## Required Plugins
 
 [react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web)
 
----
 ## Required NPM Packages
 
 
@@ -40,318 +40,33 @@ React native based engine with web transpiler provided by react-native-web
 
 
 
-
-
-
-
----
 ## Extensions
+
 
 ### web
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `web.browser.jsx` | 5 |
-| `web.browser.js` | 6 |
-| `web.browser.tsx` | 7 |
-| `web.browser.ts` | 8 |
-| `browser.jsx` | 9 |
-| `browser.js` | 10 |
-| `browser.tsx` | 11 |
-| `browser.ts` | 12 |
-| `browser.web.jsx` | 13 |
-| `browser.web.js` | 14 |
-| `browser.web.tsx` | 15 |
-| `browser.web.ts` | 16 |
-| `web.jsx` | 17 |
-| `web.js` | 18 |
-| `web.tsx` | 19 |
-| `web.ts` | 20 |
-| `jsx` | 21 |
-| `js` | 22 |
-| `tsx` | 23 |
-| `ts` | 24 |
-| `mjs` | 25 |
-| `json` | 26 |
-| `cjs` | 27 |
-| `wasm` | 28 |
+`engine-rn-web.jsx` `engine-rn-web.js` `engine-rn-web.tsx` `engine-rn-web.ts` `web.browser.jsx` `web.browser.js` `web.browser.tsx` `web.browser.ts` `browser.jsx` `browser.js` `browser.tsx` `browser.ts` `browser.web.jsx` `browser.web.js` `browser.web.tsx` `browser.web.ts` `web.jsx` `web.js` `web.tsx` `web.ts` `jsx` `js` `tsx` `ts` `mjs` `json` `cjs` `wasm` 
 ### chromecast
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `chromecast.tv.jsx` | 5 |
-| `chromecast.tv.js` | 6 |
-| `chromecast.tv.tsx` | 7 |
-| `chromecast.tv.ts` | 8 |
-| `web.tv.jsx` | 9 |
-| `web.tv.js` | 10 |
-| `web.tv.tsx` | 11 |
-| `web.tv.ts` | 12 |
-| `tv.jsx` | 13 |
-| `tv.js` | 14 |
-| `tv.tsx` | 15 |
-| `tv.ts` | 16 |
-| `chromecast.jsx` | 17 |
-| `chromecast.js` | 18 |
-| `chromecast.tsx` | 19 |
-| `chromecast.ts` | 20 |
-| `tv.web.jsx` | 21 |
-| `tv.web.js` | 22 |
-| `tv.web.tsx` | 23 |
-| `tv.web.ts` | 24 |
-| `web.jsx` | 25 |
-| `web.js` | 26 |
-| `web.tsx` | 27 |
-| `web.ts` | 28 |
-| `jsx` | 29 |
-| `js` | 30 |
-| `tsx` | 31 |
-| `ts` | 32 |
-| `mjs` | 33 |
-| `json` | 34 |
-| `cjs` | 35 |
-| `wasm` | 36 |
+`engine-rn-web.jsx` `engine-rn-web.js` `engine-rn-web.tsx` `engine-rn-web.ts` `chromecast.tv.jsx` `chromecast.tv.js` `chromecast.tv.tsx` `chromecast.tv.ts` `web.tv.jsx` `web.tv.js` `web.tv.tsx` `web.tv.ts` `tv.jsx` `tv.js` `tv.tsx` `tv.ts` `chromecast.jsx` `chromecast.js` `chromecast.tsx` `chromecast.ts` `tv.web.jsx` `tv.web.js` `tv.web.tsx` `tv.web.ts` `web.jsx` `web.js` `web.tsx` `web.ts` `jsx` `js` `tsx` `ts` `mjs` `json` `cjs` `wasm` 
 ### tizen
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `tizen.tv.jsx` | 5 |
-| `tizen.tv.js` | 6 |
-| `tizen.tv.tsx` | 7 |
-| `tizen.tv.ts` | 8 |
-| `web.tv.jsx` | 9 |
-| `web.tv.js` | 10 |
-| `web.tv.tsx` | 11 |
-| `web.tv.ts` | 12 |
-| `tv.jsx` | 13 |
-| `tv.js` | 14 |
-| `tv.tsx` | 15 |
-| `tv.ts` | 16 |
-| `tizen.jsx` | 17 |
-| `tizen.js` | 18 |
-| `tizen.tsx` | 19 |
-| `tizen.ts` | 20 |
-| `tv.web.jsx` | 21 |
-| `tv.web.js` | 22 |
-| `tv.web.tsx` | 23 |
-| `tv.web.ts` | 24 |
-| `web.jsx` | 25 |
-| `web.js` | 26 |
-| `web.tsx` | 27 |
-| `web.ts` | 28 |
-| `jsx` | 29 |
-| `js` | 30 |
-| `tsx` | 31 |
-| `ts` | 32 |
-| `mjs` | 33 |
-| `json` | 34 |
-| `cjs` | 35 |
-| `wasm` | 36 |
+`engine-rn-web.jsx` `engine-rn-web.js` `engine-rn-web.tsx` `engine-rn-web.ts` `tizen.tv.jsx` `tizen.tv.js` `tizen.tv.tsx` `tizen.tv.ts` `web.tv.jsx` `web.tv.js` `web.tv.tsx` `web.tv.ts` `tv.jsx` `tv.js` `tv.tsx` `tv.ts` `tizen.jsx` `tizen.js` `tizen.tsx` `tizen.ts` `tv.web.jsx` `tv.web.js` `tv.web.tsx` `tv.web.ts` `web.jsx` `web.js` `web.tsx` `web.ts` `jsx` `js` `tsx` `ts` `mjs` `json` `cjs` `wasm` 
 ### webtv
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `webtv.tv.jsx` | 5 |
-| `webtv.tv.js` | 6 |
-| `webtv.tv.tsx` | 7 |
-| `webtv.tv.ts` | 8 |
-| `web.tv.jsx` | 9 |
-| `web.tv.js` | 10 |
-| `web.tv.tsx` | 11 |
-| `web.tv.ts` | 12 |
-| `tv.jsx` | 13 |
-| `tv.js` | 14 |
-| `tv.tsx` | 15 |
-| `tv.ts` | 16 |
-| `webtv.jsx` | 17 |
-| `webtv.js` | 18 |
-| `webtv.tsx` | 19 |
-| `webtv.ts` | 20 |
-| `tv.web.jsx` | 21 |
-| `tv.web.js` | 22 |
-| `tv.web.tsx` | 23 |
-| `tv.web.ts` | 24 |
-| `web.jsx` | 25 |
-| `web.js` | 26 |
-| `web.tsx` | 27 |
-| `web.ts` | 28 |
-| `jsx` | 29 |
-| `js` | 30 |
-| `tsx` | 31 |
-| `ts` | 32 |
-| `mjs` | 33 |
-| `json` | 34 |
-| `cjs` | 35 |
-| `wasm` | 36 |
+`engine-rn-web.jsx` `engine-rn-web.js` `engine-rn-web.tsx` `engine-rn-web.ts` `webtv.tv.jsx` `webtv.tv.js` `webtv.tv.tsx` `webtv.tv.ts` `web.tv.jsx` `web.tv.js` `web.tv.tsx` `web.tv.ts` `tv.jsx` `tv.js` `tv.tsx` `tv.ts` `webtv.jsx` `webtv.js` `webtv.tsx` `webtv.ts` `tv.web.jsx` `tv.web.js` `tv.web.tsx` `tv.web.ts` `web.jsx` `web.js` `web.tsx` `web.ts` `jsx` `js` `tsx` `ts` `mjs` `json` `cjs` `wasm` 
 ### tizenmobile
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `tizenmobile.mobile.jsx` | 5 |
-| `tizenmobile.mobile.js` | 6 |
-| `tizenmobile.mobile.tsx` | 7 |
-| `tizenmobile.mobile.ts` | 8 |
-| `mobile.jsx` | 9 |
-| `mobile.js` | 10 |
-| `mobile.tsx` | 11 |
-| `mobile.ts` | 12 |
-| `tizenmobile.jsx` | 13 |
-| `tizenmobile.js` | 14 |
-| `tizenmobile.tsx` | 15 |
-| `tizenmobile.ts` | 16 |
-| `mobile.web.jsx` | 17 |
-| `mobile.web.js` | 18 |
-| `mobile.web.tsx` | 19 |
-| `mobile.web.ts` | 20 |
-| `native.jsx` | 21 |
-| `native.js` | 22 |
-| `native.tsx` | 23 |
-| `native.ts` | 24 |
-| `jsx` | 25 |
-| `js` | 26 |
-| `tsx` | 27 |
-| `ts` | 28 |
-| `mjs` | 29 |
-| `json` | 30 |
-| `cjs` | 31 |
-| `wasm` | 32 |
+`engine-rn-web.jsx` `engine-rn-web.js` `engine-rn-web.tsx` `engine-rn-web.ts` `tizenmobile.mobile.jsx` `tizenmobile.mobile.js` `tizenmobile.mobile.tsx` `tizenmobile.mobile.ts` `mobile.jsx` `mobile.js` `mobile.tsx` `mobile.ts` `tizenmobile.jsx` `tizenmobile.js` `tizenmobile.tsx` `tizenmobile.ts` `mobile.web.jsx` `mobile.web.js` `mobile.web.tsx` `mobile.web.ts` `native.jsx` `native.js` `native.tsx` `native.ts` `jsx` `js` `tsx` `ts` `mjs` `json` `cjs` `wasm` 
 ### tizenwatch
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `tizenwatch.watch.jsx` | 5 |
-| `tizenwatch.watch.js` | 6 |
-| `tizenwatch.watch.tsx` | 7 |
-| `tizenwatch.watch.ts` | 8 |
-| `web.watch.jsx` | 9 |
-| `web.watch.js` | 10 |
-| `web.watch.tsx` | 11 |
-| `web.watch.ts` | 12 |
-| `watch.jsx` | 13 |
-| `watch.js` | 14 |
-| `watch.tsx` | 15 |
-| `watch.ts` | 16 |
-| `tizenwatch.jsx` | 17 |
-| `tizenwatch.js` | 18 |
-| `tizenwatch.tsx` | 19 |
-| `tizenwatch.ts` | 20 |
-| `watch.web.jsx` | 21 |
-| `watch.web.js` | 22 |
-| `watch.web.tsx` | 23 |
-| `watch.web.ts` | 24 |
-| `web.jsx` | 25 |
-| `web.js` | 26 |
-| `web.tsx` | 27 |
-| `web.ts` | 28 |
-| `jsx` | 29 |
-| `js` | 30 |
-| `tsx` | 31 |
-| `ts` | 32 |
-| `mjs` | 33 |
-| `json` | 34 |
-| `cjs` | 35 |
-| `wasm` | 36 |
+`engine-rn-web.jsx` `engine-rn-web.js` `engine-rn-web.tsx` `engine-rn-web.ts` `tizenwatch.watch.jsx` `tizenwatch.watch.js` `tizenwatch.watch.tsx` `tizenwatch.watch.ts` `web.watch.jsx` `web.watch.js` `web.watch.tsx` `web.watch.ts` `watch.jsx` `watch.js` `watch.tsx` `watch.ts` `tizenwatch.jsx` `tizenwatch.js` `tizenwatch.tsx` `tizenwatch.ts` `watch.web.jsx` `watch.web.js` `watch.web.tsx` `watch.web.ts` `web.jsx` `web.js` `web.tsx` `web.ts` `jsx` `js` `tsx` `ts` `mjs` `json` `cjs` `wasm` 
 ### webos
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `webos.tv.jsx` | 5 |
-| `webos.tv.js` | 6 |
-| `webos.tv.tsx` | 7 |
-| `webos.tv.ts` | 8 |
-| `web.tv.jsx` | 9 |
-| `web.tv.js` | 10 |
-| `web.tv.tsx` | 11 |
-| `web.tv.ts` | 12 |
-| `tv.jsx` | 13 |
-| `tv.js` | 14 |
-| `tv.tsx` | 15 |
-| `tv.ts` | 16 |
-| `webos.jsx` | 17 |
-| `webos.js` | 18 |
-| `webos.tsx` | 19 |
-| `webos.ts` | 20 |
-| `tv.web.jsx` | 21 |
-| `tv.web.js` | 22 |
-| `tv.web.tsx` | 23 |
-| `tv.web.ts` | 24 |
-| `web.jsx` | 25 |
-| `web.js` | 26 |
-| `web.tsx` | 27 |
-| `web.ts` | 28 |
-| `jsx` | 29 |
-| `js` | 30 |
-| `tsx` | 31 |
-| `ts` | 32 |
-| `mjs` | 33 |
-| `json` | 34 |
-| `cjs` | 35 |
-| `wasm` | 36 |
+`engine-rn-web.jsx` `engine-rn-web.js` `engine-rn-web.tsx` `engine-rn-web.ts` `webos.tv.jsx` `webos.tv.js` `webos.tv.tsx` `webos.tv.ts` `web.tv.jsx` `web.tv.js` `web.tv.tsx` `web.tv.ts` `tv.jsx` `tv.js` `tv.tsx` `tv.ts` `webos.jsx` `webos.js` `webos.tsx` `webos.ts` `tv.web.jsx` `tv.web.js` `tv.web.tsx` `tv.web.ts` `web.jsx` `web.js` `web.tsx` `web.ts` `jsx` `js` `tsx` `ts` `mjs` `json` `cjs` `wasm` 
 ### kaios
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-web.jsx` | 1 |
-| `engine-rn-web.js` | 2 |
-| `engine-rn-web.tsx` | 3 |
-| `engine-rn-web.ts` | 4 |
-| `kaios.mobile.jsx` | 5 |
-| `kaios.mobile.js` | 6 |
-| `kaios.mobile.tsx` | 7 |
-| `kaios.mobile.ts` | 8 |
-| `mobile.jsx` | 9 |
-| `mobile.js` | 10 |
-| `mobile.tsx` | 11 |
-| `mobile.ts` | 12 |
-| `kaios.jsx` | 13 |
-| `kaios.js` | 14 |
-| `kaios.tsx` | 15 |
-| `kaios.ts` | 16 |
-| `mobile.web.jsx` | 17 |
-| `mobile.web.js` | 18 |
-| `mobile.web.tsx` | 19 |
-| `mobile.web.ts` | 20 |
-| `native.jsx` | 21 |
-| `native.js` | 22 |
-| `native.tsx` | 23 |
-| `native.ts` | 24 |
-| `jsx` | 25 |
-| `js` | 26 |
-| `tsx` | 27 |
-| `ts` | 28 |
-| `mjs` | 29 |
-| `json` | 30 |
-| `cjs` | 31 |
-| `wasm` | 32 |
-
+`engine-rn-web.jsx` `engine-rn-web.js` `engine-rn-web.tsx` `engine-rn-web.ts` `kaios.mobile.jsx` `kaios.mobile.js` `kaios.mobile.tsx` `kaios.mobile.ts` `mobile.jsx` `mobile.js` `mobile.tsx` `mobile.ts` `kaios.jsx` `kaios.js` `kaios.tsx` `kaios.ts` `mobile.web.jsx` `mobile.web.js` `mobile.web.tsx` `mobile.web.ts` `native.jsx` `native.js` `native.tsx` `native.ts` `jsx` `js` `tsx` `ts` `mjs` `json` `cjs` `wasm` 
 
 
 <!--AUTO_GENERATED_END-->

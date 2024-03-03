@@ -5,7 +5,6 @@ sidebar_label: Plugins
 ---
 
 
----
 ## @bam.tech/react-native-image-resizer
 
 
@@ -24,7 +23,6 @@ npx rnv plugin add @bam.tech/react-native-image-resizer
 ```
 
 
----
 ## @flexn/create
 
 
@@ -43,7 +41,6 @@ npx rnv plugin add @flexn/create
 ```
 
 
----
 ## @flexn/recyclerlistview
 
 
@@ -62,7 +59,6 @@ npx rnv plugin add @flexn/recyclerlistview
 ```
 
 
----
 ## @flexn/sdk
 
 
@@ -81,7 +77,6 @@ npx rnv plugin add @flexn/sdk
 ```
 
 
----
 ## @flexn/shopify-flash-list
 
 
@@ -100,7 +95,6 @@ npx rnv plugin add @flexn/shopify-flash-list
 ```
 
 
----
 ## @flexn/typescript
 
 
@@ -119,7 +113,6 @@ npx rnv plugin add @flexn/typescript
 ```
 
 
----
 ## @lightningjs/cli
 
 
@@ -138,7 +131,6 @@ npx rnv plugin add @lightningjs/cli
 ```
 
 
----
 ## @lightningjs/core
 
 
@@ -157,7 +149,6 @@ npx rnv plugin add @lightningjs/core
 ```
 
 
----
 ## @lightningjs/sdk
 
 
@@ -176,7 +167,6 @@ npx rnv plugin add @lightningjs/sdk
 ```
 
 
----
 ## @lightningjs/ui
 
 
@@ -195,7 +185,6 @@ npx rnv plugin add @lightningjs/ui
 ```
 
 
----
 ## @lightningjs/ui-components
 
 
@@ -214,7 +203,6 @@ npx rnv plugin add @lightningjs/ui-components
 ```
 
 
----
 ## @mapbox/react-native-mapbox-gl
 
 
@@ -233,7 +221,6 @@ npx rnv plugin add @mapbox/react-native-mapbox-gl
 ```
 
 
----
 ## @miblanchard/react-native-slider
 
 
@@ -252,7 +239,6 @@ npx rnv plugin add @miblanchard/react-native-slider
 ```
 
 
----
 ## @monterosa/react-native-parallax-scroll
 
 
@@ -271,7 +257,6 @@ npx rnv plugin add @monterosa/react-native-parallax-scroll
 ```
 
 
----
 ## @noriginmedia/react-spatial-navigation
 
 
@@ -290,7 +275,6 @@ npx rnv plugin add @noriginmedia/react-spatial-navigation
 ```
 
 
----
 ## @notifee/react-native
 
 
@@ -309,7 +293,6 @@ npx rnv plugin add @notifee/react-native
 ```
 
 
----
 ## @reach/router
 
 
@@ -328,7 +311,6 @@ npx rnv plugin add @reach/router
 ```
 
 
----
 ## @react-native-async-storage/async-storage
 
 
@@ -347,7 +329,6 @@ npx rnv plugin add @react-native-async-storage/async-storage
 ```
 
 
----
 ## @react-native-camera-roll/camera-roll
 
 
@@ -366,7 +347,6 @@ npx rnv plugin add @react-native-camera-roll/camera-roll
 ```
 
 
----
 ## @react-native-clipboard/clipboard
 
 
@@ -385,7 +365,6 @@ npx rnv plugin add @react-native-clipboard/clipboard
 ```
 
 
----
 ## @react-native-community/async-storage
 
 
@@ -404,7 +383,6 @@ npx rnv plugin add @react-native-community/async-storage
 ```
 
 
----
 ## @react-native-community/blur
 
 
@@ -423,7 +401,6 @@ npx rnv plugin add @react-native-community/blur
 ```
 
 
----
 ## @react-native-community/cameraroll
 
 
@@ -442,7 +419,6 @@ npx rnv plugin add @react-native-community/cameraroll
 ```
 
 
----
 ## @react-native-community/checkbox
 
 
@@ -461,7 +437,6 @@ npx rnv plugin add @react-native-community/checkbox
 ```
 
 
----
 ## @react-native-community/cli
 
 
@@ -480,7 +455,6 @@ npx rnv plugin add @react-native-community/cli
 ```
 
 
----
 ## @react-native-community/cli-platform-android
 
 
@@ -499,7 +473,6 @@ npx rnv plugin add @react-native-community/cli-platform-android
 ```
 
 
----
 ## @react-native-community/cli-platform-ios
 
 
@@ -518,7 +491,6 @@ npx rnv plugin add @react-native-community/cli-platform-ios
 ```
 
 
----
 ## @react-native-community/clipboard
 
 
@@ -537,7 +509,6 @@ npx rnv plugin add @react-native-community/clipboard
 ```
 
 
----
 ## @react-native-community/datetimepicker
 
 
@@ -556,7 +527,6 @@ npx rnv plugin add @react-native-community/datetimepicker
 ```
 
 
----
 ## @react-native-community/geolocation
 
 
@@ -575,7 +545,6 @@ npx rnv plugin add @react-native-community/geolocation
 ```
 
 
----
 ## @react-native-community/masked-view
 
 
@@ -594,7 +563,6 @@ npx rnv plugin add @react-native-community/masked-view
 ```
 
 
----
 ## @react-native-community/netinfo
 
 
@@ -613,7 +581,6 @@ npx rnv plugin add @react-native-community/netinfo
 ```
 
 
----
 ## @react-native-community/push-notification-ios
 
 
@@ -632,7 +599,6 @@ npx rnv plugin add @react-native-community/push-notification-ios
 ```
 
 
----
 ## @react-native-community/slider
 
 
@@ -651,7 +617,6 @@ npx rnv plugin add @react-native-community/slider
 ```
 
 
----
 ## @react-native-community/viewpager
 
 
@@ -670,7 +635,6 @@ npx rnv plugin add @react-native-community/viewpager
 ```
 
 
----
 ## @react-native-firebase/analytics
 
 
@@ -689,7 +653,6 @@ npx rnv plugin add @react-native-firebase/analytics
 ```
 
 
----
 ## @react-native-firebase/app
 
 
@@ -708,7 +671,6 @@ npx rnv plugin add @react-native-firebase/app
 ```
 
 
----
 ## @react-native-firebase/auth
 
 
@@ -727,7 +689,6 @@ npx rnv plugin add @react-native-firebase/auth
 ```
 
 
----
 ## @react-native-firebase/crashlytics
 
 
@@ -746,7 +707,6 @@ npx rnv plugin add @react-native-firebase/crashlytics
 ```
 
 
----
 ## @react-native-firebase/messaging
 
 
@@ -765,7 +725,6 @@ npx rnv plugin add @react-native-firebase/messaging
 ```
 
 
----
 ## @react-native-firebase/storage
 
 
@@ -784,7 +743,6 @@ npx rnv plugin add @react-native-firebase/storage
 ```
 
 
----
 ## @react-native-masked-view/masked-view
 
 
@@ -803,7 +761,6 @@ npx rnv plugin add @react-native-masked-view/masked-view
 ```
 
 
----
 ## @react-native-picker/picker
 
 
@@ -822,7 +779,6 @@ npx rnv plugin add @react-native-picker/picker
 ```
 
 
----
 ## @react-native-windows/cli
 
 
@@ -841,7 +797,6 @@ npx rnv plugin add @react-native-windows/cli
 ```
 
 
----
 ## @react-navigation
 
 
@@ -860,7 +815,6 @@ npx rnv plugin add @react-navigation
 ```
 
 
----
 ## @react-navigation/bottom-tabs
 
 
@@ -879,7 +833,6 @@ npx rnv plugin add @react-navigation/bottom-tabs
 ```
 
 
----
 ## @react-navigation/core
 
 
@@ -898,7 +851,6 @@ npx rnv plugin add @react-navigation/core
 ```
 
 
----
 ## @react-navigation/drawer
 
 
@@ -917,7 +869,6 @@ npx rnv plugin add @react-navigation/drawer
 ```
 
 
----
 ## @react-navigation/elements
 
 
@@ -936,7 +887,6 @@ npx rnv plugin add @react-navigation/elements
 ```
 
 
----
 ## @react-navigation/material-bottom-tabs
 
 
@@ -955,7 +905,6 @@ npx rnv plugin add @react-navigation/material-bottom-tabs
 ```
 
 
----
 ## @react-navigation/material-top-tabs
 
 
@@ -974,7 +923,6 @@ npx rnv plugin add @react-navigation/material-top-tabs
 ```
 
 
----
 ## @react-navigation/native
 
 
@@ -993,7 +941,6 @@ npx rnv plugin add @react-navigation/native
 ```
 
 
----
 ## @react-navigation/native-stack
 
 
@@ -1012,7 +959,6 @@ npx rnv plugin add @react-navigation/native-stack
 ```
 
 
----
 ## @react-navigation/routers
 
 
@@ -1031,7 +977,6 @@ npx rnv plugin add @react-navigation/routers
 ```
 
 
----
 ## @react-navigation/stack
 
 
@@ -1050,7 +995,6 @@ npx rnv plugin add @react-navigation/stack
 ```
 
 
----
 ## @react-navigation/web
 
 
@@ -1069,7 +1013,6 @@ npx rnv plugin add @react-navigation/web
 ```
 
 
----
 ## @reduxjs/toolkit
 
 
@@ -1088,7 +1031,6 @@ npx rnv plugin add @reduxjs/toolkit
 ```
 
 
----
 ## @rnv/renative
 
 
@@ -1107,7 +1049,6 @@ npx rnv plugin add @rnv/renative
 ```
 
 
----
 ## @sentry/react
 
 
@@ -1126,7 +1067,6 @@ npx rnv plugin add @sentry/react
 ```
 
 
----
 ## @sentry/react-native
 
 
@@ -1145,7 +1085,6 @@ npx rnv plugin add @sentry/react-native
 ```
 
 
----
 ## @sentry/tracing
 
 
@@ -1164,7 +1103,6 @@ npx rnv plugin add @sentry/tracing
 ```
 
 
----
 ## @shopify/flash-list
 
 
@@ -1183,7 +1121,6 @@ npx rnv plugin add @shopify/flash-list
 ```
 
 
----
 ## Crashlytics
 
 
@@ -1202,7 +1139,6 @@ npx rnv plugin add Crashlytics
 ```
 
 
----
 ## Fabric
 
 
@@ -1221,7 +1157,6 @@ npx rnv plugin add Fabric
 ```
 
 
----
 ## Firebase/Analytics
 
 
@@ -1240,7 +1175,6 @@ npx rnv plugin add Firebase/Analytics
 ```
 
 
----
 ## Firebase/Core
 
 
@@ -1259,7 +1193,6 @@ npx rnv plugin add Firebase/Core
 ```
 
 
----
 ## Firebase/Messaging
 
 
@@ -1278,7 +1211,6 @@ npx rnv plugin add Firebase/Messaging
 ```
 
 
----
 ## GoogleTagManager
 
 
@@ -1297,7 +1229,6 @@ npx rnv plugin add GoogleTagManager
 ```
 
 
----
 ## RCTLinkingIOS
 
 
@@ -1316,7 +1247,6 @@ npx rnv plugin add RCTLinkingIOS
 ```
 
 
----
 ## RCTPushNotification
 &gt; RCTPushNotification is DEPRECATED. use @react-native-community/push-notification-ios instead
 
@@ -1335,7 +1265,6 @@ npx rnv plugin add RCTPushNotification
 ```
 
 
----
 ## Sentry
 
 
@@ -1354,7 +1283,6 @@ npx rnv plugin add Sentry
 ```
 
 
----
 ## amazon-cognito-identity-js
 
 
@@ -1373,7 +1301,6 @@ npx rnv plugin add amazon-cognito-identity-js
 ```
 
 
----
 ## aws-amplify
 
 
@@ -1392,7 +1319,6 @@ npx rnv plugin add aws-amplify
 ```
 
 
----
 ## axios
 
 
@@ -1411,7 +1337,6 @@ npx rnv plugin add axios
 ```
 
 
----
 ## crashlytics
 &gt; crashlytics plugin is deprecated use Crashlytics (uppercase) in combination with Firebase
 
@@ -1430,7 +1355,6 @@ npx rnv plugin add crashlytics
 ```
 
 
----
 ## deepmerge
 
 
@@ -1449,7 +1373,6 @@ npx rnv plugin add deepmerge
 ```
 
 
----
 ## detox
 
 
@@ -1468,7 +1391,6 @@ npx rnv plugin add detox
 ```
 
 
----
 ## fabric
 &gt; fabric plugin is deprecated use Fabric (uppercase) in combination with Firebase
 
@@ -1487,7 +1409,6 @@ npx rnv plugin add fabric
 ```
 
 
----
 ## firebase-core
 &gt; firebase-core plugin is deprecated use Firebase/&lt;SUBMODULE&gt; instead
 
@@ -1506,7 +1427,6 @@ npx rnv plugin add firebase-core
 ```
 
 
----
 ## google-maps
 
 
@@ -1525,7 +1445,6 @@ npx rnv plugin add google-maps
 ```
 
 
----
 ## hash-source
 
 
@@ -1544,7 +1463,6 @@ npx rnv plugin add hash-source
 ```
 
 
----
 ## iOSPhotoEditor
 
 
@@ -1563,7 +1481,6 @@ npx rnv plugin add iOSPhotoEditor
 ```
 
 
----
 ## ios-photo-editor
 &gt; ios-photo-editor is DEPRECATED. use iOSPhotoEditor instead
 
@@ -1582,7 +1499,6 @@ npx rnv plugin add ios-photo-editor
 ```
 
 
----
 ## loader-utils
 
 
@@ -1601,7 +1517,6 @@ npx rnv plugin add loader-utils
 ```
 
 
----
 ## lottie-react-native
 
 
@@ -1620,7 +1535,6 @@ npx rnv plugin add lottie-react-native
 ```
 
 
----
 ## metro
 
 
@@ -1639,7 +1553,6 @@ npx rnv plugin add metro
 ```
 
 
----
 ## native-base
 
 
@@ -1658,7 +1571,6 @@ npx rnv plugin add native-base
 ```
 
 
----
 ## native-base-shoutem-theme
 
 
@@ -1677,7 +1589,6 @@ npx rnv plugin add native-base-shoutem-theme
 ```
 
 
----
 ## next
 
 
@@ -1696,7 +1607,6 @@ npx rnv plugin add next
 ```
 
 
----
 ## next-seo
 
 
@@ -1715,7 +1625,6 @@ npx rnv plugin add next-seo
 ```
 
 
----
 ## react
 
 
@@ -1734,7 +1643,6 @@ npx rnv plugin add react
 ```
 
 
----
 ## react-art
 
 
@@ -1753,7 +1661,6 @@ npx rnv plugin add react-art
 ```
 
 
----
 ## react-dom
 
 
@@ -1772,7 +1679,6 @@ npx rnv plugin add react-dom
 ```
 
 
----
 ## react-hot-loader
 
 
@@ -1791,7 +1697,6 @@ npx rnv plugin add react-hot-loader
 ```
 
 
----
 ## react-native
 
 
@@ -1810,7 +1715,6 @@ npx rnv plugin add react-native
 ```
 
 
----
 ## react-native-actionsheet
 
 
@@ -1829,7 +1733,6 @@ npx rnv plugin add react-native-actionsheet
 ```
 
 
----
 ## react-native-activity-view
 
 
@@ -1848,7 +1751,6 @@ npx rnv plugin add react-native-activity-view
 ```
 
 
----
 ## react-native-airplay-ios
 
 
@@ -1867,7 +1769,6 @@ npx rnv plugin add react-native-airplay-ios
 ```
 
 
----
 ## react-native-android-open-settings
 
 
@@ -1886,7 +1787,6 @@ npx rnv plugin add react-native-android-open-settings
 ```
 
 
----
 ## react-native-animatable
 
 
@@ -1905,7 +1805,6 @@ npx rnv plugin add react-native-animatable
 ```
 
 
----
 ## react-native-audio
 
 
@@ -1924,7 +1823,6 @@ npx rnv plugin add react-native-audio
 ```
 
 
----
 ## react-native-auth0
 
 
@@ -1943,7 +1841,6 @@ npx rnv plugin add react-native-auth0
 ```
 
 
----
 ## react-native-autocomplete-input
 
 
@@ -1962,7 +1859,6 @@ npx rnv plugin add react-native-autocomplete-input
 ```
 
 
----
 ## react-native-biometrics
 
 
@@ -1981,7 +1877,6 @@ npx rnv plugin add react-native-biometrics
 ```
 
 
----
 ## react-native-ble-manager
 
 
@@ -2000,7 +1895,6 @@ npx rnv plugin add react-native-ble-manager
 ```
 
 
----
 ## react-native-blob-util
 
 
@@ -2019,7 +1913,6 @@ npx rnv plugin add react-native-blob-util
 ```
 
 
----
 ## react-native-cached-image
 
 
@@ -2038,7 +1931,6 @@ npx rnv plugin add react-native-cached-image
 ```
 
 
----
 ## react-native-call-log
 
 
@@ -2057,7 +1949,6 @@ npx rnv plugin add react-native-call-log
 ```
 
 
----
 ## react-native-camera
 
 
@@ -2076,7 +1967,6 @@ npx rnv plugin add react-native-camera
 ```
 
 
----
 ## react-native-carplay
 
 
@@ -2095,7 +1985,6 @@ npx rnv plugin add react-native-carplay
 ```
 
 
----
 ## react-native-circular-progress
 
 
@@ -2114,7 +2003,6 @@ npx rnv plugin add react-native-circular-progress
 ```
 
 
----
 ## react-native-community-geolocation
 
 
@@ -2133,7 +2021,6 @@ npx rnv plugin add react-native-community-geolocation
 ```
 
 
----
 ## react-native-contacts
 
 
@@ -2152,7 +2039,6 @@ npx rnv plugin add react-native-contacts
 ```
 
 
----
 ## react-native-datepicker
 
 
@@ -2171,7 +2057,6 @@ npx rnv plugin add react-native-datepicker
 ```
 
 
----
 ## react-native-device-info
 
 
@@ -2190,7 +2075,6 @@ npx rnv plugin add react-native-device-info
 ```
 
 
----
 ## react-native-dialog
 
 
@@ -2209,7 +2093,6 @@ npx rnv plugin add react-native-dialog
 ```
 
 
----
 ## react-native-document-picker
 
 
@@ -2228,7 +2111,6 @@ npx rnv plugin add react-native-document-picker
 ```
 
 
----
 ## react-native-dominant-color
 
 
@@ -2247,7 +2129,6 @@ npx rnv plugin add react-native-dominant-color
 ```
 
 
----
 ## react-native-draggable-flatlist
 
 
@@ -2266,7 +2147,6 @@ npx rnv plugin add react-native-draggable-flatlist
 ```
 
 
----
 ## react-native-drawer
 
 
@@ -2285,7 +2165,6 @@ npx rnv plugin add react-native-drawer
 ```
 
 
----
 ## react-native-dynamic-fonts
 
 
@@ -2304,7 +2183,6 @@ npx rnv plugin add react-native-dynamic-fonts
 ```
 
 
----
 ## react-native-easy-grid
 
 
@@ -2323,7 +2201,6 @@ npx rnv plugin add react-native-easy-grid
 ```
 
 
----
 ## react-native-exception-handler
 
 
@@ -2342,7 +2219,6 @@ npx rnv plugin add react-native-exception-handler
 ```
 
 
----
 ## react-native-extended-stylesheet
 
 
@@ -2361,7 +2237,6 @@ npx rnv plugin add react-native-extended-stylesheet
 ```
 
 
----
 ## react-native-extract-color
 
 
@@ -2380,7 +2255,6 @@ npx rnv plugin add react-native-extract-color
 ```
 
 
----
 ## react-native-fabric
 
 
@@ -2399,7 +2273,6 @@ npx rnv plugin add react-native-fabric
 ```
 
 
----
 ## react-native-fast-image
 
 
@@ -2418,7 +2291,6 @@ npx rnv plugin add react-native-fast-image
 ```
 
 
----
 ## react-native-fbsdk
 
 
@@ -2437,7 +2309,6 @@ npx rnv plugin add react-native-fbsdk
 ```
 
 
----
 ## react-native-fetch-blob
 &gt; react-native-fetch-blob plugin is DEPRECATED. use rn-fetch-blob instead
 
@@ -2456,7 +2327,6 @@ npx rnv plugin add react-native-fetch-blob
 ```
 
 
----
 ## react-native-fingerprint-scanner
 
 
@@ -2475,7 +2345,6 @@ npx rnv plugin add react-native-fingerprint-scanner
 ```
 
 
----
 ## react-native-firebase
 
 
@@ -2494,7 +2363,6 @@ npx rnv plugin add react-native-firebase
 ```
 
 
----
 ## react-native-fs
 
 
@@ -2513,7 +2381,6 @@ npx rnv plugin add react-native-fs
 ```
 
 
----
 ## react-native-geolocation-service
 
 
@@ -2532,7 +2399,6 @@ npx rnv plugin add react-native-geolocation-service
 ```
 
 
----
 ## react-native-gesture-handler
 
 
@@ -2551,7 +2417,6 @@ npx rnv plugin add react-native-gesture-handler
 ```
 
 
----
 ## react-native-get-random-values
 
 
@@ -2570,7 +2435,6 @@ npx rnv plugin add react-native-get-random-values
 ```
 
 
----
 ## react-native-get-real-path
 
 
@@ -2589,7 +2453,6 @@ npx rnv plugin add react-native-get-real-path
 ```
 
 
----
 ## react-native-google-cast
 
 
@@ -2608,7 +2471,6 @@ npx rnv plugin add react-native-google-cast
 ```
 
 
----
 ## react-native-home-indicator
 
 
@@ -2627,7 +2489,6 @@ npx rnv plugin add react-native-home-indicator
 ```
 
 
----
 ## react-native-iap
 
 
@@ -2646,7 +2507,6 @@ npx rnv plugin add react-native-iap
 ```
 
 
----
 ## react-native-idle-timer
 
 
@@ -2665,7 +2525,6 @@ npx rnv plugin add react-native-idle-timer
 ```
 
 
----
 ## react-native-image-cache-manager
 
 
@@ -2684,7 +2543,6 @@ npx rnv plugin add react-native-image-cache-manager
 ```
 
 
----
 ## react-native-image-crop-picker
 
 
@@ -2703,7 +2561,6 @@ npx rnv plugin add react-native-image-crop-picker
 ```
 
 
----
 ## react-native-image-crop-picker-no-npm
 
 
@@ -2722,7 +2579,6 @@ npx rnv plugin add react-native-image-crop-picker-no-npm
 ```
 
 
----
 ## react-native-image-picker
 
 
@@ -2741,7 +2597,6 @@ npx rnv plugin add react-native-image-picker
 ```
 
 
----
 ## react-native-image-resizer
 
 
@@ -2760,7 +2615,6 @@ npx rnv plugin add react-native-image-resizer
 ```
 
 
----
 ## react-native-keep-awake
 
 
@@ -2779,7 +2633,6 @@ npx rnv plugin add react-native-keep-awake
 ```
 
 
----
 ## react-native-keyboard-aware-scroll-view
 
 
@@ -2798,7 +2651,6 @@ npx rnv plugin add react-native-keyboard-aware-scroll-view
 ```
 
 
----
 ## react-native-keyboard-spacer
 
 
@@ -2817,7 +2669,6 @@ npx rnv plugin add react-native-keyboard-spacer
 ```
 
 
----
 ## react-native-languages
 &gt; react-native-languages has been DEPRECATED. use react-native-localize instead
 
@@ -2836,7 +2687,6 @@ npx rnv plugin add react-native-languages
 ```
 
 
----
 ## react-native-linear-gradient
 
 
@@ -2855,7 +2705,6 @@ npx rnv plugin add react-native-linear-gradient
 ```
 
 
----
 ## react-native-local-mongodb
 
 
@@ -2874,7 +2723,6 @@ npx rnv plugin add react-native-local-mongodb
 ```
 
 
----
 ## react-native-localize
 
 
@@ -2893,7 +2741,6 @@ npx rnv plugin add react-native-localize
 ```
 
 
----
 ## react-native-lottie
 
 
@@ -2912,7 +2759,6 @@ npx rnv plugin add react-native-lottie
 ```
 
 
----
 ## react-native-macos
 
 
@@ -2931,7 +2777,6 @@ npx rnv plugin add react-native-macos
 ```
 
 
----
 ## react-native-maps
 
 
@@ -2950,7 +2795,6 @@ npx rnv plugin add react-native-maps
 ```
 
 
----
 ## react-native-markdown-renderer
 
 
@@ -2969,7 +2813,6 @@ npx rnv plugin add react-native-markdown-renderer
 ```
 
 
----
 ## react-native-material-dialog
 
 
@@ -2988,7 +2831,6 @@ npx rnv plugin add react-native-material-dialog
 ```
 
 
----
 ## react-native-material-dropdown
 
 
@@ -3007,7 +2849,6 @@ npx rnv plugin add react-native-material-dropdown
 ```
 
 
----
 ## react-native-media-query
 
 
@@ -3026,7 +2867,6 @@ npx rnv plugin add react-native-media-query
 ```
 
 
----
 ## react-native-modal
 
 
@@ -3045,7 +2885,6 @@ npx rnv plugin add react-native-modal
 ```
 
 
----
 ## react-native-navigation-bar-color
 
 
@@ -3064,7 +2903,6 @@ npx rnv plugin add react-native-navigation-bar-color
 ```
 
 
----
 ## react-native-nfc-manager
 
 
@@ -3083,7 +2921,6 @@ npx rnv plugin add react-native-nfc-manager
 ```
 
 
----
 ## react-native-onfido-sdk
 
 
@@ -3102,7 +2939,6 @@ npx rnv plugin add react-native-onfido-sdk
 ```
 
 
----
 ## react-native-orientation-locker
 
 
@@ -3121,7 +2957,6 @@ npx rnv plugin add react-native-orientation-locker
 ```
 
 
----
 ## react-native-paper
 
 
@@ -3140,7 +2975,6 @@ npx rnv plugin add react-native-paper
 ```
 
 
----
 ## react-native-parallax-view
 
 
@@ -3159,7 +2993,6 @@ npx rnv plugin add react-native-parallax-view
 ```
 
 
----
 ## react-native-pdf
 
 
@@ -3178,7 +3011,6 @@ npx rnv plugin add react-native-pdf
 ```
 
 
----
 ## react-native-pdf-view
 
 
@@ -3197,7 +3029,6 @@ npx rnv plugin add react-native-pdf-view
 ```
 
 
----
 ## react-native-peerjs
 
 
@@ -3216,7 +3047,6 @@ npx rnv plugin add react-native-peerjs
 ```
 
 
----
 ## react-native-permissions
 
 
@@ -3235,7 +3065,6 @@ npx rnv plugin add react-native-permissions
 ```
 
 
----
 ## react-native-permissions-pods
 
 
@@ -3254,7 +3083,6 @@ npx rnv plugin add react-native-permissions-pods
 ```
 
 
----
 ## react-native-photo-editor
 
 
@@ -3273,7 +3101,6 @@ npx rnv plugin add react-native-photo-editor
 ```
 
 
----
 ## react-native-picker
 
 
@@ -3292,7 +3119,6 @@ npx rnv plugin add react-native-picker
 ```
 
 
----
 ## react-native-picker-select
 
 
@@ -3311,7 +3137,6 @@ npx rnv plugin add react-native-picker-select
 ```
 
 
----
 ## react-native-progress
 
 
@@ -3330,7 +3155,6 @@ npx rnv plugin add react-native-progress
 ```
 
 
----
 ## react-native-prompt-android
 
 
@@ -3349,7 +3173,6 @@ npx rnv plugin add react-native-prompt-android
 ```
 
 
----
 ## react-native-reanimated
 
 
@@ -3368,7 +3191,6 @@ npx rnv plugin add react-native-reanimated
 ```
 
 
----
 ## react-native-render-html
 
 
@@ -3387,7 +3209,6 @@ npx rnv plugin add react-native-render-html
 ```
 
 
----
 ## react-native-root-toast
 
 
@@ -3406,7 +3227,6 @@ npx rnv plugin add react-native-root-toast
 ```
 
 
----
 ## react-native-safe-area-context
 
 
@@ -3425,7 +3245,6 @@ npx rnv plugin add react-native-safe-area-context
 ```
 
 
----
 ## react-native-safe-area-view
 
 
@@ -3444,7 +3263,6 @@ npx rnv plugin add react-native-safe-area-view
 ```
 
 
----
 ## react-native-screens
 
 
@@ -3463,7 +3281,6 @@ npx rnv plugin add react-native-screens
 ```
 
 
----
 ## react-native-select-dropdown
 
 
@@ -3482,7 +3299,6 @@ npx rnv plugin add react-native-select-dropdown
 ```
 
 
----
 ## react-native-sensors
 
 
@@ -3501,7 +3317,6 @@ npx rnv plugin add react-native-sensors
 ```
 
 
----
 ## react-native-signature-capture
 
 
@@ -3520,7 +3335,6 @@ npx rnv plugin add react-native-signature-capture
 ```
 
 
----
 ## react-native-simple-compass
 
 
@@ -3539,7 +3353,6 @@ npx rnv plugin add react-native-simple-compass
 ```
 
 
----
 ## react-native-simple-radio-button
 
 
@@ -3558,7 +3371,6 @@ npx rnv plugin add react-native-simple-radio-button
 ```
 
 
----
 ## react-native-simple-shadow-view
 
 
@@ -3577,7 +3389,6 @@ npx rnv plugin add react-native-simple-shadow-view
 ```
 
 
----
 ## react-native-snap-carousel
 
 
@@ -3596,7 +3407,6 @@ npx rnv plugin add react-native-snap-carousel
 ```
 
 
----
 ## react-native-snap-scrollview
 
 
@@ -3615,7 +3425,6 @@ npx rnv plugin add react-native-snap-scrollview
 ```
 
 
----
 ## react-native-sound
 
 
@@ -3634,7 +3443,6 @@ npx rnv plugin add react-native-sound
 ```
 
 
----
 ## react-native-splash-screen
 
 
@@ -3653,7 +3461,6 @@ npx rnv plugin add react-native-splash-screen
 ```
 
 
----
 ## react-native-sqlite-2
 
 
@@ -3672,7 +3479,6 @@ npx rnv plugin add react-native-sqlite-2
 ```
 
 
----
 ## react-native-sqlite-storage
 
 
@@ -3691,7 +3497,6 @@ npx rnv plugin add react-native-sqlite-storage
 ```
 
 
----
 ## react-native-super-grid
 
 
@@ -3710,7 +3515,6 @@ npx rnv plugin add react-native-super-grid
 ```
 
 
----
 ## react-native-svg
 
 
@@ -3729,7 +3533,6 @@ npx rnv plugin add react-native-svg
 ```
 
 
----
 ## react-native-svg-charts
 
 
@@ -3748,7 +3551,6 @@ npx rnv plugin add react-native-svg-charts
 ```
 
 
----
 ## react-native-swipeout
 
 
@@ -3767,7 +3569,6 @@ npx rnv plugin add react-native-swipeout
 ```
 
 
----
 ## react-native-swiper
 
 
@@ -3786,7 +3587,6 @@ npx rnv plugin add react-native-swiper
 ```
 
 
----
 ## react-native-system-setting
 
 
@@ -3805,7 +3605,6 @@ npx rnv plugin add react-native-system-setting
 ```
 
 
----
 ## react-native-tab-view
 
 
@@ -3824,7 +3623,6 @@ npx rnv plugin add react-native-tab-view
 ```
 
 
----
 ## react-native-tvos
 
 
@@ -3843,7 +3641,6 @@ npx rnv plugin add react-native-tvos
 ```
 
 
----
 ## react-native-tvos-controller
 
 
@@ -3862,7 +3659,6 @@ npx rnv plugin add react-native-tvos-controller
 ```
 
 
----
 ## react-native-uri-scheme
 
 
@@ -3881,7 +3677,6 @@ npx rnv plugin add react-native-uri-scheme
 ```
 
 
----
 ## react-native-v8
 
 
@@ -3900,7 +3695,6 @@ npx rnv plugin add react-native-v8
 ```
 
 
----
 ## react-native-vector-icons
 
 
@@ -3919,7 +3713,6 @@ npx rnv plugin add react-native-vector-icons
 ```
 
 
----
 ## react-native-video
 
 
@@ -3938,7 +3731,6 @@ npx rnv plugin add react-native-video
 ```
 
 
----
 ## react-native-video-controls
 
 
@@ -3957,7 +3749,6 @@ npx rnv plugin add react-native-video-controls
 ```
 
 
----
 ## react-native-view-overflow
 
 
@@ -3976,7 +3767,6 @@ npx rnv plugin add react-native-view-overflow
 ```
 
 
----
 ## react-native-view-shot
 
 
@@ -3995,7 +3785,6 @@ npx rnv plugin add react-native-view-shot
 ```
 
 
----
 ## react-native-viewpager
 
 
@@ -4014,7 +3803,6 @@ npx rnv plugin add react-native-viewpager
 ```
 
 
----
 ## react-native-web
 
 
@@ -4033,7 +3821,6 @@ npx rnv plugin add react-native-web
 ```
 
 
----
 ## react-native-web-image-loader
 
 
@@ -4052,7 +3839,6 @@ npx rnv plugin add react-native-web-image-loader
 ```
 
 
----
 ## react-native-webrtc
 
 
@@ -4071,7 +3857,6 @@ npx rnv plugin add react-native-webrtc
 ```
 
 
----
 ## react-native-webview
 
 
@@ -4090,7 +3875,6 @@ npx rnv plugin add react-native-webview
 ```
 
 
----
 ## react-native-webview-bridge
 
 
@@ -4109,7 +3893,6 @@ npx rnv plugin add react-native-webview-bridge
 ```
 
 
----
 ## react-native-windows
 
 
@@ -4128,7 +3911,6 @@ npx rnv plugin add react-native-windows
 ```
 
 
----
 ## react-native-zip-archive
 
 
@@ -4147,7 +3929,6 @@ npx rnv plugin add react-native-zip-archive
 ```
 
 
----
 ## react-native-zss-rich-text-editor
 
 
@@ -4166,7 +3947,6 @@ npx rnv plugin add react-native-zss-rich-text-editor
 ```
 
 
----
 ## react-navigation
 
 
@@ -4185,7 +3965,6 @@ npx rnv plugin add react-navigation
 ```
 
 
----
 ## react-navigation-drawer
 
 
@@ -4204,7 +3983,6 @@ npx rnv plugin add react-navigation-drawer
 ```
 
 
----
 ## react-navigation-stack
 
 
@@ -4223,7 +4001,6 @@ npx rnv plugin add react-navigation-stack
 ```
 
 
----
 ## react-navigation-tabs
 
 
@@ -4242,7 +4019,6 @@ npx rnv plugin add react-navigation-tabs
 ```
 
 
----
 ## react-outside-click-handler
 
 
@@ -4261,7 +4037,6 @@ npx rnv plugin add react-outside-click-handler
 ```
 
 
----
 ## react-redux
 
 
@@ -4280,7 +4055,6 @@ npx rnv plugin add react-redux
 ```
 
 
----
 ## react-web-vector-icons
 
 
@@ -4299,7 +4073,6 @@ npx rnv plugin add react-web-vector-icons
 ```
 
 
----
 ## recyclerlistview
 
 
@@ -4318,7 +4091,6 @@ npx rnv plugin add recyclerlistview
 ```
 
 
----
 ## renative
 
 
@@ -4337,7 +4109,6 @@ npx rnv plugin add renative
 ```
 
 
----
 ## rn-fetch-blob
 
 
@@ -4356,7 +4127,6 @@ npx rnv plugin add rn-fetch-blob
 ```
 
 
----
 ## rnv-platform-info
 
 
@@ -4375,7 +4145,6 @@ npx rnv plugin add rnv-platform-info
 ```
 
 
----
 ## static-container
 
 
@@ -4394,7 +4163,6 @@ npx rnv plugin add static-container
 ```
 
 
----
 ## styled-jsx
 
 
@@ -4413,7 +4181,6 @@ npx rnv plugin add styled-jsx
 ```
 
 
----
 ## svgs
 
 
@@ -4432,7 +4199,6 @@ npx rnv plugin add svgs
 ```
 
 
----
 ## swiper
 
 
@@ -4451,7 +4217,6 @@ npx rnv plugin add swiper
 ```
 
 
----
 ## theoplayer
 
 
@@ -4470,7 +4235,6 @@ npx rnv plugin add theoplayer
 ```
 
 
----
 ## tipsi-stripe
 
 
@@ -4489,7 +4253,6 @@ npx rnv plugin add tipsi-stripe
 ```
 
 
----
 ## tslib
 
 

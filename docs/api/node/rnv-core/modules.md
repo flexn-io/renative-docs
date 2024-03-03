@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-tasks/constants.d.ts:342
+tasks/constants.d.ts:282
 
 ___
 
@@ -965,7 +965,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:302
+context/types.d.ts:307
 
 ___
 
@@ -1050,7 +1050,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:278
+context/types.d.ts:283
 
 ___
 
@@ -1071,12 +1071,16 @@ ___
 | `RNV_NODE_MODULES_DIR` | `string` |
 | `appConfig` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) |
 | `appConfigBase` | `string` |
-| `buildHooks` | \{ `dir`: `string` ; `dist`: \{ `dir`: `string` ; `index`: `string`  } ; `index`: `string`  } |
+| `buildHooks` | \{ `dir`: `string` ; `dist`: \{ `dir`: `string` ; `index`: `string`  } ; `src`: \{ `dir`: `string` ; `index`: `string` ; `indexTs`: `string`  } ; `tsconfig`: `string`  } |
 | `buildHooks.dir` | `string` |
 | `buildHooks.dist` | \{ `dir`: `string` ; `index`: `string`  } |
 | `buildHooks.dist.dir` | `string` |
 | `buildHooks.dist.index` | `string` |
-| `buildHooks.index` | `string` |
+| `buildHooks.src` | \{ `dir`: `string` ; `index`: `string` ; `indexTs`: `string`  } |
+| `buildHooks.src.dir` | `string` |
+| `buildHooks.src.index` | `string` |
+| `buildHooks.src.indexTs` | `string` |
+| `buildHooks.tsconfig` | `string` |
 | `defaultWorkspace` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfig`: \{ `configs`: `string`[] ; `configsLocal`: `string`[] ; `configsPrivate`: `string`[]  } ; `project`: \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: \{ `dir`: `string`  } ; `builds`: \{ `dir`: `string`  }  }  } |
 | `home` | \{ `dir`: `string`  } |
 | `home.dir` | `string` |
@@ -1131,7 +1135,7 @@ ___
 
 #### Defined in
 
-context/types.d.ts:295
+context/types.d.ts:300
 
 ___
 
@@ -1571,7 +1575,7 @@ ___
 
 #### Defined in
 
-tasks/constants.d.ts:62
+tasks/constants.d.ts:2
 
 ___
 
@@ -1610,7 +1614,7 @@ ___
 
 #### Defined in
 
-tasks/constants.d.ts:343
+tasks/constants.d.ts:283
 
 ___
 
@@ -1620,7 +1624,7 @@ ___
 
 #### Defined in
 
-tasks/constants.d.ts:338
+tasks/constants.d.ts:278
 
 ___
 
@@ -1854,603 +1858,80 @@ constants.d.ts:12
 
 ___
 
-### TASK\_APP\_CONFIGURE
+### TaskKey
 
-• `Const` **TASK\_APP\_CONFIGURE**: ``"app configure"``
+• `Const` **TaskKey**: `Object`
 
-#### Defined in
+#### Type declaration
 
-tasks/constants.d.ts:53
-
-___
-
-### TASK\_APP\_CREATE
-
-• `Const` **TASK\_APP\_CREATE**: ``"app create"``
-
-#### Defined in
-
-tasks/constants.d.ts:54
-
-___
-
-### TASK\_BUILD
-
-• `Const` **TASK\_BUILD**: ``"build"``
-
-#### Defined in
-
-tasks/constants.d.ts:7
-
-___
-
-### TASK\_CLEAN
-
-• `Const` **TASK\_CLEAN**: ``"clean"``
-
-#### Defined in
-
-tasks/constants.d.ts:15
-
-___
-
-### TASK\_CONFIGURE
-
-• `Const` **TASK\_CONFIGURE**: ``"configure"``
-
-#### Defined in
-
-tasks/constants.d.ts:3
-
-___
-
-### TASK\_CONFIGURE\_SOFT
-
-• `Const` **TASK\_CONFIGURE\_SOFT**: ``"configureSoft"``
-
-#### Defined in
-
-tasks/constants.d.ts:56
-
-___
-
-### TASK\_CRYPTO\_DECRYPT
-
-• `Const` **TASK\_CRYPTO\_DECRYPT**: ``"crypto decrypt"``
-
-#### Defined in
-
-tasks/constants.d.ts:43
-
-___
-
-### TASK\_CRYPTO\_ENCRYPT
-
-• `Const` **TASK\_CRYPTO\_ENCRYPT**: ``"crypto encrypt"``
+| Name | Type |
+| :------ | :------ |
+| `appConfigure` | ``"app configure"`` |
+| `appCreate` | ``"app create"`` |
+| `appSwitch` | ``"app switch"`` |
+| `build` | ``"build"`` |
+| `clean` | ``"clean"`` |
+| `config` | ``"config"`` |
+| `configure` | ``"configure"`` |
+| `configureSoft` | ``"configureSoft"`` |
+| `cryptoDecrypt` | ``"crypto decrypt"`` |
+| `cryptoEncrypt` | ``"crypto encrypt"`` |
+| `cryptoInstallCerts` | ``"crypto installCerts"`` |
+| `cryptoInstallProfile` | ``"crypto installProfile"`` |
+| `cryptoInstallProfiles` | ``"crypto installProfiles"`` |
+| `cryptoUpdateProfile` | ``"crypto updateProfile"`` |
+| `cryptoUpdateProfiles` | ``"crypto updateProfiles"`` |
+| `debug` | ``"debug"`` |
+| `deploy` | ``"deploy"`` |
+| `doctor` | ``"doctor"`` |
+| `eject` | ``"eject"`` |
+| `export` | ``"export"`` |
+| `help` | ``"help"`` |
+| `hooksList` | ``"hooks list"`` |
+| `hooksPipes` | ``"hooks pipes"`` |
+| `hooksRun` | ``"hooks run"`` |
+| `info` | ``"info"`` |
+| `install` | ``"install"`` |
+| `kill` | ``"kill"`` |
+| `link` | ``"link"`` |
+| `log` | ``"log"`` |
+| `new` | ``"new"`` |
+| `package` | ``"package"`` |
+| `pkg` | ``"pkg"`` |
+| `platformConfigure` | ``"platform configure"`` |
+| `platformConnect` | ``"platform connect"`` |
+| `platformEject` | ``"platform eject"`` |
+| `platformList` | ``"platform list"`` |
+| `platformSetup` | ``"platform setup"`` |
+| `pluginAdd` | ``"plugin add"`` |
+| `pluginList` | ``"plugin list"`` |
+| `pluginUpdate` | ``"plugin update"`` |
+| `projectConfigure` | ``"project configure"`` |
+| `projectUpgrade` | ``"project upgrade"`` |
+| `publish` | ``"publish"`` |
+| `run` | ``"run"`` |
+| `start` | ``"start"`` |
+| `status` | ``"status"`` |
+| `switch` | ``"switch"`` |
+| `target` | ``"target"`` |
+| `targetLaunch` | ``"target launch"`` |
+| `targetList` | ``"target list"`` |
+| `telemetryDisable` | ``"telemetry disable"`` |
+| `telemetryEnable` | ``"telemetry enable"`` |
+| `telemetryStatus` | ``"telemetry status"`` |
+| `templateAdd` | ``"template add"`` |
+| `templateApply` | ``"template apply"`` |
+| `templateList` | ``"template list"`` |
+| `unlink` | ``"unlink"`` |
+| `workspaceAdd` | ``"workspace add"`` |
+| `workspaceConfigure` | ``"workspace configure"`` |
+| `workspaceConnect` | ``"workspace connect"`` |
+| `workspaceList` | ``"workspace list"`` |
+| `workspaceUpdate` | ``"workspace update"`` |
 
 #### Defined in
 
-tasks/constants.d.ts:42
-
-___
-
-### TASK\_CRYPTO\_INSTALL\_CERTS
-
-• `Const` **TASK\_CRYPTO\_INSTALL\_CERTS**: ``"crypto installCerts"``
-
-#### Defined in
-
-tasks/constants.d.ts:44
-
-___
-
-### TASK\_CRYPTO\_INSTALL\_PROFILE
-
-• `Const` **TASK\_CRYPTO\_INSTALL\_PROFILE**: ``"crypto installProfile"``
-
-#### Defined in
-
-tasks/constants.d.ts:46
-
-___
-
-### TASK\_CRYPTO\_INSTALL\_PROFILES
-
-• `Const` **TASK\_CRYPTO\_INSTALL\_PROFILES**: ``"crypto installProfiles"``
-
-#### Defined in
-
-tasks/constants.d.ts:45
-
-___
-
-### TASK\_CRYPTO\_UPDATE\_PROFILE
-
-• `Const` **TASK\_CRYPTO\_UPDATE\_PROFILE**: ``"crypto updateProfile"``
-
-#### Defined in
-
-tasks/constants.d.ts:47
-
-___
-
-### TASK\_CRYPTO\_UPDATE\_PROFILES
-
-• `Const` **TASK\_CRYPTO\_UPDATE\_PROFILES**: ``"crypto updateProfiles"``
-
-#### Defined in
-
-tasks/constants.d.ts:48
-
-___
-
-### TASK\_DEBUG
-
-• `Const` **TASK\_DEBUG**: ``"debug"``
-
-#### Defined in
-
-tasks/constants.d.ts:11
-
-___
-
-### TASK\_DEPLOY
-
-• `Const` **TASK\_DEPLOY**: ``"deploy"``
-
-#### Defined in
-
-tasks/constants.d.ts:13
-
-___
-
-### TASK\_DOCTOR
-
-• `Const` **TASK\_DOCTOR**: ``"doctor"``
-
-#### Defined in
-
-tasks/constants.d.ts:4
-
-___
-
-### TASK\_EJECT
-
-• `Const` **TASK\_EJECT**: ``"eject"``
-
-#### Defined in
-
-tasks/constants.d.ts:58
-
-___
-
-### TASK\_EXPORT
-
-• `Const` **TASK\_EXPORT**: ``"export"``
-
-#### Defined in
-
-tasks/constants.d.ts:10
-
-___
-
-### TASK\_HELP
-
-• `Const` **TASK\_HELP**: ``"help"``
-
-#### Defined in
-
-tasks/constants.d.ts:6
-
-___
-
-### TASK\_HOOKS\_LIST
-
-• `Const` **TASK\_HOOKS\_LIST**: ``"hooks list"``
-
-#### Defined in
-
-tasks/constants.d.ts:50
-
-___
-
-### TASK\_HOOKS\_PIPES
-
-• `Const` **TASK\_HOOKS\_PIPES**: ``"hooks pipes"``
-
-#### Defined in
-
-tasks/constants.d.ts:51
-
-___
-
-### TASK\_HOOKS\_RUN
-
-• `Const` **TASK\_HOOKS\_RUN**: ``"hooks run"``
-
-#### Defined in
-
-tasks/constants.d.ts:49
-
-___
-
-### TASK\_INFO
-
-• `Const` **TASK\_INFO**: ``"info"``
-
-#### Defined in
-
-tasks/constants.d.ts:8
-
-___
-
-### TASK\_INSTALL
-
-• `Const` **TASK\_INSTALL**: ``"install"``
-
-#### Defined in
-
-tasks/constants.d.ts:18
-
-___
-
-### TASK\_KILL
-
-• `Const` **TASK\_KILL**: ``"kill"``
-
-#### Defined in
-
-tasks/constants.d.ts:57
-
-___
-
-### TASK\_LINK
-
-• `Const` **TASK\_LINK**: ``"link"``
-
-#### Defined in
-
-tasks/constants.d.ts:16
-
-___
-
-### TASK\_LOG
-
-• `Const` **TASK\_LOG**: ``"log"``
-
-#### Defined in
-
-tasks/constants.d.ts:14
-
-___
-
-### TASK\_NEW
-
-• `Const` **TASK\_NEW**: ``"new"``
-
-#### Defined in
-
-tasks/constants.d.ts:5
-
-___
-
-### TASK\_PACKAGE
-
-• `Const` **TASK\_PACKAGE**: ``"package"``
-
-#### Defined in
-
-tasks/constants.d.ts:12
-
-___
-
-### TASK\_PKG
-
-• `Const` **TASK\_PKG**: ``"pkg"``
-
-#### Defined in
-
-tasks/constants.d.ts:52
-
-___
-
-### TASK\_PLATFORM\_CONFIGURE
-
-• `Const` **TASK\_PLATFORM\_CONFIGURE**: ``"platform configure"``
-
-#### Defined in
-
-tasks/constants.d.ts:32
-
-___
-
-### TASK\_PLATFORM\_CONNECT
-
-• `Const` **TASK\_PLATFORM\_CONNECT**: ``"platform connect"``
-
-#### Defined in
-
-tasks/constants.d.ts:33
-
-___
-
-### TASK\_PLATFORM\_EJECT
-
-• `Const` **TASK\_PLATFORM\_EJECT**: ``"platform eject"``
-
-#### Defined in
-
-tasks/constants.d.ts:34
-
-___
-
-### TASK\_PLATFORM\_LIST
-
-• `Const` **TASK\_PLATFORM\_LIST**: ``"platform list"``
-
-#### Defined in
-
-tasks/constants.d.ts:35
-
-___
-
-### TASK\_PLATFORM\_SETUP
-
-• `Const` **TASK\_PLATFORM\_SETUP**: ``"platform setup"``
-
-#### Defined in
-
-tasks/constants.d.ts:36
-
-___
-
-### TASK\_PLUGIN\_ADD
-
-• `Const` **TASK\_PLUGIN\_ADD**: ``"plugin add"``
-
-#### Defined in
-
-tasks/constants.d.ts:39
-
-___
-
-### TASK\_PLUGIN\_LIST
-
-• `Const` **TASK\_PLUGIN\_LIST**: ``"plugin list"``
-
-#### Defined in
-
-tasks/constants.d.ts:40
-
-___
-
-### TASK\_PLUGIN\_UPDATE
-
-• `Const` **TASK\_PLUGIN\_UPDATE**: ``"plugin update"``
-
-#### Defined in
-
-tasks/constants.d.ts:41
-
-___
-
-### TASK\_PROJECT\_CONFIGURE
-
-• `Const` **TASK\_PROJECT\_CONFIGURE**: ``"project configure"``
-
-#### Defined in
-
-tasks/constants.d.ts:37
-
-___
-
-### TASK\_PROJECT\_UPGRADE
-
-• `Const` **TASK\_PROJECT\_UPGRADE**: ``"project upgrade"``
-
-#### Defined in
-
-tasks/constants.d.ts:38
-
-___
-
-### TASK\_PUBLISH
-
-• `Const` **TASK\_PUBLISH**: ``"publish"``
-
-#### Defined in
-
-tasks/constants.d.ts:19
-
-___
-
-### TASK\_RUN
-
-• `Const` **TASK\_RUN**: ``"run"``
-
-#### Defined in
-
-tasks/constants.d.ts:2
-
-___
-
-### TASK\_START
-
-• `Const` **TASK\_START**: ``"start"``
-
-#### Defined in
-
-tasks/constants.d.ts:9
-
-___
-
-### TASK\_STATUS
-
-• `Const` **TASK\_STATUS**: ``"status"``
-
-#### Defined in
-
-tasks/constants.d.ts:20
-
-___
-
-### TASK\_SWITCH
-
-• `Const` **TASK\_SWITCH**: ``"switch"``
-
-#### Defined in
-
-tasks/constants.d.ts:21
-
-___
-
-### TASK\_TARGET
-
-• `Const` **TASK\_TARGET**: ``"target"``
-
-#### Defined in
-
-tasks/constants.d.ts:24
-
-___
-
-### TASK\_TARGET\_LAUNCH
-
-• `Const` **TASK\_TARGET\_LAUNCH**: ``"target launch"``
-
-#### Defined in
-
-tasks/constants.d.ts:22
-
-___
-
-### TASK\_TARGET\_LIST
-
-• `Const` **TASK\_TARGET\_LIST**: ``"target list"``
-
-#### Defined in
-
-tasks/constants.d.ts:23
-
-___
-
-### TASK\_TELEMETRY\_DISABLE
-
-• `Const` **TASK\_TELEMETRY\_DISABLE**: ``"telemetry disable"``
-
-#### Defined in
-
-tasks/constants.d.ts:59
-
-___
-
-### TASK\_TELEMETRY\_ENABLE
-
-• `Const` **TASK\_TELEMETRY\_ENABLE**: ``"telemetry enable"``
-
-#### Defined in
-
-tasks/constants.d.ts:60
-
-___
-
-### TASK\_TELEMETRY\_STATUS
-
-• `Const` **TASK\_TELEMETRY\_STATUS**: ``"telemetry status"``
-
-#### Defined in
-
-tasks/constants.d.ts:61
-
-___
-
-### TASK\_TEMPLATE\_ADD
-
-• `Const` **TASK\_TEMPLATE\_ADD**: ``"template add"``
-
-#### Defined in
-
-tasks/constants.d.ts:25
-
-___
-
-### TASK\_TEMPLATE\_APPLY
-
-• `Const` **TASK\_TEMPLATE\_APPLY**: ``"template apply"``
-
-#### Defined in
-
-tasks/constants.d.ts:27
-
-___
-
-### TASK\_TEMPLATE\_LIST
-
-• `Const` **TASK\_TEMPLATE\_LIST**: ``"template list"``
-
-#### Defined in
-
-tasks/constants.d.ts:26
-
-___
-
-### TASK\_UNLINK
-
-• `Const` **TASK\_UNLINK**: ``"unlink"``
-
-#### Defined in
-
-tasks/constants.d.ts:17
-
-___
-
-### TASK\_WORKSPACE\_ADD
-
-• `Const` **TASK\_WORKSPACE\_ADD**: ``"workspace add"``
-
-#### Defined in
-
-tasks/constants.d.ts:28
-
-___
-
-### TASK\_WORKSPACE\_CONFIGURE
-
-• `Const` **TASK\_WORKSPACE\_CONFIGURE**: ``"workspace configure"``
-
-#### Defined in
-
-tasks/constants.d.ts:55
-
-___
-
-### TASK\_WORKSPACE\_CONNECT
-
-• `Const` **TASK\_WORKSPACE\_CONNECT**: ``"workspace connect"``
-
-#### Defined in
-
-tasks/constants.d.ts:29
-
-___
-
-### TASK\_WORKSPACE\_LIST
-
-• `Const` **TASK\_WORKSPACE\_LIST**: ``"workspace list"``
-
-#### Defined in
-
-tasks/constants.d.ts:30
-
-___
-
-### TASK\_WORKSPACE\_UPDATE
-
-• `Const` **TASK\_WORKSPACE\_UPDATE**: ``"workspace update"``
-
-#### Defined in
-
-tasks/constants.d.ts:31
+taskKeys.d.ts:1
 
 ___
 
@@ -3542,6 +3023,30 @@ system/exec.d.ts:31
 
 ___
 
+### executeDependantTask
+
+▸ **executeDependantTask**(`«destructured»`): `Promise`\<``true``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `Object` |
+| › `alternativeTask?` | `string` |
+| › `originTask?` | `string` |
+| › `parentTask` | `string` |
+| › `task` | `string` |
+
+#### Returns
+
+`Promise`\<``true``\>
+
+#### Defined in
+
+tasks/index.d.ts:12
+
+___
+
 ### executeEngineTask
 
 ▸ **executeEngineTask**(`c`, `task`, `parentTask?`, `originTask?`, `tasks?`, `isFirstTask?`): `Promise`\<`void`\>
@@ -3563,7 +3068,7 @@ ___
 
 #### Defined in
 
-tasks/index.d.ts:10
+tasks/index.d.ts:19
 
 ___
 
@@ -3584,9 +3089,13 @@ ___
 
 `Promise`\<`undefined`\>
 
+**`Deprecated`**
+
+Use executeDependantTask instead
+
 #### Defined in
 
-tasks/index.d.ts:8
+tasks/index.d.ts:11
 
 ___
 
@@ -6539,7 +6048,7 @@ ___
 
 #### Defined in
 
-tasks/index.d.ts:9
+tasks/index.d.ts:18
 
 ___
 

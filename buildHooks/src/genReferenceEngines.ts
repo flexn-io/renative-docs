@@ -101,19 +101,28 @@ const _getExtensionContent = (c, platform, engine) => {
         p = engine.platforms[platform];
     }
 
-    out += `### ${platform}\n\n`;
+    out += `\n### ${platform}\n\n`;
     let extensions = [];
     if (p.extensions) {
         extensions = p.extensions;
     }
     if (extensions) {
-        out += `| Extension | Priority  |
-      | --------- | :-------: |\n`;
+        //     out += `| Extension | Priority  |
+        //   | --------- | :-------: |\n`;
         let i = 1;
         extensions.forEach((v) => {
-            out += `| \`${v}\` | ${i} |\n`;
+            out += `\`${v}\` `;
             i++;
         });
     }
+    // if (extensions) {
+    //     out += `| Extension | Priority  |
+    //   | --------- | :-------: |\n`;
+    //     let i = 1;
+    //     extensions.forEach((v) => {
+    //         out += `| \`${v}\` | ${i} |\n`;
+    //         i++;
+    //     });
+    // }
     return out;
 };

@@ -546,6 +546,21 @@ Example:
 npx rnv app create
 ```
 
+#### switch
+
+Switch between different app configs in current project
+
+Available in engines: [engine-core](engines/engine-core.md)
+
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+Example:
+```bash
+npx rnv app switch
+```
+
 ### configureSoft
 
 Configure system and project without recreating files (used for --only)
@@ -698,21 +713,6 @@ Available Options:
 Example:
 ```bash
 npx rnv telemetry disable
-```
-
-### switch
-
-Switch between different app configs in current project
-
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv switch
 ```
 
 ### run
