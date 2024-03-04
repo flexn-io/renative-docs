@@ -44,7 +44,7 @@ export const generateSchema = async () => {
 const _generateSchemaFile = (opts: { schema: z.ZodObject<any>; schemaId: string }) => {
     const { schema, schemaId } = opts;
     const ctx = getContext();
-    const jsonSchema: unknown = zodToJsonSchema(schema);
+    const jsonSchema: any = zodToJsonSchema(schema);
     jsonSchema['$schema'] = 'http://json-schema.org/draft-04/schema#';
 
     const destFolder = path.join(ctx.paths.project.dir, `docs/api/schemas`);
@@ -58,7 +58,7 @@ const _generateSchemaFile = (opts: { schema: z.ZodObject<any>; schemaId: string 
 
 const generateElementTitle = (
     hashtags: string,
-    elementName: string,
+    elementName: string | undefined,
     elementType: string,
     isRequired: boolean,
     isEnum: boolean,
@@ -120,7 +120,7 @@ const generateSinglePropertyRestriction = (schema) => {
 
 const generateSchemaSectionText = (
     hashtags: string,
-    name: string,
+    name: string | undefined,
     isRequired: boolean,
     schema: any,
     subSchemas: any

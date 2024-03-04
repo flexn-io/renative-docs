@@ -22,10 +22,16 @@ React native based engine with web transpiler provided by react-native-web and n
 
 ## Required NPM Packages
 
+macos (devDependencies)
+  - 
 
 
+windows (devDependencies)
+  - 
 
 
+linux (devDependencies)
+  - 
 
 
 

@@ -1,4 +1,4 @@
-import { writeFileSync, registerAllPlatformEngines } from '@rnv/core';
+import { writeFileSync, registerAllPlatformEngines, RnvContext } from '@rnv/core';
 import path from 'path';
 import fs from 'fs';
 
@@ -29,7 +29,7 @@ ${extContent}
     return true;
 };
 
-const _getExtensionContent = (c, platform) => {
+const _getExtensionContent = (c: RnvContext, platform) => {
     let out = `Extenstions are defined via engines. Engines with ${platform} support: \n`;
 
     registerAllPlatformEngines(c);

@@ -22,6 +22,8 @@ React native based engine with added support for tvOS platform. Runs standard re
 
 ## Required NPM Packages
 
+tvos (devDependencies)
+  - 
 
 
 

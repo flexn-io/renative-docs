@@ -23,16 +23,28 @@ Default react-native based engine. Runs standard react native apps with native s
 
 ## Required NPM Packages
 
+ios (devDependencies)
+  - 
 
 
+android (devDependencies)
+  - [jetifier](https://www.npmjs.com/package/jetifier)
 
 
+androidtv (devDependencies)
+  - [jetifier](https://www.npmjs.com/package/jetifier)
 
 
+firetv (devDependencies)
+  - [jetifier](https://www.npmjs.com/package/jetifier)
 
 
+androidwear (devDependencies)
+  - [jetifier](https://www.npmjs.com/package/jetifier)
 
 
+macos (devDependencies)
+  - 
 
 
 

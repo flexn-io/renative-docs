@@ -26,6 +26,8 @@ React native based engine with web transpiler provided by react-native-web
 
 
 
+tizen (dependencies)
+  - [raf](https://www.npmjs.com/package/raf)
 
 
 

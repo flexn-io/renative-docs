@@ -30,17 +30,15 @@ const _generateEngineDoc = (c: RnvContext, engine: RnvEngine) => {
     let npmPackages = '';
     let extensions = '';
 
-    let enginePlatforms: RnvEngine['config']['platforms'] = {};
-    if (engine?.config?.platforms) {
-        enginePlatforms = engine.config.platforms;
-    }
+    const enginePlatforms = engine?.platforms;
+    const engineConfigPlatforms = engine?.config.platforms;
 
     if (enginePlatforms) {
         Object.keys(enginePlatforms).forEach((v) => {
             const pKey = v as PlatformKey;
             const engPlatform = enginePlatforms?.[pKey];
             if (engPlatform) {
-                const { npm } = engPlatform;
+                const npm = engineConfigPlatforms?.[pKey]?.npm;
                 let output = '';
                 if (npm) {
                     Object.keys(npm).forEach((npmDepKey) => {

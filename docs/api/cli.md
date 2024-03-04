@@ -715,6 +715,21 @@ Example:
 npx rnv telemetry disable
 ```
 
+### deploy
+
+Deploy the binary via selected deployment intgeration or buld hook
+
+Available in engines: [engine-core](engines/engine-core.md)
+
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+
+Example:
+```bash
+npx rnv deploy
+```
+
 ### run
 
 Run your app on target device or emulator
@@ -734,7 +749,7 @@ npx rnv run
 
 Package source files into bundle
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
+Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
 
 
 Available Options:
@@ -794,7 +809,7 @@ npx rnv start
 
 Export the app into deployable binary
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
+Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-electron](engines/engine-rn-electron.md)
 
 
 Available Options:
@@ -803,36 +818,6 @@ Available Options:
 Example:
 ```bash
 npx rnv export
-```
-
-### deploy
-
-Deploy the binary via selected deployment intgeration or buld hook
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
-
-Example:
-```bash
-npx rnv deploy
-```
-
-### debug
-
-Debug your app on target device or emulator
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv debug
 ```
 
 ### eject
@@ -863,6 +848,21 @@ Available Options:
 Example:
 ```bash
 npx rnv log
+```
+
+### debug
+
+Debug your app on target device or emulator
+
+Available in engines: [engine-rn-web](engines/engine-rn-web.md)
+
+
+Available Options:
+[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+
+Example:
+```bash
+npx rnv debug
 ```
 
 ## Options
