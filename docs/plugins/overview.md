@@ -1,7 +1,7 @@
 ---
 id: overview
 title: Plugins Overview
-sidebar_label: Plugins Overview
+sidebar_label: Plugins
 ---
 
 
@@ -46,7 +46,7 @@ npx rnv plugin add @flexn/create
 
 Version: `4.2.7`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -100,7 +100,7 @@ npx rnv plugin add @flexn/shopify-flash-list
 
 Version: `0.2.4`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -118,7 +118,7 @@ npx rnv plugin add @flexn/typescript
 
 Version: `2.11.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -136,7 +136,7 @@ npx rnv plugin add @lightningjs/cli
 
 Version: `2.8.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -154,7 +154,7 @@ npx rnv plugin add @lightningjs/core
 
 Version: `5.2.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -172,7 +172,7 @@ npx rnv plugin add @lightningjs/sdk
 
 Version: `1.3.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -190,7 +190,7 @@ npx rnv plugin add @lightningjs/ui
 
 Version: `1.3.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -226,7 +226,7 @@ npx rnv plugin add @mapbox/react-native-mapbox-gl
 
 Version: `2.1.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -244,7 +244,7 @@ npx rnv plugin add @miblanchard/react-native-slider
 
 Version: `1.8.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -262,7 +262,7 @@ npx rnv plugin add @monterosa/react-native-parallax-scroll
 
 Version: `2.12.9`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -298,7 +298,7 @@ npx rnv plugin add @notifee/react-native
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -442,7 +442,7 @@ npx rnv plugin add @react-native-community/checkbox
 
 Version: `^6.0.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -460,7 +460,7 @@ npx rnv plugin add @react-native-community/cli
 
 Version: `^6.0.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -478,7 +478,7 @@ npx rnv plugin add @react-native-community/cli-platform-android
 
 Version: `^6.0.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -784,7 +784,7 @@ npx rnv plugin add @react-native-picker/picker
 
 Version: `0.67.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -802,7 +802,7 @@ npx rnv plugin add @react-native-windows/cli
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -820,7 +820,7 @@ npx rnv plugin add @react-navigation
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -838,7 +838,7 @@ npx rnv plugin add @react-navigation/bottom-tabs
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -856,7 +856,7 @@ npx rnv plugin add @react-navigation/core
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -874,7 +874,7 @@ npx rnv plugin add @react-navigation/drawer
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -892,7 +892,7 @@ npx rnv plugin add @react-navigation/elements
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -910,7 +910,7 @@ npx rnv plugin add @react-navigation/material-bottom-tabs
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -928,7 +928,7 @@ npx rnv plugin add @react-navigation/material-top-tabs
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -946,7 +946,7 @@ npx rnv plugin add @react-navigation/native
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -964,7 +964,7 @@ npx rnv plugin add @react-navigation/native-stack
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -982,7 +982,7 @@ npx rnv plugin add @react-navigation/routers
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1000,7 +1000,7 @@ npx rnv plugin add @react-navigation/stack
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1018,7 +1018,7 @@ npx rnv plugin add @react-navigation/web
 
 Version: `^1.8.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1036,7 +1036,7 @@ npx rnv plugin add @reduxjs/toolkit
 
 Version: `1.0.0-rc.12`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1054,7 +1054,7 @@ npx rnv plugin add @rnv/renative
 
 Version: `6.13.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1090,7 +1090,7 @@ npx rnv plugin add @sentry/react-native
 
 Version: `6.13.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1306,7 +1306,7 @@ npx rnv plugin add amazon-cognito-identity-js
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1324,7 +1324,7 @@ npx rnv plugin add aws-amplify
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1360,7 +1360,7 @@ npx rnv plugin add crashlytics
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1450,7 +1450,7 @@ npx rnv plugin add google-maps
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1504,7 +1504,7 @@ npx rnv plugin add ios-photo-editor
 
 Version: `2.0.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1540,7 +1540,7 @@ npx rnv plugin add lottie-react-native
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1558,7 +1558,7 @@ npx rnv plugin add metro
 
 Version: `2.12.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1576,7 +1576,7 @@ npx rnv plugin add native-base
 
 Version: `0.2.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1594,7 +1594,7 @@ npx rnv plugin add native-base-shoutem-theme
 
 Version: `12.1.6`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1612,7 +1612,7 @@ npx rnv plugin add next
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1630,7 +1630,7 @@ npx rnv plugin add next-seo
 
 Version: `18.2.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1648,7 +1648,7 @@ npx rnv plugin add react
 
 Version: `18.2.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1666,7 +1666,7 @@ npx rnv plugin add react-art
 
 Version: `18.2.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1684,7 +1684,7 @@ npx rnv plugin add react-dom
 
 Version: `4.3.12`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1720,7 +1720,7 @@ npx rnv plugin add react-native
 
 Version: `2.4.2`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1792,7 +1792,7 @@ npx rnv plugin add react-native-android-open-settings
 
 Version: `1.3.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1846,7 +1846,7 @@ npx rnv plugin add react-native-auth0
 
 Version: `5.3.2`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1918,7 +1918,7 @@ npx rnv plugin add react-native-blob-util
 
 Version: `1.4.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -1990,7 +1990,7 @@ npx rnv plugin add react-native-carplay
 
 Version: `1.3.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2080,7 +2080,7 @@ npx rnv plugin add react-native-device-info
 
 Version: `5.6.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2134,7 +2134,7 @@ npx rnv plugin add react-native-dominant-color
 
 Version: `1.1.7`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2152,7 +2152,7 @@ npx rnv plugin add react-native-draggable-flatlist
 
 Version: `0.14.4`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2188,7 +2188,7 @@ npx rnv plugin add react-native-dynamic-fonts
 
 Version: `0.2.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2224,7 +2224,7 @@ npx rnv plugin add react-native-exception-handler
 
 Version: `0.12.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2530,7 +2530,7 @@ npx rnv plugin add react-native-idle-timer
 
 Version: `1.0.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2638,7 +2638,7 @@ npx rnv plugin add react-native-keep-awake
 
 Version: `0.9.5`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2656,7 +2656,7 @@ npx rnv plugin add react-native-keyboard-aware-scroll-view
 
 Version: `0.4.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2710,7 +2710,7 @@ npx rnv plugin add react-native-linear-gradient
 
 Version: `2.2.4`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2746,7 +2746,7 @@ npx rnv plugin add react-native-localize
 
 Version: `3.2.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2764,7 +2764,7 @@ npx rnv plugin add react-native-lottie
 
 Version: `0.66.33`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2800,7 +2800,7 @@ npx rnv plugin add react-native-maps
 
 Version: `3.2.8`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2818,7 +2818,7 @@ npx rnv plugin add react-native-markdown-renderer
 
 Version: `0.7.6`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2836,7 +2836,7 @@ npx rnv plugin add react-native-material-dialog
 
 Version: `0.11.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2854,7 +2854,7 @@ npx rnv plugin add react-native-material-dropdown
 
 Version: `2.0.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2872,7 +2872,7 @@ npx rnv plugin add react-native-media-query
 
 Version: `13.0.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2926,7 +2926,7 @@ npx rnv plugin add react-native-nfc-manager
 
 Version: `0.0.7`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -2962,7 +2962,7 @@ npx rnv plugin add react-native-orientation-locker
 
 Version: `4.11.2`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3016,7 +3016,7 @@ npx rnv plugin add react-native-pdf
 
 Version: `0.3.2`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3124,7 +3124,7 @@ npx rnv plugin add react-native-picker
 
 Version: `8.0.4`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3142,7 +3142,7 @@ npx rnv plugin add react-native-picker-select
 
 Version: `3.5.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3214,7 +3214,7 @@ npx rnv plugin add react-native-render-html
 
 Version: `3.2.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3250,7 +3250,7 @@ npx rnv plugin add react-native-safe-area-context
 
 Version: `0.14.5`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3286,7 +3286,7 @@ npx rnv plugin add react-native-screens
 
 Version: `1.2.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3358,7 +3358,7 @@ npx rnv plugin add react-native-simple-compass
 
 Version: `2.7.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3394,7 +3394,7 @@ npx rnv plugin add react-native-simple-shadow-view
 
 Version: `3.9.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3502,7 +3502,7 @@ npx rnv plugin add react-native-sqlite-storage
 
 Version: `5.0.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3538,7 +3538,7 @@ npx rnv plugin add react-native-svg
 
 Version: `5.3.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3556,7 +3556,7 @@ npx rnv plugin add react-native-svg-charts
 
 Version: `2.3.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3574,7 +3574,7 @@ npx rnv plugin add react-native-swipeout
 
 Version: `github:reactseals/react-native-swiper#2.0.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3610,7 +3610,7 @@ npx rnv plugin add react-native-system-setting
 
 Version: `2.13.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3628,7 +3628,7 @@ npx rnv plugin add react-native-tab-view
 
 Version: `0.66.3-1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3736,7 +3736,7 @@ npx rnv plugin add react-native-video
 
 Version: `^2.8.1`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3790,7 +3790,7 @@ npx rnv plugin add react-native-view-shot
 
 Version: `0.2.13`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3808,7 +3808,7 @@ npx rnv plugin add react-native-viewpager
 
 Version: `0.18.9`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3826,7 +3826,7 @@ npx rnv plugin add react-native-web
 
 Version: `0.0.5`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3898,7 +3898,7 @@ npx rnv plugin add react-native-webview-bridge
 
 Version: `0.67.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3952,7 +3952,7 @@ npx rnv plugin add react-native-zss-rich-text-editor
 
 Version: `3.9.2`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3970,7 +3970,7 @@ npx rnv plugin add react-navigation
 
 Version: `2.3.3`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -3988,7 +3988,7 @@ npx rnv plugin add react-navigation-drawer
 
 Version: `1.4.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4006,7 +4006,7 @@ npx rnv plugin add react-navigation-stack
 
 Version: `2.0.0-alpha.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4024,7 +4024,7 @@ npx rnv plugin add react-navigation-tabs
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4042,7 +4042,7 @@ npx rnv plugin add react-outside-click-handler
 
 Version: `7.2.8`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4060,7 +4060,7 @@ npx rnv plugin add react-redux
 
 Version: `1.0.2`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4078,7 +4078,7 @@ npx rnv plugin add react-web-vector-icons
 
 Version: `4.2.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4096,7 +4096,7 @@ npx rnv plugin add recyclerlistview
 
 Version: `0.36.0-canary.4`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4132,7 +4132,7 @@ npx rnv plugin add rn-fetch-blob
 
 Version: `1.0.8`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4150,7 +4150,7 @@ npx rnv plugin add rnv-platform-info
 
 Version: `1.3.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4168,7 +4168,7 @@ npx rnv plugin add static-container
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4186,7 +4186,7 @@ npx rnv plugin add styled-jsx
 
 Version: `4.2.0`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4204,7 +4204,7 @@ npx rnv plugin add svgs
 
 Version: `6.8.4`
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4222,7 +4222,7 @@ npx rnv plugin add swiper
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 
@@ -4258,7 +4258,7 @@ npx rnv plugin add tipsi-stripe
 
 
 
-Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
+Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
 
 

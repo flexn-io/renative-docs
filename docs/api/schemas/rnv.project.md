@@ -1,7 +1,7 @@
 ---
 id: rnv.project
 title: rnv.project Schema
-sidebar_label: rnv.project
+sidebar_label: renative.json (Project Config)
 ---
 
 

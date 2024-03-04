@@ -5,20 +5,20 @@ sidebar_label: AWS
 original_id: aws
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_integrations.png" width="50" height="50" /> -->
 
-## Overview
 
 ReNative has the ability to deploy your website made with `rnv` to AWS.
 
 The files are uploaded to AWS from `platformBuilds/xxxxx_web/public` folder.
 
 
+---
 ## Commands
 
 `rnv deploy -p web -t aws`
 
 
+---
 ## Fallback via Build Hooks
 
 You can still use automated deploy via build hooks

@@ -1,7 +1,7 @@
 ---
 id: rnv.app
 title: rnv.app Schema
-sidebar_label: rnv.app
+sidebar_label: renative.json (App Config)
 ---
 
 

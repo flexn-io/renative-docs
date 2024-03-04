@@ -1,16 +1,17 @@
-import { generatePlugins } from './generatePlugins';
-import { updateMdFilesPlatforms } from './updateMdFilesPlatforms';
-import { updateMdFilesEngines } from './updateMdFilesEngines';
-import { generateEngineTaks } from './generateEngineDocs';
-import { generateSchema } from './generateDocsApiConfig';
+import { generatePlugins } from './genReferencePlugins';
+import { updateMdFilesPlatforms } from './genReferencePlatforms';
+import { updateMdFilesEngines } from './genReferenceEngines';
+import { generateDocsApiCli } from './genApiCli';
+import { generateSchema } from './genApiSchema';
+import { RnvContext } from '@rnv/core';
 
 const hooks = {
-    generateDocs: async (c) => {
+    generateDocs: async (c: RnvContext) => {
         await generatePlugins(c);
         await updateMdFilesPlatforms(c);
         await updateMdFilesEngines(c);
-        await generateEngineTaks(c);
-        await generateSchema(c);
+        await generateDocsApiCli(c);
+        await generateSchema();
     },
     prePublish: async (c) => {
         await generatePlugins(c);
@@ -22,7 +23,7 @@ const hooks = {
         return true;
     },
     updateMdFilesEngines,
-    generateEngineTaks,
+    generateDocsApiCli,
     // generateDocsApiBuildConfig,
     // generateDocsApiJsonConfig
 };

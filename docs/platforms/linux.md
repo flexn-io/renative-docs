@@ -20,6 +20,5 @@ original_id: Linux
 
 <img className="platform-image" src="https://renative.org/img/rnv_linux.gif" height="250"/>
 
-## Overview
 
 Experimental support

@@ -18,6 +18,7 @@ original_id: firefoxos
 
 <img className="platform-image" src="https://renative.org/img/rnv_firefoxos.gif" height="250"/>
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
@@ -26,6 +27,7 @@ Extenstions are defined via engines. Engines with firefoxos support:
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/) for IDE + Emulator
@@ -42,6 +44,7 @@ After installation you can launch it via Applications:
   </tr>
 </table>
 
+---
 ## Run
 
 Run on Simulator
@@ -62,6 +65,7 @@ Run in Browser
 rnv run -p firefoxos --hosted
 ```
 
+---
 ## App Config
 
 [see: Web based config](../api/json-config.md)

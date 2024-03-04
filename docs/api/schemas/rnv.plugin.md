@@ -1,7 +1,7 @@
 ---
 id: rnv.plugin
 title: rnv.plugin Schema
-sidebar_label: rnv.plugin
+sidebar_label: renative.plugin.json
 ---
 
 

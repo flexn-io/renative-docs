@@ -5,9 +5,7 @@ sidebar_label: Workspaces
 original_id: workspaces
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_workspace.png" width="50" height="50" /> -->
 
-## Overview
 
 Workspaces manage global scopes for ReNative projects.
 It allows to add private scoped templates and plugins to `rnv` commands
@@ -23,6 +21,7 @@ Workspace `myOtherOrganisation`
 
 run `rnv run workspaces list` to check your workspace list.
 
+---
 ## Custom Workspaces
 
 NOTE: `[WORKSPACE_PATH]` folder path can be customised in `~/.rnv/renative.workspaces.json`

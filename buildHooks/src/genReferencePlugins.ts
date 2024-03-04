@@ -1,4 +1,4 @@
-import { doResolve, readObjectSync, fsExistsSync, writeFileSync, SUPPORTED_PLATFORMS } from '@rnv/core';
+import { doResolve, readObjectSync, fsExistsSync, writeFileSync, SUPPORTED_PLATFORMS, PlatformKey } from '@rnv/core';
 import merge from 'deepmerge';
 import path from 'path';
 
@@ -6,10 +6,13 @@ export const generatePlugins = async (c) => {
     let out = `---
 id: overview
 title: Plugins Overview
-sidebar_label: Plugins Overview
+sidebar_label: Plugins
 ---
 `;
     const flexnPluginsPath = doResolve('@flexn/plugins');
+    if (!flexnPluginsPath) {
+        return;
+    }
     if (!fsExistsSync(flexnPluginsPath)) {
         return Promise.reject(`RNV Cannot find installed package: '@flexn/plugins`);
     }
@@ -18,7 +21,11 @@ sidebar_label: Plugins Overview
     const flexnPluginTemplates = readObjectSync(flexnPluginTemplatesPath);
     const rnvPluginTemplates = readObjectSync(c.paths.rnv.pluginTemplates.config);
 
-    const temps = merge(flexnPluginTemplates, rnvPluginTemplates);
+    if (!flexnPluginTemplates || !rnvPluginTemplates) {
+        return;
+    }
+
+    const temps = merge<any>(flexnPluginTemplates, rnvPluginTemplates);
 
     const ptk = Object.keys(temps.pluginTemplates).sort();
 
@@ -27,7 +34,7 @@ sidebar_label: Plugins Overview
         const npm = plugin.version ? `Npm: https://www.npmjs.com/package/${key}` : '';
         const version = plugin.version ? `Version: \`${plugin.version}\`` : '';
         const platforms = Object.keys(plugin)
-            .map((v) => (SUPPORTED_PLATFORMS.includes(v) ? v : null))
+            .map((v) => (SUPPORTED_PLATFORMS.includes(v as PlatformKey) ? v : null))
             .filter((v) => v);
         const supPlats = platforms.length ? platforms : SUPPORTED_PLATFORMS;
         const deprecated = plugin.deprecated ? `> ${plugin.deprecated}` : '';

@@ -5,9 +5,6 @@ sidebar_label: Plugins
 original_id: plugins
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_plugins.png" width="50" height="50" /> -->
-
-## Overview
 
 ReNative Supports standard community driven react-native plugins you can use to enhance the functionality of your apps:
 
@@ -37,14 +34,17 @@ Update your current plugins with latest ones from ReNative
 
 and follow the command prompt steps
 
+---
 ## Plugin CLI Reference
 
-[see: CLI API Reference](../api/tasks.md)
+[see: CLI API Reference](../api/cli.md)
 
+---
 ## Plugin Renative Config Reference
 
 [see: Config API Reference](../api/json-config.md#plugins)
 
+---
 ## Custom Plugin Support
 
 You can configure multiple React Native plugins without need to update project blueprints.
@@ -91,6 +91,7 @@ You can also customise default plugin configuration:
 }
 ```
 
+---
 ## Support for static frameworks (iOS/tvOS only)
 
 Some cocoapod dependecies required library to be imported as static one. you can configure it for each plugin separately
@@ -108,6 +109,7 @@ Some cocoapod dependecies required library to be imported as static one. you can
 }
 ```
 
+---
 ## Adapt 3rd party plugins to support rnv
 
 You can adapt existing plugin to support rnv projects

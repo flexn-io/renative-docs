@@ -36,7 +36,7 @@ const config = {
                 frontmatter: {
                     sidebar_label: '@rnv/core (Node)',
                 },
-                // plugin: ['typedoc-plugin-zod'],
+                plugin: ['typedoc-plugin-zod'],
                 // watch: true,
             },
         ],
@@ -100,13 +100,62 @@ const config = {
                 placeholder: 'Search...',
             },
             navbar: {
-                title: 'ReNative',
+                // title: 'ReNative',
                 hideOnScroll: false,
-                logo: {
-                    alt: 'Renative Logo',
-                    src: 'img/logo.svg',
-                },
+                // logo: {
+                //     alt: 'Renative Logo',
+                //     src: 'img/logo.svg',
+                // },
                 items: [
+                    // {
+                    //     position: 'left',
+                    //     label: 'v0.37',
+                    //     href: 'https://github.com/flexn-io/renative/releases/tag/0.37.0',
+                    // },
+                    // {
+                    //     type: 'doc',
+                    //     docId: 'overview/introduction',
+                    //     position: 'left',
+                    //     label: 'Docs',
+                    // },
+                    // {
+                    //     type: 'doc',
+                    //     docId: 'api/node/rnv-core/modules',
+                    //     position: 'left',
+                    //     label: 'API',
+                    // },
+                    // {
+                    //     type: 'custom-search-navbar-item',
+                    //     position: 'right',
+                    // },
+                    // {
+                    //     to: '/docs/overview/quickstart',
+                    //     label: 'Get started',
+                    //     position: 'right',
+                    //     className: 'button button--secondary navbar_button padding--sm',
+                    // },
+
+                    {
+                        href: 'https://www.flexn.io/',
+                        position: 'left',
+                        className: 'navbar_logo header-flexn-link',
+                        title: 'Flexn',
+                        'aria-label': 'Flexn',
+                    },
+                    {
+                        href: '/',
+                        position: 'left',
+                        className: 'navbar_logo header-separator-link',
+                        title: 'Separator',
+                        'aria-label': 'Separator',
+                    },
+                    {
+                        href: '/',
+                        position: 'left',
+                        className: 'navbar_logo header-renative-link',
+                        title: 'Renative',
+                        'aria-label': 'Renative',
+                    },
                     {
                         position: 'left',
                         label: 'v0.37',
@@ -120,9 +169,26 @@ const config = {
                     },
                     {
                         type: 'doc',
-                        docId: 'api/node/rnv-core/modules',
+                        docId: 'templates/overview',
+                        position: 'left',
+                        label: 'References',
+                    },
+                    {
+                        type: 'doc',
+                        docId: 'api/cli',
                         position: 'left',
                         label: 'API',
+                    },
+                    // {
+                    //     type: 'doc',
+                    //     docId: 'api/node/rnv-core/modules',
+                    //     position: 'left',
+                    //     label: 'Marketplace',
+                    // },
+                    {
+                        position: 'left',
+                        label: 'Enterprise',
+                        href: 'https:/flexn.io',
                     },
                     {
                         type: 'custom-search-navbar-item',

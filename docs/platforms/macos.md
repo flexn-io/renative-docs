@@ -18,16 +18,18 @@ original_id: macos
 
 <img className="platform-image" src="https://renative.org/img/rnv_macos.gif" height="250"/>
 
-## Overview
 
 - support for OSX/macOS
 - Based on Electron
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with macos support: 
+- [engine-rn](../engines/engine-rn#extensions)
+- [engine-rn-electron](../engines/engine-rn-electron#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 
@@ -64,6 +66,7 @@ rnv run -p macos -s release
 rnv export -p macos -s release
 ```
 
+---
 ## App Config
 
 [see: Web based config](../api/json-config.md)
