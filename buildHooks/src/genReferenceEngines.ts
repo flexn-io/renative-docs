@@ -1,10 +1,17 @@
-import { writeFileSync, registerAllPlatformEngines } from '@rnv/core';
+import {
+    writeFileSync,
+    registerAllPlatformEngines,
+    RnvContext,
+    RnvEngine,
+    PlatformKey,
+    RnvEnginePlatform,
+} from '@rnv/core';
 import path from 'path';
 import fs from 'fs';
 
-const cleanUrl = (v) => v.replace('@', '').replace('/', '');
+const cleanUrl = (v: string) => v.replace('@', '').replace('/', '');
 
-export const updateMdFilesEngines = async (c) => {
+export const updateMdFilesEngines = async (c: RnvContext) => {
     registerAllPlatformEngines(c);
     const engines = c.runtime.enginesById;
 
@@ -15,7 +22,7 @@ export const updateMdFilesEngines = async (c) => {
     return true;
 };
 
-const _generateEngineDoc = (c, engine) => {
+const _generateEngineDoc = (c: RnvContext, engine: RnvEngine) => {
     const docsPath = path.join(c.paths.project.dir, 'docs/engines');
     const docFilePath = path.join(docsPath, `${engine.config.id}.md`);
     const fileContent = fs.readFileSync(docFilePath).toString();
@@ -23,25 +30,31 @@ const _generateEngineDoc = (c, engine) => {
     let npmPackages = '';
     let extensions = '';
 
-    let enginePlatforms = {};
-    if (engine && engine.platforms) {
-        enginePlatforms = engine.platforms;
+    let enginePlatforms: RnvEngine['config']['platforms'] = {};
+    if (engine?.config?.platforms) {
+        enginePlatforms = engine.config.platforms;
     }
 
-    Object.keys(enginePlatforms).forEach((v) => {
-        const { npm } = enginePlatforms[v];
-        let output = '';
-        if (npm) {
-            Object.keys(npm).forEach((npmDepKey) => {
-                output += `${v} (${npmDepKey})\n  - ${Object.keys(npm[npmDepKey])
-                    .map((p) => `[${p}](https://www.npmjs.com/package/${p})`)
-                    .join(', ')}\n`;
-            });
-        }
-        npmPackages += `${output}\n\n`;
+    if (enginePlatforms) {
+        Object.keys(enginePlatforms).forEach((v) => {
+            const pKey = v as PlatformKey;
+            const engPlatform = enginePlatforms?.[pKey];
+            if (engPlatform) {
+                const { npm } = engPlatform;
+                let output = '';
+                if (npm) {
+                    Object.keys(npm).forEach((npmDepKey) => {
+                        output += `${v} (${npmDepKey})\n  - ${Object.keys(npm[npmDepKey])
+                            .map((p) => `[${p}](https://www.npmjs.com/package/${p})`)
+                            .join(', ')}\n`;
+                    });
+                }
+                npmPackages += `${output}\n\n`;
 
-        extensions += _getExtensionContent(c, v, engine);
-    });
+                extensions += _getExtensionContent(pKey, engine);
+            }
+        });
+    }
 
     let extraCntnt = 'N/A';
     let extraPlgns = {};
@@ -96,16 +109,16 @@ ${extContent}
     writeFileSync(docFilePath, fixedFile);
 };
 
-const _getExtensionContent = (c, platform, engine) => {
+const _getExtensionContent = (platform: PlatformKey, engine: RnvEngine) => {
     let out = '';
-    let p = {};
+    let p: RnvEnginePlatform | undefined;
     if (engine?.platforms?.[platform]) {
         p = engine.platforms[platform];
     }
 
     out += `### ${platform}\n\n`;
-    let extensions = [];
-    if (p.extensions) {
+    let extensions: string[] = [];
+    if (p?.extensions) {
         extensions = p.extensions;
     }
     if (extensions) {

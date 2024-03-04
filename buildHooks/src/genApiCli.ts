@@ -1,4 +1,10 @@
-import { writeFileSync, logHook, registerAllPlatformEngines, getAllSuitableTasks, PARAMS } from '@rnv/core';
+import {
+    writeFileSync,
+    logHook,
+    registerAllPlatformEngines,
+    getAllSuitableTasks,
+    RnvTaskOptionPresets,
+} from '@rnv/core';
 import path from 'path';
 
 const kebabToTitleCase = (string: string): string => {
@@ -55,7 +61,7 @@ sidebar_label: rnv CLI
 
         // options
         content += `\nAvailable Options:\n`;
-        const toDisplay = [];
+        const toDisplay: string[] = [];
         tsk.params?.forEach((param) => {
             toDisplay.push(`[\`${param.key}\`](#${param.key.toLowerCase()})`);
         });
@@ -86,7 +92,7 @@ sidebar_label: rnv CLI
 
     // CLI options
     content += `## Options\n\n`;
-    PARAMS.withAll().forEach((param) => {
+    RnvTaskOptionPresets.withAll().forEach((param) => {
         content += `### ${param.key}\n`;
         content += `${param.description}\n\n`;
         // content += `Required: ${param.isRequired ? 'Yes' : 'No'}\n\n`;
