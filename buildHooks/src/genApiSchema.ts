@@ -19,17 +19,29 @@ import path from 'path';
 import fs from 'fs';
 
 export const generateSchema = async () => {
-    _generateSchemaFile({ schema: RootProjectSchema, schemaId: 'rnv.project' });
-    _generateSchemaFile({ schema: RootAppSchema, schemaId: 'rnv.app' });
-    _generateSchemaFile({ schema: RootLocalSchema, schemaId: 'rnv.local' });
-    _generateSchemaFile({ schema: RootEngineSchema, schemaId: 'rnv.engine' });
-    _generateSchemaFile({ schema: RootGlobalSchema, schemaId: 'rnv.global' });
-    _generateSchemaFile({ schema: RootPluginsSchema, schemaId: 'rnv.plugins' });
-    _generateSchemaFile({ schema: RootTemplateSchema, schemaId: 'rnv.template' });
-    _generateSchemaFile({ schema: RootPrivateSchema, schemaId: 'rnv.private' });
-    _generateSchemaFile({ schema: RootPluginSchema, schemaId: 'rnv.plugin' });
-    _generateSchemaFile({ schema: RootTemplatesSchema, schemaId: 'rnv.templates' });
-    _generateSchemaFile({ schema: RootIntegrationSchema, schemaId: 'rnv.integration' });
+    _generateSchemaFile({
+        schema: RootProjectSchema,
+        schemaId: 'rnv.project',
+        sideBarTitle: 'renative.json (Project Config)',
+    });
+    _generateSchemaFile({ schema: RootAppSchema, schemaId: 'rnv.app', sideBarTitle: 'renative.json (App Config)' });
+    // _generateSchemaFile({ schema: RootLocalSchema, schemaId: 'rnv.local' });
+    // _generateSchemaFile({ schema: RootEngineSchema, schemaId: 'rnv.engine' });
+    // _generateSchemaFile({ schema: RootGlobalSchema, schemaId: 'rnv.global' });
+    // _generateSchemaFile({ schema: RootPluginsSchema, schemaId: 'rnv.plugins' });
+    _generateSchemaFile({
+        schema: RootTemplateSchema,
+        schemaId: 'rnv.template',
+        sideBarTitle: 'renative.template.json (Template Config)',
+    });
+    // _generateSchemaFile({ schema: RootPrivateSchema, schemaId: 'rnv.private' });
+    _generateSchemaFile({ schema: RootPluginSchema, schemaId: 'rnv.plugin', sideBarTitle: 'renative.plugin.json' });
+    // _generateSchemaFile({ schema: RootTemplatesSchema, schemaId: 'rnv.templates' });
+    _generateSchemaFile({
+        schema: RootIntegrationSchema,
+        schemaId: 'rnv.integration',
+        sideBarTitle: 'renative.integration.json',
+    });
 
     // add _category_ file
     const categoryContent = `label: "Config Descriptors"`;
@@ -41,8 +53,8 @@ export const generateSchema = async () => {
     logSuccess('Sucessfully exported all schemas');
 };
 
-const _generateSchemaFile = (opts: { schema: z.ZodObject<any>; schemaId: string }) => {
-    const { schema, schemaId } = opts;
+const _generateSchemaFile = (opts: { schema: z.ZodObject<any>; schemaId: string; sideBarTitle: string }) => {
+    const { schema, schemaId, sideBarTitle } = opts;
     const ctx = getContext();
     const jsonSchema: any = zodToJsonSchema(schema);
     jsonSchema['$schema'] = 'http://json-schema.org/draft-04/schema#';
@@ -53,7 +65,7 @@ const _generateSchemaFile = (opts: { schema: z.ZodObject<any>; schemaId: string 
     }
     const destPath = path.join(destFolder, `${schemaId}.md`);
     // console.log(generate(jsonSchema));
-    fs.writeFileSync(destPath, generate(jsonSchema, schemaId));
+    fs.writeFileSync(destPath, generate(jsonSchema, schemaId, sideBarTitle));
 };
 
 const generateElementTitle = (
@@ -255,7 +267,7 @@ const getActualType = (schema: any, subSchemas: any) => {
     }
 };
 
-const generate = (schema: any, id: string) => {
+const generate = (schema: any, id: string, sidebarLabel: string) => {
     const subSchemaTypes = Object.keys(schema.definitions || {}).reduce((map, subSchemaTypeName) => {
         map['#/definitions/' + subSchemaTypeName] = subSchemaTypeName;
         return map;
@@ -264,7 +276,7 @@ const generate = (schema: any, id: string) => {
     const header = `---
 id: ${id}
 title: ${id} Schema
-sidebar_label: ${id}
+sidebar_label: ${sidebarLabel}
 ---
 `;
 

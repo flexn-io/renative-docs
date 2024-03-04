@@ -1,7 +1,7 @@
 ---
 id: rnv.template
 title: rnv.template Schema
-sidebar_label: rnv.template
+sidebar_label: renative.template.json (Template Config)
 ---
 
 

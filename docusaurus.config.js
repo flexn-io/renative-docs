@@ -175,7 +175,7 @@ const config = {
                     },
                     {
                         type: 'doc',
-                        docId: 'api/node/rnv-core/modules',
+                        docId: 'api/cli',
                         position: 'left',
                         label: 'API',
                     },
