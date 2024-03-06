@@ -7,6 +7,8 @@ sidebar_label: Templates
 
 ## @rnv/template-starter
 
+Version: `0.37.0`
+
 <table>
   <tr>
     <th>
@@ -153,8 +155,6 @@ sidebar_label: Templates
     </th>
   </tr>
 </table>
-
-Version: `0.37.0`
 
 Platforms: `ios`,`android`,`firetv`,`androidtv`,`androidwear`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`firefoxos`,`firefoxtv`,`chromecast`
 
