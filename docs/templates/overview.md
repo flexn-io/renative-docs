@@ -72,17 +72,17 @@ Version: `0.37.0`
   </tr>
   <tr>
     <th>
-    <img src="/img/ic_firefoxos.png" width="20" height="20" />
+    <img src="/img/ic_androidwear.png" width="20" height="20" />
     <br />
-    <a href="/docs/platforms/firefoxos">FirefoxOS</a>
+    <a href="/docs/platforms/androidwear">Android Wear</a>
     </th><th>
     <img src="/img/ic_windows.png" width="20" height="20" />
     <br />
     <a href="/docs/platforms/windows">Windows</a>
     </th><th>
-    <img src="/img/ic_firefoxtv.png" width="20" height="20" />
+    <img src="/img/ic_tizenwatch.png" width="20" height="20" />
     <br />
-    <a href="/docs/platforms/firefoxtv">Firefox TV</a>
+    <a href="/docs/platforms/tizenwatch">Tizen Watch</a>
     </th><th>
     <img src="/img/ic_kaios.png" width="55" height="20" />
     <br />
@@ -91,44 +91,13 @@ Version: `0.37.0`
   </tr>
   <tr>
     <th>
-    <img src="/img/platforms/firefoxos_template_starter.png" />
+    <img src="/img/platforms/androidwear_template_starter.png" />
     </th><th>
     <img src="/img/platforms/windows_template_starter.png" />
     </th><th>
-    <img src="/img/platforms/firefoxtv_template_starter.png" />
-    </th><th>
-    <img src="/img/platforms/kaios_template_starter.png" />
-    </th>
-  </tr>
-
-  <tr>
-    <th>
-    <img src="/img/ic_tizen.png" width="20" height="20" />
-    <br />
-    <a href="/docs/platforms/tizenmobile">Tizen Mobile</a>
-    </th><th>
-    <img src="/img/ic_tizenwatch.png" width="20" height="20" />
-    <br />
-    <a href="/docs/platforms/tizenwatch">Tizen Watch</a>
-    </th><th>
-    <img src="/img/ic_androidwear.png" width="20" height="20" />
-    <br />
-    <a href="/docs/platforms/androidwear">Android Wear</a>
-    </th><th>
-    <img src="/img/ic_xbox.png" width="20" height="20" />
-    <br />
-    <a href="/docs/platforms/xbox">Xbox</a>
-    </th>
-  </tr>
-  <tr>
-    <th>
-    <img src="/img/platforms/tizenmobile_template_starter.png" />
-    </th><th>
     <img src="/img/platforms/tizenwatch_template_starter.png" />
     </th><th>
-    <img src="/img/platforms/androidwear_template_starter.png" />
-    </th><th>
-    <img src="/img/platforms/xbox_template_starter.png"/>
+    <img src="/img/platforms/kaios_template_starter.png" />
     </th>
   </tr>
 
