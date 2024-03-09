@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "moduleResolution": "node",
+        "esModuleInterop": true
+    },
+    "include": ["node_modules/@rnv/core/lib/*", "node_modules/@rnv/renative/lib/*", "node_modules/rnv/lib/*"]
+}

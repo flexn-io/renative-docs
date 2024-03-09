@@ -5,8 +5,6 @@ sidebar_label: engine-core
 original_id: engine-core
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
-
 <!--AUTO_GENERATED_START-->
 
 
@@ -27,6 +25,8 @@ N/A
 
 
 ## Extensions
+
+Extensions are shown in order of priority. The first extension in the list has highest priority.
 
 
 

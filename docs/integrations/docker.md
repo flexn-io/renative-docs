@@ -5,9 +5,7 @@ sidebar_label: Docker
 original_id: docker
 ---
 
-<img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" height="50" />
 
-## Overview
 
 ReNative has the ability to deploy your website made with `rnv` to Docker hub or export it to a Docker container.
 
@@ -34,12 +32,14 @@ The export contains 2 compose files. If you don't want to import the tar contain
 
 However, if you are just trying to test out the feature on the same machine that you ran `rnv export` or `rnv deploy` you can directly run `docker-compose up -d` without any changes because you already have the image with the correct tag in your docker instance.
 
+---
 ## Commands
 
 `rnv export -p web -t docker` - will build your project and create a docker image with an nginx server hosting it.
 
 `rnv deploy -p web -t docker` - same as above but also publish it to DockerHub. It will tag the image with 2 tags, one is the app's version and one is `latest`. This way you will have a history of all the versions and a `latest` one.
 
+---
 ## Advanced usage
 
 #### Offline usage

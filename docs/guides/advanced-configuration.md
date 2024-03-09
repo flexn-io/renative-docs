@@ -6,6 +6,7 @@ sidebar_label: Advanced Configurations
 
 Extremely versatile config system allows you to configure most of your project and environment by simple `renative.json` file changes.
 
+---
 ## Project Configuration
 
 Your main `renative.json` sits at the root of your project.
@@ -22,6 +23,7 @@ Configurations typically stored in your project `renative.json` :
 - Crypto configuration
 - workspaceID
 
+---
 ## App Configuration
 
 Every app configuration flavour contains its own `renative.*.json` file used to extend overall config with configurations specific to app flavour
@@ -34,6 +36,7 @@ Configurations typically stored in your project `appConfigs/[APP_ID]/renative.js
 - Build schemes
 - Runtime injections
 
+---
 ## Global Configuration
 
 Global `renative.*.json` are located in your workspace folder and workspace project folders.
@@ -47,6 +50,7 @@ Configurations typically stored in your project `~/./rnv/renative.json` :
 - SDK locations
 - default targets
 
+---
 ## Workspace Configuration
 
 `renative.workspaces.json` is special type because it serves and 1st entry to your ReNative config ecosystem.
@@ -74,10 +78,12 @@ You can then switch to custom workspace per each project `./renative.json`
 }
 ```
 
+---
 ## Template Configuration
 
 `renative.template.json` is special type because it serves as a template file during creation of new project.
 
+---
 ## Build Configuration
 
 Build config is special type because it is generated every `rnv` job and is unique for each platform and appConfig.
@@ -92,12 +98,14 @@ ie command `rnv run -p android -c helloworld` will genreate build file at:
 
 `./platformBuilds/helloworld_android.json`
 
+---
 ## Local Configuration
 
 `renative.local.json` is special type because it's never included in git repository.
 
 this allows you to create specific override related to your own local environment without compromising the integrity of your project
 
+---
 ## Private Configuration
 
 `renative.private.json` is special type because it is meant to store sensitive information.
@@ -108,6 +116,7 @@ It typically resides in your workspace directory and gets encrypted by `rnv cryp
 
 this allows you to inject sensitive information (deployment keys, keystores, certificates passwords etc) into your project without compromising its security
 
+---
 ## Runtime Configuration
 
 `renative.runtime.json` is special type because it is generated every `rnv` job.
@@ -138,6 +147,7 @@ with followng value:
 }
 ```
 
+---
 ## Configuration Merges
 
 ReNative always merges all relevant renative configs into one single build config.
@@ -178,6 +188,7 @@ Following is the order of merges of various renative configs (if present) produc
 `[PROJECT_PATH]/appConfigs/[APP_ID]/renative.private.json`<br />
 ⬇️
 `[PROJECT_PATH]/appConfigs/[APP_ID]/renative.local.json`<br />
+
 
 ---
 
@@ -357,6 +368,7 @@ You can inject env variables
 }
 ```
 
+---
 ## Config Values Overrides
 
 There are 3 levels of override entry objects for your props to fine-tune your app config:
@@ -407,6 +419,7 @@ Output config will be decorated with few extra props to help with debugging:
 }
 ```
 
+---
 ## Build Flavours
 
 You can configure different app ID, Title etc. with buildScheme field in you appConfig file.
@@ -438,6 +451,7 @@ and
 
 `rnv run -p ios -s release`
 
+---
 ## Runtime Props
 
 When you define object with key `runtime`, its properties will be merged into final `./platformAssets/renative.runtime.json` file

@@ -5,23 +5,23 @@ sidebar_label: engine-rn-windows
 original_id: engine-rn-windows
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
 
 <!--AUTO_GENERATED_START-->
 
 
-## Overview
-
 React native based engine with react-native-windows cli tool
 
+---
 ## Supported Platforms
 
 [windows](platforms/windows.md), [xbox](platforms/xbox.md)
 
+---
 ## Required Plugins
 
 [react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-windows](../plugins/overview#react-native-windows), [@react-native-windows/cli](../plugins/overview#react-native-windowscli)
 
+---
 ## Required NPM Packages
 
 
@@ -30,6 +30,7 @@ React native based engine with react-native-windows cli tool
 
 
 
+---
 ## Extensions
 
 ### windows

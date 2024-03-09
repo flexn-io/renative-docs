@@ -10,12 +10,6 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   align-items:center;
@@ -30,7 +24,7 @@
 }
 
 .version_link {
-  margin-top: 96px;
+  margin-top: 164px;
 }
 
 .description {
@@ -44,12 +38,19 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .version_link {
+    margin-top: 124px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .version_link {
+    margin-top: 72px;
+  }
+
   .h2 {
     width: auto;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .description {

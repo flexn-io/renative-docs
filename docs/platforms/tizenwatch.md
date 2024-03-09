@@ -18,23 +18,26 @@ original_id: tizenwatch
 
 <img className="platform-image" src="https://renative.org/img/rnv_tizenwatch.gif" height="250"/>
 
-## Overview
 
 - Latest Tizen project
 - Support for Tizen 5.0
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with tizenwatch support: 
+- [engine-rn-web](../engines/engine-rn-web#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - [Tizen SDK](https://developer.tizen.org/ko/development/tizen-studio/configurable-sdk) `5.0`
 
+---
 ## Project Configuration
 
 | Feature          | Version |
@@ -44,6 +47,7 @@ Extenstions are defined via engines. Engines with tizenwatch support:
 | react-native-web | `0.9.9` |
 | Babel Core       | `7.1.2` |
 
+---
 ## Emulator
 
 Make sure you have at least 1 TV VM setup
@@ -60,6 +64,7 @@ Make sure you have at least 1 TV VM setup
 rnv target launch -p tizenwatch -t W-5.0-circle-x86
 ```
 
+---
 ## Run
 
 ```
@@ -78,6 +83,7 @@ Run in Browser
 rnv run -p tizenwatch --hosted
 ```
 
+---
 ## Advanced
 
 Clean and Re-build platform project
@@ -92,6 +98,7 @@ Launch with specific Tizen Watch simulator:
 rnv run -p tizenwatch -t W-5.0-circle-x86
 ```
 
+---
 ## App Config
 
 [see: Web based config](../api/json-config.md)

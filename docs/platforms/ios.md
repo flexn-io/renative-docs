@@ -18,25 +18,28 @@ original_id: ios
 
 <img className="platform-image" src="https://renative.org/img/rnv_ios.gif" height="250"/>
 
-## Overview
 
 - Latest swift based Xcode project
 - Cocoapods Workspace ready
 - Swift 4.1 Support
 
+---
 ## File Extension Support
 
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with ios support: 
+- [engine-rn](../engines/engine-rn#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 
+---
 ## Requirements
 
 - [CocoaPods](https://cocoapods.org) `1.5.3` or newer
 - [Xcode](https://developer.apple.com/xcode/) for iOS development
 
+---
 ## Project Configuration
 
 | Feature           | Version |
@@ -44,6 +47,7 @@ Extenstions are defined via engines. Engines with ios support:
 | Swift             |  `4.1`  |
 | Deployment Target | `11.4`  |
 
+---
 ## Run on Simulator
 
 ```
@@ -51,6 +55,7 @@ rnv start
 rnv run -p ios
 ```
 
+---
 ## Run on Device
 
 IMPORTANT: before you run ReNative app on the actual iOS device you MUST:
@@ -99,6 +104,7 @@ rnv start
 rnv run -p ios -s ad-hoc -d
 ```
 
+---
 ## Deploy on Device
 
 This will run production version on your device (not connected to metro bundler)
@@ -109,6 +115,7 @@ rnv start
 rnv run -p ios -s release -d
 ```
 
+---
 ## Advanced
 
 Clean and Re-build platform project
@@ -159,6 +166,7 @@ Get device/simulator logs with filter
 rnv log -p ios -f com.myapp
 ```
 
+---
 ## App Store Releases
 
 `renative.json` scheme snippet for automatic signing releases
@@ -226,6 +234,7 @@ Create IPA:
 rnv export -p ios -s appstore
 ```
 
+---
 ## Advanced configuration examples
 
 Adding new props to plist:
@@ -243,6 +252,7 @@ Adding new props to plist:
 }
 ```
 
+---
 ## App Config
 
 [see: iOS based config](../api/json-config.md#ios-props)

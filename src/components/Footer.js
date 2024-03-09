@@ -6,33 +6,33 @@ import LogoDark from '../../static/img/dark/logo.svg'
 import {useColorMode} from '@docusaurus/theme-common';
 
 const ThemeModes = () => {
-  const {colorMode, setColorMode} = useColorMode();
+  const { colorMode, setColorMode } = useColorMode();
 
   let darkThemeClasses = 'theme-mode'
   let lightThemeClasses = 'theme-mode'
   if (colorMode === 'dark') {
-    darkThemeClasses += ' theme-mode-active'
+      darkThemeClasses += ' theme-mode-active'
   } else {
-    lightThemeClasses += ' theme-mode-active'
+      lightThemeClasses += ' theme-mode-active'
   }
   return (
-    <>
-      <div className="theme-modes">
-        <div className={lightThemeClasses} onClick={() => setColorMode('light')}>
-          <LightMode className="theme-mode-img"/>
-        </div>
-        <div className={darkThemeClasses} onClick={() => setColorMode('dark')}>
-          <DarkMode className="theme-mode-img"/>
-        </div>
-      </div>
-    </>)
+      <>
+          <div className="theme-modes">
+              <div className={lightThemeClasses} onClick={() => setColorMode('light')}>
+                  <LightMode className="theme-mode-img" />
+              </div>
+              <div className={darkThemeClasses} onClick={() => setColorMode('dark')}>
+                  <DarkMode className="theme-mode-img" />
+              </div>
+          </div>
+      </>)
 }
 
 export default function Footer() {
   const {colorMode} = useColorMode();
   const LogoLogo = colorMode === 'dark' ? LogoDark : Logo;
   return (
-    <div className="footer">
+    <div className="footer container">
       <div className="logo-container">
         <div>
           <LogoLogo className="footer-logo" />
@@ -40,6 +40,12 @@ export default function Footer() {
         <div className="copyright">
           Copyright © {new Date().getFullYear()} ReNative Org
         </div>
+
+        <div style={{display: 'flex', marginTop: 'auto', gap: '24px'}}>
+            <div className="icon_link github-link" onClick={() => window.location = 'https://github.com/flexn-io/renative'}></div>
+            <div className="icon_link twitter-link" onClick={() => window.location = 'https://twitter.com/renative'}></div>
+            <div className="icon_link youtube-link" onClick={() => window.location = 'https://www.youtube.com/@renative'}></div>
+          </div>
       </div>
       <div className="footer-container">
         <div className="container-title">Docs</div>

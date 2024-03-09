@@ -85,14 +85,14 @@ export default function CodeBlockString({
             </pre>
           )}
         </Highlight>
-        <div className={styles.buttonGroup}>
-          {(wordWrap.isEnabled || wordWrap.isCodeScrollable) && (
+        <div className={title? clsx(styles.buttonGroup, styles.buttonGroup_with_title) : styles.buttonGroup}>
+          {/* {(wordWrap.isEnabled || wordWrap.isCodeScrollable) && (
             <WordWrapButton
               className={styles.codeButton}
               onClick={() => wordWrap.toggle()}
               isEnabled={wordWrap.isEnabled}
             />
-          )}
+          )} */}
           <CopyButton className={styles.codeButton} code={code} />
         </div>
       </div>

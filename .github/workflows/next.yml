@@ -1,6 +1,9 @@
 name: Vercel Next Deployment
 env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  ALGOLIA_APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+  ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
 
 on:
   push:
@@ -16,14 +19,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "18.x"
-      - name: Release to GitHub Pages
+      - name: test
         run: |
-          yarn install --frozen-lockfile
-          npm run build
+          export CONFIG=$(cat ./config.next.json | jq -r tostring)
+          echo $CONFIG
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
+      - run: rm -rf .vercel
       - name: Pull Vercel Environment Information
-        run: vercel pull --yes --git-branch=release/1.0 --token=${{ secrets.VERCEL_TOKEN }}
-      # - name: Deploy Project Artifacts to Vercel
-        # run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --git-branch=release/1.0 --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build
+      - name: Deploy Project Artifacts to Vercel
+        run: |
+          url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
+          vercel alias --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} set "$url" docs-next.renative.org
+      - name: Update Algolia index
+        uses: addnab/docker-run-action@v3
+        with:
+          image: algolia/docsearch-scraper
+          options: --env-file=algolia.env 
+            
 

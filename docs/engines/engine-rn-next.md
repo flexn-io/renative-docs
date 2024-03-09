@@ -5,7 +5,6 @@ sidebar_label: engine-rn-next
 original_id: engine-rn-next
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
 
 <!--AUTO_GENERATED_START-->
 
@@ -32,140 +31,14 @@ React native based engine with web transpiler provided by react-native-web and r
 
 ## Extensions
 
+Extensions are shown in order of priority. The first extension in the list has highest priority.
+
 ### web
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-next.jsx` | 1 |
-| `engine-rn-next.js` | 2 |
-| `engine-rn-next.tsx` | 3 |
-| `engine-rn-next.ts` | 4 |
-| `web.browser.rnx.jsx` | 5 |
-| `web.browser.jsx` | 6 |
-| `web.browser.rnx.js` | 7 |
-| `web.browser.js` | 8 |
-| `web.browser.rnx.tsx` | 9 |
-| `web.browser.tsx` | 10 |
-| `web.browser.rnx.ts` | 11 |
-| `web.browser.ts` | 12 |
-| `browser.rnx.jsx` | 13 |
-| `browser.jsx` | 14 |
-| `browser.rnx.js` | 15 |
-| `browser.js` | 16 |
-| `browser.rnx.tsx` | 17 |
-| `browser.tsx` | 18 |
-| `browser.rnx.ts` | 19 |
-| `browser.ts` | 20 |
-| `server.next.rnx.jsx` | 21 |
-| `server.next.jsx` | 22 |
-| `server.next.rnx.js` | 23 |
-| `server.next.js` | 24 |
-| `server.next.rnx.tsx` | 25 |
-| `server.next.tsx` | 26 |
-| `server.next.rnx.ts` | 27 |
-| `server.next.ts` | 28 |
-| `server.web.rnx.jsx` | 29 |
-| `server.web.jsx` | 30 |
-| `server.web.rnx.js` | 31 |
-| `server.web.js` | 32 |
-| `server.web.rnx.tsx` | 33 |
-| `server.web.tsx` | 34 |
-| `server.web.rnx.ts` | 35 |
-| `server.web.ts` | 36 |
-| `next.rnx.jsx` | 37 |
-| `next.jsx` | 38 |
-| `next.rnx.js` | 39 |
-| `next.js` | 40 |
-| `next.rnx.tsx` | 41 |
-| `next.tsx` | 42 |
-| `next.rnx.ts` | 43 |
-| `next.ts` | 44 |
-| `browser.web.rnx.jsx` | 45 |
-| `browser.web.jsx` | 46 |
-| `browser.web.rnx.js` | 47 |
-| `browser.web.js` | 48 |
-| `browser.web.rnx.tsx` | 49 |
-| `browser.web.tsx` | 50 |
-| `browser.web.rnx.ts` | 51 |
-| `browser.web.ts` | 52 |
-| `web.rnx.jsx` | 53 |
-| `web.jsx` | 54 |
-| `web.rnx.js` | 55 |
-| `web.js` | 56 |
-| `web.rnx.tsx` | 57 |
-| `web.tsx` | 58 |
-| `web.rnx.ts` | 59 |
-| `web.ts` | 60 |
-| `jsx` | 61 |
-| `js` | 62 |
-| `tsx` | 63 |
-| `ts` | 64 |
-| `mjs` | 65 |
-| `json` | 66 |
-| `wasm` | 67 |
+`engine-rn-next.jsx`, `engine-rn-next.js`, `engine-rn-next.tsx`, `engine-rn-next.ts`, `web.browser.rnx.jsx`, `web.browser.jsx`, `web.browser.rnx.js`, `web.browser.js`, `web.browser.rnx.tsx`, `web.browser.tsx`, `web.browser.rnx.ts`, `web.browser.ts`, `browser.rnx.jsx`, `browser.jsx`, `browser.rnx.js`, `browser.js`, `browser.rnx.tsx`, `browser.tsx`, `browser.rnx.ts`, `browser.ts`, `server.next.rnx.jsx`, `server.next.jsx`, `server.next.rnx.js`, `server.next.js`, `server.next.rnx.tsx`, `server.next.tsx`, `server.next.rnx.ts`, `server.next.ts`, `server.web.rnx.jsx`, `server.web.jsx`, `server.web.rnx.js`, `server.web.js`, `server.web.rnx.tsx`, `server.web.tsx`, `server.web.rnx.ts`, `server.web.ts`, `next.rnx.jsx`, `next.jsx`, `next.rnx.js`, `next.js`, `next.rnx.tsx`, `next.tsx`, `next.rnx.ts`, `next.ts`, `browser.web.rnx.jsx`, `browser.web.jsx`, `browser.web.rnx.js`, `browser.web.js`, `browser.web.rnx.tsx`, `browser.web.tsx`, `browser.web.rnx.ts`, `browser.web.ts`, `web.rnx.jsx`, `web.jsx`, `web.rnx.js`, `web.js`, `web.rnx.tsx`, `web.tsx`, `web.rnx.ts`, `web.ts`, `jsx`, `js`, `tsx`, `ts`, `mjs`, `json`, `cjs`, `wasm`, 
 ### chromecast
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-next.jsx` | 1 |
-| `engine-rn-next.js` | 2 |
-| `engine-rn-next.tsx` | 3 |
-| `engine-rn-next.ts` | 4 |
-| `chromecast.tv.rnx.jsx` | 5 |
-| `chromecast.tv.jsx` | 6 |
-| `chromecast.tv.rnx.js` | 7 |
-| `chromecast.tv.js` | 8 |
-| `chromecast.tv.rnx.tsx` | 9 |
-| `chromecast.tv.tsx` | 10 |
-| `chromecast.tv.rnx.ts` | 11 |
-| `chromecast.tv.ts` | 12 |
-| `web.tv.rnx.jsx` | 13 |
-| `web.tv.jsx` | 14 |
-| `web.tv.rnx.js` | 15 |
-| `web.tv.js` | 16 |
-| `web.tv.rnx.tsx` | 17 |
-| `web.tv.tsx` | 18 |
-| `web.tv.rnx.ts` | 19 |
-| `web.tv.ts` | 20 |
-| `tv.rnx.jsx` | 21 |
-| `tv.jsx` | 22 |
-| `tv.rnx.js` | 23 |
-| `tv.js` | 24 |
-| `tv.rnx.tsx` | 25 |
-| `tv.tsx` | 26 |
-| `tv.rnx.ts` | 27 |
-| `tv.ts` | 28 |
-| `chromecast.rnx.jsx` | 29 |
-| `chromecast.jsx` | 30 |
-| `chromecast.rnx.js` | 31 |
-| `chromecast.js` | 32 |
-| `chromecast.rnx.tsx` | 33 |
-| `chromecast.tsx` | 34 |
-| `chromecast.rnx.ts` | 35 |
-| `chromecast.ts` | 36 |
-| `tv.web.rnx.jsx` | 37 |
-| `tv.web.jsx` | 38 |
-| `tv.web.rnx.js` | 39 |
-| `tv.web.js` | 40 |
-| `tv.web.rnx.tsx` | 41 |
-| `tv.web.tsx` | 42 |
-| `tv.web.rnx.ts` | 43 |
-| `tv.web.ts` | 44 |
-| `web.rnx.jsx` | 45 |
-| `web.jsx` | 46 |
-| `web.rnx.js` | 47 |
-| `web.js` | 48 |
-| `web.rnx.tsx` | 49 |
-| `web.tsx` | 50 |
-| `web.rnx.ts` | 51 |
-| `web.ts` | 52 |
-| `jsx` | 53 |
-| `js` | 54 |
-| `tsx` | 55 |
-| `ts` | 56 |
-| `mjs` | 57 |
-| `json` | 58 |
-| `wasm` | 59 |
+`engine-rn-next.jsx`, `engine-rn-next.js`, `engine-rn-next.tsx`, `engine-rn-next.ts`, `chromecast.tv.rnx.jsx`, `chromecast.tv.jsx`, `chromecast.tv.rnx.js`, `chromecast.tv.js`, `chromecast.tv.rnx.tsx`, `chromecast.tv.tsx`, `chromecast.tv.rnx.ts`, `chromecast.tv.ts`, `web.tv.rnx.jsx`, `web.tv.jsx`, `web.tv.rnx.js`, `web.tv.js`, `web.tv.rnx.tsx`, `web.tv.tsx`, `web.tv.rnx.ts`, `web.tv.ts`, `tv.rnx.jsx`, `tv.jsx`, `tv.rnx.js`, `tv.js`, `tv.rnx.tsx`, `tv.tsx`, `tv.rnx.ts`, `tv.ts`, `chromecast.rnx.jsx`, `chromecast.jsx`, `chromecast.rnx.js`, `chromecast.js`, `chromecast.rnx.tsx`, `chromecast.tsx`, `chromecast.rnx.ts`, `chromecast.ts`, `tv.web.rnx.jsx`, `tv.web.jsx`, `tv.web.rnx.js`, `tv.web.js`, `tv.web.rnx.tsx`, `tv.web.tsx`, `tv.web.rnx.ts`, `tv.web.ts`, `web.rnx.jsx`, `web.jsx`, `web.rnx.js`, `web.js`, `web.rnx.tsx`, `web.tsx`, `web.rnx.ts`, `web.ts`, `jsx`, `js`, `tsx`, `ts`, `mjs`, `json`, `cjs`, `wasm`, 
 
 
 

@@ -5,8 +5,6 @@ sidebar_label: engine-rn-electron
 original_id: engine-rn-electron
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_engine.png" width="50" height="50" /> -->
-
 <!--AUTO_GENERATED_START-->
 
 
@@ -20,209 +18,37 @@ React native based engine with web transpiler provided by react-native-web and n
 
 ## Required Plugins
 
-[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web), [@react-native-community/cli-platform-ios](../plugins/overview#react-native-communitycli-platform-ios), [@react-native-community/cli](../plugins/overview#react-native-communitycli)
+[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-web](../plugins/overview#react-native-web)
 
 ## Required NPM Packages
 
+macos (devDependencies)
+  - 
 
 
+windows (devDependencies)
+  - 
 
 
+linux (devDependencies)
+  - 
 
 
 
 
 ## Extensions
 
+Extensions are shown in order of priority. The first extension in the list has highest priority.
+
 ### macos
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-electron.jsx` | 1 |
-| `engine-rn-electron.js` | 2 |
-| `engine-rn-electron.tsx` | 3 |
-| `engine-rn-electron.ts` | 4 |
-| `macos.desktop.rne.jsx` | 5 |
-| `macos.desktop.jsx` | 6 |
-| `macos.desktop.rne.js` | 7 |
-| `macos.desktop.js` | 8 |
-| `macos.desktop.rne.tsx` | 9 |
-| `macos.desktop.tsx` | 10 |
-| `macos.desktop.rne.ts` | 11 |
-| `macos.desktop.ts` | 12 |
-| `desktop.rne.jsx` | 13 |
-| `desktop.jsx` | 14 |
-| `desktop.rne.js` | 15 |
-| `desktop.js` | 16 |
-| `desktop.rne.tsx` | 17 |
-| `desktop.tsx` | 18 |
-| `desktop.rne.ts` | 19 |
-| `desktop.ts` | 20 |
-| `macos.rne.jsx` | 21 |
-| `macos.jsx` | 22 |
-| `macos.rne.js` | 23 |
-| `macos.js` | 24 |
-| `macos.rne.tsx` | 25 |
-| `macos.tsx` | 26 |
-| `macos.rne.ts` | 27 |
-| `macos.ts` | 28 |
-| `desktop.web.rne.jsx` | 29 |
-| `desktop.web.jsx` | 30 |
-| `desktop.web.rne.js` | 31 |
-| `desktop.web.js` | 32 |
-| `desktop.web.rne.tsx` | 33 |
-| `desktop.web.tsx` | 34 |
-| `desktop.web.rne.ts` | 35 |
-| `desktop.web.ts` | 36 |
-| `electron.rne.jsx` | 37 |
-| `electron.jsx` | 38 |
-| `electron.rne.js` | 39 |
-| `electron.js` | 40 |
-| `electron.rne.tsx` | 41 |
-| `electron.tsx` | 42 |
-| `electron.rne.ts` | 43 |
-| `electron.ts` | 44 |
-| `web.rne.jsx` | 45 |
-| `web.jsx` | 46 |
-| `web.rne.js` | 47 |
-| `web.js` | 48 |
-| `web.rne.tsx` | 49 |
-| `web.tsx` | 50 |
-| `web.rne.ts` | 51 |
-| `web.ts` | 52 |
-| `jsx` | 53 |
-| `js` | 54 |
-| `tsx` | 55 |
-| `ts` | 56 |
-| `mjs` | 57 |
-| `json` | 58 |
-| `wasm` | 59 |
+`engine-rn-electron.jsx`, `engine-rn-electron.js`, `engine-rn-electron.tsx`, `engine-rn-electron.ts`, `macos.desktop.rne.jsx`, `macos.desktop.jsx`, `macos.desktop.rne.js`, `macos.desktop.js`, `macos.desktop.rne.tsx`, `macos.desktop.tsx`, `macos.desktop.rne.ts`, `macos.desktop.ts`, `desktop.rne.jsx`, `desktop.jsx`, `desktop.rne.js`, `desktop.js`, `desktop.rne.tsx`, `desktop.tsx`, `desktop.rne.ts`, `desktop.ts`, `macos.rne.jsx`, `macos.jsx`, `macos.rne.js`, `macos.js`, `macos.rne.tsx`, `macos.tsx`, `macos.rne.ts`, `macos.ts`, `desktop.web.rne.jsx`, `desktop.web.jsx`, `desktop.web.rne.js`, `desktop.web.js`, `desktop.web.rne.tsx`, `desktop.web.tsx`, `desktop.web.rne.ts`, `desktop.web.ts`, `electron.rne.jsx`, `electron.jsx`, `electron.rne.js`, `electron.js`, `electron.rne.tsx`, `electron.tsx`, `electron.rne.ts`, `electron.ts`, `web.rne.jsx`, `web.jsx`, `web.rne.js`, `web.js`, `web.rne.tsx`, `web.tsx`, `web.rne.ts`, `web.ts`, `jsx`, `js`, `tsx`, `ts`, `mjs`, `json`, `cjs`, `wasm`, 
 ### windows
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-electron.jsx` | 1 |
-| `engine-rn-electron.js` | 2 |
-| `engine-rn-electron.tsx` | 3 |
-| `engine-rn-electron.ts` | 4 |
-| `windows.desktop.rne.jsx` | 5 |
-| `windows.desktop.jsx` | 6 |
-| `windows.desktop.rne.js` | 7 |
-| `windows.desktop.js` | 8 |
-| `windows.desktop.rne.tsx` | 9 |
-| `windows.desktop.tsx` | 10 |
-| `windows.desktop.rne.ts` | 11 |
-| `windows.desktop.ts` | 12 |
-| `desktop.rne.jsx` | 13 |
-| `desktop.jsx` | 14 |
-| `desktop.rne.js` | 15 |
-| `desktop.js` | 16 |
-| `desktop.rne.tsx` | 17 |
-| `desktop.tsx` | 18 |
-| `desktop.rne.ts` | 19 |
-| `desktop.ts` | 20 |
-| `windows.rne.jsx` | 21 |
-| `windows.jsx` | 22 |
-| `windows.rne.js` | 23 |
-| `windows.js` | 24 |
-| `windows.rne.tsx` | 25 |
-| `windows.tsx` | 26 |
-| `windows.rne.ts` | 27 |
-| `windows.ts` | 28 |
-| `desktop.web.rne.jsx` | 29 |
-| `desktop.web.jsx` | 30 |
-| `desktop.web.rne.js` | 31 |
-| `desktop.web.js` | 32 |
-| `desktop.web.rne.tsx` | 33 |
-| `desktop.web.tsx` | 34 |
-| `desktop.web.rne.ts` | 35 |
-| `desktop.web.ts` | 36 |
-| `electron.rne.jsx` | 37 |
-| `electron.jsx` | 38 |
-| `electron.rne.js` | 39 |
-| `electron.js` | 40 |
-| `electron.rne.tsx` | 41 |
-| `electron.tsx` | 42 |
-| `electron.rne.ts` | 43 |
-| `electron.ts` | 44 |
-| `web.rne.jsx` | 45 |
-| `web.jsx` | 46 |
-| `web.rne.js` | 47 |
-| `web.js` | 48 |
-| `web.rne.tsx` | 49 |
-| `web.tsx` | 50 |
-| `web.rne.ts` | 51 |
-| `web.ts` | 52 |
-| `jsx` | 53 |
-| `js` | 54 |
-| `tsx` | 55 |
-| `ts` | 56 |
-| `mjs` | 57 |
-| `json` | 58 |
-| `wasm` | 59 |
+`engine-rn-electron.jsx`, `engine-rn-electron.js`, `engine-rn-electron.tsx`, `engine-rn-electron.ts`, `windows.desktop.rne.jsx`, `windows.desktop.jsx`, `windows.desktop.rne.js`, `windows.desktop.js`, `windows.desktop.rne.tsx`, `windows.desktop.tsx`, `windows.desktop.rne.ts`, `windows.desktop.ts`, `desktop.rne.jsx`, `desktop.jsx`, `desktop.rne.js`, `desktop.js`, `desktop.rne.tsx`, `desktop.tsx`, `desktop.rne.ts`, `desktop.ts`, `windows.rne.jsx`, `windows.jsx`, `windows.rne.js`, `windows.js`, `windows.rne.tsx`, `windows.tsx`, `windows.rne.ts`, `windows.ts`, `desktop.web.rne.jsx`, `desktop.web.jsx`, `desktop.web.rne.js`, `desktop.web.js`, `desktop.web.rne.tsx`, `desktop.web.tsx`, `desktop.web.rne.ts`, `desktop.web.ts`, `electron.rne.jsx`, `electron.jsx`, `electron.rne.js`, `electron.js`, `electron.rne.tsx`, `electron.tsx`, `electron.rne.ts`, `electron.ts`, `web.rne.jsx`, `web.jsx`, `web.rne.js`, `web.js`, `web.rne.tsx`, `web.tsx`, `web.rne.ts`, `web.ts`, `jsx`, `js`, `tsx`, `ts`, `mjs`, `json`, `cjs`, `wasm`, 
 ### linux
 
-| Extension | Priority  |
-      | --------- | :-------: |
-| `engine-rn-electron.jsx` | 1 |
-| `engine-rn-electron.js` | 2 |
-| `engine-rn-electron.tsx` | 3 |
-| `engine-rn-electron.ts` | 4 |
-| `linux.desktop.rne.jsx` | 5 |
-| `linux.desktop.jsx` | 6 |
-| `linux.desktop.rne.js` | 7 |
-| `linux.desktop.js` | 8 |
-| `linux.desktop.rne.tsx` | 9 |
-| `linux.desktop.tsx` | 10 |
-| `linux.desktop.rne.ts` | 11 |
-| `linux.desktop.ts` | 12 |
-| `desktop.rne.jsx` | 13 |
-| `desktop.jsx` | 14 |
-| `desktop.rne.js` | 15 |
-| `desktop.js` | 16 |
-| `desktop.rne.tsx` | 17 |
-| `desktop.tsx` | 18 |
-| `desktop.rne.ts` | 19 |
-| `desktop.ts` | 20 |
-| `linux.rne.jsx` | 21 |
-| `linux.jsx` | 22 |
-| `linux.rne.js` | 23 |
-| `linux.js` | 24 |
-| `linux.rne.tsx` | 25 |
-| `linux.tsx` | 26 |
-| `linux.rne.ts` | 27 |
-| `linux.ts` | 28 |
-| `desktop.web.rne.jsx` | 29 |
-| `desktop.web.jsx` | 30 |
-| `desktop.web.rne.js` | 31 |
-| `desktop.web.js` | 32 |
-| `desktop.web.rne.tsx` | 33 |
-| `desktop.web.tsx` | 34 |
-| `desktop.web.rne.ts` | 35 |
-| `desktop.web.ts` | 36 |
-| `electron.rne.jsx` | 37 |
-| `electron.jsx` | 38 |
-| `electron.rne.js` | 39 |
-| `electron.js` | 40 |
-| `electron.rne.tsx` | 41 |
-| `electron.tsx` | 42 |
-| `electron.rne.ts` | 43 |
-| `electron.ts` | 44 |
-| `web.rne.jsx` | 45 |
-| `web.jsx` | 46 |
-| `web.rne.js` | 47 |
-| `web.js` | 48 |
-| `web.rne.tsx` | 49 |
-| `web.tsx` | 50 |
-| `web.rne.ts` | 51 |
-| `web.ts` | 52 |
-| `jsx` | 53 |
-| `js` | 54 |
-| `tsx` | 55 |
-| `ts` | 56 |
-| `mjs` | 57 |
-| `json` | 58 |
-| `wasm` | 59 |
+`engine-rn-electron.jsx`, `engine-rn-electron.js`, `engine-rn-electron.tsx`, `engine-rn-electron.ts`, `linux.desktop.rne.jsx`, `linux.desktop.jsx`, `linux.desktop.rne.js`, `linux.desktop.js`, `linux.desktop.rne.tsx`, `linux.desktop.tsx`, `linux.desktop.rne.ts`, `linux.desktop.ts`, `desktop.rne.jsx`, `desktop.jsx`, `desktop.rne.js`, `desktop.js`, `desktop.rne.tsx`, `desktop.tsx`, `desktop.rne.ts`, `desktop.ts`, `linux.rne.jsx`, `linux.jsx`, `linux.rne.js`, `linux.js`, `linux.rne.tsx`, `linux.tsx`, `linux.rne.ts`, `linux.ts`, `desktop.web.rne.jsx`, `desktop.web.jsx`, `desktop.web.rne.js`, `desktop.web.js`, `desktop.web.rne.tsx`, `desktop.web.tsx`, `desktop.web.rne.ts`, `desktop.web.ts`, `electron.rne.jsx`, `electron.jsx`, `electron.rne.js`, `electron.js`, `electron.rne.tsx`, `electron.tsx`, `electron.rne.ts`, `electron.ts`, `web.rne.jsx`, `web.jsx`, `web.rne.js`, `web.js`, `web.rne.tsx`, `web.tsx`, `web.rne.ts`, `web.ts`, `jsx`, `js`, `tsx`, `ts`, `mjs`, `json`, `cjs`, `wasm`, 
 
 
 
