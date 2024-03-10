@@ -5,27 +5,22 @@ import { generateDocsApiCli } from './genApiCli';
 import { generateSchema } from './genApiSchema';
 import { RnvContext } from '@rnv/core';
 
+const generateDocs = async (c: RnvContext) => {
+    await generatePlugins(c);
+    await updateMdFilesPlatforms(c);
+    await updateMdFilesEngines(c);
+    await generateDocsApiCli(c);
+    await generateSchema();
+    return true;
+};
+
 const hooks = {
-    generateDocs: async (c: RnvContext) => {
-        await generatePlugins(c);
-        await updateMdFilesPlatforms(c);
-        await updateMdFilesEngines(c);
-        await generateDocsApiCli(c);
-        await generateSchema();
-    },
+    generateDocs,
     prePublish: async (c) => {
-        await generatePlugins(c);
-        // await updateMdFilesPlatforms(c);
-        await updateMdFilesEngines(c);
-        // await generateEngineTaks(c);
-        // await generateDocsApiJsonConfig(c);
-        // await generateDocsApiBuildConfig(c);
+        await generateDocs(c);
+        // Any other pre-publish
         return true;
     },
-    updateMdFilesEngines,
-    generateDocsApiCli,
-    // generateDocsApiBuildConfig,
-    // generateDocsApiJsonConfig
 };
 
 const pipes = {};
