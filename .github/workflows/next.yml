@@ -19,19 +19,15 @@ jobs:
             - uses: actions/setup-node@v4
               with:
                   node-version: '18.x'
-            - name: test
-              #! remove PREVENT_INDEXING on live
-              run: |
-                  export CONFIG=$(cat ./config.next.json | jq -r tostring)
-                  export PREVENT_INDEXING=true
-                  echo $CONFIG
+
             - name: Install Vercel CLI
               run: npm install --global vercel@latest
             - run: rm -rf .vercel
             - name: Pull Vercel Environment Information
               run: vercel pull --yes --git-branch=release/1.0 --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
             - name: Build Project Artifacts
-              run: vercel build
+              #! remove PREVENT_INDEXING on live
+              run: PREVENT_INDEXING=true vercel build
             - name: Deploy Project Artifacts to Vercel
               run: |
                   url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
