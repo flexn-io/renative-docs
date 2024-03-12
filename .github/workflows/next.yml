@@ -27,7 +27,7 @@ jobs:
               run: vercel pull --yes --git-branch=release/1.0 --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
             - name: Build Project Artifacts
               #! remove PREVENT_INDEXING on live
-              run: PREVENT_INDEXING=true vercel build
+              run: vercel build
             - name: Deploy Project Artifacts to Vercel
               run: |
                   url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
