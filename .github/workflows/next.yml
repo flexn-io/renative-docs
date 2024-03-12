@@ -28,6 +28,9 @@ jobs:
             - name: Build Project Artifacts
               #! remove PREVENT_INDEXING on live
               run: vercel build
+              env:
+                  PREVENT_INDEXING: false
+                  DOCS_URL: https://docs-next.renative.org
             - name: Deploy Project Artifacts to Vercel
               run: |
                   url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
