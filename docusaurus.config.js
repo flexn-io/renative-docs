@@ -12,7 +12,6 @@ const config = {
     baseUrl: '/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
-    noIndex: process.env.PREVENT_INDEXING === 'true',
     favicon: 'img/favicon.ico',
     trailingSlash: false,
     organizationName: 'flexn-io', // Usually your GitHub org/user name.

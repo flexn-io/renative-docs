@@ -20,10 +20,8 @@ jobs:
               with:
                   node-version: '18.x'
             - name: test
-              #! remove PREVENT_INDEXING on live
               run: |
                   export CONFIG=$(cat ./config.next.json | jq -r tostring)
-                  # export PREVENT_INDEXING=true
                   echo $CONFIG
             - name: Install Vercel CLI
               run: npm install --global vercel@latest
