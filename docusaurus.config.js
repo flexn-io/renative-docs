@@ -188,7 +188,7 @@ const config = {
                     {
                         position: 'left',
                         label: 'Enterprise',
-                        href: 'https:/flexn.io',
+                        href: 'https://www.flexn.io',
                     },
                     {
                         type: 'custom-search-navbar-item',
