@@ -96,7 +96,7 @@ const config = {
             algolia: {
                 appId: 'FMYKKKF9Q8',
                 apiKey: 'fd3bf87fce092e08e71378cf066734b2',
-                indexName: 'renative_docs',
+                indexName: process.env.ALGOLIA_INDEX || 'renative_docs',
                 placeholder: 'Search...',
             },
             navbar: {
