@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const config = {
     title: 'ReNative',
     tagline: 'Unified Development Platform',
-    url: 'https://renative.org',
+    url: process.env.BASE_URL || 'https://renative.org',
     baseUrl: '/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
