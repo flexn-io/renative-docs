@@ -35,9 +35,13 @@ jobs:
               run: |
                   url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
                   vercel alias --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} set "$url" docs-next.renative.org
+            - name: test curl
+              run: curl https://docs-next.renative.org/sitemap.xml | head -n 1
             - name: Update Algolia index
               uses: addnab/docker-run-action@v3
               with:
                   image: algolia/docsearch-scraper
                   options: --env-file=algolia.env
-                  run: CONFIG='${{ steps.scraper_config.outputs.scraper_config }}' pipenv run python -m src.index
+                  run: |
+                      curl https://docs-next.renative.org/sitemap.xml | head -n 1
+                      CONFIG='${{ steps.scraper_config.outputs.scraper_config }}' pipenv run python -m src.index
