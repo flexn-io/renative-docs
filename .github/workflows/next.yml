@@ -40,4 +40,4 @@ jobs:
               with:
                   image: algolia/docsearch-scraper
                   options: --env-file=algolia.env
-                  run: CONFIG='${{ toJson(steps.scraper_config.outputs.scraper_config) }}' pipenv run python -m src.index
+                  run: CONFIG='${{ steps.scraper_config.outputs.scraper_config }}' pipenv run python -m src.index
