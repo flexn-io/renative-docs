@@ -25,11 +25,11 @@ jobs:
             - name: Pull Vercel Environment Information
               run: vercel pull --yes --git-branch=release/1.0 --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
             - name: Build Project Artifacts
-              run: BASE_URL=https://docs-next.renative.org ALGOLIA_INDEX=renative_docsearch vercel build
+              run: BASE_URL=https://next.renative.org ALGOLIA_INDEX=renative_docsearch vercel build
             - name: Deploy Project Artifacts to Vercel
               run: |
                   url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
-                  vercel alias --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} set "$url" docs-next.renative.org
+                  vercel alias --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} set "$url" next.renative.org
             - name: Update Algolia index
               uses: addnab/docker-run-action@v3
               with:

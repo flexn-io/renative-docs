@@ -1,7 +1,7 @@
 {
     "index_name": "renative_docsearch",
     "sitemap_urls": [
-        "https://docs-next.renative.org/sitemap.xml"
+        "https://next.renative.org/sitemap.xml"
     ],
     "selectors": {
         "lvl0": {
