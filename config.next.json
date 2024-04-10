@@ -15,5 +15,16 @@
         "lvl4": "article h5, article td:first-child",
         "lvl5": "article h6",
         "content": "article p, article li, article td:last-child"
+    },
+    "strip_chars": " .,;:#",
+    "custom_settings": {
+        "attributesToRetrieve": [
+            "hierarchy",
+            "content",
+            "anchor",
+            "url",
+            "url_without_anchor",
+            "type"
+        ]
     }
 }
