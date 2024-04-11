@@ -9,21 +9,21 @@ sidebar_label: renative.json (Project Config)
 
 The schema defines the following properties:
 
-## `workspaceID` (string, required)
+## `workspaceID` (string)
 
 Workspace ID your project belongs to. This will mach same folder name in the root of your user directory. ie `~/` on macOS
 
-## `projectVersion` (string, required)
+## `projectVersion` (string)
 
-## `projectName` (string, required)
+Version of project
+
+## `projectName` (string)
 
 Name of the project which will be used in workspace as folder name. this will also be used as part of the KEY in crypto env var generator
 
-## `isMonorepo` (boolean)
-
-Mark if your project is part of monorepo
-
 ## `isTemplate` (boolean)
+
+Marks project as template. This disables certain user checks like version mismatch etc
 
 ## `defaults` (object)
 
@@ -58,16 +58,6 @@ Override of default targets specific to this project
 To avoid rnv building `buildHooks/src` every time you can specify which specific pipes should trigger recompile of buildHooks
 
 The object is an array with all elements of the type `string`.
-
-## `templates` (object, required)
-
-Stores installed templates info in your project.
-
-NOTE: This prop will be updated by rnv if you run `rnv template install`
-
-## `currentTemplate` (string, required)
-
-Currently active template used in this project. this allows you to re-bootstrap whole project by running `rnv template apply`
 
 ## `crypto` (object)
 
@@ -118,28 +108,6 @@ Custom path to platformBuilds folder. defaults to `./platformBuilds`
 
 
         Allows you to define custom plugin template scopes. default scope for all plugins is `rnv`.
-        this custom scope can then be used by plugin via `"source:myCustomScope"` value
-        
-        those will allow you to use direct pointer to preconfigured plugin:
-        
-        ```
-        "plugin-name": "source:myCustomScope"
-        ```
-        
-        NOTE: by default every plugin you define with scope will also merge any
-        files defined in overrides automatically to your project.
-        To skip file overrides coming from source plugin you need to detach it from the scope:
-        
-        ```
-        {
-            "plugins": {
-                "plugin-name": {
-                    "source": ""
-                }
-            }
-        }
-        ```
-        
 
 ## `permissions` (object)
 
@@ -159,17 +127,9 @@ iOS SDK specific permissions
 
 List of engines available in this project
 
-## `custom`
-
-Object used to extend your renative with custom props. This allows renative json schema to be validated
-
 ## `enableHookRebuild` (boolean)
 
 If set to true in `./renative.json` build hooks will be compiled at each rnv command run. If set to `false` (default) rebuild will be triggered only if `dist` folder is missing, `-r` has been passed or you run `rnv hooks run` directly making your rnv commands faster
-
-## `monoRoot` (string)
-
-Define custom path to monorepo root where starting point is project directory
 
 ## `extendsTemplate` (string)
 
@@ -181,13 +141,13 @@ Allows to override specific task within renative toolchain. (currently only `ins
 
 Properties of the `tasks` object:
 
-### `install` (object)
+### `install` (object, required)
 
 Properties of the `install` object:
 
 #### `script` (string, required)
 
-#### `platform` (object)
+#### `platform` (object, required)
 
 ## `integrations` (object)
 
@@ -201,13 +161,21 @@ Object containing injected env variables
 
 This object will be automatically injected into `./platfromAssets/renative.runtime.json` making it possible to inject the values directly to JS source code
 
+## `isMonorepo` (boolean)
+
+Mark if your project is part of monorepo
+
+## `monoRoot` (string)
+
+Define custom path to monorepo root where starting point is project directory
+
+## `custom`
+
+Object used to extend your renative with custom props. This allows renative json schema to be validated
+
 ## `skipAutoUpdate` (boolean)
 
 Enables the equivalent to passing --skipDependencyCheck parameter on every rnv run so you don't have to use it
-
-## `isNew` (boolean)
-
-Marker indicating that this project has just been bootstrapped. this prop is managed by rnv
 
 ## `common` (object)
 
@@ -244,64 +212,14 @@ Manual verride of generated version code
 ### `versionFormat` (string)
 
 Allows you to fine-tune app version defined in package.json or renative.json.
-
-If you do not define versionFormat, no formatting will apply to version.
-
-"versionFormat" : "0.0.0"
-
-IN: 1.2.3-rc.4+build.56 OUT: 1.2.3
-
-IN: 1.2.3 OUT: 1.2.3
-
-
-
-"versionFormat" : "0.0.0.0.0"
-
-IN: 1.2.3-rc.4+build.56 OUT: 1.2.3.4.56
-
-IN: 1.2.3 OUT: 1.2.3
-
-"versionFormat" : "0.0.0.x.x.x.x"
-
-IN: 1.2.3-rc.4+build.56 OUT: 1.2.3.rc.4.build.56
-
-IN: 1.2.3 OUT: 1.2.3
-
-
+    If you do not define versionFormat, no formatting will apply to version.
+    
 
 ### `versionCodeFormat` (string)
 
 Allows you to fine-tune auto generated version codes.
-
-Version code is autogenerated from app version defined in package.json or renative.json.
-
-NOTE: If you define versionCode manually this formatting will not apply.
-
-EXAMPLE 1:
-
-default value: 00.00.00
-
-IN: 1.2.3-rc.4+build.56 OUT: 102030456
-
-IN: 1.2.3 OUT: 10203
-
-EXAMPLE 2:
-
-"versionCodeFormat" : "00.00.00.00.00"
-
-IN: 1.2.3-rc.4+build.56 OUT: 102030456
-
-IN: 1.2.3 OUT: 102030000
-
-EXAMPLE 3:
-
-"versionCodeFormat" : "00.00.00.0000"
-
-IN: 1.0.23-rc.15 OUT: 100230015
-
-IN: 1.0.23 OUT: 100230000
-
-
+    Version code is autogenerated from app version defined in package.json or renative.json.
+    
 
 ### `versionCodeOffset` (number)
 
@@ -381,49 +299,93 @@ Properties of the `platforms` object:
 
 ### `android` (object)
 
-Allows to customize platforms configurations based on chosen build scheme `-s`
-
 Properties of the `android` object:
+
+#### `buildSchemes` (object)
 
 #### `includedPermissions`
 
+Allows you to include specific permissions by their KEY defined in `permissions` object. Use: `['*']` to include all
+
 #### `excludedPermissions`
 
+Allows you to exclude specific permissions by their KEY defined in `permissions` object. Use: `['*']` to exclude all
+
 #### `id`
+
+Bundle ID of application. ie: com.example.myapp
 
 #### `idSuffix`
 
 #### `version`
 
+Semver style version of your app
+
 #### `versionCode`
+
+Manual verride of generated version code
 
 #### `versionFormat`
 
+Allows you to fine-tune app version defined in package.json or renative.json.
+    If you do not define versionFormat, no formatting will apply to version.
+    
+
 #### `versionCodeFormat`
+
+Allows you to fine-tune auto generated version codes.
+    Version code is autogenerated from app version defined in package.json or renative.json.
+    
 
 #### `versionCodeOffset`
 
 #### `title`
 
+Title of your app will be used to create title of the binary. ie App title of installed app iOS/Android app or Tab title of the website
+
 #### `description`
+
+General description of your app. This prop will be injected to actual projects where description field is applicable
 
 #### `author`
 
+Author name
+
 #### `license`
+
+Injects license information into app
 
 #### `includedFonts`
 
+Array of fonts you want to include in specific app or scheme. Should use exact font file (without the extension) located in `./appConfigs/base/fonts` or `*` to mark all
+
 #### `backgroundColor`
+
+Defines root view backgroundColor for all platforms in HEX format
 
 #### `splashScreen`
 
+Enable or disable splash screen
+
 #### `fontSources`
+
+Array of paths to location of external Fonts. you can use resolve function here example: `{{resolvePackage(react-native-vector-icons)}}/Fonts`
 
 #### `assetSources`
 
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project. You can use resolve function here example: `{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets`
+
 #### `includedPlugins`
 
+Defines an array of all included plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: includedPlugins is evaluated before excludedPlugins. Use: `['*']` to include all
+
 #### `excludedPlugins`
+
+Defines an array of all excluded plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: excludedPlugins is evaluated after includedPlugins. Use: `['*']` to exclude all
 
 #### `runtime`
 
@@ -433,327 +395,129 @@ Properties of the `android` object:
 
 #### `assetFolderPlatform`
 
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
 #### `engine`
+
+ID of engine to be used for this platform. Note: engine must be registered in `engines` field
 
 #### `entryFile`
 
+Alternative name of the entry file without `.js` extension
+
 #### `bundleAssets`
+
+If set to `true` compiled js bundle file will generated. this is needed if you want to make production like builds
 
 #### `enableSourceMaps`
 
+If set to `true` dedicated source map file will be generated alongside of compiled js bundle
+
 #### `bundleIsDev`
+
+If set to `true` debug build will be generated
 
 #### `getJsBundleFile`
 
-#### `enableAndroidX` (boolean,string)
+#### `enableAndroidX`
 
 Enables new android X architecture
 
-Default: `true`
-
-#### `enableJetifier` (boolean,string)
+#### `enableJetifier`
 
 Enables Jetifier
 
-Default: `true`
-
-#### `signingConfig` (string)
+#### `signingConfig`
 
 Equivalent to running `./gradlew/assembleDebug` or `./gradlew/assembleRelease`
 
-Default: `"Debug"`
-
-#### `minSdkVersion` (number)
+#### `minSdkVersion`
 
 Minimum Android SDK version device has to have in order for app to run
 
-Default: `28`
-
-#### `multipleAPKs` (boolean)
+#### `multipleAPKs`
 
 If set to `true`, apk will be split into multiple ones for each architecture: "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
 
-#### `aab` (boolean)
+#### `aab`
 
 If set to true, android project will generate app.aab instead of apk
 
-#### `extraGradleParams` (string)
+#### `extraGradleParams`
 
 Allows passing extra params to gradle command
 
-#### `minifyEnabled` (boolean)
+#### `minifyEnabled`
 
 Sets minifyEnabled buildType property in app/build.gradle
 
-#### `targetSdkVersion` (number)
+#### `targetSdkVersion`
 
 Allows you define custom targetSdkVersion equivalent to: `targetSdkVersion = [VERSION]` in build.gradle
 
-#### `compileSdkVersion` (number)
+#### `compileSdkVersion`
 
 Allows you define custom compileSdkVersion equivalent to: `compileSdkVersion = [VERSION]` in build.gradle
 
-#### `kotlinVersion` (string)
+#### `kotlinVersion`
 
 Allows you define custom kotlin version
 
-Default: `"1.7.10"`
-
-#### `ndkVersion` (string)
+#### `ndkVersion`
 
 Allows you define custom ndkVersion equivalent to: `ndkVersion = [VERSION]` in build.gradle
 
-#### `supportLibVersion` (string)
+#### `supportLibVersion`
 
 Allows you define custom supportLibVersion equivalent to: `supportLibVersion = [VERSION]` in build.gradle
 
-#### `googleServicesVersion` (string)
+#### `googleServicesVersion`
 
 Allows you define custom googleServicesVersion equivalent to: `googleServicesVersion = [VERSION]` in build.gradle
 
-#### `gradleBuildToolsVersion` (string)
+#### `gradleBuildToolsVersion`
 
 Allows you define custom gradle build tools version equivalent to:  `classpath 'com.android.tools.build:gradle:[VERSION]'`
 
-#### `gradleWrapperVersion` (string)
+#### `gradleWrapperVersion`
 
 Allows you define custom gradle wrapper version equivalent to: `distributionUrl=https\://services.gradle.org/distributions/gradle-[VERSION]-all.zip`
 
-#### `excludedFeatures` (array)
+#### `excludedFeatures`
 
 Override features definitions in AndroidManifest.xml by exclusion
 
-The object is an array with all elements of the type `string`.
-
-#### `includedFeatures` (array)
+#### `includedFeatures`
 
 Override features definitions in AndroidManifest.xml by inclusion
 
-The object is an array with all elements of the type `string`.
-
-#### `buildToolsVersion` (string)
+#### `buildToolsVersion`
 
 Override android build tools version
 
-Default: `"34.0.0"`
+#### `disableSigning`
 
-#### `disableSigning` (boolean)
-
-#### `storeFile` (string)
+#### `storeFile`
 
 Name of the store file in android project
 
-#### `keyAlias` (string)
+#### `keyAlias`
 
 Key alias of the store file in android project
 
-#### `newArchEnabled` (boolean)
+#### `newArchEnabled`
 
 Enables new arch for android. Default: false
 
-#### `reactNativeEngine` (string, enum)
+#### `flipperEnabled`
+
+Enables flipper  for ios. Default: true
+
+#### `reactNativeEngine`
 
 Allows you to define specific native render engine to be used
 
-This element must be one of the following enum values:
-
-* `jsc`
-* `v8-android`
-* `v8-android-nointl`
-* `v8-android-jit`
-* `v8-android-jit-nointl`
-* `hermes`
-
-Default: `"hermes"`
-
-#### `templateAndroid` (object)
-
-Properties of the `templateAndroid` object:
-
-##### `gradle_properties` (object)
-
-Overrides values in `gradle.properties` file of generated android based project
-
-##### `build_gradle` (object)
-
-Overrides values in `build.gradle` file of generated android based project
-
-Properties of the `build_gradle` object:
-
-###### `allprojects` (object, required)
-
-Properties of the `allprojects` object:
-
-**`repositories`** (object, required)
-
-Customize repositories section of build.gradle
-
-###### `plugins` (array, required)
-
-The object is an array with all elements of the type `string`.
-
-###### `buildscript` (object, required)
-
-Properties of the `buildscript` object:
-
-**`repositories`** (object, required)
-
-**`dependencies`** (object, required)
-
-###### `dexOptions` (object, required)
-
-###### `injectAfterAll` (array, required)
-
-The object is an array with all elements of the type `string`.
-
-##### `app_build_gradle` (object)
-
-Overrides values in `app/build.gradle` file of generated android based project
-
-Properties of the `app_build_gradle` object:
-
-###### `apply` (array, required)
-
-The object is an array with all elements of the type `string`.
-
-###### `defaultConfig` (array, required)
-
-The object is an array with all elements of the type `string`.
-
-###### `buildTypes` (object)
-
-Properties of the `buildTypes` object:
-
-**`debug`** (array)
-
-The object is an array with all elements of the type `string`.
-
-**`release`** (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `afterEvaluate` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `implementations` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `implementation` (string)
-
-##### `AndroidManifest_xml` (object)
-
-Allows you to directly manipulate `AndroidManifest.xml` via json override mechanism
-Injects / Overrides values in AndroidManifest.xml file of generated android based project
-> IMPORTANT: always ensure that your object contains `tag` and `android:name` to target correct tag to merge into
- 
-
-Properties of the `AndroidManifest_xml` object:
-
-###### `tag` (string, required)
-
-###### `android:name` (string, required)
-
-###### `android:required` (boolean)
-
-###### `package` (string)
-
-###### `children` (array, required)
-
-The object is an array with all elements of the type `object`.
-
-The array object has the following properties:
-
-**`tag`** (, required)
-
-**`android:name`** (, required)
-
-**`android:required`**
-
-**`children`** (array, required)
-
-##### `strings_xml` (object)
-
-Properties of the `strings_xml` object:
-
-##### `MainActivity_java` (object)
-
-Properties of the `MainActivity_java` object:
-
-###### `onCreate` (string)
-
-Overrides super.onCreate method handler of MainActivity.java
-
-Default: `"super.onCreate(savedInstanceState)"`
-
-###### `imports` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `methods` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `createMethods` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `resultMethods` (array)
-
-The object is an array with all elements of the type `string`.
-
-##### `MainApplication_java` (object)
-
-Allows you to configure behaviour of MainActivity
-
-Properties of the `MainApplication_java` object:
-
-###### `imports` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `methods` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `createMethods` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `packages` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `packageParams` (array)
-
-The object is an array with all elements of the type `string`.
-
-##### `settings_gradle` (object)
-
-Properties of the `settings_gradle` object:
-
-##### `gradle_wrapper_properties` (object)
-
-Properties of the `gradle_wrapper_properties` object:
-
-##### `SplashActivity_java` (object)
-
-Properties of the `SplashActivity_java` object:
-
-##### `styles_xml` (object)
-
-Properties of the `styles_xml` object:
-
-##### `colors_xml` (object)
-
-Properties of the `colors_xml` object:
-
-##### `proguard_rules_pro` (object)
-
-Properties of the `proguard_rules_pro` object:
-
-#### `buildSchemes` (object)
+#### `templateAndroid`
 
 ### `androidtv`
 
@@ -763,379 +527,93 @@ Properties of the `proguard_rules_pro` object:
 
 ### `ios` (object)
 
-Allows to customize platforms configurations based on chosen build scheme `-s`
-
 Properties of the `ios` object:
 
-#### `includedPermissions`
-
-#### `excludedPermissions`
-
-#### `id`
-
-#### `idSuffix`
-
-#### `version`
-
-#### `versionCode`
-
-#### `versionFormat`
-
-#### `versionCodeFormat`
-
-#### `versionCodeOffset`
-
-#### `title`
-
-#### `description`
-
-#### `author`
-
-#### `license`
-
-#### `includedFonts`
-
-#### `backgroundColor`
-
-#### `splashScreen`
-
-#### `fontSources`
-
-#### `assetSources`
-
-#### `includedPlugins`
-
-#### `excludedPlugins`
-
-#### `runtime`
-
-#### `custom`
-
-#### `extendPlatform`
-
-#### `assetFolderPlatform`
-
-#### `engine`
-
-#### `entryFile`
-
-#### `bundleAssets`
-
-#### `enableSourceMaps`
-
-#### `bundleIsDev`
-
-#### `getJsBundleFile`
-
-#### `ignoreWarnings` (boolean)
-
-Injects `inhibit_all_warnings` into Podfile
-
-#### `ignoreLogs` (boolean)
-
-Passes `-quiet` to xcodebuild command
-
-#### `deploymentTarget` (string)
-
-Deployment target for xcodepoj
-
-#### `orientationSupport` (object)
-
-Properties of the `orientationSupport` object:
-
-##### `phone` (array)
-
-The object is an array with all elements of the type `string`.
-
-##### `tab` (array)
-
-The object is an array with all elements of the type `string`.
-
-#### `teamID` (string)
-
-Apple teamID
-
-#### `excludedArchs` (array)
-
-Defines excluded architectures. This transforms to xcodeproj: `EXCLUDED_ARCHS="<VAL VAL ...>"`
-
-The object is an array with all elements of the type `string`.
-
-#### `urlScheme` (string)
-
-URL Scheme for the app used for deeplinking
-
-#### `teamIdentifier` (string)
-
-Apple developer team ID
-
-#### `scheme` (string)
-
-#### `schemeTarget` (string)
-
-#### `appleId` (string)
-
-#### `provisioningStyle` (string)
-
-#### `newArchEnabled` (boolean)
-
-Enables new archs for iOS. Default: false
-
-#### `codeSignIdentity` (string)
-
-Special property which tells Xcode how to build your project
-
-#### `commandLineArguments` (array)
-
-Allows you to pass launch arguments to active scheme
-
-The object is an array with all elements of the type `string`.
-
-#### `provisionProfileSpecifier` (string)
-
-#### `provisionProfileSpecifiers` (object)
-
-#### `allowProvisioningUpdates` (boolean)
-
-#### `provisioningProfiles` (object)
-
-#### `codeSignIdentities` (object)
-
-#### `systemCapabilities` (object)
-
-#### `entitlements` (object)
-
-#### `runScheme` (string)
-
-#### `sdk` (string)
-
-#### `testFlightId` (string)
-
-#### `firebaseId` (string)
-
-#### `exportOptions` (object)
-
-Properties of the `exportOptions` object:
-
-##### `method` (string)
-
-##### `teamID` (string)
-
-##### `uploadBitcode` (boolean)
-
-##### `compileBitcode` (boolean)
-
-##### `uploadSymbols` (boolean)
-
-##### `signingStyle` (string)
-
-##### `signingCertificate` (string)
-
-##### `provisioningProfiles` (object)
-
-#### `reactNativeEngine`
-
-#### `templateXcode` (object)
-
-Properties of the `templateXcode` object:
-
-##### `Podfile` (object)
-
-Allows to manipulate Podfile
-
-Properties of the `Podfile` object:
-
-###### `injectLines` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `post_install` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `sources` (array)
-
-Array of URLs that will be injected on top of the Podfile as sources
-
-The object is an array with all elements of the type `string`.
-
-###### `podDependencies` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `staticPods` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `header` (array)
-
-Array of strings that will be injected on top of the Podfile
-
-The object is an array with all elements of the type `string`.
-
-##### `project_pbxproj` (object)
-
-Properties of the `project_pbxproj` object:
-
-###### `sourceFiles` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `resourceFiles` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `headerFiles` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `buildPhases` (array)
-
-The object is an array with all elements of the type `object`.
-
-The array object has the following properties:
-
-**`shellPath`** (string, required)
-
-**`shellScript`** (string, required)
-
-**`inputPaths`** (array, required)
-
-The object is an array with all elements of the type `string`.
-
-###### `frameworks` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `buildSettings` (object)
-
-##### `AppDelegate_mm` (object)
-
-Properties of the `AppDelegate_mm` object:
-
-###### `appDelegateMethods` (object)
-
-Properties of the `appDelegateMethods` object:
-
-**`application`** (object, required)
-
-Properties of the `application` object:
-
-**`didFinishLaunchingWithOptions`** (array, required)
-
-The elements of the array must match *at least one* of the following properties:
-
- (string)
-
- (object)
-
-Properties of the `undefined` object:
-
-**`order`** (number, required)
-
-**`value`** (string, required)
-
-**`weight`** (number, required)
-
-**`applicationDidBecomeActive`** (array, required)
-
-**`open`** (array, required)
-
-**`supportedInterfaceOrientationsFor`** (array, required)
-
-**`didReceiveRemoteNotification`** (array, required)
-
-**`didFailToRegisterForRemoteNotificationsWithError`** (array, required)
-
-**`didReceive`** (array, required)
-
-**`didRegister`** (array, required)
-
-**`didRegisterForRemoteNotificationsWithDeviceToken`** (array, required)
-
-**`continue`** (array, required)
-
-**`didConnectCarInterfaceController`** (array, required)
-
-**`didDisconnectCarInterfaceController`** (array, required)
-
-**`userNotificationCenter`** (object, required)
-
-Properties of the `userNotificationCenter` object:
-
-**`willPresent`** (array, required)
-
-**`didReceiveNotificationResponse`** (array, required)
-
-###### `appDelegateImports` (array)
-
-The object is an array with all elements of the type `string`.
-
-##### `AppDelegate_h` (object)
-
-Properties of the `AppDelegate_h` object:
-
-###### `appDelegateImports` (array)
-
-The object is an array with all elements of the type `string`.
-
-###### `appDelegateExtensions` (array)
-
-The object is an array with all elements of the type `string`.
-
-##### `Info_plist` (object)
-
-Properties of the `Info_plist` object:
-
 #### `buildSchemes` (object)
 
-### `tvos`
-
-### `tizen` (object)
-
-Allows to customize platforms configurations based on chosen build scheme `-s`
-
-Properties of the `tizen` object:
-
 #### `includedPermissions`
+
+Allows you to include specific permissions by their KEY defined in `permissions` object. Use: `['*']` to include all
 
 #### `excludedPermissions`
 
+Allows you to exclude specific permissions by their KEY defined in `permissions` object. Use: `['*']` to exclude all
+
 #### `id`
+
+Bundle ID of application. ie: com.example.myapp
 
 #### `idSuffix`
 
 #### `version`
 
+Semver style version of your app
+
 #### `versionCode`
+
+Manual verride of generated version code
 
 #### `versionFormat`
 
+Allows you to fine-tune app version defined in package.json or renative.json.
+    If you do not define versionFormat, no formatting will apply to version.
+    
+
 #### `versionCodeFormat`
+
+Allows you to fine-tune auto generated version codes.
+    Version code is autogenerated from app version defined in package.json or renative.json.
+    
 
 #### `versionCodeOffset`
 
 #### `title`
 
+Title of your app will be used to create title of the binary. ie App title of installed app iOS/Android app or Tab title of the website
+
 #### `description`
+
+General description of your app. This prop will be injected to actual projects where description field is applicable
 
 #### `author`
 
+Author name
+
 #### `license`
+
+Injects license information into app
 
 #### `includedFonts`
 
+Array of fonts you want to include in specific app or scheme. Should use exact font file (without the extension) located in `./appConfigs/base/fonts` or `*` to mark all
+
 #### `backgroundColor`
+
+Defines root view backgroundColor for all platforms in HEX format
 
 #### `splashScreen`
 
+Enable or disable splash screen
+
 #### `fontSources`
+
+Array of paths to location of external Fonts. you can use resolve function here example: `{{resolvePackage(react-native-vector-icons)}}/Fonts`
 
 #### `assetSources`
 
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project. You can use resolve function here example: `{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets`
+
 #### `includedPlugins`
 
+Defines an array of all included plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: includedPlugins is evaluated before excludedPlugins. Use: `['*']` to include all
+
 #### `excludedPlugins`
+
+Defines an array of all excluded plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: excludedPlugins is evaluated after includedPlugins. Use: `['*']` to exclude all
 
 #### `runtime`
 
@@ -1145,313 +623,59 @@ Properties of the `tizen` object:
 
 #### `assetFolderPlatform`
 
-#### `engine`
-
-#### `entryFile`
-
-#### `bundleAssets`
-
-#### `enableSourceMaps`
-
-#### `bundleIsDev`
-
-#### `getJsBundleFile`
-
-#### `package` (string)
-
-#### `certificateProfile` (string)
-
-#### `appName` (string)
-
-#### `timestampBuildFiles` (array)
-
-The object is an array with all elements of the type `string`.
-
-#### `devServerHost` (string)
-
-#### `environment` (string)
-
-#### `hostedShellHeaders` (string)
-
-#### `webpackConfig` (object)
-
-Properties of the `webpackConfig` object:
-
-##### `publicUrl` (string)
-
-##### `customScripts` (array)
-
-Allows you to inject custom script into html header
-
-The object is an array with all elements of the type `string`.
-
-#### `buildSchemes` (object)
-
-### `tizenmobile`
-
-### `tizenwatch`
-
-### `webos` (object)
-
-Allows to customize platforms configurations based on chosen build scheme `-s`
-
-Properties of the `webos` object:
-
-#### `includedPermissions`
-
-#### `excludedPermissions`
-
-#### `id`
-
-#### `idSuffix`
-
-#### `version`
-
-#### `versionCode`
-
-#### `versionFormat`
-
-#### `versionCodeFormat`
-
-#### `versionCodeOffset`
-
-#### `title`
-
-#### `description`
-
-#### `author`
-
-#### `license`
-
-#### `includedFonts`
-
-#### `backgroundColor`
-
-#### `splashScreen`
-
-#### `fontSources`
-
-#### `assetSources`
-
-#### `includedPlugins`
-
-#### `excludedPlugins`
-
-#### `runtime`
-
-#### `custom`
-
-#### `extendPlatform`
-
-#### `assetFolderPlatform`
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
 
 #### `engine`
 
-#### `entryFile`
-
-#### `bundleAssets`
-
-#### `enableSourceMaps`
-
-#### `bundleIsDev`
-
-#### `getJsBundleFile`
-
-#### `timestampBuildFiles`
-
-#### `devServerHost`
-
-#### `environment`
-
-#### `hostedShellHeaders`
-
-#### `webpackConfig`
-
-#### `iconColor` (string)
-
-#### `buildSchemes` (object)
-
-### `web` (object)
-
-Allows to customize platforms configurations based on chosen build scheme `-s`
-
-Properties of the `web` object:
-
-#### `includedPermissions`
-
-#### `excludedPermissions`
-
-#### `id`
-
-#### `idSuffix`
-
-#### `version`
-
-#### `versionCode`
-
-#### `versionFormat`
-
-#### `versionCodeFormat`
-
-#### `versionCodeOffset`
-
-#### `title`
-
-#### `description`
-
-#### `author`
-
-#### `license`
-
-#### `includedFonts`
-
-#### `backgroundColor`
-
-#### `splashScreen`
-
-#### `fontSources`
-
-#### `assetSources`
-
-#### `includedPlugins`
-
-#### `excludedPlugins`
-
-#### `runtime`
-
-#### `custom`
-
-#### `extendPlatform`
-
-#### `assetFolderPlatform`
-
-#### `engine`
+ID of engine to be used for this platform. Note: engine must be registered in `engines` field
 
 #### `entryFile`
 
-#### `bundleAssets`
-
-#### `enableSourceMaps`
-
-#### `bundleIsDev`
-
-#### `getJsBundleFile`
-
-#### `webpackConfig`
-
-#### `pagesDir` (string)
-
-Custom pages directory used by nextjs. Use relative paths
-
-#### `outputDir` (string)
-
-Custom output directory used by nextjs equivalent to `npx next build` with custom outputDir. Use relative paths
-
-#### `exportDir` (string)
-
-Custom export directory used by nextjs equivalent to `npx next export --outdir <exportDir>`. Use relative paths
-
-#### `nextTranspileModules` (array)
-
-The object is an array with all elements of the type `string`.
-
-#### `timestampBuildFiles`
-
-#### `devServerHost`
-
-#### `environment`
-
-#### `hostedShellHeaders`
-
-#### `buildSchemes` (object)
-
-### `webtv`
-
-### `chromecast`
-
-### `kaios`
-
-### `macos` (object)
-
-Allows to customize platforms configurations based on chosen build scheme `-s`
-
-Properties of the `macos` object:
-
-#### `includedPermissions`
-
-#### `excludedPermissions`
-
-#### `id`
-
-#### `idSuffix`
-
-#### `version`
-
-#### `versionCode`
-
-#### `versionFormat`
-
-#### `versionCodeFormat`
-
-#### `versionCodeOffset`
-
-#### `title`
-
-#### `description`
-
-#### `author`
-
-#### `license`
-
-#### `includedFonts`
-
-#### `backgroundColor`
-
-#### `splashScreen`
-
-#### `fontSources`
-
-#### `assetSources`
-
-#### `includedPlugins`
-
-#### `excludedPlugins`
-
-#### `runtime`
-
-#### `custom`
-
-#### `extendPlatform`
-
-#### `assetFolderPlatform`
-
-#### `engine`
-
-#### `entryFile`
+Alternative name of the entry file without `.js` extension
 
 #### `bundleAssets`
 
+If set to `true` compiled js bundle file will generated. this is needed if you want to make production like builds
+
 #### `enableSourceMaps`
 
+If set to `true` dedicated source map file will be generated alongside of compiled js bundle
+
 #### `bundleIsDev`
+
+If set to `true` debug build will be generated
 
 #### `getJsBundleFile`
 
 #### `ignoreWarnings`
 
+Injects `inhibit_all_warnings` into Podfile
+
 #### `ignoreLogs`
 
+Passes `-quiet` to xcodebuild command
+
 #### `deploymentTarget`
+
+Deployment target for xcodepoj
 
 #### `orientationSupport`
 
 #### `teamID`
 
+Apple teamID
+
 #### `excludedArchs`
+
+Defines excluded architectures. This transforms to xcodeproj: `EXCLUDED_ARCHS="<VAL VAL ...>"`
 
 #### `urlScheme`
 
+URL Scheme for the app used for deeplinking
+
 #### `teamIdentifier`
+
+Apple developer team ID
 
 #### `scheme`
 
@@ -1463,9 +687,15 @@ Properties of the `macos` object:
 
 #### `newArchEnabled`
 
+Enables new archs for iOS. Default: false
+
 #### `codeSignIdentity`
 
+Special property which tells Xcode how to build your project
+
 #### `commandLineArguments`
+
+Allows you to pass launch arguments to active scheme
 
 #### `provisionProfileSpecifier`
 
@@ -1493,79 +723,101 @@ Properties of the `macos` object:
 
 #### `reactNativeEngine`
 
+Allows you to define specific native render engine to be used
+
 #### `templateXcode`
 
-#### `electronConfig`
+### `tvos`
 
-Allows you to configure electron app as per https://www.electron.build/
+### `tizen` (object)
 
-#### `BrowserWindow` (object)
-
-Allows you to configure electron wrapper app window
-
-Properties of the `BrowserWindow` object:
-
-##### `width` (number)
-
-##### `height` (number)
-
-##### `webPreferences` (object)
-
-Extra web preferences of electron app
-
-Properties of the `webPreferences` object:
-
-###### `devTools` (boolean)
+Properties of the `tizen` object:
 
 #### `buildSchemes` (object)
 
-### `linux`
-
-### `windows` (object)
-
-Allows to customize platforms configurations based on chosen build scheme `-s`
-
-Properties of the `windows` object:
-
 #### `includedPermissions`
+
+Allows you to include specific permissions by their KEY defined in `permissions` object. Use: `['*']` to include all
 
 #### `excludedPermissions`
 
+Allows you to exclude specific permissions by their KEY defined in `permissions` object. Use: `['*']` to exclude all
+
 #### `id`
+
+Bundle ID of application. ie: com.example.myapp
 
 #### `idSuffix`
 
 #### `version`
 
+Semver style version of your app
+
 #### `versionCode`
+
+Manual verride of generated version code
 
 #### `versionFormat`
 
+Allows you to fine-tune app version defined in package.json or renative.json.
+    If you do not define versionFormat, no formatting will apply to version.
+    
+
 #### `versionCodeFormat`
+
+Allows you to fine-tune auto generated version codes.
+    Version code is autogenerated from app version defined in package.json or renative.json.
+    
 
 #### `versionCodeOffset`
 
 #### `title`
 
+Title of your app will be used to create title of the binary. ie App title of installed app iOS/Android app or Tab title of the website
+
 #### `description`
+
+General description of your app. This prop will be injected to actual projects where description field is applicable
 
 #### `author`
 
+Author name
+
 #### `license`
+
+Injects license information into app
 
 #### `includedFonts`
 
+Array of fonts you want to include in specific app or scheme. Should use exact font file (without the extension) located in `./appConfigs/base/fonts` or `*` to mark all
+
 #### `backgroundColor`
+
+Defines root view backgroundColor for all platforms in HEX format
 
 #### `splashScreen`
 
+Enable or disable splash screen
+
 #### `fontSources`
+
+Array of paths to location of external Fonts. you can use resolve function here example: `{{resolvePackage(react-native-vector-icons)}}/Fonts`
 
 #### `assetSources`
 
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project. You can use resolve function here example: `{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets`
+
 #### `includedPlugins`
 
+Defines an array of all included plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: includedPlugins is evaluated before excludedPlugins. Use: `['*']` to include all
+
 #### `excludedPlugins`
+
+Defines an array of all excluded plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: excludedPlugins is evaluated after includedPlugins. Use: `['*']` to exclude all
 
 #### `runtime`
 
@@ -1575,130 +827,742 @@ Properties of the `windows` object:
 
 #### `assetFolderPlatform`
 
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
 #### `engine`
+
+ID of engine to be used for this platform. Note: engine must be registered in `engines` field
 
 #### `entryFile`
 
+Alternative name of the entry file without `.js` extension
+
 #### `bundleAssets`
+
+If set to `true` compiled js bundle file will generated. this is needed if you want to make production like builds
 
 #### `enableSourceMaps`
 
+If set to `true` dedicated source map file will be generated alongside of compiled js bundle
+
 #### `bundleIsDev`
+
+If set to `true` debug build will be generated
+
+#### `getJsBundleFile`
+
+#### `package`
+
+#### `certificateProfile`
+
+#### `appName`
+
+#### `timestampBuildFiles`
+
+#### `devServerHost`
+
+#### `environment`
+
+#### `webpackConfig`
+
+### `tizenmobile`
+
+### `tizenwatch`
+
+### `webos` (object)
+
+Properties of the `webos` object:
+
+#### `buildSchemes` (object)
+
+#### `includedPermissions`
+
+Allows you to include specific permissions by their KEY defined in `permissions` object. Use: `['*']` to include all
+
+#### `excludedPermissions`
+
+Allows you to exclude specific permissions by their KEY defined in `permissions` object. Use: `['*']` to exclude all
+
+#### `id`
+
+Bundle ID of application. ie: com.example.myapp
+
+#### `idSuffix`
+
+#### `version`
+
+Semver style version of your app
+
+#### `versionCode`
+
+Manual verride of generated version code
+
+#### `versionFormat`
+
+Allows you to fine-tune app version defined in package.json or renative.json.
+    If you do not define versionFormat, no formatting will apply to version.
+    
+
+#### `versionCodeFormat`
+
+Allows you to fine-tune auto generated version codes.
+    Version code is autogenerated from app version defined in package.json or renative.json.
+    
+
+#### `versionCodeOffset`
+
+#### `title`
+
+Title of your app will be used to create title of the binary. ie App title of installed app iOS/Android app or Tab title of the website
+
+#### `description`
+
+General description of your app. This prop will be injected to actual projects where description field is applicable
+
+#### `author`
+
+Author name
+
+#### `license`
+
+Injects license information into app
+
+#### `includedFonts`
+
+Array of fonts you want to include in specific app or scheme. Should use exact font file (without the extension) located in `./appConfigs/base/fonts` or `*` to mark all
+
+#### `backgroundColor`
+
+Defines root view backgroundColor for all platforms in HEX format
+
+#### `splashScreen`
+
+Enable or disable splash screen
+
+#### `fontSources`
+
+Array of paths to location of external Fonts. you can use resolve function here example: `{{resolvePackage(react-native-vector-icons)}}/Fonts`
+
+#### `assetSources`
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project. You can use resolve function here example: `{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets`
+
+#### `includedPlugins`
+
+Defines an array of all included plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: includedPlugins is evaluated before excludedPlugins. Use: `['*']` to include all
+
+#### `excludedPlugins`
+
+Defines an array of all excluded plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: excludedPlugins is evaluated after includedPlugins. Use: `['*']` to exclude all
+
+#### `runtime`
+
+#### `custom`
+
+#### `extendPlatform`
+
+#### `assetFolderPlatform`
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+#### `engine`
+
+ID of engine to be used for this platform. Note: engine must be registered in `engines` field
+
+#### `entryFile`
+
+Alternative name of the entry file without `.js` extension
+
+#### `bundleAssets`
+
+If set to `true` compiled js bundle file will generated. this is needed if you want to make production like builds
+
+#### `enableSourceMaps`
+
+If set to `true` dedicated source map file will be generated alongside of compiled js bundle
+
+#### `bundleIsDev`
+
+If set to `true` debug build will be generated
+
+#### `getJsBundleFile`
+
+#### `iconColor`
+
+#### `timestampBuildFiles`
+
+#### `devServerHost`
+
+#### `environment`
+
+#### `webpackConfig`
+
+### `web` (object)
+
+Properties of the `web` object:
+
+#### `buildSchemes` (object)
+
+#### `includedPermissions`
+
+Allows you to include specific permissions by their KEY defined in `permissions` object. Use: `['*']` to include all
+
+#### `excludedPermissions`
+
+Allows you to exclude specific permissions by their KEY defined in `permissions` object. Use: `['*']` to exclude all
+
+#### `id`
+
+Bundle ID of application. ie: com.example.myapp
+
+#### `idSuffix`
+
+#### `version`
+
+Semver style version of your app
+
+#### `versionCode`
+
+Manual verride of generated version code
+
+#### `versionFormat`
+
+Allows you to fine-tune app version defined in package.json or renative.json.
+    If you do not define versionFormat, no formatting will apply to version.
+    
+
+#### `versionCodeFormat`
+
+Allows you to fine-tune auto generated version codes.
+    Version code is autogenerated from app version defined in package.json or renative.json.
+    
+
+#### `versionCodeOffset`
+
+#### `title`
+
+Title of your app will be used to create title of the binary. ie App title of installed app iOS/Android app or Tab title of the website
+
+#### `description`
+
+General description of your app. This prop will be injected to actual projects where description field is applicable
+
+#### `author`
+
+Author name
+
+#### `license`
+
+Injects license information into app
+
+#### `includedFonts`
+
+Array of fonts you want to include in specific app or scheme. Should use exact font file (without the extension) located in `./appConfigs/base/fonts` or `*` to mark all
+
+#### `backgroundColor`
+
+Defines root view backgroundColor for all platforms in HEX format
+
+#### `splashScreen`
+
+Enable or disable splash screen
+
+#### `fontSources`
+
+Array of paths to location of external Fonts. you can use resolve function here example: `{{resolvePackage(react-native-vector-icons)}}/Fonts`
+
+#### `assetSources`
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project. You can use resolve function here example: `{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets`
+
+#### `includedPlugins`
+
+Defines an array of all included plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: includedPlugins is evaluated before excludedPlugins. Use: `['*']` to include all
+
+#### `excludedPlugins`
+
+Defines an array of all excluded plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: excludedPlugins is evaluated after includedPlugins. Use: `['*']` to exclude all
+
+#### `runtime`
+
+#### `custom`
+
+#### `extendPlatform`
+
+#### `assetFolderPlatform`
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+#### `engine`
+
+ID of engine to be used for this platform. Note: engine must be registered in `engines` field
+
+#### `entryFile`
+
+Alternative name of the entry file without `.js` extension
+
+#### `bundleAssets`
+
+If set to `true` compiled js bundle file will generated. this is needed if you want to make production like builds
+
+#### `enableSourceMaps`
+
+If set to `true` dedicated source map file will be generated alongside of compiled js bundle
+
+#### `bundleIsDev`
+
+If set to `true` debug build will be generated
+
+#### `getJsBundleFile`
+
+#### `webpackConfig`
+
+#### `pagesDir`
+
+Custom pages directory used by nextjs. Use relative paths
+
+#### `outputDir`
+
+Custom output directory used by nextjs equivalent to `npx next build` with custom outputDir. Use relative paths
+
+#### `exportDir`
+
+Custom export directory used by nextjs equivalent to `npx next export --outdir <exportDir>`. Use relative paths
+
+#### `nextTranspileModules`
+
+#### `timestampBuildFiles`
+
+#### `devServerHost`
+
+#### `environment`
+
+### `webtv`
+
+### `chromecast`
+
+### `kaios`
+
+### `macos` (object)
+
+Properties of the `macos` object:
+
+#### `buildSchemes` (object)
+
+#### `includedPermissions`
+
+Allows you to include specific permissions by their KEY defined in `permissions` object. Use: `['*']` to include all
+
+#### `excludedPermissions`
+
+Allows you to exclude specific permissions by their KEY defined in `permissions` object. Use: `['*']` to exclude all
+
+#### `id`
+
+Bundle ID of application. ie: com.example.myapp
+
+#### `idSuffix`
+
+#### `version`
+
+Semver style version of your app
+
+#### `versionCode`
+
+Manual verride of generated version code
+
+#### `versionFormat`
+
+Allows you to fine-tune app version defined in package.json or renative.json.
+    If you do not define versionFormat, no formatting will apply to version.
+    
+
+#### `versionCodeFormat`
+
+Allows you to fine-tune auto generated version codes.
+    Version code is autogenerated from app version defined in package.json or renative.json.
+    
+
+#### `versionCodeOffset`
+
+#### `title`
+
+Title of your app will be used to create title of the binary. ie App title of installed app iOS/Android app or Tab title of the website
+
+#### `description`
+
+General description of your app. This prop will be injected to actual projects where description field is applicable
+
+#### `author`
+
+Author name
+
+#### `license`
+
+Injects license information into app
+
+#### `includedFonts`
+
+Array of fonts you want to include in specific app or scheme. Should use exact font file (without the extension) located in `./appConfigs/base/fonts` or `*` to mark all
+
+#### `backgroundColor`
+
+Defines root view backgroundColor for all platforms in HEX format
+
+#### `splashScreen`
+
+Enable or disable splash screen
+
+#### `fontSources`
+
+Array of paths to location of external Fonts. you can use resolve function here example: `{{resolvePackage(react-native-vector-icons)}}/Fonts`
+
+#### `assetSources`
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project. You can use resolve function here example: `{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets`
+
+#### `includedPlugins`
+
+Defines an array of all included plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: includedPlugins is evaluated before excludedPlugins. Use: `['*']` to include all
+
+#### `excludedPlugins`
+
+Defines an array of all excluded plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: excludedPlugins is evaluated after includedPlugins. Use: `['*']` to exclude all
+
+#### `runtime`
+
+#### `custom`
+
+#### `extendPlatform`
+
+#### `assetFolderPlatform`
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+#### `engine`
+
+ID of engine to be used for this platform. Note: engine must be registered in `engines` field
+
+#### `entryFile`
+
+Alternative name of the entry file without `.js` extension
+
+#### `bundleAssets`
+
+If set to `true` compiled js bundle file will generated. this is needed if you want to make production like builds
+
+#### `enableSourceMaps`
+
+If set to `true` dedicated source map file will be generated alongside of compiled js bundle
+
+#### `bundleIsDev`
+
+If set to `true` debug build will be generated
+
+#### `getJsBundleFile`
+
+#### `ignoreWarnings`
+
+Injects `inhibit_all_warnings` into Podfile
+
+#### `ignoreLogs`
+
+Passes `-quiet` to xcodebuild command
+
+#### `deploymentTarget`
+
+Deployment target for xcodepoj
+
+#### `orientationSupport`
+
+#### `teamID`
+
+Apple teamID
+
+#### `excludedArchs`
+
+Defines excluded architectures. This transforms to xcodeproj: `EXCLUDED_ARCHS="<VAL VAL ...>"`
+
+#### `urlScheme`
+
+URL Scheme for the app used for deeplinking
+
+#### `teamIdentifier`
+
+Apple developer team ID
+
+#### `scheme`
+
+#### `schemeTarget`
+
+#### `appleId`
+
+#### `provisioningStyle`
+
+#### `newArchEnabled`
+
+Enables new archs for iOS. Default: false
+
+#### `codeSignIdentity`
+
+Special property which tells Xcode how to build your project
+
+#### `commandLineArguments`
+
+Allows you to pass launch arguments to active scheme
+
+#### `provisionProfileSpecifier`
+
+#### `provisionProfileSpecifiers`
+
+#### `allowProvisioningUpdates`
+
+#### `provisioningProfiles`
+
+#### `codeSignIdentities`
+
+#### `systemCapabilities`
+
+#### `entitlements`
+
+#### `runScheme`
+
+#### `sdk`
+
+#### `testFlightId`
+
+#### `firebaseId`
+
+#### `exportOptions`
+
+#### `reactNativeEngine`
+
+Allows you to define specific native render engine to be used
+
+#### `templateXcode`
+
+#### `electronConfig`
+
+Allows you to configure electron app as per https://www.electron.build/
+
+#### `BrowserWindow`
+
+Allows you to configure electron wrapper app window
+
+### `linux`
+
+### `windows` (object)
+
+Properties of the `windows` object:
+
+#### `buildSchemes` (object)
+
+#### `includedPermissions`
+
+Allows you to include specific permissions by their KEY defined in `permissions` object. Use: `['*']` to include all
+
+#### `excludedPermissions`
+
+Allows you to exclude specific permissions by their KEY defined in `permissions` object. Use: `['*']` to exclude all
+
+#### `id`
+
+Bundle ID of application. ie: com.example.myapp
+
+#### `idSuffix`
+
+#### `version`
+
+Semver style version of your app
+
+#### `versionCode`
+
+Manual verride of generated version code
+
+#### `versionFormat`
+
+Allows you to fine-tune app version defined in package.json or renative.json.
+    If you do not define versionFormat, no formatting will apply to version.
+    
+
+#### `versionCodeFormat`
+
+Allows you to fine-tune auto generated version codes.
+    Version code is autogenerated from app version defined in package.json or renative.json.
+    
+
+#### `versionCodeOffset`
+
+#### `title`
+
+Title of your app will be used to create title of the binary. ie App title of installed app iOS/Android app or Tab title of the website
+
+#### `description`
+
+General description of your app. This prop will be injected to actual projects where description field is applicable
+
+#### `author`
+
+Author name
+
+#### `license`
+
+Injects license information into app
+
+#### `includedFonts`
+
+Array of fonts you want to include in specific app or scheme. Should use exact font file (without the extension) located in `./appConfigs/base/fonts` or `*` to mark all
+
+#### `backgroundColor`
+
+Defines root view backgroundColor for all platforms in HEX format
+
+#### `splashScreen`
+
+Enable or disable splash screen
+
+#### `fontSources`
+
+Array of paths to location of external Fonts. you can use resolve function here example: `{{resolvePackage(react-native-vector-icons)}}/Fonts`
+
+#### `assetSources`
+
+Array of paths to alternative external assets. this will take priority over ./appConfigs/base/assets folder on your local project. You can use resolve function here example: `{{resolvePackage(@flexn/template-starter)}}/appConfigs/base/assets`
+
+#### `includedPlugins`
+
+Defines an array of all included plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: includedPlugins is evaluated before excludedPlugins. Use: `['*']` to include all
+
+#### `excludedPlugins`
+
+Defines an array of all excluded plugins for specific config or buildScheme. only full keys as defined in `plugin` should be used.
+
+NOTE: excludedPlugins is evaluated after includedPlugins. Use: `['*']` to exclude all
+
+#### `runtime`
+
+#### `custom`
+
+#### `extendPlatform`
+
+#### `assetFolderPlatform`
+
+Alternative platform assets. This is useful for example when you want to use same android assets in androidtv and want to avoid duplicating assets
+
+#### `engine`
+
+ID of engine to be used for this platform. Note: engine must be registered in `engines` field
+
+#### `entryFile`
+
+Alternative name of the entry file without `.js` extension
+
+#### `bundleAssets`
+
+If set to `true` compiled js bundle file will generated. this is needed if you want to make production like builds
+
+#### `enableSourceMaps`
+
+If set to `true` dedicated source map file will be generated alongside of compiled js bundle
+
+#### `bundleIsDev`
+
+If set to `true` debug build will be generated
 
 #### `getJsBundleFile`
 
 #### `electronConfig`
 
+Allows you to configure electron app as per https://www.electron.build/
+
 #### `BrowserWindow`
+
+Allows you to configure electron wrapper app window
 
 #### `reactNativeEngine`
 
-#### `templateVSProject` (object)
+Allows you to define specific native render engine to be used
 
-Properties of the `templateVSProject` object:
-
-##### `language` (string)
-
-Specify generated project language: cpp for C++ or cs for C#
-
-##### `arch` (string)
-
-Specification of targeted architecture
-
-##### `experimentalNuGetDependency` (boolean)
-
-##### `useWinUI3` (boolean)
-
-##### `nuGetTestVersion` (string)
-
-##### `reactNativeEngine` (string)
-
-##### `nuGetTestFeed` (string)
-
-##### `overwrite` (boolean)
-
-Whether to attempt to override the existing builds files when running a build once more
-
-##### `release` (boolean)
-
-Enables full packaging of the app for release
-
-##### `root` (string)
-
-Project root folder location (not the app itself, which is in platformBuilds)
-
-##### `singleproc` (boolean)
-
-Opt out of multi-proc builds (only available in 0.64 and newer versions of react-native-windows)
-
-##### `emulator` (boolean)
-
-##### `device` (boolean)
-
-##### `target` (string)
-
-##### `remoteDebugging` (boolean)
-
-##### `logging` (boolean)
-
-Logging all the build proccesses to console
-
-##### `packager` (boolean)
-
-##### `bundle` (boolean)
-
-##### `launch` (boolean)
-
-Launches the application once the build process is finished
-
-##### `autolink` (boolean)
-
-Launches the application once the build process is finished
-
-##### `build` (boolean)
-
-Builds the application before launching it
-
-##### `sln` (string)
-
-Location of Visual Studio solution .sln file (wraps multiple projects)
-
-##### `proj` (string)
-
-Root project directory for your React Native Windows project (not Visual Studio project)
-
-##### `appPath` (string)
-
-Full path to windows plaform build directory
-
-##### `msbuildprops` (string)
-
-Comma separated props to pass to msbuild, eg: prop1=value1,prop2=value2
-
-##### `buildLogDirectory` (string)
-
-Full path to directory where builds logs should be stored, default - project path
-
-##### `info` (boolean)
-
-Print information about the build machine to console
-
-##### `directDebugging` (boolean)
-
-##### `telemetry` (boolean)
-
-Send analytics data of @react-native-windows/cli usage to Microsoft
-
-##### `devPort` (string)
-
-##### `additionalMetroOptions` (object)
-
-##### `packageExtension` (string)
-
-#### `buildSchemes` (object)
+#### `templateVSProject`
 
 ### `xbox`
 
 ## `plugins` (object)
 
 Define all plugins available in your project. you can then use `includedPlugins` and `excludedPlugins` props to define active and inactive plugins per each app config
+
+## `templateConfig` (object)
+
+Used in `renative.template.json` allows you to define template behaviour.
+
+Properties of the `templateConfig` object:
+
+### `name` (string)
+
+### `version` (string)
+
+### `disabled` (boolean)
+
+### `includedPaths` (array)
+
+Defines list of all file/dir paths you want to include in template
+
+The elements of the array must match *at least one* of the following properties:
+
+### (string)
+
+### (object)
+
+Properties of the `undefined` object:
+
+#### `paths` (array, required)
+
+The object is an array with all elements of the type `string`.
+
+#### `engines` (array)
+
+The object is an array with all elements of the type `string`.
+
+#### `platforms`
+
+Array list of all supported platforms in current project
+
+### `renative_json` (object)
+
+Properties of the `renative_json` object:
+
+#### `$schema` (string)
+
+#### `extendsTemplate` (string)
+
+### `package_json` (object)
+
+Properties of the `package_json` object:
+
+#### `dependencies` (object)
+
+#### `devDependencies`
+
+#### `peerDependencies`
+
+#### `optionalDependencies`
+
+#### `name` (string)
+
+#### `version` (string)
+
+#### `browserslist`

@@ -1,44 +1,33 @@
-import {
-    RootAppSchema,
-    RootEngineSchema,
-    RootGlobalSchema,
-    RootIntegrationSchema,
-    RootLocalSchema,
-    RootPluginSchema,
-    RootPluginsSchema,
-    RootPrivateSchema,
-    RootProjectSchema,
-    RootTemplateSchema,
-    RootTemplatesSchema,
-    getContext,
-    logSuccess,
-} from '@rnv/core';
+import { ZodFileSchema, getContext, logSuccess } from '@rnv/core';
 import { zodToJsonSchema } from 'zod-to-json-schema';
 import { z } from 'zod';
 import path from 'path';
 import fs from 'fs';
 
+const { zodConfigFileApp, zodConfigFileProject, zodConfigFileTemplate, zodConfigFilePlugin, zodConfigFileIntegration } =
+    ZodFileSchema;
+
 export const generateSchema = async () => {
     _generateSchemaFile({
-        schema: RootProjectSchema,
+        schema: zodConfigFileProject,
         schemaId: 'rnv.project',
         sideBarTitle: 'renative.json (Project Config)',
     });
-    _generateSchemaFile({ schema: RootAppSchema, schemaId: 'rnv.app', sideBarTitle: 'renative.json (App Config)' });
+    _generateSchemaFile({ schema: zodConfigFileApp, schemaId: 'rnv.app', sideBarTitle: 'renative.json (App Config)' });
     // _generateSchemaFile({ schema: RootLocalSchema, schemaId: 'rnv.local' });
     // _generateSchemaFile({ schema: RootEngineSchema, schemaId: 'rnv.engine' });
     // _generateSchemaFile({ schema: RootGlobalSchema, schemaId: 'rnv.global' });
     // _generateSchemaFile({ schema: RootPluginsSchema, schemaId: 'rnv.plugins' });
     _generateSchemaFile({
-        schema: RootTemplateSchema,
+        schema: zodConfigFileTemplate,
         schemaId: 'rnv.template',
         sideBarTitle: 'renative.template.json (Template Config)',
     });
     // _generateSchemaFile({ schema: RootPrivateSchema, schemaId: 'rnv.private' });
-    _generateSchemaFile({ schema: RootPluginSchema, schemaId: 'rnv.plugin', sideBarTitle: 'renative.plugin.json' });
+    _generateSchemaFile({ schema: zodConfigFilePlugin, schemaId: 'rnv.plugin', sideBarTitle: 'renative.plugin.json' });
     // _generateSchemaFile({ schema: RootTemplatesSchema, schemaId: 'rnv.templates' });
     _generateSchemaFile({
-        schema: RootIntegrationSchema,
+        schema: zodConfigFileIntegration,
         schemaId: 'rnv.integration',
         sideBarTitle: 'renative.integration.json',
     });

@@ -2,7 +2,7 @@ import {
     writeFileSync,
     logHook,
     registerAllPlatformEngines,
-    getAllSuitableTasks,
+    getRegisteredTasks,
     RnvTaskOptionPresets,
 } from '@rnv/core';
 import path from 'path';
@@ -19,11 +19,11 @@ const kebabToTitleCase = (string: string): string => {
 export const generateDocsApiCli = async (c) => {
     logHook('generateDocsApiCli');
 
-    registerAllPlatformEngines(c);
+    registerAllPlatformEngines();
 
-    const tasks = getAllSuitableTasks(c);
+    const tasks = getRegisteredTasks();
 
-    // console.log('tasks', tasks);
+    console.log('tasks', tasks);
     const tasksGroupedByCommand = Object.values(tasks).reduce((acc, task: any) => {
         if (!acc[task.command]) {
             acc[task.command] = {};

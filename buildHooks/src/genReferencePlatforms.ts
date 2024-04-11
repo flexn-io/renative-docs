@@ -32,7 +32,7 @@ ${extContent}
 const _getExtensionContent = (c: RnvContext, platform) => {
     let out = `Extenstions are defined via engines. Engines with ${platform} support: \n`;
 
-    registerAllPlatformEngines(c);
+    registerAllPlatformEngines();
     const engines = c.runtime.enginesById;
 
     Object.values(engines).forEach((engine) => {

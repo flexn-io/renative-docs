@@ -18,7 +18,7 @@ React native based engine with added support for tvOS platform. Runs standard re
 
 ## Required Plugins
 
-[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-tvos](../plugins/overview#react-native-tvos), [react-native-web](../plugins/overview#react-native-web)
+[react](../plugins/overview#react), [react-art](../plugins/overview#react-art), [react-dom](../plugins/overview#react-dom), [react-native](../plugins/overview#react-native), [react-native-tvos](../plugins/overview#react-native-tvos)
 
 ## Required NPM Packages
 
