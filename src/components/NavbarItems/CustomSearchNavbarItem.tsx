@@ -9,13 +9,20 @@ import React from 'react';
 import { Autocomplete, Footer, ProductItem } from '../../theme/SearchBar';
 import { getAlgoliaResults } from '@algolia/autocomplete-js';
 import algoliasearch from 'algoliasearch';
-
-const appId = 'FMYKKKF9Q8';
-const apiKey = 'fd3bf87fce092e08e71378cf066734b2';
-const searchClient = algoliasearch(appId, apiKey);
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 // see https://github.com/facebook/docusaurus/issues/7227
 export default function CustomSearchNavbarItem(props: { className?: string }): JSX.Element | null {
+    const {
+        siteConfig: { customFields },
+    } = useDocusaurusContext();
+
+    const indexName = customFields.ALGOLIA_INDEX as string;
+    const appId = customFields.ALGOLIA_APP_ID as string;
+    const searchKey = customFields.ALGOLIA_SEARCH_KEY as string;
+
+    const searchClient = algoliasearch(appId, searchKey);
+
     return (
         <Autocomplete
             openOnFocus={true}
@@ -29,7 +36,7 @@ export default function CustomSearchNavbarItem(props: { className?: string }): J
                             searchClient,
                             queries: [
                                 {
-                                    indexName: process.env.ALGOLIA_INDEX || 'renative_docsearch',
+                                    indexName,
                                     query,
                                 },
                             ],

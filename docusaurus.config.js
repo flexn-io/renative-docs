@@ -13,6 +13,11 @@ const config = {
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
+    customFields: {
+        ALGOLIA_INDEX: process.env.ALGOLIA_INDEX || 'renative_docsearch',
+        ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID || 'FMYKKKF9Q8',
+        ALGOLIA_SEARCH_KEY: process.env.ALGOLIA_SEARCH_KEY || 'fd3bf87fce092e08e71378cf066734b2',
+    },
     trailingSlash: false,
     organizationName: 'flexn-io', // Usually your GitHub org/user name.
     projectName: 'renative-docs', // Usually your repo name.
