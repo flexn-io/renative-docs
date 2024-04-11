@@ -86,15 +86,30 @@ export function ProductItem({ hit, components }) {
     return (
         <a href={hit.url} className="aa-ItemLink" style={{ marginBottom: '10px' }}>
             <div className="aa-ItemContent search_result_title_container">
-                <img src="/img/page_icon.svg" />
-
                 <div>
-                    <div className="aa-ItemTitle" style={{ fontSize: '15px', fontWeight: 'bold' }}>
-                        <components.Highlight hit={hit._highlightResult.hierarchy.lvl0} attribute="value" />
+                    <div className="result-title-logo-wrapper">
+                        <img src="/img/page_icon.svg" />
+                        <div className="aa-ItemTitle" style={{ fontSize: '15px', fontWeight: 'bold' }}>
+                            <components.Highlight hit={hit._highlightResult.hierarchy.lvl0} attribute="value" />
+                        </div>
                     </div>
 
                     <div className="aa-ItemTitle" style={{ fontSize: '12px' }}>
                         <components.Highlight hit={hit._highlightResult.hierarchy.lvl1} attribute="value" />
+                        {hit._highlightResult.hierarchy.lvl2 && (
+                            <span>
+                                {' '}
+                                &gt;{' '}
+                                <components.Highlight hit={hit._highlightResult.hierarchy.lvl2} attribute="value" />
+                            </span>
+                        )}
+                        {hit._highlightResult.hierarchy.lvl3 && (
+                            <span>
+                                {' '}
+                                &gt;{' '}
+                                <components.Highlight hit={hit._highlightResult.hierarchy.lvl3} attribute="value" />
+                            </span>
+                        )}
                     </div>
 
                     <div className="aa-ItemContentDescription">

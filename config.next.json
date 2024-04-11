@@ -55,8 +55,8 @@
             "type"
         ],
         "ranking": [
-            "exact",
             "words",
+            "exact",
             "filters",
             "typo",
             "attribute",
