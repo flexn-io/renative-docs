@@ -90,11 +90,11 @@ export function ProductItem({ hit, components }) {
 
                 <div>
                     <div className="aa-ItemTitle" style={{ fontSize: '15px', fontWeight: 'bold' }}>
-                        <components.Highlight hit={hit._highlightResult.hierarchy.lvl1} attribute="value" />
+                        <components.Highlight hit={hit._highlightResult.hierarchy.lvl0} attribute="value" />
                     </div>
 
                     <div className="aa-ItemTitle" style={{ fontSize: '12px' }}>
-                        <components.Highlight hit={hit._highlightResult.hierarchy.lvl0} attribute="value" />
+                        <components.Highlight hit={hit._highlightResult.hierarchy.lvl1} attribute="value" />
                     </div>
 
                     <div className="aa-ItemContentDescription">
