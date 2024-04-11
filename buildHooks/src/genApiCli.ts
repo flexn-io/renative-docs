@@ -4,6 +4,7 @@ import {
     registerAllPlatformEngines,
     getRegisteredTasks,
     RnvTaskOptionPresets,
+    RnvTask,
 } from '@rnv/core';
 import path from 'path';
 
@@ -16,25 +17,16 @@ const kebabToTitleCase = (string: string): string => {
         .join(' ');
 };
 
+const toKebabCase = (string: string): string => {
+    return string.trim().toLocaleLowerCase().split(' ').join('-');
+};
+
 export const generateDocsApiCli = async (c) => {
     logHook('generateDocsApiCli');
 
     registerAllPlatformEngines();
 
-    const tasks = getRegisteredTasks();
-
-    console.log('tasks', tasks);
-    const tasksGroupedByCommand = Object.values(tasks).reduce((acc, task: any) => {
-        if (!acc[task.command]) {
-            acc[task.command] = {};
-        }
-        if (task.subCommand) {
-            acc[task.command][task.subCommand] = task;
-        } else {
-            acc[task.command] = task;
-        }
-        return acc;
-    }, {});
+    const registeredTasks = getRegisteredTasks();
 
     const header = `---
 id: cli
@@ -47,47 +39,45 @@ sidebar_label: rnv CLI
 
     content += `## Commands\n\n`;
 
-    const printTaskDetails = (tsk, cmd, param?) => {
-        content += param ? `#### ${param}\n\n` : '';
+    const printTaskDetails = (registeredTask: RnvTask) => {
+        const { description, ownerID, dependsOn, task, options } = registeredTask;
 
-        content += `${tsk.description}\n\n`;
+        content += `${description}\n\n`;
 
         // Engines/Providers
-        if (tsk.providers?.length) {
-            const provs = tsk.providers.map((v) => `[${v}](engines/${v}.md)`);
+        content += `Provided by: ${ownerID}\n\n`;
 
-            content += `Available in engines: ${provs.join(', ')}\n\n`;
+        // Depends On
+        if (dependsOn?.length > 0) {
+            content += `Depends On:\n`;
+            const toDisplay: string[] = [];
+            dependsOn?.forEach((task) => {
+                toDisplay.push(`[\`${task}\`](#${toKebabCase(task)})`);
+            });
+            content += toDisplay.join(', ');
+            content += `\n\n`;
         }
 
         // options
-        content += `\nAvailable Options:\n`;
-        const toDisplay: string[] = [];
-        tsk.params?.forEach((param) => {
-            toDisplay.push(`[\`${param.key}\`](#${param.key.toLowerCase()})`);
-        });
-        content += toDisplay.join(', ');
-        content += `\n\n`;
+        if (options?.length > 0) {
+            content += `\nAvailable Options:\n`;
+            const toDisplay: string[] = [];
+            options?.forEach((param) => {
+                toDisplay.push(`[\`${param.key}\`](#${toKebabCase(param.key)})`);
+            });
+            content += toDisplay.join(', ');
+            content += `\n\n`;
+        }
 
         //Example
-        let exCmd = param ? `${cmd} ${param}` : cmd;
-        content += `Example:\n\`\`\`bash\nnpx rnv ${exCmd}\n\`\`\``;
+        content += `Example:\n\`\`\`bash\nnpx rnv ${task}\n\`\`\``;
         content += '\n\n';
     };
 
-    Object.keys(tasksGroupedByCommand).forEach((command) => {
-        content += `### ${command}\n\n`;
+    Object.values(registeredTasks).forEach((registeredTask) => {
+        content += `### ${registeredTask.task}\n\n`;
 
-        const subCommandsOrTask = tasksGroupedByCommand[command];
-
-        if (subCommandsOrTask.command) {
-            // it's a task
-            printTaskDetails(subCommandsOrTask, command);
-        } else {
-            Object.keys(subCommandsOrTask).forEach((subCommand) => {
-                const task = subCommandsOrTask[subCommand];
-                printTaskDetails(task, command, task.subCommand);
-            });
-        }
+        printTaskDetails(registeredTask);
     });
 
     // CLI options
@@ -95,9 +85,17 @@ sidebar_label: rnv CLI
     RnvTaskOptionPresets.withAll().forEach((param) => {
         content += `### ${param.key}\n`;
         content += `${param.description}\n\n`;
-        // content += `Required: ${param.isRequired ? 'Yes' : 'No'}\n\n`;
         if (param.shortcut) content += `Shortcut: \`\`-${param.shortcut}\`\`\n\n`;
-        if (param.value) content += `Value: \`\`${param.value}\`\`\n\n`;
+        const type = param.isValueType ? 'Value' : param.isVariadic ? 'Variadic' : 'Flag';
+        content += `Type: ${type}${param.isRequired ? ', required' : ''}\n\n`;
+
+        // Example
+        if (param.examples) {
+            content += `Examples:\n`;
+            param.examples.forEach((example) => {
+                content += `\`\`\`bash\nnpx rnv ${example}\n\`\`\`\n`;
+            });
+        }
     });
 
     writeFileSync(path.join(c.paths.project.dir, `/docs/api/cli.md`), header + content);

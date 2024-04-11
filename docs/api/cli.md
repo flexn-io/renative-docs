@@ -5,387 +5,274 @@ sidebar_label: rnv CLI
 ---
 ## Commands
 
-### crypto
+### telemetry status
 
-#### decrypt
+Show current rnv telemetry status on your machine
+
+Provided by: @rnv/sdk-telemetry
+
+Example:
+```bash
+npx rnv telemetry status
+```
+
+### telemetry enable
+
+Enables rnv telemetry on your machine
+
+Provided by: @rnv/sdk-telemetry
+
+Example:
+```bash
+npx rnv telemetry enable
+```
+
+### telemetry disable
+
+Disables rnv telemetry on your machine
+
+Provided by: @rnv/sdk-telemetry
+
+Example:
+```bash
+npx rnv telemetry disable
+```
+
+### crypto decrypt
 
 Decrypt encrypted project files into local `~/<wokspace>/<project>/..`
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+[`key`](#key)
 
 Example:
 ```bash
 npx rnv crypto decrypt
 ```
 
-#### encrypt
+### crypto encrypt
 
 Encrypts secure files from `~/<wokspace>/<project>/..` to project
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
+
+Depends On:
+[`project configure`](#project-configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+[`key`](#key)
 
 Example:
 ```bash
 npx rnv crypto encrypt
 ```
 
-#### installCerts
-
-Installs certificates into keychain (mac only)
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv crypto installCerts
-```
-
-#### updateProfile
-
-Update provisioning profile (mac only)
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv crypto updateProfile
-```
-
-#### updateProfiles
-
-Will attempt to update all provisioning profiles (mac only)
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv crypto updateProfiles
-```
-
-#### installProfiles
-
-Installs provisioning certificates found in your workspace (mac only)
-
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv crypto installProfiles
-```
-
-### platform
-
-#### eject
+### platform eject
 
 Copy all platform files directly to project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
 npx rnv platform eject
 ```
 
-#### connect
+### platform connect
 
 Connect platform template back to rnv
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv platform connect
 ```
 
-#### list
+### platform list
 
 List all available platforms
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv platform list
 ```
 
-#### configure
+### platform configure
 
 Low-level task used by engines to prepare platformBuilds folder
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv platform configure
 ```
 
-#### setup
+### project platforms
 
 Allows you to change supportedPlatforms for your project
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv platform setup
-```
-
-### template
-
-#### add
-
-Install additional template to the project
-
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
-npx rnv template add
+npx rnv project platforms
 ```
 
-#### apply
+### template apply
 
-Reset project to specific template
+Reapply template (if configured) to current project
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv template apply
 ```
 
-#### list
-
-Show list of available templates
-
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv template list
-```
-
-### plugin
-
-#### add
+### plugin add
 
 Add selected plugin to the project
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv plugin add
 ```
 
-#### list
+### plugin list
 
 Show list of all available plugins
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv plugin list
 ```
 
-#### update
+### plugin update
 
 Update specific plugin to latest supported version (rnv)
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv plugin update
 ```
 
-### workspace
-
-#### list
+### workspace list
 
 Show list of all available workspaces
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv workspace list
 ```
 
-#### add
+### workspace add
 
 Add new workspace
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv workspace add
 ```
 
-#### connect
+### workspace connect
 
 Connect project with selected workspace
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv workspace connect
 ```
 
-#### update
-
-TODO: unused task
-
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv workspace update
-```
-
-#### configure
-
-Preconfigures your current workspace defined via "workspaceID" prop in renative config file
-
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv workspace configure
-```
-
-### hooks
-
-#### list
+### hooks list
 
 Get list of all available hooks
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
 npx rnv hooks list
 ```
 
-#### run
+### hooks run
 
 Run specific build hook
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`exeMethod`](#exemethod)
+[`exeMethod`](#exemethod)
 
 Example:
 ```bash
 npx rnv hooks run
 ```
 
-#### pipes
+### hooks pipes
 
 Get the list of all available pipes
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
@@ -396,11 +283,7 @@ npx rnv hooks pipes
 
 Automatically removes all node_modules and lock in your project and its dependencies
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
@@ -411,11 +294,7 @@ npx rnv clean
 
 Show current info about the project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
@@ -426,11 +305,10 @@ npx rnv status
 
 Display RNV config
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`configureSoft`](#configuresoft)
 
 Example:
 ```bash
@@ -441,11 +319,7 @@ npx rnv config
 
 Display generic help
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
@@ -456,120 +330,85 @@ npx rnv help
 
 Create new ReNative project
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+[`gitEnabled`](#gitenabled), [`answer`](#answer), [`workspace`](#workspace), [`template`](#template), [`projectName`](#projectname), [`projectTemplate`](#projecttemplate), [`templateVersion`](#templateversion), [`title`](#title), [`appVersion`](#appversion), [`id`](#id)
 
 Example:
 ```bash
 npx rnv new
 ```
 
-### install
-
-Install package node_modules via yarn or npm
-
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv install
-```
-
-### project
-
-#### configure
+### project configure
 
 Configure current project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
 npx rnv project configure
 ```
 
-#### upgrade
+### project upgrade
 
 Upgrade or downgrade RNV dependencies in your ReNative project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
 npx rnv project upgrade
 ```
 
-### app
-
-#### configure
+### app configure
 
 Configure project with specific appConfig
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
 
 Example:
 ```bash
 npx rnv app configure
 ```
 
-#### create
+### app create
 
 Create new app config
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+[`sourceAppConfigID`](#sourceappconfigid)
 
 Example:
 ```bash
 npx rnv app create
 ```
 
-#### switch
+### workspace configure
 
-Switch between different app configs in current project
+Preconfigures your current workspace defined via "workspaceID" prop in renative config file
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
-npx rnv app switch
+npx rnv workspace configure
 ```
 
 ### configureSoft
 
 Configure system and project without recreating files (used for --only)
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
@@ -580,11 +419,7 @@ npx rnv configureSoft
 
 Kills all the processes related to this project
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
@@ -595,58 +430,25 @@ npx rnv kill
 
 Checks validity and config health of your project
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`app configure`](#app-configure)
 
 Example:
 ```bash
 npx rnv doctor
 ```
 
-### target
-
-#### list
-
-List all available targets for specific platform
-
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv target list
-```
-
-#### launch
-
-Launch specific target
-
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
-
-Example:
-```bash
-npx rnv target launch
-```
-
 ### link
 
 Links development version or renative with this project
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-core
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+[`dir`](#dir)
 
 Example:
 ```bash
@@ -657,118 +459,404 @@ npx rnv link
 
 Replaces rnv version in project with original node_modules version
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-core
 
 Example:
 ```bash
 npx rnv unlink
 ```
 
-### telemetry
+### app switch
 
-#### status
+Switch between different app configs in current project
 
-Show current rnv telemetry status on your machine
+Provided by: @rnv/engine-core
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Depends On:
+[`project configure`](#project-configure)
 
 Example:
 ```bash
-npx rnv telemetry status
+npx rnv app switch
 ```
 
-#### enable
+### target launch
 
-Enables rnv telemetry on your machine
+Launch specific target
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`workspace configure`](#workspace-configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+[`target`](#target)
 
 Example:
 ```bash
-npx rnv telemetry enable
+npx rnv target launch
 ```
 
-#### disable
+### target list
 
-Disables rnv telemetry on your machine
+List all available targets for specific platform
 
-Available in engines: [engine-core](engines/engine-core.md)
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`workspace configure`](#workspace-configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+[`target`](#target)
 
 Example:
 ```bash
-npx rnv telemetry disable
+npx rnv target list
 ```
 
-### deploy
+### sdk configure
 
-Deploy the binary via selected deployment intgeration or buld hook
+Configures sdks
 
-Available in engines: [engine-core](engines/engine-core.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+Provided by: @rnv/engine-rn
 
 Example:
 ```bash
-npx rnv deploy
+npx rnv sdk configure
 ```
 
-### run
+### log
 
-Run your app on target device or emulator
+Attach logger to device or emulator and print out logs
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
+Provided by: @rnv/engine-rn
 
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug`](#debug), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+Depends On:
+[`workspace configure`](#workspace-configure)
 
 Example:
 ```bash
-npx rnv run
+npx rnv log
 ```
 
 ### package
 
 Package source files into bundle
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`configure`](#configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
 
 Example:
 ```bash
 npx rnv package
 ```
 
+### configure
+
+Configure current project
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`platform configure`](#platform-configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv configure
+```
+
+### run
+
+Run your rn app on target device or emulator
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+
+Example:
+```bash
+npx rnv run
+```
+
 ### build
 
 Build project binary
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`package`](#package)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv build
+```
+
+### target launch
+
+Launch specific ios target
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target launch
+```
+
+### target list
+
+List all available targets for specific platform
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target list
+```
+
+### crypto installCerts
+
+Installs certificates into keychain (mac only)
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto installCerts
+```
+
+### crypto updateProfile
+
+Update provisioning profile (mac only)
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto updateProfile
+```
+
+### crypto updateProfiles
+
+Will attempt to update all provisioning profiles (mac only)
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto updateProfiles
+```
+
+### crypto installProfiles
+
+Installs provisioning certificates found in your workspace (mac only)
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto installProfiles
+```
+
+### log
+
+Attach logger to device or emulator and print out logs
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+Example:
+```bash
+npx rnv log
+```
+
+### export
+
+Export the app into deployable binary
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`build`](#build)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+
+Example:
+```bash
+npx rnv export
+```
+
+### package
+
+Package source files into bundle
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+
+Example:
+```bash
+npx rnv package
+```
+
+### configure
+
+Configure current project
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`platform configure`](#platform-configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+
+Example:
+```bash
+npx rnv configure
+```
+
+### run
+
+Run your rn app on target device or emulator
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+
+Example:
+```bash
+npx rnv run
+```
+
+### build
+
+Build project binary
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`package`](#package)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity), [`xcodebuildArgs`](#xcodebuildargs)
+
+Example:
+```bash
+npx rnv build
+```
+
+### start
+
+Starts react-native bundler
+
+Provided by: @rnv/engine-rn
+
+Depends On:
+[`configureSoft`](#configuresoft)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv start
+```
+
+### run
+
+Run your app in browser
+
+Provided by: @rnv/engine-rn-next
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+
+Example:
+```bash
+npx rnv run
+```
+
+### build
+
+Build project binary
+
+Provided by: @rnv/engine-rn-next
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
 
 Example:
 ```bash
@@ -779,11 +867,14 @@ npx rnv build
 
 Configure current project
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
+Provided by: @rnv/engine-rn-next
+
+Depends On:
+[`platform configure`](#platform-configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
 
 Example:
 ```bash
@@ -794,11 +885,14 @@ npx rnv configure
 
 Starts bundler / server
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-web](engines/engine-rn-web.md), [engine-rn-electron](engines/engine-rn-electron.md)
+Provided by: @rnv/engine-rn-next
+
+Depends On:
+[`configure`](#configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
 
 Example:
 ```bash
@@ -809,369 +903,879 @@ npx rnv start
 
 Export the app into deployable binary
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md), [engine-rn-next](engines/engine-rn-next.md), [engine-rn-electron](engines/engine-rn-electron.md)
+Provided by: @rnv/engine-rn-next
+
+Depends On:
+[`configure`](#configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
 
 Example:
 ```bash
 npx rnv export
 ```
 
-### eject
+### run
 
-Eject current project app to self contained native project
+Run your app in browser
 
-Available in engines: [engine-rn](engines/engine-rn.md)
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`configure`](#configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only), [`reset`](#reset), [`resetHard`](#resethard), [`engine`](#engine), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`scheme`](#scheme), [`platform`](#platform)
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
 
 Example:
 ```bash
-npx rnv eject
+npx rnv run
 ```
 
-### log
+### build
 
-Attach logger to device or emulator and print out logs
+Build project binary
 
-Available in engines: [engine-rn](engines/engine-rn.md), [engine-rn-tvos](engines/engine-rn-tvos.md)
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`configure`](#configure)
 
 
 Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
 
 Example:
 ```bash
-npx rnv log
+npx rnv build
+```
+
+### configure
+
+Configure current project
+
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`platform configure`](#platform-configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv configure
+```
+
+### start
+
+Starts bundler / server
+
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv start
 ```
 
 ### debug
 
 Debug your app on target device or emulator
 
-Available in engines: [engine-rn-web](engines/engine-rn-web.md)
-
-
-Available Options:
-[`info`](#info), [`ci`](#ci), [`mono`](#mono), [`maxErrorLength`](#maxerrorlength), [`only`](#only)
+Provided by: @rnv/engine-rn-web
 
 Example:
 ```bash
 npx rnv debug
 ```
 
+### target launch
+
+Launch specific target
+
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target launch
+```
+
+### target list
+
+List all available targets for specific platform
+
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target list
+```
+
+### sdk configure
+
+Configures sdks
+
+Provided by: @rnv/engine-rn-web
+
+Example:
+```bash
+npx rnv sdk configure
+```
+
+### target launch
+
+Launch specific target
+
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target launch
+```
+
+### target list
+
+List all available targets for specific platform
+
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target list
+```
+
+### sdk configure
+
+Configures sdks
+
+Provided by: @rnv/engine-rn-web
+
+Example:
+```bash
+npx rnv sdk configure
+```
+
+### target launch
+
+Launch specific target
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target launch
+```
+
+### target list
+
+List all available targets for specific platform
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target list
+```
+
+### sdk configure
+
+Configures sdks
+
+Provided by: @rnv/engine-rn-tvos
+
+Example:
+```bash
+npx rnv sdk configure
+```
+
+### log
+
+Attach logger to device or emulator and print out logs
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+Example:
+```bash
+npx rnv log
+```
+
+### package
+
+Package source files into bundle
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv package
+```
+
+### configure
+
+Configure current project
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`platform configure`](#platform-configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv configure
+```
+
+### run
+
+Run your rn app on target device or emulator
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+
+Example:
+```bash
+npx rnv run
+```
+
+### build
+
+Build project binary
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`package`](#package)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv build
+```
+
+### target launch
+
+Launch specific ios target
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target launch
+```
+
+### target list
+
+List all available targets for specific platform
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target list
+```
+
+### crypto installCerts
+
+Installs certificates into keychain (mac only)
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto installCerts
+```
+
+### crypto updateProfile
+
+Update provisioning profile (mac only)
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto updateProfile
+```
+
+### crypto updateProfiles
+
+Will attempt to update all provisioning profiles (mac only)
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto updateProfiles
+```
+
+### crypto installProfiles
+
+Installs provisioning certificates found in your workspace (mac only)
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto installProfiles
+```
+
+### log
+
+Attach logger to device or emulator and print out logs
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+Example:
+```bash
+npx rnv log
+```
+
+### export
+
+Export the app into deployable binary
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`build`](#build)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+
+Example:
+```bash
+npx rnv export
+```
+
+### package
+
+Package source files into bundle
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+
+Example:
+```bash
+npx rnv package
+```
+
+### configure
+
+Configure current project
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`platform configure`](#platform-configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+
+Example:
+```bash
+npx rnv configure
+```
+
+### run
+
+Run your rn app on target device or emulator
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+
+Example:
+```bash
+npx rnv run
+```
+
+### build
+
+Build project binary
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`package`](#package)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity), [`xcodebuildArgs`](#xcodebuildargs)
+
+Example:
+```bash
+npx rnv build
+```
+
+### start
+
+Starts react-native bundler
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configureSoft`](#configuresoft)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv start
+```
+
+### run
+
+Run your electron app on your machine
+
+Provided by: @rnv/engine-rn-electron
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+
+Example:
+```bash
+npx rnv run
+```
+
+### build
+
+Build project binary
+
+Provided by: @rnv/engine-rn-electron
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv build
+```
+
+### configure
+
+Configure current project
+
+Provided by: @rnv/engine-rn-electron
+
+Depends On:
+[`platform configure`](#platform-configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv configure
+```
+
+### start
+
+Starts bundler / server
+
+Provided by: @rnv/engine-rn-electron
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv start
+```
+
+### export
+
+Export the app into deployable binary
+
+Provided by: @rnv/engine-rn-electron
+
+Depends On:
+[`build`](#build)
+
+
+Available Options:
+[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+
+Example:
+```bash
+npx rnv export
+```
+
 ## Options
-
-### info
-Show full debug Info
-
-Shortcut: ``-i``
-
-Value: ``value``
-
-### printExec
-Print exec commands in full
-
-### updatePods
-Force update dependencies (iOS only)
-
-Shortcut: ``-u``
-
-### platform
-select specific Platform
-
-Shortcut: ``-p``
-
-Value: ``value``
-
-### appConfigID
-select specific app Config id
-
-Shortcut: ``-c``
-
-Value: ``value``
-
-### target
-select specific Target device/simulator
-
-Shortcut: ``-t``
-
-Value: ``value``
-
-### projectName
-select the name of the new project
-
-Value: ``value``
-
-### projectTemplate
-select the template of new project
-
-Value: ``value``
-
-### templateVersion
-select the template version
-
-Value: ``value``
-
-### title
-select the title of the app
-
-Value: ``value``
-
-### id
-select the id of the app
-
-Value: ``value``
-
-### appVersion
-select the version of the app
-
-Value: ``value``
-
-### workspace
-select the workspace for the new project
-
-Value: ``value``
-
-### template
-select specific template
-
-Shortcut: ``-T``
-
-Value: ``value``
-
-### device
-select connected Device
-
-Shortcut: ``-d``
-
-Value: ``value``
-
-### scheme
-select build Scheme
-
-Shortcut: ``-s``
-
-Value: ``value``
-
-### filter
-Filter value
-
-Shortcut: ``-f``
-
-Value: ``value``
-
-### list
-return List of items related to command
-
-Shortcut: ``-l``
-
-### only
-run Only top command (Skip dependencies)
-
-Shortcut: ``-o``
-
-### reset
-also perform reset of platform build
-
-Shortcut: ``-r``
-
-### resetHard
-also perform reset of platform platform and platform assets
-
-Shortcut: ``-R``
-
-### resetAssets
-also perform reset of platform assets
-
-Shortcut: ``-a``
-
-### key
-Pass the key/password
-
-Shortcut: ``-k``
-
-Value: ``value``
-
-### blueprint
-Blueprint for targets
-
-Shortcut: ``-b``
-
-Value: ``value``
 
 ### help
 Displays help info for particular command
 
 Shortcut: ``-h``
 
-### host
-custom Host ip
+Type: Flag
 
-Shortcut: ``-H``
+### info
+Show full debug Info
 
-Value: ``value``
+Shortcut: ``-i``
+
+Type: Value
+
+### printExec
+Print exec commands in full
+
+Type: Flag
+
+### platform
+select specific Platform
+
+Shortcut: ``-p``
+
+Type: Value
+
+### skipTasks
+List tasks which you want to skip during rnv execution
+
+Type: Value, required
+
+Examples:
+```bash
+npx rnv --skipTasks "configure,export"
+```
+```bash
+npx rnv --skipTasks deploy
+```
+### only
+run Only top command (Skip dependencies)
+
+Shortcut: ``-o``
+
+Type: Flag
+
+### ci
+CI/CD flag so it wont ask questions
+
+Type: Flag
+
+### mono
+Monochrome console output without chalk
+
+Type: Flag
+
+### maxErrorLength
+Specify how many characters each error should display. Default 200
+
+Type: Value, required
+
+### json
+Outputs the result as json
+
+Type: Flag
+
+### yes
+Default all prompts to yes
+
+Type: Flag
+
+### telemetryDebug
+If you have telemetry enabled, will print out exactly what is being collected into the console
+
+Type: Flag
+
+### packageManager
+Set specific package manager to use
+
+Type: Value, required
+
+Examples:
+```bash
+npx rnv --packageManager yarn
+```
+```bash
+npx rnv --packageManager npm
+```
+### npxMode
+Ensures you can use local npx rnv version after the command is done
+
+Type: Flag
+
+### unlinked
+Force engines to be loaded from node_modules rather than locally
+
+Type: Flag
+
+### configName
+Use custom name for ./renative.json. (applies only at root level)
+
+Type: Value, required
+
+### skipDependencyCheck
+Skips auto update of npm dependencies if mismatch found
+
+Type: Flag
+
+### appConfigID
+select specific app Config id
+
+Shortcut: ``-c``
+
+Type: Value
+
+### skipRnvCheck
+Skips auto update of rnv dependencies if mismatch found
+
+Type: Flag
+
+### scheme
+select build Scheme
+
+Shortcut: ``-s``
+
+Type: Value
+
+### engine
+engine to be used ie "engine-rn"
+
+Shortcut: ``-e``
+
+Type: Value, required
 
 ### exeMethod
 eXecutable method in buildHooks
 
 Shortcut: ``-x``
 
-Value: ``value``
+Type: Value
+
+### reset
+also perform reset of platform build
+
+Shortcut: ``-r``
+
+Type: Flag
+
+### resetHard
+also perform reset of platform platform and platform assets
+
+Shortcut: ``-R``
+
+Type: Flag
+
+### resetAssets
+also perform reset of platform assets
+
+Shortcut: ``-a``
+
+Type: Flag
+
+### hooks
+Force rebuild hooks
+
+Type: Flag
+
+### hostIp
+Custom IP override
+
+Type: Value, required
+
+### target
+select specific Target device/simulator
+
+Shortcut: ``-t``
+
+Type: Value
+
+### host
+custom Host ip
+
+Shortcut: ``-H``
+
+Type: Value, required
 
 ### port
 custom Port
 
 Shortcut: ``-P``
 
-Value: ``value``
+Type: Value, required
+
+### hosted
+Run in a hosted environment (skip budleAssets)
+
+Type: Flag
+
+### debugIp
+(optional) overwrite the ip to which the remote debugger will connect
+
+Type: Value, required
 
 ### debug
 enable or disable remote debugger.
 
 Shortcut: ``-D``
 
-Value: ``value``
+Type: Value
 
-### global
-Flag for setting a config value for all RNV projects
-
-Shortcut: ``-G``
-
-### engine
-engine to be used (next)
-
-Shortcut: ``-e``
-
-Value: ``value``
-
-### debugIp
-(optional) overwrite the ip to which the remote debugger will connect
-
-Value: ``value``
-
-### ci
-CI/CD flag so it wont ask questions
-
-### mono
-Monochrome console output without chalk
-
-### skipNotifications
-Skip sending any integrated notifications
-
-### keychain
-Name of the keychain
-
-Value: ``value``
-
-### provisioningStyle
-Set provisioningStyle (Automatic | Manual)
-
-Value: ``value``
-
-### codeSignIdentity
-Set codeSignIdentity (ie iPhone Distribution)
-
-Value: ``value``
-
-### provisionProfileSpecifier
-Name of provisionProfile
-
-Value: ``value``
-
-### hosted
-Run in a hosted environment (skip budleAssets)
-
-### hooks
-Force rebuild hooks
-
-### maxErrorLength
-Specify how many characters each error should display. Default 200
-
-Value: ``number``
-
+Examples:
+```bash
+npx rnv --debug weinre //run remote debug with weinre as preference
+```
+```bash
+npx rnv --debug chii //run remote debug with chii as preference
+```
+```bash
+npx rnv --debug false //force disable remote debug
+```
+```bash
+npx rnv --debug //run remote debug with default preference (chii)
+```
 ### skipTargetCheck
 Skip Android target check, just display the raw adb devices to choose from
 
-### analyzer
-Enable real-time bundle analyzer
+Type: Flag
 
-### xcodebuildArgs
-pass down custom xcodebuild arguments
+### filter
+Filter value
 
-Value: ``value``
+Shortcut: ``-f``
 
-### xcodebuildArchiveArgs
-pass down custom xcodebuild arguments
+Type: Value, required
 
-Value: ``value``
+### device
+select connected Device
 
-### xcodebuildExportArgs
-pass down custom xcodebuild arguments
+Shortcut: ``-d``
 
-Value: ``value``
-
-### skipDependencyCheck
-Skips auto update of npm dependencies if mismatch found
-
-### skipRnvCheck
-Skips auto update of rnv dependencies if mismatch found
-
-### configName
-Use custom name for ./renative.json. (applies only at root level)
-
-Value: ``value``
-
-### sourceAppConfigID
-name of source appConfig folder to copy from
-
-Value: ``value``
-
-### hostIp
-Custom IP override
-
-Value: ``value``
-
-### unlinked
-Force engines to be loaded from node_modules rather than locally
-
-### yes
-Default all prompts to yes
-
-### gitEnabled
-Enable git in your newly created project
-
-Value: ``value``
-
-### npxMode
-Ensures you can use local npx rnv version after the command is done
-
-### json
-Outputs the result as json
-
-### packageManager
-Set specific package manager to use
-
-Value: ``value``
-
-### skipTasks
-List tasks which you want to skip during rnv execution
-
-Value: ``value``
-
-### answer
-Pass in answers to prompts
-
-Value: ``value``
+Type: Value
 
 ### resetAdb
 Forces to reset android adb
 
-### telemetryDebug
-If you have telemetry enabled, will print out exactly what is being collected into the console
+Type: Flag
 

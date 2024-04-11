@@ -1139,7 +1139,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `templateXcode?` | \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application?`: `ConfigTemplateXcodeApplication` ; `userNotificationCenter?`: \{ `didReceiveNotificationResponse?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: `ConfigTemplateXcodeProjectPbxproj`  } |
+| `templateXcode?` | \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application?`: `ConfigTemplateXcodeApplication` ; `userNotificationCenter?`: \{ `didReceiveNotificationResponse?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: `Record`\<`string`, `string`\> ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: `ConfigTemplateXcodeProjectPbxproj`  } |
 | `templateXcode.AppDelegate_h?` | \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } |
 | `templateXcode.AppDelegate_h.appDelegateExtensions?` | `string`[] |
 | `templateXcode.AppDelegate_h.appDelegateImports?` | `string`[] |
@@ -1150,7 +1150,7 @@ ___
 | `templateXcode.AppDelegate_mm.appDelegateMethods.userNotificationCenter?` | \{ `didReceiveNotificationResponse?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } |
 | `templateXcode.AppDelegate_mm.appDelegateMethods.userNotificationCenter.didReceiveNotificationResponse?` | (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] |
 | `templateXcode.AppDelegate_mm.appDelegateMethods.userNotificationCenter.willPresent?` | (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] |
-| `templateXcode.Info_plist?` | {} |
+| `templateXcode.Info_plist?` | `Record`\<`string`, `string`\> |
 | `templateXcode.Podfile?` | \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } |
 | `templateXcode.Podfile.header?` | `string`[] |
 | `templateXcode.Podfile.injectLines?` | `string`[] |
@@ -1443,7 +1443,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:117
+@rnv/core/lib/api/types.d.ts:119
 
 ___
 
@@ -1743,11 +1743,13 @@ ___
 | :------ | :------ |
 | `choices?` | (\{ `name`: `string` ; `value`: `any`  } \| `string`)[] |
 | `default?` | `any` |
+| `initialValue?` | `string` |
 | `logMessage?` | `string` |
 | `loop?` | `boolean` |
 | `message?` | `string` |
 | `name?` | `string` |
 | `pageSize?` | `number` |
+| `source?` | (`answersSoFar`: `any`, `input`: `string` \| `undefined`) => `Promise`\<`any`\> |
 | `type` | `string` |
 | `validate?` | (`i`: `string`) => `string` \| `boolean` |
 | `warningMessage?` | `string` |
@@ -1781,7 +1783,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:116
+@rnv/core/lib/api/types.d.ts:118
 
 ___
 
