@@ -15,13 +15,11 @@ const apiKey = 'fd3bf87fce092e08e71378cf066734b2';
 const searchClient = algoliasearch(appId, apiKey);
 
 // see https://github.com/facebook/docusaurus/issues/7227
-export default function CustomSearchNavbarItem(props: {
-    className?: string;
-}): JSX.Element | null {
+export default function CustomSearchNavbarItem(props: { className?: string }): JSX.Element | null {
     return (
         <Autocomplete
             openOnFocus={true}
-            placeholder='Search...'
+            placeholder="Search..."
             className={props.className}
             getSources={({ query }) => [
                 {
@@ -31,7 +29,7 @@ export default function CustomSearchNavbarItem(props: {
                             searchClient,
                             queries: [
                                 {
-                                    indexName: 'renative_docsearch',
+                                    indexName: process.env.ALGOLIA_INDEX || 'renative_docsearch',
                                     query,
                                 },
                             ],
@@ -46,8 +44,9 @@ export default function CustomSearchNavbarItem(props: {
                         },
                         noResults() {
                             return (
-                                <div style={{margin: 'auto', height: '113px', width: '204px'}}>
-                                        <span className='no_results'>No results found for </span><strong>"{query}"</strong>
+                                <div style={{ margin: 'auto', height: '113px', width: '204px' }}>
+                                    <span className="no_results">No results found for </span>
+                                    <strong>"{query}"</strong>
                                 </div>
                             );
                         },

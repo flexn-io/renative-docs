@@ -93,12 +93,6 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            algolia: {
-                appId: 'FMYKKKF9Q8',
-                apiKey: 'fd3bf87fce092e08e71378cf066734b2',
-                indexName: process.env.ALGOLIA_INDEX || 'renative_docs',
-                placeholder: 'Search...',
-            },
             navbar: {
                 // title: 'ReNative',
                 hideOnScroll: false,
