@@ -56,11 +56,11 @@
         ],
         "ranking": [
             "words",
-            "exact",
             "filters",
             "typo",
             "attribute",
-            "proximity"
+            "proximity",
+            "exact"
         ]
     }
 }
