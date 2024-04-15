@@ -11,7 +11,7 @@ import { DocSearch } from '@docsearch/react';
 
 import '@docsearch/css';
 
-export default function CustomSearchNavbarItem(props: { className?: string }): JSX.Element | null {
+export default function CustomSearchNavbarItem(): JSX.Element {
     const {
         siteConfig: { customFields },
     } = useDocusaurusContext();
@@ -20,5 +20,13 @@ export default function CustomSearchNavbarItem(props: { className?: string }): J
     const appId = customFields.ALGOLIA_APP_ID as string;
     const searchKey = customFields.ALGOLIA_SEARCH_KEY as string;
 
-    return <DocSearch appId={appId} indexName={indexName} apiKey={searchKey} />;
+    return (
+        <DocSearch
+            maxResultsPerGroup={7}
+            placeholder="Search..."
+            appId={appId}
+            indexName={indexName}
+            apiKey={searchKey}
+        />
+    );
 }
