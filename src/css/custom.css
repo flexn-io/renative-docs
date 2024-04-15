@@ -742,6 +742,12 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+.search_result_title_container .result-title-logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .aa-DetachedContainer--modal{
   margin-top: 10% !important;
 }

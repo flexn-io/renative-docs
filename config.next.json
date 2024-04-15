@@ -55,12 +55,12 @@
             "type"
         ],
         "ranking": [
-            "exact",
             "words",
             "filters",
             "typo",
             "attribute",
-            "proximity"
+            "proximity",
+            "exact"
         ]
     }
 }
