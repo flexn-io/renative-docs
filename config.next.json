@@ -58,9 +58,9 @@
             "words",
             "filters",
             "typo",
+            "exact",
             "attribute",
-            "proximity",
-            "exact"
+            "proximity"
         ]
     }
 }
