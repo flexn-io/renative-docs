@@ -3,7 +3,7 @@ import {
     registerAllPlatformEngines,
     RnvContext,
     RnvEngine,
-    PlatformKey,
+    RnvPlatformKey,
     RnvEnginePlatform,
 } from '@rnv/core';
 import path from 'path';
@@ -12,7 +12,7 @@ import fs from 'fs';
 const cleanUrl = (v: string) => v.replace('@', '').replace('/', '');
 
 export const updateMdFilesEngines = async (c: RnvContext) => {
-    registerAllPlatformEngines(c);
+    registerAllPlatformEngines();
     const engines = c.runtime.enginesById;
 
     Object.values(engines).forEach((engine) => {
@@ -35,7 +35,7 @@ const _generateEngineDoc = (c: RnvContext, engine: RnvEngine) => {
 
     if (enginePlatforms) {
         Object.keys(enginePlatforms).forEach((v) => {
-            const pKey = v as PlatformKey;
+            const pKey = v as RnvPlatformKey;
             const engPlatform = enginePlatforms?.[pKey];
             if (engPlatform) {
                 const npm = engineConfigPlatforms?.[pKey]?.npm;
@@ -107,7 +107,7 @@ ${extContent}
     writeFileSync(docFilePath, fixedFile);
 };
 
-const _getExtensionContent = (platform: PlatformKey, engine: RnvEngine) => {
+const _getExtensionContent = (platform: RnvPlatformKey, engine: RnvEngine) => {
     let out = '';
     let p: RnvEnginePlatform | undefined;
     if (engine?.platforms?.[platform]) {

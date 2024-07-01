@@ -9,51 +9,75 @@ sidebar_label: renative.template.json (Template Config)
 
 The schema defines the following properties:
 
-## `defaults` (object)
-
-Default system config for this project
-
-Properties of the `defaults` object:
-
-### `ports` (object)
-
-Allows you to assign custom port per each supported platform specific to this project. this is useful if you foten switch between multiple projects and do not want to experience constant port conflicts
-
-### `supportedPlatforms` (array)
-
-Array list of all supported platforms in current project
-
-The object is an array with all elements of the type `string`.
-
-### `portOffset` (number)
-
-Offset each port default value by increment
-
-### `defaultCommandSchemes` (object)
-
-List of default schemes for each rnv command. This is useful if you want to avoid specifying `-s ...` every time your run rnv command. bu default rnv uses `-s debug`. NOTE: you can only use schemes you defined in `buildSchemes`
-
-### `targets` (object)
-
-Override of default targets specific to this project
-
-## `engines` (object)
-
-List of engines available in this project
-
 ## `templateConfig` (object)
 
 Used in `renative.template.json` allows you to define template behaviour.
 
 Properties of the `templateConfig` object:
 
+### `name` (string)
+
+### `version` (string)
+
+### `disabled` (boolean)
+
 ### `includedPaths` (array)
 
 Defines list of all file/dir paths you want to include in template
 
+The elements of the array must match *at least one* of the following properties:
+
+### (string)
+
+### (object)
+
+Properties of the `undefined` object:
+
+#### `paths` (array, required)
+
 The object is an array with all elements of the type `string`.
 
-### `bootstrapQuestions` (array, required)
+#### `engines` (array)
+
+The object is an array with all elements of the type `string`.
+
+#### `platforms` (array)
+
+Array list of all supported platforms in current project
+
+The object is an array with all elements of the type `string`.
+
+### `renative_json` (object)
+
+Properties of the `renative_json` object:
+
+#### `$schema` (string)
+
+#### `extendsTemplate` (string)
+
+### `package_json` (object)
+
+Properties of the `package_json` object:
+
+#### `dependencies` (object)
+
+#### `devDependencies`
+
+#### `peerDependencies`
+
+#### `optionalDependencies`
+
+#### `name` (string)
+
+#### `version` (string)
+
+#### `browserslist`
+
+## `bootstrapConfig` (object)
+
+Properties of the `bootstrapConfig` object:
+
+### `bootstrapQuestions` (array)
 
 Defines list of custom bootstrap questions
 
@@ -69,9 +93,7 @@ The array object has the following properties:
 
 ##### `title` (string, required)
 
-##### `value` (object, required)
-
-Properties of the `value` object:
+##### `value` (, required)
 
 #### `configProp` (object)
 
@@ -85,18 +107,38 @@ Properties of the `configProp` object:
 
 #### `title` (string, required)
 
-### `packageTemplate` (object)
+#### `onConfirm` (array)
 
-Properties of the `packageTemplate` object:
+The object is an array with all elements of the type `object`.
 
-#### `dependencies` (object)
+The array object has the following properties:
 
-#### `devDependencies`
+##### `action` (string, required)
 
-#### `peerDependencies`
+##### `prop` (string)
 
-#### `optionalDependencies`
+##### `path` (string, required)
 
-#### `name` (string)
+### `rnvNewPatchDependencies`
 
-#### `version` (string)
+This ensures that the correct version of the npm packages will be used to run the project for the first time after creation
+
+### `configModifiers` (object)
+
+Properties of the `configModifiers` object:
+
+#### `engines` (array, required)
+
+The object is an array with all elements of the type `object`.
+
+The array object has the following properties:
+
+##### `name` (string, required)
+
+##### `supportedPlatforms` (, required)
+
+##### `nullifyIfFalse` (boolean)
+
+### `defaultSelectedPlatforms`
+
+Array list of all supported platforms in current project

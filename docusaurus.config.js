@@ -8,12 +8,16 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const config = {
     title: 'ReNative',
     tagline: 'Unified Development Platform',
-    url: process.env.DOCS_URL || 'https://renative.org',
+    url: process.env.BASE_URL || 'https://renative.org',
     baseUrl: '/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
-    noIndex: process.env.PREVENT_INDEXING === 'true',
     favicon: 'img/favicon.ico',
+    customFields: {
+        ALGOLIA_INDEX: process.env.ALGOLIA_INDEX || 'renative_docsearch',
+        ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID || 'FMYKKKF9Q8',
+        ALGOLIA_SEARCH_KEY: process.env.ALGOLIA_SEARCH_KEY || 'fd3bf87fce092e08e71378cf066734b2',
+    },
     trailingSlash: false,
     organizationName: 'flexn-io', // Usually your GitHub org/user name.
     projectName: 'renative-docs', // Usually your repo name.
@@ -87,6 +91,9 @@ const config = {
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
+                sitemap: {
+                    ignorePatterns: ['/markdown-page'],
+                },
             }),
         ],
     ],
@@ -94,12 +101,6 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            algolia: {
-                appId: 'FMYKKKF9Q8',
-                apiKey: 'fd3bf87fce092e08e71378cf066734b2',
-                indexName: 'renative_docs',
-                placeholder: 'Search...',
-            },
             navbar: {
                 // title: 'ReNative',
                 hideOnScroll: false,
@@ -189,7 +190,7 @@ const config = {
                     {
                         position: 'left',
                         label: 'Enterprise',
-                        href: 'https:/flexn.io',
+                        href: 'https://www.flexn.io',
                     },
                     {
                         type: 'custom-search-navbar-item',

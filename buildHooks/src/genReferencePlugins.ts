@@ -1,4 +1,4 @@
-import { doResolve, readObjectSync, fsExistsSync, writeFileSync, SUPPORTED_PLATFORMS, PlatformKey } from '@rnv/core';
+import { doResolve, readObjectSync, fsExistsSync, writeFileSync, RnvPlatforms, RnvPlatformKey } from '@rnv/core';
 import merge from 'deepmerge';
 import path from 'path';
 
@@ -34,9 +34,9 @@ sidebar_label: Plugins
         const npm = plugin.version ? `Npm: https://www.npmjs.com/package/${key}` : '';
         const version = plugin.version ? `Version: \`${plugin.version}\`` : '';
         const platforms = Object.keys(plugin)
-            .map((v) => (SUPPORTED_PLATFORMS.includes(v as PlatformKey) ? v : null))
+            .map((v) => (RnvPlatforms.includes(v as RnvPlatformKey) ? v : null))
             .filter((v) => v);
-        const supPlats = platforms.length ? platforms : SUPPORTED_PLATFORMS;
+        const supPlats = platforms.length ? platforms : RnvPlatforms;
         const deprecated = plugin.deprecated ? `> ${plugin.deprecated}` : '';
         const props = plugin.props ? `Props: ${Object.keys(plugin.props).map((v) => `\`${v}\``)}` : '';
 

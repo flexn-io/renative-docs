@@ -6,54 +6,27 @@
  */
 
 import React from 'react';
-import { Autocomplete, Footer, ProductItem } from '../../theme/SearchBar';
-import { getAlgoliaResults } from '@algolia/autocomplete-js';
-import algoliasearch from 'algoliasearch';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { DocSearch } from '@docsearch/react';
 
-const appId = 'FMYKKKF9Q8';
-const apiKey = 'fd3bf87fce092e08e71378cf066734b2';
-const searchClient = algoliasearch(appId, apiKey);
+import '@docsearch/css';
 
-// see https://github.com/facebook/docusaurus/issues/7227
-export default function CustomSearchNavbarItem(props: {
-    className?: string;
-}): JSX.Element | null {
+export default function CustomSearchNavbarItem(): JSX.Element {
+    const {
+        siteConfig: { customFields },
+    } = useDocusaurusContext();
+
+    const indexName = customFields.ALGOLIA_INDEX as string;
+    const appId = customFields.ALGOLIA_APP_ID as string;
+    const searchKey = customFields.ALGOLIA_SEARCH_KEY as string;
+
     return (
-        <Autocomplete
-            openOnFocus={true}
-            placeholder='Search...'
-            className={props.className}
-            getSources={({ query }) => [
-                {
-                    sourceId: 'products',
-                    getItems() {
-                        return getAlgoliaResults({
-                            searchClient,
-                            queries: [
-                                {
-                                    indexName: 'renative_docsearch',
-                                    query,
-                                },
-                            ],
-                        });
-                    },
-                    getItemUrl({ item }) {
-                        return item.url;
-                    },
-                    templates: {
-                        item({ item, components }) {
-                            return <ProductItem hit={item} components={components} />;
-                        },
-                        noResults() {
-                            return (
-                                <div style={{margin: 'auto', height: '113px', width: '204px'}}>
-                                        <span className='no_results'>No results found for </span><strong>"{query}"</strong>
-                                </div>
-                            );
-                        },
-                    },
-                },
-            ]}
+        <DocSearch
+            maxResultsPerGroup={7}
+            placeholder="Search..."
+            appId={appId}
+            indexName={indexName}
+            apiKey={searchKey}
         />
     );
 }
