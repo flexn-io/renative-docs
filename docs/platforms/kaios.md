@@ -31,7 +31,11 @@ Extenstions are defined via engines. Engines with kaios support:
 ---
 ## Requirements
 
-- [KaiOSrt](https://developer.kaiostech.com/simulator) for emulator
+:::warning
+Kaios simulator only works in ubuntu 18.04 or later.
+:::
+
+- [KaiOSrt](https://developer.kaiostech.com/docs/sfp-3.0/getting-started/env-setup/simulator) for simulator
 
 After installation you can launch it via Applications:
 
