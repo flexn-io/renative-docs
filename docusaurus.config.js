@@ -160,8 +160,8 @@ const config = {
                     },
                     {
                         position: 'left',
-                        label: 'v0.37',
-                        href: 'https://github.com/flexn-io/renative/releases/tag/0.37.0',
+                        label: 'v1.0',
+                        href: 'https://github.com/flexn-io/renative/releases/tag/1.0.0',
                     },
                     {
                         type: 'doc',
@@ -187,11 +187,11 @@ const config = {
                     //     position: 'left',
                     //     label: 'Marketplace',
                     // },
-                    {
-                        position: 'left',
-                        label: 'Enterprise',
-                        href: 'https://www.flexn.io',
-                    },
+                    // {
+                    //     position: 'left',
+                    //     label: 'Enterprise',
+                    //     href: 'https://www.flexn.io',
+                    // },
                     {
                         type: 'custom-search-navbar-item',
                         position: 'right',

@@ -38,5 +38,5 @@ run
 
 ```
 rnv link
-npx rnv hooks run -x prePublish -p all
+npx rnv hooks run -x prePublish 
 ```

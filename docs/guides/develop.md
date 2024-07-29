@@ -77,8 +77,8 @@ npm run deploy:prod
 
 [Documentation for CLI](../api/cli.md)
 
-[Documentation for RNV](../api/node/renative/index.md)
+[Documentation for RNV](../api/node/rnv/modules.md)
 
-[Documentation for Config](../api/json-config.md)
+[Documentation for Config](../api/schemas/rnv.project.md)
 
-[Documentation for Runtime](../api/node/renative/index.md)
+[Documentation for Runtime](../api/node/renative/modules.md)
