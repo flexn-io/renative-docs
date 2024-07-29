@@ -44,6 +44,9 @@ Decrypt encrypted project files into local `~/<wokspace>/<project>/..`
 
 Provided by: @rnv/engine-core
 
+Depends On:
+[`configureSoft`](#configuresoft)
+
 
 Available Options:
 [`key`](#key)
@@ -60,7 +63,7 @@ Encrypts secure files from `~/<wokspace>/<project>/..` to project
 Provided by: @rnv/engine-core
 
 Depends On:
-[`project configure`](#project-configure)
+[`configureSoft`](#configuresoft)
 
 
 Available Options:
@@ -258,7 +261,7 @@ Provided by: @rnv/engine-core
 
 
 Available Options:
-[`exeMethod`](#exemethod)
+[`exe-method`](#exe-method)
 
 Example:
 ```bash
@@ -334,7 +337,7 @@ Provided by: @rnv/engine-core
 
 
 Available Options:
-[`gitEnabled`](#gitenabled), [`answer`](#answer), [`workspace`](#workspace), [`template`](#template), [`projectName`](#projectname), [`projectTemplate`](#projecttemplate), [`templateVersion`](#templateversion), [`title`](#title), [`appVersion`](#appversion), [`id`](#id)
+[`git-enabled`](#git-enabled), [`answer`](#answer), [`workspace`](#workspace), [`template`](#template), [`project-name`](#project-name), [`project-template`](#project-template), [`template-version`](#template-version), [`title`](#title), [`app-version`](#app-version), [`id`](#id)
 
 Example:
 ```bash
@@ -371,7 +374,7 @@ Provided by: @rnv/engine-core
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -491,7 +494,7 @@ Depends On:
 
 
 Available Options:
-[`target`](#target)
+[`target`](#target), [`reset-adb`](#reset-adb), [`skip-target-check`](#skip-target-check)
 
 Example:
 ```bash
@@ -509,7 +512,7 @@ Depends On:
 
 
 Available Options:
-[`target`](#target)
+[`target`](#target), [`reset-adb`](#reset-adb), [`skip-target-check`](#skip-target-check)
 
 Example:
 ```bash
@@ -552,7 +555,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -570,7 +573,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -588,7 +591,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug-ip`](#debug-ip), [`host`](#host), [`reset-adb`](#reset-adb), [`skip-target-check`](#skip-target-check)
 
 Example:
 ```bash
@@ -606,7 +609,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -657,6 +660,10 @@ Provided by: @rnv/engine-rn
 
 Depends On:
 [`project configure`](#project-configure)
+
+
+Available Options:
+[`keychain`](#keychain)
 
 Example:
 ```bash
@@ -730,7 +737,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+[`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity)
 
 Example:
 ```bash
@@ -748,7 +755,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+[`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity)
 
 Example:
 ```bash
@@ -766,7 +773,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
+[`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity)
 
 Example:
 ```bash
@@ -784,7 +791,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug-ip`](#debug-ip), [`host`](#host), [`skip-target-check`](#skip-target-check), [`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity)
 
 Example:
 ```bash
@@ -802,7 +809,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity), [`xcodebuildArgs`](#xcodebuildargs)
+[`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity), [`xcodebuild-args`](#xcodebuild-args)
 
 Example:
 ```bash
@@ -820,7 +827,358 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
+
+Example:
+```bash
+npx rnv start
+```
+
+### target launch
+
+Launch specific target
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target), [`reset-adb`](#reset-adb), [`skip-target-check`](#skip-target-check)
+
+Example:
+```bash
+npx rnv target launch
+```
+
+### target list
+
+List all available targets for specific platform
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target), [`reset-adb`](#reset-adb), [`skip-target-check`](#skip-target-check)
+
+Example:
+```bash
+npx rnv target list
+```
+
+### sdk configure
+
+Configures sdks
+
+Provided by: @rnv/engine-rn-tvos
+
+Example:
+```bash
+npx rnv sdk configure
+```
+
+### log
+
+Attach logger to device or emulator and print out logs
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+Example:
+```bash
+npx rnv log
+```
+
+### package
+
+Package source files into bundle
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
+
+Example:
+```bash
+npx rnv package
+```
+
+### configure
+
+Configure current project
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`platform configure`](#platform-configure)
+
+
+Available Options:
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
+
+Example:
+```bash
+npx rnv configure
+```
+
+### run
+
+Run your rn app on target device or emulator
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug-ip`](#debug-ip), [`host`](#host), [`reset-adb`](#reset-adb), [`skip-target-check`](#skip-target-check)
+
+Example:
+```bash
+npx rnv run
+```
+
+### build
+
+Build project binary
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`package`](#package)
+
+
+Available Options:
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
+
+Example:
+```bash
+npx rnv build
+```
+
+### target launch
+
+Launch specific ios target
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target launch
+```
+
+### target list
+
+List all available targets for specific platform
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+
+Available Options:
+[`target`](#target)
+
+Example:
+```bash
+npx rnv target list
+```
+
+### crypto installCerts
+
+Installs certificates into keychain (mac only)
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`project configure`](#project-configure)
+
+
+Available Options:
+[`keychain`](#keychain)
+
+Example:
+```bash
+npx rnv crypto installCerts
+```
+
+### crypto updateProfile
+
+Update provisioning profile (mac only)
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto updateProfile
+```
+
+### crypto updateProfiles
+
+Will attempt to update all provisioning profiles (mac only)
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto updateProfiles
+```
+
+### crypto installProfiles
+
+Installs provisioning certificates found in your workspace (mac only)
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`project configure`](#project-configure)
+
+Example:
+```bash
+npx rnv crypto installProfiles
+```
+
+### log
+
+Attach logger to device or emulator and print out logs
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`workspace configure`](#workspace-configure)
+
+Example:
+```bash
+npx rnv log
+```
+
+### export
+
+Export the app into deployable binary
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`build`](#build)
+
+
+Available Options:
+[`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity)
+
+Example:
+```bash
+npx rnv export
+```
+
+### package
+
+Package source files into bundle
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity)
+
+Example:
+```bash
+npx rnv package
+```
+
+### configure
+
+Configure current project
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`platform configure`](#platform-configure)
+
+
+Available Options:
+[`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity)
+
+Example:
+```bash
+npx rnv configure
+```
+
+### run
+
+Run your rn app on target device or emulator
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configure`](#configure)
+
+
+Available Options:
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug-ip`](#debug-ip), [`host`](#host), [`skip-target-check`](#skip-target-check), [`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity)
+
+Example:
+```bash
+npx rnv run
+```
+
+### build
+
+Build project binary
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`package`](#package)
+
+
+Available Options:
+[`provisioning-style`](#provisioning-style), [`provision-profile-specifier`](#provision-profile-specifier), [`code-sign-identity`](#code-sign-identity), [`xcodebuild-args`](#xcodebuild-args)
+
+Example:
+```bash
+npx rnv build
+```
+
+### start
+
+Starts react-native bundler
+
+Provided by: @rnv/engine-rn-tvos
+
+Depends On:
+[`configureSoft`](#configuresoft)
+
+
+Available Options:
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -838,7 +1196,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug-ip`](#debug-ip), [`host`](#host)
 
 Example:
 ```bash
@@ -856,7 +1214,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -874,7 +1232,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -892,7 +1250,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -910,7 +1268,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -928,7 +1286,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug-ip`](#debug-ip), [`host`](#host)
 
 Example:
 ```bash
@@ -946,7 +1304,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -964,7 +1322,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -982,7 +1340,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -1098,7 +1456,7 @@ npx rnv sdk configure
 
 Launch specific target
 
-Provided by: @rnv/engine-rn-tvos
+Provided by: @rnv/engine-rn-web
 
 Depends On:
 [`workspace configure`](#workspace-configure)
@@ -1116,7 +1474,7 @@ npx rnv target launch
 
 List all available targets for specific platform
 
-Provided by: @rnv/engine-rn-tvos
+Provided by: @rnv/engine-rn-web
 
 Depends On:
 [`workspace configure`](#workspace-configure)
@@ -1128,317 +1486,6 @@ Available Options:
 Example:
 ```bash
 npx rnv target list
-```
-
-### sdk configure
-
-Configures sdks
-
-Provided by: @rnv/engine-rn-tvos
-
-Example:
-```bash
-npx rnv sdk configure
-```
-
-### log
-
-Attach logger to device or emulator and print out logs
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`workspace configure`](#workspace-configure)
-
-Example:
-```bash
-npx rnv log
-```
-
-### package
-
-Package source files into bundle
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`configure`](#configure)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
-
-Example:
-```bash
-npx rnv package
-```
-
-### configure
-
-Configure current project
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`platform configure`](#platform-configure)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
-
-Example:
-```bash
-npx rnv configure
-```
-
-### run
-
-Run your rn app on target device or emulator
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`configure`](#configure)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
-
-Example:
-```bash
-npx rnv run
-```
-
-### build
-
-Build project binary
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`package`](#package)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
-
-Example:
-```bash
-npx rnv build
-```
-
-### target launch
-
-Launch specific ios target
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`workspace configure`](#workspace-configure)
-
-
-Available Options:
-[`target`](#target)
-
-Example:
-```bash
-npx rnv target launch
-```
-
-### target list
-
-List all available targets for specific platform
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`workspace configure`](#workspace-configure)
-
-
-Available Options:
-[`target`](#target)
-
-Example:
-```bash
-npx rnv target list
-```
-
-### crypto installCerts
-
-Installs certificates into keychain (mac only)
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`project configure`](#project-configure)
-
-Example:
-```bash
-npx rnv crypto installCerts
-```
-
-### crypto updateProfile
-
-Update provisioning profile (mac only)
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`project configure`](#project-configure)
-
-Example:
-```bash
-npx rnv crypto updateProfile
-```
-
-### crypto updateProfiles
-
-Will attempt to update all provisioning profiles (mac only)
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`project configure`](#project-configure)
-
-Example:
-```bash
-npx rnv crypto updateProfiles
-```
-
-### crypto installProfiles
-
-Installs provisioning certificates found in your workspace (mac only)
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`project configure`](#project-configure)
-
-Example:
-```bash
-npx rnv crypto installProfiles
-```
-
-### log
-
-Attach logger to device or emulator and print out logs
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`workspace configure`](#workspace-configure)
-
-Example:
-```bash
-npx rnv log
-```
-
-### export
-
-Export the app into deployable binary
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`build`](#build)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
-
-Example:
-```bash
-npx rnv export
-```
-
-### package
-
-Package source files into bundle
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`configure`](#configure)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
-
-Example:
-```bash
-npx rnv package
-```
-
-### configure
-
-Configure current project
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`platform configure`](#platform-configure)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity)
-
-Example:
-```bash
-npx rnv configure
-```
-
-### run
-
-Run your rn app on target device or emulator
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`configure`](#configure)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
-
-Example:
-```bash
-npx rnv run
-```
-
-### build
-
-Build project binary
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`package`](#package)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`provisioningStyle`](#provisioningstyle), [`provisionProfileSpecifier`](#provisionprofilespecifier), [`codeSignIdentity`](#codesignidentity), [`xcodebuildArgs`](#xcodebuildargs)
-
-Example:
-```bash
-npx rnv build
-```
-
-### start
-
-Starts react-native bundler
-
-Provided by: @rnv/engine-rn-tvos
-
-Depends On:
-[`configureSoft`](#configuresoft)
-
-
-Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
-
-Example:
-```bash
-npx rnv start
 ```
 
 ### run
@@ -1452,7 +1499,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debugIp`](#debugip), [`skipTargetCheck`](#skiptargetcheck), [`host`](#host)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager), [`target`](#target), [`device`](#device), [`hosted`](#hosted), [`port`](#port), [`debug-ip`](#debug-ip), [`host`](#host)
 
 Example:
 ```bash
@@ -1470,7 +1517,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -1488,7 +1535,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -1506,7 +1553,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -1524,7 +1571,7 @@ Depends On:
 
 
 Available Options:
-[`reset`](#reset), [`resetHard`](#resethard), [`resetAssets`](#resetassets), [`appConfigID`](#appconfigid), [`packageManager`](#packagemanager)
+[`reset`](#reset), [`reset-hard`](#reset-hard), [`reset-assets`](#reset-assets), [`app-config-ID`](#app-config-id), [`package-manager`](#package-manager)
 
 Example:
 ```bash
@@ -1547,8 +1594,18 @@ Shortcut: ``-i``
 
 Type: Value
 
-### printExec
+### print-exec
 Print exec commands in full
+
+Type: Flag
+
+### no-summary
+Omit summary box in output
+
+Type: Flag
+
+### no-intro
+Omit intro box in output
 
 Type: Flag
 
@@ -1559,7 +1616,7 @@ Shortcut: ``-p``
 
 Type: Value
 
-### skipTasks
+### skip-tasks
 List tasks which you want to skip during rnv execution
 
 Type: Value, required
@@ -1588,7 +1645,7 @@ Monochrome console output without chalk
 
 Type: Flag
 
-### maxErrorLength
+### max-error-length
 Specify how many characters each error should display. Default 200
 
 Type: Value, required
@@ -1603,12 +1660,12 @@ Default all prompts to yes
 
 Type: Flag
 
-### telemetryDebug
+### telemetry-debug
 If you have telemetry enabled, will print out exactly what is being collected into the console
 
 Type: Flag
 
-### packageManager
+### package-manager
 Set specific package manager to use
 
 Type: Value, required
@@ -1620,7 +1677,7 @@ npx rnv --packageManager yarn
 ```bash
 npx rnv --packageManager npm
 ```
-### npxMode
+### npx-mode
 Ensures you can use local npx rnv version after the command is done
 
 Type: Flag
@@ -1630,24 +1687,24 @@ Force engines to be loaded from node_modules rather than locally
 
 Type: Flag
 
-### configName
+### config-name
 Use custom name for ./renative.json. (applies only at root level)
 
 Type: Value, required
 
-### skipDependencyCheck
+### skip-dependency-check
 Skips auto update of npm dependencies if mismatch found
 
 Type: Flag
 
-### appConfigID
+### app-config-ID
 select specific app Config id
 
 Shortcut: ``-c``
 
 Type: Value
 
-### skipRnvCheck
+### skip-rnv-check
 Skips auto update of rnv dependencies if mismatch found
 
 Type: Flag
@@ -1666,7 +1723,7 @@ Shortcut: ``-e``
 
 Type: Value, required
 
-### exeMethod
+### exe-method
 eXecutable method in buildHooks
 
 Shortcut: ``-x``
@@ -1680,14 +1737,14 @@ Shortcut: ``-r``
 
 Type: Flag
 
-### resetHard
+### reset-hard
 also perform reset of platform platform and platform assets
 
 Shortcut: ``-R``
 
 Type: Flag
 
-### resetAssets
+### reset-assets
 also perform reset of platform assets
 
 Shortcut: ``-a``
@@ -1699,7 +1756,7 @@ Force rebuild hooks
 
 Type: Flag
 
-### hostIp
+### host-ip
 Custom IP override
 
 Type: Value, required
@@ -1730,7 +1787,14 @@ Run in a hosted environment (skip budleAssets)
 
 Type: Flag
 
-### debugIp
+### device
+select connected Device
+
+Shortcut: ``-d``
+
+Type: Value
+
+### debug-ip
 (optional) overwrite the ip to which the remote debugger will connect
 
 Type: Value, required
@@ -1755,27 +1819,3 @@ npx rnv --debug false //force disable remote debug
 ```bash
 npx rnv --debug //run remote debug with default preference (chii)
 ```
-### skipTargetCheck
-Skip Android target check, just display the raw adb devices to choose from
-
-Type: Flag
-
-### filter
-Filter value
-
-Shortcut: ``-f``
-
-Type: Value, required
-
-### device
-select connected Device
-
-Shortcut: ``-d``
-
-Type: Value
-
-### resetAdb
-Forces to reset android adb
-
-Type: Flag
-

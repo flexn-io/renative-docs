@@ -3,8 +3,10 @@ import {
     logHook,
     registerAllPlatformEngines,
     getRegisteredTasks,
-    RnvTaskOptionPresets,
+    // RnvTaskOptionPresets,
     RnvTask,
+    // RnvTaskCoreOptionPresets,
+    RnvTaskOptions,
 } from '@rnv/core';
 import path from 'path';
 
@@ -82,7 +84,8 @@ sidebar_label: rnv CLI
 
     // CLI options
     content += `## Options\n\n`;
-    RnvTaskOptionPresets.withAll().forEach((param) => {
+
+    Object.values(RnvTaskOptions).forEach((param) => {
         content += `### ${param.key}\n`;
         content += `${param.description}\n\n`;
         if (param.shortcut) content += `Shortcut: \`\`-${param.shortcut}\`\`\n\n`;

@@ -37,7 +37,7 @@ const _getExtensionContent = (c: RnvContext, platform) => {
 
     Object.values(engines).forEach((engine) => {
         if (Object.keys(engine.platforms || {}).includes(platform)) {
-            out += `- [${engine.config.id}](../engines/${engine.config.id}#extensions)\n`;
+            out += `- [${engine.config.name}](../engines/${engine.config.name.replace('@rnv/', '')}#extensions)\n`;
         }
     });
 

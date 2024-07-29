@@ -24,7 +24,7 @@ export const updateMdFilesEngines = async (c: RnvContext) => {
 
 const _generateEngineDoc = (c: RnvContext, engine: RnvEngine) => {
     const docsPath = path.join(c.paths.project.dir, 'docs/engines');
-    const docFilePath = path.join(docsPath, `${engine.config.id}.md`);
+    const docFilePath = path.join(docsPath, `${engine.config.name.replace('@rnv/', '')}.md`);
     const fileContent = fs.readFileSync(docFilePath).toString();
 
     let npmPackages = '';

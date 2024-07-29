@@ -29,8 +29,8 @@ original_id: firetv
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with firetv support: 
-- [engine-rn](../engines/engine-rn#extensions)
-- [engine-rn-tvos](../engines/engine-rn-tvos#extensions)
+- [@rnv/engine-rn](../engines/engine-rn#extensions)
+- [@rnv/engine-rn-tvos](../engines/engine-rn-tvos#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 

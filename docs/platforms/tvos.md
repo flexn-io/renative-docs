@@ -29,7 +29,7 @@ original_id: tvos
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with tvos support: 
-- [engine-rn-tvos](../engines/engine-rn-tvos#extensions)
+- [@rnv/engine-rn-tvos](../engines/engine-rn-tvos#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 

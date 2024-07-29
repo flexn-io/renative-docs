@@ -1,6 +1,8 @@
 {
+    "$schema": ".rnv/schema/rnv.project.json",
     "projectName": "renative-docs",
     "isTemplate": true,
+    "common": {},
     "defaults": {
         "supportedPlatforms": [
             "ios",
@@ -18,8 +20,6 @@
             "tizenwatch",
             "tizenmobile",
             "kaios",
-            "firefoxos",
-            "firefoxtv",
             "chromecast"
         ]
     },
@@ -51,9 +51,7 @@
         },
         "firetv": {
             "engine": "engine-rn-tvos",
-            "includedPermissions": [
-                "INTERNET"
-            ]
+            "includedPermissions": ["INTERNET"]
         },
         "androidwear": {},
         "all": {}

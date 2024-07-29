@@ -28,8 +28,8 @@ original_id: macos
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with macos support: 
-- [engine-rn](../engines/engine-rn#extensions)
-- [engine-rn-electron](../engines/engine-rn-electron#extensions)
+- [@rnv/engine-rn](../engines/engine-rn#extensions)
+- [@rnv/engine-rn-electron](../engines/engine-rn-electron#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 

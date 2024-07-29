@@ -27,8 +27,8 @@ original_id: chromecast
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with chromecast support: 
-- [engine-rn-next](../engines/engine-rn-next#extensions)
-- [engine-rn-web](../engines/engine-rn-web#extensions)
+- [@rnv/engine-rn-next](../engines/engine-rn-next#extensions)
+- [@rnv/engine-rn-web](../engines/engine-rn-web#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 

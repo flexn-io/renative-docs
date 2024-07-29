@@ -27,7 +27,7 @@ original_id: webos
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with webos support: 
-- [engine-rn-web](../engines/engine-rn-web#extensions)
+- [@rnv/engine-rn-web](../engines/engine-rn-web#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 

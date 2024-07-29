@@ -9,4 +9,6 @@ sidebar_label: renative.integration.json
 
 The schema defines the following properties:
 
-## `packageName` (string)
+## `name` (string)
+
+Name of the integration (best to use name of the actual package)

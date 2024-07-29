@@ -573,6 +573,8 @@ Allows you to pass launch arguments to active scheme
 
 #### `firebaseId`
 
+#### `privacyManifests`
+
 #### `exportOptions`
 
 #### `reactNativeEngine`
@@ -1199,6 +1201,8 @@ Allows you to pass launch arguments to active scheme
 
 #### `firebaseId`
 
+#### `privacyManifests`
+
 #### `exportOptions`
 
 #### `reactNativeEngine`
@@ -1214,6 +1218,8 @@ Allows you to configure electron app as per https://www.electron.build/
 #### `BrowserWindow`
 
 Allows you to configure electron wrapper app window
+
+#### `webpackConfig`
 
 ### `linux`
 
@@ -1352,6 +1358,8 @@ Allows you to configure electron wrapper app window
 Allows you to define specific native render engine to be used
 
 #### `templateVSProject`
+
+#### `webpackConfig`
 
 ### `xbox`
 

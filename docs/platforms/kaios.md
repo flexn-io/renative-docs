@@ -24,7 +24,7 @@ original_id: kaios
 <!--EXTENSION_SUPPORT_START-->
 
 Extenstions are defined via engines. Engines with kaios support: 
-- [engine-rn-web](../engines/engine-rn-web#extensions)
+- [@rnv/engine-rn-web](../engines/engine-rn-web#extensions)
 
 <!--EXTENSION_SUPPORT_END-->
 

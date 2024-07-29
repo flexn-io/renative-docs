@@ -23,6 +23,8 @@ Default react-native based engine. Runs standard react native apps with native s
 
 ## Required NPM Packages
 
+ios (dependencies)
+  - [dotenv](https://www.npmjs.com/package/dotenv)
 
 
 
