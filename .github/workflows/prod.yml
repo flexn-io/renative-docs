@@ -1,9 +1,9 @@
-name: Vercel Next Deployment
+name: Vercel Prod Deployment
 
 on:
     push:
         branches:
-            - main
+            - release
 
 jobs:
     release:
@@ -17,19 +17,19 @@ jobs:
             - name: Set scraper config environment variable
               id: scraper_config
               run: |
-                  export SCRAPER_CONFIG=$(cat ./config.next.json | jq -r tostring)
+                  export SCRAPER_CONFIG=$(cat ./config.prod.json | jq -r tostring)
                   echo "scraper_config=${SCRAPER_CONFIG}" >> $GITHUB_OUTPUT
             - name: Install Vercel CLI
               run: npm install --global vercel@latest
             - run: rm -rf .vercel
             - name: Pull Vercel Environment Information
-              run: vercel pull --yes --git-branch=main --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+              run: vercel pull --yes --git-branch=release --environment=production --token=${{ secrets.VERCEL_TOKEN }}
             - name: Build Project Artifacts
-              run: BASE_URL=https://next.renative.org ALGOLIA_INDEX=renative_docsearch vercel build
+              run: BASE_URL=https://renative.org ALGOLIA_INDEX=renative_docsearch vercel build
             - name: Deploy Project Artifacts to Vercel
               run: |
                   url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
-                  vercel alias --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} set "$url" next.renative.org
+                  vercel alias --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} set "$url" renative.org
             - name: Update Algolia index
               uses: addnab/docker-run-action@v3
               with:
