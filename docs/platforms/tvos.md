@@ -73,4 +73,4 @@ rnv run -p tvos -t "Apple TV 4K"
 ---
 ## App Config
 
-[see: iOS based config](../api/json-config.md#ios-props)
+[see: iOS based config](../api/schemas/rnv.project.md#ios-props)

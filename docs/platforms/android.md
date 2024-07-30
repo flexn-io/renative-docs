@@ -159,4 +159,4 @@ rnv log -p android -f com.myapp
 ---
 ## App Config
 
-[see: Android based config](../api/json-config.md#android-props)
+[see: Android based config](../api/schemas/rnv.project.md#android-props)

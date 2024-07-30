@@ -85,4 +85,4 @@ rnv run -p webos --hosted
 ---
 ## App Config
 
-[see: Web based config](../api/json-config.md)
+[see: Web based config](../api/schemas/rnv.project.md)

@@ -42,7 +42,7 @@ and follow the command prompt steps
 ---
 ## Plugin Renative Config Reference
 
-[see: Config API Reference](../api/json-config.md#plugins)
+[see: Config API Reference](../api/schemas/rnv.project.md#plugins)
 
 ---
 ## Custom Plugin Support

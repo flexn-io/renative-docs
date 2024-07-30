@@ -66,4 +66,4 @@ rnv run -p firefoxtv --hosted
 ---
 ## App Config
 
-[see: Web based config](../api/json-config.md)
+[see: Web based config](../api/schemas/rnv.project.md)

@@ -131,4 +131,4 @@ or `renative.json:platforms.android.buildSchemes.[SCHEME].reactNativeEngine`
 ---
 ## App Config
 
-[see: Android based config](../api/json-config.md#android-props)
+[see: Android based config](../api/schemas/rnv.project.md#android-props)

@@ -39,7 +39,7 @@ const FeatureList = [
                 <span style={{ color: '#0A74E6' }}>basic json config</span> file to get yourself up and running.
             </>
         ),
-        link: '/docs/guides/advanced-configuration',
+        link: '/docs/concepts/config',
         children: (
             <CodeBlock title="renative.json" language="json">
                 {`{

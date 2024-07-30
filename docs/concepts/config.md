@@ -23,4 +23,4 @@ Once you trigger your first `rnv ...` command this file is used to generate ever
 
 [Full Build Config Reference](../api/schemas/rnv.project.md)
 
-[Full JSON Config Reference](../api/json-config.md)
+[Full JSON Config Reference](../api/schemas/rnv.project.md)

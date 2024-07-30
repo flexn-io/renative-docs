@@ -69,4 +69,4 @@ rnv export -p macos -s release
 ---
 ## App Config
 
-[see: Web based config](../api/json-config.md)
+[see: Web based config](../api/schemas/rnv.project.md)

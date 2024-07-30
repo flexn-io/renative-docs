@@ -119,4 +119,4 @@ _Before you run on a physical device, make sure you have enabled `Dev Mode` and 
 ---
 ## App Config
 
-[see: Web based config](../api/json-config.md)
+[see: Web based config](../api/schemas/rnv.project.md)

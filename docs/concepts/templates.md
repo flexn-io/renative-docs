@@ -18,20 +18,18 @@ Templates are offered during creation of new project ( `rnv new` )
 ---
 ## Built-in
 
-Hello World:
+Starter:
 
-https://www.npmjs.com/package/renative-template-hello-world
+https://www.npmjs.com/package/@rnv/template-starter
 
-Blank:
 
-https://www.npmjs.com/package/renative-template-blank
 
 ---
 ## Community
 
-Chat App:
+Create Starter App:
 
-https://www.npmjs.com/package/@reactseals/renative-template-chat
+https://www.npmjs.com/package/@flexn/create-template-starter
 
 ---
 ## Custom
@@ -42,25 +40,15 @@ You can type name of any package with has support for RNV template. (contains `r
 
 ie:
 
-`renative-template-hello-world`
+`@rnv/template-starter`
 
 or
 
-`@reactseals/renative-template-chat`
+`@flexn/create-template-starter`
 
 and so on
 
 
----
-## CLI Support
-
-You can manage your templates in your project via rnv command line.
-
-`rnv template list` - list available and installed templated in your project
-
-`rnv template add` - add template to your project
-
-`rnv template apply` - apply one of the installed templates to your project
 
 ---
 

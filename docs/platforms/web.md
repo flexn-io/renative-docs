@@ -99,4 +99,4 @@ In order for you to do that you'll need to run the project first, so it generate
 ---
 ## App Config
 
-[see: Web based config](../api/json-config.md)
+[see: Web based config](../api/schemas/rnv.project.md)

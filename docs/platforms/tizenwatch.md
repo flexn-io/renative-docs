@@ -101,4 +101,4 @@ rnv run -p tizenwatch -t W-5.0-circle-x86
 ---
 ## App Config
 
-[see: Web based config](../api/json-config.md)
+[see: Web based config](../api/schemas/rnv.project.md)

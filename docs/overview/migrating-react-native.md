@@ -15,7 +15,7 @@ Due to variety of possibilities / complexity fo react-native projects (ie plugin
 ## Migration Guide
 
 1. Install rnv
-2. Create new project `rnv new` (pick renative-template-hello-world)
+2. Create new project `rnv new` (pick @rnv/template-starter)
 3. follow rest of the steps
 4. After first `rnv run ...` check out the codebase and pay attention to:
 
