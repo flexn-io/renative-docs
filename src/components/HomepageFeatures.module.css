@@ -1,7 +1,7 @@
 .img_video_container {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 144px;
+  padding-bottom: 0px;
   gap: 115px;
 }
 
@@ -12,6 +12,16 @@
 
 .youtube_video{
   width: 616px;
+}
+
+.main_paragraph {
+  
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .main_img {
@@ -66,7 +76,7 @@
 }
 
 .bottom_element{
-  padding-bottom: 176px;
+  padding-bottom: 10px;
 }
 
 .features_line .feature_container {

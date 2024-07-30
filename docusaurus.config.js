@@ -137,20 +137,20 @@ const config = {
                     //     className: 'button button--secondary navbar_button padding--sm',
                     // },
 
-                    {
-                        href: 'https://www.flexn.io/',
-                        position: 'left',
-                        className: 'navbar_logo header-flexn-link',
-                        title: 'Flexn',
-                        'aria-label': 'Flexn',
-                    },
-                    {
-                        href: '/',
-                        position: 'left',
-                        className: 'navbar_logo header-separator-link',
-                        title: 'Separator',
-                        'aria-label': 'Separator',
-                    },
+                    // {
+                    //     href: 'https://www.flexn.io/',
+                    //     position: 'left',
+                    //     className: 'navbar_logo header-flexn-link',
+                    //     title: 'Flexn',
+                    //     'aria-label': 'Flexn',
+                    // },
+                    // {
+                    //     href: '/',
+                    //     position: 'left',
+                    //     className: 'navbar_logo header-separator-link',
+                    //     title: 'Separator',
+                    //     'aria-label': 'Separator',
+                    // },
                     {
                         href: '/',
                         position: 'left',

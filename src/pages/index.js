@@ -52,6 +52,19 @@ export default function Home() {
             <HomepageHeader />
             <main>
                 <HomepageFeatures />
+                <div className="homepage-codeline">
+                    <div className={styles.buttons}>
+                        <Link
+                            className="button button--secondary button--lg homepage_button"
+                            to="/docs/overview/quickstart"
+                        >
+                            Start developing now
+                        </Link>
+                    </div>
+                    <div style={{ fontSize: '16px', width: '180px' }}>
+                        <CodeBlock language="jsx">{`npx rnv new`}</CodeBlock>
+                    </div>
+                </div>
             </main>
             <Footer />
         </Layout>

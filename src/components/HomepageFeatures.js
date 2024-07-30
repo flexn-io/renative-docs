@@ -47,12 +47,16 @@ const FeatureList = [
         iconDark: '/img/dark/feature_icon3.svg',
         description: (
             <>
-                <span style={{ color: '#0A74E6' }}>Customize</span> your website layout using{' '}
-                <span style={{ color: '#0A74E6' }}>React</span>. Docusaurus allows you to extend it while keeping the
-                same header and footer.
+                <span style={{ color: '#0A74E6' }}>rnv CLI</span> is your entry point and control centre to building
+                multi-platform apps with just a few commands to learn.
             </>
         ),
-        link: '/docs/guides/cli',
+        link: '/docs/api/cli',
+        children: (
+            <div>
+                <CodeBlock language="jsx">{'rnv --help'}</CodeBlock>
+            </div>
+        ),
     },
     {
         title: 'Minimalistic runtime',
@@ -70,7 +74,7 @@ const FeatureList = [
                 {`import { isPlatformTizen, isFactorTv, engine, platform } from "renative";\n\n<Text>{isFactorTv}</Text>; `}
             </CodeBlock>
         ),
-        link: '/docs/guides/runtime',
+        link: '/docs/api/runtime',
     },
     {
         title: 'Supercharged frameworks',
@@ -121,7 +125,17 @@ const FeatureList = [
         ),
         children: (
             <CodeBlock title="Terminal" language="jsx">
-                {`rnv new\n\n...\n\n? What template to use? => 'renative-template-hello-world'`}
+                {`rnv new
+? What's your project Name? (folder will be created) hello-renative
+? What workspace to use? rnv
+? What template to use? @rnv/template-starter
+? What @rnv/template-starter version to use? 1.0.0 (@latest)
+? How to create config renative.json? Extend template (cleaner, overridable)
+? What's your project Title? My Renative App
+? What's your App ID? com.mycompany.hellorenative
+? What's your project version? 0.1.0
+? What platforms would you like to use? web, ios, android
+? Do you want to set-up git in your new project? Yes`}
             </CodeBlock>
         ),
         link: '/docs/guides/templates',
@@ -137,57 +151,60 @@ const FeatureList = [
             </>
         ),
         children: (
-            <div className={clsx(styles.plugin_grid, styles.img_grid)}>
-                <ThemedImage
-                    className={styles.feature_img}
-                    sources={{
-                        light: '/img/light/integration_logo1.svg',
-                        dark: '/img/dark/integration_logo1.svg',
-                    }}
-                />
-                <ThemedImage
-                    className={styles.feature_img}
-                    sources={{
-                        light: '/img/light/integration_logo2.svg',
-                        dark: '/img/dark/integration_logo2.svg',
-                    }}
-                />
-                <ThemedImage
-                    className={styles.feature_img}
-                    sources={{
-                        light: '/img/light/integration_logo3.svg',
-                        dark: '/img/dark/integration_logo3.svg',
-                    }}
-                />
-                <ThemedImage
-                    className={styles.feature_img}
-                    sources={{
-                        light: '/img/light/integration_logo4.svg',
-                        dark: '/img/dark/integration_logo4.svg',
-                    }}
-                />
-                <ThemedImage
-                    className={styles.feature_img}
-                    sources={{
-                        light: '/img/light/integration_logo5.svg',
-                        dark: '/img/dark/integration_logo5.svg',
-                    }}
-                />
-                <ThemedImage
-                    className={styles.feature_img}
-                    sources={{
-                        light: '/img/light/integration_logo6.svg',
-                        dark: '/img/dark/integration_logo6.svg',
-                    }}
-                />
-                <ThemedImage
-                    className={styles.feature_img}
-                    sources={{
-                        light: '/img/light/integration_logo7.svg',
-                        dark: '/img/dark/integration_logo7.svg',
-                    }}
-                />
-            </div>
+            <>
+                <div className={clsx(styles.plugin_grid, styles.img_grid)}>
+                    <ThemedImage
+                        className={styles.feature_img}
+                        sources={{
+                            light: '/img/light/integration_logo1.svg',
+                            dark: '/img/dark/integration_logo1.svg',
+                        }}
+                    />
+                    <ThemedImage
+                        className={styles.feature_img}
+                        sources={{
+                            light: '/img/light/integration_logo2.svg',
+                            dark: '/img/dark/integration_logo2.svg',
+                        }}
+                    />
+                    <ThemedImage
+                        className={styles.feature_img}
+                        sources={{
+                            light: '/img/light/integration_logo3.svg',
+                            dark: '/img/dark/integration_logo3.svg',
+                        }}
+                    />
+                    <ThemedImage
+                        className={styles.feature_img}
+                        sources={{
+                            light: '/img/light/integration_logo4.svg',
+                            dark: '/img/dark/integration_logo4.svg',
+                        }}
+                    />
+                    <ThemedImage
+                        className={styles.feature_img}
+                        sources={{
+                            light: '/img/light/integration_logo5.svg',
+                            dark: '/img/dark/integration_logo5.svg',
+                        }}
+                    />
+                    <ThemedImage
+                        className={styles.feature_img}
+                        sources={{
+                            light: '/img/light/integration_logo6.svg',
+                            dark: '/img/dark/integration_logo6.svg',
+                        }}
+                    />
+                    <ThemedImage
+                        className={styles.feature_img}
+                        sources={{
+                            light: '/img/light/integration_logo7.svg',
+                            dark: '/img/dark/integration_logo7.svg',
+                        }}
+                    />
+                </div>
+                <div className={styles.main_paragraph}>Additionally you can build your own integrations with ease.</div>
+            </>
         ),
         link: '/docs/integrations/aws',
     },
@@ -294,21 +311,54 @@ export default function HomepageFeatures() {
             <div className={clsx('container', styles.img_video_container)}>
                 <div className={styles.img_video_container_in}>
                     <div className={styles.main_img_title}>
-                        <h2>Build react native app with ReNative framework</h2>
+                        <h2>Bootstrap and build apps fast</h2>
                     </div>
-                    <ThemedImage
-                        className={styles.main_img}
-                        sources={{
-                            light: '/img/light/rnv-light.svg',
-                            dark: '/img/dark/rnv-dark.svg',
-                        }}
-                    />
+                    <div className={styles.main_paragraph}>
+                        ReNative allows developers to create multiplatform templates and reuse them to bootstrap full
+                        E2E projects, freeing up time to focus on development
+                    </div>
+                    <div>
+                        <CodeBlock language="jsx">{'rnv new'}</CodeBlock>
+                    </div>
+                    <div className={styles.feature_link_container}>
+                        <a className={styles.feature_link} href={'/docs/overview/introduction'}>
+                            Learn more
+                            <img src="/img/link.svg" />
+                        </a>
+                    </div>
                 </div>
                 <div className={clsx(styles.img_video_container_in, styles.youtube_video)}>
                     <YoutubeVideo youtubeId="PLCJzCDSyDk" title="demo" />
                 </div>
             </div>
-
+            <hr className={hrStyle}></hr>
+            <div className={clsx('container', styles.img_video_container)}>
+                <ThemedImage
+                    className={styles.main_img}
+                    sources={{
+                        light: '/img/light/rnv-light.svg',
+                        dark: '/img/dark/rnv-dark.svg',
+                    }}
+                />
+                <div className={styles.img_video_container_in}>
+                    <div className={styles.main_img_title}>
+                        <h2>Target any major platform</h2>
+                    </div>
+                    <div className={styles.main_paragraph}>
+                        Run your project on one of 20 platforms with a single command
+                    </div>
+                    <div>
+                        <CodeBlock language="jsx">{'rnv run -p <PLATFORM>'}</CodeBlock>
+                    </div>
+                    <div className={styles.feature_link_container}>
+                        <a className={styles.feature_link} href={'/docs/platforms/android'}>
+                            Explore more
+                            <img src="/img/link.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr className={hrStyle}></hr>
             <section className="container">
                 <SectionItemComponent
                     key="0"
@@ -339,6 +389,18 @@ export default function HomepageFeatures() {
                     })}
                 </div>
             </section>
+            <hr className={hrStyle}></hr>
+            <div className={clsx('container', 'framework_container')}>
+                <div>
+                    <h2>Used by</h2>
+                </div>
+                <div className="framework_container_img_grid">
+                    <ThemedImage
+                        className="framework_img"
+                        sources={{ light: '/img/light/usedby.png', dark: '/img/dark/usedby.png' }}
+                    />
+                </div>
+            </div>
         </>
     );
 }
