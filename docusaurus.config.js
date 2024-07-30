@@ -58,20 +58,20 @@ const config = {
                 },
             },
         ],
-        [
-            'docusaurus-plugin-typedoc',
-            {
-                id: 'api-rnv',
-                entryPoints: ['node_modules/rnv/lib/index.d.ts'],
-                tsconfig: './tsconfig.typedoc.json',
-                out: 'api/node/rnv',
-                // watch: true,
+        // [
+        //     'docusaurus-plugin-typedoc',
+        //     {
+        //         id: 'api-rnv',
+        //         entryPoints: ['node_modules/rnv/lib/index.d.ts'],
+        //         tsconfig: './tsconfig.typedoc.json',
+        //         out: 'api/node/rnv',
+        //         // watch: true,
 
-                frontmatter: {
-                    sidebar_label: 'rnv (Node)',
-                },
-            },
-        ],
+        //         frontmatter: {
+        //             sidebar_label: 'rnv (Node)',
+        //         },
+        //     },
+        // ],
     ],
     presets: [
         [

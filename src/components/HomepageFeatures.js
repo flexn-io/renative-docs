@@ -40,6 +40,14 @@ const FeatureList = [
             </>
         ),
         link: '/docs/guides/advanced-configuration',
+        children: (
+            <CodeBlock title="renative.json" language="json">
+                {`{
+  "platforms": {},
+  "plugins": {}
+}`}
+            </CodeBlock>
+        ),
     },
     {
         title: 'Powerful CLI',
@@ -397,7 +405,7 @@ export default function HomepageFeatures() {
                 <div className="framework_container_img_grid">
                     <ThemedImage
                         className="framework_img"
-                        sources={{ light: '/img/light/usedby.png', dark: '/img/dark/usedby.png' }}
+                        sources={{ light: '/img/light/usedby1.png', dark: '/img/dark/usedby1.png' }}
                     />
                 </div>
             </div>

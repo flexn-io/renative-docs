@@ -41,10 +41,6 @@ const sidebars = {
             id: 'api/node/rnv-core/modules',
         },
         {
-            type: 'doc',
-            id: 'api/node/rnv/modules',
-        },
-        {
             type: 'category',
             label: 'Config Descriptors (JSON)',
             items: [

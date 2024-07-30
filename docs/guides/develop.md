@@ -23,10 +23,6 @@ At this point your global `rnv` command is linked directly into project above.
 
 It's also best way to contribute back to RNV! :)
 
-```
-rnv template apply
-=> pick renative-template-hello-world
-```
 
 #### Windows development
 
@@ -34,6 +30,17 @@ Requirements: Python 2.7, Visual Studio installed or install `windows-build-tool
 :::warning
 **Please make sure you follow the package's instructions, especially running it in PowerShell as Administrator**
 :::
+
+---
+## Testing your project with local RNV
+
+In order to test standalone project with local renative navigate to root of your project and run
+
+```
+rnv link
+```
+
+All standard rnv commands within the project are now executed by your local renative instance
 
 ---
 ## Deployments
@@ -50,21 +57,21 @@ npm run deploy:feat
 
 ### Alpha
 
-Alpha Releases (from `develop` branches):
+Canary Releases (from `develop` branch):
 
-tag format: `0.31.0-alpha.1`
+tag & version format: `0.31.0-canary.1`
 
-npm tag `alpha`
+npm tag: `next`
 
 ```
-npm run deploy:alpha
+npm run deploy:canary
 ```
 
 ### Production
 
 Production (from `release/xx` branches):
 
-tag format: `0.31.0`
+tag & version format: `0.31.0`
 
 npm tag: `latest`
 
@@ -77,8 +84,8 @@ npm run deploy:prod
 
 [Documentation for CLI](../api/cli.md)
 
-[Documentation for RNV](../api/node/rnv/modules.md)
+[Documentation for RNV Node Library](../api/node/rnv-core/modules.md)
 
-[Documentation for Config](../api/schemas/rnv.project.md)
+[Documentation for Config Descriptor](../api/schemas/rnv.project.md)
 
 [Documentation for Runtime](../api/node/renative/modules.md)
