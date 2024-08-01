@@ -206,7 +206,7 @@ const config = {
             },
             colorMode: {
                 defaultMode: 'light',
-                disableSwitch: true,
+                disableSwitch: false,
             },
             image: 'img/logo.svg',
             prism: {
