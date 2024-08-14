@@ -22,13 +22,13 @@ Build app blazingly fast with built-in features:
 <table>
   <tr>
     <th>
-      <img src="https://renative.org/img/os_osx.png" width="100" height="100" />
+      <img src="/img/os_osx.png" width="100" height="100" />
     </th>
     <th>
-      <img src="https://renative.org/img/os_win.png" width="100" height="100" />
+      <img src="/img/os_win.png" width="100" height="100" />
     </th>
     <th>
-      <img src="https://renative.org/img/os_linux.jpeg" width="100" height="100" />
+      <img src="/img/os_linux.jpeg" width="100" height="100" />
     </th>
   </tr>
   <tr>

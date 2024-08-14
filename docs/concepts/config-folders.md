@@ -239,7 +239,7 @@ Combination of features above allows you to configure and build large number of 
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/rnv_arch3.png" />
+    <img src="/img/rnv_arch3.png" />
     </th>
   </tr>
 </table>

@@ -16,7 +16,7 @@ original_id: android
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_android.gif" height="250"  />
+<img className="platform-image" src="/img/rnv_android.gif" height="250"  />
 
 - Latest Android project
 - Kotlin Support
@@ -57,7 +57,7 @@ You can create variety of emulators via Android Studio IDE
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/android1.png" />
+    <img src="/img/android1.png" />
     </th>
   </tr>
 </table>

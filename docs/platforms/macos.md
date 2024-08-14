@@ -16,7 +16,7 @@ original_id: macos
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_macos.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_macos.gif" height="250"/>
 
 
 - support for OSX/macOS

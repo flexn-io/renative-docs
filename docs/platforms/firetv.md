@@ -16,7 +16,7 @@ original_id: firetv
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_firetv.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_firetv.gif" height="250"/>
 
 
 - Latest Android project

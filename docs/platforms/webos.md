@@ -16,7 +16,7 @@ original_id: webos
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_webos.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_webos.gif" height="250"/>
 
 
 - Latest LG webOS Project

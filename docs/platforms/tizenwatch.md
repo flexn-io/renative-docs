@@ -16,7 +16,7 @@ original_id: tizenwatch
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_tizenwatch.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_tizenwatch.gif" height="250"/>
 
 
 - Latest Tizen project
@@ -55,7 +55,7 @@ Make sure you have at least 1 TV VM setup
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/tizenwatch1.png" />
+    <img src="/img/tizenwatch1.png" />
     </th>
   </tr>
 </table>

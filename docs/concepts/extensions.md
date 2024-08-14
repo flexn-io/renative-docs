@@ -11,7 +11,7 @@ ReNative supports powerful file extension mechanism to enable developers to tail
 ---
 ## File Extension Map
 
-<img src="https://renative.org/img/file_extensions.png" />
+<img src="/img/file_extensions.png" />
 
 ---
 ## How it works

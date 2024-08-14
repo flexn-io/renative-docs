@@ -5,7 +5,7 @@ sidebar_label: Develop ReNative
 original_id: develop
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_construction.png" width="50" height="50" /> -->
+<!-- <img className="header-image" src="/img/ic_construction.png" width="50" height="50" /> -->
 
 ---
 ## Developing ReNative Locally
