@@ -16,7 +16,7 @@ original_id: tizenmobile
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_tizenmobile.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_tizenmobile.gif" height="250"/>
 
 
 - Latest Tizen project
@@ -57,7 +57,7 @@ Make sure you have at least 1 TV VM setup
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/tizen_mobile1.png" />
+    <img src="/img/tizen_mobile1.png" />
     </th>
   </tr>
 </table>

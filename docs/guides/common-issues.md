@@ -5,7 +5,7 @@ sidebar_label: Common Issues
 original_id: common_issues
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_issues.png" width="50" height="50" /> -->
+<!-- <img className="header-image" src="/img/ic_issues.png" width="50" height="50" /> -->
 
 <br />
 If you encounter unexpected error / issue it is always good to perform basic sanity steps:

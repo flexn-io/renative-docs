@@ -16,7 +16,7 @@ original_id: androidwear
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_androidwear.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_androidwear.gif" height="250"/>
 
 
 - Latest Android project

@@ -16,7 +16,7 @@ original_id: androidtv
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_android-tv.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_android-tv.gif" height="250"/>
 
 
 - Latest Android project
