@@ -752,7 +752,7 @@ npx rnv plugin add @reduxjs/toolkit
 
 ## @rnv/renative
 
-Version: `1.2.0`
+Version: `1.3.0`
 
 Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
@@ -2432,7 +2432,7 @@ npx rnv plugin add react-native-screens
 
 ## react-native-select-dropdown
 
-Version: `1.2.0`
+Version: `1.3.0`
 
 Platforms: `ios`,`android`,`androidtv`,`androidwear`,`firetv`,`web`,`webtv`,`tizen`,`tizenmobile`,`tvos`,`webos`,`macos`,`windows`,`linux`,`tizenwatch`,`kaios`,`chromecast`,`xbox`
 
