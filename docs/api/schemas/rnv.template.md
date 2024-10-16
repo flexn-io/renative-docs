@@ -133,7 +133,11 @@ The array object has the following properties:
 
 ##### `name` (string, required)
 
-##### `supportedPlatforms` (, required)
+##### `supportedPlatforms` (array, required)
+
+Array list of all supported platforms in current project
+
+The object is an array with all elements of the type `string`.
 
 ##### `nullifyIfFalse` (boolean)
 

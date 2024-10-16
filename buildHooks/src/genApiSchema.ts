@@ -325,42 +325,40 @@ const resolveRefsInSchema = (schema: any): any => {
         return pointer.reduce((acc, key) => acc && acc[key], schema);
     };
 
-    const resolveRefs = (currentSchema: any): any => {
+    const resolveRefs = (currentSchema: any, depth = 0): any => {
         if (currentSchema.$ref) {
             const resolvedSchema = resolveJsonRefs(schema, currentSchema.$ref);
 
-            return resolveRefs(resolvedSchema);
+            return resolveRefs(resolvedSchema, depth);
         }
 
         if (currentSchema.type === 'object' && currentSchema.properties) {
             const newProperties = {};
             Object.keys(currentSchema.properties).forEach((key) => {
-                newProperties[key] = resolveRefs(currentSchema.properties[key]);
+                newProperties[key] = resolveRefs(currentSchema.properties[key], depth);
             });
             return { ...currentSchema, properties: newProperties };
         }
 
         if (currentSchema.additionalProperties && typeof currentSchema.additionalProperties === 'object') {
-            const resolvedAdditionalProperties = resolveRefs(currentSchema.additionalProperties);
+            const resolvedAdditionalProperties = resolveRefs(currentSchema.additionalProperties, depth);
             return { ...currentSchema, additionalProperties: resolvedAdditionalProperties };
         }
 
         if (currentSchema.type === 'array' && currentSchema.items) {
-            if (Array.isArray(currentSchema.items.anyOf)) {
-                return {
-                    ...currentSchema,
-                    items: {
-                        ...currentSchema.items,
-                        anyOf: currentSchema.items.anyOf.map((subSchema: any) => resolveRefs(subSchema)),
-                    },
-                };
+            if (depth > 0) {
+                return currentSchema;
             }
+            // depth <= recursion limit for `items` field to avoid circular refs (children)
+            const resolvedItems = resolveRefs(currentSchema.items, depth + 1);
+
+            return { ...currentSchema, items: resolvedItems };
         }
         if (Array.isArray(currentSchema.anyOf)) {
             return {
                 ...currentSchema,
                 anyOf: currentSchema.anyOf.map((subSchema: any) => {
-                    return resolveRefs(subSchema);
+                    return resolveRefs(subSchema, depth);
                 }),
             };
         }

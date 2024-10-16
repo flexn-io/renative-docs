@@ -786,13 +786,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -819,13 +819,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -852,13 +852,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -1396,13 +1396,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -1429,13 +1429,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -1462,13 +1462,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -2014,13 +2014,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -2047,13 +2047,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -2080,13 +2080,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -2624,13 +2624,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -2657,13 +2657,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -2690,13 +2690,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -3242,13 +3242,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -3275,13 +3275,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -3308,13 +3308,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -3852,13 +3852,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -3885,13 +3885,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -3918,13 +3918,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -4470,13 +4470,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -4503,13 +4503,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -4536,13 +4536,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -5080,13 +5080,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -5113,13 +5113,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
@@ -5146,13 +5146,13 @@ The object is an array with all elements of the type `object`.
 
 The array object has the following properties:
 
-**`tag`** (, required)
+**`tag`** (string, required)
 
-**`name`**
+**`name`** (string)
 
-**`parent`**
+**`parent`** (string)
 
-**`value`**
+**`value`** (string)
 
 **`children`** (array)
 
