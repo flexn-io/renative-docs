@@ -47,14 +47,14 @@ const _generateSchemaFile = (opts: { schema: z.ZodObject<any>; schemaId: string;
     const ctx = getContext();
     const jsonSchema: any = zodToJsonSchema(schema);
     jsonSchema['$schema'] = 'http://json-schema.org/draft-04/schema#';
-
+    // const jsonSchema: any = zodToJsonSchema(schema, schemaId);
+    const resolvedSchema = resolveRefsInSchema({ ...jsonSchema });
     const destFolder = path.join(ctx.paths.project.dir, `docs/api/schemas`);
     if (!fs.existsSync(destFolder)) {
         fs.mkdirSync(destFolder, { recursive: true });
     }
     const destPath = path.join(destFolder, `${schemaId}.md`);
-    // console.log(generate(jsonSchema));
-    fs.writeFileSync(destPath, generate(jsonSchema, schemaId, sideBarTitle));
+    fs.writeFileSync(destPath, generate(resolvedSchema, schemaId, sideBarTitle));
 };
 
 const generateElementTitle = (
@@ -135,8 +135,14 @@ const generateSchemaSectionText = (
 
     if (schemaType === 'object') {
         if (schema.properties) {
-            text.push('Properties of the `' + name + '` object:');
+            text.push('Properties of the' + (name ? ' `' + name + '`' : '') + ' object:');
             generatePropertySection(hashtags, schema, subSchemas).forEach((section) => {
+                text = text.concat(section);
+            });
+        }
+        if (schema.additionalProperties.properties) {
+            text.push('Properties of the' + (name ? ' `' + name + '`' : '') + ' object:');
+            generatePropertySection(hashtags, schema.additionalProperties, subSchemas).forEach((section) => {
                 text = text.concat(section);
             });
         }
@@ -170,7 +176,7 @@ const generateSchemaSectionText = (
 
             if (validationItems.length > 0) {
                 validationItems.forEach((item: any) => {
-                    text = text.concat(generateSchemaSectionText(hashtags, item.title, false, item, subSchemas));
+                    text = text.concat(generateSchemaSectionText(hashtags, item.title || '', false, item, subSchemas));
                 });
             }
         }
@@ -288,28 +294,78 @@ sidebar_label: ${sidebarLabel}
     } else {
         text = text.concat(generateSchemaSectionText('#' + hashtags, undefined, false, schema, subSchemaTypes));
     }
-
-    if (schema.definitions) {
-        text.push('---');
-        text.push('# Sub Schemas');
-        text.push('The schema defines the following additional types:');
-        Object.keys(schema.definitions).forEach((subSchemaTypeName) => {
-            text.push('## `' + subSchemaTypeName + '` (' + schema.definitions[subSchemaTypeName].type + ')');
-            text.push(schema.definitions[subSchemaTypeName].description);
-            if (schema.definitions[subSchemaTypeName].type === 'object') {
-                if (schema.definitions[subSchemaTypeName].properties) {
-                    text.push('Properties of the `' + subSchemaTypeName + '` object:');
-                }
-            }
-            generatePropertySection('##', schema.definitions[subSchemaTypeName], subSchemaTypes).forEach((section) => {
-                text = text.concat(section);
-            });
-        });
-    }
+    // if (schema.definitions) {
+    //     text.push('---');
+    //     text.push('# Sub Schemas');
+    //     text.push('The schema defines the following additional types:');
+    //     Object.keys(schema.definitions).forEach((subSchemaTypeName) => {
+    //         text.push('## `' + subSchemaTypeName + '` (' + schema.definitions[subSchemaTypeName].type + ')');
+    //         text.push(schema.definitions[subSchemaTypeName].description);
+    //         if (schema.definitions[subSchemaTypeName].type === 'object') {
+    //             if (schema.definitions[subSchemaTypeName].properties) {
+    //                 text.push('Properties of the `' + subSchemaTypeName + '` object:');
+    //             }
+    //         }
+    //         generatePropertySection('##', schema.definitions[subSchemaTypeName], subSchemaTypes).forEach((section) => {
+    //             text = text.concat(section);
+    //         });
+    //     });
+    // }
 
     return text
         .filter((line) => {
             return !!line;
         })
         .join('\n\n');
+};
+
+const resolveRefsInSchema = (schema: any): any => {
+    const resolveJsonRefs = (schema: any, ref: string): any => {
+        const pointer = ref.replace(/^#\//, '').split('/');
+        return pointer.reduce((acc, key) => acc && acc[key], schema);
+    };
+
+    const resolveRefs = (currentSchema: any): any => {
+        if (currentSchema.$ref) {
+            const resolvedSchema = resolveJsonRefs(schema, currentSchema.$ref);
+
+            return resolveRefs(resolvedSchema);
+        }
+
+        if (currentSchema.type === 'object' && currentSchema.properties) {
+            const newProperties = {};
+            Object.keys(currentSchema.properties).forEach((key) => {
+                newProperties[key] = resolveRefs(currentSchema.properties[key]);
+            });
+            return { ...currentSchema, properties: newProperties };
+        }
+
+        if (currentSchema.additionalProperties && typeof currentSchema.additionalProperties === 'object') {
+            const resolvedAdditionalProperties = resolveRefs(currentSchema.additionalProperties);
+            return { ...currentSchema, additionalProperties: resolvedAdditionalProperties };
+        }
+
+        if (currentSchema.type === 'array' && currentSchema.items) {
+            if (Array.isArray(currentSchema.items.anyOf)) {
+                return {
+                    ...currentSchema,
+                    items: {
+                        ...currentSchema.items,
+                        anyOf: currentSchema.items.anyOf.map((subSchema: any) => resolveRefs(subSchema)),
+                    },
+                };
+            }
+        }
+        if (Array.isArray(currentSchema.anyOf)) {
+            return {
+                ...currentSchema,
+                anyOf: currentSchema.anyOf.map((subSchema: any) => {
+                    return resolveRefs(subSchema);
+                }),
+            };
+        }
+        return currentSchema;
+    };
+
+    return resolveRefs(schema);
 };

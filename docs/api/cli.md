@@ -293,15 +293,15 @@ Example:
 npx rnv clean
 ```
 
-### status
+### info
 
-Show current info about the project
+Get relevant version info about OS, toolchain and libraries
 
 Provided by: @rnv/engine-core
 
 Example:
 ```bash
-npx rnv status
+npx rnv info
 ```
 
 ### config
@@ -337,7 +337,7 @@ Provided by: @rnv/engine-core
 
 
 Available Options:
-[`git-enabled`](#git-enabled), [`answer`](#answer), [`workspace`](#workspace), [`template`](#template), [`project-name`](#project-name), [`project-template`](#project-template), [`template-version`](#template-version), [`title`](#title), [`app-version`](#app-version), [`id`](#id)
+[`git-enabled`](#git-enabled), [`answer`](#answer), [`workspace`](#workspace), [`template`](#template), [`project-name`](#project-name), [`project-template`](#project-template), [`template-version`](#template-version), [`local-template-path`](#local-template-path), [`title`](#title), [`app-version`](#app-version), [`id`](#id)
 
 Example:
 ```bash
@@ -483,6 +483,17 @@ Example:
 npx rnv app switch
 ```
 
+### patch reset
+
+Reset applied overrides
+
+Provided by: @rnv/engine-core
+
+Example:
+```bash
+npx rnv patch reset
+```
+
 ### target launch
 
 Launch specific target
@@ -623,7 +634,7 @@ Launch specific ios target
 Provided by: @rnv/engine-rn
 
 Depends On:
-[`workspace configure`](#workspace-configure)
+[`project configure`](#project-configure)
 
 
 Available Options:
@@ -641,7 +652,7 @@ List all available targets for specific platform
 Provided by: @rnv/engine-rn
 
 Depends On:
-[`workspace configure`](#workspace-configure)
+[`project configure`](#project-configure)
 
 
 Available Options:
@@ -974,7 +985,7 @@ Launch specific ios target
 Provided by: @rnv/engine-rn-tvos
 
 Depends On:
-[`workspace configure`](#workspace-configure)
+[`project configure`](#project-configure)
 
 
 Available Options:
@@ -992,7 +1003,7 @@ List all available targets for specific platform
 Provided by: @rnv/engine-rn-tvos
 
 Depends On:
-[`workspace configure`](#workspace-configure)
+[`project configure`](#project-configure)
 
 
 Available Options:
@@ -1694,6 +1705,11 @@ Type: Value, required
 
 ### skip-dependency-check
 Skips auto update of npm dependencies if mismatch found
+
+Type: Flag
+
+### offline
+Run without connecting to the internet whenever possible
 
 Type: Flag
 

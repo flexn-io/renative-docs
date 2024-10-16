@@ -48,9 +48,9 @@ Deployed to https://www.npmjs.com/package/rnv
 
 `rnv deploy -p <PLATFORM>` - deploy app for specific platform
 
-##### rnv status
+##### rnv info
 
-`rnv status` - prints out info about your project
+`rnv info` - prints out info about your project and development environment
 
 <table>
   <tr>
@@ -156,7 +156,7 @@ This is particularly useful for CI where logs are usually stripped from colors b
 
 Examples:
 
-`rnv status --mono`
+`rnv info --mono`
 `rnv start --mono`
 
 ##### -c , -appConfigID

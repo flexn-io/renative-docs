@@ -31,7 +31,7 @@ The elements of the array must match *at least one* of the following properties:
 
 ### (object)
 
-Properties of the `undefined` object:
+Properties of the object:
 
 #### `paths` (array, required)
 
@@ -61,11 +61,11 @@ Properties of the `package_json` object:
 
 #### `dependencies` (object)
 
-#### `devDependencies`
+#### `devDependencies` (object)
 
-#### `peerDependencies`
+#### `peerDependencies` (object)
 
-#### `optionalDependencies`
+#### `optionalDependencies` (object)
 
 #### `name` (string)
 
@@ -119,9 +119,7 @@ The array object has the following properties:
 
 ##### `path` (string, required)
 
-### `rnvNewPatchDependencies`
-
-This ensures that the correct version of the npm packages will be used to run the project for the first time after creation
+### `rnvNewPatchDependencies` (object)
 
 ### `configModifiers` (object)
 
@@ -139,6 +137,8 @@ The array object has the following properties:
 
 ##### `nullifyIfFalse` (boolean)
 
-### `defaultSelectedPlatforms`
+### `defaultSelectedPlatforms` (array)
 
 Array list of all supported platforms in current project
+
+The object is an array with all elements of the type `string`.
