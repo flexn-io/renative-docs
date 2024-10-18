@@ -47,7 +47,7 @@ const _generateSchemaFile = (opts: { schema: z.ZodObject<any>; schemaId: string;
     const ctx = getContext();
     const jsonSchema: any = zodToJsonSchema(schema);
     jsonSchema['$schema'] = 'http://json-schema.org/draft-04/schema#';
-    // const jsonSchema: any = zodToJsonSchema(schema, schemaId);
+
     const resolvedSchema = resolveRefsInSchema({ ...jsonSchema });
     const destFolder = path.join(ctx.paths.project.dir, `docs/api/schemas`);
     if (!fs.existsSync(destFolder)) {
@@ -294,24 +294,6 @@ sidebar_label: ${sidebarLabel}
     } else {
         text = text.concat(generateSchemaSectionText('#' + hashtags, undefined, false, schema, subSchemaTypes));
     }
-    // if (schema.definitions) {
-    //     text.push('---');
-    //     text.push('# Sub Schemas');
-    //     text.push('The schema defines the following additional types:');
-    //     Object.keys(schema.definitions).forEach((subSchemaTypeName) => {
-    //         text.push('## `' + subSchemaTypeName + '` (' + schema.definitions[subSchemaTypeName].type + ')');
-    //         text.push(schema.definitions[subSchemaTypeName].description);
-    //         if (schema.definitions[subSchemaTypeName].type === 'object') {
-    //             if (schema.definitions[subSchemaTypeName].properties) {
-    //                 text.push('Properties of the `' + subSchemaTypeName + '` object:');
-    //             }
-    //         }
-    //         generatePropertySection('##', schema.definitions[subSchemaTypeName], subSchemaTypes).forEach((section) => {
-    //             text = text.concat(section);
-    //         });
-    //     });
-    // }
-
     return text
         .filter((line) => {
             return !!line;
