@@ -5721,8 +5721,6 @@ Default: `"hermes"`
 
 ##### `templateXcode` (object)
 
-Allows to configure xcode project
-
 Properties of the `templateXcode` object:
 
 ###### `Podfile` (object)
@@ -6367,8 +6365,6 @@ This element must be one of the following enum values:
 Default: `"hermes"`
 
 #### `templateXcode` (object)
-
-Allows to configure xcode project
 
 Properties of the `templateXcode` object:
 
@@ -7023,8 +7019,6 @@ Default: `"hermes"`
 
 ##### `templateXcode` (object)
 
-Allows to configure xcode project
-
 Properties of the `templateXcode` object:
 
 ###### `Podfile` (object)
@@ -7669,8 +7663,6 @@ This element must be one of the following enum values:
 Default: `"hermes"`
 
 #### `templateXcode` (object)
-
-Allows to configure xcode project
 
 Properties of the `templateXcode` object:
 
@@ -11549,8 +11541,6 @@ Default: `"hermes"`
 
 ##### `templateXcode` (object)
 
-Allows to configure xcode project
-
 Properties of the `templateXcode` object:
 
 ###### `Podfile` (object)
@@ -12235,8 +12225,6 @@ This element must be one of the following enum values:
 Default: `"hermes"`
 
 #### `templateXcode` (object)
-
-Allows to configure xcode project
 
 Properties of the `templateXcode` object:
 
@@ -14385,3 +14373,7 @@ Properties of the `package_json` object:
 #### `version` (string)
 
 #### `browserslist`
+
+#### `scripts` (object)
+
+Defines scripts you want to include in template

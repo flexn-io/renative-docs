@@ -73,6 +73,10 @@ Properties of the `package_json` object:
 
 #### `browserslist`
 
+#### `scripts` (object)
+
+Defines scripts you want to include in template
+
 ## `bootstrapConfig` (object)
 
 Properties of the `bootstrapConfig` object:
