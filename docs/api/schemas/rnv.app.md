@@ -5547,8 +5547,6 @@ Default: `"hermes"`
 
 ##### `templateXcode` (object)
 
-Allows to configure xcode project
-
 Properties of the `templateXcode` object:
 
 ###### `Podfile` (object)
@@ -6193,8 +6191,6 @@ This element must be one of the following enum values:
 Default: `"hermes"`
 
 #### `templateXcode` (object)
-
-Allows to configure xcode project
 
 Properties of the `templateXcode` object:
 
@@ -6849,8 +6845,6 @@ Default: `"hermes"`
 
 ##### `templateXcode` (object)
 
-Allows to configure xcode project
-
 Properties of the `templateXcode` object:
 
 ###### `Podfile` (object)
@@ -7495,8 +7489,6 @@ This element must be one of the following enum values:
 Default: `"hermes"`
 
 #### `templateXcode` (object)
-
-Allows to configure xcode project
 
 Properties of the `templateXcode` object:
 
@@ -11375,8 +11367,6 @@ Default: `"hermes"`
 
 ##### `templateXcode` (object)
 
-Allows to configure xcode project
-
 Properties of the `templateXcode` object:
 
 ###### `Podfile` (object)
@@ -12061,8 +12051,6 @@ This element must be one of the following enum values:
 Default: `"hermes"`
 
 #### `templateXcode` (object)
-
-Allows to configure xcode project
 
 Properties of the `templateXcode` object:
 

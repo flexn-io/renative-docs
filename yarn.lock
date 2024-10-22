@@ -3318,34 +3318,34 @@
     invariant "^2.2.4"
     nullthrows "^1.1.1"
 
-"@rnv/adapter@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/adapter/-/adapter-1.3.0.tgz#f905e87af486e1e70f76db43b097046a41b2ea82"
-  integrity sha512-+WbrDwFoFa0xSEQfLw1B/GgyqgFRcULRKiMQ3IYI4dzX6+jtX7K9xmBNSh72+x9SVIvBb7Rki9fKBvWTt46Xhw==
+"@rnv/adapter@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/adapter/-/adapter-1.4.0.tgz#10c3c10330c7404d8d4a9298c8af8852110d7c79"
+  integrity sha512-+WyhJgi4y07keDv1S/IhrQ9FFkIKxlkFB5mRABEWAShFDUrGQUW231UjO1kvxUUkbP2UCdXTE8A15ntlv6qqPA==
   dependencies:
     babel-plugin-module-resolver "^5.0.0"
 
-"@rnv/cli@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/cli/-/cli-1.3.0.tgz#c276b457d035b8590dce5b8efec9ebd2fbb3e958"
-  integrity sha512-7tAkzR/5gMgIOixeDR4sU3EbH1QuOa2fVDLC+Jq0r71b6IcWhRkFHyRBEKSXzzET8glrBbkF5iKRxnagJFeDCA==
+"@rnv/cli@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/cli/-/cli-1.4.0.tgz#dfb52ffd6cbb95b698e77a594b0b7253490b5b7c"
+  integrity sha512-OiUwqkAslPaoIAfMkLOl6ZruUjnVwgUHcM0FuKB/sYa/N7VMi3XvU8f8yoDkqYeWucponroL+9T4UVz/yf+3Jw==
   dependencies:
-    "@rnv/engine-core" "1.3.0"
-    "@rnv/sdk-telemetry" "1.3.0"
+    "@rnv/engine-core" "1.4.0"
+    "@rnv/sdk-telemetry" "1.4.0"
     chalk "4.1.0"
     commander "12.1.0"
     inquirer "8.2.0"
     inquirer-autocomplete-prompt "2.0.1"
 
-"@rnv/config-templates@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/config-templates/-/config-templates-1.3.0.tgz#ce3b47cb67727d8fefe8c948df218b472bbea5d9"
-  integrity sha512-Jnoo0nIGm9pSiUZ+zilMMCXZshfy6CGitcCQcZgwsazBS6/nuCUDkpYQeyt8ZI8ZVntAr1fqhRQpGoQtv7C7mg==
+"@rnv/config-templates@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/config-templates/-/config-templates-1.4.0.tgz#fea2ebba41767fe808e72e5f5ff3af83b2cddf8f"
+  integrity sha512-1Sswz42V293XhdVAMk6W5egHU4y9y5rHHCywB5QgzLIwB/qcS/9cBYClY6luC6UZio1Sv/OEH67SBcz+SoBExw==
 
-"@rnv/core@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/core/-/core-1.3.0.tgz#8a8cf8569ae3df7c60a3cc365e5c2100626842fa"
-  integrity sha512-D0qtUazyelftbGvwCB9b2P7ae3LnNZcIZKhvHOKdRDZCjg60xt7rDy6WFjVQDDv1dveeYpLgD6bPNsHLOZD2gA==
+"@rnv/core@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/core/-/core-1.4.0.tgz#0079e6abf9609f207663120aee18c21cf3468cdf"
+  integrity sha512-nr/8AfZtPIUEyPcc1aovvG5Qzf2/Jdz+k/zDUqqa4KeN7cSLop/ytQhqvQc8rhod4zslhsx5NrVIZvO65m7KkQ==
   dependencies:
     ajv "7.0.0-beta.0"
     deepmerge "3.2.0"
@@ -3365,174 +3365,174 @@
     type-fest "4.14.0"
     zod "3.23.8"
 
-"@rnv/engine-core@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-core/-/engine-core-1.3.0.tgz#53a7647066a6d1f4a0b0ffba47dd740246ccea36"
-  integrity sha512-TjPRCx1byOXdlhsUQxHs42ny+2LHqBjSWVUcr47LYu4xyNWzY4Ez6Ko4lboYA/s8QK2r/gsD3+zAuGHqcYbLMw==
+"@rnv/engine-core@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-core/-/engine-core-1.4.0.tgz#eab6e81ee5099be003f8e4886af08ad46601d78b"
+  integrity sha512-YH4cwCG9bL/aF4YWKo97uzGwTybWl9l72RdwaGMUP3kUXXUZdYy8zAaJJoP6vTcVQyCn4DdauY7QTDJK+Dl6XQ==
   dependencies:
-    "@rnv/sdk-utils" "1.3.0"
+    "@rnv/sdk-utils" "1.4.0"
     "@types/tar" "6.1.13"
     iocane "4.0.0"
     kill-port "1.6.1"
     lodash "4.17.21"
     tar "6.2.1"
 
-"@rnv/engine-lightning@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-lightning/-/engine-lightning-1.3.0.tgz#77e4c30447818cf0b30d23d3781700b1b54314cd"
-  integrity sha512-+/5raPeUc/bhNrBM3tbzGeIwWvVp+r4rhGAEX4snij0sbsn4lxuDcyf9qq6p44eeAg6rD/YTpLt4Kmn20BgLtg==
+"@rnv/engine-lightning@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-lightning/-/engine-lightning-1.4.0.tgz#cf42c81c1f8ccd70b00186f754856f3e03b0fa27"
+  integrity sha512-rr5GWjrLIPYKiL4ufrX/726qjY60BRNoayhSbAQW43he5RpR2N5Oy00E3AyGksfVXlyqCCHN3JpcTRwVTsfvKg==
   dependencies:
     "@lightningjs/cli" "2.13.0"
     "@lightningjs/sdk" "5.5.1"
-    "@rnv/sdk-tizen" "1.3.0"
-    "@rnv/sdk-utils" "1.3.0"
-    "@rnv/sdk-webos" "1.3.0"
+    "@rnv/sdk-tizen" "1.4.0"
+    "@rnv/sdk-utils" "1.4.0"
+    "@rnv/sdk-webos" "1.4.0"
 
-"@rnv/engine-rn-electron@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-electron/-/engine-rn-electron-1.3.0.tgz#78ea335c66617fab054265b4ffc8534877cf9c30"
-  integrity sha512-GGQK06zzO4mgbdtCIirCeC8nx4tFJhqIYnyWLQYpmPD35BLrNXoNTeTB4/bGh3Krnqyw1eaV7uxdrVvC57E64g==
+"@rnv/engine-rn-electron@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-electron/-/engine-rn-electron-1.4.0.tgz#f2a21da9b06bfba428006953e8629ab080b32a95"
+  integrity sha512-MSVinI8xoBO66y8eAsUXMCkIMws+ppGX5BAjT8ul6KdOiXMrtJUjqkJEoV+4IGIBHB/T6l1WC0WsGkSobnkVug==
   dependencies:
     "@react-native/babel-preset" "0.73.21"
-    "@rnv/adapter" "1.3.0"
-    "@rnv/sdk-react-native" "1.3.0"
-    "@rnv/sdk-utils" "1.3.0"
-    "@rnv/sdk-webpack" "1.3.0"
+    "@rnv/adapter" "1.4.0"
+    "@rnv/sdk-react-native" "1.4.0"
+    "@rnv/sdk-utils" "1.4.0"
+    "@rnv/sdk-webpack" "1.4.0"
     electron "26.3.0"
     electron-builder "24.13.3"
     electron-notarize "1.2.2"
     metro-react-native-babel-preset "0.76.8"
 
-"@rnv/engine-rn-macos@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-macos/-/engine-rn-macos-1.3.0.tgz#c9be17096dce1796128443ebfe68a6f93d602f81"
-  integrity sha512-5+VX/5//T5mP6RXL5egvtFGFxQBYcS93sD2WSzUMdwRIw+O77FvMyLaYwUewDT1CovnujuntZYR8z2WUrL5MBg==
+"@rnv/engine-rn-macos@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-macos/-/engine-rn-macos-1.4.0.tgz#e74e897adcd28ec3130ba27824fee0d0f1a44c40"
+  integrity sha512-RYdSwLNElESSLbFbYmn8/HtsZVY0PHWIsItpGM57C0dKTtTapXqTCBaPuhz5xBwGTGkU/eUh6r5jIG3MN+mV0A==
   dependencies:
     "@react-native/babel-preset" "0.73.21"
-    "@rnv/adapter" "1.3.0"
-    "@rnv/sdk-apple" "1.3.0"
-    "@rnv/sdk-react-native" "1.3.0"
+    "@rnv/adapter" "1.4.0"
+    "@rnv/sdk-apple" "1.4.0"
+    "@rnv/sdk-react-native" "1.4.0"
 
-"@rnv/engine-rn-next@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-next/-/engine-rn-next-1.3.0.tgz#9897c3c8fc82ac140b70a869eafcbdb307904cbd"
-  integrity sha512-9KSzoJ+VMbj2l7Xv9ubJBvQ4ANx1t1Lghj8bGOhDpqBIUl4UX05HH5c8+wQxqkWAC9WXwGy1ER/O4VWwOgtaWg==
+"@rnv/engine-rn-next@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-next/-/engine-rn-next-1.4.0.tgz#5f0106ed1740733b4bdd56b7745ecdda96f62979"
+  integrity sha512-zRPYPlJFx9B06lXwtahQGe7o+iuKFA1H/qVRCDh2P/iaqci81aGf5X5c6DWVWSqAUPvA6KDK5pl34sExVqO2Vg==
   dependencies:
-    "@rnv/adapter" "1.3.0"
-    "@rnv/sdk-utils" "1.3.0"
+    "@rnv/adapter" "1.4.0"
+    "@rnv/sdk-utils" "1.4.0"
     babel-preset-expo "9.5.2"
     next-fonts "1.5.1"
     next-images "1.8.4"
     webpack "^5.94.0"
 
-"@rnv/engine-rn-tvos@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-tvos/-/engine-rn-tvos-1.3.0.tgz#5976ea2e31fd387588b37f12f65aa0d0805063c9"
-  integrity sha512-t7PpwGeRM+j+SoqjIWA3emm1G2PG/90/XCOep4MzVNtcqkYwBug68YYlEvajivf+FOVM+HH6VqyhCk8EELCbiQ==
+"@rnv/engine-rn-tvos@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-tvos/-/engine-rn-tvos-1.4.0.tgz#bc043c6148f2fee2341bf8012c7b30fa5e9f285b"
+  integrity sha512-fXvWQ/FDce0a3NKAOOfuLZo799fnGA0WBkvJHXOfiT8Ufk6hj6ntncyG6FYNHkXir3xk78J5rXVuEYLWUhzfNw==
   dependencies:
     "@react-native/babel-preset" "0.73.21"
-    "@rnv/adapter" "1.3.0"
-    "@rnv/sdk-android" "1.3.0"
-    "@rnv/sdk-apple" "1.3.0"
-    "@rnv/sdk-react-native" "1.3.0"
+    "@rnv/adapter" "1.4.0"
+    "@rnv/sdk-android" "1.4.0"
+    "@rnv/sdk-apple" "1.4.0"
+    "@rnv/sdk-react-native" "1.4.0"
 
-"@rnv/engine-rn-web@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-web/-/engine-rn-web-1.3.0.tgz#085b4011c5b7a0b52f73a405b4ff0890f3177e55"
-  integrity sha512-Mry6e0TSuLFcPAfLg2ck7H5GqFZfH8ORQCosiA1bbgRneoqpQqkmbb6I6QGKA4pbYATes7/rSk8C0EHc+LEpsQ==
+"@rnv/engine-rn-web@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-web/-/engine-rn-web-1.4.0.tgz#93d4032ee16c491eb9b4b3739dc55c28c193291e"
+  integrity sha512-aetXaMm+ScXkVB/KPcJX673QMr8XdmyxscqL2Pt9gtGcYjlHxV9hQeSqRIifB8ZRicFkH08bsJRorSyQA6VgYw==
   dependencies:
     "@react-native/babel-preset" "0.73.21"
-    "@rnv/adapter" "1.3.0"
-    "@rnv/sdk-kaios" "1.3.0"
-    "@rnv/sdk-tizen" "1.3.0"
-    "@rnv/sdk-utils" "1.3.0"
-    "@rnv/sdk-webos" "1.3.0"
-    "@rnv/sdk-webpack" "1.3.0"
+    "@rnv/adapter" "1.4.0"
+    "@rnv/sdk-kaios" "1.4.0"
+    "@rnv/sdk-tizen" "1.4.0"
+    "@rnv/sdk-utils" "1.4.0"
+    "@rnv/sdk-webos" "1.4.0"
+    "@rnv/sdk-webpack" "1.4.0"
     metro-react-native-babel-preset "0.76.8"
 
-"@rnv/engine-rn-windows@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-windows/-/engine-rn-windows-1.3.0.tgz#3c9a2da2d07139f6be7701f703113d693d5aae40"
-  integrity sha512-9IrgfzhWLDv8YkHslfchvnokZ3TtAZww1ifkJxr7M4RwvsOPn7dhh75Y3w4fgvxCZ2w75AeoiAyMb2gsDZKwxA==
+"@rnv/engine-rn-windows@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-rn-windows/-/engine-rn-windows-1.4.0.tgz#c3f5b03839c38d20662bba87eb8084438d3d7d4b"
+  integrity sha512-qMumHog3rw5KfVyPQz4hkGk2F63eSJRH3xQkDYX5DHDqcO6BIcaL31qnQ/lse5YwVyM8ovcBDCNI8JHFzPP+Rg==
   dependencies:
-    "@rnv/adapter" "1.3.0"
-    "@rnv/sdk-react-native" "1.3.0"
+    "@rnv/adapter" "1.4.0"
+    "@rnv/sdk-react-native" "1.4.0"
     "@xmldom/xmldom" "0.7.7"
     react-native-windows "0.72.10"
 
-"@rnv/engine-rn@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/engine-rn/-/engine-rn-1.3.0.tgz#1b8ec862f27e588b8cc3827de2515a8162cecbc0"
-  integrity sha512-y8jfixY/w9n4GWWNu+XfW+CR6n0nTSjn3yb98Q/3y/XMRHYM8lcohArjsMUtVOxIqyY0R0zMbPznFQWfhuZ/lA==
+"@rnv/engine-rn@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/engine-rn/-/engine-rn-1.4.0.tgz#e2a8bd633b72d33e77cb81385ce291920ae67164"
+  integrity sha512-Oc71BXLhgkFAWU+jtmYQgoxGUbIPI9xW7aUt4FbNoMJRU5kkev9gi7Dj63zgrZn/GFiPbCQQMprzrov5uFa/pw==
   dependencies:
     "@react-native/babel-preset" "0.73.21"
-    "@rnv/adapter" "1.3.0"
-    "@rnv/sdk-android" "1.3.0"
-    "@rnv/sdk-apple" "1.3.0"
-    "@rnv/sdk-react-native" "1.3.0"
+    "@rnv/adapter" "1.4.0"
+    "@rnv/sdk-android" "1.4.0"
+    "@rnv/sdk-apple" "1.4.0"
+    "@rnv/sdk-react-native" "1.4.0"
 
-"@rnv/renative@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/renative/-/renative-1.3.0.tgz#28fdf59fe57d229a165500e52ad376eca082a082"
-  integrity sha512-0VaHPK5DfzCoSu6/wYzDPjazxKW7w3Ovxv1JLpneLVIfzmi1V4e/He7JRq6m3nzUYec25YlhV4JaPIfUQ1H/ww==
+"@rnv/renative@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/renative/-/renative-1.4.0.tgz#eac98f2451b03a3b721cf8da0e7c52059e3e55e1"
+  integrity sha512-OQwtMKzemm2nA6zjcNT2HGUwX8UVIZYDHB06Qa63KJ0HK7w1sYszUC935yZal/Mtk2S7WcB2REUGDUoLHAoK4w==
 
-"@rnv/sdk-android@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-android/-/sdk-android-1.3.0.tgz#81125b2bc6a656fcd906785ba02098c2676e307b"
-  integrity sha512-my1YQ5mKqHzkPfjVgWWdEi9ZaTauG2zIXdxLqfxFXqwI7sp8iYePvwgX9grHWlJaoLTVw+i8rJsgZQ5uIwUHhw==
+"@rnv/sdk-android@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-android/-/sdk-android-1.4.0.tgz#a0861a1d031dd00cdf23752496a9cf420d5922d5"
+  integrity sha512-mby0v8KSBbbDSoSzwqC2o4WBvynKzjy/X4WgOaLocBJCGkHihiBXAeyoOaBUW7Raxy6LJmQJLZDUjHAgdZ08Dg==
   dependencies:
-    "@rnv/sdk-react-native" "1.3.0"
-    "@rnv/sdk-utils" "1.3.0"
+    "@rnv/sdk-react-native" "1.4.0"
+    "@rnv/sdk-utils" "1.4.0"
     jetifier "2.0.0"
 
-"@rnv/sdk-apple@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-apple/-/sdk-apple-1.3.0.tgz#974ba25a2c78f18cd4006c5695f550ca0ec649e8"
-  integrity sha512-Q7a8rZ74aX2ot4igvmqnqgE5y1kjLkqUt8xmZTw4REBtIJcBF65K+qy3zImLVwCGJJQ8n95dI4DJ9Mvx/3WhLA==
+"@rnv/sdk-apple@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-apple/-/sdk-apple-1.4.0.tgz#9e5f0dcd2edacbac4a736bfae38957662c193cde"
+  integrity sha512-eLGJaACXmYHjjml3WKxBqmSH8zDxDu05uurC3kQ+QThzky7p8UT6qjK7Ix0fqnwOowDn9Wy3H7uB4nlAewxCiQ==
   dependencies:
-    "@rnv/sdk-react-native" "1.3.0"
-    "@rnv/sdk-utils" "1.3.0"
+    "@rnv/sdk-react-native" "1.4.0"
+    "@rnv/sdk-utils" "1.4.0"
     appium-ios-device "2.7.10"
     ios-mobileprovision-finder "1.1.0"
     xcode "3.0.1"
 
-"@rnv/sdk-kaios@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-kaios/-/sdk-kaios-1.3.0.tgz#ea9d952a297f567f38e1abdf6ed71ae7cecf54ce"
-  integrity sha512-syKqNnoTTADXHJp5aV1x3RiETxVcnkzZ3mXJOZLPv93RNTDqgYeM54edPz3ZNFCEV+HOq6MKXFhcfhKalTwTJA==
+"@rnv/sdk-kaios@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-kaios/-/sdk-kaios-1.4.0.tgz#0bdb5b300f86684d91ea9c6b8a34f3ef930b5f9f"
+  integrity sha512-9KpCfapZcjABrNGtRivrxsTemqwb4c0slq9Cx1vRj8AV+mmGWBBtsBeL3adwiITqRXpyfqoJXB92DVtOCHU72w==
 
-"@rnv/sdk-react-native@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-react-native/-/sdk-react-native-1.3.0.tgz#b36340b7aefbfdcd2c7c295dcf38257d9d5cc122"
-  integrity sha512-VqJzCzPPGBArWVbS62Azzu5VjYTeSYfCUlOe7Oewu5ocyyavaSt6tvyYHgHr38Lh4ziVglKaShEXviGf9AqfRQ==
+"@rnv/sdk-react-native@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-react-native/-/sdk-react-native-1.4.0.tgz#6b339253f058d7e1d2e4a1b81aa8df7543c600a6"
+  integrity sha512-3vgoPpHuUeDduQNqfjB/T8lRRSbys7uqSI7PKf4AYZ0yjp+gZyQ9Sy9BJ9CjwfjzngpIde7Ww0Fy2RD4gzghjA==
   dependencies:
     "@react-native/metro-babel-transformer" "^0.74.0"
-    "@rnv/sdk-utils" "1.3.0"
+    "@rnv/sdk-utils" "1.4.0"
     shell-quote "1.8.1"
 
-"@rnv/sdk-telemetry@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-telemetry/-/sdk-telemetry-1.3.0.tgz#193f0755a0147288c62fe352d320857c8ee082cc"
-  integrity sha512-IxEqa9WXhPhZqm2BnlFOAWoc0CaMbGAJZ6O1NjFs8c0wCRY5PPmidP7RivQKQa8JQUGSCkoq7yjw1g6nryunNg==
+"@rnv/sdk-telemetry@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-telemetry/-/sdk-telemetry-1.4.0.tgz#b36fdef9079b7f1695530482358a31f5263dd802"
+  integrity sha512-xn+M1qnyWVNT0YxxNrzRsbaSMylZCtOV8mrdOp+Oe24tmJXJj3OzEIHviYT67zDFefsYIx2BPL5VsJHA3KNlPg==
   dependencies:
-    "@rnv/sdk-utils" "1.3.0"
+    "@rnv/sdk-utils" "1.4.0"
     "@sentry/integrations" "7.57.0"
     "@sentry/node" "7.57.0"
     node-machine-id "^1.1.12"
 
-"@rnv/sdk-tizen@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-tizen/-/sdk-tizen-1.3.0.tgz#98d793fa3f9a28de16bc41c99b076457ed0533ac"
-  integrity sha512-+pXiOsfBQC3ZYBmStNonXrN4U6k0jXqwM0/AoiYezXBb8cN3vlUoHJBPlexjZOsDfGRIzRSyNwQcKXl8UUB7dA==
+"@rnv/sdk-tizen@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-tizen/-/sdk-tizen-1.4.0.tgz#ef9b0ab4f841c26e2cbde5990bd08221ae37c288"
+  integrity sha512-piNvkL0ddPJ5j1YhT78qdwniVD90HUls5tICvgjF57JwWkBTjQSK+UVZNwW9GigqHc2TOeR5PFk+VMBTQAub1g==
   dependencies:
-    "@rnv/sdk-utils" "1.3.0"
-    "@rnv/sdk-webpack" "1.3.0"
+    "@rnv/sdk-utils" "1.4.0"
+    "@rnv/sdk-webpack" "1.4.0"
     xml2js "0.6.2"
 
-"@rnv/sdk-utils@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-utils/-/sdk-utils-1.3.0.tgz#79503f73df61382205f10375d01b6acb3795897a"
-  integrity sha512-rnmlHnEex4CG77pk4erxFJLB2fydwUOXIZWdpIUh/C5V3O3E17SM+WvPP+UHiLT4B/IBIfa0pdjwEgZqHx7IHA==
+"@rnv/sdk-utils@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-utils/-/sdk-utils-1.4.0.tgz#fcf789ba5c1f33083a148c5c410f66d177ddcda2"
+  integrity sha512-nlA8qKiczQnCWV5Sd+ecS3qe129OhVeE0PLwBFpXNRk2+6W4Tz/2dZpEtIGvyZ86hy1lIjApphFBawMPrDHMnQ==
   dependencies:
     axios "1.7.4"
     better-opn "1.0.0"
@@ -3540,21 +3540,21 @@
     detect-port "1.3.0"
     kill-port "1.6.1"
 
-"@rnv/sdk-webos@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-webos/-/sdk-webos-1.3.0.tgz#24fba17631b752fce8ba29b2cabb8f0f79c7787d"
-  integrity sha512-mTue97tWRjajRJ/w0GqJ4OIxJ2H53KUKoQTLj7F/qAQVumjS5xUAJShmqBePeLJkiwFWX1X4xYVem7ktEzPEIw==
+"@rnv/sdk-webos@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-webos/-/sdk-webos-1.4.0.tgz#3c5c557b6b9339867551ac05acaf1b91a29fc215"
+  integrity sha512-uK01mVoabeYey73dDLtvXVYupMF21ctJt2TW/NTXeO/8S+IKDnZBD003JcxDo2V9jxUff6M7+yJ+dRZD0Qocig==
   dependencies:
-    "@rnv/sdk-utils" "1.3.0"
-    "@rnv/sdk-webpack" "1.3.0"
+    "@rnv/sdk-utils" "1.4.0"
+    "@rnv/sdk-webpack" "1.4.0"
 
-"@rnv/sdk-webpack@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@rnv/sdk-webpack/-/sdk-webpack-1.3.0.tgz#c63dd4b156900546dd4cd8785755b940459d5ca1"
-  integrity sha512-Kz8XvYHUTMaKgVNrn8aEB3ZV4Sd9zZ8YVOun6FkHk/HhtQ+hjnCRHHU9LMk2HUy/zWMLmQfeZMeVaJ0ppziYaw==
+"@rnv/sdk-webpack@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@rnv/sdk-webpack/-/sdk-webpack-1.4.0.tgz#64f4783999d68e3074d6405d1ed316858a350820"
+  integrity sha512-jKFqItPNrAoNrmt0qzJJsxjYIfQDDwrAjNf/AT5P5CqCnusIwCoaVK26T//nOgTK0Na/QuG9GeCjB3Pb30ZJyQ==
   dependencies:
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.3"
-    "@rnv/sdk-utils" "1.3.0"
+    "@rnv/sdk-utils" "1.4.0"
     "@svgr/webpack" "6.3.1"
     bfj "^7.0.2"
     browserslist "^4.18.1"
@@ -14855,13 +14855,13 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rnv@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/rnv/-/rnv-1.3.0.tgz#8c702d37d373a91736adea90627abb0468b0c7ea"
-  integrity sha512-ekfl0g+7wUJJQrRynXKUqC7KA/IJ3XPtqJ3Seco9qzglB7xrCcSIqDgmdFzqIltpIlMFhcL9yWvIOpXK+AJLGQ==
+rnv@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/rnv/-/rnv-1.4.0.tgz#a828d5813552cf39601723b66aea0a67bee609ab"
+  integrity sha512-y6p/4HUL1Cc/9jASUkfdPK4rVkHuiXoZ81/vDbSq5wfsmTdpGwX9NRDI2aRCCd+aNfn8L+kxDENCnmPryhCjbA==
   dependencies:
-    "@rnv/cli" "1.3.0"
-    "@rnv/config-templates" "1.3.0"
+    "@rnv/cli" "1.4.0"
+    "@rnv/config-templates" "1.4.0"
     tslib "2.5.2"
 
 roarr@^2.15.3:
