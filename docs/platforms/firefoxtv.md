@@ -16,7 +16,7 @@ original_id: firefoxtv
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_firefoxtv.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_firefoxtv.gif" height="250"/>
 
 ---
 ## File Extension Support
@@ -38,7 +38,7 @@ After installation you can launch it via Applications:
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/firefoxos.png" />
+    <img src="/img/firefoxos.png" />
     </th>
   </tr>
 </table>

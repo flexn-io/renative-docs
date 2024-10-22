@@ -18,7 +18,7 @@ original_id: Linux
   </tbody>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_linux.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_linux.gif" height="250"/>
 
 
 Experimental support

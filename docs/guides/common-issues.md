@@ -5,16 +5,16 @@ sidebar_label: Common Issues
 original_id: common_issues
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_issues.png" width="50" height="50" /> -->
+<!-- <img className="header-image" src="/img/ic_issues.png" width="50" height="50" /> -->
 
 <br />
 If you encounter unexpected error / issue it is always good to perform basic sanity steps:
 
-#### rnv status
+#### rnv info
 
-`rnv status`
+`rnv info`
 
-this should print out basic `SUMMARY` box with info about your project, env, and RNV version. check if everything seem correct.
+this should print out basic `SUMMARY` box with info about your project, development environment and RNV version. Check if everything is correct.
 
 #### -r --reset
 

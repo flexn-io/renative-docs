@@ -8,976 +8,247 @@ custom_edit_url: null
 
 ## Type Aliases
 
-### AsyncCallback
+### AndroidManifest
 
-Ƭ **AsyncCallback**: () => `Promise`\<`void`\>
+Ƭ **AndroidManifest**: `_AndroidManifestType`
+
+#### Defined in
+
+schema/types.d.ts:20
+
+___
+
+### AndroidManifestNode
+
+Ƭ **AndroidManifestNode**: `_ManifestChildWithChildrenType`
+
+#### Defined in
+
+schema/types.d.ts:19
+
+___
+
+### BabelApi
+
+Ƭ **BabelApi**: `Object`
 
 #### Type declaration
 
-▸ (): `Promise`\<`void`\>
-
-##### Returns
-
-`Promise`\<`void`\>
+| Name | Type |
+| :------ | :------ |
+| `cache` | (`value`: `boolean`) => `void` |
 
 #### Defined in
 
-@rnv/core/lib/projects/types.d.ts:3
+types.d.ts:27
 
 ___
 
-### BuildConfigKey
+### BabelConfig
 
-Ƭ **BuildConfigKey**: keyof [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)
+Ƭ **BabelConfig**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `plugins?` | [`string`, \{ `alias?`: `Record`\<`string`, `string` \| `undefined`\> ; `root?`: (`string` \| `undefined`)[]  }][] |
+| `presets?` | (`string` \| [`string`, \{ `useTransformReactJSXExperimental?`: `boolean`  }])[] |
+| `retainLines?` | `boolean` |
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:89
+types.d.ts:11
 
 ___
 
-### CommonBuildSchemeKey
+### BuildConfigPropKey
 
-Ƭ **CommonBuildSchemeKey**: keyof [`ConfigCommonBuildSchemeSchema`](modules.md#configcommonbuildschemeschema)
+Ƭ **BuildConfigPropKey**: keyof [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:42
+types.d.ts:34
+
+___
+
+### BuildSchemePropKey
+
+Ƭ **BuildSchemePropKey**: keyof `Required`\<`Plat`\>[``"buildSchemes"``][`string`]
+
+#### Defined in
+
+types.d.ts:32
 
 ___
 
 ### CommonPropKey
 
-Ƭ **CommonPropKey**: keyof [`ConfigCommonSchemaFragment`](modules.md#configcommonschemafragment)
+Ƭ **CommonPropKey**: keyof [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)[``"common"``]
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:40
-
-___
-
-### ConfigAndroidManifest
-
-Ƭ **ConfigAndroidManifest**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `children?` | [`ConfigAndroidManifestChildType`](modules.md#configandroidmanifestchildtype)[] |
-| `package?` | `string` |
-| `tag` | `string` |
-| `xmlns:android?` | `string` |
-| `xmlns:tools?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:57
-
-___
-
-### ConfigAndroidManifestChildType
-
-Ƭ **ConfigAndroidManifestChildType**: `z.infer`\<typeof `zodManifestChildBase`\> & \{ `children?`: [`ConfigAndroidManifestChildType`](modules.md#configandroidmanifestchildtype)[]  }
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:54
-
-___
-
-### ConfigAndroidManifestNode
-
-Ƭ **ConfigAndroidManifestNode**: [`ConfigAndroidManifestChildType`](modules.md#configandroidmanifestchildtype)
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:53
-
-___
-
-### ConfigAndroidResources
-
-Ƭ **ConfigAndroidResources**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `children?` | [`ConfigAndroidResourcesChildType`](modules.md#configandroidresourceschildtype)[] |
-| `name?` | `string` |
-| `parent?` | `string` |
-| `tag` | `string` |
-| `value?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:59
-
-___
-
-### ConfigAndroidResourcesChildType
-
-Ƭ **ConfigAndroidResourcesChildType**: `z.infer`\<typeof `zodResourcesChildBase`\> & \{ `children?`: [`ConfigAndroidResourcesChildType`](modules.md#configandroidresourceschildtype)[]  }
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:61
-
-___
-
-### ConfigAndroidResourcesNode
-
-Ƭ **ConfigAndroidResourcesNode**: [`ConfigAndroidResourcesChildType`](modules.md#configandroidresourceschildtype)
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:60
-
-___
-
-### ConfigAppDelegateMethod
-
-Ƭ **ConfigAppDelegateMethod**: `ConfigTemplateXcodeAppDelegateMethod`[`number`]
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:65
-
-___
-
-### ConfigBuildSchemeFragment
-
-Ƭ **ConfigBuildSchemeFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `description?` | `string` |
-| `enabled?` | `boolean` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:37
-
-___
-
-### ConfigCommonBuildSchemeSchema
-
-Ƭ **ConfigCommonBuildSchemeSchema**: `Partial`\<[`ConfigCommonSchemaFragment`](modules.md#configcommonschemafragment) & [`ConfigBuildSchemeFragment`](modules.md#configbuildschemefragment) & [`ConfigPlatformBaseFragment`](modules.md#configplatformbasefragment)\>
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:41
-
-___
-
-### ConfigCommonSchema
-
-Ƭ **ConfigCommonSchema**: `Partial`\<[`ConfigCommonSchemaFragment`](modules.md#configcommonschemafragment)\> & \{ `buildSchemes?`: `Record`\<`string`, [`ConfigCommonBuildSchemeSchema`](modules.md#configcommonbuildschemeschema)\>  }
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:43
-
-___
-
-### ConfigCommonSchemaFragment
-
-Ƭ **ConfigCommonSchemaFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `assetSources?` | `string`[] |
-| `author?` | `string` |
-| `backgroundColor?` | `string` |
-| `custom?` | `any` |
-| `description?` | `string` |
-| `excludedPermissions?` | `string`[] |
-| `excludedPlugins?` | `string`[] |
-| `fontSources?` | `string`[] |
-| `id?` | `string` |
-| `idSuffix?` | `string` |
-| `includedFonts?` | `string`[] |
-| `includedPermissions?` | `string`[] |
-| `includedPlugins?` | `string`[] |
-| `license?` | `string` |
-| `runtime?` | `any` |
-| `splashScreen?` | `boolean` |
-| `title?` | `string` |
-| `version?` | `string` |
-| `versionCode?` | `string` |
-| `versionCodeFormat?` | `string` |
-| `versionCodeOffset?` | `number` |
-| `versionFormat?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:39
+types.d.ts:33
 
 ___
 
 ### ConfigFileApp
 
-Ƭ **ConfigFileApp**: [`ConfigRootAppBaseFragment`](modules.md#configrootappbasefragment) & \{ `common?`: [`ConfigCommonSchema`](modules.md#configcommonschema) ; `platforms?`: [`ConfigPlatformsSchema`](modules.md#configplatformsschema) ; `plugins?`: [`ConfigPluginsSchema`](modules.md#configpluginsschema)  }
+Ƭ **ConfigFileApp**: `_RootAppSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:80
+schema/configFiles/types.d.ts:16
 
 ___
 
 ### ConfigFileBuildConfig
 
-Ƭ **ConfigFileBuildConfig**: [`ConfigFileTemplates`](modules.md#configfiletemplates) & [`ConfigFileWorkspace`](modules.md#configfileworkspace) & `RootPluginsMerged` & [`ConfigFileProject`](modules.md#configfileproject) & [`ConfigFileLocal`](modules.md#configfilelocal) & [`ConfigRootAppBaseFragment`](modules.md#configrootappbasefragment)
+Ƭ **ConfigFileBuildConfig**: `_ConfigRootMerged`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:88
+schema/configFiles/buildConfig.d.ts:23
 
 ___
 
 ### ConfigFileEngine
 
-Ƭ **ConfigFileEngine**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `custom?` | `any` |
-| `engineExtension?` | `string` |
-| `id?` | `string` |
-| `npm?` | \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } |
-| `npm.dependencies?` | `Record`\<`string`, `string`\> |
-| `npm.devDependencies?` | `Record`\<`string`, `string`\> |
-| `npm.optionalDependencies?` | `Record`\<`string`, `string`\> |
-| `npm.peerDependencies?` | `Record`\<`string`, `string`\> |
-| `overview?` | `string` |
-| `packageName?` | `string` |
-| `platforms?` | `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> |
-| `plugins?` | `Record`\<`string`, `string`\> |
+Ƭ **ConfigFileEngine**: `_ConfigRootEngineType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:93
+schema/configFiles/types.d.ts:17
 
 ___
 
 ### ConfigFileIntegration
 
-Ƭ **ConfigFileIntegration**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `packageName?` | `string` |
+Ƭ **ConfigFileIntegration**: `_RootIntegrationSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:94
+schema/configFiles/types.d.ts:26
 
 ___
 
 ### ConfigFileLocal
 
-Ƭ **ConfigFileLocal**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `_meta?` | \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } |
-| `_meta.currentAppConfigId?` | `string` |
-| `_meta.requiresJetify?` | `boolean` |
-| `defaultTargets?` | `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``, `string`\>\> |
-| `workspaceAppConfigsDir?` | `string` |
+Ƭ **ConfigFileLocal**: `_RootLocalSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:95
+schema/configFiles/types.d.ts:20
 
 ___
 
 ### ConfigFileOverrides
 
-Ƭ **ConfigFileOverrides**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `overrides?` | `Record`\<`string`, `Record`\<`string`, `string`\>\> |
+Ƭ **ConfigFileOverrides**: `_RootOverridesSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:96
+schema/configFiles/types.d.ts:28
 
 ___
 
 ### ConfigFilePlugin
 
-Ƭ **ConfigFilePlugin**: [`ConfigPluginSchema`](modules.md#configpluginschema) & `z.infer`\<typeof `zodPluginFragment`\>
+Ƭ **ConfigFilePlugin**: `_RootPluginSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:105
+schema/configFiles/types.d.ts:18
+
+___
+
+### ConfigFilePlugins
+
+Ƭ **ConfigFilePlugins**: `_RootPluginsSchemaType`
+
+#### Defined in
+
+schema/configFiles/types.d.ts:19
 
 ___
 
 ### ConfigFilePrivate
 
-Ƭ **ConfigFilePrivate**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `platforms?` | \{ `android?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidtv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidwear?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `chromecast?`: `any` ; `firetv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `ios?`: `any` ; `kaios?`: `any` ; `linux?`: `any` ; `macos?`: `any` ; `tizen?`: `any` ; `tizenmobile?`: `any` ; `tizenwatch?`: `any` ; `tvos?`: `any` ; `web?`: `any` ; `webos?`: `any` ; `webtv?`: `any` ; `windows?`: `any` ; `xbox?`: `any`  } |
-| `platforms.android?` | \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } |
-| `platforms.android.keyAlias?` | `string` |
-| `platforms.android.keyPassword?` | `string` |
-| `platforms.android.storeFile?` | `string` |
-| `platforms.android.storePassword?` | `string` |
-| `platforms.androidtv?` | \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } |
-| `platforms.androidtv.keyAlias?` | `string` |
-| `platforms.androidtv.keyPassword?` | `string` |
-| `platforms.androidtv.storeFile?` | `string` |
-| `platforms.androidtv.storePassword?` | `string` |
-| `platforms.androidwear?` | \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } |
-| `platforms.androidwear.keyAlias?` | `string` |
-| `platforms.androidwear.keyPassword?` | `string` |
-| `platforms.androidwear.storeFile?` | `string` |
-| `platforms.androidwear.storePassword?` | `string` |
-| `platforms.chromecast?` | `any` |
-| `platforms.firetv?` | \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } |
-| `platforms.firetv.keyAlias?` | `string` |
-| `platforms.firetv.keyPassword?` | `string` |
-| `platforms.firetv.storeFile?` | `string` |
-| `platforms.firetv.storePassword?` | `string` |
-| `platforms.ios?` | `any` |
-| `platforms.kaios?` | `any` |
-| `platforms.linux?` | `any` |
-| `platforms.macos?` | `any` |
-| `platforms.tizen?` | `any` |
-| `platforms.tizenmobile?` | `any` |
-| `platforms.tizenwatch?` | `any` |
-| `platforms.tvos?` | `any` |
-| `platforms.web?` | `any` |
-| `platforms.webos?` | `any` |
-| `platforms.webtv?` | `any` |
-| `platforms.windows?` | `any` |
-| `platforms.xbox?` | `any` |
-| `private?` | `Record`\<`string`, `any`\> |
+Ƭ **ConfigFilePrivate**: `_RootPrivateSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:107
+schema/configFiles/types.d.ts:21
 
 ___
 
 ### ConfigFileProject
 
-Ƭ **ConfigFileProject**: [`ConfigRootProjectBaseFragment`](modules.md#configrootprojectbasefragment) & \{ `common?`: [`ConfigCommonSchema`](modules.md#configcommonschema) ; `platforms?`: [`ConfigPlatformsSchema`](modules.md#configplatformsschema) ; `plugins?`: [`ConfigPluginsSchema`](modules.md#configpluginsschema)  }
+Ƭ **ConfigFileProject**: `_RootProjectSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:112
-
-___
-
-### ConfigFileRenative
-
-Ƭ **ConfigFileRenative**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `app` | [`ConfigFileApp`](modules.md#configfileapp) |
-| `engine` | [`ConfigFileEngine`](modules.md#configfileengine) |
-| `integration` | [`ConfigFileIntegration`](modules.md#configfileintegration) |
-| `local` | [`ConfigFileLocal`](modules.md#configfilelocal) |
-| `overrides` | [`ConfigFileOverrides`](modules.md#configfileoverrides) |
-| `plugin` | [`ConfigFilePlugin`](modules.md#configfileplugin) |
-| `private` | [`ConfigFilePrivate`](modules.md#configfileprivate) |
-| `project` | [`ConfigFileProject`](modules.md#configfileproject) |
-| `templateIntegrations` | [`ConfigFileTemplates`](modules.md#configfiletemplates) |
-| `templatePlugins` | [`ConfigFileTemplates`](modules.md#configfiletemplates) |
-| `templateProject` | [`ConfigFileTemplate`](modules.md#configfiletemplate) |
-| `templateProjects` | [`ConfigFileTemplates`](modules.md#configfiletemplates) |
-| `workspace` | [`ConfigFileWorkspace`](modules.md#configfileworkspace) |
-| `workspaces` | [`ConfigFileWorkspaces`](modules.md#configfileworkspaces) |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:125
+schema/configFiles/types.d.ts:15
 
 ___
 
 ### ConfigFileRuntime
 
-Ƭ **ConfigFileRuntime**: `Object`
+Ƭ **ConfigFileRuntime**: `_RootRuntimeSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:141
+schema/configFiles/types.d.ts:27
 
 ___
 
 ### ConfigFileTemplate
 
-Ƭ **ConfigFileTemplate**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `bootstrapConfig?` | `ConfigTemplateBootstrapConfig` |
-| `templateConfig?` | [`ConfigTemplateConfigFragment`](modules.md#configtemplateconfigfragment) |
+Ƭ **ConfigFileTemplate**: `_RootTemplateSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:118
+schema/configFiles/types.d.ts:22
 
 ___
 
 ### ConfigFileTemplates
 
-Ƭ **ConfigFileTemplates**: `Object`
+Ƭ **ConfigFileTemplates**: `_RootTemplatesSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:122
+schema/configFiles/types.d.ts:23
 
 ___
 
 ### ConfigFileWorkspace
 
-Ƭ **ConfigFileWorkspace**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `appConfigsPath?` | `string` |
-| `defaultTargets?` | `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``, `string`\>\> |
-| `disableTelemetry?` | `boolean` |
-| `projectTemplates?` | `Record`\<`string`, \{ `description?`: `string` ; `localPath?`: `string` ; `packageName?`: `string`  }\> |
-| `sdks?` | \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  } |
-| `sdks.ANDROID_NDK?` | `string` |
-| `sdks.ANDROID_SDK?` | `string` |
-| `sdks.KAIOS_SDK?` | `string` |
-| `sdks.TIZEN_SDK?` | `string` |
-| `sdks.WEBOS_SDK?` | `string` |
+Ƭ **ConfigFileWorkspace**: `_RootWorkspaceSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:123
+schema/configFiles/types.d.ts:24
 
 ___
 
 ### ConfigFileWorkspaces
 
-Ƭ **ConfigFileWorkspaces**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `workspaces` | `Record`\<`string`, \{ `path`: `string` ; `remote?`: \{ `type`: `string` ; `url`: `string`  }  }\> |
+Ƭ **ConfigFileWorkspaces**: `_RootWorkspacesSchemaType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:124
-
-___
-
-### ConfigPlatformAndroidFragment
-
-Ƭ **ConfigPlatformAndroidFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `aab?` | `boolean` |
-| `buildToolsVersion?` | `string` |
-| `compileSdkVersion?` | `number` |
-| `disableSigning?` | `boolean` |
-| `enableAndroidX?` | `string` \| `boolean` |
-| `enableJetifier?` | `string` \| `boolean` |
-| `excludedFeatures?` | `string`[] |
-| `extraGradleParams?` | `string` |
-| `flipperEnabled?` | `boolean` |
-| `googleServicesVersion?` | `string` |
-| `gradleBuildToolsVersion?` | `string` |
-| `gradleWrapperVersion?` | `string` |
-| `includedFeatures?` | `string`[] |
-| `keyAlias?` | `string` |
-| `kotlinVersion?` | `string` |
-| `minSdkVersion?` | `number` |
-| `minifyEnabled?` | `boolean` |
-| `multipleAPKs?` | `boolean` |
-| `ndkVersion?` | `string` |
-| `newArchEnabled?` | `boolean` |
-| `signingConfig?` | `string` |
-| `storeFile?` | `string` |
-| `supportLibVersion?` | `string` |
-| `targetSdkVersion?` | `number` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:46
-
-___
-
-### ConfigPlatformBaseFragment
-
-Ƭ **ConfigPlatformBaseFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `assetFolderPlatform?` | `string` |
-| `bundleAssets?` | `boolean` |
-| `bundleIsDev?` | `boolean` |
-| `enableSourceMaps?` | `boolean` |
-| `engine?` | `string` |
-| `entryFile?` | `string` |
-| `extendPlatform?` | ``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"`` |
-| `getJsBundleFile?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:47
-
-___
-
-### ConfigPlatformBuildSchemeSchema
-
-Ƭ **ConfigPlatformBuildSchemeSchema**: [`ConfigCommonSchemaFragment`](modules.md#configcommonschemafragment) & [`ConfigBuildSchemeFragment`](modules.md#configbuildschemefragment) & [`ConfigPlatformSchemaFragment`](modules.md#configplatformschemafragment)
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:73
-
-___
-
-### ConfigPlatformElectronFragment
-
-Ƭ **ConfigPlatformElectronFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `BrowserWindow?` | \{ `height?`: `number` ; `webPreferences?`: \{ `devTools`: `boolean`  } ; `width?`: `number`  } |
-| `BrowserWindow.height?` | `number` |
-| `BrowserWindow.webPreferences?` | \{ `devTools`: `boolean`  } |
-| `BrowserWindow.webPreferences.devTools` | `boolean` |
-| `BrowserWindow.width?` | `number` |
-| `electronConfig?` | `any` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:48
-
-___
-
-### ConfigPlatformLightningFragment
-
-Ƭ **ConfigPlatformLightningFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `target?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:50
-
-___
-
-### ConfigPlatformNextJsFragment
-
-Ƭ **ConfigPlatformNextJsFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `exportDir?` | `string` |
-| `nextTranspileModules?` | `string`[] |
-| `outputDir?` | `string` |
-| `pagesDir?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:51
-
-___
-
-### ConfigPlatformReactNativeFragment
-
-Ƭ **ConfigPlatformReactNativeFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `reactNativeEngine?` | ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:52
-
-___
-
-### ConfigPlatformSchema
-
-Ƭ **ConfigPlatformSchema**: [`ConfigPlatformSchemaFragment`](modules.md#configplatformschemafragment) & \{ `buildSchemes?`: `Record`\<`string`, [`ConfigPlatformBuildSchemeSchema`](modules.md#configplatformbuildschemeschema)\>  }
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:75
-
-___
-
-### ConfigPlatformSchemaFragment
-
-Ƭ **ConfigPlatformSchemaFragment**: [`ConfigCommonSchemaFragment`](modules.md#configcommonschemafragment) & [`ConfigPlatformBaseFragment`](modules.md#configplatformbasefragment) & [`ConfigPlatformiOSFragment`](modules.md#configplatformiosfragment) & [`ConfigPlatformAndroidFragment`](modules.md#configplatformandroidfragment) & [`ConfigPrivatePlatformAndroid`](modules.md#configprivateplatformandroid) & [`ConfigPlatformWebFragment`](modules.md#configplatformwebfragment) & [`ConfigPlatformTizenFragment`](modules.md#configplatformtizenfragment) & [`ConfigPlatformWindowsFragment`](modules.md#configplatformwindowsfragment) & [`ConfigPlatformWebOSFragment`](modules.md#configplatformwebosfragment) & [`ConfigPlatformLightningFragment`](modules.md#configplatformlightningfragment) & [`ConfigPlatformReactNativeFragment`](modules.md#configplatformreactnativefragment) & [`ConfigPlatformWebpackFragment`](modules.md#configplatformwebpackfragment) & [`ConfigPlatformElectronFragment`](modules.md#configplatformelectronfragment) & [`ConfigPlatformNextJsFragment`](modules.md#configplatformnextjsfragment) & [`ConfigTemplateAndroidFragment`](modules.md#configtemplateandroidfragment) & [`ConfigTemplateXcodeFragment`](modules.md#configtemplatexcodefragment)
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:71
-
-___
-
-### ConfigPlatformTizenFragment
-
-Ƭ **ConfigPlatformTizenFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `appName?` | `string` |
-| `certificateProfile?` | `string` |
-| `package?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:66
-
-___
-
-### ConfigPlatformWebFragment
-
-Ƭ **ConfigPlatformWebFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `devServerHost?` | `string` |
-| `environment?` | `string` |
-| `timestampBuildFiles?` | `string`[] |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:67
-
-___
-
-### ConfigPlatformWebOSFragment
-
-Ƭ **ConfigPlatformWebOSFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `iconColor?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:68
-
-___
-
-### ConfigPlatformWebpackFragment
-
-Ƭ **ConfigPlatformWebpackFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `webpackConfig?` | \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  } |
-| `webpackConfig.customScripts?` | `string`[] |
-| `webpackConfig.publicUrl?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:69
-
-___
-
-### ConfigPlatformWindowsFragment
-
-Ƭ **ConfigPlatformWindowsFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `templateVSProject?` | \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } |
-| `templateVSProject.additionalMetroOptions?` | `Record`\<`string`, `any`\> |
-| `templateVSProject.appPath?` | `string` |
-| `templateVSProject.arch?` | `string` |
-| `templateVSProject.autolink?` | `boolean` |
-| `templateVSProject.build?` | `boolean` |
-| `templateVSProject.buildLogDirectory?` | `string` |
-| `templateVSProject.bundle?` | `boolean` |
-| `templateVSProject.devPort?` | `string` |
-| `templateVSProject.device?` | `boolean` |
-| `templateVSProject.directDebugging?` | `boolean` |
-| `templateVSProject.emulator?` | `boolean` |
-| `templateVSProject.experimentalNuGetDependency?` | `boolean` |
-| `templateVSProject.info?` | `boolean` |
-| `templateVSProject.language?` | `string` |
-| `templateVSProject.launch?` | `boolean` |
-| `templateVSProject.logging?` | `boolean` |
-| `templateVSProject.msbuildprops?` | `string` |
-| `templateVSProject.nuGetTestFeed?` | `string` |
-| `templateVSProject.nuGetTestVersion?` | `string` |
-| `templateVSProject.overwrite?` | `boolean` |
-| `templateVSProject.packageExtension?` | `string` |
-| `templateVSProject.packager?` | `boolean` |
-| `templateVSProject.proj?` | `string` |
-| `templateVSProject.reactNativeEngine?` | `string` |
-| `templateVSProject.release?` | `boolean` |
-| `templateVSProject.remoteDebugging?` | `boolean` |
-| `templateVSProject.root?` | `string` |
-| `templateVSProject.singleproc?` | `boolean` |
-| `templateVSProject.sln?` | `string` |
-| `templateVSProject.target?` | `string` |
-| `templateVSProject.telemetry?` | `boolean` |
-| `templateVSProject.useWinUI3?` | `boolean` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:70
-
-___
-
-### ConfigPlatformiOSFragment
-
-Ƭ **ConfigPlatformiOSFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `allowProvisioningUpdates?` | `boolean` |
-| `appleId?` | `string` |
-| `codeSignIdentities?` | `Record`\<`string`, `string`\> |
-| `codeSignIdentity?` | `string` |
-| `commandLineArguments?` | `string`[] |
-| `deploymentTarget?` | `string` |
-| `entitlements?` | `Record`\<`string`, `string`\> |
-| `excludedArchs?` | `string`[] |
-| `exportOptions?` | \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } |
-| `exportOptions.compileBitcode?` | `boolean` |
-| `exportOptions.method?` | `string` |
-| `exportOptions.provisioningProfiles?` | `Record`\<`string`, `string`\> |
-| `exportOptions.signingCertificate?` | `string` |
-| `exportOptions.signingStyle?` | `string` |
-| `exportOptions.teamID?` | `string` |
-| `exportOptions.uploadBitcode?` | `boolean` |
-| `exportOptions.uploadSymbols?` | `boolean` |
-| `firebaseId?` | `string` |
-| `ignoreLogs?` | `boolean` |
-| `ignoreWarnings?` | `boolean` |
-| `newArchEnabled?` | `boolean` |
-| `orientationSupport?` | \{ `phone?`: `string`[] ; `tab?`: `string`[]  } |
-| `orientationSupport.phone?` | `string`[] |
-| `orientationSupport.tab?` | `string`[] |
-| `provisionProfileSpecifier?` | `string` |
-| `provisionProfileSpecifiers?` | `Record`\<`string`, `string`\> |
-| `provisioningProfiles?` | `Record`\<`string`, `string`\> |
-| `provisioningStyle?` | `string` |
-| `runScheme?` | `string` |
-| `scheme?` | `string` |
-| `schemeTarget?` | `string` |
-| `sdk?` | `string` |
-| `systemCapabilities?` | `Record`\<`string`, `boolean`\> |
-| `teamID?` | `string` |
-| `teamIdentifier?` | `string` |
-| `testFlightId?` | `string` |
-| `urlScheme?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:49
-
-___
-
-### ConfigPlatformsSchema
-
-Ƭ **ConfigPlatformsSchema**: `Partial`\<`Record`\<[`RnvPlatformKey`](modules.md#rnvplatformkey), [`ConfigPlatformSchema`](modules.md#configplatformschema)\>\>
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:78
-
-___
-
-### ConfigPluginBaseFragment
-
-Ƭ **ConfigPluginBaseFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `deprecated?` | `string` |
-| `disableNpm?` | `boolean` |
-| `disablePluginTemplateOverrides?` | `boolean` |
-| `disabled?` | `boolean` |
-| `fontSources?` | `string`[] |
-| `npm?` | `Record`\<`string`, `string`\> |
-| `pluginDependencies?` | `Record`\<`string`, `string`\> |
-| `props?` | `Record`\<`string`, `string`\> |
-| `skipMerge?` | `boolean` |
-| `source?` | `string` |
-| `supportedPlatforms?` | (``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``)[] |
-| `version?` | `string` |
-| `webpackConfig?` | \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  } |
-| `webpackConfig.moduleAliases?` | `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> |
-| `webpackConfig.modulePaths?` | `boolean` \| `string`[] |
-| `webpackConfig.nextTranspileModules?` | `string`[] |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:97
-
-___
-
-### ConfigPluginPlatformAndroidFragment
-
-Ƭ **ConfigPluginPlatformAndroidFragment**: `Partial`\<`z.infer`\<typeof `zodPluginPlatformAndroidFragment`\>\>
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:98
-
-___
-
-### ConfigPluginPlatformBaseFragment
-
-Ƭ **ConfigPluginPlatformBaseFragment**: `Partial`\<`z.infer`\<typeof `zodPluginPlatformBaseFragment`\>\>
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:99
-
-___
-
-### ConfigPluginPlatformSchema
-
-Ƭ **ConfigPluginPlatformSchema**: [`ConfigPluginPlatformBaseFragment`](modules.md#configpluginplatformbasefragment) & [`ConfigPluginPlatformAndroidFragment`](modules.md#configpluginplatformandroidfragment) & [`ConfigPluginPlatformiOSFragment`](modules.md#configpluginplatformiosfragment)
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:101
-
-___
-
-### ConfigPluginPlatformiOSFragment
-
-Ƭ **ConfigPluginPlatformiOSFragment**: `Partial`\<`z.infer`\<typeof `zodPluginPlatformiOSFragment`\>\>
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:100
-
-___
-
-### ConfigPluginPlatformsSchema
-
-Ƭ **ConfigPluginPlatformsSchema**: `Record`\<[`RnvPlatformKey`](modules.md#rnvplatformkey), [`ConfigPluginPlatformSchema`](modules.md#configpluginplatformschema)\>
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:102
-
-___
-
-### ConfigPluginSchema
-
-Ƭ **ConfigPluginSchema**: [`ConfigPluginBaseFragment`](modules.md#configpluginbasefragment) & `Partial`\<[`ConfigPluginPlatformsSchema`](modules.md#configpluginplatformsschema)\>
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:103
-
-___
-
-### ConfigPluginsSchema
-
-Ƭ **ConfigPluginsSchema**: `Record`\<`string`, [`ConfigPluginSchema`](modules.md#configpluginschema) \| `string`\>
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:104
-
-___
-
-### ConfigPrivatePlatformAndroid
-
-Ƭ **ConfigPrivatePlatformAndroid**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `keyAlias?` | `string` |
-| `keyPassword?` | `string` |
-| `storeFile?` | `string` |
-| `storePassword?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:106
-
-___
-
-### ConfigProjectPaths
-
-Ƭ **ConfigProjectPaths**: `Required`\<[`ConfigRootProjectBaseFragment`](modules.md#configrootprojectbasefragment)\>[``"paths"``]
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:111
+schema/configFiles/types.d.ts:25
 
 ___
 
 ### ConfigProp
 
-Ƭ **ConfigProp**: [`ConfigPlatformSchemaFragment`](modules.md#configplatformschemafragment)
+Ƭ **ConfigProp**: `_RootProjectBaseSchemaType` & `_RootAppBaseSchemalType` & `_MergedPlatformPrivateObjectType` & `_MergedPlatformObjectType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:142
+schema/types.d.ts:10
 
 ___
 
@@ -987,182 +258,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:143
-
-___
-
-### ConfigPropKeyMerged
-
-Ƭ **ConfigPropKeyMerged**\<`T`\>: keyof [`ConfigPropMerged`](modules.md#configpropmerged)\<`T`\>
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:145
-
-___
-
-### ConfigPropMerged
-
-Ƭ **ConfigPropMerged**\<`T`\>: [`ConfigProp`](modules.md#configprop) & `T`
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:144
-
-___
-
-### ConfigPropRootKeyMerged
-
-Ƭ **ConfigPropRootKeyMerged**\<`T`\>: keyof [`ConfigPropRootMerged`](modules.md#configproprootmerged)\<`T`\>
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:91
-
-___
-
-### ConfigPropRootMerged
-
-Ƭ **ConfigPropRootMerged**\<`T`\>: [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig) & `T`
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:90
-
-___
-
-### ConfigRootAppBaseFragment
-
-Ƭ **ConfigRootAppBaseFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `custom?` | `any` |
-| `extend?` | `string` |
-| `extendsTemplate?` | `string` |
-| `hidden?` | `boolean` |
-| `id?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:79
-
-___
-
-### ConfigRootProjectBaseFragment
-
-Ƭ **ConfigRootProjectBaseFragment**: `z.infer`\<typeof `zodRootProjectBaseFragment`\> & \{ `templateConfig?`: [`ConfigTemplateConfigFragment`](modules.md#configtemplateconfigfragment)  }
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:108
-
-___
-
-### ConfigTemplateAndroidFragment
-
-Ƭ **ConfigTemplateAndroidFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `templateAndroid?` | `ConfigTemplateAndroidBase` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:58
-
-___
-
-### ConfigTemplateConfigFragment
-
-Ƭ **ConfigTemplateConfigFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `disabled?` | `boolean` |
-| `includedPaths?` | (`string` \| \{ `engines?`: `string`[] ; `paths`: `string`[] ; `platforms?`: (``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``)[]  })[] |
-| `name?` | `string` |
-| `package_json?` | \{ `browserslist?`: `any` ; `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  } |
-| `package_json.browserslist?` | `any` |
-| `package_json.dependencies?` | `Record`\<`string`, `string`\> |
-| `package_json.devDependencies?` | `Record`\<`string`, `string`\> |
-| `package_json.name?` | `string` |
-| `package_json.optionalDependencies?` | `Record`\<`string`, `string`\> |
-| `package_json.peerDependencies?` | `Record`\<`string`, `string`\> |
-| `package_json.version?` | `string` |
-| `renative_json?` | \{ `$schema?`: `string` ; `extendsTemplate?`: `string`  } |
-| `renative_json.$schema?` | `string` |
-| `renative_json.extendsTemplate?` | `string` |
-| `version?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:38
-
-___
-
-### ConfigTemplateXcodeFragment
-
-Ƭ **ConfigTemplateXcodeFragment**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `templateXcode?` | \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application?`: `ConfigTemplateXcodeApplication` ; `userNotificationCenter?`: \{ `didReceiveNotificationResponse?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: `Record`\<`string`, `string`\> ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: `ConfigTemplateXcodeProjectPbxproj`  } |
-| `templateXcode.AppDelegate_h?` | \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } |
-| `templateXcode.AppDelegate_h.appDelegateExtensions?` | `string`[] |
-| `templateXcode.AppDelegate_h.appDelegateImports?` | `string`[] |
-| `templateXcode.AppDelegate_mm?` | \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application?`: `ConfigTemplateXcodeApplication` ; `userNotificationCenter?`: \{ `didReceiveNotificationResponse?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } |
-| `templateXcode.AppDelegate_mm.appDelegateImports?` | `string`[] |
-| `templateXcode.AppDelegate_mm.appDelegateMethods?` | \{ `application?`: `ConfigTemplateXcodeApplication` ; `userNotificationCenter?`: \{ `didReceiveNotificationResponse?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  } |
-| `templateXcode.AppDelegate_mm.appDelegateMethods.application?` | `ConfigTemplateXcodeApplication` |
-| `templateXcode.AppDelegate_mm.appDelegateMethods.userNotificationCenter?` | \{ `didReceiveNotificationResponse?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent?`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } |
-| `templateXcode.AppDelegate_mm.appDelegateMethods.userNotificationCenter.didReceiveNotificationResponse?` | (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] |
-| `templateXcode.AppDelegate_mm.appDelegateMethods.userNotificationCenter.willPresent?` | (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] |
-| `templateXcode.Info_plist?` | `Record`\<`string`, `string`\> |
-| `templateXcode.Podfile?` | \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } |
-| `templateXcode.Podfile.header?` | `string`[] |
-| `templateXcode.Podfile.injectLines?` | `string`[] |
-| `templateXcode.Podfile.podDependencies?` | `string`[] |
-| `templateXcode.Podfile.post_install?` | `string`[] |
-| `templateXcode.Podfile.sources?` | `string`[] |
-| `templateXcode.Podfile.staticPods?` | `string`[] |
-| `templateXcode.project_pbxproj?` | `ConfigTemplateXcodeProjectPbxproj` |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:64
+schema/types.d.ts:11
 
 ___
 
@@ -1182,141 +278,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:13
-
-___
-
-### CreateRnvEngineOpts
-
-Ƭ **CreateRnvEngineOpts**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` |
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `config` | [`ConfigFileEngine`](modules.md#configfileengine) |
-| `originalTemplatePlatformProjectDir?` | `string` |
-| `originalTemplatePlatformsDir?` | `string` |
-| `outputDirName?` | `string` |
-| `platforms` | [`RnvEnginePlatforms`](modules.md#rnvengineplatforms) |
-| `projectDirName?` | `string` |
-| `rootPath?` | `string` |
-| `runtimeExtraProps?` | `Record`\<`string`, `string`\> |
-| `serverDirName?` | `string` |
-| `tasks` | `ReadonlyArray`\<[`RnvTask`](modules.md#rnvtask)\<`OKey`\>\> |
-
-#### Defined in
-
-@rnv/core/lib/engines/types.d.ts:6
-
-___
-
-### CreateRnvIntegrationOpts
-
-Ƭ **CreateRnvIntegrationOpts**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` |
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `config` | [`ConfigFileIntegration`](modules.md#configfileintegration) |
-| `tasks` | `ReadonlyArray`\<[`RnvTask`](modules.md#rnvtask)\<`OKey`\>\> |
-
-#### Defined in
-
-@rnv/core/lib/integrations/types.d.ts:4
-
-___
-
-### CreateRnvSdkOpts
-
-Ƭ **CreateRnvSdkOpts**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` |
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `tasks` | `ReadonlyArray`\<[`RnvTask`](modules.md#rnvtask)\<`OKey`\>\> |
-
-#### Defined in
-
-@rnv/core/lib/sdks/types.d.ts:3
-
-___
-
-### CreateRnvTaskOpt
-
-Ƭ **CreateRnvTaskOpt**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` = `string` |
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `beforeDependsOn?` | [`RnvTaskFn`](modules.md#rnvtaskfn) |
-| `dependsOn?` | `string`[] |
-| `description` | `string` |
-| `fn?` | [`RnvTaskFn`](modules.md#rnvtaskfn)\<`OKey`\> |
-| `fnHelp?` | [`RnvTaskHelpFn`](modules.md#rnvtaskhelpfn) |
-| `forceBuildHookRebuild?` | `boolean` |
-| `ignoreEngines?` | `boolean` |
-| `isGlobalScope?` | `boolean` |
-| `isPriorityOrder?` | `boolean` |
-| `isPrivate?` | `boolean` |
-| `options?` | `ReadonlyArray`\<[`RnvTaskOption`](modules.md#rnvtaskoption)\<`OKey`\>\> |
-| `platforms?` | [`RnvPlatformKey`](modules.md#rnvplatformkey)[] |
-| `task` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/tasks/types.d.ts:3
-
-___
-
-### DependencyMutation
-
-Ƭ **DependencyMutation**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `msg` | `string` |
-| `name` | `string` |
-| `original?` | \{ `version`: `string`  } |
-| `original.version` | `string` |
-| `source` | `string` |
-| `targetPath?` | `string` |
-| `type` | [`NpmDepKey`](modules.md#npmdepkey) |
-| `updated` | \{ `version`: `string`  } |
-| `updated.version` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/projects/types.d.ts:4
+context/types.d.ts:12
 
 ___
 
@@ -1342,7 +304,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:1
+system/types.d.ts:1
 
 ___
 
@@ -1352,7 +314,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:8
+types.d.ts:10
 
 ___
 
@@ -1377,7 +339,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:27
+system/types.d.ts:27
 
 ___
 
@@ -1408,7 +370,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:8
+system/types.d.ts:8
 
 ___
 
@@ -1427,143 +389,40 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:37
+system/types.d.ts:37
 
 ___
 
 ### GetConfigPropFn
 
-Ƭ **GetConfigPropFn**\<`T`\>: `T` extends [`ConfigPropKey`](modules.md#configpropkey) ? \<T\>(`key`: `T`, `defaultVal?`: [`ConfigProp`](modules.md#configprop)[`T`], `obj?`: `Partial`\<[`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\>) => [`ConfigProp`](modules.md#configprop)[`T`] \| `undefined` : \<T\>(`key`: `string`, `defaultVal?`: `T`, `obj?`: `Partial`\<[`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\>) => `T` \| `undefined`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [`ConfigPropKey`](modules.md#configpropkey) |
-
-#### Defined in
-
-@rnv/core/lib/api/types.d.ts:119
-
-___
-
-### GetConfigPropVal
-
-Ƭ **GetConfigPropVal**\<`T`, `K`\>: [`ConfigPropMerged`](modules.md#configpropmerged)\<`T`\>[`K`] \| `undefined`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `T` |
-| `K` | extends [`ConfigPropKeyMerged`](modules.md#configpropkeymerged)\<`T`\> |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:146
-
-___
-
-### GetConfigRootPropVal
-
-Ƭ **GetConfigRootPropVal**\<`T`, `K`\>: [`ConfigPropRootMerged`](modules.md#configproprootmerged)\<`T`\>[`K`] \| `undefined`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `T` |
-| `K` | extends [`ConfigPropRootKeyMerged`](modules.md#configproprootkeymerged)\<`T`\> |
-
-#### Defined in
-
-@rnv/core/lib/schema/types.d.ts:92
-
-___
-
-### GetContextType
-
-Ƭ **GetContextType**\<`Type`\>: () => [`GetReturnType`](modules.md#getreturntype)\<`Type`\>
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `Type` |
+Ƭ **GetConfigPropFn**: \<T\>(`c`: [`RnvContext`](modules.md#rnvcontext), `platform`: [`RnvPlatform`](modules.md#rnvplatform), `key`: `T`, `defaultVal?`: [`ConfigProp`](modules.md#configprop)[`T`]) => [`ConfigProp`](modules.md#configprop)[`T`]
 
 #### Type declaration
 
-▸ (): [`GetReturnType`](modules.md#getreturntype)\<`Type`\>
+▸ \<`T`\>(`c`, `platform`, `key`, `defaultVal?`): [`ConfigProp`](modules.md#configprop)[`T`]
+
+##### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`ConfigPropKey`](modules.md#configpropkey) |
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
+| `key` | `T` |
+| `defaultVal?` | [`ConfigProp`](modules.md#configprop)[`T`] |
 
 ##### Returns
 
-[`GetReturnType`](modules.md#getreturntype)\<`Type`\>
+[`ConfigProp`](modules.md#configprop)[`T`]
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:303
-
-___
-
-### GetReturnType
-
-Ƭ **GetReturnType**\<`Type`\>: `Type` extends (...`args`: `never`[]) => infer Return ? `Return` : `never`
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `Type` |
-
-#### Defined in
-
-@rnv/core/lib/context/types.d.ts:302
-
-___
-
-### NpmDepKey
-
-Ƭ **NpmDepKey**: ``"dependencies"`` \| ``"devDependencies"`` \| ``"peerDependencies"`` \| ``"optionalDependencies"`` \| ``"resolutions"``
-
-#### Defined in
-
-@rnv/core/lib/configs/types.d.ts:15
-
-___
-
-### NpmPackageFile
-
-Ƭ **NpmPackageFile**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `author?` | `string` |
-| `dependencies?` | `Record`\<`string`, `string`\> |
-| `description?` | `string` |
-| `devDependencies?` | `Record`\<`string`, `string`\> |
-| `license?` | `string` |
-| `main?` | `string` |
-| `name?` | `string` |
-| `optionalDependencies?` | `Record`\<`string`, `string`\> |
-| `peerDependencies?` | `Record`\<`string`, `string`\> |
-| `resolutions?` | `Record`\<`string`, `string`\> |
-| `version?` | `string` |
-
-#### Defined in
-
-@rnv/core/lib/configs/types.d.ts:1
-
-___
-
-### NpmPackageFileKey
-
-Ƭ **NpmPackageFileKey**: keyof [`NpmPackageFile`](modules.md#npmpackagefile)
-
-#### Defined in
-
-@rnv/core/lib/configs/types.d.ts:14
+api/types.d.ts:115
 
 ___
 
@@ -1573,23 +432,17 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:28
+system/types.d.ts:28
 
 ___
 
 ### ParamKeys
 
-Ƭ **ParamKeys**\<`ExtraKeys`\>: `Partial`\<`Record`\<[`ProgramOptionsKey`](modules.md#programoptionskey) \| `ExtraKeys`, `ParamType`\>\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `ExtraKeys` | extends `string` = [`ProgramOptionsKey`](modules.md#programoptionskey) |
+Ƭ **ParamKeys**: `Partial`\<`Record`\<`ProgramOptionsKey`, `ParamType`\>\>
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:205
+tasks/constants.d.ts:342
 
 ___
 
@@ -1614,33 +467,33 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/types.d.ts:2
+projects/types.d.ts:1
 
 ___
 
 ### PlatPropKey
 
-Ƭ **PlatPropKey**: keyof [`ConfigPlatformSchemaFragment`](modules.md#configplatformschemafragment)
+Ƭ **PlatPropKey**: keyof `Plat`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:72
+types.d.ts:31
 
 ___
 
-### PlatformBuildSchemeKey
+### PlatformKey
 
-Ƭ **PlatformBuildSchemeKey**: keyof [`ConfigPlatformBuildSchemeSchema`](modules.md#configplatformbuildschemeschema)
+Ƭ **PlatformKey**: `_PlatformsKeysType`
 
 #### Defined in
 
-@rnv/core/lib/schema/types.d.ts:74
+schema/types.d.ts:16
 
 ___
 
 ### PluginCallback
 
-Ƭ **PluginCallback**: (`plugin`: [`RnvPlugin`](modules.md#rnvplugin), `pluginPlat`: [`ConfigPluginPlatformSchema`](modules.md#configpluginplatformschema), `key`: `string`) => `void`
+Ƭ **PluginCallback**: (`plugin`: [`RnvPlugin`](modules.md#rnvplugin), `pluginPlat`: [`RenativeConfigPluginPlatform`](modules.md#renativeconfigpluginplatform), `key`: `string`) => `void`
 
 #### Type declaration
 
@@ -1651,7 +504,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `plugin` | [`RnvPlugin`](modules.md#rnvplugin) |
-| `pluginPlat` | [`ConfigPluginPlatformSchema`](modules.md#configpluginplatformschema) |
+| `pluginPlat` | [`RenativeConfigPluginPlatform`](modules.md#renativeconfigpluginplatform) |
 | `key` | `string` |
 
 ##### Returns
@@ -1660,7 +513,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:2
+plugins/types.d.ts:3
 
 ___
 
@@ -1679,7 +532,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:3
+plugins/types.d.ts:4
 
 ___
 
@@ -1698,17 +551,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:9
-
-___
-
-### ProgramOptionsKey
-
-Ƭ **ProgramOptionsKey**: keyof typeof `_RnvTaskOptions`
-
-#### Defined in
-
-@rnv/core/lib/tasks/constants.d.ts:202
+plugins/types.d.ts:10
 
 ___
 
@@ -1729,7 +572,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:93
+api/types.d.ts:91
 
 ___
 
@@ -1743,20 +586,18 @@ ___
 | :------ | :------ |
 | `choices?` | (\{ `name`: `string` ; `value`: `any`  } \| `string`)[] |
 | `default?` | `any` |
-| `initialValue?` | `string` |
 | `logMessage?` | `string` |
 | `loop?` | `boolean` |
 | `message?` | `string` |
 | `name?` | `string` |
 | `pageSize?` | `number` |
-| `source?` | (`answersSoFar`: `any`, `input`: `string` \| `undefined`) => `Promise`\<`any`\> |
 | `type` | `string` |
 | `validate?` | (`i`: `string`) => `string` \| `boolean` |
 | `warningMessage?` | `string` |
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:101
+api/types.d.ts:99
 
 ___
 
@@ -1783,7 +624,57 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:118
+api/types.d.ts:114
+
+___
+
+### RenativeConfigAppDelegateMethod
+
+Ƭ **RenativeConfigAppDelegateMethod**: `_AppDelegateMethodType`
+
+#### Defined in
+
+schema/types.d.ts:18
+
+___
+
+### RenativeConfigPaths
+
+Ƭ **RenativeConfigPaths**: [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)[``"paths"``]
+
+#### Defined in
+
+schema/types.d.ts:13
+
+___
+
+### RenativeConfigPlugin
+
+Ƭ **RenativeConfigPlugin**: `Exclude`\<[`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)[``"plugins"``][`string`], `string`\>
+
+#### Defined in
+
+schema/types.d.ts:12
+
+___
+
+### RenativeConfigPluginPlatform
+
+Ƭ **RenativeConfigPluginPlatform**: `_PluginPlatformMergedSchemaType`
+
+#### Defined in
+
+schema/types.d.ts:14
+
+___
+
+### RenativeConfigTaskKey
+
+Ƭ **RenativeConfigTaskKey**: keyof `Required`\<`Required`\<[`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\>[``"tasks"``]\>
+
+#### Defined in
+
+schema/types.d.ts:17
 
 ___
 
@@ -1793,7 +684,17 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:4
+types.d.ts:6
+
+___
+
+### RenativeWebpackConfig
+
+Ƭ **RenativeWebpackConfig**: [`RenativeConfigPlugin`](modules.md#renativeconfigplugin)[``"webpackConfig"``]
+
+#### Defined in
+
+schema/types.d.ts:15
 
 ___
 
@@ -1812,7 +713,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:2
+system/types.d.ts:2
 
 ___
 
@@ -1839,7 +740,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:10
+api/types.d.ts:10
 
 ___
 
@@ -1865,7 +766,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:49
+api/types.d.ts:50
 
 ___
 
@@ -1875,7 +776,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:62
+api/types.d.ts:63
 
 ___
 
@@ -1892,9 +793,10 @@ ___
 | `isInfoEnabled` | () => `boolean` |
 | `logAndSave` | (`msg`: `string`, `skipLog?`: `boolean`) => `void` |
 | `logAppInfo` | (`c`: [`RnvContext`](modules.md#rnvcontext)) => `void` |
+| `logComplete` | (`isEnd?`: `boolean`) => `void` |
 | `logDebug` | (...`args`: `any`[]) => `void` |
-| `logDefault` | (`task`: `string`, `customChalk?`: `any`) => `void` |
-| `logError` | (`e`: `Error` \| `string` \| `unknown`, `opts?`: \{ `skipAnalytics`: `boolean`  }) => `void` |
+| `logEnd` | (`code`: `number`) => `void` |
+| `logError` | (`e`: `Error` \| `string` \| `unknown`, `isEnd?`: `boolean`, `skipAnalytics?`: `boolean`) => `void` |
 | `logExitTask` | (`task`: `string`, `customChalk?`: (`s`: `string`) => `string`) => `void` |
 | `logHook` | (`hook`: `string`, `msg?`: `string`) => `void` |
 | `logInfo` | (`msg`: `string`) => `void` |
@@ -1902,7 +804,7 @@ ___
 | `logInitialize` | () => `void` |
 | `logRaw` | (...`args`: `string`[]) => `void` |
 | `logSuccess` | (`msg`: `string`) => `void` |
-| `logSummary` | (`opts?`: \{ `header`: `string`  }) => `void` |
+| `logSummary` | (`header`: `string`) => `void` |
 | `logTask` | (`task`: `string`, `customChalk?`: `any`) => `void` |
 | `logToSummary` | (`v`: `string`, `sanitizePaths?`: () => `string`) => `void` |
 | `logWarning` | (`msg`: `string` \| `boolean` \| `unknown`) => `void` |
@@ -1914,7 +816,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:63
+api/types.d.ts:64
 
 ___
 
@@ -1929,10 +831,11 @@ ___
 | `generateOptions` | (`inputData`: `any`, `isMultiChoice?`: `boolean`, `mapping?`: `any`, `renderMethod?`: [`PromptRenderFn`](modules.md#promptrenderfn)) => [`PromptOptions`](modules.md#promptoptions) |
 | `inquirerPrompt` | (`options`: [`PromptParams`](modules.md#promptparams)) => `Promise`\<`any`\> |
 | `inquirerSeparator` | (`text?`: `string`) => `any` |
+| `pressAnyKeyToContinue` | () => `Promise`\<`any`\> |
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:32
+api/types.d.ts:32
 
 ___
 
@@ -1963,7 +866,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:24
+api/types.d.ts:24
 
 ___
 
@@ -1973,20 +876,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:36
+system/types.d.ts:36
 
 ___
 
 ### RnvContext
 
-Ƭ **RnvContext**\<`Payload`, `ExtraOptionKeys`\>: `Object`
+Ƭ **RnvContext**\<`Payload`\>: `Object`
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `Payload` | `any` |
-| `ExtraOptionKeys` | extends `string` = [`ProgramOptionsKey`](modules.md#programoptionskey) |
 
 #### Type declaration
 
@@ -2002,25 +904,17 @@ ___
 | `cli` | `Record`\<`string`, `string` \| `undefined`\> | - |
 | `command` | `string` \| ``null`` | first command value from cli (ie "rnv run -p android") returns "run" |
 | `configPropsInjects` | [`OverridesOptions`](modules.md#overridesoptions) | - |
-| `engineConfigs` | [`ConfigFileEngine`](modules.md#configfileengine)[] | - |
 | `files` | [`RnvContextFiles`](modules.md#rnvcontextfiles) | - |
 | `injectableConfigProps` | `Record`\<`string`, [`ConfigProp`](modules.md#configprop)[[`ConfigPropKey`](modules.md#configpropkey)]\> | - |
 | `isBuildHooksReady` | `boolean` | - |
 | `isDefault` | `boolean` | - |
-| `isSystemLinux` | `boolean` | - |
-| `isSystemMac` | `boolean` | - |
 | `isSystemWin` | `boolean` | - |
-| `logging` | \{ `containsError`: `boolean` ; `containsWarning`: `boolean` ; `logMessages`: `string`[]  } | - |
-| `logging.containsError` | `boolean` | - |
-| `logging.containsWarning` | `boolean` | - |
-| `logging.logMessages` | `string`[] | - |
-| `mutations` | \{ `pendingMutations`: [`DependencyMutation`](modules.md#dependencymutation)[]  } | - |
-| `mutations.pendingMutations` | [`DependencyMutation`](modules.md#dependencymutation)[] | - |
+| `logMessages` | `string`[] | - |
 | `paths` | [`RnvContextPaths`](modules.md#rnvcontextpaths) | - |
 | `payload` | `Payload` | Extra payload object used by 3rd party (ie @rnv/sdk-apple) to decorate context with extra typed information |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) | - |
 | `process` | `NodeJS.Process` | - |
-| `program` | [`RnvContextProgram`](modules.md#rnvcontextprogram)\<`ExtraOptionKeys`\> | - |
+| `program` | [`RnvContextProgram`](modules.md#rnvcontextprogram) | - |
 | `rnvVersion` | `string` | - |
 | `runningProcesses` | `ExecaChildProcess`[] | - |
 | `runtime` | [`RnvContextRuntime`](modules.md#rnvcontextruntime) | - |
@@ -2033,7 +927,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:31
+context/types.d.ts:25
 
 ___
 
@@ -2051,7 +945,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/types.d.ts:37
+api/types.d.ts:38
 
 ___
 
@@ -2061,7 +955,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:85
+context/types.d.ts:69
 
 ___
 
@@ -2071,7 +965,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:301
+context/types.d.ts:302
 
 ___
 
@@ -2099,7 +993,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:169
+context/types.d.ts:157
 
 ___
 
@@ -2112,23 +1006,21 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `appConfig` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileApp`](modules.md#configfileapp)\> |
-| `dotRnv` | \{ `config`: [`ConfigFileWorkspace`](modules.md#configfileworkspace) ; `configWorkspaces?`: [`ConfigFileWorkspaces`](modules.md#configfileworkspaces)  } |
-| `dotRnv.config` | [`ConfigFileWorkspace`](modules.md#configfileworkspace) |
-| `dotRnv.configWorkspaces?` | [`ConfigFileWorkspaces`](modules.md#configfileworkspaces) |
-| `project` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileProject`](modules.md#configfileproject)\> & \{ `assets`: \{ `config?`: [`ConfigFileRuntime`](modules.md#configfileruntime)  } ; `builds`: `Record`\<`string`, [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\> ; `package`: [`NpmPackageFile`](modules.md#npmpackagefile)  } |
-| `rnv` | \{ `package`: [`NpmPackageFile`](modules.md#npmpackagefile)  } |
-| `rnv.package` | [`NpmPackageFile`](modules.md#npmpackagefile) |
-| `rnvConfigTemplates` | \{ `config?`: [`ConfigFileTemplates`](modules.md#configfiletemplates) ; `package?`: [`NpmPackageFile`](modules.md#npmpackagefile)  } |
-| `rnvConfigTemplates.config?` | [`ConfigFileTemplates`](modules.md#configfiletemplates) |
-| `rnvConfigTemplates.package?` | [`NpmPackageFile`](modules.md#npmpackagefile) |
-| `rnvCore` | \{ `package`: [`NpmPackageFile`](modules.md#npmpackagefile)  } |
-| `rnvCore.package` | [`NpmPackageFile`](modules.md#npmpackagefile) |
-| `scopedConfigTemplates` | `Record`\<`string`, [`ConfigFileTemplates`](modules.md#configfiletemplates)\> |
+| `defaultWorkspace` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileWorkspace`](modules.md#configfileworkspace)\> & \{ `appConfig`: [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileApp`](modules.md#configfileapp)\> ; `project`: [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileProject`](modules.md#configfileproject)\>  } |
+| `project` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileProject`](modules.md#configfileproject)\> & \{ `assets`: \{ `config?`: [`ConfigFileRuntime`](modules.md#configfileruntime)  } ; `builds`: `Record`\<`string`, [`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\> ; `package`: `NpmPackageFile`  } |
+| `rnv` | \{ `configWorkspaces?`: [`ConfigFileWorkspaces`](modules.md#configfileworkspaces) ; `package`: `NpmPackageFile` ; `pluginTemplates`: \{ `config?`: [`ConfigFilePlugins`](modules.md#configfileplugins) ; `configs`: `Record`\<`string`, [`ConfigFilePlugins`](modules.md#configfileplugins)\>  } ; `projectTemplates`: \{ `config?`: [`ConfigFileTemplates`](modules.md#configfiletemplates)  }  } |
+| `rnv.configWorkspaces?` | [`ConfigFileWorkspaces`](modules.md#configfileworkspaces) |
+| `rnv.package` | `NpmPackageFile` |
+| `rnv.pluginTemplates` | \{ `config?`: [`ConfigFilePlugins`](modules.md#configfileplugins) ; `configs`: `Record`\<`string`, [`ConfigFilePlugins`](modules.md#configfileplugins)\>  } |
+| `rnv.pluginTemplates.config?` | [`ConfigFilePlugins`](modules.md#configfileplugins) |
+| `rnv.pluginTemplates.configs` | `Record`\<`string`, [`ConfigFilePlugins`](modules.md#configfileplugins)\> |
+| `rnv.projectTemplates` | \{ `config?`: [`ConfigFileTemplates`](modules.md#configfiletemplates)  } |
+| `rnv.projectTemplates.config?` | [`ConfigFileTemplates`](modules.md#configfiletemplates) |
 | `workspace` | [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileWorkspace`](modules.md#configfileworkspace)\> & \{ `appConfig`: [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileApp`](modules.md#configfileapp)\> ; `project`: [`RnvContextFileObj`](modules.md#rnvcontextfileobj)\<[`ConfigFileProject`](modules.md#configfileproject)\>  } |
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:140
+context/types.d.ts:128
 
 ___
 
@@ -2158,7 +1050,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:277
+context/types.d.ts:278
 
 ___
 
@@ -2170,40 +1062,40 @@ ___
 
 | Name | Type |
 | :------ | :------ |
+| `CURRENT_DIR` | `string` |
+| `GLOBAL_RNV_CONFIG` | `string` |
+| `GLOBAL_RNV_DIR` | `string` |
 | `IS_LINKED` | `boolean` |
 | `IS_NPX_MODE` | `boolean` |
+| `RNV_HOME_DIR` | `string` |
+| `RNV_NODE_MODULES_DIR` | `string` |
 | `appConfig` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) |
 | `appConfigBase` | `string` |
-| `buildHooks` | \{ `dir`: `string` ; `dist`: \{ `dir`: `string` ; `index`: `string`  } ; `src`: \{ `dir`: `string` ; `index`: `string` ; `indexTs`: `string`  } ; `tsconfig`: `string`  } |
+| `buildHooks` | \{ `dir`: `string` ; `dist`: \{ `dir`: `string` ; `index`: `string`  } ; `index`: `string`  } |
 | `buildHooks.dir` | `string` |
 | `buildHooks.dist` | \{ `dir`: `string` ; `index`: `string`  } |
 | `buildHooks.dist.dir` | `string` |
 | `buildHooks.dist.index` | `string` |
-| `buildHooks.src` | \{ `dir`: `string` ; `index`: `string` ; `indexTs`: `string`  } |
-| `buildHooks.src.dir` | `string` |
-| `buildHooks.src.index` | `string` |
-| `buildHooks.src.indexTs` | `string` |
-| `buildHooks.tsconfig` | `string` |
-| `dotRnv` | \{ `config`: `string` ; `configWorkspaces`: `string` ; `dir`: `string`  } |
-| `dotRnv.config` | `string` |
-| `dotRnv.configWorkspaces` | `string` |
-| `dotRnv.dir` | `string` |
+| `buildHooks.index` | `string` |
+| `defaultWorkspace` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfig`: \{ `configs`: `string`[] ; `configsLocal`: `string`[] ; `configsPrivate`: `string`[]  } ; `project`: \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: \{ `dir`: `string`  } ; `builds`: \{ `dir`: `string`  }  }  } |
+| `home` | \{ `dir`: `string`  } |
+| `home.dir` | `string` |
 | `project` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfigBase`: \{ `dir`: `string` ; `fontsDir`: `string` ; `fontsDirs`: `string`[] ; `pluginsDir`: `string`  } ; `appConfigsDirNames`: `string`[] ; `appConfigsDirs`: `string`[] ; `assets`: \{ `config`: `string` ; `dir`: `string` ; `runtimeDir`: `string`  } ; `babelConfig?`: `string` ; `builds`: \{ `config`: `string` ; `dir`: `string`  } ; `dir`: `string` ; `dotRnvDir`: `string` ; `fontSourceDirs?`: `string`[] ; `nodeModulesDir`: `string` ; `package?`: `string` ; `platformTemplatesDirs`: `Record`\<`string`, `string`\> ; `srcDir?`: `string`  } |
-| `rnv` | \{ `dir`: `string` ; `package`: `string`  } |
+| `rnv` | \{ `configWorkspaces`: `string` ; `dir`: `string` ; `engines`: \{ `dir`: `string`  } ; `package`: `string` ; `pluginTemplates`: \{ `config?`: `string` ; `dirs`: `Record`\<`string`, `string`\> ; `overrideDir?`: `string`  } ; `projectTemplate`: \{ `dir`: `string`  } ; `projectTemplates`: \{ `config`: `string` ; `dir`: `string`  }  } |
+| `rnv.configWorkspaces` | `string` |
 | `rnv.dir` | `string` |
+| `rnv.engines` | \{ `dir`: `string`  } |
+| `rnv.engines.dir` | `string` |
 | `rnv.package` | `string` |
-| `rnvConfigTemplates` | \{ `config`: `string` ; `dir`: `string` ; `package`: `string` ; `pluginTemplatesDir`: `string`  } |
-| `rnvConfigTemplates.config` | `string` |
-| `rnvConfigTemplates.dir` | `string` |
-| `rnvConfigTemplates.package` | `string` |
-| `rnvConfigTemplates.pluginTemplatesDir` | `string` |
-| `rnvCore` | \{ `dir`: `string` ; `package`: `string` ; `templateFilesDir`: `string`  } |
-| `rnvCore.dir` | `string` |
-| `rnvCore.package` | `string` |
-| `rnvCore.templateFilesDir` | `string` |
-| `scopedConfigTemplates` | \{ `configs`: `Record`\<`string`, `string`\> ; `pluginTemplatesDirs`: `Record`\<`string`, `string`\>  } |
-| `scopedConfigTemplates.configs` | `Record`\<`string`, `string`\> |
-| `scopedConfigTemplates.pluginTemplatesDirs` | `Record`\<`string`, `string`\> |
+| `rnv.pluginTemplates` | \{ `config?`: `string` ; `dirs`: `Record`\<`string`, `string`\> ; `overrideDir?`: `string`  } |
+| `rnv.pluginTemplates.config?` | `string` |
+| `rnv.pluginTemplates.dirs` | `Record`\<`string`, `string`\> |
+| `rnv.pluginTemplates.overrideDir?` | `string` |
+| `rnv.projectTemplate` | \{ `dir`: `string`  } |
+| `rnv.projectTemplate.dir` | `string` |
+| `rnv.projectTemplates` | \{ `config`: `string` ; `dir`: `string`  } |
+| `rnv.projectTemplates.config` | `string` |
+| `rnv.projectTemplates.dir` | `string` |
 | `template` | \{ `appConfigBase`: \{ `dir`: `string`  } ; `appConfigsDir`: `string` ; `assets`: \{ `dir`: `string`  } ; `builds`: \{ `dir`: `string`  } ; `config`: `string` ; `configTemplate`: `string` ; `dir`: `string`  } |
 | `template.appConfigBase` | \{ `dir`: `string`  } |
 | `template.appConfigBase.dir` | `string` |
@@ -2215,14 +1107,11 @@ ___
 | `template.config` | `string` |
 | `template.configTemplate` | `string` |
 | `template.dir` | `string` |
-| `user` | \{ `currentDir`: `string` ; `homeDir`: `string`  } |
-| `user.currentDir` | `string` |
-| `user.homeDir` | `string` |
 | `workspace` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfig`: [`RnvContextPathObj`](modules.md#rnvcontextpathobj) ; `project`: [`RnvContextPathObj`](modules.md#rnvcontextpathobj) & \{ `appConfigBase`: \{ `dir`: `string`  } ; `assets`: `string` ; `builds`: `string`  }  } |
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:178
+context/types.d.ts:166
 
 ___
 
@@ -2237,42 +1126,22 @@ ___
 | `engine?` | [`RnvEngine`](modules.md#rnvengine) |
 | `isConnected` | `boolean` |
 | `isValid?` | `boolean` |
-| `platform` | [`RnvPlatformKey`](modules.md#rnvplatformkey) |
+| `platform` | [`PlatformKey`](modules.md#platformkey) |
 | `port?` | `number` |
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:294
+context/types.d.ts:295
 
 ___
 
 ### RnvContextProgram
 
-Ƭ **RnvContextProgram**\<`ExtraKeys`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `ExtraKeys` | extends `string` = `never` |
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `allowUnknownOption` | (`p`: `boolean`) => `void` |
-| `args?` | `string`[] |
-| `isHelpInvoked?` | `boolean` |
-| `option?` | (`cmd`: `string`, `desc`: `string`) => `void` |
-| `opts` | () => `CamelCasedProperties`\<[`ParamKeys`](modules.md#paramkeys)\<`ExtraKeys`\>\> |
-| `outputHelp` | () => `void` |
-| `parse?` | (`arg`: `string`[]) => `void` |
-| `rawArgs?` | `string`[] |
-| `showHelpAfterError` | () => `void` |
+Ƭ **RnvContextProgram**: [`ParamKeys`](modules.md#paramkeys) & \{ `args?`: `string`[] ; `option?`: (`cmd`: `string`, `desc`: `string`) => `void` ; `parse?`: (`arg`: `string`[]) => `void` ; `rawArgs?`: `string`[]  }
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:20
+context/types.d.ts:19
 
 ___
 
@@ -2287,10 +1156,11 @@ ___
 | `_platformBuildsSuffix?` | `string` |
 | `_skipNativeDepResolutions` | `boolean` |
 | `_skipPluginScopeWarnings` | `boolean` |
+| `activeTemplate?` | `string` |
 | `appConfigDir?` | `string` |
 | `appDir?` | `string` |
 | `appId?` | `string` |
-| `availablePlatforms` | [`RnvPlatformKey`](modules.md#rnvplatformkey)[] |
+| `availablePlatforms` | [`PlatformKey`](modules.md#platformkey)[] |
 | `bundleAssets` | `boolean` |
 | `currentEngine?` | [`RnvEngine`](modules.md#rnvengine) |
 | `currentPlatform?` | [`RnvEnginePlatform`](modules.md#rnvengineplatform) |
@@ -2301,11 +1171,12 @@ ___
 | `enginesByIndex` | [`RnvEngine`](modules.md#rnvengine)[] |
 | `enginesByPlatform` | `Record`\<`string`, [`RnvEngine`](modules.md#rnvengine)\> |
 | `forceBuildHookRebuild` | `boolean` |
+| `forceBundleAssets?` | `boolean` |
 | `hasAllEnginesRegistered` | `boolean` |
 | `hosted` | `boolean` |
-| `integrationsByIndex` | [`RnvIntegration`](modules.md#rnvintegration)[] |
 | `isTargetTrue` | `boolean` |
 | `isWSConfirmed` | `boolean` |
+| `keepSessionActive` | `boolean` |
 | `localhost?` | `string` |
 | `missingEnginePlugins` | `Record`\<`string`, `string`\> |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
@@ -2314,10 +1185,12 @@ ___
 | `plugins` | `Record`\<`string`, [`RnvPlugin`](modules.md#rnvplugin)\> |
 | `port` | `number` |
 | `requiresBootstrap` | `boolean` |
+| `requiresForcedTemplateApply` | `boolean` |
 | `rnvVersionProject?` | `string` |
 | `rnvVersionRunner?` | `string` |
 | `runtimeExtraProps` | `Record`\<`string`, `string`\> |
 | `scheme?` | `string` |
+| `selectedTemplate?` | `string` |
 | `selectedWorkspace?` | `string` |
 | `shouldOpenBrowser?` | `boolean` |
 | `skipActiveServerCheck` | `boolean` |
@@ -2333,39 +1206,32 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:91
+context/types.d.ts:75
 
 ___
 
 ### RnvEngine
 
-Ƭ **RnvEngine**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` = `string` |
+Ƭ **RnvEngine**: `Object`
 
 #### Type declaration
 
 | Name | Type |
 | :------ | :------ |
 | `config` | [`ConfigFileEngine`](modules.md#configfileengine) |
-| `getContext` | () => [`RnvContext`](modules.md#rnvcontext)\<`any`, `OKey`\> |
 | `originalTemplatePlatformProjectDir?` | `string` |
 | `originalTemplatePlatformsDir?` | `string` |
 | `outputDirName?` | `string` |
-| `platforms` | [`RnvEnginePlatforms`](modules.md#rnvengineplatforms) |
+| `platforms` | `Partial`\<`Record`\<[`PlatformKey`](modules.md#platformkey), [`RnvEnginePlatform`](modules.md#rnvengineplatform)\>\> |
 | `projectDirName` | `string` |
 | `rootPath?` | `string` |
 | `runtimeExtraProps` | `Record`\<`string`, `string`\> |
 | `serverDirName` | `string` |
-| `tasks` | [`RnvTaskMap`](modules.md#rnvtaskmap)\<`OKey`\> |
+| `tasks` | [`RnvTaskMap`](modules.md#rnvtaskmap) |
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:18
+engines/types.d.ts:4
 
 ___
 
@@ -2384,7 +1250,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:41
+engines/types.d.ts:26
 
 ___
 
@@ -2402,17 +1268,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:31
-
-___
-
-### RnvEnginePlatforms
-
-Ƭ **RnvEnginePlatforms**: `Partial`\<`Record`\<[`RnvPlatformKey`](modules.md#rnvplatformkey), [`RnvEnginePlatform`](modules.md#rnvengineplatform)\>\>
-
-#### Defined in
-
-@rnv/core/lib/engines/types.d.ts:5
+engines/types.d.ts:16
 
 ___
 
@@ -2429,7 +1285,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:36
+engines/types.d.ts:21
 
 ___
 
@@ -2439,34 +1295,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/types.d.ts:40
-
-___
-
-### RnvEnvContext
-
-Ƭ **RnvEnvContext**: `Record`\<`string`, `string` \| `number` \| `string`[] \| `undefined` \| `boolean`\>
-
-#### Defined in
-
-@rnv/core/lib/env/types.d.ts:1
-
-___
-
-### RnvEnvContextOptions
-
-Ƭ **RnvEnvContextOptions**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `exludeEnvKeys?` | `string`[] |
-| `includedEnvKeys?` | `string`[] |
-
-#### Defined in
-
-@rnv/core/lib/env/types.d.ts:2
+engines/types.d.ts:25
 
 ___
 
@@ -2476,61 +1305,37 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:7
-
-___
-
-### RnvIntegration
-
-Ƭ **RnvIntegration**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` = `string` |
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `config` | [`ConfigFileIntegration`](modules.md#configfileintegration) |
-| `getContext` | () => [`RnvContext`](modules.md#rnvcontext)\<`any`, `OKey`\> |
-| `tasks` | [`RnvTaskMap`](modules.md#rnvtaskmap)\<`OKey`\> |
-
-#### Defined in
-
-@rnv/core/lib/integrations/types.d.ts:8
+types.d.ts:9
 
 ___
 
 ### RnvPlatform
 
-Ƭ **RnvPlatform**: [`RnvPlatformKey`](modules.md#rnvplatformkey) \| ``null``
+Ƭ **RnvPlatform**: [`PlatformKey`](modules.md#platformkey) \| ``null``
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:3
+types.d.ts:4
 
 ___
 
-### RnvPlatformKey
+### RnvPlatformWithAll
 
-Ƭ **RnvPlatformKey**: keyof typeof [`RnvPlatformName`](modules.md#rnvplatformname)
+Ƭ **RnvPlatformWithAll**: [`PlatformKey`](modules.md#platformkey) \| ``"all"``
 
 #### Defined in
 
-@rnv/core/lib/types.d.ts:2
+types.d.ts:5
 
 ___
 
 ### RnvPlugin
 
-Ƭ **RnvPlugin**: [`ConfigPluginSchema`](modules.md#configpluginschema) & \{ `_id?`: `string` ; `_scopes?`: `string`[] ; `config?`: [`ConfigFilePlugin`](modules.md#configfileplugin) ; `packageName?`: `string` ; `scope?`: `string`  }
+Ƭ **RnvPlugin**: [`RenativeConfigPlugin`](modules.md#renativeconfigplugin) & \{ `_id?`: `string` ; `_scopes?`: `string`[] ; `config?`: [`ConfigFilePlugin`](modules.md#configfileplugin) ; `packageName?`: `string` ; `scope?`: `string`  }
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:19
+plugins/types.d.ts:20
 
 ___
 
@@ -2547,93 +1352,51 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/types.d.ts:15
-
-___
-
-### RnvSdk
-
-Ƭ **RnvSdk**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` = `string` |
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `getContext` | () => [`RnvContext`](modules.md#rnvcontext)\<`any`, `OKey`\> |
-| `tasks` | `ReadonlyArray`\<[`RnvTask`](modules.md#rnvtask)\<`OKey`\>\> |
-
-#### Defined in
-
-@rnv/core/lib/sdks/types.d.ts:6
+plugins/types.d.ts:16
 
 ___
 
 ### RnvTask
 
-Ƭ **RnvTask**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` = `string` |
+Ƭ **RnvTask**: `Object`
 
 #### Type declaration
 
 | Name | Type |
 | :------ | :------ |
-| `beforeDependsOn?` | [`RnvTaskFn`](modules.md#rnvtaskfn) |
-| `dependsOn?` | `string`[] |
 | `description` | `string` |
-| `fn?` | [`RnvTaskFn`](modules.md#rnvtaskfn)\<`OKey`\> |
-| `fnHelp?` | [`RnvTaskHelpFn`](modules.md#rnvtaskhelpfn) |
+| `fn?` | [`RnvTaskFn`](modules.md#rnvtaskfn) |
+| `fnHelp?` | [`RnvTaskFn`](modules.md#rnvtaskfn) |
 | `forceBuildHookRebuild?` | `boolean` |
 | `ignoreEngines?` | `boolean` |
 | `isGlobalScope?` | `boolean` |
 | `isPriorityOrder?` | `boolean` |
 | `isPrivate?` | `boolean` |
-| `key` | `string` |
-| `options?` | `ReadonlyArray`\<[`RnvTaskOption`](modules.md#rnvtaskoption)\<`OKey`\>\> |
-| `ownerID?` | `string` |
-| `platforms?` | [`RnvPlatformKey`](modules.md#rnvplatformkey)[] |
+| `params` | [`RnvTaskParameter`](modules.md#rnvtaskparameter)[] |
+| `platforms` | [`PlatformKey`](modules.md#platformkey)[] |
 | `task` | `string` |
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:18
+tasks/types.d.ts:3
 
 ___
 
 ### RnvTaskFn
 
-Ƭ **RnvTaskFn**\<`OKey`\>: (`opts`: \{ `ctx`: [`RnvContext`](modules.md#rnvcontext)\<`any`, `OKey`\> ; `originTaskName`: `string` \| `undefined` ; `parentTaskName`: `string` \| `undefined` ; `shouldSkip`: `boolean` ; `taskName`: `string`  }) => `Promise`\<`any`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` = `string` |
+Ƭ **RnvTaskFn**: (`c`: [`RnvContext`](modules.md#rnvcontext), `parentTask?`: `string`, `originTask?`: `string`) => `Promise`\<`any`\>
 
 #### Type declaration
 
-▸ (`opts`): `Promise`\<`any`\>
+▸ (`c`, `parentTask?`, `originTask?`): `Promise`\<`any`\>
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `opts` | `Object` |
-| `opts.ctx` | [`RnvContext`](modules.md#rnvcontext)\<`any`, `OKey`\> |
-| `opts.originTaskName` | `string` \| `undefined` |
-| `opts.parentTaskName` | `string` \| `undefined` |
-| `opts.shouldSkip` | `boolean` |
-| `opts.taskName` | `string` |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `parentTask?` | `string` |
+| `originTask?` | `string` |
 
 ##### Returns
 
@@ -2641,53 +1404,23 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:62
-
-___
-
-### RnvTaskHelpFn
-
-Ƭ **RnvTaskHelpFn**: () => `Promise`\<`void`\>
-
-#### Type declaration
-
-▸ (): `Promise`\<`void`\>
-
-##### Returns
-
-`Promise`\<`void`\>
-
-#### Defined in
-
-@rnv/core/lib/tasks/types.d.ts:69
+tasks/types.d.ts:41
 
 ___
 
 ### RnvTaskMap
 
-Ƭ **RnvTaskMap**\<`OKey`\>: `Record`\<`string`, [`RnvTask`](modules.md#rnvtask)\<`OKey`\>\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` = `string` |
+Ƭ **RnvTaskMap**: `Record`\<`string`, [`RnvTask`](modules.md#rnvtask)\>
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:61
+tasks/types.d.ts:40
 
 ___
 
-### RnvTaskOption
+### RnvTaskParameter
 
-Ƭ **RnvTaskOption**\<`OKey`\>: `Object`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` = `string` |
+Ƭ **RnvTaskParameter**: `Object`
 
 #### Type declaration
 
@@ -2696,14 +1429,15 @@ ___
 | `description` | `string` |
 | `examples?` | `string`[] |
 | `isRequired?` | `boolean` |
-| `isValueType?` | `boolean` |
-| `isVariadic?` | `boolean` |
-| `key` | `OKey` |
+| `key?` | `string` |
+| `options?` | `string`[] |
 | `shortcut?` | `string` |
+| `value?` | `string` |
+| `variadic?` | `boolean` |
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:52
+tasks/types.d.ts:30
 
 ___
 
@@ -2713,7 +1447,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/types.d.ts:139
+context/types.d.ts:127
 
 ___
 
@@ -2723,7 +1457,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:70
+tasks/types.d.ts:42
 
 ___
 
@@ -2740,13 +1474,13 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:74
+tasks/types.d.ts:46
 
 ___
 
-### TaskPromptOption
+### TaskOption
 
-Ƭ **TaskPromptOption**: `Object`
+Ƭ **TaskOption**: `Object`
 
 #### Type declaration
 
@@ -2759,17 +1493,15 @@ ___
 | `isPriorityOrder?` | `boolean` |
 | `isPrivate?` | `boolean` |
 | `name` | `string` |
-| `params?` | [`RnvTaskOption`](modules.md#rnvtaskoption)[] |
-| `providers` | `string`[] |
+| `params?` | [`RnvTaskParameter`](modules.md#rnvtaskparameter)[] |
+| `provider?` | `string` |
 | `subCommand?` | `string` |
-| `subTasks?` | [`TaskPromptOption`](modules.md#taskpromptoption)[] |
-| `value` | \{ `subTsks?`: [`TaskPromptOption`](modules.md#taskpromptoption)[] ; `taskName`: `string`  } |
-| `value.subTsks?` | [`TaskPromptOption`](modules.md#taskpromptoption)[] |
-| `value.taskName` | `string` |
+| `subTasks?` | [`TaskOption`](modules.md#taskoption)[] |
+| `value` | `string` |
 
 #### Defined in
 
-@rnv/core/lib/tasks/types.d.ts:35
+tasks/types.d.ts:16
 
 ___
 
@@ -2786,7 +1518,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/types.d.ts:32
+system/types.d.ts:32
 
 ## Variables
 
@@ -2798,12 +1530,12 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `BASE` | () => [`RnvEnvContext`](modules.md#rnvenvcontext) |
+| `BASE` | () => `RnvEnvContext` |
 | `RNV_EXTENSIONS` | () => \{ `RNV_EXTENSIONS`: `string`[]  } |
 
 #### Defined in
 
-@rnv/core/lib/env/index.d.ts:2
+env/index.d.ts:2
 
 ___
 
@@ -2829,7 +1561,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/defaults.d.ts:1
+schema/defaults.d.ts:1
 
 ___
 
@@ -2839,7 +1571,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:2
+tasks/constants.d.ts:62
 
 ___
 
@@ -2858,288 +1590,877 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:3
+system/exec.d.ts:4
 
 ___
 
-### RnvFileName
+### PARAMS
 
-• `Const` **RnvFileName**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `package` | ``"package.json"`` |
-| `renative` | ``"renative.json"`` |
-| `renativeBuild` | ``"renative.build.json"`` |
-| `renativeEngine` | ``"renative.engine.json"`` |
-| `renativeLocal` | ``"renative.local.json"`` |
-| `renativePlatforms` | ``"renative.platforms.json"`` |
-| `renativePrivate` | ``"renative.private.json"`` |
-| `renativeRuntime` | ``"renative.runtime.json"`` |
-| `renativeTemplate` | ``"renative.template.json"`` |
-| `renativeTemplates` | ``"renative.templates.json"`` |
-| `renativeWorkspaces` | ``"renative.workspaces.json"`` |
-
-#### Defined in
-
-@rnv/core/lib/enums/fileName.d.ts:1
-
-___
-
-### RnvFolderName
-
-• `Const` **RnvFolderName**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `UP` | ``".."`` |
-| `buildHooks` | ``"buildHooks"`` |
-| `dotRnv` | ``".rnv"`` |
-| `nodeModules` | ``"node_modules"`` |
-| `npmCache` | ``"npm_cache"`` |
-| `platformAssets` | ``"platformAssets"`` |
-| `platformBuilds` | ``"platformBuilds"`` |
-| `secrets` | ``"secrets"`` |
-| `templateFiles` | ``"templateFiles"`` |
-| `templateOverrides` | ``"templateOverrides"`` |
-
-#### Defined in
-
-@rnv/core/lib/enums/folderName.d.ts:1
-
-___
-
-### RnvPlatformName
-
-• `Const` **RnvPlatformName**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `android` | ``"android"`` |
-| `androidtv` | ``"androidtv"`` |
-| `androidwear` | ``"androidwear"`` |
-| `chromecast` | ``"chromecast"`` |
-| `firetv` | ``"firetv"`` |
-| `ios` | ``"ios"`` |
-| `kaios` | ``"kaios"`` |
-| `linux` | ``"linux"`` |
-| `macos` | ``"macos"`` |
-| `tizen` | ``"tizen"`` |
-| `tizenmobile` | ``"tizenmobile"`` |
-| `tizenwatch` | ``"tizenwatch"`` |
-| `tvos` | ``"tvos"`` |
-| `web` | ``"web"`` |
-| `webos` | ``"webos"`` |
-| `webtv` | ``"webtv"`` |
-| `windows` | ``"windows"`` |
-| `xbox` | ``"xbox"`` |
-
-#### Defined in
-
-@rnv/core/lib/enums/platformName.d.ts:1
-
-___
-
-### RnvPlatforms
-
-• `Const` **RnvPlatforms**: readonly [``"web"``, ``"ios"``, ``"android"``, ``"androidtv"``, ``"firetv"``, ``"tvos"``, ``"macos"``, ``"linux"``, ``"windows"``, ``"tizen"``, ``"webos"``, ``"chromecast"``, ``"kaios"``, ``"webtv"``, ``"androidwear"``, ``"tizenwatch"``, ``"tizenmobile"``, ``"xbox"``]
-
-#### Defined in
-
-@rnv/core/lib/enums/platformName.d.ts:21
-
-___
-
-### RnvTaskCoreOptionPresets
-
-• `Const` **RnvTaskCoreOptionPresets**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `withCore` | (`arr?`: [`RnvTaskOption`](modules.md#rnvtaskoption)[]) => [`RnvTaskOption`](modules.md#rnvtaskoption)[] |
-
-#### Defined in
-
-@rnv/core/lib/tasks/constants.d.ts:206
-
-___
-
-### RnvTaskName
-
-• `Const` **RnvTaskName**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `appConfigure` | ``"app configure"`` |
-| `appCreate` | ``"app create"`` |
-| `appSwitch` | ``"app switch"`` |
-| `build` | ``"build"`` |
-| `clean` | ``"clean"`` |
-| `config` | ``"config"`` |
-| `configure` | ``"configure"`` |
-| `configureSoft` | ``"configureSoft"`` |
-| `cryptoDecrypt` | ``"crypto decrypt"`` |
-| `cryptoEncrypt` | ``"crypto encrypt"`` |
-| `cryptoInstallCerts` | ``"crypto installCerts"`` |
-| `cryptoInstallProfile` | ``"crypto installProfile"`` |
-| `cryptoInstallProfiles` | ``"crypto installProfiles"`` |
-| `cryptoUpdateProfile` | ``"crypto updateProfile"`` |
-| `cryptoUpdateProfiles` | ``"crypto updateProfiles"`` |
-| `debug` | ``"debug"`` |
-| `deploy` | ``"deploy"`` |
-| `doctor` | ``"doctor"`` |
-| `eject` | ``"eject"`` |
-| `export` | ``"export"`` |
-| `help` | ``"help"`` |
-| `hooksList` | ``"hooks list"`` |
-| `hooksPipes` | ``"hooks pipes"`` |
-| `hooksRun` | ``"hooks run"`` |
-| `info` | ``"info"`` |
-| `kill` | ``"kill"`` |
-| `link` | ``"link"`` |
-| `log` | ``"log"`` |
-| `new` | ``"new"`` |
-| `package` | ``"package"`` |
-| `pkg` | ``"pkg"`` |
-| `platformConfigure` | ``"platform configure"`` |
-| `platformConnect` | ``"platform connect"`` |
-| `platformEject` | ``"platform eject"`` |
-| `platformList` | ``"platform list"`` |
-| `pluginAdd` | ``"plugin add"`` |
-| `pluginList` | ``"plugin list"`` |
-| `pluginUpdate` | ``"plugin update"`` |
-| `projectConfigure` | ``"project configure"`` |
-| `projectPlatforms` | ``"project platforms"`` |
-| `projectUpgrade` | ``"project upgrade"`` |
-| `publish` | ``"publish"`` |
-| `run` | ``"run"`` |
-| `sdkConfigure` | ``"sdk configure"`` |
-| `start` | ``"start"`` |
-| `status` | ``"status"`` |
-| `switch` | ``"switch"`` |
-| `target` | ``"target"`` |
-| `targetLaunch` | ``"target launch"`` |
-| `targetList` | ``"target list"`` |
-| `telemetryDisable` | ``"telemetry disable"`` |
-| `telemetryEnable` | ``"telemetry enable"`` |
-| `telemetryStatus` | ``"telemetry status"`` |
-| `templateAdd` | ``"template add"`` |
-| `templateApply` | ``"template apply"`` |
-| `templateList` | ``"template list"`` |
-| `unlink` | ``"unlink"`` |
-| `workspaceAdd` | ``"workspace add"`` |
-| `workspaceConfigure` | ``"workspace configure"`` |
-| `workspaceConnect` | ``"workspace connect"`` |
-| `workspaceList` | ``"workspace list"`` |
-| `workspaceUpdate` | ``"workspace update"`` |
-
-#### Defined in
-
-@rnv/core/lib/enums/taskName.d.ts:1
-
-___
-
-### RnvTaskOptionPresets
-
-• `Const` **RnvTaskOptionPresets**: `Object`
+• `Const` **PARAMS**: `Object`
 
 #### Type declaration
 
 | Name | Type |
 | :------ | :------ |
 | `all` | `string`[] |
-| `withAll` | (`arr?`: [`RnvTaskOption`](modules.md#rnvtaskoption)[]) => [`RnvTaskOption`](modules.md#rnvtaskoption)[] |
-| `withConfigure` | (`arr?`: [`RnvTaskOption`](modules.md#rnvtaskoption)[]) => [`RnvTaskOption`](modules.md#rnvtaskoption)[] |
-| `withRun` | (`arr?`: [`RnvTaskOption`](modules.md#rnvtaskoption)[]) => [`RnvTaskOption`](modules.md#rnvtaskoption)[] |
+| `withAll` | (`arr?`: [`RnvTaskParameter`](modules.md#rnvtaskparameter)[]) => [`RnvTaskParameter`](modules.md#rnvtaskparameter)[] |
+| `withBase` | (`arr?`: [`RnvTaskParameter`](modules.md#rnvtaskparameter)[]) => [`RnvTaskParameter`](modules.md#rnvtaskparameter)[] |
+| `withConfigure` | (`arr?`: [`RnvTaskParameter`](modules.md#rnvtaskparameter)[]) => [`RnvTaskParameter`](modules.md#rnvtaskparameter)[] |
+| `withRun` | (`arr?`: [`RnvTaskParameter`](modules.md#rnvtaskparameter)[]) => [`RnvTaskParameter`](modules.md#rnvtaskparameter)[] |
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:209
+tasks/constants.d.ts:343
 
 ___
 
-### RnvTaskOptions
+### PARAM\_KEYS
 
-• `Const` **RnvTaskOptions**: `Record`\<``"filter"`` \| ``"engine"`` \| ``"scheme"`` \| ``"target"`` \| ``"debug"`` \| ``"device"`` \| ``"info"`` \| ``"platform"`` \| ``"help"`` \| ``"only"`` \| ``"ci"`` \| ``"mono"`` \| ``"json"`` \| ``"yes"`` \| ``"unlinked"`` \| ``"reset"`` \| ``"hooks"`` \| ``"host"`` \| ``"port"`` \| ``"hosted"`` \| ``"printExec"`` \| ``"skipTasks"`` \| ``"maxErrorLength"`` \| ``"telemetryDebug"`` \| ``"packageManager"`` \| ``"npxMode"`` \| ``"configName"`` \| ``"skipDependencyCheck"`` \| ``"appConfigID"`` \| ``"skipRnvCheck"`` \| ``"exeMethod"`` \| ``"resetHard"`` \| ``"resetAssets"`` \| ``"hostIp"`` \| ``"debugIp"`` \| ``"skipTargetCheck"`` \| ``"resetAdb"``, [`RnvTaskOption`](modules.md#rnvtaskoption)\>
+• `Const` **PARAM\_KEYS**: `Record`\<`string`, [`RnvTaskParameter`](modules.md#rnvtaskparameter)\>
 
 #### Defined in
 
-@rnv/core/lib/tasks/constants.d.ts:203
+tasks/constants.d.ts:338
 
 ___
 
-### ZodFileSchema
+### RENATIVE\_CONFIG\_BUILD\_NAME
 
-• `Const` **ZodFileSchema**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `zodConfigFileApp` | `AnyZodObject` |
-| `zodConfigFileEngine` | `ZodObject` |
-| `zodConfigFileIntegration` | `ZodObject` |
-| `zodConfigFileLocal` | `ZodObject` |
-| `zodConfigFileOverrides` | `ZodObject` |
-| `zodConfigFilePlugin` | `AnyZodObject` |
-| `zodConfigFilePrivate` | `ZodObject` |
-| `zodConfigFileProject` | `AnyZodObject` |
-| `zodConfigFileRoot` | `AnyZodObject` |
-| `zodConfigFileRuntime` | `ZodObject` |
-| `zodConfigFileTemplate` | `AnyZodObject` |
-| `zodConfigFileTemplates` | `AnyZodObject` |
-| `zodConfigFileWorkspace` | `ZodObject` |
-| `zodConfigFileWorkspaces` | `ZodObject` |
+• `Const` **RENATIVE\_CONFIG\_BUILD\_NAME**: ``"renative.build.json"``
 
 #### Defined in
 
-@rnv/core/lib/schema/index.d.ts:22
+constants.d.ts:5
 
 ___
 
-### ZodSharedSchema
+### RENATIVE\_CONFIG\_ENGINE\_NAME
 
-• `Const` **ZodSharedSchema**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `_base` | typeof `_base` |
-| `_common` | typeof `_common` |
-| `_pAndroid` | typeof `_pAndroid` |
-| `_pBase` | typeof `_pBase` |
-| `_pIos` | typeof `_pIos` |
-| `_platforms` | typeof `_platforms` |
-| `_platformsFragmentsAndroid` | typeof `_platformsFragmentsAndroid` |
-| `_platformsFragmentsBase` | typeof `_platformsFragmentsBase` |
-| `_platformsFragmentsElectron` | typeof `_platformsFragmentsElectron` |
-| `_platformsFragmentsIos` | typeof `_platformsFragmentsIos` |
-| `_platformsFragmentsLightning` | typeof `_platformsFragmentsLightning` |
-| `_platformsFragmentsNextJs` | typeof `_platformsFragmentsNextJs` |
-| `_platformsFragmentsReactNative` | typeof `_platformsFragmentsReactNative` |
-| `_platformsFragmentsTemplateAndroid` | typeof `_platformsFragmentsTemplateAndroid` |
-| `_platformsFragmentsTemplateXcode` | typeof `_platformsFragmentsTemplateXcode` |
-| `_platformsFragmentsTizen` | typeof `_platformsFragmentsTizen` |
-| `_platformsFragmentsWeb` | typeof `_platformsFragmentsWeb` |
-| `_platformsFragmentsWebos` | typeof `_platformsFragmentsWebos` |
-| `_platformsFragmentsWindows` | typeof `_platformsFragmentsWindows` |
-| `_plugins` | typeof `_plugins` |
-| `_shared` | typeof `_shared` |
+• `Const` **RENATIVE\_CONFIG\_ENGINE\_NAME**: ``"renative.engine.json"``
 
 #### Defined in
 
-@rnv/core/lib/schema/index.d.ts:533
+constants.d.ts:11
+
+___
+
+### RENATIVE\_CONFIG\_LOCAL\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_LOCAL\_NAME**: ``"renative.local.json"``
+
+#### Defined in
+
+constants.d.ts:2
+
+___
+
+### RENATIVE\_CONFIG\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_NAME**: ``"renative.json"``
+
+#### Defined in
+
+constants.d.ts:1
+
+___
+
+### RENATIVE\_CONFIG\_PLATFORMS\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_PLATFORMS\_NAME**: ``"renative.platforms.json"``
+
+#### Defined in
+
+constants.d.ts:10
+
+___
+
+### RENATIVE\_CONFIG\_PLUGINS\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_PLUGINS\_NAME**: ``"renative.plugins.json"``
+
+#### Defined in
+
+constants.d.ts:8
+
+___
+
+### RENATIVE\_CONFIG\_PRIVATE\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_PRIVATE\_NAME**: ``"renative.private.json"``
+
+#### Defined in
+
+constants.d.ts:3
+
+___
+
+### RENATIVE\_CONFIG\_RUNTIME\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_RUNTIME\_NAME**: ``"renative.runtime.json"``
+
+#### Defined in
+
+constants.d.ts:6
+
+___
+
+### RENATIVE\_CONFIG\_TEMPLATES\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_TEMPLATES\_NAME**: ``"renative.templates.json"``
+
+#### Defined in
+
+constants.d.ts:9
+
+___
+
+### RENATIVE\_CONFIG\_TEMPLATE\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_TEMPLATE\_NAME**: ``"renative.template.json"``
+
+#### Defined in
+
+constants.d.ts:4
+
+___
+
+### RENATIVE\_CONFIG\_WORKSPACES\_NAME
+
+• `Const` **RENATIVE\_CONFIG\_WORKSPACES\_NAME**: ``"renative.workspaces.json"``
+
+#### Defined in
+
+constants.d.ts:7
+
+___
+
+### RootAppSchema
+
+• `Const` **RootAppSchema**: `AnyZodObject`
+
+#### Defined in
+
+schema/configFiles/app.d.ts:38296
+
+___
+
+### RootEngineSchema
+
+• `Const` **RootEngineSchema**: `z.ZodObject`\<\{ `custom`: `z.ZodOptional`\<`z.ZodAny`\> ; `engineExtension`: `z.ZodString` ; `extends`: `z.ZodOptional`\<`z.ZodString`\> ; `id`: `z.ZodString` ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\> ; `overview`: `z.ZodString` ; `platforms`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodOptional`\<`z.ZodString`\> ; `npm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\>\> ; `plugins`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }, \{ `custom?`: `any` ; `engineExtension`: `string` ; `extends?`: `string` ; `id`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  } ; `overview`: `string` ; `platforms?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> ; `plugins?`: `Record`\<`string`, `string`\>  }\>
+
+#### Defined in
+
+schema/configFiles/engine.d.ts:2
+
+___
+
+### RootGlobalSchema
+
+• `Const` **RootGlobalSchema**: `z.ZodObject`\<\{ `appConfigsPath`: `z.ZodOptional`\<`z.ZodString`\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `disableTelemetry`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `projectTemplates`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\>\> ; `sdks`: `z.ZodOptional`\<`z.ZodObject`\<\{ `ANDROID_NDK`: `z.ZodOptional`\<`z.ZodString`\> ; `ANDROID_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `KAIOS_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `TIZEN_SDK`: `z.ZodOptional`\<`z.ZodString`\> ; `WEBOS_SDK`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }, \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }, \{ `appConfigsPath?`: `string` ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\> ; `disableTelemetry?`: `boolean` ; `projectTemplates?`: `Record`\<`string`, {}\> ; `sdks?`: \{ `ANDROID_NDK?`: `string` ; `ANDROID_SDK?`: `string` ; `KAIOS_SDK?`: `string` ; `TIZEN_SDK?`: `string` ; `WEBOS_SDK?`: `string`  }  }\>
+
+#### Defined in
+
+schema/configFiles/workspace.d.ts:2
+
+___
+
+### RootIntegrationSchema
+
+• `Const` **RootIntegrationSchema**: `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>
+
+#### Defined in
+
+schema/configFiles/integration.d.ts:2
+
+___
+
+### RootLocalSchema
+
+• `Const` **RootLocalSchema**: `z.ZodObject`\<\{ `_meta`: `z.ZodOptional`\<`z.ZodObject`\<\{ `currentAppConfigId`: `z.ZodOptional`\<`z.ZodString`\> ; `requiresJetify`: `z.ZodOptional`\<`z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }, \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  }\>\> ; `defaultTargets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\> ; `workspaceAppConfigsDir`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }, \{ `_meta?`: \{ `currentAppConfigId?`: `string` ; `requiresJetify?`: `boolean`  } ; `defaultTargets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\> ; `workspaceAppConfigsDir?`: `string`  }\>
+
+#### Defined in
+
+schema/configFiles/local.d.ts:2
+
+___
+
+### RootPluginSchema
+
+• `Const` **RootPluginSchema**: `z.ZodObject`\<\{ `android`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `projectName`: `z.ZodOptional`\<`z.ZodString`\> ; `skipImplementation`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `skipLinking`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `templateAndroid`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AndroidManifest_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android:name`: `z.ZodString` ; `android:required`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `children`: `z.ZodArray`\<`z.ZodType`\<`_ManifestChildType`, `z.ZodTypeDef`, `_ManifestChildType`\>, ``"many"``\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }\>\> ; `MainActivity_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `onCreate`: `z.ZodDefault`\<`z.ZodOptional`\<`z.ZodString`\>\> ; `resultMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  }\>\> ; `MainApplication_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageParams`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packages`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }\>\> ; `app_build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `afterEvaluate`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `apply`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `buildTypes`: `z.ZodOptional`\<`z.ZodObject`\<\{ `debug`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `release`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `debug?`: `string`[] ; `release?`: `string`[]  }, \{ `debug?`: `string`[] ; `release?`: `string`[]  }\>\> ; `defaultConfig`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `implementations`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }\>\> ; `build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `allprojects`: `z.ZodObject`\<\{ `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `buildscript`: `z.ZodObject`\<\{ `dependencies`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `dexOptions`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `injectAfterAll`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `plugins`: `z.ZodArray`\<`z.ZodString`, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }\>\> ; `gradle_properties`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodBoolean`, `z.ZodNumber`]\>\>\> ; `strings_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `children`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `child_value`: `z.ZodString` ; `name`: `z.ZodString` ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }\>, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }\>\> ; `androidtv`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `projectName`: `z.ZodOptional`\<`z.ZodString`\> ; `skipImplementation`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `skipLinking`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `templateAndroid`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AndroidManifest_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android:name`: `z.ZodString` ; `android:required`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `children`: `z.ZodArray`\<`z.ZodType`\<`_ManifestChildType`, `z.ZodTypeDef`, `_ManifestChildType`\>, ``"many"``\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }\>\> ; `MainActivity_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `onCreate`: `z.ZodDefault`\<`z.ZodOptional`\<`z.ZodString`\>\> ; `resultMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  }\>\> ; `MainApplication_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageParams`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packages`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }\>\> ; `app_build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `afterEvaluate`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `apply`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `buildTypes`: `z.ZodOptional`\<`z.ZodObject`\<\{ `debug`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `release`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `debug?`: `string`[] ; `release?`: `string`[]  }, \{ `debug?`: `string`[] ; `release?`: `string`[]  }\>\> ; `defaultConfig`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `implementations`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }\>\> ; `build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `allprojects`: `z.ZodObject`\<\{ `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `buildscript`: `z.ZodObject`\<\{ `dependencies`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `dexOptions`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `injectAfterAll`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `plugins`: `z.ZodArray`\<`z.ZodString`, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }\>\> ; `gradle_properties`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodBoolean`, `z.ZodNumber`]\>\>\> ; `strings_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `children`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `child_value`: `z.ZodString` ; `name`: `z.ZodString` ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }\>, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }\>\> ; `androidwear`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `projectName`: `z.ZodOptional`\<`z.ZodString`\> ; `skipImplementation`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `skipLinking`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `templateAndroid`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AndroidManifest_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android:name`: `z.ZodString` ; `android:required`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `children`: `z.ZodArray`\<`z.ZodType`\<`_ManifestChildType`, `z.ZodTypeDef`, `_ManifestChildType`\>, ``"many"``\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }\>\> ; `MainActivity_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `onCreate`: `z.ZodDefault`\<`z.ZodOptional`\<`z.ZodString`\>\> ; `resultMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  }\>\> ; `MainApplication_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageParams`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packages`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }\>\> ; `app_build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `afterEvaluate`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `apply`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `buildTypes`: `z.ZodOptional`\<`z.ZodObject`\<\{ `debug`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `release`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `debug?`: `string`[] ; `release?`: `string`[]  }, \{ `debug?`: `string`[] ; `release?`: `string`[]  }\>\> ; `defaultConfig`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `implementations`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }\>\> ; `build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `allprojects`: `z.ZodObject`\<\{ `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `buildscript`: `z.ZodObject`\<\{ `dependencies`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `dexOptions`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `injectAfterAll`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `plugins`: `z.ZodArray`\<`z.ZodString`, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }\>\> ; `gradle_properties`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodBoolean`, `z.ZodNumber`]\>\>\> ; `strings_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `children`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `child_value`: `z.ZodString` ; `name`: `z.ZodString` ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }\>, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }\>\> ; `chromecast`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `custom`: `z.ZodOptional`\<`z.ZodAny`\> ; `deprecated`: `z.ZodOptional`\<`z.ZodString`\> ; `disableNpm`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `disablePluginTemplateOverrides`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `firetv`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `projectName`: `z.ZodOptional`\<`z.ZodString`\> ; `skipImplementation`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `skipLinking`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `templateAndroid`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AndroidManifest_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android:name`: `z.ZodString` ; `android:required`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `children`: `z.ZodArray`\<`z.ZodType`\<`_ManifestChildType`, `z.ZodTypeDef`, `_ManifestChildType`\>, ``"many"``\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }\>\> ; `MainActivity_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `onCreate`: `z.ZodDefault`\<`z.ZodOptional`\<`z.ZodString`\>\> ; `resultMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  }\>\> ; `MainApplication_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageParams`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packages`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }\>\> ; `app_build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `afterEvaluate`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `apply`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `buildTypes`: `z.ZodOptional`\<`z.ZodObject`\<\{ `debug`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `release`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `debug?`: `string`[] ; `release?`: `string`[]  }, \{ `debug?`: `string`[] ; `release?`: `string`[]  }\>\> ; `defaultConfig`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `implementations`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }\>\> ; `build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `allprojects`: `z.ZodObject`\<\{ `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `buildscript`: `z.ZodObject`\<\{ `dependencies`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `dexOptions`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `injectAfterAll`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `plugins`: `z.ZodArray`\<`z.ZodString`, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }\>\> ; `gradle_properties`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodBoolean`, `z.ZodNumber`]\>\>\> ; `strings_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `children`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `child_value`: `z.ZodString` ; `name`: `z.ZodString` ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }\>, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }\>\> ; `fontSources`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `ios`: `z.ZodOptional`\<`z.ZodObject`\<\{ `buildType`: `z.ZodOptional`\<`z.ZodEnum`\<[``"dynamic"``, ``"static"``]\>\> ; `commit`: `z.ZodOptional`\<`z.ZodString`\> ; `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `git`: `z.ZodOptional`\<`z.ZodString`\> ; `isStatic`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `podName`: `z.ZodOptional`\<`z.ZodString`\> ; `podNames`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `staticFrameworks`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `templateXcode`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AppDelegate_h`: `z.ZodOptional`\<`z.ZodObject`\<\{ `appDelegateExtensions`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `appDelegateImports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  }, \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  }\>\> ; `AppDelegate_mm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `appDelegateImports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `appDelegateMethods`: `z.ZodOptional`\<`z.ZodObject`\<\{ `application`: `z.ZodObject`\<\{ `applicationDidBecomeActive`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `continue`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didConnectCarInterfaceController`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didDisconnectCarInterfaceController`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didFailToRegisterForRemoteNotificationsWithError`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didFinishLaunchingWithOptions`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didReceive`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didReceiveRemoteNotification`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didRegister`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didRegisterForRemoteNotificationsWithDeviceToken`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `open`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `supportedInterfaceOrientationsFor`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }, \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }\> ; `userNotificationCenter`: `z.ZodObject`\<\{ `didReceiveNotificationResponse`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `willPresent`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }, \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }, \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  }, \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  }\>\> ; `Info_plist`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `Podfile`: `z.ZodOptional`\<`z.ZodObject`\<\{ `header`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `injectLines`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `podDependencies`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `post_install`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `sources`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `staticPods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  }, \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  }\>\> ; `project_pbxproj`: `z.ZodOptional`\<`z.ZodObject`\<\{ `buildPhases`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `inputPaths`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `shellPath`: `z.ZodString` ; `shellScript`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }, \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }\>, ``"many"``\>\> ; `buildSettings`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `frameworks`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `headerFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `resourceFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `sourceFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }, \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  }, \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  }\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  }, \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  }\>\> ; `kaios`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `linux`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `macos`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `npm`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `pluginDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodNullable`\<`z.ZodString`\>\>\> ; `props`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `skipMerge`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `source`: `z.ZodOptional`\<`z.ZodString`\> ; `tizen`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `tizenmobile`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `tizenwatch`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `tvos`: `z.ZodOptional`\<`z.ZodObject`\<\{ `buildType`: `z.ZodOptional`\<`z.ZodEnum`\<[``"dynamic"``, ``"static"``]\>\> ; `commit`: `z.ZodOptional`\<`z.ZodString`\> ; `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `git`: `z.ZodOptional`\<`z.ZodString`\> ; `isStatic`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `podName`: `z.ZodOptional`\<`z.ZodString`\> ; `podNames`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `staticFrameworks`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `templateXcode`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AppDelegate_h`: `z.ZodOptional`\<`z.ZodObject`\<\{ `appDelegateExtensions`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `appDelegateImports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  }, \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  }\>\> ; `AppDelegate_mm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `appDelegateImports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `appDelegateMethods`: `z.ZodOptional`\<`z.ZodObject`\<\{ `application`: `z.ZodObject`\<\{ `applicationDidBecomeActive`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `continue`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didConnectCarInterfaceController`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didDisconnectCarInterfaceController`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didFailToRegisterForRemoteNotificationsWithError`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didFinishLaunchingWithOptions`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didReceive`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didReceiveRemoteNotification`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didRegister`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didRegisterForRemoteNotificationsWithDeviceToken`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `open`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `supportedInterfaceOrientationsFor`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }, \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }\> ; `userNotificationCenter`: `z.ZodObject`\<\{ `didReceiveNotificationResponse`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `willPresent`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }, \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }, \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  }, \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  }\>\> ; `Info_plist`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `Podfile`: `z.ZodOptional`\<`z.ZodObject`\<\{ `header`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `injectLines`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `podDependencies`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `post_install`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `sources`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `staticPods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  }, \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  }\>\> ; `project_pbxproj`: `z.ZodOptional`\<`z.ZodObject`\<\{ `buildPhases`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `inputPaths`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `shellPath`: `z.ZodString` ; `shellScript`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }, \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }\>, ``"many"``\>\> ; `buildSettings`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `frameworks`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `headerFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `resourceFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `sourceFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }, \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  }, \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  }\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  }, \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  }\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\> ; `web`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `webos`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `webpackConfig`: `z.ZodOptional`\<`z.ZodObject`\<\{ `moduleAliases`: `z.ZodOptional`\<`z.ZodUnion`\<[`z.ZodBoolean`, `z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `projectPath`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `projectPath`: `string`  }, \{ `projectPath`: `string`  }\>]\>\>]\>\> ; `modulePaths`: `z.ZodOptional`\<`z.ZodUnion`\<[`z.ZodBoolean`, `z.ZodArray`\<`z.ZodString`, ``"many"``\>]\>\> ; `nextTranspileModules`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  }, \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  }\>\> ; `webtv`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `windows`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `xbox`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `android?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidwear?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `chromecast?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `custom?`: `any` ; `deprecated?`: `string` ; `disableNpm?`: `boolean` ; `disablePluginTemplateOverrides?`: `boolean` ; `disabled?`: `boolean` ; `firetv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `fontSources?`: `string`[] ; `ios?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `kaios?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `linux?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `macos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `npm?`: `Record`\<`string`, `string`\> ; `pluginDependencies?`: `Record`\<`string`, `string` \| ``null``\> ; `props?`: `Record`\<`string`, `string`\> ; `skipMerge?`: `boolean` ; `source?`: `string` ; `tizen?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenmobile?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenwatch?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tvos?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `version?`: `string` ; `web?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webpackConfig?`: \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  } ; `webtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `windows?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `xbox?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }  }, \{ `android?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidwear?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `chromecast?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `custom?`: `any` ; `deprecated?`: `string` ; `disableNpm?`: `boolean` ; `disablePluginTemplateOverrides?`: `boolean` ; `disabled?`: `boolean` ; `firetv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `fontSources?`: `string`[] ; `ios?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `kaios?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `linux?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `macos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `npm?`: `Record`\<`string`, `string`\> ; `pluginDependencies?`: `Record`\<`string`, `string` \| ``null``\> ; `props?`: `Record`\<`string`, `string`\> ; `skipMerge?`: `boolean` ; `source?`: `string` ; `tizen?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenmobile?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenwatch?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tvos?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `version?`: `string` ; `web?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webpackConfig?`: \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  } ; `webtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `windows?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `xbox?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }  }\>
+
+#### Defined in
+
+schema/configFiles/plugin.d.ts:2
+
+___
+
+### RootPluginsSchema
+
+• `Const` **RootPluginsSchema**: `z.ZodObject`\<\{ `custom`: `z.ZodOptional`\<`z.ZodAny`\> ; `disableRnvDefaultOverrides`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `pluginTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `android`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `projectName`: `z.ZodOptional`\<`z.ZodString`\> ; `skipImplementation`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `skipLinking`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `templateAndroid`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AndroidManifest_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android:name`: `z.ZodString` ; `android:required`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `children`: `z.ZodArray`\<`z.ZodType`\<`_ManifestChildType`, `z.ZodTypeDef`, `_ManifestChildType`\>, ``"many"``\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }\>\> ; `MainActivity_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `onCreate`: `z.ZodDefault`\<`z.ZodOptional`\<`z.ZodString`\>\> ; `resultMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  }\>\> ; `MainApplication_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageParams`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packages`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }\>\> ; `app_build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `afterEvaluate`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `apply`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `buildTypes`: `z.ZodOptional`\<`z.ZodObject`\<\{ `debug`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `release`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `debug?`: `string`[] ; `release?`: `string`[]  }, \{ `debug?`: `string`[] ; `release?`: `string`[]  }\>\> ; `defaultConfig`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `implementations`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }\>\> ; `build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `allprojects`: `z.ZodObject`\<\{ `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `buildscript`: `z.ZodObject`\<\{ `dependencies`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `dexOptions`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `injectAfterAll`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `plugins`: `z.ZodArray`\<`z.ZodString`, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }\>\> ; `gradle_properties`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodBoolean`, `z.ZodNumber`]\>\>\> ; `strings_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `children`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `child_value`: `z.ZodString` ; `name`: `z.ZodString` ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }\>, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }\>\> ; `androidtv`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `projectName`: `z.ZodOptional`\<`z.ZodString`\> ; `skipImplementation`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `skipLinking`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `templateAndroid`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AndroidManifest_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android:name`: `z.ZodString` ; `android:required`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `children`: `z.ZodArray`\<`z.ZodType`\<`_ManifestChildType`, `z.ZodTypeDef`, `_ManifestChildType`\>, ``"many"``\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }\>\> ; `MainActivity_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `onCreate`: `z.ZodDefault`\<`z.ZodOptional`\<`z.ZodString`\>\> ; `resultMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  }\>\> ; `MainApplication_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageParams`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packages`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }\>\> ; `app_build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `afterEvaluate`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `apply`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `buildTypes`: `z.ZodOptional`\<`z.ZodObject`\<\{ `debug`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `release`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `debug?`: `string`[] ; `release?`: `string`[]  }, \{ `debug?`: `string`[] ; `release?`: `string`[]  }\>\> ; `defaultConfig`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `implementations`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }\>\> ; `build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `allprojects`: `z.ZodObject`\<\{ `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `buildscript`: `z.ZodObject`\<\{ `dependencies`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `dexOptions`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `injectAfterAll`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `plugins`: `z.ZodArray`\<`z.ZodString`, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }\>\> ; `gradle_properties`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodBoolean`, `z.ZodNumber`]\>\>\> ; `strings_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `children`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `child_value`: `z.ZodString` ; `name`: `z.ZodString` ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }\>, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }\>\> ; `androidwear`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `projectName`: `z.ZodOptional`\<`z.ZodString`\> ; `skipImplementation`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `skipLinking`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `templateAndroid`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AndroidManifest_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android:name`: `z.ZodString` ; `android:required`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `children`: `z.ZodArray`\<`z.ZodType`\<`_ManifestChildType`, `z.ZodTypeDef`, `_ManifestChildType`\>, ``"many"``\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }\>\> ; `MainActivity_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `onCreate`: `z.ZodDefault`\<`z.ZodOptional`\<`z.ZodString`\>\> ; `resultMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  }\>\> ; `MainApplication_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageParams`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packages`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }\>\> ; `app_build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `afterEvaluate`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `apply`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `buildTypes`: `z.ZodOptional`\<`z.ZodObject`\<\{ `debug`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `release`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `debug?`: `string`[] ; `release?`: `string`[]  }, \{ `debug?`: `string`[] ; `release?`: `string`[]  }\>\> ; `defaultConfig`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `implementations`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }\>\> ; `build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `allprojects`: `z.ZodObject`\<\{ `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `buildscript`: `z.ZodObject`\<\{ `dependencies`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `dexOptions`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `injectAfterAll`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `plugins`: `z.ZodArray`\<`z.ZodString`, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }\>\> ; `gradle_properties`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodBoolean`, `z.ZodNumber`]\>\>\> ; `strings_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `children`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `child_value`: `z.ZodString` ; `name`: `z.ZodString` ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }\>, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }\>\> ; `chromecast`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `deprecated`: `z.ZodOptional`\<`z.ZodString`\> ; `disableNpm`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `disablePluginTemplateOverrides`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `firetv`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `projectName`: `z.ZodOptional`\<`z.ZodString`\> ; `skipImplementation`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `skipLinking`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `templateAndroid`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AndroidManifest_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android:name`: `z.ZodString` ; `android:required`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `children`: `z.ZodArray`\<`z.ZodType`\<`_ManifestChildType`, `z.ZodTypeDef`, `_ManifestChildType`\>, ``"many"``\> ; `package`: `z.ZodOptional`\<`z.ZodString`\> ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }, \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  }\>\> ; `MainActivity_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `onCreate`: `z.ZodDefault`\<`z.ZodOptional`\<`z.ZodString`\>\> ; `resultMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  }\>\> ; `MainApplication_java`: `z.ZodOptional`\<`z.ZodObject`\<\{ `createMethods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `imports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `methods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageParams`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packages`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }, \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  }\>\> ; `app_build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `afterEvaluate`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `apply`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `buildTypes`: `z.ZodOptional`\<`z.ZodObject`\<\{ `debug`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `release`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `debug?`: `string`[] ; `release?`: `string`[]  }, \{ `debug?`: `string`[] ; `release?`: `string`[]  }\>\> ; `defaultConfig`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `implementation`: `z.ZodOptional`\<`z.ZodString`\> ; `implementations`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }, \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  }\>\> ; `build_gradle`: `z.ZodOptional`\<`z.ZodObject`\<\{ `allprojects`: `z.ZodObject`\<\{ `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `buildscript`: `z.ZodObject`\<\{ `dependencies`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `repositories`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }, \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  }\> ; `dexOptions`: `z.ZodRecord`\<`z.ZodString`, `z.ZodBoolean`\> ; `injectAfterAll`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `plugins`: `z.ZodArray`\<`z.ZodString`, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }, \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  }\>\> ; `gradle_properties`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodBoolean`, `z.ZodNumber`]\>\>\> ; `strings_xml`: `z.ZodOptional`\<`z.ZodObject`\<\{ `children`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `child_value`: `z.ZodString` ; `name`: `z.ZodString` ; `tag`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }, \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }\>, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }, \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }, \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  }\>\> ; `fontSources`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `ios`: `z.ZodOptional`\<`z.ZodObject`\<\{ `buildType`: `z.ZodOptional`\<`z.ZodEnum`\<[``"dynamic"``, ``"static"``]\>\> ; `commit`: `z.ZodOptional`\<`z.ZodString`\> ; `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `git`: `z.ZodOptional`\<`z.ZodString`\> ; `isStatic`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `podName`: `z.ZodOptional`\<`z.ZodString`\> ; `podNames`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `staticFrameworks`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `templateXcode`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AppDelegate_h`: `z.ZodOptional`\<`z.ZodObject`\<\{ `appDelegateExtensions`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `appDelegateImports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  }, \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  }\>\> ; `AppDelegate_mm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `appDelegateImports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `appDelegateMethods`: `z.ZodOptional`\<`z.ZodObject`\<\{ `application`: `z.ZodObject`\<\{ `applicationDidBecomeActive`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `continue`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didConnectCarInterfaceController`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didDisconnectCarInterfaceController`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didFailToRegisterForRemoteNotificationsWithError`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didFinishLaunchingWithOptions`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didReceive`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didReceiveRemoteNotification`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didRegister`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didRegisterForRemoteNotificationsWithDeviceToken`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `open`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `supportedInterfaceOrientationsFor`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }, \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }\> ; `userNotificationCenter`: `z.ZodObject`\<\{ `didReceiveNotificationResponse`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `willPresent`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }, \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }, \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  }, \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  }\>\> ; `Info_plist`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `Podfile`: `z.ZodOptional`\<`z.ZodObject`\<\{ `header`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `injectLines`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `podDependencies`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `post_install`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `sources`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `staticPods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  }, \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  }\>\> ; `project_pbxproj`: `z.ZodOptional`\<`z.ZodObject`\<\{ `buildPhases`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `inputPaths`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `shellPath`: `z.ZodString` ; `shellScript`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }, \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }\>, ``"many"``\>\> ; `buildSettings`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `frameworks`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `headerFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `resourceFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `sourceFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }, \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  }, \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  }\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  }, \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  }\>\> ; `kaios`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `linux`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `macos`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `npm`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `pluginDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodNullable`\<`z.ZodString`\>\>\> ; `props`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `skipMerge`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `source`: `z.ZodOptional`\<`z.ZodString`\> ; `tizen`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `tizenmobile`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `tizenwatch`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `tvos`: `z.ZodOptional`\<`z.ZodObject`\<\{ `buildType`: `z.ZodOptional`\<`z.ZodEnum`\<[``"dynamic"``, ``"static"``]\>\> ; `commit`: `z.ZodOptional`\<`z.ZodString`\> ; `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `git`: `z.ZodOptional`\<`z.ZodString`\> ; `isStatic`: `z.ZodOptional`\<`z.ZodBoolean`\> ; `path`: `z.ZodOptional`\<`z.ZodString`\> ; `podName`: `z.ZodOptional`\<`z.ZodString`\> ; `podNames`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `staticFrameworks`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `templateXcode`: `z.ZodOptional`\<`z.ZodObject`\<\{ `AppDelegate_h`: `z.ZodOptional`\<`z.ZodObject`\<\{ `appDelegateExtensions`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `appDelegateImports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  }, \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  }\>\> ; `AppDelegate_mm`: `z.ZodOptional`\<`z.ZodObject`\<\{ `appDelegateImports`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `appDelegateMethods`: `z.ZodOptional`\<`z.ZodObject`\<\{ `application`: `z.ZodObject`\<\{ `applicationDidBecomeActive`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `continue`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didConnectCarInterfaceController`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didDisconnectCarInterfaceController`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didFailToRegisterForRemoteNotificationsWithError`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didFinishLaunchingWithOptions`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didReceive`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didReceiveRemoteNotification`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didRegister`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `didRegisterForRemoteNotificationsWithDeviceToken`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `open`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `supportedInterfaceOrientationsFor`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }, \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }\> ; `userNotificationCenter`: `z.ZodObject`\<\{ `didReceiveNotificationResponse`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\> ; `willPresent`: `z.ZodArray`\<`z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `order`: `z.ZodNumber` ; `value`: `z.ZodString` ; `weight`: `z.ZodNumber`  }, ``"strip"``, `z.ZodTypeAny`, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }, \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  }\>]\>, ``"many"``\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }, \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }, \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  }, \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  }\>\> ; `Info_plist`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `Podfile`: `z.ZodOptional`\<`z.ZodObject`\<\{ `header`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `injectLines`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `podDependencies`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `post_install`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `sources`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `staticPods`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  }, \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  }\>\> ; `project_pbxproj`: `z.ZodOptional`\<`z.ZodObject`\<\{ `buildPhases`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `inputPaths`: `z.ZodArray`\<`z.ZodString`, ``"many"``\> ; `shellPath`: `z.ZodString` ; `shellScript`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }, \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }\>, ``"many"``\>\> ; `buildSettings`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `frameworks`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `headerFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `resourceFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `sourceFiles`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }, \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  }, \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  }\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  }, \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  }\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\> ; `web`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `webos`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `webpackConfig`: `z.ZodOptional`\<`z.ZodObject`\<\{ `moduleAliases`: `z.ZodOptional`\<`z.ZodUnion`\<[`z.ZodBoolean`, `z.ZodRecord`\<`z.ZodString`, `z.ZodUnion`\<[`z.ZodString`, `z.ZodObject`\<\{ `projectPath`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `projectPath`: `string`  }, \{ `projectPath`: `string`  }\>]\>\>]\>\> ; `modulePaths`: `z.ZodOptional`\<`z.ZodUnion`\<[`z.ZodBoolean`, `z.ZodArray`\<`z.ZodString`, ``"many"``\>]\>\> ; `nextTranspileModules`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  }, \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  }\>\> ; `webtv`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `windows`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\> ; `xbox`: `z.ZodOptional`\<`z.ZodObject`\<\{ `disabled`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `forceLinking`: `z.ZodOptional`\<`z.ZodDefault`\<`z.ZodBoolean`\>\> ; `path`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }, \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `android?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidwear?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `chromecast?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `deprecated?`: `string` ; `disableNpm?`: `boolean` ; `disablePluginTemplateOverrides?`: `boolean` ; `disabled?`: `boolean` ; `firetv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `fontSources?`: `string`[] ; `ios?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `kaios?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `linux?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `macos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `npm?`: `Record`\<`string`, `string`\> ; `pluginDependencies?`: `Record`\<`string`, `string` \| ``null``\> ; `props?`: `Record`\<`string`, `string`\> ; `skipMerge?`: `boolean` ; `source?`: `string` ; `tizen?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenmobile?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenwatch?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tvos?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `version?`: `string` ; `web?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webpackConfig?`: \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  } ; `webtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `windows?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `xbox?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }  }, \{ `android?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidwear?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `chromecast?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `deprecated?`: `string` ; `disableNpm?`: `boolean` ; `disablePluginTemplateOverrides?`: `boolean` ; `disabled?`: `boolean` ; `firetv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `fontSources?`: `string`[] ; `ios?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `kaios?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `linux?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `macos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `npm?`: `Record`\<`string`, `string`\> ; `pluginDependencies?`: `Record`\<`string`, `string` \| ``null``\> ; `props?`: `Record`\<`string`, `string`\> ; `skipMerge?`: `boolean` ; `source?`: `string` ; `tizen?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenmobile?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenwatch?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tvos?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `version?`: `string` ; `web?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webpackConfig?`: \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  } ; `webtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `windows?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `xbox?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `custom?`: `any` ; `disableRnvDefaultOverrides?`: `boolean` ; `pluginTemplates`: `Record`\<`string`, \{ `android?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidwear?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `chromecast?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `deprecated?`: `string` ; `disableNpm?`: `boolean` ; `disablePluginTemplateOverrides?`: `boolean` ; `disabled?`: `boolean` ; `firetv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `fontSources?`: `string`[] ; `ios?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `kaios?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `linux?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `macos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `npm?`: `Record`\<`string`, `string`\> ; `pluginDependencies?`: `Record`\<`string`, `string` \| ``null``\> ; `props?`: `Record`\<`string`, `string`\> ; `skipMerge?`: `boolean` ; `source?`: `string` ; `tizen?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenmobile?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenwatch?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tvos?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `version?`: `string` ; `web?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webpackConfig?`: \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  } ; `webtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `windows?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `xbox?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }  }\>  }, \{ `custom?`: `any` ; `disableRnvDefaultOverrides?`: `boolean` ; `pluginTemplates`: `Record`\<`string`, \{ `android?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `androidwear?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `chromecast?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `deprecated?`: `string` ; `disableNpm?`: `boolean` ; `disablePluginTemplateOverrides?`: `boolean` ; `disabled?`: `boolean` ; `firetv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `implementation?`: `string` ; `package?`: `string` ; `path?`: `string` ; `projectName?`: `string` ; `skipImplementation?`: `boolean` ; `skipLinking?`: `boolean` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate?`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `strings_xml?`: \{ `children?`: \{ `child_value`: `string` ; `name`: `string` ; `tag`: `string`  }[]  }  }  } ; `fontSources?`: `string`[] ; `ios?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `kaios?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `linux?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `macos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `npm?`: `Record`\<`string`, `string`\> ; `pluginDependencies?`: `Record`\<`string`, `string` \| ``null``\> ; `props?`: `Record`\<`string`, `string`\> ; `skipMerge?`: `boolean` ; `source?`: `string` ; `tizen?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenmobile?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tizenwatch?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `tvos?`: \{ `buildType?`: ``"dynamic"`` \| ``"static"`` ; `commit?`: `string` ; `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `git?`: `string` ; `isStatic?`: `boolean` ; `path?`: `string` ; `podName?`: `string` ; `podNames?`: `string`[] ; `staticFrameworks?`: `string`[] ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `version?`: `string`  } ; `version?`: `string` ; `web?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webos?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `webpackConfig?`: \{ `moduleAliases?`: `boolean` \| `Record`\<`string`, `string` \| \{ `projectPath`: `string`  }\> ; `modulePaths?`: `boolean` \| `string`[] ; `nextTranspileModules?`: `string`[]  } ; `webtv?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `windows?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  } ; `xbox?`: \{ `disabled?`: `boolean` ; `forceLinking?`: `boolean` ; `path?`: `string`  }  }\>  }\>
+
+#### Defined in
+
+schema/configFiles/plugins.d.ts:5335
+
+___
+
+### RootPrivateSchema
+
+• `Const` **RootPrivateSchema**: `z.ZodObject`\<\{ `platforms`: `z.ZodOptional`\<`z.ZodObject`\<\{ `android`: `z.ZodOptional`\<`z.ZodObject`\<\{ `keyAlias`: `z.ZodOptional`\<`z.ZodString`\> ; `keyPassword`: `z.ZodOptional`\<`z.ZodString`\> ; `storeFile`: `z.ZodOptional`\<`z.ZodString`\> ; `storePassword`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  }, \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  }\>\> ; `androidtv`: `z.ZodOptional`\<`z.ZodObject`\<\{ `keyAlias`: `z.ZodOptional`\<`z.ZodString`\> ; `keyPassword`: `z.ZodOptional`\<`z.ZodString`\> ; `storeFile`: `z.ZodOptional`\<`z.ZodString`\> ; `storePassword`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  }, \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  }\>\> ; `androidwear`: `z.ZodOptional`\<`z.ZodObject`\<\{ `keyAlias`: `z.ZodOptional`\<`z.ZodString`\> ; `keyPassword`: `z.ZodOptional`\<`z.ZodString`\> ; `storeFile`: `z.ZodOptional`\<`z.ZodString`\> ; `storePassword`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  }, \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  }\>\> ; `chromecast`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `firetv`: `z.ZodOptional`\<`z.ZodObject`\<\{ `keyAlias`: `z.ZodOptional`\<`z.ZodString`\> ; `keyPassword`: `z.ZodOptional`\<`z.ZodString`\> ; `storeFile`: `z.ZodOptional`\<`z.ZodString`\> ; `storePassword`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  }, \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  }\>\> ; `ios`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `kaios`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `linux`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `macos`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `tizen`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `tizenmobile`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `tizenwatch`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `tvos`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `web`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `webos`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `webtv`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `windows`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\> ; `xbox`: `z.ZodOptional`\<`z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `android?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidtv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidwear?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `chromecast?`: {} ; `firetv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `ios?`: {} ; `kaios?`: {} ; `linux?`: {} ; `macos?`: {} ; `tizen?`: {} ; `tizenmobile?`: {} ; `tizenwatch?`: {} ; `tvos?`: {} ; `web?`: {} ; `webos?`: {} ; `webtv?`: {} ; `windows?`: {} ; `xbox?`: {}  }, \{ `android?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidtv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidwear?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `chromecast?`: {} ; `firetv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `ios?`: {} ; `kaios?`: {} ; `linux?`: {} ; `macos?`: {} ; `tizen?`: {} ; `tizenmobile?`: {} ; `tizenwatch?`: {} ; `tvos?`: {} ; `web?`: {} ; `webos?`: {} ; `webtv?`: {} ; `windows?`: {} ; `xbox?`: {}  }\>\> ; `private`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodAny`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `platforms?`: \{ `android?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidtv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidwear?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `chromecast?`: {} ; `firetv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `ios?`: {} ; `kaios?`: {} ; `linux?`: {} ; `macos?`: {} ; `tizen?`: {} ; `tizenmobile?`: {} ; `tizenwatch?`: {} ; `tvos?`: {} ; `web?`: {} ; `webos?`: {} ; `webtv?`: {} ; `windows?`: {} ; `xbox?`: {}  } ; `private?`: `Record`\<`string`, `any`\>  }, \{ `platforms?`: \{ `android?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidtv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `androidwear?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `chromecast?`: {} ; `firetv?`: \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } ; `ios?`: {} ; `kaios?`: {} ; `linux?`: {} ; `macos?`: {} ; `tizen?`: {} ; `tizenmobile?`: {} ; `tizenwatch?`: {} ; `tvos?`: {} ; `web?`: {} ; `webos?`: {} ; `webtv?`: {} ; `windows?`: {} ; `xbox?`: {}  } ; `private?`: `Record`\<`string`, `any`\>  }\>
+
+#### Defined in
+
+schema/configFiles/private.d.ts:18
+
+___
+
+### RootProjectSchema
+
+• `Const` **RootProjectSchema**: `AnyZodObject`
+
+#### Defined in
+
+schema/configFiles/project.d.ts:38585
+
+___
+
+### RootTemplateSchema
+
+• `Const` **RootTemplateSchema**: `z.ZodObject`\<\{ `defaults`: `z.ZodOptional`\<`z.ZodObject`\<\{ `defaultCommandSchemes`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"run"``, ``"export"``, ``"build"``]\>, `z.ZodString`\>\> ; `portOffset`: `z.ZodOptional`\<`z.ZodNumber`\> ; `ports`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodNumber`\>\> ; `supportedPlatforms`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, ``"many"``\>\> ; `targets`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodString`\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\>  }, \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\>  }\>\> ; `engines`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodLiteral`\<``"source:rnv"``\>\>\> ; `templateConfig`: `z.ZodOptional`\<`z.ZodObject`\<\{ `bootstrapQuestions`: `z.ZodArray`\<`z.ZodObject`\<\{ `configProp`: `z.ZodOptional`\<`z.ZodObject`\<\{ `key`: `z.ZodString` ; `prop`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `key`: `string` ; `prop`: `string`  }, \{ `key`: `string` ; `prop`: `string`  }\>\> ; `options`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodObject`\<\{ `title`: `z.ZodString` ; `value`: `z.ZodObject`\<{}, ``"strip"``, `z.ZodTypeAny`, {}, {}\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `title`: `string` ; `value`: {}  }, \{ `title`: `string` ; `value`: {}  }\>, ``"many"``\>\> ; `title`: `z.ZodString` ; `type`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }, \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }\>, ``"many"``\> ; `includedPaths`: `z.ZodOptional`\<`z.ZodArray`\<`z.ZodString`, ``"many"``\>\> ; `packageTemplate`: `z.ZodOptional`\<`z.ZodObject`\<\{ `dependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `devDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `name`: `z.ZodOptional`\<`z.ZodString`\> ; `optionalDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `peerDependencies`: `z.ZodOptional`\<`z.ZodRecord`\<`z.ZodString`, `z.ZodString`\>\> ; `version`: `z.ZodOptional`\<`z.ZodString`\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }, \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }, \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }, \{ `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"build"`` \| ``"run"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, `string`\>\>  } ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `templateConfig?`: \{ `bootstrapQuestions`: \{ `configProp?`: \{ `key`: `string` ; `prop`: `string`  } ; `options?`: \{ `title`: `string` ; `value`: {}  }[] ; `title`: `string` ; `type`: `string`  }[] ; `includedPaths?`: `string`[] ; `packageTemplate?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `name?`: `string` ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\> ; `version?`: `string`  }  }  }\>
+
+#### Defined in
+
+schema/configFiles/template.d.ts:2
+
+___
+
+### RootTemplatesSchema
+
+• `Const` **RootTemplatesSchema**: `z.ZodObject`\<\{ `engineTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `id`: `z.ZodString` ; `key`: `z.ZodOptional`\<`z.ZodString`\> ; `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\>\> ; `integrationTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `version`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `version`: `string`  }, \{ `version`: `string`  }\>\> ; `platformTemplates`: `z.ZodRecord`\<`z.ZodEnum`\<[``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]\>, `z.ZodObject`\<\{ `engine`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `engine`: `string`  }, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `z.ZodRecord`\<`z.ZodString`, `z.ZodObject`\<\{ `description`: `z.ZodString`  }, ``"strip"``, `z.ZodTypeAny`, \{ `description`: `string`  }, \{ `description`: `string`  }\>\>  }, ``"strip"``, `z.ZodTypeAny`, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }, \{ `engineTemplates`: `Record`\<`string`, \{ `id`: `string` ; `key?`: `string` ; `version`: `string`  }\> ; `integrationTemplates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `platformTemplates`: `Partial`\<`Record`\<``"android"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"chromecast"`` \| ``"firetv"`` \| ``"ios"`` \| ``"kaios"`` \| ``"macos"`` \| ``"tizen"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"web"`` \| ``"webtv"`` \| ``"webos"`` \| ``"windows"`` \| ``"linux"`` \| ``"xbox"``, \{ `engine`: `string`  }\>\> ; `projectTemplates`: `Record`\<`string`, \{ `description`: `string`  }\>  }\>
+
+#### Defined in
+
+schema/configFiles/templates.d.ts:2
+
+___
+
+### SUPPORTED\_PLATFORMS
+
+• `Const` **SUPPORTED\_PLATFORMS**: readonly [``"ios"``, ``"android"``, ``"firetv"``, ``"androidtv"``, ``"androidwear"``, ``"web"``, ``"webtv"``, ``"tizen"``, ``"tizenmobile"``, ``"tvos"``, ``"webos"``, ``"macos"``, ``"windows"``, ``"linux"``, ``"tizenwatch"``, ``"kaios"``, ``"chromecast"``, ``"xbox"``]
+
+#### Defined in
+
+constants.d.ts:12
+
+___
+
+### TASK\_APP\_CONFIGURE
+
+• `Const` **TASK\_APP\_CONFIGURE**: ``"app configure"``
+
+#### Defined in
+
+tasks/constants.d.ts:53
+
+___
+
+### TASK\_APP\_CREATE
+
+• `Const` **TASK\_APP\_CREATE**: ``"app create"``
+
+#### Defined in
+
+tasks/constants.d.ts:54
+
+___
+
+### TASK\_BUILD
+
+• `Const` **TASK\_BUILD**: ``"build"``
+
+#### Defined in
+
+tasks/constants.d.ts:7
+
+___
+
+### TASK\_CLEAN
+
+• `Const` **TASK\_CLEAN**: ``"clean"``
+
+#### Defined in
+
+tasks/constants.d.ts:15
+
+___
+
+### TASK\_CONFIGURE
+
+• `Const` **TASK\_CONFIGURE**: ``"configure"``
+
+#### Defined in
+
+tasks/constants.d.ts:3
+
+___
+
+### TASK\_CONFIGURE\_SOFT
+
+• `Const` **TASK\_CONFIGURE\_SOFT**: ``"configureSoft"``
+
+#### Defined in
+
+tasks/constants.d.ts:56
+
+___
+
+### TASK\_CRYPTO\_DECRYPT
+
+• `Const` **TASK\_CRYPTO\_DECRYPT**: ``"crypto decrypt"``
+
+#### Defined in
+
+tasks/constants.d.ts:43
+
+___
+
+### TASK\_CRYPTO\_ENCRYPT
+
+• `Const` **TASK\_CRYPTO\_ENCRYPT**: ``"crypto encrypt"``
+
+#### Defined in
+
+tasks/constants.d.ts:42
+
+___
+
+### TASK\_CRYPTO\_INSTALL\_CERTS
+
+• `Const` **TASK\_CRYPTO\_INSTALL\_CERTS**: ``"crypto installCerts"``
+
+#### Defined in
+
+tasks/constants.d.ts:44
+
+___
+
+### TASK\_CRYPTO\_INSTALL\_PROFILE
+
+• `Const` **TASK\_CRYPTO\_INSTALL\_PROFILE**: ``"crypto installProfile"``
+
+#### Defined in
+
+tasks/constants.d.ts:46
+
+___
+
+### TASK\_CRYPTO\_INSTALL\_PROFILES
+
+• `Const` **TASK\_CRYPTO\_INSTALL\_PROFILES**: ``"crypto installProfiles"``
+
+#### Defined in
+
+tasks/constants.d.ts:45
+
+___
+
+### TASK\_CRYPTO\_UPDATE\_PROFILE
+
+• `Const` **TASK\_CRYPTO\_UPDATE\_PROFILE**: ``"crypto updateProfile"``
+
+#### Defined in
+
+tasks/constants.d.ts:47
+
+___
+
+### TASK\_CRYPTO\_UPDATE\_PROFILES
+
+• `Const` **TASK\_CRYPTO\_UPDATE\_PROFILES**: ``"crypto updateProfiles"``
+
+#### Defined in
+
+tasks/constants.d.ts:48
+
+___
+
+### TASK\_DEBUG
+
+• `Const` **TASK\_DEBUG**: ``"debug"``
+
+#### Defined in
+
+tasks/constants.d.ts:11
+
+___
+
+### TASK\_DEPLOY
+
+• `Const` **TASK\_DEPLOY**: ``"deploy"``
+
+#### Defined in
+
+tasks/constants.d.ts:13
+
+___
+
+### TASK\_DOCTOR
+
+• `Const` **TASK\_DOCTOR**: ``"doctor"``
+
+#### Defined in
+
+tasks/constants.d.ts:4
+
+___
+
+### TASK\_EJECT
+
+• `Const` **TASK\_EJECT**: ``"eject"``
+
+#### Defined in
+
+tasks/constants.d.ts:58
+
+___
+
+### TASK\_EXPORT
+
+• `Const` **TASK\_EXPORT**: ``"export"``
+
+#### Defined in
+
+tasks/constants.d.ts:10
+
+___
+
+### TASK\_HELP
+
+• `Const` **TASK\_HELP**: ``"help"``
+
+#### Defined in
+
+tasks/constants.d.ts:6
+
+___
+
+### TASK\_HOOKS\_LIST
+
+• `Const` **TASK\_HOOKS\_LIST**: ``"hooks list"``
+
+#### Defined in
+
+tasks/constants.d.ts:50
+
+___
+
+### TASK\_HOOKS\_PIPES
+
+• `Const` **TASK\_HOOKS\_PIPES**: ``"hooks pipes"``
+
+#### Defined in
+
+tasks/constants.d.ts:51
+
+___
+
+### TASK\_HOOKS\_RUN
+
+• `Const` **TASK\_HOOKS\_RUN**: ``"hooks run"``
+
+#### Defined in
+
+tasks/constants.d.ts:49
+
+___
+
+### TASK\_INFO
+
+• `Const` **TASK\_INFO**: ``"info"``
+
+#### Defined in
+
+tasks/constants.d.ts:8
+
+___
+
+### TASK\_INSTALL
+
+• `Const` **TASK\_INSTALL**: ``"install"``
+
+#### Defined in
+
+tasks/constants.d.ts:18
+
+___
+
+### TASK\_KILL
+
+• `Const` **TASK\_KILL**: ``"kill"``
+
+#### Defined in
+
+tasks/constants.d.ts:57
+
+___
+
+### TASK\_LINK
+
+• `Const` **TASK\_LINK**: ``"link"``
+
+#### Defined in
+
+tasks/constants.d.ts:16
+
+___
+
+### TASK\_LOG
+
+• `Const` **TASK\_LOG**: ``"log"``
+
+#### Defined in
+
+tasks/constants.d.ts:14
+
+___
+
+### TASK\_NEW
+
+• `Const` **TASK\_NEW**: ``"new"``
+
+#### Defined in
+
+tasks/constants.d.ts:5
+
+___
+
+### TASK\_PACKAGE
+
+• `Const` **TASK\_PACKAGE**: ``"package"``
+
+#### Defined in
+
+tasks/constants.d.ts:12
+
+___
+
+### TASK\_PKG
+
+• `Const` **TASK\_PKG**: ``"pkg"``
+
+#### Defined in
+
+tasks/constants.d.ts:52
+
+___
+
+### TASK\_PLATFORM\_CONFIGURE
+
+• `Const` **TASK\_PLATFORM\_CONFIGURE**: ``"platform configure"``
+
+#### Defined in
+
+tasks/constants.d.ts:32
+
+___
+
+### TASK\_PLATFORM\_CONNECT
+
+• `Const` **TASK\_PLATFORM\_CONNECT**: ``"platform connect"``
+
+#### Defined in
+
+tasks/constants.d.ts:33
+
+___
+
+### TASK\_PLATFORM\_EJECT
+
+• `Const` **TASK\_PLATFORM\_EJECT**: ``"platform eject"``
+
+#### Defined in
+
+tasks/constants.d.ts:34
+
+___
+
+### TASK\_PLATFORM\_LIST
+
+• `Const` **TASK\_PLATFORM\_LIST**: ``"platform list"``
+
+#### Defined in
+
+tasks/constants.d.ts:35
+
+___
+
+### TASK\_PLATFORM\_SETUP
+
+• `Const` **TASK\_PLATFORM\_SETUP**: ``"platform setup"``
+
+#### Defined in
+
+tasks/constants.d.ts:36
+
+___
+
+### TASK\_PLUGIN\_ADD
+
+• `Const` **TASK\_PLUGIN\_ADD**: ``"plugin add"``
+
+#### Defined in
+
+tasks/constants.d.ts:39
+
+___
+
+### TASK\_PLUGIN\_LIST
+
+• `Const` **TASK\_PLUGIN\_LIST**: ``"plugin list"``
+
+#### Defined in
+
+tasks/constants.d.ts:40
+
+___
+
+### TASK\_PLUGIN\_UPDATE
+
+• `Const` **TASK\_PLUGIN\_UPDATE**: ``"plugin update"``
+
+#### Defined in
+
+tasks/constants.d.ts:41
+
+___
+
+### TASK\_PROJECT\_CONFIGURE
+
+• `Const` **TASK\_PROJECT\_CONFIGURE**: ``"project configure"``
+
+#### Defined in
+
+tasks/constants.d.ts:37
+
+___
+
+### TASK\_PROJECT\_UPGRADE
+
+• `Const` **TASK\_PROJECT\_UPGRADE**: ``"project upgrade"``
+
+#### Defined in
+
+tasks/constants.d.ts:38
+
+___
+
+### TASK\_PUBLISH
+
+• `Const` **TASK\_PUBLISH**: ``"publish"``
+
+#### Defined in
+
+tasks/constants.d.ts:19
+
+___
+
+### TASK\_RUN
+
+• `Const` **TASK\_RUN**: ``"run"``
+
+#### Defined in
+
+tasks/constants.d.ts:2
+
+___
+
+### TASK\_START
+
+• `Const` **TASK\_START**: ``"start"``
+
+#### Defined in
+
+tasks/constants.d.ts:9
+
+___
+
+### TASK\_STATUS
+
+• `Const` **TASK\_STATUS**: ``"status"``
+
+#### Defined in
+
+tasks/constants.d.ts:20
+
+___
+
+### TASK\_SWITCH
+
+• `Const` **TASK\_SWITCH**: ``"switch"``
+
+#### Defined in
+
+tasks/constants.d.ts:21
+
+___
+
+### TASK\_TARGET
+
+• `Const` **TASK\_TARGET**: ``"target"``
+
+#### Defined in
+
+tasks/constants.d.ts:24
+
+___
+
+### TASK\_TARGET\_LAUNCH
+
+• `Const` **TASK\_TARGET\_LAUNCH**: ``"target launch"``
+
+#### Defined in
+
+tasks/constants.d.ts:22
+
+___
+
+### TASK\_TARGET\_LIST
+
+• `Const` **TASK\_TARGET\_LIST**: ``"target list"``
+
+#### Defined in
+
+tasks/constants.d.ts:23
+
+___
+
+### TASK\_TELEMETRY\_DISABLE
+
+• `Const` **TASK\_TELEMETRY\_DISABLE**: ``"telemetry disable"``
+
+#### Defined in
+
+tasks/constants.d.ts:59
+
+___
+
+### TASK\_TELEMETRY\_ENABLE
+
+• `Const` **TASK\_TELEMETRY\_ENABLE**: ``"telemetry enable"``
+
+#### Defined in
+
+tasks/constants.d.ts:60
+
+___
+
+### TASK\_TELEMETRY\_STATUS
+
+• `Const` **TASK\_TELEMETRY\_STATUS**: ``"telemetry status"``
+
+#### Defined in
+
+tasks/constants.d.ts:61
+
+___
+
+### TASK\_TEMPLATE\_ADD
+
+• `Const` **TASK\_TEMPLATE\_ADD**: ``"template add"``
+
+#### Defined in
+
+tasks/constants.d.ts:25
+
+___
+
+### TASK\_TEMPLATE\_APPLY
+
+• `Const` **TASK\_TEMPLATE\_APPLY**: ``"template apply"``
+
+#### Defined in
+
+tasks/constants.d.ts:27
+
+___
+
+### TASK\_TEMPLATE\_LIST
+
+• `Const` **TASK\_TEMPLATE\_LIST**: ``"template list"``
+
+#### Defined in
+
+tasks/constants.d.ts:26
+
+___
+
+### TASK\_UNLINK
+
+• `Const` **TASK\_UNLINK**: ``"unlink"``
+
+#### Defined in
+
+tasks/constants.d.ts:17
+
+___
+
+### TASK\_WORKSPACE\_ADD
+
+• `Const` **TASK\_WORKSPACE\_ADD**: ``"workspace add"``
+
+#### Defined in
+
+tasks/constants.d.ts:28
+
+___
+
+### TASK\_WORKSPACE\_CONFIGURE
+
+• `Const` **TASK\_WORKSPACE\_CONFIGURE**: ``"workspace configure"``
+
+#### Defined in
+
+tasks/constants.d.ts:55
+
+___
+
+### TASK\_WORKSPACE\_CONNECT
+
+• `Const` **TASK\_WORKSPACE\_CONNECT**: ``"workspace connect"``
+
+#### Defined in
+
+tasks/constants.d.ts:29
+
+___
+
+### TASK\_WORKSPACE\_LIST
+
+• `Const` **TASK\_WORKSPACE\_LIST**: ``"workspace list"``
+
+#### Defined in
+
+tasks/constants.d.ts:30
+
+___
+
+### TASK\_WORKSPACE\_UPDATE
+
+• `Const` **TASK\_WORKSPACE\_UPDATE**: ``"workspace update"``
+
+#### Defined in
+
+tasks/constants.d.ts:31
+
+___
+
+### USER\_HOME\_DIR
+
+• `Const` **USER\_HOME\_DIR**: `string`
+
+#### Defined in
+
+context/defaults.d.ts:2
 
 ___
 
@@ -3149,7 +2470,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/is.d.ts:2
+system/is.d.ts:2
 
 ___
 
@@ -3159,7 +2480,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/is.d.ts:1
+system/is.d.ts:1
 
 ___
 
@@ -3169,7 +2490,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/is.d.ts:3
+system/is.d.ts:3
 
 ___
 
@@ -3179,13 +2500,50 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:45
+system/exec.d.ts:46
 
 ## Functions
 
+### \_getConfigProp
+
+▸ **_getConfigProp**\<`T`\>(`c`, `platform`, `key`, `defaultVal?`, `sourceObj?`): \{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`]
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends ``"id"`` \| ``"custom"`` \| ``"backgroundColor"`` \| ``"hidden"`` \| ``"title"`` \| ``"target"`` \| ``"description"`` \| ``"crypto"`` \| ``"environment"`` \| ``"env"`` \| ``"extend"`` \| ``"package"`` \| ``"projectName"`` \| ``"templateAndroid"`` \| ``"version"`` \| ``"templateXcode"`` \| ``"nextTranspileModules"`` \| ``"webpackConfig"`` \| ``"fontSources"`` \| ``"reactNativeEngine"`` \| ``"teamID"`` \| ``"provisioningProfiles"`` \| ``"pagesDir"`` \| ``"outputDir"`` \| ``"exportDir"`` \| ``"electronConfig"`` \| ``"BrowserWindow"`` \| ``"iconColor"`` \| ``"templateVSProject"`` \| ``"certificateProfile"`` \| ``"appName"`` \| ``"timestampBuildFiles"`` \| ``"devServerHost"`` \| ``"hostedShellHeaders"`` \| ``"enableAndroidX"`` \| ``"enableJetifier"`` \| ``"signingConfig"`` \| ``"minSdkVersion"`` \| ``"multipleAPKs"`` \| ``"aab"`` \| ``"extraGradleParams"`` \| ``"minifyEnabled"`` \| ``"targetSdkVersion"`` \| ``"compileSdkVersion"`` \| ``"kotlinVersion"`` \| ``"ndkVersion"`` \| ``"supportLibVersion"`` \| ``"googleServicesVersion"`` \| ``"gradleBuildToolsVersion"`` \| ``"gradleWrapperVersion"`` \| ``"excludedFeatures"`` \| ``"includedFeatures"`` \| ``"buildToolsVersion"`` \| ``"disableSigning"`` \| ``"storeFile"`` \| ``"keyAlias"`` \| ``"newArchEnabled"`` \| ``"ignoreWarnings"`` \| ``"ignoreLogs"`` \| ``"deploymentTarget"`` \| ``"orientationSupport"`` \| ``"excludedArchs"`` \| ``"urlScheme"`` \| ``"teamIdentifier"`` \| ``"scheme"`` \| ``"schemeTarget"`` \| ``"appleId"`` \| ``"provisioningStyle"`` \| ``"codeSignIdentity"`` \| ``"commandLineArguments"`` \| ``"provisionProfileSpecifier"`` \| ``"provisionProfileSpecifiers"`` \| ``"allowProvisioningUpdates"`` \| ``"codeSignIdentities"`` \| ``"systemCapabilities"`` \| ``"entitlements"`` \| ``"runScheme"`` \| ``"sdk"`` \| ``"testFlightId"`` \| ``"firebaseId"`` \| ``"exportOptions"`` \| ``"extendPlatform"`` \| ``"assetFolderPlatform"`` \| ``"engine"`` \| ``"entryFile"`` \| ``"bundleAssets"`` \| ``"enableSourceMaps"`` \| ``"bundleIsDev"`` \| ``"getJsBundleFile"`` \| ``"includedPermissions"`` \| ``"excludedPermissions"`` \| ``"idSuffix"`` \| ``"versionCode"`` \| ``"versionFormat"`` \| ``"versionCodeFormat"`` \| ``"versionCodeOffset"`` \| ``"author"`` \| ``"license"`` \| ``"includedFonts"`` \| ``"splashScreen"`` \| ``"assetSources"`` \| ``"includedPlugins"`` \| ``"excludedPlugins"`` \| ``"runtime"`` \| ``"extendsTemplate"`` \| ``"skipBootstrapCopy"`` \| ``"workspaceID"`` \| ``"projectVersion"`` \| ``"isMonorepo"`` \| ``"isTemplate"`` \| ``"defaults"`` \| ``"pipes"`` \| ``"templates"`` \| ``"currentTemplate"`` \| ``"paths"`` \| ``"permissions"`` \| ``"engines"`` \| ``"enableHookRebuild"`` \| ``"monoRoot"`` \| ``"tasks"`` \| ``"integrations"`` \| ``"skipAutoUpdate"`` \| ``"isNew"`` \| ``"storePassword"`` \| ``"keyPassword"`` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
+| `key` | `T` |
+| `defaultVal?` | \{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`] |
+| `sourceObj?` | `Partial`\<`_ConfigRootMerged`\> |
+
+#### Returns
+
+\{ `crypto?`: \{ `isOptional?`: `boolean` ; `path`: `string`  } ; `currentTemplate`: `string` ; `custom?`: `any` ; `defaults?`: \{ `defaultCommandSchemes?`: `Partial`\<`Record`\<``"run"`` \| ``"build"`` \| ``"export"``, `string`\>\> ; `portOffset?`: `number` ; `ports?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `number`\>\> ; `supportedPlatforms?`: (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] ; `targets?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\>  } ; `enableHookRebuild?`: `boolean` ; `engines?`: `Record`\<`string`, ``"source:rnv"``\> ; `env?`: `Record`\<`string`, `any`\> ; `extendsTemplate?`: `string` ; `integrations?`: `Record`\<`string`, {}\> ; `isMonorepo?`: `boolean` ; `isNew?`: `boolean` ; `isTemplate?`: `boolean` ; `monoRoot?`: `string` ; `paths?`: \{ `appConfigsDir?`: `string` ; `appConfigsDirs?`: `string`[] ; `platformAssetsDir?`: `string` ; `platformBuildsDir?`: `string` ; `platformTemplatesDirs?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, `string`\>\> ; `pluginTemplates?`: `Record`\<`string`, \{ `npm?`: `string` ; `path`: `string`  }\>  } ; `permissions?`: \{ `android?`: `Record`\<`string`, \{ `key`: `string` ; `security`: `string`  }\> ; `ios?`: `Record`\<`string`, \{ `desc`: `string`  }\>  } ; `pipes?`: `string`[] ; `projectName`: `string` ; `projectVersion`: `string` ; `runtime?`: `any` ; `skipAutoUpdate?`: `boolean` ; `tasks?`: \{ `install?`: \{ `platform?`: `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `ignore?`: `boolean` ; `ignoreTasks?`: `string`[]  }\>\> ; `script`: `string`  }  } ; `templates`: `Record`\<`string`, \{ `version`: `string`  }\> ; `workspaceID`: `string`  } & \{ `custom?`: `any` ; `extend?`: `string` ; `extendsTemplate?`: `string` ; `hidden?`: `boolean` ; `id?`: `string` ; `skipBootstrapCopy?`: `boolean`  } & \{ `keyAlias?`: `string` ; `keyPassword?`: `string` ; `storeFile?`: `string` ; `storePassword?`: `string`  } & \{ `BrowserWindow?`: \{ `height?`: `number` ; `webPreferences?`: \{ `devTools?`: `boolean`  } ; `width?`: `number`  } ; `aab?`: `boolean` ; `allowProvisioningUpdates?`: `boolean` ; `appName?`: `string` ; `appleId?`: `string` ; `assetFolderPlatform?`: `string` ; `assetSources?`: `string`[] ; `author?`: `string` ; `backgroundColor?`: `string` ; `buildToolsVersion?`: `string` ; `bundleAssets?`: `boolean` ; `bundleIsDev?`: `boolean` ; `certificateProfile?`: `string` ; `codeSignIdentities?`: `Record`\<`string`, `string`\> ; `codeSignIdentity?`: `string` ; `commandLineArguments?`: `string`[] ; `compileSdkVersion?`: `number` ; `custom?`: `any` ; `deploymentTarget?`: `string` ; `description?`: `string` ; `devServerHost?`: `string` ; `disableSigning?`: `boolean` ; `electronConfig?`: `any` ; `enableAndroidX?`: `string` \| `boolean` ; `enableJetifier?`: `string` \| `boolean` ; `enableSourceMaps?`: `boolean` ; `engine?`: `string` ; `entitlements?`: `Record`\<`string`, `string`\> ; `entryFile?`: `string` ; `environment?`: `string` ; `excludedArchs?`: `string`[] ; `excludedFeatures?`: `string`[] ; `excludedPermissions?`: `string`[] ; `excludedPlugins?`: `string`[] ; `exportDir?`: `string` ; `exportOptions?`: \{ `compileBitcode?`: `boolean` ; `method?`: `string` ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `signingCertificate?`: `string` ; `signingStyle?`: `string` ; `teamID?`: `string` ; `uploadBitcode?`: `boolean` ; `uploadSymbols?`: `boolean`  } ; `extendPlatform?`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"`` ; `extraGradleParams?`: `string` ; `firebaseId?`: `string` ; `fontSources?`: `string`[] ; `getJsBundleFile?`: `string` ; `googleServicesVersion?`: `string` ; `gradleBuildToolsVersion?`: `string` ; `gradleWrapperVersion?`: `string` ; `hostedShellHeaders?`: `string` ; `iconColor?`: `string` ; `id?`: `string` ; `idSuffix?`: `string` ; `ignoreLogs?`: `boolean` ; `ignoreWarnings?`: `boolean` ; `includedFeatures?`: `string`[] ; `includedFonts?`: `string`[] ; `includedPermissions?`: `string`[] ; `includedPlugins?`: `string`[] ; `keyAlias?`: `string` ; `kotlinVersion?`: `string` ; `license?`: `string` ; `minSdkVersion?`: `number` ; `minifyEnabled?`: `boolean` ; `multipleAPKs?`: `boolean` ; `ndkVersion?`: `string` ; `newArchEnabled?`: `boolean` ; `nextTranspileModules?`: `string`[] ; `orientationSupport?`: \{ `phone?`: `string`[] ; `tab?`: `string`[]  } ; `outputDir?`: `string` ; `package?`: `string` ; `pagesDir?`: `string` ; `provisionProfileSpecifier?`: `string` ; `provisionProfileSpecifiers?`: `Record`\<`string`, `string`\> ; `provisioningProfiles?`: `Record`\<`string`, `string`\> ; `provisioningStyle?`: `string` ; `reactNativeEngine?`: ``"jsc"`` \| ``"v8-android"`` \| ``"v8-android-nointl"`` \| ``"v8-android-jit"`` \| ``"v8-android-jit-nointl"`` \| ``"hermes"`` ; `runScheme?`: `string` ; `runtime?`: `any` ; `scheme?`: `string` ; `schemeTarget?`: `string` ; `sdk?`: `string` ; `signingConfig?`: `string` ; `splashScreen?`: `boolean` ; `storeFile?`: `string` ; `supportLibVersion?`: `string` ; `systemCapabilities?`: `Record`\<`string`, `boolean`\> ; `target?`: `string` ; `targetSdkVersion?`: `number` ; `teamID?`: `string` ; `teamIdentifier?`: `string` ; `templateAndroid?`: \{ `AndroidManifest_xml?`: \{ `android:name`: `string` ; `android:required?`: `boolean` ; `children`: `_ManifestChildType`[] ; `package?`: `string` ; `tag`: `string`  } ; `MainActivity_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `onCreate`: `string` ; `resultMethods?`: `string`[]  } ; `MainApplication_java?`: \{ `createMethods?`: `string`[] ; `imports?`: `string`[] ; `methods?`: `string`[] ; `packageParams?`: `string`[] ; `packages?`: `string`[]  } ; `SplashActivity_java?`: {} ; `app_build_gradle?`: \{ `afterEvaluate?`: `string`[] ; `apply`: `string`[] ; `buildTypes?`: \{ `debug?`: `string`[] ; `release?`: `string`[]  } ; `defaultConfig`: `string`[] ; `implementation?`: `string` ; `implementations?`: `string`[]  } ; `build_gradle?`: \{ `allprojects`: \{ `repositories`: `Record`\<`string`, `boolean`\>  } ; `buildscript`: \{ `dependencies`: `Record`\<`string`, `boolean`\> ; `repositories`: `Record`\<`string`, `boolean`\>  } ; `dexOptions`: `Record`\<`string`, `boolean`\> ; `injectAfterAll`: `string`[] ; `plugins`: `string`[]  } ; `colors_xml?`: {} ; `gradle_properties?`: `Record`\<`string`, `string` \| `number` \| `boolean`\> ; `gradle_wrapper_properties?`: {} ; `proguard_rules_pro?`: {} ; `settings_gradle?`: {} ; `strings_xml?`: {} ; `styles_xml?`: {}  } ; `templateVSProject?`: \{ `additionalMetroOptions?`: `Record`\<`string`, `any`\> ; `appPath?`: `string` ; `arch?`: `string` ; `autolink?`: `boolean` ; `build?`: `boolean` ; `buildLogDirectory?`: `string` ; `bundle?`: `boolean` ; `devPort?`: `string` ; `device?`: `boolean` ; `directDebugging?`: `boolean` ; `emulator?`: `boolean` ; `experimentalNuGetDependency?`: `boolean` ; `info?`: `boolean` ; `language?`: `string` ; `launch?`: `boolean` ; `logging?`: `boolean` ; `msbuildprops?`: `string` ; `nuGetTestFeed?`: `string` ; `nuGetTestVersion?`: `string` ; `overwrite?`: `boolean` ; `packageExtension?`: `string` ; `packager?`: `boolean` ; `proj?`: `string` ; `reactNativeEngine?`: `string` ; `release?`: `boolean` ; `remoteDebugging?`: `boolean` ; `root?`: `string` ; `singleproc?`: `boolean` ; `sln?`: `string` ; `target?`: `string` ; `telemetry?`: `boolean` ; `useWinUI3?`: `boolean`  } ; `templateXcode?`: \{ `AppDelegate_h?`: \{ `appDelegateExtensions?`: `string`[] ; `appDelegateImports?`: `string`[]  } ; `AppDelegate_mm?`: \{ `appDelegateImports?`: `string`[] ; `appDelegateMethods?`: \{ `application`: \{ `applicationDidBecomeActive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `continue`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didConnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didDisconnectCarInterfaceController`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFailToRegisterForRemoteNotificationsWithError`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didFinishLaunchingWithOptions`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceive`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didReceiveRemoteNotification`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegister`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `didRegisterForRemoteNotificationsWithDeviceToken`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `open`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `supportedInterfaceOrientationsFor`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  } ; `userNotificationCenter`: \{ `didReceiveNotificationResponse`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[] ; `willPresent`: (`string` \| \{ `order`: `number` ; `value`: `string` ; `weight`: `number`  })[]  }  }  } ; `Info_plist?`: {} ; `Podfile?`: \{ `header?`: `string`[] ; `injectLines?`: `string`[] ; `podDependencies?`: `string`[] ; `post_install?`: `string`[] ; `sources?`: `string`[] ; `staticPods?`: `string`[]  } ; `project_pbxproj?`: \{ `buildPhases?`: \{ `inputPaths`: `string`[] ; `shellPath`: `string` ; `shellScript`: `string`  }[] ; `buildSettings?`: `Record`\<`string`, `string`\> ; `frameworks?`: `string`[] ; `headerFiles?`: `string`[] ; `resourceFiles?`: `string`[] ; `sourceFiles?`: `string`[]  }  } ; `testFlightId?`: `string` ; `timestampBuildFiles?`: `string`[] ; `title?`: `string` ; `urlScheme?`: `string` ; `version?`: `string` ; `versionCode?`: `string` ; `versionCodeFormat?`: `string` ; `versionCodeOffset?`: `number` ; `versionFormat?`: `string` ; `webpackConfig?`: \{ `customScripts?`: `string`[] ; `publicUrl?`: `string`  }  }[`T`]
+
+#### Defined in
+
+context/contextProps.d.ts:8
+
+___
+
 ### applyTemplate
 
-▸ **applyTemplate**(): `Promise`\<`boolean`\>
+▸ **applyTemplate**(`c`, `selectedTemplate?`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `selectedTemplate?` | `string` |
 
 #### Returns
 
@@ -3193,7 +2551,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/templates/index.d.ts:3
+templates/index.d.ts:8
 
 ___
 
@@ -3207,7 +2565,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:3
+projects/npm.d.ts:3
 
 ___
 
@@ -3228,13 +2586,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:40
+system/fs.d.ts:41
 
 ___
 
 ### buildHooks
 
-▸ **buildHooks**(): `Promise`\<``true``\>
+▸ **buildHooks**(`c`): `Promise`\<``true``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3242,7 +2606,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/buildHooks/index.d.ts:2
+buildHooks/index.d.ts:3
 
 ___
 
@@ -3256,13 +2620,39 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:2
+logger/index.d.ts:2
 
 ___
 
-### checkAndCreateProjectPackage
+### checkAndBootstrapIfRequired
 
-▸ **checkAndCreateProjectPackage**(): `Promise`\<`boolean`\>
+▸ **checkAndBootstrapIfRequired**(`c`): `Promise`\<``true``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<``true``\>
+
+#### Defined in
+
+projects/index.d.ts:4
+
+___
+
+### checkAndCreateGitignore
+
+▸ **checkAndCreateGitignore**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3270,7 +2660,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/package.d.ts:3
+projects/index.d.ts:5
+
+___
+
+### checkAndCreateProjectPackage
+
+▸ **checkAndCreateProjectPackage**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Defined in
+
+projects/package.d.ts:2
 
 ___
 
@@ -3284,19 +2694,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/migrator/index.d.ts:1
+migrator/index.d.ts:1
 
 ___
 
 ### checkForPluginDependencies
 
-▸ **checkForPluginDependencies**(`postInjectHandler?`): `Promise`\<`void`\>
+▸ **checkForPluginDependencies**(`c`): `Promise`\<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `postInjectHandler?` | [`AsyncCallback`](modules.md#asynccallback) |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3304,13 +2714,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:11
+plugins/index.d.ts:12
 
 ___
 
 ### checkIfProjectAndNodeModulesExists
 
-▸ **checkIfProjectAndNodeModulesExists**(): `Promise`\<`void`\>
+▸ **checkIfProjectAndNodeModulesExists**(`c`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3318,7 +2734,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:1
+projects/dependencyManager.d.ts:3
+
+___
+
+### checkIfTemplateConfigured
+
+▸ **checkIfTemplateConfigured**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Defined in
+
+configs/templates.d.ts:2
 
 ___
 
@@ -3332,7 +2768,33 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:2
+projects/npm.d.ts:2
+
+___
+
+### checkRequiredPackage
+
+▸ **checkRequiredPackage**(`c`, `pkg`, `version`, `type`, `skipAsking?`, `skipInstall?`, `skipVersionCheck?`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `pkg` | `string` |
+| `version` | `string` |
+| `type` | `NpmDepKey` |
+| `skipAsking?` | `boolean` |
+| `skipInstall?` | `boolean` |
+| `skipVersionCheck?` | `boolean` |
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Defined in
+
+projects/dependencyManager.d.ts:4
 
 ___
 
@@ -3352,7 +2814,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:50
+system/fs.d.ts:51
 
 ___
 
@@ -3372,7 +2834,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:30
+system/fs.d.ts:31
 
 ___
 
@@ -3386,13 +2848,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:7
+projects/npm.d.ts:8
 
 ___
 
 ### cleanPlaformAssets
 
-▸ **cleanPlaformAssets**(): `Promise`\<`boolean`\>
+▸ **cleanPlaformAssets**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3400,20 +2868,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/assets.d.ts:5
+projects/index.d.ts:12
 
 ___
 
 ### cleanPlatformBuild
 
-▸ **cleanPlatformBuild**(`platform`, `cleanAllPlatforms?`): `Promise`\<`void`\>
+▸ **cleanPlatformBuild**(`c`, `platform`): `Promise`\<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
-| `cleanAllPlatforms?` | `boolean` |
 
 #### Returns
 
@@ -3421,7 +2889,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:7
+platforms/index.d.ts:9
 
 ___
 
@@ -3442,7 +2910,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:43
+system/exec.d.ts:44
 
 ___
 
@@ -3462,7 +2930,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:44
+system/exec.d.ts:45
 
 ___
 
@@ -3482,27 +2950,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:9
+engines/index.d.ts:10
 
 ___
 
-### configurePlugins
+### configureEntryPoint
 
-▸ **configurePlugins**(): `Promise`\<``true``\>
+▸ **configureEntryPoint**(`c`, `platform`): `Promise`\<`boolean`\>
 
-#### Returns
+#### Parameters
 
-`Promise`\<``true``\>
-
-#### Defined in
-
-@rnv/core/lib/plugins/index.d.ts:6
-
-___
-
-### configureRuntimeDefaults
-
-▸ **configureRuntimeDefaults**(): `Promise`\<`boolean`\>
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
 
@@ -3510,13 +2971,79 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/runtime.d.ts:1
+templates/index.d.ts:5
+
+___
+
+### configureFonts
+
+▸ **configureFonts**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Defined in
+
+projects/index.d.ts:6
+
+___
+
+### configurePlugins
+
+▸ **configurePlugins**(`c`): `Promise`\<``true``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<``true``\>
+
+#### Defined in
+
+plugins/index.d.ts:6
+
+___
+
+### configureRuntimeDefaults
+
+▸ **configureRuntimeDefaults**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Defined in
+
+context/runtime.d.ts:2
 
 ___
 
 ### configureTemplateFiles
 
-▸ **configureTemplateFiles**(): `Promise`\<`void`\>
+▸ **configureTemplateFiles**(`c`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3524,18 +3051,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/templates/index.d.ts:1
+templates/index.d.ts:4
 
 ___
 
 ### copyAssetsFolder
 
-▸ **copyAssetsFolder**(`subPath?`, `customFn?`): `Promise`\<`void`\>
+▸ **copyAssetsFolder**(`c`, `platform`, `subPath?`, `customFn?`): `Promise`\<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `subPath?` | `string` |
 | `customFn?` | (`c`: [`RnvContext`](modules.md#rnvcontext), `platform`: [`RnvPlatform`](modules.md#rnvplatform)) => `void` |
 
@@ -3545,13 +3074,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/assets.d.ts:4
+projects/index.d.ts:9
 
 ___
 
 ### copyBuildsFolder
 
-▸ **copyBuildsFolder**(): `Promise`\<`void`\>
+▸ **copyBuildsFolder**(`c`, `platform`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
 
@@ -3559,7 +3095,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/appConfig.d.ts:1
+projects/index.d.ts:10
 
 ___
 
@@ -3580,7 +3116,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:52
+system/fs.d.ts:53
 
 ___
 
@@ -3603,7 +3139,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:20
+system/fs.d.ts:20
 
 ___
 
@@ -3628,7 +3164,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:23
+system/fs.d.ts:23
 
 ___
 
@@ -3651,7 +3187,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:26
+system/fs.d.ts:27
 
 ___
 
@@ -3679,7 +3215,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:25
+system/fs.d.ts:26
 
 ___
 
@@ -3706,13 +3242,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:24
+system/fs.d.ts:25
 
 ___
 
 ### copyRuntimeAssets
 
-▸ **copyRuntimeAssets**(): `Promise`\<`boolean`\>
+▸ **copyRuntimeAssets**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3720,13 +3262,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/assets.d.ts:3
+projects/index.d.ts:7
 
 ___
 
 ### copySharedPlatforms
 
-▸ **copySharedPlatforms**(): `Promise`\<`void`\>
+▸ **copySharedPlatforms**(`c`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -3734,7 +3282,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:10
+platforms/index.d.ts:14
 
 ___
 
@@ -3754,38 +3302,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:13
-
-___
-
-### createDependencyMutation
-
-▸ **createDependencyMutation**(`opts`): [`DependencyMutation`](modules.md#dependencymutation)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `opts` | [`DependencyMutation`](modules.md#dependencymutation) |
-
-#### Returns
-
-[`DependencyMutation`](modules.md#dependencymutation)
-
-#### Defined in
-
-@rnv/core/lib/projects/mutations.d.ts:2
+plugins/index.d.ts:14
 
 ___
 
 ### createPlatformBuild
 
-▸ **createPlatformBuild**(`platform`): `Promise`\<`void`\>
+▸ **createPlatformBuild**(`c`, `platform`): `Promise`\<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
@@ -3794,7 +3323,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:8
+platforms/index.d.ts:10
 
 ___
 
@@ -3809,7 +3338,7 @@ ___
 | `_api?` | `Object` |
 | `_api.analytics` | [`RnvContextAnalytics`](modules.md#rnvcontextanalytics) |
 | `_api.doResolve` | [`DoResolveFn`](modules.md#doresolvefn) |
-| `_api.getConfigProp` | \<T\>(`key`: `T`, `defaultVal?`: [`ConfigPlatformSchemaFragment`](modules.md#configplatformschemafragment)[`T`], `obj?`: `Partial`\<[`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\>) => [`ConfigPlatformSchemaFragment`](modules.md#configplatformschemafragment)[`T`] |
+| `_api.getConfigProp` | [`GetConfigPropFn`](modules.md#getconfigpropfn) |
 | `_api.logger` | [`RnvApiLogger`](modules.md#rnvapilogger) |
 | `_api.prompt` | [`RnvApiPrompt`](modules.md#rnvapiprompt) |
 | `_api.spinner` | [`RnvApiSpinner`](modules.md#rnvapispinner) |
@@ -3820,19 +3349,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:3
+api/index.d.ts:3
 
 ___
 
 ### createRnvContext
 
-▸ **createRnvContext**(`ctxOpts?`): `void`
+▸ **createRnvContext**(`ctx?`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `ctxOpts?` | [`CreateContextOptions`](modules.md#createcontextoptions) |
+| `ctx?` | [`CreateContextOptions`](modules.md#createcontextoptions) |
 
 #### Returns
 
@@ -3840,136 +3369,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/index.d.ts:3
-
-___
-
-### createRnvEngine
-
-▸ **createRnvEngine**\<`OKey`\>(`opts`): [`RnvEngine`](modules.md#rnvengine)\<`OKey`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `opts` | [`CreateRnvEngineOpts`](modules.md#creaternvengineopts)\<`OKey`\> |
-
-#### Returns
-
-[`RnvEngine`](modules.md#rnvengine)\<`OKey`\>
-
-#### Defined in
-
-@rnv/core/lib/engines/creator.d.ts:2
-
-___
-
-### createRnvIntegration
-
-▸ **createRnvIntegration**\<`OKey`\>(`opts`): [`RnvIntegration`](modules.md#rnvintegration)\<`OKey`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `opts` | [`CreateRnvIntegrationOpts`](modules.md#creaternvintegrationopts)\<`OKey`\> |
-
-#### Returns
-
-[`RnvIntegration`](modules.md#rnvintegration)\<`OKey`\>
-
-#### Defined in
-
-@rnv/core/lib/integrations/creator.d.ts:2
-
-___
-
-### createRnvSDK
-
-▸ **createRnvSDK**\<`OKey`\>(`opts`): [`RnvSdk`](modules.md#rnvsdk)\<`OKey`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `opts` | [`CreateRnvSdkOpts`](modules.md#creaternvsdkopts)\<`OKey`\> |
-
-#### Returns
-
-[`RnvSdk`](modules.md#rnvsdk)\<`OKey`\>
-
-#### Defined in
-
-@rnv/core/lib/sdks/creator.d.ts:2
-
-___
-
-### createTask
-
-▸ **createTask**\<`OKey`\>(`task`): [`RnvTask`](modules.md#rnvtask)\<`OKey`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `task` | [`CreateRnvTaskOpt`](modules.md#creaternvtaskopt)\<`OKey`\> |
-
-#### Returns
-
-[`RnvTask`](modules.md#rnvtask)\<`OKey`\>
-
-#### Defined in
-
-@rnv/core/lib/tasks/creators.d.ts:2
-
-___
-
-### createTaskOptionsMap
-
-▸ **createTaskOptionsMap**(): `void`
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-@rnv/core/lib/tasks/creators.d.ts:3
+context/index.d.ts:3
 
 ___
 
 ### createWorkspace
 
-▸ **createWorkspace**(`workspaceID`, `workspacePath`): `Promise`\<``true``\>
+▸ **createWorkspace**(`c`, `workspaceID`, `workspacePath`): `Promise`\<``true``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `workspaceID` | `string` |
 | `workspacePath` | `string` |
 
@@ -3979,7 +3391,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:3
+configs/workspaces.d.ts:3
 
 ___
 
@@ -4012,7 +3424,7 @@ will be treated as a filepath from root of resolved package (i.e. will ignore su
 
 #### Defined in
 
-@rnv/core/lib/system/resolve.d.ts:18
+system/resolve.d.ts:18
 
 ___
 
@@ -4035,18 +3447,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/resolve.d.ts:19
+system/resolve.d.ts:19
 
 ___
 
 ### ejectPlatform
 
-▸ **ejectPlatform**(`platform`): `void`
+▸ **ejectPlatform**(`c`, `platform`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | `string` |
 
 #### Returns
@@ -4055,13 +3468,13 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:11
+platforms/index.d.ts:15
 
 ___
 
 ### execCLI
 
-▸ **execCLI**(`cli`, `command`, `opts?`): `Promise`\<`string`\>
+▸ **execCLI**(`c`, `cli`, `command`, `opts?`): `Promise`\<`string`\>
 
 Execute CLI command
 
@@ -4069,6 +3482,7 @@ Execute CLI command
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) | the trusty old c object |
 | `cli` | `string` | the cli to be executed |
 | `command` | `string` | the command to be executed |
 | `opts?` | [`ExecOptions`](modules.md#execoptions) | the options for the command |
@@ -4079,7 +3493,7 @@ Execute CLI command
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:20
+system/exec.d.ts:21
 
 ___
 
@@ -4100,22 +3514,23 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:31
+system/exec.d.ts:32
 
 ___
 
 ### executeAsync
 
-▸ **executeAsync**(`cmd`, `opts?`): `Promise`\<`string`\>
+▸ **executeAsync**(`_c`, `_cmd?`, `_opts?`): `Promise`\<`string`\>
 
 Execute a plain command
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `cmd` | `string` \| `string`[] | - |
-| `opts?` | [`ExecOptions`](modules.md#execoptions) | the options for the command |
+| Name | Type |
+| :------ | :------ |
+| `_c` | `string` \| `string`[] \| [`RnvContext`](modules.md#rnvcontext) |
+| `_cmd?` | `string` \| `string`[] \| [`ExecOptions`](modules.md#execoptions) |
+| `_opts?` | [`ExecOptions`](modules.md#execoptions) |
 
 #### Returns
 
@@ -4123,18 +3538,67 @@ Execute a plain command
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:30
+system/exec.d.ts:31
 
 ___
 
-### executePipe
+### executeEngineTask
 
-▸ **executePipe**(`key`): `Promise`\<`void`\>
+▸ **executeEngineTask**(`c`, `task`, `parentTask?`, `originTask?`, `tasks?`, `isFirstTask?`): `Promise`\<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `task` | `string` |
+| `parentTask?` | `string` |
+| `originTask?` | `string` |
+| `tasks?` | `Record`\<`string`, [`RnvTask`](modules.md#rnvtask)\> |
+| `isFirstTask?` | `boolean` |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+tasks/index.d.ts:10
+
+___
+
+### executeOrSkipTask
+
+▸ **executeOrSkipTask**(`c`, `task`, `parentTask`, `originTask?`): `Promise`\<`undefined`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `task` | `string` |
+| `parentTask` | `string` |
+| `originTask?` | `string` |
+
+#### Returns
+
+`Promise`\<`undefined`\>
+
+#### Defined in
+
+tasks/index.d.ts:8
+
+___
+
+### executePipe
+
+▸ **executePipe**(`c`, `key`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `key` | `string` |
 
 #### Returns
@@ -4143,40 +3607,37 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/buildHooks/index.d.ts:1
+buildHooks/index.d.ts:2
 
 ___
 
 ### executeRnvCore
 
-▸ **executeRnvCore**(): `Promise`\<`boolean`\>
+▸ **executeRnvCore**(): `Promise`\<`void`\>
 
 #### Returns
 
-`Promise`\<`boolean`\>
+`Promise`\<`void`\>
 
 #### Defined in
 
-@rnv/core/lib/runner.d.ts:2
+runner.d.ts:1
 
 ___
 
 ### executeTask
 
-▸ **executeTask**(`opts`): `Promise`\<`undefined`\>
+▸ **executeTask**(`c`, `task`, `parentTask?`, `originTask?`, `isFirstTask?`): `Promise`\<`undefined`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `opts` | `Object` |
-| `opts.alternativeTaskInOnlyMode?` | `string` |
-| `opts.isFirstTask?` | `boolean` |
-| `opts.isOptional?` | `boolean` |
-| `opts.originTaskName?` | `string` |
-| `opts.parentTaskName?` | `string` |
-| `opts.skipInOnlyMode?` | `boolean` |
-| `opts.taskName` | `string` |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `task` | `string` |
+| `parentTask?` | `string` |
+| `originTask?` | `string` |
+| `isFirstTask?` | `boolean` |
 
 #### Returns
 
@@ -4184,13 +3645,13 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/taskExecutors.d.ts:2
+tasks/index.d.ts:7
 
 ___
 
 ### executeTelnet
 
-▸ **executeTelnet**(`port`, `command`): `Promise`\<`string`\>
+▸ **executeTelnet**(`c`, `port`, `command`): `Promise`\<`string`\>
 
 Connect to a local telnet server and execute a command
 
@@ -4198,6 +3659,7 @@ Connect to a local telnet server and execute a command
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) | - |
 | `port` | `string` | where do you want me to connect to? |
 | `command` | `string` | the command to be executed once I'm connected |
 
@@ -4207,54 +3669,20 @@ Connect to a local telnet server and execute a command
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:41
-
-___
-
-### exitRnvCore
-
-▸ **exitRnvCore**(`code`): `Promise`\<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `code` | `number` |
-
-#### Returns
-
-`Promise`\<`void`\>
-
-#### Defined in
-
-@rnv/core/lib/runner.d.ts:1
-
-___
-
-### extractSingleExecutableTask
-
-▸ **extractSingleExecutableTask**(`suitableTasks`, `taskName`): `Promise`\<[`RnvTask`](modules.md#rnvtask)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `suitableTasks` | [`RnvTask`](modules.md#rnvtask)[] |
-| `taskName` | `string` |
-
-#### Returns
-
-`Promise`\<[`RnvTask`](modules.md#rnvtask)\>
-
-#### Defined in
-
-@rnv/core/lib/tasks/taskFinder.d.ts:7
+system/exec.d.ts:42
 
 ___
 
 ### findSuitableTask
 
-▸ **findSuitableTask**(): `Promise`\<[`RnvTask`](modules.md#rnvtask)\>
+▸ **findSuitableTask**(`c`, `specificTask?`): `Promise`\<[`RnvTask`](modules.md#rnvtask)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `specificTask?` | `string` |
 
 #### Returns
 
@@ -4262,32 +3690,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/taskFinder.d.ts:2
-
-___
-
-### findTasksByTaskName
-
-▸ **findTasksByTaskName**(`taskName`): `Object`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `taskName` | `string` |
-
-#### Returns
-
-`Object`
-
-| Name | Type |
-| :------ | :------ |
-| `available` | [`RnvTask`](modules.md#rnvtask)\<`string`\>[] |
-| `match` | [`RnvTask`](modules.md#rnvtask)[] |
-
-#### Defined in
-
-@rnv/core/lib/tasks/taskFinder.d.ts:3
+tasks/index.d.ts:6
 
 ___
 
@@ -4308,7 +3711,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/formatter/index.d.ts:2
+doctor/index.d.ts:2
 
 ___
 
@@ -4328,7 +3731,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/formatter/index.d.ts:3
+doctor/index.d.ts:3
 
 ___
 
@@ -4349,7 +3752,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:48
+system/fs.d.ts:49
 
 ___
 
@@ -4370,7 +3773,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:12
+system/fs.d.ts:12
 
 ___
 
@@ -4391,7 +3794,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:7
+system/fs.d.ts:7
 
 ___
 
@@ -4411,7 +3814,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:8
+system/fs.d.ts:8
 
 ___
 
@@ -4431,7 +3834,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:10
+system/fs.d.ts:10
 
 ___
 
@@ -4451,7 +3854,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:15
+system/fs.d.ts:15
 
 ___
 
@@ -4472,7 +3875,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:18
+system/fs.d.ts:18
 
 ___
 
@@ -4492,7 +3895,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:11
+system/fs.d.ts:11
 
 ___
 
@@ -4513,7 +3916,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:19
+system/fs.d.ts:19
 
 ___
 
@@ -4533,7 +3936,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:9
+system/fs.d.ts:9
 
 ___
 
@@ -4554,7 +3957,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:13
+system/fs.d.ts:13
 
 ___
 
@@ -4574,7 +3977,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:14
+system/fs.d.ts:14
 
 ___
 
@@ -4595,7 +3998,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:17
+system/fs.d.ts:17
 
 ___
 
@@ -4615,7 +4018,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:16
+system/fs.d.ts:16
 
 ___
 
@@ -4637,13 +4040,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:6
+system/fs.d.ts:6
 
 ___
 
 ### generateBuildConfig
 
-▸ **generateBuildConfig**(): `void`
+▸ **generateBuildConfig**(`_c?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `_c?` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -4651,7 +4060,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/buildConfig.d.ts:1
+configs/buildConfig.d.ts:2
 
 ___
 
@@ -4665,7 +4074,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/defaults.d.ts:8
+context/defaults.d.ts:9
 
 ___
 
@@ -4687,7 +4096,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/index.d.ts:2
+context/index.d.ts:2
 
 ___
 
@@ -4701,7 +4110,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/defaults.d.ts:2
+logger/defaults.d.ts:2
 
 ___
 
@@ -4716,16 +4125,16 @@ ___
 | `exts` | `string`[] |
 | `config` | `Object` |
 | `config.custom?` | `any` |
-| `config.engineExtension?` | `string` |
-| `config.id?` | `string` |
+| `config.engineExtension` | `string` |
+| `config.extends?` | `string` |
+| `config.id` | `string` |
 | `config.npm?` | `Object` |
 | `config.npm.dependencies?` | `Record`\<`string`, `string`\> |
 | `config.npm.devDependencies?` | `Record`\<`string`, `string`\> |
 | `config.npm.optionalDependencies?` | `Record`\<`string`, `string`\> |
 | `config.npm.peerDependencies?` | `Record`\<`string`, `string`\> |
-| `config.overview?` | `string` |
-| `config.packageName?` | `string` |
-| `config.platforms?` | `Partial`\<`Record`\<``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> |
+| `config.overview` | `string` |
+| `config.platforms?` | `Partial`\<`Record`\<``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``, \{ `engine?`: `string` ; `npm?`: \{ `dependencies?`: `Record`\<`string`, `string`\> ; `devDependencies?`: `Record`\<`string`, `string`\> ; `optionalDependencies?`: `Record`\<`string`, `string`\> ; `peerDependencies?`: `Record`\<`string`, `string`\>  }  }\>\> |
 | `config.plugins?` | `Record`\<`string`, `string`\> |
 
 #### Returns
@@ -4734,18 +4143,39 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:8
+engines/index.d.ts:8
 
 ___
 
-### generateLocalConfig
+### generateEngineTasks
 
-▸ **generateLocalConfig**(`resetAppId?`): `void`
+▸ **generateEngineTasks**(`taskArr`): [`RnvTaskMap`](modules.md#rnvtaskmap)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `taskArr` | [`RnvTask`](modules.md#rnvtask)[] |
+
+#### Returns
+
+[`RnvTaskMap`](modules.md#rnvtaskmap)
+
+#### Defined in
+
+engines/index.d.ts:9
+
+___
+
+### generateLocalConfig
+
+▸ **generateLocalConfig**(`c`, `resetAppId?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `resetAppId?` | `boolean` |
 
 #### Returns
@@ -4754,7 +4184,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configLocal.d.ts:1
+configs/configLocal.d.ts:2
 
 ___
 
@@ -4768,7 +4198,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/schemaManager.d.ts:1
+schema/schemaManager.d.ts:1
 
 ___
 
@@ -4791,13 +4221,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:13
+api/index.d.ts:13
 
 ___
 
 ### generatePlatformAssetsRuntimeConfig
 
-▸ **generatePlatformAssetsRuntimeConfig**(): `Promise`\<`boolean`\>
+▸ **generatePlatformAssetsRuntimeConfig**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -4805,27 +4241,39 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/platformAssets.d.ts:1
+configs/platformAssets.d.ts:2
 
 ___
 
 ### generatePlatformChoices
 
-▸ **generatePlatformChoices**(): \{ `isConnected`: `boolean` ; `name`: `string` ; `value`: ``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``  }[]
+▸ **generatePlatformChoices**(`c`): \{ `isConnected`: `boolean` ; `name`: `string` ; `value`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``  }[]
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
-\{ `isConnected`: `boolean` ; `name`: `string` ; `value`: ``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``  }[]
+\{ `isConnected`: `boolean` ; `name`: `string` ; `value`: ``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``  }[]
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:2
+platforms/index.d.ts:4
 
 ___
 
 ### generatePlatformTemplatePaths
 
-▸ **generatePlatformTemplatePaths**(): `void`
+▸ **generatePlatformTemplatePaths**(`c`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -4833,7 +4281,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProject.d.ts:7
+configs/configProject.d.ts:8
 
 ___
 
@@ -4853,7 +4301,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/defaults.d.ts:3
+context/defaults.d.ts:4
 
 ___
 
@@ -4867,56 +4315,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/defaults.d.ts:2
+context/defaults.d.ts:3
 
 ___
 
-### generateRnvTaskMap
+### getAllSuitableTasks
 
-▸ **generateRnvTaskMap**\<`OKey`\>(`taskArr`, `config`): [`RnvTaskMap`](modules.md#rnvtaskmap)\<`OKey`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `OKey` | extends `string` |
+▸ **getAllSuitableTasks**(`c`): `Record`\<`string`, [`TaskOption`](modules.md#taskoption)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `taskArr` | readonly [`RnvTask`](modules.md#rnvtask)\<`OKey`\>[] |
-| `config` | `Object` |
-| `config.name?` | `string` |
-| `config.packageName?` | `string` |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
-[`RnvTaskMap`](modules.md#rnvtaskmap)\<`OKey`\>
+`Record`\<`string`, [`TaskOption`](modules.md#taskoption)\>
 
 #### Defined in
 
-@rnv/core/lib/tasks/taskHelpers.d.ts:4
-
-___
-
-### generateStringFromTaskOption
-
-▸ **generateStringFromTaskOption**(`opt`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `opt` | [`RnvTaskOption`](modules.md#rnvtaskoption) |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-@rnv/core/lib/tasks/taskHelpers.d.ts:8
+tasks/index.d.ts:5
 
 ___
 
@@ -4930,18 +4349,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/provider.d.ts:2
+api/provider.d.ts:2
 
 ___
 
 ### getAppConfigBuildsFolder
 
-▸ **getAppConfigBuildsFolder**(`customPath?`): `string`
+▸ **getAppConfigBuildsFolder**(`c`, `platform`, `customPath?`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `customPath?` | `string` |
 
 #### Returns
@@ -4950,18 +4371,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/contextProps.d.ts:9
+context/contextProps.d.ts:783
 
 ___
 
 ### getAppFolder
 
-▸ **getAppFolder**(`isRelativePath?`): `string`
+▸ **getAppFolder**(`c`, `isRelativePath?`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `isRelativePath?` | `boolean` |
 
 #### Returns
@@ -4970,83 +4392,56 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/contextProps.d.ts:7
+context/contextProps.d.ts:781
 
 ___
 
 ### getConfigProp
 
-▸ **getConfigProp**\<`T`, `K`\>(`key`, `obj?`): [`GetConfigPropVal`](modules.md#getconfigpropval)\<`T`, `K`\>
+▸ **getConfigProp**\<`T`\>(`c`, `platform`, `key`, `defaultVal?`): [`ConfigProp`](modules.md#configprop)[`T`]
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | `T` |
-| `K` | extends `string` \| `number` \| `symbol` |
+| `T` | extends ``"id"`` \| ``"custom"`` \| ``"backgroundColor"`` \| ``"hidden"`` \| ``"title"`` \| ``"target"`` \| ``"description"`` \| ``"crypto"`` \| ``"environment"`` \| ``"env"`` \| ``"extend"`` \| ``"package"`` \| ``"projectName"`` \| ``"templateAndroid"`` \| ``"version"`` \| ``"templateXcode"`` \| ``"nextTranspileModules"`` \| ``"webpackConfig"`` \| ``"fontSources"`` \| ``"reactNativeEngine"`` \| ``"teamID"`` \| ``"provisioningProfiles"`` \| ``"pagesDir"`` \| ``"outputDir"`` \| ``"exportDir"`` \| ``"electronConfig"`` \| ``"BrowserWindow"`` \| ``"iconColor"`` \| ``"templateVSProject"`` \| ``"certificateProfile"`` \| ``"appName"`` \| ``"timestampBuildFiles"`` \| ``"devServerHost"`` \| ``"hostedShellHeaders"`` \| ``"enableAndroidX"`` \| ``"enableJetifier"`` \| ``"signingConfig"`` \| ``"minSdkVersion"`` \| ``"multipleAPKs"`` \| ``"aab"`` \| ``"extraGradleParams"`` \| ``"minifyEnabled"`` \| ``"targetSdkVersion"`` \| ``"compileSdkVersion"`` \| ``"kotlinVersion"`` \| ``"ndkVersion"`` \| ``"supportLibVersion"`` \| ``"googleServicesVersion"`` \| ``"gradleBuildToolsVersion"`` \| ``"gradleWrapperVersion"`` \| ``"excludedFeatures"`` \| ``"includedFeatures"`` \| ``"buildToolsVersion"`` \| ``"disableSigning"`` \| ``"storeFile"`` \| ``"keyAlias"`` \| ``"newArchEnabled"`` \| ``"ignoreWarnings"`` \| ``"ignoreLogs"`` \| ``"deploymentTarget"`` \| ``"orientationSupport"`` \| ``"excludedArchs"`` \| ``"urlScheme"`` \| ``"teamIdentifier"`` \| ``"scheme"`` \| ``"schemeTarget"`` \| ``"appleId"`` \| ``"provisioningStyle"`` \| ``"codeSignIdentity"`` \| ``"commandLineArguments"`` \| ``"provisionProfileSpecifier"`` \| ``"provisionProfileSpecifiers"`` \| ``"allowProvisioningUpdates"`` \| ``"codeSignIdentities"`` \| ``"systemCapabilities"`` \| ``"entitlements"`` \| ``"runScheme"`` \| ``"sdk"`` \| ``"testFlightId"`` \| ``"firebaseId"`` \| ``"exportOptions"`` \| ``"extendPlatform"`` \| ``"assetFolderPlatform"`` \| ``"engine"`` \| ``"entryFile"`` \| ``"bundleAssets"`` \| ``"enableSourceMaps"`` \| ``"bundleIsDev"`` \| ``"getJsBundleFile"`` \| ``"includedPermissions"`` \| ``"excludedPermissions"`` \| ``"idSuffix"`` \| ``"versionCode"`` \| ``"versionFormat"`` \| ``"versionCodeFormat"`` \| ``"versionCodeOffset"`` \| ``"author"`` \| ``"license"`` \| ``"includedFonts"`` \| ``"splashScreen"`` \| ``"assetSources"`` \| ``"includedPlugins"`` \| ``"excludedPlugins"`` \| ``"runtime"`` \| ``"extendsTemplate"`` \| ``"skipBootstrapCopy"`` \| ``"workspaceID"`` \| ``"projectVersion"`` \| ``"isMonorepo"`` \| ``"isTemplate"`` \| ``"defaults"`` \| ``"pipes"`` \| ``"templates"`` \| ``"currentTemplate"`` \| ``"paths"`` \| ``"permissions"`` \| ``"engines"`` \| ``"enableHookRebuild"`` \| ``"monoRoot"`` \| ``"tasks"`` \| ``"integrations"`` \| ``"skipAutoUpdate"`` \| ``"isNew"`` \| ``"storePassword"`` \| ``"keyPassword"`` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `key` | `K` |
-| `obj?` | `Partial`\<[`ConfigFileBuildConfig`](modules.md#configfilebuildconfig)\> |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
+| `key` | `T` |
+| `defaultVal?` | [`ConfigProp`](modules.md#configprop)[`T`] |
 
 #### Returns
 
-[`GetConfigPropVal`](modules.md#getconfigpropval)\<`T`, `K`\>
+[`ConfigProp`](modules.md#configprop)[`T`]
 
 #### Defined in
 
-@rnv/core/lib/context/contextProps.d.ts:4
-
-___
-
-### getConfigRootProp
-
-▸ **getConfigRootProp**\<`T`, `K`\>(`key`): [`GetConfigRootPropVal`](modules.md#getconfigrootpropval)\<`T`, `K`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `T` |
-| `K` | extends `string` \| `number` \| `symbol` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `key` | `K` |
-
-#### Returns
-
-[`GetConfigRootPropVal`](modules.md#getconfigrootpropval)\<`T`, `K`\>
-
-#### Defined in
-
-@rnv/core/lib/context/contextProps.d.ts:3
+context/contextProps.d.ts:7
 
 ___
 
 ### getContext
 
-▸ **getContext**\<`C`, `T`\>(): [`RnvContext`](modules.md#rnvcontext)\<`C`, `T`\>
+▸ **getContext**\<`C`\>(): [`RnvContext`](modules.md#rnvcontext)\<`C`\>
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `C` | `any` |
-| `T` | extends `string` = ``"filter"`` \| ``"platform"`` \| ``"port"`` \| ``"reset"`` \| ``"target"`` \| ``"host"`` \| ``"json"`` \| ``"unlinked"`` \| ``"engine"`` \| ``"scheme"`` \| ``"debug"`` \| ``"device"`` \| ``"info"`` \| ``"help"`` \| ``"only"`` \| ``"ci"`` \| ``"mono"`` \| ``"yes"`` \| ``"hooks"`` \| ``"hosted"`` \| ``"printExec"`` \| ``"skipTasks"`` \| ``"maxErrorLength"`` \| ``"telemetryDebug"`` \| ``"packageManager"`` \| ``"npxMode"`` \| ``"configName"`` \| ``"skipDependencyCheck"`` \| ``"appConfigID"`` \| ``"skipRnvCheck"`` \| ``"exeMethod"`` \| ``"resetHard"`` \| ``"resetAssets"`` \| ``"hostIp"`` \| ``"debugIp"`` \| ``"skipTargetCheck"`` \| ``"resetAdb"`` |
 
 #### Returns
 
-[`RnvContext`](modules.md#rnvcontext)\<`C`, `T`\>
+[`RnvContext`](modules.md#rnvcontext)\<`C`\>
 
 #### Defined in
 
-@rnv/core/lib/context/provider.d.ts:2
+context/provider.d.ts:2
 
 ___
 
@@ -5066,7 +4461,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:5
+logger/index.d.ts:5
 
 ___
 
@@ -5086,19 +4481,22 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:49
+system/fs.d.ts:50
 
 ___
 
-### getEngineRunnerByOwnerID
+### getEngineRunner
 
-▸ **getEngineRunnerByOwnerID**(`task`): [`RnvEngine`](modules.md#rnvengine)
+▸ **getEngineRunner**(`c`, `task`, `customTasks?`, `failOnMissingEngine?`): [`RnvEngine`](modules.md#rnvengine)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `task` | [`RnvTask`](modules.md#rnvtask) |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `task` | `string` |
+| `customTasks?` | [`RnvTaskMap`](modules.md#rnvtaskmap) |
+| `failOnMissingEngine?` | `boolean` |
 
 #### Returns
 
@@ -5106,18 +4504,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:17
+engines/index.d.ts:20
 
 ___
 
 ### getEngineRunnerByPlatform
 
-▸ **getEngineRunnerByPlatform**(`platform`, `ignoreMissingError?`): [`RnvEngine`](modules.md#rnvengine)
+▸ **getEngineRunnerByPlatform**(`c`, `platform`, `ignoreMissingError?`): [`RnvEngine`](modules.md#rnvengine)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `ignoreMissingError?` | `boolean` |
 
@@ -5127,18 +4526,63 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:16
+engines/index.d.ts:16
 
 ___
 
-### getEngineTemplateByPlatform
+### getEngineSubTasks
 
-▸ **getEngineTemplateByPlatform**(`platform`): [`RnvEngineTemplate`](modules.md#rnvenginetemplate)
+▸ **getEngineSubTasks**(`task`, `tasks`, `exactMatch?`): [`RnvTask`](modules.md#rnvtask)[]
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `task` | `string` |
+| `tasks` | [`RnvTaskMap`](modules.md#rnvtaskmap) |
+| `exactMatch?` | `boolean` |
+
+#### Returns
+
+[`RnvTask`](modules.md#rnvtask)[]
+
+#### Defined in
+
+engines/index.d.ts:19
+
+___
+
+### getEngineTask
+
+▸ **getEngineTask**(`task`, `tasks?`, `customTasks?`): [`RnvTask`](modules.md#rnvtask)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `task` | `string` |
+| `tasks?` | [`RnvTaskMap`](modules.md#rnvtaskmap) |
+| `customTasks?` | [`RnvTaskMap`](modules.md#rnvtaskmap) |
+
+#### Returns
+
+[`RnvTask`](modules.md#rnvtask)
+
+#### Defined in
+
+engines/index.d.ts:17
+
+___
+
+### getEngineTemplateByPlatform
+
+▸ **getEngineTemplateByPlatform**(`c`, `platform`): [`RnvEngineTemplate`](modules.md#rnvenginetemplate)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
@@ -5147,7 +4591,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/engines.d.ts:3
+configs/engines.d.ts:4
 
 ___
 
@@ -5167,13 +4611,13 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:46
+system/fs.d.ts:47
 
 ___
 
 ### getFlavouredProp
 
-▸ **getFlavouredProp**\<`T`, `K`\>(`obj`, `key`): `T`[`K`]
+▸ **getFlavouredProp**\<`T`, `K`\>(`c`, `obj`, `key`): `T`[`K`]
 
 #### Type parameters
 
@@ -5186,6 +4630,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `obj` | `T` |
 | `key` | `K` |
 
@@ -5195,7 +4640,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/contextProps.d.ts:5
+context/contextProps.d.ts:779
+
+___
+
+### getInstalledTemplateOptions
+
+▸ **getInstalledTemplateOptions**(`c`): [`PromptOptions`](modules.md#promptoptions)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+[`PromptOptions`](modules.md#promptoptions)
+
+#### Defined in
+
+templates/index.d.ts:6
 
 ___
 
@@ -5218,7 +4683,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:16
+plugins/index.d.ts:17
 
 ___
 
@@ -5239,13 +4704,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:5
+plugins/index.d.ts:5
 
 ___
 
 ### getPlatformProjectDir
 
-▸ **getPlatformProjectDir**(): `string`
+▸ **getPlatformProjectDir**(`c`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5253,18 +4724,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/contextProps.d.ts:8
+context/contextProps.d.ts:782
 
 ___
 
 ### getRealPath
 
-▸ **getRealPath**(`p`, `key?`, `original?`): `string`
+▸ **getRealPath**(`c`, `p`, `key?`, `original?`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `p` | `string` |
 | `key?` | `string` |
 | `original?` | `string` |
@@ -5275,13 +4747,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:39
+system/fs.d.ts:40
 
 ___
 
 ### getRegisteredEngines
 
-▸ **getRegisteredEngines**(): [`RnvEngine`](modules.md#rnvengine)[]
+▸ **getRegisteredEngines**(`c`): [`RnvEngine`](modules.md#rnvengine)[]
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5289,21 +4767,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:18
-
-___
-
-### getRegisteredTasks
-
-▸ **getRegisteredTasks**(): [`RnvTaskMap`](modules.md#rnvtaskmap)
-
-#### Returns
-
-[`RnvTaskMap`](modules.md#rnvtaskmap)
-
-#### Defined in
-
-@rnv/core/lib/tasks/taskRegistry.d.ts:3
+engines/index.d.ts:21
 
 ___
 
@@ -5324,27 +4788,41 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:51
+system/fs.d.ts:52
 
 ___
 
-### getTaskNameFromCommand
+### getTemplateOptions
 
-▸ **getTaskNameFromCommand**(): `string`
+▸ **getTemplateOptions**(`c`, `isGlobalScope?`): [`PromptOptions`](modules.md#promptoptions)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `isGlobalScope?` | `boolean` |
 
 #### Returns
 
-`string`
+[`PromptOptions`](modules.md#promptoptions)
 
 #### Defined in
 
-@rnv/core/lib/tasks/taskHelpers.d.ts:3
+configs/templates.d.ts:3
 
 ___
 
 ### getTimestampPathsConfig
 
-▸ **getTimestampPathsConfig**(): [`TimestampPathsConfig`](modules.md#timestamppathsconfig)
+▸ **getTimestampPathsConfig**(`c`, `platform`): [`TimestampPathsConfig`](modules.md#timestamppathsconfig)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 
 #### Returns
 
@@ -5352,7 +4830,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/context/contextProps.d.ts:6
+context/contextProps.d.ts:780
 
 ___
 
@@ -5376,7 +4854,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:5
+configs/workspaces.d.ts:5
 
 ___
 
@@ -5396,13 +4874,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:4
+configs/workspaces.d.ts:4
 
 ___
 
 ### getWorkspaceOptions
 
-▸ **getWorkspaceOptions**(): [`PromptOptions`](modules.md#promptoptions)
+▸ **getWorkspaceOptions**(`c`): [`PromptOptions`](modules.md#promptoptions)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5410,21 +4894,29 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:6
+configs/workspaces.d.ts:6
 
 ___
 
-### handleMutations
+### hasEngineTask
 
-▸ **handleMutations**(): `Promise`\<`boolean`\>
+▸ **hasEngineTask**(`task`, `tasks`, `isProjectScope?`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `task` | `string` |
+| `tasks` | [`RnvTaskMap`](modules.md#rnvtaskmap) |
+| `isProjectScope?` | `boolean` |
 
 #### Returns
 
-`Promise`\<`boolean`\>
+`boolean`
 
 #### Defined in
 
-@rnv/core/lib/projects/mutations.d.ts:3
+engines/index.d.ts:18
 
 ___
 
@@ -5444,19 +4936,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:15
+plugins/index.d.ts:16
 
 ___
 
 ### initializeTask
 
-▸ **initializeTask**(`taskInstance`): `Promise`\<`boolean`\>
+▸ **initializeTask**(`c`, `task`): `Promise`\<`boolean`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `taskInstance` | [`RnvTask`](modules.md#rnvtask) |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `task` | `string` |
 
 #### Returns
 
@@ -5464,7 +4957,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/taskExecutors.d.ts:11
+tasks/index.d.ts:4
+
+___
+
+### injectPlatformDependencies
+
+▸ **injectPlatformDependencies**(`c`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+projects/dependencyManager.d.ts:5
 
 ___
 
@@ -5484,7 +4997,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:11
+api/index.d.ts:11
 
 ___
 
@@ -5504,38 +5017,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/api/index.d.ts:12
-
-___
-
-### installEngines
-
-▸ **installEngines**(`failOnMissingDeps?`): `Promise`\<`boolean`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `failOnMissingDeps?` | `boolean` |
-
-#### Returns
-
-`Promise`\<`boolean`\>
-
-#### Defined in
-
-@rnv/core/lib/engines/index.d.ts:14
+api/index.d.ts:12
 
 ___
 
 ### installPackageDependencies
 
-▸ **installPackageDependencies**(`failOnError?`): `Promise`\<`boolean`\>
+▸ **installPackageDependencies**(`c`, `failOnError?`): `Promise`\<`boolean`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `failOnError?` | `boolean` |
 
 #### Returns
@@ -5544,7 +5038,47 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:6
+projects/npm.d.ts:6
+
+___
+
+### installPackageDependenciesAndPlugins
+
+▸ **installPackageDependenciesAndPlugins**(`c`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+plugins/index.d.ts:11
+
+___
+
+### invalidatePodsChecksum
+
+▸ **invalidatePodsChecksum**(`c`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+system/fs.d.ts:24
 
 ___
 
@@ -5558,18 +5092,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:17
+logger/index.d.ts:16
 
 ___
 
 ### isPlatformActive
 
-▸ **isPlatformActive**(`resolve?`): `boolean`
+▸ **isPlatformActive**(`c`, `platform`, `resolve?`): `boolean`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `resolve?` | () => `void` |
 
 #### Returns
@@ -5578,7 +5114,51 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/platforms/index.d.ts:9
+platforms/index.d.ts:13
+
+___
+
+### isPlatformSupported
+
+▸ **isPlatformSupported**(`c`, `isGlobalScope?`): `Promise`\<[`RnvPlatform`](modules.md#rnvplatform)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `isGlobalScope?` | `boolean` |
+
+#### Returns
+
+`Promise`\<[`RnvPlatform`](modules.md#rnvplatform)\>
+
+#### Defined in
+
+platforms/index.d.ts:11
+
+___
+
+### isPlatformSupportedSync
+
+▸ **isPlatformSupportedSync**(`c`, `platform`, `resolve?`, `reject?`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
+| `resolve?` | () => `void` |
+| `reject?` | (`e`: `string`) => `void` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+platforms/index.d.ts:12
 
 ___
 
@@ -5598,13 +5178,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/resolve.d.ts:20
+system/resolve.d.ts:20
 
 ___
 
 ### isTemplateInstalled
 
-▸ **isTemplateInstalled**(): `string` \| ``false``
+▸ **isTemplateInstalled**(`c`): `string` \| ``false``
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5612,7 +5198,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/templates/index.d.ts:2
+templates/index.d.ts:7
 
 ___
 
@@ -5626,18 +5212,39 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:5
+projects/npm.d.ts:5
 
 ___
 
-### listAndSelectNpmVersion
+### jetifyIfRequired
 
-▸ **listAndSelectNpmVersion**(`npmPackage`): `Promise`\<`any`\>
+▸ **jetifyIfRequired**(`c`): `Promise`\<`boolean`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Defined in
+
+projects/npm.d.ts:7
+
+___
+
+### listAndSelectNpmVersion
+
+▸ **listAndSelectNpmVersion**(`c`, `npmPackage`): `Promise`\<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `npmPackage` | `string` |
 
 #### Returns
@@ -5646,18 +5253,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/npm.d.ts:4
+projects/npm.d.ts:4
 
 ___
 
 ### listAppConfigsFoldersSync
 
-▸ **listAppConfigsFoldersSync**(`ignoreHiddenConfigs`, `appConfigsDirPath?`): `string`[]
+▸ **listAppConfigsFoldersSync**(`c`, `ignoreHiddenConfigs`, `appConfigsDirPath?`): `string`[]
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `ignoreHiddenConfigs` | `boolean` |
 | `appConfigsDirPath?` | `string` |
 
@@ -5667,52 +5275,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/appConfigs.d.ts:1
-
-___
-
-### loadDefaultConfigTemplates
-
-▸ **loadDefaultConfigTemplates**(): `Promise`\<`undefined`\>
-
-#### Returns
-
-`Promise`\<`undefined`\>
-
-#### Defined in
-
-@rnv/core/lib/configs/index.d.ts:3
+configs/appConfigs.d.ts:2
 
 ___
 
 ### loadEnginePackageDeps
 
-▸ **loadEnginePackageDeps**(`engineConfigs`): `Promise`\<``true`` \| ``0``\>
+▸ **loadEnginePackageDeps**(`c`, `engineConfigs`): `Promise`\<`number`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `engineConfigs` | [`RnvEngineInstallConfig`](modules.md#rnvengineinstallconfig)[] |
-
-#### Returns
-
-`Promise`\<``true`` \| ``0``\>
-
-#### Defined in
-
-@rnv/core/lib/engines/index.d.ts:13
-
-___
-
-### loadEnginePluginDeps
-
-▸ **loadEnginePluginDeps**(`engineConfigs`): `Promise`\<`number`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `engineConfigs` | [`RnvEngineInstallConfig`](modules.md#rnvengineinstallconfig)[] |
 
 #### Returns
@@ -5721,7 +5296,49 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:12
+engines/index.d.ts:14
+
+___
+
+### loadEnginePluginDeps
+
+▸ **loadEnginePluginDeps**(`c`, `engineConfigs`): `Promise`\<`number`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `engineConfigs` | [`RnvEngineInstallConfig`](modules.md#rnvengineinstallconfig)[] |
+
+#### Returns
+
+`Promise`\<`number`\>
+
+#### Defined in
+
+engines/index.d.ts:13
+
+___
+
+### loadEngines
+
+▸ **loadEngines**(`c`, `failOnMissingDeps?`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `failOnMissingDeps?` | `boolean` |
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Defined in
+
+engines/index.d.ts:15
 
 ___
 
@@ -5750,18 +5367,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:47
+system/fs.d.ts:48
 
 ___
 
 ### loadFileExtended
 
-▸ **loadFileExtended**(`fileObj`, `pathObj`, `key`): `any`
+▸ **loadFileExtended**(`c`, `fileObj`, `pathObj`, `key`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `fileObj` | `Record`\<`string`, `any`\> |
 | `pathObj` | [`RnvContextPathObj`](modules.md#rnvcontextpathobj) |
 | `key` | [`RnvContextFileKey`](modules.md#rnvcontextfilekey) |
@@ -5772,13 +5390,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/index.d.ts:2
+configs/index.d.ts:2
 
 ___
 
 ### loadIntegrations
 
-▸ **loadIntegrations**(): `Promise`\<`void`\>
+▸ **loadIntegrations**(`c`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5786,13 +5410,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/integrations/index.d.ts:1
+integrations/index.d.ts:2
 
 ___
 
 ### loadPluginTemplates
 
-▸ **loadPluginTemplates**(): `Promise`\<`boolean`\>
+▸ **loadPluginTemplates**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -5800,7 +5430,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:9
+plugins/index.d.ts:9
 
 ___
 
@@ -5814,7 +5444,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/workspaces.d.ts:7
+configs/workspaces.d.ts:7
 
 ___
 
@@ -5835,7 +5465,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:4
+logger/index.d.ts:4
 
 ___
 
@@ -5855,7 +5485,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:21
+logger/index.d.ts:22
+
+___
+
+### logComplete
+
+▸ **logComplete**(`isEnd?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `isEnd?` | `boolean` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+logger/index.d.ts:17
 
 ___
 
@@ -5875,20 +5525,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:16
+logger/index.d.ts:15
 
 ___
 
-### logDefault
+### logEnd
 
-▸ **logDefault**(`task`, `customChalk?`): `void`
+▸ **logEnd**(`code`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `task` | `string` |
-| `customChalk?` | `any` |
+| `code` | `number` |
 
 #### Returns
 
@@ -5896,21 +5545,21 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:10
+logger/index.d.ts:20
 
 ___
 
 ### logError
 
-▸ **logError**(`e`, `opts?`): `void`
+▸ **logError**(`e`, `isEnd?`, `skipAnalytics?`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `e` | `unknown` |
-| `opts?` | `Object` |
-| `opts.skipAnalytics` | `boolean` |
+| `isEnd?` | `boolean` |
+| `skipAnalytics?` | `boolean` |
 
 #### Returns
 
@@ -5918,7 +5567,27 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:19
+logger/index.d.ts:19
+
+___
+
+### logErrorPlatform
+
+▸ **logErrorPlatform**(`c`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+platforms/index.d.ts:3
 
 ___
 
@@ -5939,7 +5608,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:12
+logger/index.d.ts:11
 
 ___
 
@@ -5960,7 +5629,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:13
+logger/index.d.ts:12
 
 ___
 
@@ -5980,7 +5649,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:15
+logger/index.d.ts:14
 
 ___
 
@@ -6001,7 +5670,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:11
+logger/index.d.ts:10
 
 ___
 
@@ -6015,7 +5684,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:20
+logger/index.d.ts:21
 
 ___
 
@@ -6035,7 +5704,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:7
+logger/index.d.ts:7
 
 ___
 
@@ -6055,20 +5724,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:18
+logger/index.d.ts:18
 
 ___
 
 ### logSummary
 
-▸ **logSummary**(`opts?`): `void`
+▸ **logSummary**(`header`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `opts?` | `Object` |
-| `opts.header` | `string` |
+| `header` | `string` |
 
 #### Returns
 
@@ -6076,7 +5744,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:8
+logger/index.d.ts:8
 
 ___
 
@@ -6097,7 +5765,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:9
+logger/index.d.ts:9
 
 ___
 
@@ -6118,7 +5786,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:6
+logger/index.d.ts:6
 
 ___
 
@@ -6138,7 +5806,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:14
+logger/index.d.ts:13
 
 ___
 
@@ -6152,7 +5820,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:3
+logger/index.d.ts:3
 
 ___
 
@@ -6182,7 +5850,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:44
+system/fs.d.ts:45
 
 ___
 
@@ -6202,7 +5870,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:29
+system/fs.d.ts:30
 
 ___
 
@@ -6224,13 +5892,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:10
+plugins/index.d.ts:10
 
 ___
 
 ### overrideTemplatePlugins
 
-▸ **overrideTemplatePlugins**(): `Promise`\<`boolean`\>
+▸ **overrideTemplatePlugins**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6238,7 +5912,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:12
+plugins/index.d.ts:13
 
 ___
 
@@ -6259,18 +5933,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:42
+system/exec.d.ts:43
 
 ___
 
 ### parseFonts
 
-▸ **parseFonts**(`callback`): `void`
+▸ **parseFonts**(`c`, `callback`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `callback` | [`ParseFontsCallback`](modules.md#parsefontscallback) |
 
 #### Returns
@@ -6279,18 +5954,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/fonts.d.ts:2
+projects/index.d.ts:8
 
 ___
 
 ### parsePlugins
 
-▸ **parsePlugins**(`pluginCallback`, `ignorePlatformObjectCheck?`, `includeDisabledOrExcludedPlugins?`): `void`
+▸ **parsePlugins**(`c`, `platform`, `pluginCallback`, `ignorePlatformObjectCheck?`, `includeDisabledOrExcludedPlugins?`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platform` | [`RnvPlatform`](modules.md#rnvplatform) |
 | `pluginCallback` | [`PluginCallback`](modules.md#plugincallback) |
 | `ignorePlatformObjectCheck?` | `boolean` |
 | `includeDisabledOrExcludedPlugins?` | `boolean` |
@@ -6301,13 +5978,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:8
+plugins/index.d.ts:8
 
 ___
 
 ### parseRenativeConfigs
 
-▸ **parseRenativeConfigs**(): `Promise`\<`undefined`\>
+▸ **parseRenativeConfigs**(`c`): `Promise`\<`undefined`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6315,28 +5998,21 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/index.d.ts:4
+configs/index.d.ts:3
 
 ___
 
-### populateContextPaths
+### pressAnyKeyToContinue
 
-▸ **populateContextPaths**(`c`, `RNV_HOME_DIR`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `c` | [`RnvContext`](modules.md#rnvcontext) |
-| `RNV_HOME_DIR` | `string` |
+▸ **pressAnyKeyToContinue**(): `Promise`\<`any`\>
 
 #### Returns
 
-`void`
+`Promise`\<`any`\>
 
 #### Defined in
 
-@rnv/core/lib/context/index.d.ts:4
+api/index.d.ts:14
 
 ___
 
@@ -6357,7 +6033,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:23
+logger/index.d.ts:24
 
 ___
 
@@ -6371,7 +6047,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:25
+logger/index.d.ts:26
 
 ___
 
@@ -6392,7 +6068,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:24
+logger/index.d.ts:25
 
 ___
 
@@ -6412,7 +6088,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/logger/index.d.ts:22
+logger/index.d.ts:23
 
 ___
 
@@ -6433,7 +6109,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:22
+system/fs.d.ts:22
 
 ___
 
@@ -6461,13 +6137,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:37
+system/fs.d.ts:38
 
 ___
 
 ### registerAllPlatformEngines
 
-▸ **registerAllPlatformEngines**(): `Promise`\<`boolean`\>
+▸ **registerAllPlatformEngines**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6475,7 +6157,28 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:11
+engines/index.d.ts:12
+
+___
+
+### registerCustomTask
+
+▸ **registerCustomTask**(`_c`, `task`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `_c` | [`RnvContext`](modules.md#rnvcontext) |
+| `task` | [`RnvTask`](modules.md#rnvtask) |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+tasks/index.d.ts:3
 
 ___
 
@@ -6497,7 +6200,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:6
+engines/index.d.ts:6
 
 ___
 
@@ -6519,18 +6222,33 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:7
+engines/index.d.ts:7
+
+___
+
+### registerIntegration
+
+▸ **registerIntegration**(): `void`
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+integrations/index.d.ts:3
 
 ___
 
 ### registerMissingPlatformEngines
 
-▸ **registerMissingPlatformEngines**(`taskInstance?`): `Promise`\<`boolean`\>
+▸ **registerMissingPlatformEngines**(`c`, `taskInstance?`): `Promise`\<`boolean`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `taskInstance?` | [`RnvTask`](modules.md#rnvtask) |
 
 #### Returns
@@ -6539,47 +6257,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/engines/index.d.ts:10
-
-___
-
-### registerPlatformEngine
-
-▸ **registerPlatformEngine**(`platform`): `Promise`\<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `platform` | `boolean` \| [`RnvPlatform`](modules.md#rnvplatform) |
-
-#### Returns
-
-`Promise`\<`void`\>
-
-#### Defined in
-
-@rnv/core/lib/engines/index.d.ts:15
-
-___
-
-### registerRnvTasks
-
-▸ **registerRnvTasks**(`tasks`): `Promise`\<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `tasks` | [`RnvTaskMap`](modules.md#rnvtaskmap) |
-
-#### Returns
-
-`Promise`\<`void`\>
-
-#### Defined in
-
-@rnv/core/lib/tasks/taskRegistry.d.ts:2
+engines/index.d.ts:11
 
 ___
 
@@ -6600,7 +6278,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:28
+system/fs.d.ts:29
 
 ___
 
@@ -6621,7 +6299,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:34
+system/fs.d.ts:35
 
 ___
 
@@ -6641,7 +6319,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:33
+system/fs.d.ts:34
 
 ___
 
@@ -6661,7 +6339,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:32
+system/fs.d.ts:33
 
 ___
 
@@ -6681,7 +6359,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:31
+system/fs.d.ts:32
 
 ___
 
@@ -6701,21 +6379,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:45
-
-___
-
-### resolveEngineDependencies
-
-▸ **resolveEngineDependencies**(): `Promise`\<`void`\>
-
-#### Returns
-
-`Promise`\<`void`\>
-
-#### Defined in
-
-@rnv/core/lib/engines/dependencyResolver.d.ts:1
+system/fs.d.ts:46
 
 ___
 
@@ -6735,13 +6399,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:42
+system/fs.d.ts:43
 
 ___
 
 ### resolvePluginDependants
 
-▸ **resolvePluginDependants**(): `Promise`\<`boolean`\>
+▸ **resolvePluginDependants**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6749,28 +6419,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:7
-
-___
-
-### resolveRelativePackage
-
-▸ **resolveRelativePackage**(`c`, `v`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `c` | [`RnvContext`](modules.md#rnvcontext) |
-| `v` | `string` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-@rnv/core/lib/projects/utils.d.ts:2
+plugins/index.d.ts:7
 
 ___
 
@@ -6797,7 +6446,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:43
+system/fs.d.ts:44
 
 ___
 
@@ -6824,7 +6473,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:41
+system/fs.d.ts:42
 
 ___
 
@@ -6847,7 +6496,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:14
+plugins/index.d.ts:15
 
 ___
 
@@ -6868,41 +6517,21 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:27
-
-___
-
-### selectPlatformIfRequired
-
-▸ **selectPlatformIfRequired**(`knownTaskInstance?`, `registerEngineIfPlatformSelected?`): `Promise`\<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `knownTaskInstance?` | [`RnvTask`](modules.md#rnvtask)\<`string`\> |
-| `registerEngineIfPlatformSelected?` | `boolean` |
-
-#### Returns
-
-`Promise`\<`void`\>
-
-#### Defined in
-
-@rnv/core/lib/tasks/taskHelpers.d.ts:2
+system/fs.d.ts:28
 
 ___
 
 ### shouldSkipTask
 
-▸ **shouldSkipTask**(`«destructured»`): `boolean`
+▸ **shouldSkipTask**(`c`, `taskKey`, `originTaskKey?`): `boolean`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `«destructured»` | `Object` |
-| › `taskName` | `string` |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `taskKey` | `string` |
+| `originTaskKey?` | `string` |
 
 #### Returns
 
@@ -6910,7 +6539,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/tasks/taskHelpers.d.ts:9
+tasks/index.d.ts:9
 
 ___
 
@@ -6931,39 +6560,20 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:38
-
-___
-
-### updatePackage
-
-▸ **updatePackage**(`override`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `override` | `Partial`\<[`NpmPackageFile`](modules.md#npmpackagefile)\> |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-@rnv/core/lib/projects/package.d.ts:2
+system/fs.d.ts:39
 
 ___
 
 ### updateProjectPlatforms
 
-▸ **updateProjectPlatforms**(`platforms`): `void`
+▸ **updateProjectPlatforms**(`c`, `platforms`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `platforms` | (``"android"`` \| ``"linux"`` \| ``"web"`` \| ``"ios"`` \| ``"androidtv"`` \| ``"firetv"`` \| ``"tvos"`` \| ``"macos"`` \| ``"windows"`` \| ``"tizen"`` \| ``"webos"`` \| ``"chromecast"`` \| ``"kaios"`` \| ``"webtv"`` \| ``"androidwear"`` \| ``"tizenwatch"`` \| ``"tizenmobile"`` \| ``"xbox"``)[] |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
+| `platforms` | (``"ios"`` \| ``"android"`` \| ``"firetv"`` \| ``"androidtv"`` \| ``"androidwear"`` \| ``"web"`` \| ``"webtv"`` \| ``"tizen"`` \| ``"tizenmobile"`` \| ``"tvos"`` \| ``"webos"`` \| ``"macos"`` \| ``"windows"`` \| ``"linux"`` \| ``"tizenwatch"`` \| ``"kaios"`` \| ``"chromecast"`` \| ``"xbox"``)[] |
 
 #### Returns
 
@@ -6971,13 +6581,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProject.d.ts:6
+configs/configProject.d.ts:7
 
 ___
 
 ### updateRenativeConfigs
 
-▸ **updateRenativeConfigs**(): `Promise`\<`boolean`\>
+▸ **updateRenativeConfigs**(`c`): `Promise`\<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 
 #### Returns
 
@@ -6985,7 +6601,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/plugins/index.d.ts:27
+plugins/index.d.ts:28
 
 ___
 
@@ -6997,9 +6613,9 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `packageFile` | [`NpmPackageFile`](modules.md#npmpackagefile) |
+| `packageFile` | `NpmPackageFile` |
 | `packagesPath` | `string` |
-| `configFile` | [`ConfigFileProject`](modules.md#configfileproject) |
+| `configFile` | `_RootProjectSchemaType` |
 | `configPath` | `string` |
 | `version` | `string` |
 
@@ -7009,18 +6625,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProject.d.ts:5
+configs/configProject.d.ts:6
 
 ___
 
 ### upgradeProjectDependencies
 
-▸ **upgradeProjectDependencies**(`version`): `string`[]
+▸ **upgradeProjectDependencies**(`c`, `version`): `string`[]
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `version` | `string` |
 
 #### Returns
@@ -7029,7 +6646,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/configProject.d.ts:4
+configs/configProject.d.ts:5
 
 ___
 
@@ -7049,7 +6666,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/schema/validators.d.ts:1
+schema/validators.d.ts:1
 
 ___
 
@@ -7069,18 +6686,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/projects/version.d.ts:2
+projects/index.d.ts:11
 
 ___
 
 ### waitForExecCLI
 
-▸ **waitForExecCLI**(`cli`, `command`, `callback`): `Promise`\<`boolean`\>
+▸ **waitForExecCLI**(`c`, `cli`, `command`, `callback`): `Promise`\<`boolean`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `cli` | `string` |
 | `command` | `string` |
 | `callback` | (`resp`: `string` \| ``true``) => `boolean` |
@@ -7091,7 +6709,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/exec.d.ts:46
+system/exec.d.ts:47
 
 ___
 
@@ -7115,7 +6733,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:21
+system/fs.d.ts:21
 
 ___
 
@@ -7138,7 +6756,7 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:35
+system/fs.d.ts:36
 
 ___
 
@@ -7161,18 +6779,19 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/system/fs.d.ts:36
+system/fs.d.ts:37
 
 ___
 
 ### writeRenativeConfigFile
 
-▸ **writeRenativeConfigFile**(`configPath`, `configData`): `void`
+▸ **writeRenativeConfigFile**(`c`, `configPath`, `configData`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `c` | [`RnvContext`](modules.md#rnvcontext) |
 | `configPath` | `string` |
 | `configData` | `string` \| `object` |
 
@@ -7182,4 +6801,4 @@ ___
 
 #### Defined in
 
-@rnv/core/lib/configs/utils.d.ts:1
+configs/utils.d.ts:2

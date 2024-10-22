@@ -5,7 +5,7 @@ sidebar_label: Architecture
 original_id: architecture
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_architecture.png" width="50" height="50" /> -->
+<!-- <img className="header-image" src="/img/ic_architecture.png" width="50" height="50" /> -->
 
 ---
 ## Build Process
@@ -13,7 +13,7 @@ original_id: architecture
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/rnv_arch1.png" />
+    <img src="/img/rnv_arch1.png" />
     </th>
   </tr>
 </table>
@@ -44,7 +44,7 @@ ReNative support flexible override mechanism which allows you customise your pro
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/rnv_arch2.png" />
+    <img src="/img/rnv_arch2.png" />
     </th>
   </tr>
 </table>

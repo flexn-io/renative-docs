@@ -5,7 +5,7 @@ sidebar_label: ReNative CLI
 original_id: cli
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_cli.png" width="50" height="50" /> -->
+<!-- <img className="header-image" src="/img/ic_cli.png" width="50" height="50" /> -->
 
 ---
 ## ReNative CLI
@@ -48,14 +48,14 @@ Deployed to https://www.npmjs.com/package/rnv
 
 `rnv deploy -p <PLATFORM>` - deploy app for specific platform
 
-##### rnv status
+##### rnv info
 
-`rnv status` - prints out info about your project
+`rnv info` - prints out info about your project and development environment
 
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/info.png" />
+    <img src="/img/info.png" />
     </th>
   </tr>
 </table>
@@ -67,7 +67,7 @@ Deployed to https://www.npmjs.com/package/rnv
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/clean.png" />
+    <img src="/img/clean.png" />
     </th>
   </tr>
 </table>
@@ -156,7 +156,7 @@ This is particularly useful for CI where logs are usually stripped from colors b
 
 Examples:
 
-`rnv status --mono`
+`rnv info --mono`
 `rnv start --mono`
 
 ##### -c , -appConfigID

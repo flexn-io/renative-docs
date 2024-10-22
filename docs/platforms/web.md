@@ -16,7 +16,7 @@ original_id: web
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_web.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_web.gif" height="250"/>
 
 
 - Supports Chrome, Safari, Firefox, IE10+

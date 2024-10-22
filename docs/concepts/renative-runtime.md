@@ -5,7 +5,7 @@ sidebar_label: Runtime
 original_id: runtime
 ---
 
-<!-- <img className="header-image" src="https://renative.org/img/ic_runtime.png" width="50" height="50" /> -->
+<!-- <img className="header-image" src="/img/ic_runtime.png" width="50" height="50" /> -->
 
 ---
 ## Runtime

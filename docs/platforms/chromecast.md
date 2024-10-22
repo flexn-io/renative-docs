@@ -16,7 +16,7 @@ original_id: chromecast
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_chromecast.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_chromecast.gif" height="250"/>
 
 
 - Supports Chromecast devices

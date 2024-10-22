@@ -17,7 +17,7 @@ you should get colorised overview similar to this:
 <table>
   <tr>
     <th>
-      <img src="https://renative.org/img/cli_plugins.png" />
+      <img src="/img/cli_plugins.png" />
     </th>
   </tr>
 </table>

@@ -19,7 +19,7 @@ npm install rnv -g
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/cli_app_create1.gif" />
+    <img src="/img/cli_app_create1.gif" />
     </th>
   </tr>
 </table>

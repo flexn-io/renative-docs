@@ -16,7 +16,7 @@ original_id: tizen
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_tizen.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_tizen.gif" height="250"/>
 
 
 - Latest Tizen project
@@ -57,7 +57,7 @@ Make sure you have at least 1 TV VM setup
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/tizen4.png" />
+    <img src="/img/tizen4.png" />
     </th>
   </tr>
 </table>

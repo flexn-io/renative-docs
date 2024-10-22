@@ -16,7 +16,7 @@ original_id: kaios
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_kaios.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_kaios.gif" height="250"/>
 
 ---
 ## File Extension Support
@@ -42,7 +42,7 @@ After installation you can launch it via Applications:
 <table>
   <tr>
     <th>
-    <img src="https://renative.org/img/kaios1.png" />
+    <img src="/img/kaios1.png" />
     </th>
   </tr>
 </table>

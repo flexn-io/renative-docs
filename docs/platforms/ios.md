@@ -16,7 +16,7 @@ original_id: ios
   </tr>
 </table>
 
-<img className="platform-image" src="https://renative.org/img/rnv_ios.gif" height="250"/>
+<img className="platform-image" src="/img/rnv_ios.gif" height="250"/>
 
 
 - Latest swift based Xcode project
