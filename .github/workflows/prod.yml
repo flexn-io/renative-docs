@@ -23,7 +23,7 @@ jobs:
               run: npm install --global vercel@latest
             - run: rm -rf .vercel
             - name: Pull Vercel Environment Information
-              run: vercel pull --yes --git-branch=release --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+              run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
             - name: Build Project Artifacts
               run: BASE_URL=https://renative.org ALGOLIA_INDEX=renative_docsearch vercel build
             - name: Deploy Project Artifacts to Vercel
