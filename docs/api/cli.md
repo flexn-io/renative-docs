@@ -1463,6 +1463,20 @@ Example:
 npx rnv sdk configure
 ```
 
+### tizen certificate
+
+Change tizen certificate
+
+Provided by: @rnv/engine-rn-web
+
+Depends On:
+[`app configure`](#app-configure)
+
+Example:
+```bash
+npx rnv tizen certificate
+```
+
 ### target launch
 
 Launch specific target
