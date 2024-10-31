@@ -122,7 +122,7 @@ _Before you run on a physical device, make sure you have enabled `Dev Mode` and 
 [see: Web based config](../api/schemas/rnv.project.md)
 
 ---
-## Known bugs
+## Known issues
 
 #### Tizen 3.0 devices
 
