@@ -120,3 +120,18 @@ _Before you run on a physical device, make sure you have enabled `Dev Mode` and 
 ## App Config
 
 [see: Web based config](../api/schemas/rnv.project.md)
+
+---
+## Known issues
+
+#### Tizen 3.0 devices
+
+Issue: The React Native component TouchableOpacity is non-functional on devices that are running Tizen TV version 3.0.
+
+Details:
+
+- The onPress event of TouchableOpacity does not respond when the button is pressed.
+- The keydown event is not triggered upon pressing the button, while the keyup event operates as expected.
+
+Recommendation: To achieve similar button functionality, it is necessary to create a custom button component specifically designed for Tizen TV devices.
+
