@@ -31,9 +31,9 @@ The `src/` folder contains the source content for your application. The initial 
 You are not restricted to the three specified folders. Within the `src/` directory, you have the flexibility to create your own folders to organize styles, components, and any other necessary resources.
 :::
 
-If you also installed some react native plugins in your project make sure to move them to
+If you also installed some react native plugins in your project make sure to move them to `./renative.json` config file under `plugins` object. 
 
-`./renative.json` config file under `plugins` object. renative uses standard react native plugins so plugin names will stay same!
+Renative uses standard react native plugins so plugin names will stay same!
 
 For example:
 
