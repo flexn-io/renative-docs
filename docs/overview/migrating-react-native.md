@@ -42,41 +42,6 @@ For example:
     "react-native": "0.73.4"
 }
 ```
-In `./renative.json` config file you can add more configuration, for example:
-```
-"plugins": {
-        "react-native-reanimated": {
-            "android": {
-                "package": "com.swmansion.reanimated.ReanimatedPackage"
-            },
-            "androidtv": {
-                "package": "com.swmansion.reanimated.ReanimatedPackage"
-            },
-            "androidwear": {
-                "package": "com.swmansion.reanimated.ReanimatedPackage"
-            },
-            "firetv": {
-                "package": "com.swmansion.reanimated.ReanimatedPackage"
-            },
-            "ios": {
-                "podName": "RNReanimated"
-            },
-            "macos": {
-                "podName": "RNReanimated"
-            },
-            "tvos": {
-                "podName": "RNReanimated"
-            },
-            "version": "3.11.0",
-            "disablePluginTemplateOverrides": true,
-            "webpackConfig": {
-                "modulePaths": true,
-                "nextTranspileModules": [
-                    "react-native-reanimated"
-                ]
-            }
-        }
-    }
-```
+In the `./renative.json` configuration file, you have the option to add additional plugin configurations. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
 
 if you have any issues you can always raise a question or a bug in https://github.com/pavjacko/renative/issues
