@@ -23,12 +23,16 @@ Due to variety of possibilities / complexity fo react-native projects (ie plugin
 -   `./index.android.js` file
 -   `src/` folder
 
-replace `src/` folder content with source content of your app (JS files)
+### ReNative Project Folder Structure
+The `src/` folder contains the source content for your application. The initial structure of the `src/` folder includes the following subfolders:
 
-make sure that your main app.js is initialized in both
+- `app`: This folder contains the main files for your application.
+- `entry`: This folder allows you to configure the launch settings of your app. It is intended for advanced configuration and customization.
+- `pages`: This folder enables you to create individual pages for your application.
 
--   `./index.ios.js` file
--   `./index.android.js` file
+:::info
+You are not restricted to the three specified folders. Within the `src/` directory, you have the flexibility to create your own folders to organize styles, components, and any other necessary resources.
+:::
 
 that's it really.
 
