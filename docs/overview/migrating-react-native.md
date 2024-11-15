@@ -15,7 +15,7 @@ Due to variety of possibilities / complexity fo react-native projects (ie plugin
 
 1. Install rnv
 2. Create new project `rnv new` (pick @rnv/template-starter)
-3. Follow rest of the steps of installation.
+3. Follow rest of the steps of new project installation.
 4. After first `rnv run ...` check out the codebase.
 
 ### ReNative Project Folder Structure
@@ -43,6 +43,16 @@ For example:
 }
 ```
 In the `./renative.json` configuration file, you have the option to add additional plugin configurations. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
+
+:::warning Remember to Update Project Configuration Files
+When transferring your project, it's essential not to overlook updating your configuration files. This includes:
+- babel.config.js
+- tsconfig.json
+- next.config.js
+- And any other relevant configuration files
+
+Ensuring these files are correctly configured will help avoid issues and ensure smooth operation of your project.
+:::
 
 ### Issues that could be encountered
 
