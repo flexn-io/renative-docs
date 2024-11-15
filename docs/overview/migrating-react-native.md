@@ -44,4 +44,38 @@ For example:
 ```
 In the `./renative.json` configuration file, you have the option to add additional plugin configurations. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
 
+### Issues that could be encountered
+
+#### Resolving `requestAnimationFrame` Error in `react-native-reanimated`
+##### Error
+```
+ReferenceError: requestAnimationFrame is not defined
+```
+##### Solution
+This error in `react-native-reanimated` has been addressed in [this pull request (PR)](https://github.com/software-mansion/react-native-reanimated/pull/4665).
+##### Fix Steps
+To resolve this issue, ensure you update `react-native-reanimated` to version 3.5.0 or higher.
+
+---
+#### Resolving Module Parse Error for `react-native/Libraries/NewAppScreen`
+
+##### Error
+```
+Module parse failed for react-native/Libraries/NewAppScreen
+```
+
+##### Solution
+To fix this error, you need to remove or replace the `Colors` import from `react-native/Libraries/NewAppScreen` with an alternative.
+
+##### Steps
+1. **Remove the `Colors` import** from `react-native/Libraries/NewAppScreen` in your code.
+2. **Replace it with an alternative** color import or define your own color scheme to use in its place.
+
+By following these steps, you should be able to resolve the module parse error and continue with your project.
+
+---
+
+
+
+
 if you have any issues you can always raise a question or a bug in https://github.com/pavjacko/renative/issues
