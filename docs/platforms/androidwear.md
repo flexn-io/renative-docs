@@ -132,3 +132,9 @@ or `renative.json:platforms.android.buildSchemes.[SCHEME].reactNativeEngine`
 ## App Config
 
 [see: Android based config](../api/schemas/rnv.project.md#android-props)
+
+---
+## Connect WearOS with Mobile Device via Bluetooth
+
+Follow the instructions at [react-native-wear-connectivity](https://github.com/fabOnReact/react-native-wear-connectivity?tab=readme-ov-file).
+
