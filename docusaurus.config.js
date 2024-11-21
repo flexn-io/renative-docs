@@ -160,7 +160,7 @@ const config = {
                     },
                     {
                         position: 'left',
-                        label: 'v1.5',
+                        label: 'v1.6',
                         href: 'https://github.com/flexn-io/renative/releases/tag/1.6.0',
                     },
                     {
