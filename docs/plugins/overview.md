@@ -2170,7 +2170,7 @@ npx rnv plugin add react-native-onfido-sdk
 
 ## react-native-orientation-locker
 
-Version: `1.5.0`
+Version: `1.6.0`
 
 Platforms: `android`,`ios`
 
