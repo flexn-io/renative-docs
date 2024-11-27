@@ -25,7 +25,7 @@ The `src/` folder contains the source content for your application. The initial 
 
 -   `app`: This folder contains the main files for your application.
 -   `entry`: This folder allows you to configure the launch settings of your app. It is intended for advanced configuration and customization.
--   `pages`: This folder enables you to create individual pages for your application.
+-   `pages`: This folder enables you to create individual pages for your application. It is only used for web development.
 
 :::info
 You are not restricted to the three specified folders. Within the `src/` directory, you have the flexibility to create your own folders to organize styles, components, and any other necessary resources.
@@ -35,14 +35,21 @@ If you also installed some react native plugins in your project make sure to mov
 
 Renative uses standard react native plugins so plugin names will stay same!
 
-For example:
+ReNative does not utilize autolinking as React Native does. 
+Therefore, it's important to manually move and configure packages in your renative.json file. 
+Proper handle of dependencies:
 
-```
-"plugins": {
-    "react-native": "0.73.4"
-}
-```
-In the `./renative.json` configuration file, you have the option to add additional plugin configurations. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
+- Transfer the necessary packages to the renative.json file.
+    For example:
+    ```
+    "plugins": {
+        "react-native": {
+            "version": "0.73.4",
+            "source": "rnv"
+        }
+    }
+    ```
+- If some dependencies do not have existing mappings in ReNative, you will need to implement them manually. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
 
 :::warning Remember to Update Project Configuration Files
 When transferring your project, it's essential not to overlook updating your configuration files. This includes:
@@ -63,7 +70,7 @@ ReferenceError: requestAnimationFrame is not defined
 ```
 ##### Solution
 This error in `react-native-reanimated` has been addressed in [this pull request (PR)](https://github.com/software-mansion/react-native-reanimated/pull/4665).
-##### Fix Steps
+##### Steps
 To resolve this issue, ensure you update `react-native-reanimated` to version 3.5.0 or higher.
 
 ---
