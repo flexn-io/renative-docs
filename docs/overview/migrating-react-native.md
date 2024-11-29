@@ -51,17 +51,26 @@ Proper handle of dependencies:
     ```
 - If some dependencies do not have existing mappings in ReNative, you will need to implement them manually. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
 
-:::warning Remember to Update Project Configuration Files
+### Update Project Configuration Files
 When transferring your project, it's essential not to overlook updating your configuration files. This includes:
 - babel.config.js
 - tsconfig.json
 - next.config.js
+- react-native.config.js
 - And any other relevant configuration files
 
 Ensuring these files are correctly configured will help avoid issues and ensure smooth operation of your project.
-:::
 
-### Issues that could be encountered
+You can utilize ReNative's configuration methods to add your custom configurations. For example:
+```
+module.exports = withRNVRNConfig({
+  //custom configurations
+  ...
+});
+```
+By incorporating custom configurations in this manner, the basic ReNative configurations and your custom settings are merged and applied together when the app is run.
+
+## Common Errors
 
 #### Resolving `requestAnimationFrame` Error in `react-native-reanimated`
 ##### Error
