@@ -25,7 +25,7 @@ The `src/` folder contains the source content for your application. The initial 
 
 -   `app`: This folder contains the main files for your application.
 -   `entry`: This folder allows you to configure the launch settings of your app. It is intended for advanced configuration and customization.
--   `pages`: This folder enables you to create individual pages for your application. It is only used for web development.
+-   `pages`: This folder enables you to create individual pages. This is only used for web development.
 
 :::info
 You are not restricted to the three specified folders. Within the `src/` directory, you have the flexibility to create your own folders to organize styles, components, and any other necessary resources.
