@@ -25,7 +25,7 @@ The `src/` folder contains the source content for your application. The initial 
 
 -   `app`: This folder contains the main files for your application.
 -   `entry`: This folder allows you to configure the launch settings of your app. It is intended for advanced configuration and customization.
--   `pages`: This folder enables you to create individual pages. This is only used for web development.
+-   `pages`: This folder is needed for web in case you are using Next.js engine, if you don't plan to support web or don't want to use Next.js, don't include it
 
 :::info
 You are not restricted to the three specified folders. Within the `src/` directory, you have the flexibility to create your own folders to organize styles, components, and any other necessary resources.
@@ -44,12 +44,11 @@ Proper handle of dependencies:
     ```
     "plugins": {
         "react-native": {
-            "version": "0.73.4",
             "source": "rnv"
         }
     }
     ```
-- If some dependencies do not have existing mappings in ReNative, you will need to implement them manually. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
+- As in the above example all the necessary linking will be handled by ReNative, however some dependencies do not have existing mappings in ReNative (can be checked [here](https://github.com/flexn-io/commonwealth/blob/main/packages/plugins/pluginTemplates/renative.plugins.json)), you will need to implement them manually. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
 
 ### Update Project Configuration Files
 When transferring your project, it's essential not to overlook updating your configuration files. This includes:
