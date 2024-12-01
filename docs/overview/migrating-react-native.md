@@ -43,9 +43,7 @@ Proper handle of dependencies:
     For example:
     ```
     "plugins": {
-        "react-native": {
-            "source": "rnv"
-        }
+        "react-native": "source:rnv"
     }
     ```
 - As in the above example all the necessary linking will be handled by ReNative, however some dependencies do not have existing mappings in ReNative (can be checked [here](https://github.com/flexn-io/commonwealth/blob/main/packages/plugins/pluginTemplates/renative.plugins.json)), you will need to implement them manually. For more information, please visit this  <a href="/docs/concepts/plugins#custom-plugin-support">link</a>.
@@ -60,13 +58,18 @@ When transferring your project, it's essential not to overlook updating your con
 
 Ensuring these files are correctly configured will help avoid issues and ensure smooth operation of your project.
 
-You can utilize ReNative's configuration methods to add your custom configurations. For example:
-```
-module.exports = withRNVRNConfig({
+You can utilize ReNative's configuration methods to add your custom configurations. Here is example for `react-native.config.js`:
+```js title="react-native.config.js"
+const { withRNVRNConfig } = require('@rnv/adapter');
+
+const config = withRNVRNConfig({
   //custom configurations
   ...
 });
+
+module.exports = config;
 ```
+
 By incorporating custom configurations in this manner, the basic ReNative configurations and your custom settings are merged and applied together when the app is run.
 
 ## Common Errors
