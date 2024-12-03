@@ -7,7 +7,7 @@ sidebar_label: Templates
 
 ## @rnv/template-starter
 
-Version: `1.6.0`
+Version: `1.7.0`
 
 <table>
   <tr>
