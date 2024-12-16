@@ -39,7 +39,7 @@ ReNative does not utilize autolinking as React Native does.
 Therefore, it's important to manually move and configure packages in your renative.json file. 
 Proper handle of dependencies:
 
-- Transfer the necessary packages to the renative.json file:
+- Transfer the necessary packages to the renative.json file.
     For example:
     ```
     "plugins": {
