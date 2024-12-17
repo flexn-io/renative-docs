@@ -94,7 +94,7 @@ Every `rnv` job will generate unique build file in `./platformAssets/` folder.
 
 Naming convention of such file is `[APP_ID]_[PLATFORM].json`
 
-ie command `rnv run -p android -c helloworld` will genreate build file at:
+ie command `rnv run -p android -c helloworld` will generate build file at:
 
 `./platformBuilds/helloworld_android.json`
 
@@ -139,7 +139,7 @@ ie command `rnv run -p android -c helloworld` will generate build file at:
 
 `./platformAssets/renative.runtime.json`
 
-with followng value:
+with following value:
 
 ```json
 {
@@ -194,7 +194,7 @@ Following is the order of merges of various renative configs (if present) produc
 
 ## Dynamic Injectors
 
-You can inject varietry of different dynamic props via `renative.*.json` configs
+You can inject variety of different dynamic props via `renative.*.json` configs
 
 ```
 {{INJECTOR}}
@@ -235,7 +235,7 @@ Example:
 Currently supported runtime properties:
 
 - scheme
-- appConfing
+- appConfig
 - engine
 - localhost
 - timestamp

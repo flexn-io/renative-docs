@@ -74,7 +74,7 @@ RNV allows you to target over 15 different platforms.
 ---
 ## Tasks
 
-RNV is essentially and task runner. most of the execution is completed by tasks.
+RNV is essentially a task runner. Most of the execution is completed by tasks.
 
 ---
 ## App Code
@@ -93,7 +93,7 @@ More Info (Templates)
 ---
 ## File Extensions
 
-You can create highly sophisticated reusable multiplatofrm architecture by utilising powerful file extension system
+You can create highly sophisticated reusable multiplatform architecture by utilizing powerful file extension system
 
 ---
 ## Runtime
