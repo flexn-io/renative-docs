@@ -13,8 +13,8 @@ function HomepageHeader() {
             <div className="container">
                 <p className={clsx(styles.h2, styles.version_link)}>
                     Currently{' '}
-                    <a className="link" href="https://github.com/flexn-io/renative/releases/tag/1.7.0" target="_blank">
-                        v1.7
+                    <a className="link" href="https://github.com/flexn-io/renative/releases/tag/1.8.0" target="_blank">
+                        v1.8
                         <img className="link_img" src="/img/link.svg" />
                     </a>
                 </p>

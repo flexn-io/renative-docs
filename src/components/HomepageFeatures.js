@@ -137,7 +137,7 @@ const FeatureList = [
 ? What's your project Name? (folder will be created) hello-renative
 ? What workspace to use? rnv
 ? What template to use? @rnv/template-starter
-? What @rnv/template-starter version to use? 1.7.0 (@latest)
+? What @rnv/template-starter version to use? 1.8.0 (@latest)
 ? How to create config renative.json? Extend template (cleaner, overridable)
 ? What's your project Title? My Renative App
 ? What's your App ID? com.mycompany.hellorenative
