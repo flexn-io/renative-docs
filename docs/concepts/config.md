@@ -9,7 +9,7 @@ original_id: config
 
 <br />
 
-Renative configs are one of the most powerful feature of ReNative platform.
+Renative configs are one of the most powerful features of ReNative platform.
 
 Their format is `renative.*.json`
 
